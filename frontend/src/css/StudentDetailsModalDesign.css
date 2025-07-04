@@ -1,0 +1,208 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+  }
+  
+  .modal-content {
+    background: #ffffff;
+    border: 2px solid transparent;
+    background-image: 
+      linear-gradient(#ffffff, #ffffff), 
+      linear-gradient(135deg, #6EC1E4, #F06292, #F5A623);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    position: relative;
+    font-family: 'Orbitron', sans-serif;
+    color: #333;
+  }
+  
+  .modal-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+  }
+  
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #6EC1E4;
+    border-top: 4px solid #F06292;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading-text {
+    color: #333;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .modal-error {
+    font-family: 'Orbitron', sans-serif;
+    color: #ca3f3f;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .modal-title {
+    font-family: 'Comic Neue', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .modal-details p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0.5rem 0;
+  }
+  
+  .recent-questions {
+    margin-top: 1.5rem;
+  }
+  
+  .recent-questions h3 {
+    font-family: 'Comic Neue', sans-serif;
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .recent-questions ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .question-item {
+    background: #f9f9f9;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border: 2px solid transparent;
+    background-image: 
+      linear-gradient(#f9f9f9, #f9f9f9), 
+      linear-gradient(135deg, #F06292, #6EC1E4);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 8px;
+  }
+  
+  .question-item p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+  }
+  
+  .modal-close-button {
+    margin-top: 1.5rem;
+    padding: 0.8em 1.5em;
+    border: 2px solid transparent;
+    background-image: 
+      linear-gradient(#393838, #393838), 
+      linear-gradient(135deg, #6EC1E4, #F06292, #F5A623);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .modal-close-button:hover {
+    background-image: 
+      linear-gradient(#393838, #393838), 
+      linear-gradient(135deg, #F5A623, #F06292, #6EC1E4);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .modal-content {
+      width: 95%;
+      padding: 1.5rem;
+    }
+  
+    .modal-title {
+      font-size: 1.5rem;
+    }
+  
+    .recent-questions h3 {
+      font-size: 1.2rem;
+    }
+  
+    .question-item {
+      padding: 0.8rem;
+    }
+  
+    .modal-close-button {
+      font-size: 0.9rem;
+      padding: 0.7em 1.2em;
+    }
+  
+    .loading-text {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modal-content {
+      padding: 1rem;
+    }
+  
+    .modal-title {
+      font-size: 1.3rem;
+    }
+  
+    .recent-questions h3 {
+      font-size: 1rem;
+    }
+  
+    .question-item {
+      padding: 0.6rem;
+      font-size: 0.85rem;
+    }
+  
+    .modal-close-button {
+      font-size: 0.8rem;
+      padding: 0.6em 1em;
+    }
+  
+    .loading-text {
+      font-size: 0.9rem;
+    }
+  }

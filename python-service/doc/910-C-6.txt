@@ -1,0 +1,1373 @@
+2025
+
+Chapter Six
+Concept of Mole and Chemical Counting
+
+Chemistry basically deals with two kinds of analysis- qualitative analysis and
+quantitative analysis. Identification of an element and its properties is qualitative
+analysis whereas determining the amount of a substance is known as
+quantitative analysis. Quantitative analysis deals with calculations which
+altogether are denoted by the term cheniical counting. These calculations usually
+use mole as the unit to determine the amount of a substance. In this chapter, we
+will discuss what is a mole, how to use moles in calculations, how to determine
+ihe cubic measurements from moles etc.
+do the simple mathematical calculations using the concept of moles
+prepare solutions of certain concentrations
+
+determine the percent composition of elements present in the
+compounds using the given data
+
+determine the empirical and molecular formula using the percent
+compositions
+
+write chemical equations and balance the equation using symbols,
+formula and valency of elements and radicals
+
+solve mass related mathematical problems of reactants and products
+from the quantitative significance of chemical reactions
+
+calculate the percent composition of lattice water of copper sulphate
+
+do measurements of chemical substances using a balance
+
+2025
+2025
+
+Concept of Mole and Chemical Counting 11
+
+6.1 Mole
+
+The word mole is the unit of any chemical measurement. Suppose,
+
+12 nos of O, = | dozen of 0,
+
+100 nos of O, = 1 hundred of O,
+
+1000 nos of O, = | thousand of O,
+Similarly, 6.023 x 10?* nos O, = 1 mole O,
+
+| mole atom contains 6.02« 10” atoms
+1 mole molecule contains 6.02 x 10° molecules
+1 mole ion contains 6.02x10" ions
+
+Therefore, the number 6.0210? is used in the case with atoms, molecules and
+ions etc. This number is called the Avogadro number.
+
+The amount of a chemical substance that contains as many as the Avogadro
+number (6.02x1077} of molecules, atoms or ions is called the mole of the
+substance. For example, 12 grams of C contains 6.02x10" number of C atoms.
+
+The expression of atomic mass of atoms and the molecular mass of molecules
+into gram unit is called one mole of a chemical substance.
+
+Therefore,
+12 grams of C = | mole C atom,
+Again, 18 grams of H,O contains 6.02x10% number of H,O molecules.
+Therefore,
+18 grams of H,O = 1 mole H,0.
+The Process of Determining the Molecular Mass of a Molecule
+
+The summation of atomic masses of all atoms that constitute a molecule denotes
+the molecular mass of the molecule. Cl, molecule, for example, has two Cl
+
+atoms.
+
+Therefore, the molecular mass of Cl, = atomic mass of Clx 2 =2 x35.5=7]
+
+One mole Cl, =71 g Cl.
+112 Chemistry
+
+A NaCl molecule has ] Na atom and 1 Cl atom. Therefore, the molecular mass
+of NaCl = atomic mass of Na + atomic mass of Cl = 23 + 35.5 = 58.5
+
+One mole of NaC] = 58.5 p NaCl
+
+CuSO,.5H,O contains 01 Cu, 01 $8, 09 O and 10 H atoms. Therefore, the
+molecular mass of CuSO,.5H,O = atomic mass of Cu x ] + atomic mass of
+
+S 1+ atomic mass of O x 9+ atomic mass of Hx 10
+=1x%63.5+1™*3249™*«16+10x1
+
+= 249.5
+A mole of CuS0,5H,0 = 249.5 g CuS0,5H,0
+
+Problem: What is the mass of | H,0 molecule?
+
+Solution: We know. 1 mole H,O = 18 g H,O = 6,023x10% no of H,O
+molecule
+
+Here, the molecular mass of 6.02x10” H,O molecules = 18 g
+
+_ 18 23
+Therefore, the mass of | H,O molecule = ae 7 2.99 x 107*"8
+
+Problem: How many H,SO, molecules are there in 1g H,SO,?
+
+Solution: We know, 1 mole H,S0, = O98 g Iso = 6.023=107 no of H,S0 A
+molecule
+
+Here, 98 ¢g H,SO, = 6.023x10 no of H,SO, molecules
+Therefore, the mass of 1g H,SO, = sozxie’ = 6.1410"! H,SO, molecules.
+
+Problem: Calculate the mole of ILO present in 5g 11,0.
+
+Solution: We know, | mole H,O = 18g H,0 = 6.023x107 no of H,0
+molecules.
+
+Here, 18 g H,O = 1 mole H,O
+
+ig H,0 == mole H,0
+
+Therefore, § g H,O =~" = 0.277 mole H,0.
+
+2025
+Concept of Mole and Chemical Counting 113
+
+[Individual Task: Determine the number of H, $ and O atoms in | g H,S0, |
+
+6.1.1 Molar Volume of Gas
+
+The volume that | mole of a gaseous substance occupies is called the molar
+volume of that gas. 0°C temperature and | atm pressure together is called the
+standard temperature and pressure or the standard condition. The volume of 1
+mole gas in this standard condition is 22.4 liter.
+
+Ii n = mole number
+
+wW = Mass in gram
+
+V = Volume in liter
+N = Number of molecules
+M = Molecular mass
+
+Problem: How many molecules are there in | liter CO, gas at standard
+temperature and pressure?
+
+Solution: | mole CO, = 44 g CO,= 6.023x10" no CO, molecules = 22.4 liter
+CO, gas at standard temperature and pressure
+
+At standard temperature and pressure 22.4 liter CO, gas contains = 6.023x 107
+no CO, molecules
+
+24
+Therefore, | liter CO; gas contains = — = 2.69 «1077 molecules
+Individual Task: Tow many FH atoms are there in 5 liter CT, gas at standard
+condition?
+
+Forma-15, Chemistry Class-9-10
+14 Chemistry
+Problem: What is the volume of 5 mole CO, gas at standard temperature and
+pressure?
+
+Solution: Here, it is given, mole n= 5, we require to find out volume V =?
+
+¥
+We know n=——
+22.4
+
+ors=——
+
+22.4
+Therefore V = 5x 23.4 = 112 liter
+
+‘Individual Task: What is the volume of 5 CO, molecules at standard condition? }
+
+Problem: What is the volume of 10 ¢ Hydrogen gas at standard condition?
+
+Solution: Here, it is given, mass w = 10 g, molecular mass of H,, M = 2. We
+require to find out volume V = ?
+
+wieiO«W
+“Ms 224
+10 ¥
+2 224
+
+Therefore V = 22.4 x 22.4 liter = 112 liter
+
+6.1.2. Mole and Molecular Formula
+
+There is a relation between mole and molecular formula. The quantity in gram
+determined when we express the molecular mass of a substance gotten from its
+molecular formula is called 1 mole of that substance. For example, molecular
+formula of water is H,O and its molecular mass is 18. Therefore 18 gram is
+called 1 gram molecular mass water or 1 mole water. It is clear here that, mole is
+also the gram molecular mass.
+
+Molecular formula provides some other information too. For example, in the
+case with H,O:
+I. H,0 is water.
+
+Zi The formula of 1 molecule water is 1,0.
+
+20235
+2025
+
+Concept of Mole and Chemical Counting
+
+115
+
+3. The formula of 1 mole water is H,O.
+
+4.1 molecule H,O contains 2 hydrogen atoms and an oxygen atom.
+
+5. 1 mole H,O molecule contains 2 mole hydrogen and | mole oxygen
+
+atoms.
+
+6, In 1 mole H,O molecule, the mass of H atom is 1x2 = 2 g and the mass
+of O atom is 16x1 =16 g. Therefore, the total mass of 1 mole H,O
+
+molecule is 2+ 16=18 g,
+
+7. In | mole HyO molecule, the number of H atoms are 6,023 x 10x 2
+= 1.20 10% and the number of O atoms are 6.023 x 107%x |=
+6.023 x10" and the number of HO molecules are 6.023 x 10”.
+
+6.1.3. Molar Solution
+
+Suppose a solute is dissolved in a solvent. At a fixed temperature, if one mole
+
+solute is dissolved in | liter solution, then that solution is called molar solution
+
+or | molar solution. If2 mole solute is dissolved in 1 mole solution, that solution
+
+is called 2 molar solution.
+
+An example can make us differentiale between solute, solvent and solution. Take
+about half a glass of water. Add some edible salt to the water and mix it with a
+spoon. You will see the salt is no more visible in the water, after a while. This
+mix of salt and water is a solution. Here water is the solvent and salt is the solute.
+
+Liquids such as water, acid, alcohol ete.
+are necessary in preparing solutions. In
+this chapter, chiefly we shall use water as
+the solvent. When water is used as solvent
+in a solution, the solution is called water
+solution.
+
+Solution = Solute + Solwent
+
+You may come across the terms Dilute
+Solution and Concentrated Solution
+frequently. 10 gram salt mixed in 250 mL
+
+concentrated
+
+dilute —7 solution
+
+solution
+
+SS
+
+Fig 6.01: Dilute and concentrated solution.
+116 Chemistry
+
+water is a solution. Again, 15 gram salt in 250 gram water is also a solution. The
+one with lesser amount of salt is a dilute solution while the other is a
+concentrated solution. Again, 10 gram salt is mixed in two glasses containing
+250 mL and 200 mL water each. The solution containing more water is a dilute
+solution while the one with less water is a concentrated solution. Similarly in the
+laboratory, smaller amounis of solute in a fixed amount of solvent creates a
+dilute solution and greater amounts of solute in the same amount of solvent
+creates a concentrated solution, Actually, there is no specific rule to determine
+which is dilute and which is a concentrated solution .
+
+The number of moles dissolved in every liter of solution at a certain temperature
+is called the molarity of the solution. If 2 mole solute is dissolved in a one liter
+solution at a fixed temperature, then the molarity of that solution is 2. When
+there is 0.5 mole solute in 1 liter solution, that is a semi-molar solution and when
+that same 1 liter solution has 0.1 mole solute, that is called a decimolar solution.
+The molarity of a decimolar solution is 0.1 while 0.5 is the molarity of a
+semimolar solution.
+
+Preparation of Solutions with Different Molarity
+
+There is necessity of preparing molar, semimolar and decimolar solutions in the
+laboratory. It can be done easily following various steps. Firstly, you need to
+select a volumetric flask. Secondly, you need to weigh the substance that you are
+interested to prepare the solution of and put it in the flask. Thirdly, you need to
+add some water and shake the flask to prepare the solution, Then, you need to fill
+water to a certain mark in the flask. There is relationship in between molarity of
+solution, volume of solution, mass and molecular mass of the solute.
+
+Mass of solute in gram unit
+molarity of solution x volume of solution in mililiter unit x molecular mass.
+
+1000
+
+Here, if we take Mass of solute in gram unit = w
+
+Molarity of solution = S
+volume of solution in mililiter unit = V
+
+£023
+2025
+
+Concept of Mole and Chemical Counting 117
+
+molecular mass of solute = M
+
+SVM
+Then w = —
+1000
+
+To solve the molarity related problem, we can use the above equation
+
+Problem: How will you prepare 0.2 molar NaCl solution in a volumetric flask
+of 250 mL?
+
+Solution: Given, a volume of solution V = 250mL, molarity of solution § = 0.2
+molar, molecular mass of NaC] = 23 + 33.5 = 38.5
+
+Therefore, | mole NaCl = 58.5 ¢
+0.2 molar NaCl sohution in | liter or 1000mL requires 58.5x 0.2 = 11.7 g
+
+LL7 «250
+
+250 mL solution requires =
+1000
+
+= 2.925 g
+
+Add 2.925 gram NaCl in a 250 mL volumetric flask. Pour 250 mLwater inside
+the flask. That will complete the preparation of 0.2 molar solution,
+
+Alternative Solution
+We know, w = a
+1000
+
+0.2 #250 *58.5
+—a 2.925
+
+Now, follow the procedure of adding the solute and solvent to complete the
+
+Therefore, w =
+
+preparation.
+
+Problem: How much Na,CO, is there in a 2 liter 0.1 molar Na,CO, solution?
+Solution: Molecular mass of Na,CO, = 23x2 + 12+ 16x3 = 106
+
+Therefore, the amount of Na,CO, necessary in a | liter 1 molar solution
+= 106g
+
+the amount of Na,CO, necessary in a | liter 0.1 molar solution = 10,6 g
+
+the amount of Na,CO, necessary in a 2 liter 0.1 molar solution = 10.6 x2g¢= 21.2 g
+118 Chemistry
+
+Alternative way
+
+SVM
+
+1000
+_ 0.1 x 2000 x 1069
+~ 1000
+w= 212g
+
+Problem: What is the molarity of the solution when there is 20 g Na,CO, in 250
+mL solution?
+
+Solution: Molecular mass of Na;CO;= 23 x 2+ 12+ 16% 3= 106
+
+1 molarity in 1 liter solution requires 106 gram
+
+106.250
+1000
+
+1 molarity in 250mL solution requires = 26.5 gram
+
+26.5 g Na;CO; in 250mL makes the molarity | molar
+
+1 g Na;CO; in 250mL makes the molarity SE molar
+
+20 g NayCO in 250mL makes the molarity ~_ = 0.75 molar
+
+Alternative Way
+
+_ SVM
+
+~ 4900
+
+§ #250 © 106
+20 = ————
+1000
+
+5S = 0.75 molar
+
+Problem: What is the volume of the solution in mililiter when 20 g
+Na,COs is dissolved in 0.75 molar Na,CQ; solution?
+
+Solution: Given here, S=0.75 molar, w= 20 g,M=23 %2+12+16%3
+= 106, V=?
+
+SVM
+We know = —
+know, w 1000
+0.75 106 a
+20 = ———— a
+
+1000
+2025
+
+Concept of Mole and Chemical Counting 119
+
+1000 «20
+
+0.75 «106 = 250mb
+
+Problem: A 250 mL solution has 20g substance dissolved in it and its molarity
+is 0.75. What is the molecular mass of the solute in the solution?
+
+Solution: Given here, w = 20 g, V=250mL, § = 0.7 molar, M=?
+
+We know,
+SVM
+w= —
+1000
+0.75 «250M
+20 = ————_
+100
+1000.20
+M= 0.75 7250 106
+
+Problem: How will you prepare 200mL semimolar Na,CQ, solution?
+Solution: V =200mL, S = 0.5 molar, M = 23x2 + 12+ 16x3 = 106
+
+We know,
+SVM
+
+1000
+
+_ 0.5 200 x 106
+
+1000 g= 1069
+
+Now, take 10.6 g Na,;CO;in a pot and pour 200mL water in it. Thus we can
+prepare the solution.
+
+Task: Find out the molarity of the solution when there is 4 g NaQH in a 100mL
+solution,
+
+Task: Find out the molarity of the solution when there is 4 2 HCl in a 100mL
+solution.
+
+120 Chemistry
+
+6.2 The Percentage Composition of Elements in Compounds
+
+The gram measurement of an element present in a 100 gram compound is called
+the percentage composition of that element. The molecular formula of a
+compound is the source to determine the percentage composition of various
+elements in the compound.
+
+Percent composition of an element in a compound
+atomic mass of element x number of atoms x 100
+
+molecular mass of compound
+
+‘0
+
+Example: The percent composition of H and Cl in HC! is shown below:
+Molecular mass of HC] = | + 35.5 = 36.5
+
+In 36.5 gram HC] the amount of H = | gram
+
+‘ 1
+In lgram HC] the amount of H = Jeg gram
+
+1 100
+
+In 100 gram HCI the amount of H = <n 2.74 gram
+
+So, the percent composition of H in HCI is 2.74%.
+Again,
+
+In 36.5 gram HCI the amount of Cl = 35.5 gram
+
+In lgram HCI the amount of Cl = as gram
+
+35.5 «100
+
+In 100 gram HC] the amount of Cl = SEE
+
+= 97,26 gram
+So, the percent composition of H in HCI is 97.26%.
+It can also be calculated that the percent composition of Cl is (100-2.74) = 97.26%,
+
+Problem: Find out the percent composition of H and O in H30.
+
+Solution: The mass of | mole H,Q0=2 + 16= 18 gram
+
+2025
+
+In 18 gram H;O0 the amount of H = 2 gram
+Concept of Mole and Chemical Counting 121
+
+In 1 gram H2O the amount of H = = gram
+
+cae = 11.11 gram
+18
+
+So, the percent composition of H in HCl is 1L.11%.
+
+In 100 gram H30 the amount of H =
+
+Again, the percent composition of O is (100-11.11) = 88.89%,
+We can determine the same percent composition applying values in the
+
+formula of percentage composition.
+
+Percent composition of an element in a compound
+atomic mass of element x number of atoms x 100
+
+molecular mass of compound
+
+Oo
+
+The molecular mass of H,SO,= (1x2 + 32x1 + 16x4)=98
+
+Here, atomic mass of H is | and the number of H atoms is 2
+
+iw2y 100 0
+
+- My = 2.04%
+
+Atomic mass of § ts 32 and the number of § atoms is |
+
+Therefore, the percent composition of H =
+
+wie 32 x1» 100
+Therefore, the percent composition of S = — = 32.65%
+Atomic mass of O is 16 and the number of O atoms is 4
+ss 16 x4 «100
+Therefore, the percent composition of O = — = 65.3%
+
+Problem: Find out the percent composition of aluminum, sulfur and
+oxygen in Al;(SOq)3
+
+Solution: The molecular mass of Al;(SOQ,)3 = 27x2 + (32x1 + 16x4) x3 =342
+
+at ‘ oo
+the percent composition of Al = i = 15.78%
+
+the percent composition of S = am = 28.07%
+the percent composition of O = aN = 56.14%
+[ Task: Find out the percent composition of Na and Cl in NaCl.
+
+Forma-16, Chemistry Class-9-10
+122 Chemistry
+6.2.1 Percent Composition and Empirical Formula
+
+We are already familiar with the term Molecular Formula as we have learned
+what it is and have applied it to determine the number of atoms of elements in a
+molecule. The idea of an empirical formula has been introduced to express the
+ratio of various atoms in a molecule. For example, there are two H atoms and
+two O atoms in hydrogen peroxide (H,O,). Therefore, the ratio of the atoms in
+this compound is 1:1. That means, the empirical formula of H,O, is HO. The
+formula that shows the ratio of the number of atoms of different elements present
+in a molecule is called the empirical formula. We can easily determine the
+empirical formula of a compound if we know the percent composition of
+elements in it and its relative atomic mass.
+
+Determining of Empirical Formula from the Percent Composition
+The steps required to determine the empirical formula from the percent
+composition are described below:
+
+Step 1: The percent composition of the elements is to be divided by its atomic
+mass.
+
+Step 2: Use the smallest quotient to divide the other quotients and then multiply
+
+these new quotients with the common nearest number to turn them into integers.
+
+Step 3: Apply these integers to the right of respective symbol of elements. That
+forms the empirical formula.
+
+Step 4: Do not write anything if the integer obtained is 1.
+
+Suppose, in a compound, the percent compositions of carbon and hydrogen are
+92.31% and 7.69% respectively.
+
+First, let’s divide the percent compositions with their atomic masses.
+
+= 2 +6
+12
+H= iy =7.69
+
+Now divide the quotients with the smallest of quotients:
+
+20235
+2025
+
+Concept of Mole and Chemical Counting 123
+
+_ 7.69
+H= 769 |
+
+Now write these values alongside the symbols of the elements and that gives you
+
+the empirical formula. Thus, the empirical formula of this compound is C,H, =
+
+CH,
+
+Problem: The percent composition of elements in a compound are given as
+H=2.04%, S = 32.65% and O= 65.30%. Determine the empirical formula of the
+compound.
+
+Solution: First, we'll divide the percent composition of the elements by their
+
+respective atomic masses: 5%
+
+n= 2% = 204
+1
+ee A
+32
+65.30
+
+O = —— = 4,08
+14
+Now, we'll divide the quotients by the small quotient above:
+
+2.04 —
+
+Zz
+
+Now, we’ ll write the empirical formula of the compound: H,S,O0,= H,SO,
+
+Problem: There is hydrogen and oxygen in a compound whose percent
+compositions are 11.11% and 88.89% respectively. What is its empirical
+formula?
+
+Solution: First, we'll divide the percent composition of the elements by their
+respective atomic masses:
+H=- 111
+
+ov Be = 5.65
+16
+124 Chemistry
+
+Now, we'll divide the quotients by the small quotient above:
+
+H = 5.55 =
+5.55
+O= mon a
+
+Now, we'll write the empirical formula of the compound: H,O, = H,O
+
+An experiment showed that a compound consists of 3 gram carbon atom
+and § gram oxygen atom. Determine the empirical formula of the
+compound.
+
+6.2.2: Determining the Molecular Formula of a Compound from Percent
+Composition
+
+If we want to determine the molecular formula of a compound from its percent
+composition, we need to determine the empirical formula first. [f the total mass
+of the empirical formula of that compound is equal to its molecular mass then
+the empirical formula itself is also the molecular formula. But when the
+empirical formula and molecular mass of the compound varies from each other,
+then we need to find out how many times greater the molecular mass is from the
+empirical formula.
+
+If molecular mass is n times greater than the empirical formula, then
+
+Molecular Formula = (Empirical Formula),
+
+Molecular Mass of Compound
+Mass of Empirical Formula
+
+Suppose, percent composition of a compound is C = 92.31%, H = 7.69%. The
+molecular mass of the compound is 78. Determine its molecular formula.
+
+Here, n =
+
+Let’s divide the percent composition of elements with their respective atomic
+
+masses: _ 92.31
+
+12
+
+H-= = 7.69
+
+Cc
+
+= 7.69
+
+£023
+2025
+
+Concept of Mole and Chemical Counting 125
+
+Now, we'll divide the quotients by the small quotient above:
+
+_ 769 _
+~~ 769
+H=8=1
+7.69
+So, the empirical formula of the compound: C,H, =CH
+
+Since the empirical formula is CH, the molecular formula will be (CH), =
+C,H,
+
+The mass of empirical formula of the compound stands = 12«1 + 1x1 = 13 and
+its molecular mass = 78
+
+molecular mass of compound — 78
+
+Therefore n= - —=
+mass of empirical formula 13
+
+Thus, the molecular formula of the compound is CsH¢
+
+Determining Molecular Formula from Empirical Formula
+
+The molecular formula of a compound can be the base to determine Its
+empirical formula. Suppose, we need to find the empirical formula of glucose
+(CgH)20¢).
+
+A glucose (CgH):0,) molecule consists of 06 C atoms, 12 H atoms and 06 O
+atoms.
+
+The ratio of atoms C:H: O=6:12:6=1:2:1
+
+Therefore, the empirical formula of glucose is C}H;0, = CH,0
+
+Sometimes, the empirical formula and molecular formula are similar, For
+example, the molecular formula of water is HO, its empirical formula is H;0
+too. Both the formulas for sulfuric acid is H,504.
+
+Usually, the compounds, all the atoms of which can be divided by a certain
+number, have different molecular and empirical formulas. The molecular
+formula of benzene is C oH: Since the number of atoms here are divisible by 6,
+therefore, its empirical formula will be C,H, = CH. Similarly, the molecular
+
+formula of ethene is Cj * Therefore, its empirical formula is C iH, =C Fe
+126 Chenustry
+
+6.3 Chemical Reactions and Chemical Equations
+
+Chemical Reactions
+
+The change which causes a substance to get a new set of properties giving up its
+own properties and features is called a the chemical change, The process that
+brings the change is called a chemical reaction. Chemical equation is the short
+expression of a chemical process by using symbols, formula and sign.
+
+The substances that are used to begin a chemical reaction are called reactants.
+The substance or substances with new properties that are formed at the end of the
+reaction are called products.
+
+There are some rules observed to write chemical equations in order to express
+chemical reactions. The rules are:
+
+1, In a chemical equation, the reactants are written on the left side and the
+products are written on the right side: an equal (=) sign or an arrow (— ) mark is
+placed in the middle.
+
+2. The reactants and products are written by means of their symbols and
+formulas. If there are more than one reactants and products, they are written with
+plus sign.
+
+3. The number of atoms of different elements on the left side and the number of
+atoms of the same elements on the right side need to be equalized. This is called
+
+balancing of the chemical equation.
+2H, 4 0;> 2H30
+
+2H4 + O2= 2H,0
+
+4.Sometimes reactions are not balanced in the equations. In such cases, the
+arrow mark is used instead of the equal sign.
+
+Hy + Oz —_*+ H,0
+
+5. Sometimes, the physical states of both reactants and products are also
+mentioned in an equation. It is written on the right side of the element or
+compound in first brackets ( ). If the physical state of the substance is a solid, we
+write (s), if the state is liquid, we write (1), if gaseous, we write (g). When the
+
+2025
+2025
+
+Concept of Mole and Chemical Counting 127
+
+substance is in the form of an aqueous solution, we write (aq). In the above
+reaction, the reactants are gases and the product is liquid water. So we write:
+
+2H,(g) + O,(g) ——* 2H,0(1)
+The main objective of a chemical equation is to express which elements have
+
+participated in the reaction to form which product. That is why, it is not always
+necessary to balance a chemical equation.
+
+6. However, if an equation is to show how much heat has been produced or
+absorbed in a reaction, it has to be balanced and the physical states of reactants
+and products are to be written.
+
+Solid substance carbon reacts with oxygen gas and produces carbon dioxide
+(CO,) gas. The equation will be as shown below:
+
+cls) + Og) | —\—. CO,(g)
+
+Solid calcium carbonate reacts with aqueous solution of hydrochloric acid to
+produce calcium chloride, gaseous carbon di oxide and liquid water.
+
+CacO.(s) + HClaq) MM Cathlaq) + CO. (9) + H,0())
+
+ealcium carbonate hydrochloric acid calcium chloride carbon dioxide
+water
+
+Some reactions are there that require heat to be applied. The heat is expressed
+with a delta (A) sign above the arrow mark. For example, if heat is applied to
+solid magnesium nitrate, it produces magnesium oxide, nitrogen dioxide gas and
+oxygen gas.
+
+2Mg(NOs).(s) —* _,. 2MgO(s) + 4NO,(g) + 0.{z)
+
+6.3.1 Balancing Chemical Equations
+Chemical reactions are briefly expressed through chemical equations. Though
+
+reactants and products are different substances, they are composed of the same
+elements. That is why the conservation of mass rule is followed, When both the
+left and right sides of an equation has the same number of atoms of the same
+elements, we call that a balanced equation. See the example below:
+
+Mg + HCl » Mgcl+ Hy
+128 Chemistry
+
+It is true that we get magnesium chloride and hydrogen when magnesium and
+hydrochloric acid react; therefore, the reaction is okay. However, the equation is
+not balanced as the number of hydrogen and chlorine atoms on both sides are not
+equal.
+
+The Process of Balancing Equations
+
+To make the number of atoms of different elements equal. the formula of
+reactants and preducts are multiplied by suitable numbers (2, 3, 4.......). There
+is no specific rule to balance equations, but some strategies are followed in this
+regard. They are:
+
+1. The equation is written using the correct formula of reactants and products.
+
+2. If the reactants and products are compound substances, that is, if the atoms of
+more than one element are present in the formula, balance the equation,
+multiplying the reactants or products or both with the required numbers.
+
+3. First the number of atoms present in the molecules of compound substances
+are balanced, Then come the number of atoms of elements.
+
+4. When the number of atoms of each and every element present in the reaction
+on both the sides are equal, then the balancing of the equation is done.
+
+Let us examine some examples in this regard.
+Example 1
+Mg + HCl ————* Megcl,+ H;
+
+In the above reaction, the number of Cl atom in the compound HCI on the left is
+one while in the compound MgCl, there are two Cl atoms. It is understood that
+the number of Cl on both sides are not equal. The same way, on the lefi, there is
+one H atom while on the right, there are two H atoms. H atoms are also not
+balanced. Mg atom on both sides are equal as there is only one on each side.
+
+First, let us balance the Cl atom. For this, letus multiply HCI on the left side with
+2:
+
+2025
+Concept of Mole and Chemical Counting 129
+
+Mg + 2HC] ———> MgCl, + H,
+Now, a brief check will tell us that all atoms of various elements present on both
+the sides of the equation are equal. Therefore, the balancing of the equation is
+done. When the balancing of the equation is done, it can be written with equal
+(=) sign too.
+Mg + 2HCI = MgCl, + H,
+
+Example 2
+
+Na,CO,+ HC] ———— Nacl + H,0 + co,
+This is not a balanced equation as the left side has two Na while the right has
+one. Therefore, we multiply NaCl with 2:
+
+Na,CO, + Hcl eO-_? 2Nacl + H;0 + CO;
+
+Still it is not balanced, Now the right has two Cl while the left has one Cl.
+Multiply HCI on the left with 2:
+
+Na,CO, + 2HC] ———» 2NaCl + H,0 + CO,
+
+Now, number of atoms of every element on both sides are equal.
+
+Na,CO, + ZHC! = 2Nacl+ H,O + CO,
+
+Example 3
+Aluminum oxide reacts with hydrochloric acid and produces aluminum chloride
+
+and water.
+
+To strike a balance of Al on both sides, let us multiply AICI, with 2
+Al;O; a Hcl nl 2ANCl, + H,0
+
+To balance the number of Cl, multiply HCI on the left with 6:
+
+Al,0;+4 6Hcl ———* 2Alcl, + H,0
+
+Forma-17, Chemistry Class-9-10
+130 Chemistry
+
+Still balance is lacking as the number of O on the left is 3 while on the right is 1.
+There is a difference between the numbers of H too. So, let us multiply H,O with
+3:
+
+Al,O,+ 6HC] ———» 2aIcl, + 3H,0
+
+Now, there is balance,
+Al,0,+ 6HC] = 2AICL, + 3H,0
+
+6.3.2 Mole and Chemical Equation
+
+Certain amounts of a reactant reacts with a certain amount of another reactant
+and produces a certain amount of product or products. The branch of chemistry
+that deals with measurements of products from amounts of reactants and
+measurements of reactants from amounts of products is called Stoichiometry.
+The information that can be gathered regarding mole from a chemical equation
+is the Stoichiometry of that reaction.
+
+Analyzing the Stoichiometry, we can tell how many reactants reacted to produce
+how many products, how many moles of reactants formed how many moles of
+products, how many grams of reactants participated in the reaction to produce
+how many grams of products.
+
+2Mg(s) + fg) -— 2MgO(s)
+Magnesium Oxygen Magnesium Oxide
+
+According to stoichiometry, we can write
+
+2Mg(s) + 0,(g) ———* 32Mg0(s)
+2 mole Mg atom | mole O; molecule 2 mole MgQ molecule
+33
+2x6.02310" no of 6,023x10" no of 2x6.023x10" no of MgO
+Mg atom QO, molecule molecule
+2x24=48 g lx 32=32¢2 2x40 =80¢
+
+20235
+2025
+
+Concept of Mole and Chemical Counting 131
+
+These accounts presented below a balanced equation of a chemical reaction are
+called tts Stoichiometry. When both reactants and products are gaseous
+substances, in the Stoichiometry, under standard conditions, 1 mole gaseous
+substance has the volume of 22.4 liter.
+
+Problem: How much oxygen is necessary for 5 gram magnesium to react and
+produce magnesium oxide completely?
+
+Solution: Magnesium reacts with oxygen and produces magnesium oxide. The
+balanced equation of this reaction along with its Stoichiometry is shown above.
+Accordingly with this Stoichiometry:
+
+48 gram magnesium reacts with 32 gram oxygen
+
+: 4, 1"32
+| gram magnesium reacts with _ gtam oxygen
+
+—— = 3.33 gram oxygen
+
+Problem: How many grams of magnesium oxide will be produced if we put
+the necessary amount of oxygen with 2 gram magnesium metal?
+
+Solution: According to the Stoichiometry of the reaction:
+48 gram Mg metal produces “ gram magnesium oxide
+
+| gram Mg metal produces Se gram magnesium oxide
+
+2 gram Mg metal produces st = 3.33 gram magnesium oxide
+
+Problem: How much oxygen is necessary alongside the required amount of
+magnesium metal to produce 10 gram magnesium oxide?
+
+Solution: According to the Stoichiometry of the reaction:
+
+80 gram magnesium oxide is produced from 32 pram oxygen
+
+| gram magnesium oxide is produced from —— 7 gram oxygen
+132 Chemistry
+
+32 x10
+80
+
+10 gram magnesium oxide is produced from = 4 gram oxygen
+
+Problem: How many NH, molecules will be produced from 5 N, molecules?
+
+Solution:
+Nig) + 3 H,lg) ————* 2NH,(g)
+6.023%10" noof — 3x6,023x10?? no 2x6,023x10" no of
+molecules of molecules
+
+molecules
+
+From the equation:
+
+6.023x10" no of molecules of N; produces 2x6,023x10" no of
+molecules of NH;
+
+2*6.023 «1077
+
+ee 2 no of molecules of
+a! x
+
+1 no of molecules of Nz produces
+
+NH
+So, 5 no of molecules of Nz produces 2 x 5 = 10 no of molecules of NH;
+
+Task: How many moles of O, is necessary to produce 6 moles of water?
+
+Task: How much NH, in liter will be formed out of 4 liter N, at standard
+temperature and pressure? Here, both reactants and products are gaseous.
+
+6.4 Limiting Reactant
+
+If there is more than one reactant in a chemical reaction, itis not always possible
+to supply all the reactants in the required amounts when supplied after weighing.
+As a result, some reactants complete the reaction and none of it remains at the
+end while another reactant was also there in the reaction but some residue of it
+remains at the end. The reactant that finished itself during the reaction is called
+the limiting reactant. In a chemical reaction, the limiting reactant is determined
+by its amount. The amount of a limiting reactant will tell us how much of which
+
+ot
+=
+a
+2025
+
+Concept of Mole and Chemical Counting 133
+
+reactant wil! react in the reaction, how much residue will be left and how much
+of which product will be produced.
+
+Problem: 4 oxygen molecules are put into 4 atoms of magnesium metal. Which
+
+is the limiting reactant here?
+2Mg + O, —<—<—<$<—<— 2Mg0
+
+2x6.023x10" no of atoms 6.023x10" no of molecules 2x6.023x10” no of molecules
+
+Solution: The above equation tells us that, 1 O, molecule is necessary to react
+with 2 metallic atoms of Mg. So, 2 O, molecules are necessary to complete the
+reaction with the given 4 Mg atoms. That means, (4-2) = 2 molecules of oxygen
+will be left over when all the given magnesium atoms will finish themselves in
+the reaction. Here the magnesium atoms do not remain anymore at the end of the
+reaction. Therefore, the magnesium is the limiting reactant in this reaction.
+
+What would have happened if 30 molecules of oxygen were mixed with 70
+aloms of magnesium metal?
+
+Since one O, molecule reacts with 2 Mg atoms, 70 Mg atoms would require
+(70+2)=35 O, molecules to finish themselves in the reaction. But the given
+number of O, is only 30. Therefore, oxygen will finish itself in the reaction and
+it is the limiting reactant here.
+
+134 Chemistry
+
+Problem: 75 g chlorine gas is mixed with 5 g hydrogen gas. Which is the
+limiting reactant here? How much of which reactant will be left over at the end
+of the reaction?
+
+H, cl; os 2HCl
+
+2 gram 2x35,5g=71 gram 2 x 36.5g = 73 gram
+
+Solution: The equation of the reaction tells:
+
+2 gram hydrogen gas needs 71 gram chlorine in the reaction
+
+So, 5 gram hydrogen gas needs in the reaction “= 177.5 gram
+
+chlorine
+
+Since only 75 gram chlorine is given for the reaction, so Cl, will finish itself
+earlier and it is the limiting reactant.
+
+[ Task: Find out how rouch H, is left over in the above reaction. ]
+
+6.5 Calculation of the Percentage of Yield
+
+The reactants used in chemical reactions are not always found as 100% pure.The
+purest chemical substances / reactants are called Analar or Analar grade
+substance. Analar substances are 99% pure. The impure substances are purified
+through crystallization, distillation, fractional distillation, chromatography etc
+processes which you will learn about in higher classes.
+
+Many a times, one or more purification process fails to yield 100% pure
+
+products. When the reactant is not 100% pure, the reaction does not yield the
+amount of product that was calculated from the amount of limiting reactant.
+
+2025
+2025
+
+Concept of Mole and Chemical Counting 135
+
+The amount of product from a chemical reaction, in percentage, can be
+determined following the formula below:
+
+Amount of Product Obtained from Reaction * 100
+Calculated Amount of Product from Reaction
+
+Percentage of yield =
+
+Problem: 2 gram metallic magnesium reacts with the necessary amount of
+oxygen to yield 3.25 gram magnesium oxide. What is the percentage of the
+yield?
+
+2Ma(s) + 0.({g) ——> _ 1Mg0(s)
+
+2x 24=48 g 1x32=32g 2x 40=80¢8
+Solution: According to the equation:
+48 gram magnesium yields 80 gram MgO
+So, 2 gram magnesium yields 235°. = 3.33 gram MgO
+
+The actual yield after the reaction is 3.25 gram magnesium oxide.
+
+Therefore, percentage of the yield = —_— = 97.6%
+
+Task; When heat is applied to 80 grams of CaCO,, it yields 39 grams of CaO,
+Determine the percentage of the yield. The atomic mass of Ca, C and O are
+40, 12 and 16 respectively.
+
+136 Chemistry
+
+Name of Experiment: Preparation of 0.1 molar sodium carbonate
+solution in a 250mL volumetric flask.
+
+Principle : Sodium carbonate (Na,CO,) is a primary standard substance
+because it is found in pure and dry state, it can be directly weighed on a
+balance, its molar solution is long lasting. To prepare 0.1 molar sodium
+carbonate solution in a volumetric flask, the following calculation is
+necessary:
+
+Here, V = 250mL, § = 0.1 molar, M = 23x2 + 12+ 16x3 = 106, w=?
+
+_ AVM
+
+1000
+
+_ 0.1x250%106
+
+am
+1000 gr
+
+w= 2.65 gram
+
+If we weigh and put 2.65 grams of Na,CO, inside a volumetric flask and fill
+the flask with 250mL water, the 0.1 molar sodium carbonate solution will be
+prepared. However, this molar solution preparation is very tough as to
+weigh 2.65 gram sodium carbonate is really tough. Therefore, the solution
+is made at a nearer molarity.
+
+Necessary Instruments: 250mL volumetric flask, funnel, weighing bottle,
+chemical balance, wash bottle.
+
+Chemicals: Pure sodium carbonate, water
+Procedure
+
+1. A funnel is inserted in the mouth of a clean 250mL volumetric flask.
+
+2. A dry weighing bottle is weighed on the chemical balance. r.
+
+2025
+Concept of Mole and Chemical Counting 137
+
+hy
+
+3, Now, pour some sodium carbonate into the weighing bottle in a way so
+that the total weight of the botile is 2.65gram higher than the previous
+weight.
+
+4, Pour the sodium carbonate from the weighing bottle inside the
+volumetric flask through the funnel.
+
+5. Pour the distilled water slowly from the wash bottle inside the volumetric
+flask. After pouring half the water, fix a cork on the mouth of the
+volumetric flask and shake it so that the sodium carbonate is dissolved fully
+into the water. Now, add the rest of the water to fill up 250 mL.
+
+Funnel Wash bottle
+
+250 mL: iil
+Volumetric “Ty
+flask
+2.652
+Na,CO,
+0.1M NazCOs solution
+Fig 6.03: Preparation of 0.1 molar sodium carborate solution.
+Caution
+
+1. Take dry and pure sodium carbonate
+2. Ensure the weighing bottle is dry
+3. Add distilled water only
+
+Task for Learners: According to your data and statistics from the above
+
+experiment, prepare a 0.1 molar sodium carbonate solution in a 250mL
+volumetric flask.
+
+XN P
+
+Forma-18, Chemistry Class-9-10
+
+( peiseninttin of percent composition of lattice water of nyavatea \
+copper sulphate.
+
+Principle: Blue vitriol’s chemical name is pentahydrate copper sulphate. Its
+formula is CuSO,.5H,O. Blue vitriol consists of copper sulphate and 5
+molecules of water. It is a blue colored crystal lattice. There are five moles
+water in it. If heat is applied, that water vaporizes and its colour turns into
+white. These five moles of water are called crystal water.
+
+CuSO, .5H,0 ——— CuSO, + 5H,0
+Ingredients: Copper sulphate, desiccators, chemical balance, ceramic
+bowl, tripod stand, net, Bunsen burner/spirit lamp
+
+Procedure
+
+1. Weigh the porcelain bowl on Blue vitriol
+the balance. Suppose, the weight
+is a gram. Now take some copper
+sulphate in the bowl and weigh it
+again. Let’s say, the weight now is
+b gram. Therefore, the mass of
+copper sulphate is (b-a) gram.
+
+2. Fix the net on a tripod stand and
+put the bowl containing copper
+sulphate on it. Heat it with a
+Bunsen burner or spirit lamp.
+
+Porcelain bowl
+
+Net
+
+Bunsen burner
+
+Tripod stand
+
+Fig 6.04; Determination of lattice water in
+Blue vitriol.
+
+Ke wf
+
+20235
+2025
+
+Concept of Mole and Chemical Counting 139
+
+4 y
+
+3. Keep marking the copper sulphate as heat is applied. The blue colour will
+
+gradually turn white. Since the water in the blue vitriol is vaporizing, it is
+transforming its colour.
+
+4, When the transformation of colour is complete, stop the heating.
+
+5. Swifily take the bowl to the desiccators and weigh it again after cooling.
+If it isn’t done fast, the copper sulphate will again absorb water and turn
+blue. Let’s assume, this new weight is c.
+
+That mean, after the vaporization of water, copper sulphate’s mass is (c-a)
+gram. The mass of vaporized water from the blue vitriol is (b-a) — (e-a)
+gram. = (b-c) gram
+
+Calculation
+
+Mass of removed water from (b-a) gram copper sulphate = (b-c) gram
+
+So, mass of removed water from 100 gram copper sulphate = = x 100 gram
+
+(6-}
+{bea}
+
+The percent composition of crystallized water in copper sulphate is * 100 %
+
+Caution
+
+The heating has to be slow and careful so that the heat reaches all the spots.
+After the removal of water, the weighing has to be quick.
+
+Task for Learners: Carry out a task to determine the percent composition
+of water in copper sulphate.
+
+Mig si
+
+140 Chemistry
+
+1, What is the volume of 2 grams of hydrogen at standard conditions?
+
+a. 2.24 liter b. 11.2 liter
+
+c. 22.4 liter d. 44.8 liter
+2. Which of the following is the formula of calcium phosphate?
+
+a. CaPO, b. Ca(PO,),
+c. Ca,(PO,); d. Caz(PO4),
+
+Answer questions 3 and 4 in the light of the following stem:
+
+5 gram hydrogen gas is passed on to 75 gram chlorine gas.
+
+3. How many chlorine atoms are used in the reaction of the stem?
+a, 1.27«10% b. 2.54x10"
+c. 6,02x107 d. 6.36%10”
+
+4, Which of the following is collected as remains in the reaction?
+
+a. 1.44 mole H, b. 1.44 mole Cl,
+¢. 2.89 mole H, d. 2,89 mole Cl,
+
+5. What is the volume of 17 grams of ammonia gas al standard conditions?
+
+a, 24,2 liter b, 22.4 liter
+c. 12.2 liter d. 11.4 liter
+
+2023
+2025
+
+Concept of Mole and Chemical Counting 141
+
+6. How many molecules are there in 10 grams of CaCO,?
+
+a. 6.02%1073 b. 6.02«107!
+c. 6.02%] 02 d. 2.58x 10"
+
+L.
+
+a. What is a mole?
+b. What do you understand by empirical
+
+formula and molecular formula?
+
+c. Determine the composition of the salt that
+can be formed by combining the solutions ey
+
+shown in the stem.
+
+od
+100 mL 100 mL
+
+d. Will the molarity of the shown solutions
+be the same? Give a mathematical
+explanation.
+
+2. 44 2 carbon dioxide and 5g calcium oxide are mixed to prepare 10 2
+CaCO,.The expected yield is not met after the reaction is over.
+
+a, What is the chemical equation?
+b, Explain the molar volume of carbon dioxide.
+c. Determine how many moles of carbon dioxide were used in the reaction.
+
+d. Give a logical explanation of the lesser yield than expected in the reaction of
+the stem.

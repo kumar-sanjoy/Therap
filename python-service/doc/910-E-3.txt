@@ -1,0 +1,1334 @@
+2025
+
+Chapter Three
+Utility, Demand, Supply and Equilibrium
+In this chapter, utility, consumption, total utility, and marginal utility, law of
+
+diminishing marginal utility, demand, supply, the market demand curve. market
+supply curve and selection of the equilibrium price have been discussed.
+
+After studying this chapter, we will be able to-
+
+* illustrate the concept of utility;
+
+* determine the relation between utility, consumption and consumers;
+* prove that the total utility is the sum of marginal utilities;
+
+* illustrate the law of diminishing marginal utility with a picture:
+
+* elaborate the relation between price and the quantity of demand;
+
+e elaborate the relation between price and the quantity of supply and
+
+e determine the equilibrium price and quantity.
+36 Economics
+
+3.1 Utility, Consumption and Consumer
+
+A person uses goods and services in accordance with their importance to fulfill
+his unlimited wants. The goods and services that have the power to fulfill human
+wants is called utility, The definitions of utility, consumption and consumer are
+given below:
+
+Utility: A person needs many goods and materials for their survival. Many other
+things are necessary along with food and clothes. Without these, we cannot live
+a normal life. For example, food, clothes, books, services of the doctor, ete.
+satisfy the demands of human beings. Therefore, in economics, the capability of
+any goods that satisfies. People’s need is termed as utility, Utility is a
+psychological idea.
+
+Consumption: Every day we use rice, fish, pen, clock, cloths or we consume
+these things. Here, consumption does not, however, only stand for finishing
+ihese off. Because, we cannot actually destroy or finish anything. By using the
+goods we can just get their utility. We have to keep in mind that if the utility of
+any goods is destroyed in any way other than satisfying a need, it will not be
+considered as consumption. That is, in economics, to finish the utility of any
+goods for the purpose of satisfying a want or need, is known as consumption.
+
+Consumer: The person who consumes is called a consumer. That is, other than
+the freely accessible goods, the person who is prepared to spend money to
+consume any other goods is known as the consumer.
+
+From the above definition, it is realised utility, consumption and consumer are
+
+strongly related. The consumers get utility by consuming the goods and using
+the services.
+
+Task: Mention two differences between consumption and the consumer,
+
+3.2 Total Utility and Marginal Utility
+Total Utility
+
+Going to the market, you want to buy more than one mango to eat. The money
+that you spend to buy the first mango is not the money that you spend to buy the
+
+2023
+i
+a
+™
+
+Utility, Demand, Supply and Equilibrium 37
+
+second or the third or fourth mango. Because, after consuming the first mango,
+your wish to eat mango is satisfied to quite an extent. Your wish to eat a mango
+for the second time is lessened. In the stage of the third or fourth mango, it will
+be even lesser. It might even be possible that you will not buy any more
+mangoes. Because, you do not have the wish to eat mangoes any longer, in other
+words, the utility of extra mangoes to you is zero. To buy mangoes, you have to
+spend money. Let us assume that you buy the first mango for 5 tk, the second for
+4 tk, the third for 3 tk and the fourth for 2 tk, Thus, you buy 4 mangoes for
+(5+4+3+2)=tk 14, If money is taken as the measure of utility, the total utility of
+four mangoes is 14, Therefore, the sum of the satisfaction from different units of
+goods derived at a particular time is known as the total utility. Since the extra
+mangoes gradually give lesser satisfaction, therefore, with the increment of
+consumption, the total utility increases at a decreasing rate.
+
+Marginal Utility
+
+Suppose, you have bought 3 mangoes. Now you buy another mango. This fourth
+extra mango is the marginal mango. From this marginal mango, the satisfaction
+or the utiliny you get is the marginal utility. If you have spent tk 2 to buy this
+mango, then the marginal utility will be tk 2. That is, the utility one can get by
+consuming one extra unit of goods or service is marginal utility.
+
+Presentation of Total Utility and Marginal Utility by a List
+
+Unit of Goods (mangoes) | Total Utility (in taka) Marginal Utility (in taka)
+Ist 5 5
+2nd 54+4=9 4
+3rd 94+3=12 3
+4th 12+2=14 2
+Sth l441=15 1
+6th 154+0=15 0
+Tth 15-1=14 -1
+
+Tt is seen in the list above that when the price of the lst mango is tk 5, the
+marginal utility is tk 5. Buying the 2nd mango makes the total cost tk 9. The total
+38 Economics
+
+utility derived from 2 mangoes ts tk 9. And the marginal utility derived from the
+2nd mango is 4. This way, utility derived from 4 mangoes is 14. The marginal
+utility of the 4th mango is 2. And thus the marginal utility, chronologically is, 5,
+4,3, 2. 1,0, and -1 tk. And you will not buy the 6th mango since it has no utility
+to you. Your total utility will decrease at the time of buying 7th mango as it has
+negative marginal utility.
+
+From the above diagrams it is seen, the total utility is the summation of the unit
+of consumed goods and additional one unit utility is marginal utility. According
+to the increasing of consumed goods, the total utility is decreasing slowly and
+also the marginal utility decreases slowly. When the total utility becomes the
+highest, the marginal utility becomes zero. When the total utility decreases, the
+marginal utility becomes negative.
+
+| Task: Write down four differences between total utility and marginal utility. |
+
+3.3 The Law of Diminishing Marginal Utility
+
+From the example above, it is observed that if you eat the same quantity of
+mangoes repeatedly, your interest towards mangoes diminishes, and so does the
+utility. Since the utility falls, you want to pay less for one extra unit of mango.
+The marginal utility of the 6th mango is O and the marginal utility of the 7th
+mango is negative. That means to consume the same product over and over again
+causes the marginal utility to diminish accordingly. This tendency of the
+marginal utility to fall due to the increase in the unit of consumption is known as
+the diminishing law of marginal utility. The diminishing law of marginal utility
+maintains some conditions. These are: a) the consumer should have general
+capacity of judgement; b) the consumer can measure the utility of the goods in
+terms of money if they wish to; c) the price of the goods is to be equal to the
+marginal utility; d) there will be no change in the income, taste and liking of the
+
+consumer while consuming the goods; ¢) a particular time is considerable.
+
+Illustration of the Law of Diminishing Marginal Utility by a Diagram
+
+“4
+S
+|
+
+It is possible to show the diminishing law of marginal utility by a diagram. In the
+picture below, the horizontal axis (OX) will show the quantity of mangoes
+2025
+
+Utility, Demand, Supply and Equilibrium 39
+
+and the vertical axis (OY) will show the marginal utility and the price.
+
+Diagram:
+¥
+5M
+#5 aN ay
+2 N
+B b
+-
+E> fs
+3 2 4,
+r=) x
+2! :
+NG £
+O badb Deda de 6 x
+Quantity of mange (unit) a
+Nu
+Diminishing marginal utility curve
+
+In the diagram, the amount of mangoes in the horizontal axis and the marginal
+utility and price in the vertical axis are indicated.
+
+In the picture, you get aal quantity of utility or marginal utility from the 1st
+mango and you pay tk 5 for the lst mango. With the increase of consumption,
+from the 2nd, 3rd, 4th and 5th mango, you gain bb1, ccl, ddl and ee] quantities
+of marginal utility respectively. That means, with the increasing consumption,
+you would agree to pay tk 4 for the 2nd mango, tk 3 for the 3rd, tk 2 for the 4th,
+ik 1 for the 5th. The marginal utility of the 6th mango is zero and the marginal
+utility of the 7th is negative, i.e. tk -1.00. The point f on the horizontal axis
+shows the zero marginal utility. And the marginal utihty of the 7ih mango is
+negative (tk-1) which is shown by ggl. Here, ee,<dd,<cc,<bb,<aa,. From
+this we can understand that with the increasing consumption of mangoes the
+utility of the extra units gradually decreases for you. Now we can get the MU
+(Marginal Utility) line by connecting the points, al, bl, cl, dl, el, fl, and g1.
+The line is sloping on the right hand side. Here we can observe that with the
+increase in the quantity of consumption, the marginal utility is gradually
+decreasing. And that is why the marginal utility line is sloping downwards.
+40 Economics
+
+3.4 Demand
+
+We, in our daily life, want to get many things. A car, a beautiful house, good
+foods, etc. But all our wants are not demands. Three conditions are to be
+fulfilled to make a demand in economics, c.g. 1. the wish to get any goods 2.
+Necessary monetary capacity to buy and 3. the wish to spend money to get that
+goods, Therefore, if a buyer has the wish to buy some goods, the capacity to buy
+it and the wish to buy it at fixed price, then it is called a demand in economics.
+
+The Law of Demand: Your mother asked your father to bring a hilsha fish from
+the market. Returning from the market, your father was annoyed and told her that
+the price of the hilsha fish was very high for him and it was not possible to buy
+it. That means, due to the rise in price, there is no demand for the hilsha fish to
+your father. Another day, your father returns home with two hilsha fish in his
+hand and said with a smiling face that today the price of the hilsha fish is low
+and that is why he bought two hilshas. So, there is a close relation between
+the demand and the price.
+
+Therefore, by the law of demand, we understand, "all else being constant or
+unchanged, at a particular time, if the price of the goods falls the quantity of
+demand rises and if the price rises, the quantity of demand falls." [price (1
+Demand 4) again price (J) Demand ())]. The other factors being constant means
+here, the taste of the buyer, habit, likings will not be changed and the income
+of the buyer and the price of the alternative goods will also remain unchanged,
+
+etc. If the other circumstances are changed. the law of demand does not become
+effective and the demand curve shifts right or left.
+
+Drawing the Demand Curve from the Demand Schedule
+
+We have seen in the law of demand that there is an inverse or négative
+relationship between price and demand. That means, when the price of the
+goods increases, quantity demanded falls, on the other hand. when the price
+falls, demand rises. This concept. when presented by a schedule, is called the
+demand schedule. Therefore, it can be said that the schedule through which the
+different quantities of demands for goods bought at different prices at a
+particular time is called the demand schedule or demand list.
+
+20125
+Utility, Demand, Supply and Equilibrium 41
+
+Demand Schedule or Demand List
+
+Price of each unit of goods (in taka) Quantity of demand (unit)
+8.00 4
+6.00 8
+4.00 12
+2.00 16
+
+In the schedule we can see that, when the price of one unit of goods ts tk 8, a
+consumer buys 4 units of the goods. When the price falls to tk 6, tk 4 and tk 2,
+the demand rises to 8 units, 12 units and 16 units respectively. The inverse
+relation between price and demand is shown in the demand schedule.
+
+From the demand schedule above, we can draw the demand curve.
+
+Demand Curve Y
+Es} So
+2 :
+26 R
+=
+8 4 5
+a N\ .
+SD
+Qo. 4. 8 12 16 5
+Quantity of Demand (Unit)
+
+In the diagram above, the horizontal axis or the OX axis shows the quantity of
+demand and the vertical axis or OY axis shows the price of the goods. When the
+price of the goods is tk 8 the quantity of demand is 4 units. If two
+perpendiculars are drawn using the price 8 tk and the quantity 4 units, they
+intersect at the point Q. Likewise, 8 units at tk 6, 12 units al tk 4 and 16 units at
+tk 2 is shown at the points R, S and T. Now, if we join the points Q, R, 8, and T,
+we will get the DD line. This DD line is the demand curve. The points on the DD
+
+Forma-6, Economics Class 9-10
+42 Economics
+
+line are indicating the different quantitics of demand at different prices of the
+goods.
+
+This way we can draw the demand curve from the demand schedule according
+to the demand law. It is worth mentioning that we have drawn here the demand
+curve of regular goods,
+
+Task: Mention three differences between the demand schedule and the demand
+curve.
+
+3.5 Drawing the Market Demand Curve
+
+A personal demand curve can be drawn from a person's demand schedule.
+Similarly, it is also possible to draw a market demand curve. The sum total of the
+personal or different demands of all the consumers at a particular price in the
+market is known to be the market demand. For the convenience of our
+understanding, we will presume that the number of the consumers at the market
+is two. A market demand curve is drawn below from the personal demand
+schedules of the two consumers.
+
+The Market Demand Schedule
+Demand of the 1st Demand of the 2nd =| = Maket demand (Q)
+| Price of the good (tk) consumer (Q,} consumer (Q,)} (Q=Q,+Q,)
+Unit of the goods (quintal} | Unit of the goods (quintal) | Unit of the goods (quintal),
+6.00 5 10 15
+4.00 10 15 25
+2,00 15 20 35
+
+The schedule above shows the demands of the Ist and the 2nd consumer at
+different prices of goods. Now it will be shown how the market demand
+schedule is prepared from the individual demand schedule of these two
+consumers.
+
+The demand curve that shows the quantities of any goods that different persons
+are prepared to buy at different prices is known as the market demand curve.
+
+2025
+2025
+
+Utility, Demand, Supply and Equilibrium 43
+
+The market demand curve can be drawn by summing up the demand curves of
+
+the Ist and the 2nd consumers side by side.
+
+Diagram:
+¥ ¥ ¥
+3
+Ely b
+Bs i 6 4 A
+tat
+= di rr +
+‘S
+ra ; =.) Ne F
+é 7 4b
+[* * 0 » 0 ie:
+o 5 if 18 30 0 § (9 48 20 Oo 5 10 18 20°28 30 35
+Quanbty demanded of Ist Quantity demanded of and Quantity of market
+consumer (Quintal) consumer (Quintal) demand (Quintal)
+
+Individaal demand curve for Ist and 2nd consumer and market demand curve.
+
+In the diagrams above, the personal demand curves of the Ist and the 2nd
+consumers are D1D] and D2D2 respectively, When the price of the goods is tk
+6, the quantities of demand of the 1st and the 2nd consumers are 5 quintals and
+10 quintals and the market demand, therefore, will be (5 quintals + 10 quintals)
+= 15 quintals, which is shown on the market demand curve by the point R. The
+price falling to tk 4 and tk 2 has resulted in the personal demands of the 1st and
+the 2nd consumer being (10 quintals + 15 quintals) = 25 quintals and (15
+quintals + 20 quintals) = 35 quintals respectively, which has been shown in the
+market demand curve by the points Sand T. Now let us join the points R, $ and T
+to draw the DD demand curve. This is known as the market demand curve. The
+market demand curve is the horizontal summation of individual demand curve.
+For this reason, the market curve is more flatter than individual demand curves.
+
+3.6 Supply
+
+When we go to the market, we will find that the retailers have displayed in their
+shops their various kinds of goods for selling. But we do not name this as supply.
+In economics, the quantity of a kind of goods that a producer is willing and
+capable to sell at a specified time and at a specific price is known as supply. It
+may be mentioned here that one kind of goods, a specified time and a specific
+price are a matter of important consideration here. Therefore, the different
+44 Economics
+
+quantities of a product that a producer is willing to sell at different prices are
+called supply in economics.
+
+The Law of Supply
+
+We buy and sell goods every now and then at the market. When will a
+producer/seller be interested to sell their product? Definitely when the price of
+the product is high at the market, only then the producer will be willing to sell
+ihe product. Suppose, when the price of potatoes is tk 15 per kg, the seller will
+sell 2 quintals of potatoes. If the price rises to tk 20 the producer will be willing
+to supply more potatoes. Let us think, the supply then will be 3 quintals. That
+is, with the rise of the price of the goods the supply of the goods also increases
+and with the fall of the price the supply decreases. Therefore, the relationship of
+price and supply is direct or positive. As the price changes, the supply also
+changes. That means, all else being constant, (e.g. factors like price and
+technology and normal time are to be considered), if the price raises, the
+corresponding quantity of supply rises and as price falls, the corresponding
+quantity of supply falls. That is, such a direct relation of supply with price is
+called law of supply. If the other circumstances are changed, the law of demand
+does not become effective and the demand/ supply curve shifts right or left.
+
+Drawing the Supply Curve from the Supply Schedule
+
+We have seen above the price of the goods rises, the quantity of supply increases
+and when the price falls, the quantity of supply also falls. This direct change of
+supply due to the change of price can be shown in a supply schedule.
+
+The price of the goods is shown mathematically on one side of the supply
+schedule and on the other, the supply.
+
+The Supply Schedule
+
+| Price of each unit of the product (in taka) Quantity of Supply (quintal)
+10.00 10
+20.00 20
+| 30.00 30
+40.00 [ 40
+
+2023
+2025
+
+Utility, Demand, Supply and Equilibrium 45
+
+It is seen in the schedule that the supply of some goods is 10 quintals when the
+price of that good is tk 10 per quintal. When the price rises to tk 20, tk 30 and tk
+40, the quantity of supply becomes 20 quintals, 30 quintals, and 40 quintals
+respectively. Thus the law of supply is reflected in the supply schedule.
+
+The Supply Curve
+
+The quantity of supply increases if the price of a product rises, and the quantity
+of supply falls if the price falls. When this direct change of supply,
+corresponding to the change of the price is shown by a curve or diagram, it is
+called the supply curve.
+
+How the supply curve is drawn from the supply schedule is shown below.
+
+In the diagram, the supply of the goods is shown in
+
+¥ the horizontal axis or the OX axis and the OY axis
+g Ss or the vertical axis indicates the price of the good.
+S i D When the price of the goods is tk 10, the quantity
+B c of supply of the goods is then LO quintal. They
+qo) hb connect at the point A. Thus, when the prices of
+8 the goods are tk 20, tk 30 and tk 40, the supplies
+a 1obs of the goods are then 20 quintals, 30 quintals and
+
+4 40 quintals respectively. They are connected at the
+
+10 20 30 40 quinal 8 points B, C and D. Now if we connect the points
+Quantity of supply A, B, C and D, we will get the SS line. This is the
+supply curve.
+
+3.7 Drawing the Market Supply Curve
+
+Ait a specified time, the different quantities of goods that a salesman supplies at
+different prices is known as the personal or individual supply. On the other
+hand, the quantity of goods that all the salesmen supply ai a specific time at
+different prices is known to be the market supply. Summing up the individual
+supply schedules of all the salesmen, the markei supply schedule can be
+prepared. Here lollows a brief and simplified market supply schedule—
+46 Economics
+
+Market Supply Schedule
+Supply of the Ist Supply of the 2nd | Market supply
+Price of the producer ($;) producer (S2) S=8)/ +83
+Goods (taka) Unit of goods (quintal) | Unit of goods (quintal) | Unit of goods (quintal)
+10.00 100 50 150
+15.00 150 75 | 225
+20.00 200 100 300
+
+In the table above, the supply of the Ist and the 2nd salesmen is shown. How the
+market supply curve with the supplied goods of the two salesmen can be drawn
+
+is shown below.
+
+x 51 ¥ §2 ¥ Ss
+G
+2 20 0
+oa
+é %
+4 15 ab 15
+ce :
+‘5 Td 10 itt)
+a
+az]
+= os 5 5
+= oe S
+o 50 10) 10) 2D * oo 4 50 75 100 By qo ano
+Quastiry sugplied Let seller (quintal) Qaantity saaplind 2nd seller (quintals Qmaarirg of marker supply tquintals
+
+Individual & market supply for Ist & 2nd sellers
+
+In the diagrams above, $181 and $282 are the individual supply curves of the Ist
+and the 2nd salespersons. When the price of the goods is tk 10 the quantities of
+supply of the Ist and the 2nd salespersons are 100 quintals and 50 quintals
+respectively, and the market supply will, therefore, be (100+50)=150 quintals.
+This is shown by the point A in the diagram. When the price rises to tk 15, the
+quantities of the individual supplies of the 1st and the 2nd salespersons will be
+150 quintals and 75 quintals and the market supply will be (1504+75)=225
+quintals. This is shown by the point B. When the price rises even more to tk 20,
+the quantities supplied by the Ist and the 2nd salespersons will be 200 and 100
+quintals. The quantity of the total supply will be (200+100)—300 quintals, which
+is indicated by the pomt C in the diagram. Now we can draw the line SS by
+joining the points A, B and C, This is known as the market supply curve. The
+market supply curve is the summation of horizontal individual supply curve. For
+
+2025
+2025
+
+Utility, Demand, Supply and Equilibrium 47
+
+this reason, the market supply curve is more flatter than imdividual supply
+Curves.
+
+Task: Refer to 3 differences between supply schedule and supply curve.
+
+3.8 Determining Equilibrium Price and Quantity
+
+An ordinary picture of the market is the bargain between the buyer and the seller
+for the price of the goods. The buyer tries to buy the goods at the lowest possible
+price. On the other hand, the seller tries to sell them at the highest possible price.
+Through this bargain between the buyer and the seller, ultimately the goods are
+bought or sold at a price where the demand and the supply are the same. The
+price at which the demand and the supply are the same is known to be the
+equilibrium price. At the equilibrium price the quantity of the goods that is bought
+or sold is known as the equilibrium quantity,
+
+In the below, the equilibrium price and quantity of market are explamed through
+a co-ordinated demand and supply curve.
+
+Table: Determining the equilibrium price and quantity of market
+
+Price of goods (Taka) | Demand of goods (Unit) | Supply of goods (Unit)
+5 6 2
+10 4 4
+15 2 6
+
+From the above chart, when the price of the goods is Tk. 10, then the demand and
+supply of the market is same. It means the balance price is Tk. 10 and the balance
+quantity is 4 unit. We can also explain it through the help of the chart below.
+
+A
+
+D a
+NG
+
+Price of goods (taka}
+
+ny
+
+T
+
+1
+. ——
+‘i
+
+i,
+
+1
+
+| \
+
+1
+
+A
+
+i
+
+I
+a
+
+1
+
+i
+
+!
+
+!
+
+o 2 4 6 x
+Quantity of demand & supply (quintal)
+Figure: Determine equilibrium price & quantity
+48 Economics
+
+The chart indicates, when the price of the goods is Tle. 5 then its demand is 6 unit
+and supply unit is 2. For this reason, demand is greater than supply. As a result,
+the price of the goods will be increased.
+
+On the other hand, when the price of the goods is Tk. 15 and its demand is 2 unit.
+The supply unit becomes 6. In this case, supply is greater than demand and
+ultimately the price of the goods will be decreased.
+
+But when the price of the goods is Tk. 10 and the demand unit is 4 which is 4. In
+that case demand is equal to supply and the market will be stabilize which is
+called market stabilization.
+
+In the graph intersection dot E is the equilibrium dot of market demand and
+supply where the equilibrium price is Tk. 10 and the quantity of equilibrium is 4
+unit.
+
+Task: Present the diagram of determining the Equilibrium price on poster
+paper in the class.
+
+Exercise
+
+Short Questions
+1. What is utility?
+
+2. What is meant by consumption and consumer?
+
+3. What is meant by total utility and marginal utility?
+4. Define demand. What is the law of demand?
+
+5. What is the market demand curye?
+
+6. What is the law of supply?
+
+Descriptive Questions
+1. Explain the diminishing law of marginal uttlity.
+2. Describe the process of drawing a demand curve from an imaginary
+demand schedule.
+3. Draw a market demand curve from imaginary demand schedule of
+two consumers.
+4. Draw supply curve from an imaginary supply schedule.
+
+Explain the concept of determining the equilibrium price by a diagram.
+
+20125
+Dtility, Demand, Supply and Equilibrium 49
+Multiple-Choice Questions
+
+1. How many conditions are there for demand in economics?
+a. 2 b. 3
+c. 4 d. 5
+2. Which of the conditions below is compulsory for market equilibrium?
+a. the point where demand = supply b. the point where demand > supply
+c, the point where supply > demand d. the point where supply = demand
+
+Read the following passage and answer question numbers 3 and 4.
+
+Tahsin bought a guava and ate it at the school. Here, the utility schedule of his guava is
+
+given below —
+Unit of the goods Total utility (in taka) Marginal utility (in taka)
+1 5 5
+2 9 4
+3 12
+
+3. What is the marginal utility of Tahsin's 3rd guava?
+
+a, tk5 b, tk4
+
+ec. tk3 d. tk2
+4, In the behaviour of Tahsin
+
+i. anordinary situation is expressed.
+
+ii, the attraction towards the guava is unchanged.
+
+iii, the marginal utility of the guava has gradually decreased.
+Which of the following is correct?
+
+ao bi and iii
+
+¢. 1and iii d, i, ii and iii
+
+Forma-7, Economics Class 9-10
+50 Economics
+
+Creative Questions
+l, The demand schedule of the goods 'X' of person 'A' and person 'B' is given
+here —
+Price per unit of the goods The quantity of demand The quantity of demand
+
+(in taka) of person ‘A’ (quiatal) of person 'B' (quintal)
+Tk 20 5 7
+Tk 15 10 1]
+Tk 10 15 15
+
+a. What is utility?
+
+b. Elaborate the relation between total utility and marginal utility.
+
+&. Draw the demand curve of person 'A' from the demand schedule of the
+goods 'X', and explain it.
+
+d. Draw the market demand curve of the goods "X' and compare with it
+the demand curve of person 'A’.
+
+Going to market Sujan finds that the price of potatoes is tk 25 per kg. He
+wants to buy 120 kg of potatoes, but Karim wants to sell 160 kg of potatoes
+at the same price. When the price of potatoes falls to tk 20 the next day,
+Sujan buys 140 kg of potatoes and Karim sells 140 kg of potatoes.
+
+a. Whatis demand?
+
+b. Explain the law of demand.
+
+c. Draw the supply curve for the potatoes of Karim and explain it.
+
+d. Do you think that Sujan and Karim could reach at the equilibrium price
+at the market for potatoes? Give reasons for your answer.
+
+2025
+2025
+
+Chapter Four
+Production & Organisation
+
+Sharbat is one kind of produced goods. Water, lemon, sugar, etc are necessary to
+prepare sharbat. Utilizing meredients, it is possible to produce goods or to create
+utility or satisfaction, And this is done by an organisation. For production,
+ingredients like water, sugar, lemon, etc. are needed. There has to be a planning
+of how the production is to be done. Different people perform different activities
+during the production; these activities are to be distributed according to the
+qualifications and skills. Finally the produced goods have to be taken to the
+market, An organisation performs these types of work. If the organisation is not
+skilled, it is not possible to enhance production.
+
+After studying this chapter, we will be able to-
+
+ae os
+
+illustrate the idea of production;
+
+explain the relation between production and producer:
+
+describe the factors of production;
+
+discuss an organisation and its growth;
+
+explain the relation between average and marginal production;
+
+illustrate the idea of production cost;
+
+identify visible cost and invisible cost;
+
+determine the difference between personal and social costs;
+
+be interested in productive work and enterprise and
+
+present the law of diminishing marginal product with a schedule and graph.
+52 Economics
+
+4.1 Production and Producer
+
+Production basically means creating utility. The produced goods have to have an
+exchange cost. On the other hand, if utility is not produced, it is not called
+production. To create a new product or utility using the factors or the primary
+products is known to be production. For example, bread is made using flour, salt,
+water, roller, etc. Bread is produced goods. We satisfy our hunger eating bread.
+That is, utitlity has been created by making bread. We can get bread for money
+or in exchange for any other product. That is, there is an exchange cost for the
+new product, bread. If breads are produced for business purpose, these bread
+sometimes need to be taken to the market. The organization supervises all the
+activities from the collection of ingredients to taking the produced goods to the
+market place. For example, the organization supervises what materials are
+needed, where they will be brought from, who will bring them, who will prepare
+the mould by mixing the salt, flour, water. who will roll the breads, who will
+bake the breads, who will take these to the market, at what price they will be sold
+etc. [f all these things are not supervised by the organiser skillfully, the highest
+quantity of production cannot be ensured from a fixed quantity of factors or
+ingredients. One individual can be the organiser and the producer. For example
+a small/medium farmer who grows crops in his own fields is a producer and an
+organiser at the same time. But the owner of a factory who works in his own
+factory as a manager and runs his factory by the labourers is an organiser not a
+producer. Again the owner of a factory who runs his factory appointing a
+manager and produces goods by the labourers is neither an organiser nor a
+producer. He is only an owner. The owner, who takes part in productive activities
+and supervises other producers, is an owner, producer and organiser at the same
+time.
+
+The process of production or creating utility is shown in five stages, e.g.
+
+1. Transformative Production: Producing new goods by transformation is
+known to be transformative production e.g. transforming wood
+convemently into bed, chair, table, etc. These products therefore, are
+transformative production.
+
+2023
+2025
+
+Production & Organisation 53
+
+2.
+
+Regional Production: Utility incteases when some goods are moved from
+one place to another. For exarnple, wood from the forest is usually used as
+fuel by the people who live near the forest. If these wood is brought to the
+city, people can make attractive furniture from this wood and thus its
+utility increases. Furthermore, flower is not appreciated in the forest. On the
+other hand, if that plant with flowers 1s planted on the compound of a house
+in the city, it is far more appreciated, that 1s, its utility increases.
+
+Time-Based Production: The production and utility of many goods increase
+in the course of time. These are known as time-based production, e.g. the
+outturn of paddy is more at the monsoon in Poush and Magh. On the other
+hand, at this time the price of paddy is less. Storing the paddy at this time
+to sell it in the months of Vadra-Aswin will bring higher prices.
+
+. Service-Based Production: The production that people produce by their
+
+services is called the service-based production. The teacher makes
+people educated by giving lessons, the doctor keeps the health of the people
+well by giving treatment, in other words, they sustam or merease the
+
+production capacity.
+
+Ownership-Based Production: [t is possible to ensure superfluous
+production by changing the ownership of some of the economic goods and
+services. For example, a farmer can produce by buying an unused land
+and tilling it or can increase the production through better‘improved
+cultivation by buying a used land.
+
+You have got the idea of creating utility through production, Now you will know
+
+about the people involved in production. Ramzan Ali is a farmer. He has 3
+bighas of agricultural land. In this land, Ramzan produces paddy in one
+monsoon, and wheat in the other. In-between the production of paddy and wheat,
+he grows vegetables. As the factors of production for all these crops, he uses
+seeds, fertilizers, water, insecticides, machines for harvesting. His family
+members help him in these activities.
+54 Economics
+
+Task: (1) Classify the changed situation given below according to the different types
+of production. (a) fish-pond, (b) work of the soldier, (c) affection of the parents,
+(d) giving the property of the father to the children, (¢) making instruments from
+iron, (f) flour from wheat (g) sugar from the sugarcane, (h) rice from paddy, cakes
+from rice, (i) transporting the bananas, fruits, vegetables from the village to the city,
+(j) selling the potatoes of the month Agrahayan in the month of Ashar.
+
+Task: (2) Refer if Ramzan Ali is to be termed as a producer or an organizer.
+
+4.2 Factors of Production
+
+Suppose in your area, wheat, potatoes, bananas, rice and some other agricultural
+goods are produced alongside some industrial goods like cloths, biscuits, plastic,
+etc. To produce these agricultural and industrial goods, many factors are
+necessary. For the farmer, to produce rice, he needs land, seeds, fertilizers, plow,
+irrigation, labour, etc. On the other hand, to produce industrial goods, factory,
+building, cloth, threads, machines, electricity, gas, flour, sugar, oil and labour are
+necessary. To produce these goods, natural resources like soil, the fertility of
+soil, light and air, environment, mineral resources, sunlight, water, and many
+other things are necessary. The goods that are mentioned here are factors of
+production. That means the goods and services that are necessary for any kind of
+production, are called factors of production.
+
+There are basically four types of factors in production. For example, 1. Land, 2.
+Labour, 3. Capital, 4. Organisation.
+
+1. Land: The natural resources that help production, are called land. For
+example, land, soil and the richness of the soil, minerals, forests and water
+resources, the sun-ray, rainfall, weather, and all the other types of natural
+resources are included in land.
+
+2. Labour: Every kind of physical and mental labour of humans that is used
+for the purpose of production is called labour. The physical labour of a
+farmer, a fisherman, a blacksmith, a potter and the labourer of the industry
+of ready-made clothes is labour, The physical and intellectual labour of the
+officer and staff is also called labour. Similarly, the teachings of a teacher,
+services of a doctor and the counselling of a lawyer are all labour.
+
+2025
+2025
+
+Production & Organisation 55
+
+3. Capital: Capital is the factor of production that is produced by human
+beings. They use this produced factor for further production and not for
+consumption, e.g. instruments, raw materials, factories, office furniture and
+so on.
+
+4. Organisation: The organisation is known as a synthesizer. To direct the act
+of production by bringing harmony amongst the other factors of production
+like land, labour and capital is known as organisation. To adjust and to direct
+the course of actions is also termed as management. The person who
+conducts this work is known as the organiser or entrepreneur. Therefore, the
+varied tasks of an entrepreneur, like planning for producing something,
+bringing the land, labour, and capital together and combining them and
+directing the act of production, taking the risk, all are included in
+organisation.
+
+So, it is a must that in the entire production system, land, labour, capital and
+organisation, all these four factors participate. Production is not possible with
+any one of these being absent. However, in the production arena, the importance
+of all these factors is not equivalent. Depending on the situation. some of the
+factors are needed more, and some are needed less. Since Bangladesh is an
+agriculture-based and heavily populated country, land and labour are more
+important than capital here. On the other hand, in the industrialist countnes like
+Japan, the Unites States and others, capital is more significant than land and
+labour.
+
+Task: (1) What could be the important factors of production in the perspective of our
+country?
+
+Name of the country Important factors used in production
+
+Bangladesh is an agriculture-based cOUMUTy | w.eesseecseecsesenceeeaternseseereeneseneeeenente
+
+Japan ig an imdustrialist country | sassecssscecsssceetseesetsensesseceescsecetesestetees
+
+| Task: (2) Arrange the factors as per their importance in the production sector.
+
+Sector of production Factors according to their importance are
+Agmenltre qj- jj. (j=  - |  cjesartencyjsivans ctwimeenatn aaeaeres
+Industry
+
+56 Economics
+
+4.3 Organisation and Its Development
+
+Ayesha Begum has built a poultry farm in her house amidst all her household
+work. Throughout the year, eggs are produced from this farm. One year later,
+Ayesha went to visit a governmental fisheries project and after that the idea of
+pisciculture drew her attention. Within one year, from the neat income of selling
+eggs from her poultry farm, which is twenty thousand taka, she built a pond on
+the two bighas of land beside her home and started a fisheries project. Some
+more labourers are recruited in both the farms. Ayesha's income increases from
+selling eggs from her poultry and after one year from selling the fishes of the
+pond. Her savings also increase even after meeting the expenditures on the
+education of her three children and all those of her household. As Ayesha's work
+grows in volume, her husband, Rahmat Ali leaves his job in the city and comes
+to join his wite's farm, With both of their enterprises, they manage to acquire
+some land, poultry and fisheries. They also employ 12 men and women. They
+train each of the labourers. By turn, Ayesha and Rahmat supervise the labourers
+and their farms. They also manage to marketize the eggs and fishes in the
+market place. Sceing their success, many other villagers follow their example
+and begin to develop poultry farms and fisheries throughout the village and
+areas in the vicinity. To take the eggs and fishes, the wholesalers from different
+areas now come regularly to Ayesha's village. Within a number of years, the
+whole area achieves economic success through agriculture, poultry farming
+and fishery projects. Poultry stock and fish are now produced in this area for
+business purpose.
+
+Can we say that Ayesha Begum is an organiser? Have her organising
+capabilities developed?
+
+It is certain from the above discussion that to conduct and control productive
+activities for the purpose of business can be called organisation. In the true
+sense, production and control of business and management are almost
+impossible without an organisation. In the modern world, different people
+play different roles in the production activities. The organiser distributes these
+responsibilities skillfully according to their efficiency. Thus, with the help of the
+
+20125
+Production & Organisation 37
+
+workers, different jobs in the production and business are done. But while
+completing the tasks a kind of mutual authority and responsibility is created
+amongst the workers. This structure of reciprocal authority and responsibility is
+organisation. Therefore, organisation is the base of business.
+
+Tt is the duty of the organisational structure to hold together the different parts of
+the organisation and to prepare the necessary arrangement to achieve the goal.
+Apart from that, distributing the responsibilities of different activities,
+developing rules and regulations, etc are included in the structure of
+organisation. The organisational structure is dependent on the extent of the
+business, the nature and volume of the produced goods, the character of the
+industry, the process of production, skills of the labourers and many other
+things.
+
+The clear picture of the management structure of an institution, which is clearly
+visible when the posts of the superior and inferior workers are arranged
+hierarchically discerning the different divisions of the organisational structure
+of the business, the sub-divisions and the branches, is called the picture of an
+organisation. The success of the business will grow as much as the management
+of organisation will be well-arranged and proper. Therefore, organisation is the
+fundamental and main aspect of business.
+
+| Task: Make a list of the organisational tasks.
+
+A good organisation has some particular tendencies or characteristics, They are—
+
+1. The Purpose and Nature of Business: The purpose of the business needs to
+be determined in the first step of organisation. According to the purpose and
+nature of business, the organisational structure of the business has to be built.
+Tt has to be determined which one among these possible purposes is the main
+and which one is subsidiary, or which one is short-termed and which ts
+long-termed.
+
+2, Deciding on the Business Activities: After deciding properly the purpose
+and nature of the business, all the activities of the business are analysed, e.g.
+production, buying and selling, arranging for money, employing labourers
+
+Forma-8, Economics Class 9-10
+Economics
+
+and workers, managing labourers and owner relationship, etc. For these,
+maintaining the finance, advertising and publicizing, storing the goods,
+
+management, etc are necessary.
+
+Division of Activities: After analysing the activities according to the
+similarities in type and purpose of the activities, they are divided into some
+groups. The associate activities in one group are again divided into some
+sub-divisions, for example, the production sector, buying sector, selling
+sector, financial sector, publicizing sector, etc. Sometimes some businesses
+are divided regionally also. Some divisions together are considered as
+regional divisions.
+
+Distributing Responsibilities: Each worker in the business is entrusted with
+one particular responsibility. The particular duty of each of the worker in
+each division and sub-division is set in accordance with his/her experience,
+capacity and skills and each is given the task in which she/he is expert and
+skilled.
+
+Distributing Authority and Duties: To assign a duty means to give the
+proper executive power of fulfilling a responsibility. Each worker is to be
+given the right to work freely, uninterruptedly and properly. The superior
+officer hands over one part of their authority or power to workers working
+under their command, On the other hand, the junior worker is accountable
+for their work to their superior. An organization is successful when these two
+opposite streams are persistent.
+
+4.4 Total, Average and Marginal Production
+
+Mr. Komol grows 600 quintals of wheat [rom his one-bigha land employing 10
+labourers. Here, 60 quintals of wheat is grown by each labourer on an average.
+This 60 quintals of wheat per labourer is called average production. In the next
+season, 655 quintals of wheat is grown employing 11] labourers. Compared to
+the last year, the production has increased by 55 quintals. This production of
+655-600 = 55 quintals of wheat is known as marginal production. That is,
+
+2023
+2025
+
+Production & Organisation 29
+
+employing an extra labourer (11") the production is increased by 55 quintals.
+The 11" labourer is the marginal labourer. So the production of the marginal
+labourer is 55 quintals. Therefore, here 600 quintals is the total production, 60
+quintals is the average production and 55 quintals is the marginal production.
+The total, average and marginal production can be explained by the law of
+diminishing marginal returns.
+
+4.5 Law of Diminishing Marginal Returns
+
+Keeping the production strategy and all the other factors fixed in the process of
+production, if only one factor is increased, as a result, the production primarily
+rises at an increasing rate. At one point, if the factor is used more, production
+rises at a diminishing rate. This law of increasing production with the usage of
+factors is known as the Law of Diminishing Marginal Returns.
+
+Usually in the agricultural sector, this law is applicable while attempting to
+increase production. It is worth mentioning that, in the first stage, production can
+stow more, compared to the increase in the factors. Suppose, we have two
+factors which are land and labour. The amount of land is stable. Primarily, when
+the amount of labour is less, as the labour rises, there remains sufficient land for
+the marginal labour. Therefore, marginal production increases. That is,
+production rises at an increasing rate. But, to increase production, if the factors
+are continuously engaged in a higher amount, the marginal production
+diminishes. The reason behind this is a engaging extra labour results in a lesser
+amount of land for each unit of labour. Therefore, production increases at a
+diminishing rate.
+
+This is known as the law of diminishing marginal returns. This law can be
+illustrated by the table in the next page:
+60 Economics
+
+Table: The law of diminshing Marginal Returns
+
+Labour factor Total Marginal Average
+
+Amount of |(Jabour hour of | Combination] production | production | production
+land (stable) | the labourer) | of factors (quintal) | (quintal) | (quintal)
+
+1 hector 1 A 10 10 10
+
+1 hector 2 B 24 14 12
+
+| hector 3 c 36 12 12
+
+| hector 4 D 46 10 11.5
+
+| hector 5 E 54 8 10.8
+
+| hector 6 F 60) 6 10
+
+1 hector 7 G 60 0 8.57
+
+1 hector 8 H 56 -4 7
+
+From this table relationship among total, average anc marginal production can
+be explained.
+
+Total production: Total production means the total amount of produced goods
+by using specific factors in a specific time. Here the quantity of land remains
+fixed. The total amount of goods that can be produced also called total
+production. From this chart, the total production curve can be drawn below.
+
+Total production: Engaging different types of factors, the production that can
+be found called total production.
+
+¥
+60
+
+50 +
+40 b
+30 |
+20 |
+10
+
+012345678 *
+Quantity of labour
+
+Marginal Production
+
+From this diagram, when the quantity of labour remains/is in 7 unit then the
+production becomes the highest (60 quintal). Afler that when the quantity of 3
+labour factors increases more then the total production starts diminishing.
+2025
+
+Production & Organisation 61
+
+Average Production: We can get the average production when we divide the
+amount of the total production by the total amount of factors (Labourer). (Here,
+we have taken labourer as the factor. The average production can also be
+calculated by other factors of production).
+
+Total Production
+Total Labour Factor
+
+Average Production=
+
+Marginal Production: With the change of one unit of a factor of production
+(.e. labour or capital), the change that happens in the total production. is known
+as the marginal production. If labour is used, we shall call it marginal production
+of labour and if capital is used, it will be called marginal production of capital.
+That means, using a factor or labour, the change that occurs to the total
+production, ts marginal production. From the schedule that follows, it can be seen
+that when the labour factor increases from 1 to 2, the total production increases
+from 10 to 24 quintals. Here, the marginal production is (24-10)=14 quintals.
+Thus, if the usage of the factor is increased up to 3, the total production
+becomes 36 quintals. Here the marginal production is (36-24)=12 quintals.
+
+The Relation between Average and Marginal Production: There is a
+relation between the average and the marginal production in the production
+system.
+
+an
+
+ae)
+
+a
+
+Average & marginal production
+i
+
+3 4 5
+
+t
+fs
+
+The horizontal axis (OX) shows the labour and the vertical axis (OY) shows the
+62 Economics
+
+average and marginal production. In the diagram, AP is the average production
+
+curve, and MP is the marginal production curve. We can see in the diagram that:
+
+1. When the marginal production is more than the average production, the
+average production increases, Therefore, the marginal production curve is
+usually above the average production curve. In the diagram, if the usage of
+Jabour factor is 2 unit then the marginal production becomes more than the
+average production.
+
+2, When marginal production decreases, average production also decreases, In
+this situation, the average production curve remains above the marginal
+production curve. In the picture, if the usage of labour factor is 5 unit then the
+average production is more than the marginal production. But the usage of
+labour factor is 3 unit then the marginal production and the average
+production become equal to each other ie; 12 quintal. Since then both average
+production and marginal production have been declining and marginal
+production is lower than average production.
+
+3. When the average production is at its highest, the marginal production curve
+intersects the average production curve at its highest point, ie. at the highest
+point of the average production, the average production and the marginal
+production become equal. In the picture, at 3 unit of labour factor usage, the
+average and the marginal production are equal at the point E.
+
+4.6 Cost of Production
+
+Nuru Mia of Rajshahi has made a lychee garden on 2 acres of land. There are
+about 100 lychee trees in the garden. This year, for different types of factors, 20
+thousand taka has been spent. The production of lychee was also good. Nuru Mia
+and his son protect the garden from the disturbances of bats and other birds,
+forgoing their sleep and comforts.
+
+There are two types of expenses for the lychee garden. |. Costs for the factors,
+i.e. financial cost of production and 2. Leaving comfort and sleep, i.e. human
+sufferings. In order to measure the real cost of production, these two types
+expenses have to be considered. The total of the two types of expenses is called
+real cost of production.
+
+2025
+2025
+
+Production & Organisation 63
+
+4.7 Explicit and Implicit Cost
+
+The sum of the visible costs that any production institution spends, for renting or
+buying materials is known as explicit cost. For example, the wages and
+allowances of the people working at the production institutions or farms,
+expenditures for buying raw materials and intermediate goods, different kinds of
+fixed costs, e.g. house rent, interest of the capital, etc.
+
+Implicit costs stand for the value of the entrepreneur's own labour and other
+costs, costs for self-employed resources, e.g. the business institution at one's
+own home, establishing factory, building an office, etc. These costs are not
+included in the accounts book of the farm. For example, ina self-owned farm,
+ihe person counts the profit as the remuneration of his services rather than
+counting a separate salary. In this case any type of allowance of the owner is
+treated as the implicit cost of the farm.
+
+4.8 Personal and Social Cost
+
+We have got above the idea of financial cost production, real cost production and
+explicit and implicit cost. Now we will learn personal and social cost.
+
+Any farm or production institution spends financial cost and other explicit cost
+directly in order to purchase different kinds of wealths or materials. The total
+amount of financial cost and explicit cost is called personal cost. In brief, the
+total of explicit and implicit cost of a person that is engaged in production
+activities is personal cost. In order to produce or consume, different people in the
+society face loss for the process of production or consumption. The total amount
+of money that is needed to compensate these loss is social cost.
+
+For example, the city dwellers use cars. The smokes of the cars hamper the
+inhabitants of city physically. For this reason the society has to spend money for
+health and treatment. The amount of money that is spent for health and treatment
+is called social cost. Personal cost is reflected in social cost but social cost may
+not be reflected in personal cost.
+
+Though social cost is embedded in personal cost. generally it is not included in
+personal cost.
+64 Economics
+
+Task: Why is it important to know the idea of explicit and implicit cost of a
+production institution? Discuss it in groups and present it in the class,
+
+Exercise
+
+Short Questions
+
+What is meant by production and factors?
+
+Name some of the factors in agricultural production.
+
+Give an idea of the organiser.
+
+Why does the marginal production diminish?
+
+What is the main idea of the law of diminishing marginal returns?
+Give an idea of financial and real cost.
+
+What are explicit and implicit costs? Explain the idea with examples.
+
+ae
+
+Descriptive Questions
+
+Explain five processes of creating ubtlity in production.
+
+Mlustrate the factors of production.
+
+Mlustrate with examples how an organisation can be developed.
+
+Explain the characteristics of a good organisation,
+
+Explain the relationship between total, average and marginal production.
+Tlustrate the law of diminishing marginal returns.
+
+By ee be be
+
+Multiple-Choice Questions
+
+1. Hew many factors of production are there?
+
+a. 2 b 4
+
+ct. 6 d, 8
+
+2. What type of cost is not included in the accounts book of a farm?
+
+a. fixed cost b. total cost
+c. explicit cost d. implicit cost
+
+20125
+Production & Organisation 65
+
+¥
+
+Margunal production.
+
+Marginal Produciton curve (MP)
+
+0 E Li Li La ‘a
+Labour
+
+Take a look at the diagram above and answer questions 3 and 4.
+
+3. What is the amount of labour at the optimum point of marginal returns?
+a OL b. OL1
+ce. OL d. OL;
+
+4. Frora the shape of the MP curve il can be understood that
+i. production rises in an increasing manner.
+ii. marginal production diminishes gradually.
+
+ill. production rises in a diminishing manner.
+
+Which of the following is correct?
+a4 b. il
+
+¢ iandii ad. iitand ii
+
+Creative Questions
+
+1. Kabir is a furniture businessman. He has a number of furniture shops at
+different parts of the country. With the help of 30 emplovees, he cuts wood and
+makes different types of furniture from those wood and supplies these furniture
+to his shops. He employs different people for each of his shops. He participates
+in the exhibitions for expanding the market for the products. The demand for his
+products is rising day by day in the market.
+
+Forma-9, Economics Class 9-10
+66 Economics
+
+a. Whatis labour?
+
+b. What is law of diminishing marginal returns?
+
+¢. Illustrate the process for creating utility as adopted by Kabir, in the light of
+your textbook.
+
+d. Can Kabir be called a successful organiser? Give reasons for your answer,
+
+2. Hossain Ali produced 50 kg of rice from his land employing one labourer in
+the first year. For better production, in the following years, he employed more
+labourers. The production that he gets is shown in the table below—
+
+Number of Total production of | The production cost Marginal
+labourers rice (20 tk per kg) of rice (taka) production
+1 50 1000 1000
+2 100 = -
+3 130 :
+4 150 - -
+
+a. What is total production?
+b. What do you understand by personal cost?
+¢, Fill in the table above and illustrate its main idea.
+
+d. The presented matter in the table is also applicable to the agriculture of
+Bangladesh. Give your opimon.
+
+2025

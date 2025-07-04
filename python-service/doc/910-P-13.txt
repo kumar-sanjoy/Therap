@@ -1,0 +1,466 @@
+2025
+
+Chapter Thirteen
+Radioactivity and Electronics
+
+! ee
+
+Radioactivity is one of the new topics that have flourished after the emergence
+of modern physics at the beginning of twentieth century. Radio activity is
+described in this chapter.
+
+Electronics is the main drive of our present civilization- this statement is not
+exaggerated at all. The contribution of physics behind the present electronics has
+been discussed in this chapter, and the instruments that have changed our lives
+completely have been introduced .
+348
+
+Physics
+
+® By the end of this chapter we will be able to-
+
+explain radioactivity.
+
+explain the characteristics of alpha, beta and gamma rays.
+describe the sequential development of electronics.
+differentiate between analogue and digital electronics.
+explain semiconductors and integrated circuits.
+
+2025
+2025
+
+Radioactivity and Electronics 349
+
+13.1 Radioactivity
+
+We all know, there is a nucleus at the center of an atom, and there are protons and
+neutrons in the nucleus. The number of revolving electrons around the nucleus
+is equal to the number of protons in it. The radius of the nucleus is about one
+lakh times smaller than the radius of the atom. But the actual mass of the atom is
+the mass of its nucleus even though its size is small, because the mass of the
+electron is 1836 times less than that of the proton or neutron.
+
+A proton is positively charged, so the nucleus cannot be formed only with
+protons because the protons will be thrown off due to strong repulsion force. So
+there is charge-less neutrons with protons in the nucleus, and nuclei become
+stable due to very strong nuclear force between neutrons and protons. Though
+there is only one proton at the center of a normal hydrogen atom, there are also
+hydrogen nuclei with one or two neutrons.
+
+With the increase of the number of protons, to keep this nucleus stable, the
+number of neutrons also increases. But when the proton number exceeds 82,
+the nucleus starts to become unstable. But, no stable isotope is found for
+Technetium (43) and Promethium (61).These unstable nuclei try to become stable
+by emitting a kind of radiation. We call this process radioactivity. The radiation
+that comes out from the nucleus is called a radioactive ray.
+
+It is not the fact that when proton number exceeds 82 (atomic number more than 82)
+only then the nucleus becomes radioactive. Any nucleus of other atoms may be
+radioactive too. We have classified atoms on the basis of their electron number
+which is equal to the number of protons. External properties, nature, chemical
+properties; every feature of an element depends on the classification of
+electrons. So the number of neutrons of an atom can be different even if the
+number of electrons and protons is equal. These types of elements, with different
+numbers of neutrons, are called isotopes of that element. So, an isotope of an
+element may be stable, but another isotope of that element may be unstable or
+radioactive. For example, we can say that element carbon in whose nucleus there
+are six protons and its three isotopes are:
+350 Physics
+
+C,,: 6 protons and 6 neutrons
+C,,: 6 protons and 7 neutrons
+
+Ci: 6 protons and 8 neutrons
+
+Among these three isotopes, C,, is unstable or radioactive.
+
+In 1896, Henry Becquerel discovered the existence of radioactive rays from
+Uranium for the first time. Later on, Ernest Rutherford, Pierre Curie, Marie
+Curie and other scientists discovered radioactivity of other elements. Since
+radioactivity it is not influenced by external pressure, heat, electric or magnetic
+field, and cannot be controlled, it is accepted as a nuclear phenomenon. Due to
+radioactivity, radioactive rays emerge and this changes the structure of the
+nucleus and turn it into a different element, this is also observed.
+
+The main three radioactive rays that emit from the nucleus are alpha, beta and
+gamma rays (Figure 13.01).
+
+13.1.1 Alpha ray
+
+Alpha ray or alpha particle is actually a helium nucleus. A helium nucleus
+contains two protons and two neutrons, so it is a charged particle. So its path of
+motion can be influenced by electric and magnetic field. When an alpha particle
+emits from a nucleus, it possesses some MeV of energy, so when it passes
+through air and collides with the molecule -atoms it can ionize them intensively.
+In air, the path of motion of an alpha particle is straight. Since an alpha particle
+is a helium nucleus, it cannot travel far through air. It loses its energy by
+ionizing air molecule-atoms ans travels approximately 6 cm through air before
+stopping. An alpha particle can be stopped by using a sheet of paper. It creates
+phosphorescence on zinc sulfide screen. An alpha particle creates many free
+electrons by ionizing molecule-atoms of air in its path of motion. Its presence
+can be detected or its energy can be measured easily by collecting these free
+electrons.
+
+When a alpha particle comes out from a larger radioactive nucleus then this
+nucleus’s atomic number will be reduced by two and its nucleon number will be
+reduced by four, because an alpha particle consists of two protons and two
+
+2025
+2025
+
+Radioactivity and Electronics 351
+
+neutrons. For example: an isotope of uranium turns into thorium by emitting an
+alpha particle.
+pm Un3g —> Thy3q + He,”
+
+The atomic number of uranium is 92 and thorium is 90, It is notable that number
+of electrons of an atom is not significant. Radioactive nuclei of atoms can
+easily give up or receive extra electrons to and from its surroundings.
+
+alpha ray . ~~
+——$—= + ira
+
+beta ray re
+gamma ray _—
+
+ini lead
+paper —_! igen eis
+Figure 13.01: It is possible to stop an alpha particle by a single sheet of paper,
+because it can lose its energy by too much ionizing. It is necessary to stop beta ray or
+electrons using an aluminum sheet of a few millimeter thick. A thick lead sheet is
+needed to stop gamma ray.
+
+13.1.2 Beta ray
+
+A Beta particle is actually an electron (it is of courise a matter of wonder that a
+nucleus is consists of neutrons and protons only, so how does an electron come
+out from a nucleus?) For this, inside the nucleus a neutron has to dissociate into
+a proton and an electron.
+
+n> ptte + 9
+
+That is, a charge-less neutron is converted into a positively charged proton and a
+negatively charged electron, so the total amount of charge remains unchanged.
+In the right side of the equation, ( Vy) indicates the anti particle of a neutrino
+(anti-neutrino), a mysterious particle of the world of physics, which is
+chargeless and its mass is very small.
+352 Physics
+
+When an alpha particle is emitted from a nucleus, it comes out with a definite
+amount of energy. But in the case of a beta particle, this is not true. The energy
+of the beta particle depends on the part of the total energy radiation received by
+the anti-neutrino.
+
+Since a beta particle is negatively charged electron, it can be influenced by
+electric and magnetic field. When it passes through matter, it can ionize the
+molecule-atoms of the matter due to collision with them. Since the size of a beta
+particle is much smaller than that of an alpha particle (helium nucleus), its
+penetrating capability is more than the alpha particle and it can penetrate deeper
+into matter. It is possible to stop a normal beta particle by a few millimeter thick
+aluminum sheet.
+
+When radiation of beta particles occurs, a proton is increased in the nucleus by
+deducting of a neutron. So the number of nucleons remains the same. As the
+atomic number depends on the number of protons, the atomic number of the
+nucleus increases, and hence a different nucleus of a different element is formed.
+For example: radioactive C,, is converted into N_, due to beta radiation:
+
+C14 > Ny +e + Vv (anti-neutrino)
+
+An interesting matter is that, not only the emission of electrons is beta radiation
+from inside the nucleus; the emission of an anti-particle of electron (positron) is
+also called beta radiation. For this reason, a proton has to be converted into
+the neutron inside the nucleus:
+
+pt > n° + é++ vy (neutrino)
+(This reaction cannot take place outside the nucleus. This is because the mass of
+a neutron is more than that of a proton.)
+
+In this process, the number of protons decreases by one and hence the atomic
+number also decreases by one, and a nucleus of different element is formed.
+
+Though neutrinos or anti-neutrinos are emitted during beta radiation, they are
+not considered to be radioactive rays. This is because they are charge less and
+they are so inert (or nonreactive) that even a few light years thick lead sheet
+cannot stop a neutrino particle.
+
+13.1.3 Gamma ray
+
+A gamma ray is actually an energetic electromagnetic wave. It has no charge, but
+as it is strong, its wavelength is very low (frequency is very high). Regardless of
+the energy of the gamma ray, its velocity is equal to that of light. When a nucleus
+
+2025
+Radioactivity and Electronics 353
+
+becomes excited by radiating alpha or beta particle then extra energy comes out
+as gamma ray and the nucleus de-excites. A gamma ray is charge less and mass
+less, so the atomic number or nucleon number of a nucleus does not change due
+to this radiation.
+
+Since gamma ray doesn’t have any charge, so it cannot be influenced by an
+electric or magnetic field. Because it is charge less, it cannot directly ionize
+atoms or molecules, but the electrons can ionize atoms or molecules in different
+processes and from that we can understand the presence of gamma ray. To stop
+gamma rays with energy equal to that of alpha and beta particles, a thick layer of
+lead of several centimeters is needed.
+
+13.1.4 Half Life
+
+It is not possible to say the exact moment when a definite radioactive nucleus
+will emit radioactive rays. Physics can only predict the probability of its
+radiation. So the concept of Half Life is used to determine the amount of
+radioactivity. The time in which half of the nucleus disintegrates (or radiates) is
+known as half life. Therefore, the more the radioactivity of an element, the less
+its half life is. The half life of a stable nucleus having no radioactivity can be
+considered to be “infinity”.
+
+It is necessary to know that radioactivity is a nuclear phenomenon, so a nucleus
+is transformed into another through radioactive emission. A different nucleus
+can accept or donate one or two electrons from the surroundings to become a
+charge less atom. This is because the energy of the electrons of an atom is much
+smaller than the nuclear energy of a nucleus.
+
+Example
+
+Question: The half life of a radioactive element of 1 kg is 100 years. What will be
+its mass after 200 years?
+
+Answer: Mass does not change directly due to radioactivity. Only three fourth
+of the nuclei of the radioactive element will emit radioactive particles in 200
+years.
+
+Forma-45, Physics, Class 9-10
+354 Physics
+
+13.1.5 Uses of Radioactivity
+
+There are many different uses of Radioactivity. If a small amount of
+radioactive sample is inserted into the body, information about the body
+can be detected by observing the movement of the radioactive sample from
+outside the body. Generally those radioactivity samples have a very low
+half life, it may a few minutes, thus the radioactivity of the samples will be
+finished within an hour.
+
+Another important use of radioactivity is the determination of the age of
+ancient fossils. In our body there is huge amount of carbon in which a
+definite amount of C,, is present. When an animal dies, no more C,, can
+enter the body further. The amount of carbon deposited before gets less due
+to the half life. Thus knowing the amount of C,, that would have normally
+been present initially, and by calculating the amount which is decayed, age
+can be determined accurately.
+
+A radioactive element can cause harm to the cells of the body, so different
+types of caution are taken. Radioactivity is used to destroy harmful cells
+within the body. This is why, for the treatment of cancer radioactive
+elements are used to destroy cancer cells.
+
+Radioactivity is also used to make the equipment germ free, detecting the
+presence of smoke and determining the amount of different metals in
+minerals.
+
+13.1.6 Cautions about Radioactivity
+
+A high radioactive dose can cause many
+problems in our body. When research started
+about radioactivity, the scientists did not
+know the bad effects of radioactivity. As a
+result, scientists were attacked with many
+diseases as they came close contact with
+radioactivity. Due to working for a long time
+with radioactive elements Marie Curie suffered.
+from leukemia and died. Radioactivity
+decreases immunity against disease,
+preventing capability of human and even
+physical disable children are born inherently. Figure 13.02: Radioactive materials
+
+We do not usually face radioactivity often are used very carefully because they
+
+in our daily life. Due to new are very dangerous.
+
+2025
+2025
+
+Radioactivity and Electronics 355
+
+technology in the world, many people have started to face the bad effects of
+radioactivity. The nuclear reactions in a nuclear power plant produce serious
+radioactivity. Many radioactive wastes have high half life and can remain
+radioactive for lakhs of years. There are even incidents of radioactive wastes
+being spread into the surroundings due to accidents in nuclear power plants.
+Many people faced radioactivity in the accident of a submarine run by nuclear
+energy. The most devastating event took place in Hiroshima and
+Nagasaki due to nuclear bombs. Many people were exposed to radioactivity.
+So, many researchers have been started becoming concerned about radioactivity
+and the determination of the safe limit of radioactivity is also started. General
+people are now being warned about the effects of radioactivity (figure 13.02).
+
+13.2 Development of Electronics
+
+Electronics has a greatest contribution in the development of the modern
+civilization and it is not an exaggeration by any means. The gradual
+development of electronics can be divided into three parts, the vacuum tube,
+transistor and integrated circuit.
+
+13.2.1 Vacuum Tube
+
+In 1883 Edison observed that in a light bulb, a current can flow through a
+vacuum space from the filament to a metal plate. This process is known as the
+Edison Effect. In 1904, John Flemming (on the basis of the Edison effect) first
+created a vacuum tube with two electrodes, which worked as a rectifier i.e., it
+converted an alternating current into a direct current. This vacuum tube is
+considered as the introduction to electronics. At that time the exchange of
+information was started by radio waves. Guglielmo Marconi needed such type of
+vacuum tube to control of the radio waves. (It is noted that Marconi was
+mentioned as the inventor of radio, but in recent times the contribution of
+Bengali scientist Jagadish Chandra Bose is also acknowledged.)
+
+In 1906 Lee De Forest invented another vacuum tube by adding a third
+electrode, which is known by the name triode. This triode can control the flow
+
+of electricity and used as an amplifier.
+
+The development of vacuum tubes take place first through telegraph
+356 Physics
+
+Figure 13.03 : Types of vacuum tube
+
+communication using Morse code and then through the use of vocal
+communication by telephone (Figure 13.03). During the first and second world
+war, different types of specialized vacuum tubes were used in controlling weap-
+ons, radar, navigation etc. In 1946 the first computer ENIAC was invented using
+1800 vacuum tubes.
+
+13.2.2 Transistor
+
+In 1947 the Transistor was first invented in Bell Laboratory and for this
+invention John Bardeen, Walter Brattain and William Shockley were awarded
+the Nobel Prize. No one could imagine at that time how fast and widely the
+transistor would change the whole world.
+
+A transistor can work just like a vacuum tube, but compared with a vacuum tube
+it is very small in size, light in weight, and a very small amount of electricity is
+needed to operate it, it is very reliable and most of all, it can be made at a very
+low cost. Thus it rapidly secured its place, replacing the vacuum tube and the
+people of the world began to get many electrical appliances by using this
+transistor at very cheap.
+
+13.2.3 Integrated Circuit
+
+Although the discussion about an integrated circuit was started in 1952, a real
+integrated circuit was started to be made in the sixth decade. In the fifth decade
+many transistors were made on a thin silicon plate (Wafer) and eventually the
+transistors were separated by cutting them from the plate. This process was
+improved to a small extent while preparing an integrated circuit. Not only
+
+2025
+2025
+
+Radioactivity and Electronics 357
+
+a transistor but also creating a diode, resistor and a capacitor on a wafer, a
+complete circuit was started to be made. This circuit was named an integrated
+circuit (IC). With the development of technology many transistors were
+assembled in a small area, and first it was named Large Scale Integration (LSD,
+and then it is called Very Large Scale Integration (VLSI). These circuits were
+made into a ready-made package so that they could be directly used in a circuit
+board. Modern equipment such as the Micro-computer, clinical appliances,
+video camera, communication satellite would never be possible without the use
+of integrated circuits.
+
+13.2.4 Electronics of Future
+
+The technology of electronics is still advancing, and in the future we will
+experience electronic circuits using optics or light in an information
+communicative integrated circuit. At the same time we will observe the use of
+programmable IC (FPGA: Field Programmable Gate Array) in different fields in
+accordance to our own needs.
+
+13.3 Analog and Digital Electronics
+
+Things that are happening around us every moment, like sound, light, pressure,
+temperature are expressed as information or data. Their values can be changed
+continuously. We might need these values in our different works, so we preserve
+and analyze these values and send them from one place to another. To process
+the data we might use electronics. This continuously changing data can be
+converted into electrical signals and these types of signals are called analog
+signals. If we process these signals with a type of electronics, it is called analog
+electronics.When discrete signals are processed, then it is called digital signal.
+
+Continuously changing information or data signals can be processed in a
+different way. To do this, we have to find the value for a definite interval of time
+and express this in a type of number. Then we have to preserve this value
+successively. Then we will be able to process these numbers using electronics.
+When it is needed to convert this into the main analog signal again, then electric
+signals of equal to serially preserved values have to be created. We use decimal
+358 Physics
+
+numbers in our daily life. But in electronics numbers are expressed by binary
+numbers, because they can be easily processed (voltage as 1 and zero voltage as
+0). The number system expressed with the digits ‘0’ and ‘1’ is a binary number
+
+system. (Figure. 13.04)
+
+The greatest contribution of electronics is the computer. The exchange of all data
+or processing of all data in a computer is processed by digital electronics. Digital
+electronics is also used in the internet and computer networks to exchange data.
+Sound, image or video etc. start as analog signals (and is used as analog signal
+too) but they are stored, processed and sent as digital signal. Noise can spoil the
+quantity of analog signals very easily by entering the signals. Once it is
+converted into digital signals, noise cannot enter it very easily. So, the quality of
+digital signals remains unchanged.
+
+Figure 13.04: (a) Analog and (b) Digital signals
+
+A special type of IC is made to process digital signals. These IC’s have become
+efficient gradually. That is, they can process a large number of signals at a very
+short time accurately. Therefore, as time goes by, the process of digitizing is
+becoming easier and it is needless to say that everything around us is being
+converted into digital world.
+
+2025
+2025
+
+Radioactivity and Electronics 359
+
+13.4 Semiconductor
+
+The modern world and modern civilization have been built on the basis of
+electronics. If we want to express our gratitude to any substance, that
+substance will be the semiconductor. We have discussed about the conductor,
+insulator and semiconductor. Now we can go deeper to a small extent about this
+subject.
+
+oo?
+
+LN
+pontoon te
+
+h
+
+=
+
+otenextenten'
+goo0o
+
+Goac
+
+Figure 13.05 : Silicon crystal. Three dimentional silicon crystal (right)
+
+aie,
+
+i=
+
+In Figure 13.05 many atoms of a semiconductor have been shown side by side.
+Due to the structure of the atom if there are eight electrons in their outer most
+shells, in one sense they are fulfilled and become very stable. Atoms always try
+to have eight electrons in their outer most shells. Silicon is the most used
+semiconductor among the semiconductors. The number of electrons is four in its
+outer most shell. But when we observe a silicon crystal, we find surprisingly that
+there are eight electrons in the outer most shell of every atom! It has happened
+because every atom attaches to four different atoms around it, and they are all
+using their electrons sharing with the neighboring atoms. (We have drawn the
+figure on a plane. The real arrangement of silicon atoms is three dimensional, as
+shown at the right side of the Figure 13.05. Actually, every atom touches other
+four atoms.)

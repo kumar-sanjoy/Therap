@@ -1,0 +1,958 @@
+Chapter Five
+Chemical Bond
+
+We know, all substances consist of molecules and atoms. Each of these matters
+has its own atoms. Out of these substances, atoms of one or more elements make
+a substance’s molecule. Atoms do not remain scattered in the molecule of
+substances. They remain highly organized. The force of attraction that binds two
+atoms in a molecule is called chemical bond. This bond may be of various
+kinds- ionic bond, covalent bond or metallic bond ete. This chapter will focus
+upon compounds made of ionic bonds, covalent bonds or metallic bonds, their
+process of bonding and their properties.
+
+20235
+2025
+
+Chemical Bond &3
+
+explain the concept of valence electrons
+
+write the symbols of elements, formula of radicals and the
+formula of compounds using their valency
+
+explain the stability of inert gases
+
+explain the concept of octet and duet rules
+
+explain chemical bonds and the causes of their formation
+
+explain how and why ions are formed
+
+explain the formation of ionic bonds
+
+explain the formation of covalent bonds
+
+explain properties like melting point, boiling point, solubility,
+electric conductivity and crystal formation with ionic and covalent
+bonds
+
+explain the concept of metallic bonds
+
+explain the electric conductivity of metals with metallic bonds
+identify ionic and covalent compounds among the easily available
+
+objects
+Rd Chemistry
+
+5.1 Valence Electrons
+
+The number of total electrons in the outermost principal energy level of an
+element is called the valence electrons of that element. For example, the
+electronic configuration of Potassium and Oxygen show 01 and 06 electrons at
+their outermost energy level.
+
+Potassium
+
+Fig 5.01: Valence Electron of Potassium and Oxygen.
+
+Therefore, K has 01 valence electron while O has 06 valence electrons. The
+following table shows the valence electron number of some elements from their
+
+electronic configuration:
+
+Table 5.01: Valence Electrons of Elements.
+
+Electronic Configuration Valence
+
+Elemen Biecton
+K Orbit | L Orbit | M Orbit | N Orbit =
+
+N(7) 2 5 5
+F(9) 2 7 7
+P(15) 2 8 5 5
+cl(17) 2 8 7 7
+Ca(20) 2 8 8 2 2
+
+Here, Nitrogen has 2 electrons in its K orbit while 5 electrons in L orbit. L orbit
+is the outermost energy level of Nitrogen. So, Nitrogen has five valence
+electrons,
+
+£023
+2025
+
+Chemical Bond 85
+
+[ Student Activity: Find out the number of valence electrons of F, P, Cl |
+and Ca.
+
+5.2 Valency
+
+You already know that, atoms of different elements donate, accept or share
+electrons of their outermost energy level with atoms of other elements to form
+molecules. The capacity of bonding of an atom with another atom of an element
+while forming a molecule is called valency.
+
+Usually. the valency of Hydrogen is taken to be 1. Valency of an element is
+determined by the number of atoms of H or Cl can bond with one ofits atoms.
+
+An atom of Hydrogen bonds with another atom of Chlorine to form a HCl
+molecule. So the valency of chlorine is also 1. Again, an atom of Oxygen bonds
+with 2 Hydrogen atoms to produce H,O. So valency of Oxygen is 2. | atom of
+Na bonds with | Cl atom to produce NaCl, therefore, the valency of Nais 1.
+
+The number of oxygen atoms that can be bonded with an atom nmltiplied by 2
+determines the valency of that atom. Example: a calcium atom (Ca) bonds with
+one oxygen atom (Q) to produce calcium oxide (CaO). Therefore, the valency of
+calcium is [x2 = 2.
+
+Some elements have more than one valency. This kind of valency is called
+variable valency. For example, variable valency of Fe are 2 and 3. The difference
+between the highest valency of an element and its active valency is considered
+as latent valency. For example, in the compound FeCl, the active valency of Fe
+is 2 while its highest valency is 3. Therefore, the latent valency of Fe here is
+(3 — 2) = 1. Again. in FeCl, the highest valency of Fe is used, which is 3.
+Therefore, in this case, there is no latent valency of Fe.
+86 Chemistry
+Table 5.02: Valency of Different Elements.
+Element Valency| Element) Valency) Element Valency
+H 1 Na I Fe 2,3
+F L K 1 Cu 1,2
+cl 1 C Zz, 4 an Z
+Br 1 Mg 2
+I 1 Al 3 |
+Table 5.03: Valency and Compounds of Various Atoms.
+Neral Symbol | Valency Compound Zeshiami iar Symbol) Valency Compound
+Atom Atom
+Hydrogen H 1 Hcl Silver Ag 1 | Agcl
+Lithium Li 1 | Licl Fluorine =| F 1 | NaF
+Sodium Na 1 Nac] Chlorine cl ‘A Nacl
+Potassium K ] KCl Bromine Br 1 NaBr
+Magnesium | Mg 2 | Mgcl, | | Iodine I 1 | Nal
+Calcium Ca 2 | Cacl, Boron 3 | BCl
+Aluminum Al 3 Alcl, Phosphorus | P 4 PCl,
+5 PCI,
+Iron Fe 2 | FeCl, | | Copper Cu 1 | cucl
+3 | FeCl, 2 |Cucl,
+_Zine “n 2 zZncl, Oxygen a) 2 |H;,0
+Lead Pb 2 PbCl, Carbon c a co
+4 PbCl, 4 CHy
+Nitrogen N 3 NH; Sulfur 5 2 H;5
+5 N20, 4 503
+6 503
+
+2025
+2025
+
+Chemical Bond 87
+
+5.3 Radicals and Their Valencies
+
+Sometimes, a bundle of atoms from more than one element combine together,
+receive positive or negative charges and act as an ion of an element. They are
+called radicals.
+
+Radicals may be of positive or negative charge. The number of charge of the
+radicals is their valency. For example, three H atoms and one H* corabine with
+one N atom to produce the radical named Ammonium (NH,>) ion. Since its
+number of charge is +1, so its valency is also 1, Charge may be positive or
+negative but valency is always the number only.
+
+Table 5.04: Radicals and Their Valencies.
+
+Radical Formula Charge Valency
+Ammonium NH,* +1 I
+Carbonate C07 —2 2
+Hydrogen Carbonate HCO, =i 1
+‘Sulfate 502 2 2
+Hydrogen Sulfate H50,° -1 1
+Sulfite 50.7 —2 2
+Nitrate NOs” =i 1
+‘Nitrite | No, “1 1
+Phosphate Po? 3 3
+Hydroxide OH- —] 1
+Phosphonium | pee [oH 1
+
+5.4 Chemical Formula of Compounds
+
+The symbols and numbers belonging to the atoms that together produce a
+molecule of the compound are used to express a compound. For instance, two
+hydrogen (H) atoms and an oxygen (OQ) atom combine into a molecule of water
+88 Chemistry
+
+(H,O). Here, is the chemical formula of water’s molecule, Therefore, a chemical
+formula is the way of expressing the compound molecule through the symbols,
+formulas and the numbers of atoms of elements and radicals. The numbers of
+atoms and radicals are written in subscript.
+
+The System of Writing Chemical Formula
+
+a. The number of atoms there are in an element’s molecule has to be written in
+subscript after its symbol. Since nitrogen molecule has two atoms, its formula is
+N,. One molecule of Ozone has 3 oxygen atoms, so its formula is O,. Some
+elements, like all metals, do not form any molecule, which are expressed
+through their symbols only. That way, iron is written as Fe only. The same
+system is applicable to all inert gases too, as in Helium, He.
+
+b. Sometimes, a compound's molecule is made of atoms of two different
+elements. If their valency is not divisible by a common number, then, the
+symbols of both the elements are written side by side and each is followed by the
+valency of the other. For example, valency of aluminum is 3 and oxygen is 2.
+These numbers are not divisible by a common number. In the case with any
+compound consisting of these two elements, first goes the symbol of aluminum
+(Al, followed by the valency of oxygen (2). Then the symbol of oxygen (O)
+comes followed by the valency of aluminum (3). An example is AL,O,. In the
+same way, valencies of calcium and chlorine are 2 and | respectively. The
+formula of calcium chloride is supposed to be Ca,Cl,. Since, 1 doesn’t need
+mention, so we write, CaCl. Again, valencies of magnesium and phosphate are
+2 and 3 respectively. Therefore, the formula of magnesium phosphate is
+Mg, (PO,),. Noteworthy that if a radical is there in a number more than 1, then
+the formula of the radical goes inside first bracket along with its number and the
+valency of the other element follows outside the bracket. For example,
+aromonium phosphate (NH,),PO,, aluminum sulfate Al, (SO,), etc.
+
+2025
+Chemical Bond 89
+
+c. If the valencies of the two elements are divisible by a common number, then
+the quotient after dividing will be written following the formula stated in rule b.
+For example, carbon dioxide is a compound made of carbon and oxygen.
+Valencies of carbon and oxygen are 4 and 2 respectively. Since they can be
+divided by 2, therefore, we have to write the quotients C,O,. Again, since 1 is not
+necessary to mention, we will write, CO,. In the compound ferrous sulfate, the
+valency of ferrous is 2 and that of sulfate ion (80,7) is 2. Therefore, after
+dividing them both with 2, the formula stands FeSO,. Same way, valency of
+boron and nitrogen is 3. Therefore, the formula of boron nitride stands B,N, =
+BN, =BN.
+
+5.5 Molecular Formula and Structural Formula
+
+The formula of using symbols and the number of atoms of the kind! kinds of
+element(s) that constitute the molecule of an element or compound is called the
+molecular formula or chemical formula. We have just learned about it. Again,
+the formula of expressing a molecule through the symbols and bonds of atoms,
+otherwise known as organization of atoms, is called the structural formula. For
+example, three carbon atoms combine with eight hydrogen atoms and produce
+propane (C,H,) molecule. This C,H, is the molecular or chemical formula of
+propane, Again, the three carbon atoms here bond with each other like a chain
+and the rest valencies get completed with hydrogen. Thus, valency of each
+carbon becomes 4. The structura! formula of propane is shown below:
+
+HHH
+
+| | |
+
+H-c-C-C-H
+| ||
+HHH
+
+Again, the molecular formula of water HO 1s written in structural formula:
+
+8)
+
+i
+HH
+
+Forma-12, Chemistry Class-9-10
+oO) Chemistry
+
+CH,, which the molecular formula of methane is written in structural form;
+
+Each line between carbon-carbon and carbon-hydrogen above is a bond. These
+are covalent bonds, you will learn about this bond in this chapter. The structural
+formula tells us how many atoms of which element are there ina compound and
+how they bonded with each other as well,
+
+5.6 Octet and Duet Rules
+
+All elements tend to make the electronic configuration of inert gases at their
+outermost energy level. All inert gases other than helium have 8 electrons at their
+outermost energy level. When constituting a molecule, an element obtains the
+electronic configuration of inert gases, holding electrons by means of donating,
+accepting or sharing electrons. This is known as the octet rule. The central atom
+C of CH, molecule has 8 electrons in its outermost energy level. Four of these
+eight electrons are carbon’s own while the rest four comes from hydrogen
+(Gigure 5.02),
+
+Due to some limitations of the octet rule,
+scientists have presented a new rule, which
+is called the “Duet rule”. This new rule is
+more moder than the octet rule and it has
+better utility too. Very much like the inert
+gases having 2 or & electrons at their
+outermost energy level, when constituting a
+molecule. atoms will have one or more
+
+pairs of electrons at their outermost :
+Fig 5.02: octed rule in Methane molecule.
+energy level.
+This is the duet rule. This means. any molecule’s atom will bear one or more
+pairs of electrons at their outermost energy level.
+
+The Be atom at the centre of BeCl, has 2 pairs or 4 electrons at its outermost
+
+energy level. B atom at the centre of BF, has 3 pairs or 6 electrons at its outer
+
+20235
+2025
+
+Chemical Bond 9]
+
+most energy level. C atom at the center of CH, has 4 pairs or 8 electrons at its
+outermost energy level. Not only that, besides the central atom, other atoms like
+Cl will have 4 pairs or electrons at its outermost energy level, Likewise F will
+have 4 pairs and H will have 1 pair of electrons at their outermost energy level.
+
+This proves, all atoms are following the duet rule. Noteworthy that, elements
+1-20 in the periodic table basically follow the rules of octet and duet.
+
+5.7 Inert Gases and their Stability
+
+You have learned about the inert gases or Group-18 elements from the periodic
+table. Electronic configuration of these gases are presented again below for your
+convenience:
+
+He(z) — is?
+
+Ne(10) —> 1s*2s72p*
+
+Ar(18) —> 1s72s*2p%3s"3p°
+
+Kr(36) —> 1s*2s"2p°3s?3p*3d!4s*4p*
+
+Xe(54) — 1572s*2p°3s73p°3d"4s*4p°4d"5s*5p"
+
+Rn(86) —» 1s*2s?2p°3s73p°3d"4s74p*4d"4f45s*5p°5d"6s"6p°
+
+Helium has 2 electrons in its outermost energy level. Since it required this
+number of electrons to fulfill its outermost energy level, helium’s electronic
+configuration is stable. Other inert gases have & electrons (ns? np*) in their
+outermost energy level. Any element having 8 electrons in its outermost energy
+level has got the highest level of stability. Two electrons in the outermost energy
+level forms a duet while $ electrons form an octet. Since these gases fulfill both
+the duet and octet condition, they are stable. This stability drives them not to
+donate any electron to other elements. They do not receive electrons from other
+elements either. Chemically, they lack affinity or become inert. No other
+element has this fulfilled electronic configuration at its outermost energy level.
+As a result, they are not that stable. They tend to fulfill the duet or octet rules at
+their outermost energy level. That is why, they donate, accept or share electrons
+with other atoms and create mutual bonds.
+92 Chemistry
+
+5.8 Chemical Bonds and the Causes of their Formation
+
+Two hydrogen atoms mutually bond together into hydrogen (H,) molecule.
+Similarly. atoms of hydrogen and chlorine bond with each other to constitute
+hydrogen chloride (H-Cl) molecule. In hydrogen molecule. a kind of attractive
+force is effective among the two H atoms. In hydrogen chloride also, there is an
+attractive force working among the H and Cl atoms. Basically, this kind of
+attractive force is a chemical bond, meaning the attraction force that forces the
+atoms to slay together is called a chemical bond. This raises two questions- why
+didn’t the atoms stay separate and why did they bond together to create the
+molecule?
+
+We have already learned that all elements tend to form the stable electronic
+configuration of inert gases at their outermost energy level. When two atoms of
+the same element or different element stay close to each other, they donate,
+accept or share electrons in order to assume the electronic configuration of the
+nearest inert gas. Thus, they create the chemical bond among themselves.
+Therefore, it can be said that the reason of chemical bonds is the tendency of the
+atoms to assume stability of electronic configuration at their outermost energy
+level.
+
+5.9 Cations and Anions
+
+We know, in a normal situation, the number of positively charged proton in the
+nucleus of an atom is complemented by the same number of negatively charged
+electrons outside its nucleus. As a result, the atom becomes charge neutral. If one
+or mote electron from the outer energy level is removed from such a charge
+neutral atom, its neutrality will no longer exist. Then, it will turn into an ion with
+positive charge. Such an ion with positive charge is called a cation, Usually, the
+elements or metals at the lefi side of periodic table donate one or more electrons
+from their outermost energy level to gain the electronic configuration of inert
+gases and become cations. For example, lithium atom donates one electron from
+its outermost energy level in order to get the configuration like helium and
+produces lithium cation (Li*). The figure below shows it,
+
+£023
+2025
+
+Chemical Bond
+
+93
+
+Similarly, the Na atom donates an electron from its outermost energy level in
+
+order to get the configuration like neon gas and produces the Sodium cation
+
+(Na*). (Fig: 5.04)
+
+Can you tell why the metals
+donate electrons to produce
+cations?
+
+We know, in any period of the
+periodic table, elements
+sradually lose their metallic
+
+Fig 5.03; Formation of cation Lithium (Li*).
+
+property as we progress from left to nght. Simultaneously, the non-metallic
+
+property increases in them in this case. It means the elements on the left side of
+
+a period are metals and on the right side are non-metals. Again the more
+
+rightward we progress in a period; the size of atom also decreases. This is the
+
+reason why the metals are larger than other elements. The outermost energy level
+
+of metals usually contains 1. 2 or 3 electrons, Due to the bigger size of the
+
+metals, the outermost energy level is comparatively far from their nucleus which
+
+implies a weaker attraction force towards the nucleus or a weaker bond. As a
+
+result, their ionization energy is far lower. As a result, if a bit of force is applied,
+
+these metals donate one or more electrons from their outermost energy level and
+
+tuum into cations.
+
+Sodium Sodium ion
+
+Fig 5.04: Formation of sodium cation (Na*).
+
+On the other hand, the
+non-metals don’t create
+cations. They are there at the
+right side of any period. They
+usually have 5, 6 or 7
+electrons at thei outermost
+energy level. Being smaller
+than metals m their size, the
+outermost energy level of
+
+these elements stay comparatively closer to their nucleus and undergo stronger
+attractive force. That means their ionization energy is also higher. It requires a
+stronger force to remove one or more electrons from such elements which is not
+o4 Chemistry
+
+there in a normal chemical reaction. That is why the non-metals de not create
+cations.
+
+So, what kind of change occurs in the outermost energy level of the non-metals?
+Since their outermost energy level usually lacks 1, 2 or 3 electrons to become an
+octet, they easily accept them from other elements and assume the electronic
+configuration of their nearest inert gas. In other words, their electron affinity is
+high. This acceptance of electrons from other elements increases the number of
+electrons than protons in them and the negative charge in them as well. Thus, in
+general, the atoms of non-metals are negatively charged. These negative charge
+non-metal atoms are known as anions. For example, the Cl atom accepts one
+electron to reach the electronic configuration of argon (Ar) gas and thus
+produces chloride a (Cl) ion. (Fig 5.05)
+
+Chlorine atom Chloride ion
+
+Fig 5.05: Formation of chloride anion (CT).
+
+5.10 Ionic Bond or Electrovalent Bond
+
+We have already learned that the metals having lower ionization energy easily
+pive away clectrons from their outermost energy level and turn into positive
+charge cations. On the other hand, the non-metals having higher ionization
+energy easily receive electrons into their outermost energy level and turn into
+negative charge anions. An electrostatic force remains effective on these
+oppositely charged cation and anion. This electrostatic or Coulomb force keeps
+them together. The attractive force by which cations and anions, formed by
+exchanging electrons,are held within the atoms of a compound is called the ionic
+
+2025
+2025
+
+Chemical Bond 95
+
+bond. For example, Na atom donates one electron from its outermost energy
+level and forms the Na* cation with its 4 electrons in the outermost energy level.
+On the other hand, Cl atom receives one electron donated by Na in its outermost
+energy level and forms Cl anion with its 4 electrons in the outermost energy
+level. These two mutually opposite charges are attracted towards each other m a
+bond of electrostatic force. This attraction force is the ionic bond. In other words,
+in the chemical bondimg between a metal and a non metal. the bond that 1s
+enforced when the elements turn into positive and negative charge is called the
+ionic bond, The compound that has an ionic bond is called an ionic compound.
+
+Na ——+ Na'+e
+
+Cl +e ————» cI}
+Na + ¢l—————_ ‘Nat + Cl = Nacl
+
+(4)
+
+Sodium atom Chlorine atom Sodium chloride
+
+Fig 5.06: Formation of sodium chloride.
+
+In the MgO molecule, Mg donates 2 electrons to get the electronic configuration
+of Ne and become Mg” with 8 electrons.
+
+Mg ———— Mg* + 2e
+
+The O atom accepts those 2 electrons to get the electronic configuration of Ne
+and become O* with 8 electrons.
+
+Now, Mg” and O* come closer to form an ionic bond.
+96 Chemistry
+
+ao
+
+Magnesium atom Oxygen atom Magnesium Oxide
+
+Fig 5.06; Formation of Magnesium oxide.
+
+In the NaH molecule, Na atom donates an electron to get the electronic
+configuration of inert gas and becomes Na* with 8 electrons.
+
+The H atom accepts that electron to get the electronic configuration of an inert
+gas and become H’ with 2 electrons.
+
+Na ——» Nat+ @
+H + e& ———* #
+
+Now, Na* and H come closer to form an ionic bond.
+
+In the CaO molecule, Ca atom donates two electrons to get the electronic
+configuration of inert gas and becomes Ca** with 8 electrons.
+
+Ca ———+ Ca” + 2¢
+The O atom accepts those electrons to get the electronic configuration of inert
+gas and become O with 8 electrons.
+
+O+2e° ———+ 0°
+Now, Ca*® and O? come closer to form an ionic bond.
+
+Notably, the metals belonging to Group | and 2 and the non-metals of Group 16
+and 17 of the periodic table usually commit themselves to ionic bonding. Each
+tule has some exceptions. Here in this case, Al of Group-13 commits itself to
+ionic bonding. Other elements do not show this tendency to donate or accept
+electrons as they have too many electrons at their outermost energy level. As
+ionic bonding takes place through electrostatic force, it is very strong.
+
+2025
+Chemical Bond 97
+
+5.11 Covalent Bond
+
+You have just learned how a metal and a non-metal commit to ionic bonding in
+order to form compounds. That cannot be possible in the case of a reaction
+where both the elements are non-metals. So, how do they come together? Yes,
+two non-metal atoms can combine into a molecule too, like when two chlorine
+atoms are kept close, they bond chemically together into a chlorine molecule.
+But how is it possible for each of them has 7 electrons at their outermost energy
+level?
+
+The electronic configuration of Chlorine is ¢] (17) —> ts? 2s? 2p 35? 3p?
+
+Since it has 7 electrons at its outermost energy level, chlorine will tend to receive
+an electron instead of donating. But in the absence of a donor atom, the receiving
+will not happen also, Therefore, when two chlorine atoms come closer, 1
+electron from the outermost energy level of each comes together as a pair and the
+pair of electrons positions itself in between the two nucleuses of the two atoms.
+This is known as electron sharing. Thus. both the atoms assume the electronic
+configuration of inert gas at their outermost energy level. The result is that the
+two nucleuses of chlorine cannot leave each other or remain in a bonding. This
+kind of bonding is called covalent bonding. Therefore, it can be said, in a
+chemical bonding of two non-metal atoms, the atoms create a pair of electrons
+by sharing one each from their outermost energy level. Both of the atoms
+continue to share the pair together in a bond which is called a covalent bond. The
+compounds that are endowed with covalent bonds are called covalent
+compounds. In each covalent bonding, two electrons participate. The covalent
+bonding is denoted by a line (-) and the electrons are denoted by dot (.) or cross
+(x) marks.
+
+A chlorine molecule has two chlorine atoms and its formula is Cl, Many
+non-metals remain as molecules, like hydrogen (H,), oxygen (O,), nitrogen (N,),
+sulfur (S,), phosphorus (P,), bromine (Br,), lodine (I,), fluorine (F,,) ete.
+
+Forma-13, Chemistry Class-9-10
+o8 Chemistry
+
+Covalent Bond in Hydrogen: The electronic configuration of hydrogen is
+H(1) — 1s*. When 2 H atoms come close, both of them share one electron from
+their outermost energy level each. That means, they create a pair of electrons
+which makes the configuration same as inert gases. This creates a (H-H)
+
+covalent bond.
+H-+-H ——* H-H
+
+(+) =X)
+
+Hydrogen atom Hydrogen atom Hydrogen molecule
+
+Fig 5.08: Formation of covalent bond in Hydrogen molecule.
+
+Covalent Bond in O, Molecule:The electronic configuration of oxygen is
+O(8) — 1s? 2s? 2p* It lacks two electrons in its outermost energy level than that
+of inert gas. When two O atoms come close, both of them share two electrons
+from their outermost energy level each. That means, they create two pairs of
+electrons which makes the configuration same as inert gases. This creates a
+(O=0) covalent bond. Here the number of bond is two.
+
+Q mm & Q
+—_s
+
+oxygen atom oxygen atom oxygen molecule
+
+Generally,
+O+0 ——» 0=0 oF 0,
+Fig 5.09: Formation of covalent bond in Oxygen molecule.
+
+20235
+2025
+
+Chemical Bond 99
+
+Covalent bond is also available in compound’s molecule made of more than one
+non-metallic element. For example, in water’s molecule, O atoms share one of
+their electrons from the outermost energy level with one electron of H atom.
+Thus two (O-H) covalent bonds are created and water’s molecule is structured.
+
+®
+2
+
+Fig 5.10: Two (0-11) covalent bonds in water molecule.
+
+In the H,O molecule, two pairs or 4 electrons of O atom do not participate in any
+bonding. However, if required, they can also create bonds which you will learn
+
+in higher classes.
+
+An O atom is capable of participating in both ionic and covalent bonds. A Na
+atom however is never able to participate in covalent bonding: it always
+participates in ionic bonding only. An O atom can accept 2 electrons from other
+elements in an omic bond and can share 2 electrons with another element in a
+covalent bond. Na atom, on the other hand is capable of only donating electrons
+to other elements in an ionic bond.
+
+Molecules of elements with covalent bonds (N,, O,, Cl,, Br,, L, etc.) are called
+covalent molecules and compounds with covalent bonds (CH,, CO,, HCI, NH,
+etc.) are called covalent compound molecules. Many covalent molecules (CO,,
+NH,, O,, Cl,) remain in gaseous state at normal temperature and pressure. Some
+of them remain in the liquid state (H,O, C,H.OH etc.) in the same situation while
+some others (C,,H,, S,, 1,) are found in solid state. When two covalent molecules
+come close, a weak atiraction force remains effective among them. This force is
+called Vander Wall’s attraction force. The covalent molecules rernain attached
+100 Chemistry
+
+with each other due to this attractive force. That’s why, it is easy to alienate them
+with a bit of force. Melting and boiling points of these molecules are also low.
+Again, Vander Wall’s attraction force is hardly effective on gaseous covalent
+molecules. They remain as gaseous single molecules due to this.
+
+5.12 Characteristics of Ionic and Covalent Bonds
+
+(a) Melting Point and Boiling Point
+
+The compound consisting of an ionic bond is called an ionic compound and the
+compound consisting of covalent bonds is called a covalent compound. The
+melting and boiling points of ionic compounds are higher than those of covalent
+compounds. lonic compounds contain positive and negative charges which
+remain tightly connected with each other. Many such positive and negative
+charges are organized in an ionic compound in a three dimensional way to create
+a crystal. This results in a higher inter atomic force among them and that makes
+it tough to alienate from each other. Therefore, they require higher amount of
+heat energy to melt or to boil. Inter atomic force in covalent compounds is
+comparatively weaker as it is constituted because of Vander Wall’s [orce.
+Therefore, they can be boiled or melted with a lower amount of heat energy. You
+can easily experiment this with ionic compounds like NaCl, CuSO,, NaNO,,
+KCl, CaCl, ete. and covalent compounds like glucose, sugar, or even water. All
+the experiments will prove that the boiling point and melting point of ionic
+compounds are higher than those of covalent compounds
+
+(b) Solubility
+
+Take some water in a beaker or a glass jar. Add some NaCl, an ionic compound
+and continue to stir it. Then, do the same thing with washing soda
+(Na,CO,.10H,O), Copper Sulfate (CuSO,5H,O) or some other ionic
+compounds; you'll find thern all soluble in water. However, you'll not find the
+same result with silver chloride. That means apart from a few exceptions, ionic
+compounds are soluble in water. Try the same experiment with covalent
+
+ms
+=
+oy
+2025
+
+Chemical Bond 101
+
+compounds like naphthalene, mustard oil, kerosene ete. covalent compounds.
+You will find none of them soluble in water. Although there are few exceptions
+like sugar, glucose etc, most covalent compounds are not soluble in water.
+
+Why are some covalent compounds soluble in water? The reason lies in the bond
+structure of water. Water is a covalent compound itself where two hydrogen
+atoms are connected with one oxygen atom by electron sharing. But since
+oxygen is more electronegative than hydrogen, the two electrons of the covalent
+bond of water move towards oxygen a bit. As a result, oxygen atom becomes a
+partially negative charge while hydrogen becomes a partially positive charge,
+meaning a partial positive and a partial negative
+
+end is created in water molecule. This kind of 57 on
+charged covalent compound is called polar o's
+covalent compound. So, water is a polar soluble. O
+
+a m * * *
+Remember, the attraction force of an atom when Je x
+it tries to attract the electron pair of a covalent if
+bonding to itself is called the electronegativity H
+of an atom. The figure 5.10 uses 8 (plus delia) 5 + 5°
+
+and 6 (minus delta) to express positive and
+
+negative charges. mais
+Fig 5.11: “6 and 6 indicate
+
+When the ionic compound is added to water, the —_ partial positive and partial
+polar solvent, water molecule’s cation attracts Negative charge.
+
+the anion of the ionic compound. The same action takes place between the anion
+of water molecule and cation of ionic compound’s molecule. When this
+attraction force becomes greater than that between the cation and anion of the
+ionic compound, then they become alienated from each other and become
+surrounded by water molecule. Thus tonic compound is dissolved into water.
+
+NaCl is an ionic compound and being so, it gets dissolved in the polar solvent,
+water. Methanol (CH,OH) is a polar compound and so it gets dissolved mm polar
+solvent, water. Since methane (CH,) is neither an. ionic compound nor a polar
+compound, it does not get dissolved in water.
+102 Chemistry
+
+On the other hand, there is no cation and anion in covalent compounds. They
+don’t become attracted or distracted by cation and anion of water. As a result,
+they do not break down as ions in water or get dissolved.
+
+However, partial polarity is seen im some covalent compounds like ethanol
+(C,H,OH). These covalent compounds only get dissolved in water.
+
+(c) Electrical Conductivity
+
+Take some water solution of edible salt (NaCl)
+in a beaker and some water solution of sugar im
+another. Now put two graphite rods or any other
+land of metallic rod into each solution and
+finally connect battery and bulb to each of them
+accordingly as shown in the figure 5.12. You
+will see, the bulb in salt water solution is lit up
+
+while the one with sugar-water solution is not.
+That shows the salt water solution is able to Fig 5.12: Electrical conductivity
+
+You may come to decide that ionic compounds in solution with water can
+conduct electricity while covalent compounds cannot.
+
+You can also guess the reason very well. Electro-conductivity requires alienated
+positive and negative ions. In the salt water solution, Nat and Cl act as positive
+and negative ions respectively and conduct electricity. As in water solution,
+ionic compounds remain as alienated cations and anions, therefore, all water
+solutions with ionic compounds are electro-conductive.
+
+On the other hand, covalent compounds do not conduct electricity in water
+solution as they do not carry alienated ions.
+
+2025
+2025
+
+Chemical Bond
+
+103
+
+In CaCl, solution, there is Ca** and Cl. HCI solution contains H' and Cr.
+Therefore they can conduct electricity. Glucose (C,H,,0,) does not carry any
+ion, so it does not conduct electricity.
+
+Fig 5.13: Crystals of salt
+and sugar.
+
+5.13 Metallic Bond
+
+fr
+
+stal form.
+.. cry
+
+Formation of Crystals q
+
+Each group will take two beakers. One beaker
+will have salt and another, sugar. Add water
+to both and heat them a bil to dissolve as
+much salt (NaCl) and sugar (C,,H,,O,,) as
+possible. Now preserve both beakers for
+some days along with a cotton liner hanging
+inside each. After some days, pick up the
+liners- you will find salt and sugar crystals
+have formed around them. Usually, all tonic
+compounds remain as crystals. On the other
+hand, thouzh some form crystals, usually,
+covalent compounds are not available in
+
+Fa
+
+We have seen that, a metal and a non metal element creates an ionic bond among
+themselves while two non-metal elements create a covalent bond among
+themselves. But when two metallic elements come closer together, there is
+created a metallic bond. It means, the attraction force that keeps the atoms in a
+piece of metal interconnected is called the metallic bond. You have obviously
+seen copper wire, knife, scissors, window grill or gold ornaments etc. Numerous
+104 Chemistry
+
+atoms of the same element are interconnected by means of metallic bonds
+inside.
+
+The outermost energy level of each metallic atom usually contains 1, 2 or 3
+electrons in its electronic configuration. Since their size is bigger than the
+non-metallic elements of the same period, the attractive force of the nucleus on
+them is less strong. As a result, atoms donate one or more electrons from their
+outermost energy level and turn into a positive ion. This positive ion is called the
+atomic core. These atomic cores are three dimensionally organized in a metal’s
+lattice.
+
+Delocalised electron Atomic core
+
+@0@o®@
+OO @O-@
+@ @ @:6 @
+
+Fig 5.14: Metallic bonds.
+
+In the metal lattice, the donated electrons come out of the orbit and move freely
+
+at the center of the atomic core. Such electrons are called Delocalized Electrons.
+They become electrons of all the metallic ions of that piece of metal instead of
+remaining under a particular atom. It can be said that the ions remain organized
+like a lattice in the sea of electrons. When a delocalized electron is situated
+amidst two metallic ions, both the tons are attracted towards the electron with an
+electrostatic force. This causes the two lons to remain connected, which ts the
+basic feature of a metallic bond. These delocalized electrons are responsible for
+the conductivity of heat and electricity. Similarly, they are the reasons for the
+flexibility, brightness, and charge-resistance ctc. features of a metal.
+
+2025
+Chemical Bond 105
+
+Electro Conductivity of Metals
+
+All metals are electrical conductors. The delocalized electrons in the metal
+lattice are the carrier of electricity in them. If we connect the two ends of a piece
+of metal to positive (+) and negative (-) edges of a battery, the electrons will rush
+from the negative edge to the positive edge. That means, there will be flow of
+electricity from positive end to negative end. Flow of delocalized electrons
+
+creats electricity. There would not have been any electricity flow m the absence
+of delocalized electrons.
+
+hoe,
+oS
+_ | Op +
+oP a>
+QO) &
+Fig 5.15: Mechanism of electrical conductivity of Metal.
+Heat Conductivity of Metals
+
+When you heat an end of a piece of metal. you'll find that the other end is also
+getting warm fast. It means, metals are heat conductors too, The reason is again
+delocalized electrons. When heat is applied, these electrons receive energy and
+increase their velocity. They rush from the heated end towards the comparatively
+cooler end, Thus heat is conducted in a metal.
+
+Forma-l4, Chemistry Class-9-10
+106 Chemistry
+
+~
+
+( Identifying ionic and covalent compounds among locally ayailable
+
+products.
+
+Put edible salt, kerpoor, naphthalene, washing soda ete. in different
+
+beakers containing water. Stir them with a glass tube and mix them
+
+properly. Those which got dissolved in water are ionic compounds and
+
+those which did not are covalent compounds. You can divide all
+\_ contpounds into two categories by the same process A
+
+(?) Exercise
+
+1, What is the name of the attraction force which keeps the atoms bonded in a
+molecule?
+
+a. Electron affinity b. Electronegativity
+
+c. chemical bond d. Van Der Waals force
+2. The formation of which molecule below attains the electronic configuration
+
+of neon?
+a. KF b. CaS
+c. MgO d. NaCl
+
+20235
+2025
+
+Chemical Bond 107
+
+Answer the questions 3 and 4 on the basis of the following electronic
+configurations:
+
+3. Which valency is impossible for the element marked by D?
+a. 2 b.3
+c.4 d.6
+
+4. The element B—
+1. forms two types of bonds
+ii. donates electron to A
+iii. Dissolves in water combining with A
+Which of the following is correct?
+a. til b. ii and iii
+c.ianditi d.i, ii andi
+5. Which of the following denotes the formula of aluminum sulfate?
+a. Al,(SO4), b. Alsay
+c. Al(SO,), d. Also,
+6. What kind of compound is calcium oxide?
+a, covalent b. ionic
+
+¢. metallic d. polar
+108 Chemistry
+
+7. Which of the following compounds is not electro conductive in water
+solution?
+
+a. Nacl b. Cacl,
+
+c. Hel d. C,H,,0, (Glucose)
+
+x Y
+
+(Here X and Y are symbolic. Not symbols of any element)
+
+a. What is a covalent bond?
+
+b. Why is there a difference in the size between Na and Nat ions?
+
+c. What kind of bond is there in the compound YX of the stem? Explain.
+d. Though X is capable of forming both covalent and ionic bonds, element
+Y never goes into covalent bonds — Explain with logic.
+
+2. Read the following stem and answer the questions
+(a) CHy (b) Nac] (ce) ccl, (d) CH,OH
+
+a. What is a covalent bond?
+b. Why is water a polar compound? Explain.
+c. Which compound of the stem forms a crystal? Explain
+
+d.The compound (b) of the stem is soluble in water but compound (c) is
+not. Analyze
+
+ba
+Lia |
+=
+a

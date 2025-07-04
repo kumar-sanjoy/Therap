@@ -1,0 +1,780 @@
+2025
+
+Chapter Four
+Bioenergetics
+
+Thousands of biochemical reactions are being continuously carried out in the
+cells of organisms for the maintenance of life. For these reactions, energy is
+somewhat required, The sun is the main source of energy. The green plants
+transforming solar energy into chemical energy produce the food carbohydrates
+through the process of photosynthesis. Animals and non-green organisms cannot
+directly utilize solar energy, They have to depend somehow on green plants for
+the energy they require for the maintenance of their life. The main objective of
+bioenergetics is to discuss the energy flow through the living system. In this
+chapter, these cellular processes are discussed.
+@) Aine ena of this chapter, we will be able to-
+
+* explain the role of ATP as the main source of energy in a living cell;
+
+* explain the production of carbohydrates through the process of photosynthesis;
+
+* explain the role of chlorophyll and light in photosynthesis;
+
+* describe the role of factors in photosynthesis;
+
+* evaluate the dependence of organism on photosynthesis;
+
+* explain respiration;
+
+* explain the concept and significance of aerobic and anaerobic respiration;
+
+* draw comparisons between photosynthesis and respiration:
+
+* examine the necessity of chlorophyll and light in the process of photosynthesis;
+
+* perform the experiment to demonstrate the release of energy in the form of
+heat during respiration;
+
+* understand the contribution of plants in preparing food for organisms and
+learn conscious behaviors towards plants.
+
+2025
+2025
+
+4.1 Bioenergetics and the role of ATP
+
+The basic mechanism of production and utilisation of energy in the body of a
+living organism is its bio-energy. This is nol very different [rom the definition of
+energy given in Physics. The energy we get from making and breaking of
+chemical bonds in the molecules found in biological organisms is called by this
+hame. Living organisms continuously collect energy from the environment,
+transform them from one form into another, sometimes preserve them, and
+release them again in the environment.
+
+ATP
+et nd d Release
+Pad jp Triphosphate. of Enegery
+Enepery ak
+
+Diphosphate
+
+Figure: 4.01 The amount of energy needed to be supplied from outer source to produce
+Adenosine triphosphate( ATP) by combining Adenosine diphosphate (ADP) and
+phosphate, the same amount of energy is relensed when ATP is broken down inte ADP
+and inorganic phosphate. These two chemical reactions continue in cyclic order in living
+cells.
+
+Adenine is a fundamental component of DNA and RNA. It is a nitrogen base.
+Adenosine is composed of one molecule of adenine attached to a pentose (with
+five carbons) ribose sugar molecule. Adenosine can be linked to a chain of one,
+two, or three phosphate groups to form Adenosine Monophosphate (AMP),
+Adenosine Diphosphate (ADP), or Adenosine Triphosphate (ATP), Energy
+needs to be supplied from an outside source for the process of adding phosphate
+and this is called phosphorylation. In the reverse process, energy is released
+when a phosphate group is removed, This chemical reaction is known 4s
+dephosphorylation. Note here that 7.3 kilocalorie (approx. 30.55 kilojoules) is
+captured and remains stored in the phosphate group of each mole of ATP.
+Two organelles of a living cell collect energy from the environment and
+transform them into a form usable for the host cell. These two organelles are the
+
+mitochondria and the plastid. Both have a set of special complexes of molecules
+called Electron Transport System whose function is to store received energy
+
+from external source of energy as the energy of phosphate group in ATP. In case
+of mitochondria it may be the source of that energy is nutrients (such as:
+Glucose) or any transactional energy (such as: NADH2) and in case of plastid
+(specially chloroplast) it may be the source of that energy is sunlight or the
+photon come from another suitable source. All physiological functions, from
+muscle contraction to sensitivity, swallowing to digesting food, respiration to
+speaking, shouting to smiling and, physical growth to reproduction, controlling
+body temperature to maintain natural cell volume: everything is completed by
+energy released from the breaking down of the chemical bond of ATP. The food
+we eat is oxidized, and the energy released from this oxidization is used to create
+ATP through phosphorylation. It breaks down when energy is needed, and
+combines taking energy from food. This is like a rechargeable battery. ATP
+stores energy and supplies energy for other reactions when necessary. ATP is
+therefore called Biological coin or energy coin.
+
+4.2 Photosynthesis
+
+An important feature of green plants is that they produce carbohydrates from
+carbon dioxide and water in the presence of sunlight. In green plants, the process
+of the formation of carbohydrates is called photosynthesis. In this process, light
+energy is transformed into chemical energy. The food produced by the green plant
+is used to accomplish the metabolic processes required for its survival, and
+remaining food is stored in fruits, stems or leaves. The existence of mankind and
+other living creatures depends on the food produced and stored in plants. The
+essential components for photosynthesis are (1) chlorophyll (2) light (3) water and
+(4) carbon dioxide. Photosynthesis is a biocherucal reaction shown below:
+
+| 6COy + 12H,0 ean CgH190,¢ + 6Hy0 + 602
+
+The mesophyll tissue of a leaf is the main site of photosynthesis. Terrestrial green
+
+plants absorb water from the soil through their roots and send it to the chloroplasts
+in the mesophyll tissue. CO, trom atmosphere is absorbed through the stomata,
+and is sent to the same chloroplasts. Aquatic plants absorb the CO, which is
+
+f025
+dissolved in water. The presence of CO, in the atmosphere and water is 0.03%
+and 0.3% respectively. So, the rate of photosynthesis is higher in aquatic plants
+than that of land plants.
+
+Mesophyll cell
+
+} |~ Mesophvyll tissue
+
+Chloroplast
+
+Figure: 4.02 Photosynthesis
+Oxygen and water are by-products of photosynthesis. So, it is an oxidation-
+
+reduction process. In this process HO is oxidised and CO, is reduced,
+
+4.2.1 The Process of Photosynthesis
+
+Photosynthesis is a long and complex process. In 1905, British physiologist
+Blackman divided the process into two phases. They are the (1) light dependent
+phase and the (2) light independent phase.
+
+(1) Light dependent phase: Light energy is essential in the light dependent phase
+of photosynthesis. In this phase, solar energy is transformed into chemical energy.
+Through this process ATP (Adenosine triphosphate) and NADPH (reduced
+nicotinamide adenine dinucleotide phosphate) and H+ (Hydrogen ion or proton)
+are produced. Energy converted from the photon is stored i the phosphate group
+of ATP as the chemical bonding energy. Chlorophyll plays a very important role
+Forma-09, Biology Class-9-10
+Stroma
+Gaurd cell
+Companion cell
+
+Figure : 4.03 A Stoma
+
+in the production ef ATP and NADPH+H+. Chlorophyll molecules absorb
+photons from light, and with the help of the energy obtained from the photon
+absorbed, ATP is formed through the addition of an inorganic phosphate with
+ADP. The process of the formation of ATP is called photophosphorylation.
+
+ADP + Pi —““—» ATP
+
+chioraphyl!
+
+Oxygen, proton/hydrogen ion and electrons are released through the hydrolysis
+of water with the help of sunlight and chlorophyll. The process is called the
+photolysis of water.
+
+ATP is produced through the process of photophosphorylation, The electrons
+reduce NADP, and produce NADPH+H". This process of producing ATP and
+NADPH+H" is called assimilatory power.
+
+(2) Light independent phase or dark phase: No light is directly required in the
+light independent phase, although the process can be carried out in presence of
+light. Atmospheric CQ, enters the cells through the stomata of the leaves. In this
+phase, carbohydrates are produced by the reduction of CO, with the help of ATP
+and NADPH+H* that was produced in the light phase. In green plants, the
+pathways of CO, reduction have been identified, and they are briefly discussed
+here: (a) Calvin cycle (b) Hatch & Slack pathway and ( c) Crassulacean acid
+metabolism (CAM), Of these, the first two cycles are briefly discussed below,
+
+(a) Calyin cycle or C4 cyele: The pathway of fixing CO2 is named alier its
+discoverers Calvin-Benson-Bassham (CBB) cycle or simply the Calvin cycle.
+Melvin Ellis Calvin was awarded the Nobel Prize in 1961 for this discovery. In
+most plants, carbohydrates are produced through this process. Because the first
+
+2025
+£23
+
+stable compound, formed by this process is the 3-carbon compound
+phosphoglyceric acid, so this pathway is called C, pathway and the plants where
+this cycle takes place is called C, plants.
+
+Grannum disc
+or thylakoid
+(Light reaction center)
+
+Stroma
+(Dark reaction center)
+
+tt
+Oo, Carbohydrate
+
+Figure : 4.04 Light dependent phase and Calvin Cycle
+(b) Cy cycle or Hatch and Slack pathway: In 1966, two Australian scientists,
+M.D. Hatch and C.R. Slack discovered the reduction pathway of CO. The first
+stable substance formed in this pathway is 4-carbon based Oxaloacetic acid. So
+this pathway is also called C4 pathway and the plants where this cycle takes place
+is called C, plants.
+
+In C, plants, both the Hatch and Slack cycle and the Calvin cycle are carried out
+simultaneously. The rate of photosynthesis in Cy plants is higher than that of in
+C; plants. Some examples of C4 plants are maize, sugareanes, other plants of
+erass type, motha grass and amaranthus.
+
+4.2.2 Role of Chlorophyll in Photosynthesis
+
+There is a direct relationship between the rate of photosynthesis and the amount
+of chlorophyll in the leaves, because only chlorophyll can capture solar energy,
+We know the old chloroplasts are disintegrated, and then new chloroplasts are
+synthesised. The rate of photosynthesis is dependent on the rate of regeneration
+of chloroplasts or the components of chloroplasts. For the maintenance of
+photosynthesis, different components of chlorophyll are required to be
+regenerated speedily in large amounts. But, too much chlorophyll in the cell
+results in the shortage of enzymes and the rate of photosynthesis slows down.
+
+4.2.3 Role of Light in Photosynthesis
+
+‘The importance of light in photosynthesis is immense. For the production of
+carbohydrates from HO and COs, the source of required energy is light. Sunlight
+also takes part in the development of chlorophyll. With sunlight and when
+stomata are open, CO, can enter the leaves, and take part in the production of
+food, But only a small proportion of the light falling on the leaf, is used in
+photosynthesis. Red, blue, orange and purple portions of the visible spectrum
+function better than that of green and yellow in the process of photosynthesis.
+The rate of photosynthesis increases with the increase of light up to a definite
+limit. If the amount of light mereases too much, enzymes disintegrate and cause
+the production of chlorophyll to reduce. Consequently the rate of photosynthesis
+also decreases. Photosynthesis, generally, is carried out well with light of wave
+length between 400nm-480nm and 680nm.
+
+4.2.4 Factors affecting photosynthesis
+
+Besides light and chlorophyll, photosynthesis is also affected by other factors.
+Some of the factors are external and some are internal. These factors are
+mentioned below.
+
+(a) External factors
+
+Light: It has already been discussed.
+
+Carbon dioxide: Photosynthesis cannot be carried out without carbon dioxide.
+Food produced by this process is formed from the reduction of carbon dioxide.
+The concentration of carbon dioxide in atmosphere is 0.03% but, plants can use
+carbon dioxide upto 1% concentration. So, the rate of photosynthesis increases
+with the increase of carbon dioxide upto 1% in atmosphere. If the amount of
+carbon dioxide is increased to a very high level, acidic conditton in the cells of
+mesophyll tissue increases and stomata get closed, so the rate of photosynthesis,
+then decreases.
+
+Temperature: Temperature as a factor plays a very important role in the process
+of photosynthesis. At a very low temperature (around 0°C) and a very high
+temperature (above 45°C), photosynthesis cannot be carried out. The optimum
+temperature for photosynthesis is from 22°C to 30°C. If temperature remains
+below 22°C or above 35°C, the rate of photosynthesis will decrease.
+
+Water: In photosynthesis the H+ (Hydrogen ion) required for the reduction of
+CQ>,, forthe production of carbohydrates comes from water. In scarcity of
+
+2025
+2025
+
+water, the guard cells of stomata become flaccid, and so, the entry of CO, is
+disrupted. In the excessive scarcity of water, pholosynthesis may be completely
+stopped as the enzymes become inactivated.
+
+Oxygen: If the concentration of oxygen increases in the atmosphere, the rate of
+photosynthesis decreases. Conversely, the rate of photosynthesis increases with
+the decrease of oxygen in the atmosphere. However, photosynthesis stops
+completly in the absence of oxygen.
+
+Mineral nutrient clements: Nitrogen and magnesium are two main
+components of chlorophyll. A leaf cannot synthesize chlorophyll in absence of
+iron, and consequenily, the leaves become yellow. Thus, the rate of photosynthesis
+decreases if there are low levels of minerals in the soil.
+
+Chemical substances: The process of photosynthesis is inhibited or completly
+stopped if the chloroform, hydrogen sulfide, methane or any poisonous gases
+are present in the air.
+
+(b) Internal factors
+
+Chlorophyll: It has already been discussed.
+
+Age and number of leaves: Leaves that are too young or too old contain very
+little chlorophyll. This is why the rate of photosynthesis in them is very low.
+With the aging of leaves, the number of chloroplasts also increases. The rate of
+photosynthesis in the middle-aged leaves is the highest. With the increase of the
+number of leaves, the rate of photosynthesis is accelerated.
+
+Amount of carbohydrates: During photosynthesis, if the conduction of
+carbohydrates is low. carbohydrates become clogged im the leaves. In the
+
+evening. the rate of photosynthesis is low because of the accumulation of
+carbohydrates that were produced earlier.
+
+Potassium: The rate of photosynthesis is found to become slow if there is a
+shortage of potassium, since potassium likely plays a role as a catalyst in the
+process.
+
+Enzymes: Several enzymes are required for the process of photosynthesis.
+4.2.5 Importance of photosynthesis in living world
+
+Photosynthesis is the most important biochemical process in the world. Through
+the process, a bridge is developed between living things and sunlight. The
+importance of photosynthesis can be understood from the discussion below.
+Observing the vast impact of this process on earth, some scientists have named it
+the Bio-Chemical factory.
+The sun is the main source of all energy. Only green plants can transform solar
+energy into chemical energy and store as food through photosynthesis.
+
+No animal can produce its food itself. The foods we eat such as rice, bread, fruits,
+vegetables, fish, meat, milk, egg etc., are directly or indirectly derived from green
+plants. So, all animals are completely dependent on green plants for their food,
+and the green plants produce food through the process of photosynthesis. It can
+be said that the food for all plants and animals on earth is produced through the
+physiological process of photosynthesis. Photosynthesis is very important for
+maintaining the balance of different components in the atmosphere. especially
+the ratio of CO, and O,. The presence of O, and CO, gases in the atmosphere is
+20.95% and 0.033% respectively.
+
+For normal growth and survival of plants and animals on earth, these two gases
+must be present in atmosphere within a normal limit. If the amount of the gases
+is different than normal, the atmospheric environment becomes hostile to living
+world. We know that cellular respiration is taking place in all living organisms
+(both plants or animals) all the time. In respiration, organisms use O, and release
+COs, If only respiration would have occurred in nature, a shortage of O» and a
+surplus of CO, would definitely be found in the atmosphere. As green plants
+absorb COs and release O, through the process of photosynthesis, the correct
+ratio of O, and CQ» in the atmosphere 1s maintained. Nowadays a dangerous
+situation has occurred as the ratio between these two gases is changing due to the
+excessive cutting of trees. So we should plant trees in large numbers.
+
+The progress of human civilization is dependent on photosynthesis directly and
+indirectly. Foods, clothes, industrial materials (such as nylon, rayon, paper,
+cellulose, timber, rubber), medicine (such as quinine, morphine), and fuel coal,
+petrol, gas are produced from plants. So, if photosynthesis does not occur,
+human civilization would be ruined, and the living world would be destroyed.
+This is why photosynthesis is the most important biochemical process in the
+living world.
+
+Not only that there was no gaseous oxygen about 5 billon years ago when the
+earth was created. Through the process of photosynthesis, primitive plant
+produced oxygen which helped to make the earth habitable for us.
+
+2023
+2025
+
+Activity-1: Experiment to show the necessity of light in the process of
+photosynthesis.
+
+Essentials: A potted plant with green leaves, black paper, 95% ethyl alcohol,
+1% iodine solution, black paper, clips, water, petridish. test tube, beaker,
+bunsen bummer or spirit lamp, dropper, forcep.
+Procedure: The potted plant should be kept in
+a dark place for 48 hours so that the leaves
+become starchless. A part of a leaf on the
+potted plant kept in the dark needs to be
+covered with a piece of black paper and
+clipped in such a way that no sunlight can
+reach it. Then. the potted plant should be kept
+in sunlight for 6-7 hours. After 6-7 hours the
+leaf, plucked off and black paper removed, will
+be boiled in water for several minutes. Then,
+in order to make it chlorophyll free, the leaf
+should be again boiled in 95% ethyle alcohol
+until it becomes laded. Now the leaf is to be
+washed im water and drained with iodine
+solution. In order to avoid any accident
+while boiling in alcohol, the test tube containing alcohol and the leaf should
+
+Figure: 4.05 Essentialily of light
+in Photosysthesis
+
+be heated inside water in a beaker, instead of giving it any direct heat.
+
+Observation: When the leaf is picked up from iodine solution, we can see
+that except the covered part, the remaining part of the leaf becomes blue,
+deep purple or black.
+
+Conclusion: Because of the chemical reaction between starch and iodine,
+starch will turn blue, deep purple or black. As the sunlight cannot reach the
+part of the leaf covered with the black paper, starch cannot be formed there
+through photosynthesis. As starch is not formed in that part of the leaf, it
+
+cannot tun blue, deep purple or black after reaction with the iodine |
+
+solution. Since sunlight has fallen on the remaining parts of the leaf, starch
+
+was produced there. It proves that light is essential for the formation of
+
+starch during photosynthesis.
+
+Precautions
+
+(1) Before performing the experiment. the potted plant should be kept in dark
+for sometime (about 48 hours).
+
+(2) Black paper should be of such quality that no light can pass through it.
+
+(3) Before the test, the potted plant should be kept in sunlight at least for 6- 7 hours.
+
+(4) While boiling the leaf into alcohol, it is better not to use direct heat.
+
+| Activity-2; Experiment to show the necessity of chlorophyll in the process of
+
+photosynihesis,
+
+Essentials: Manihot or variegated leat, alcohol, iodine solution, water,
+petridish, test tbe, bunsen burner, dropper, beaker.
+
+Procedure: A manihot or variegated leaf is to be picked at noon and its green
+portion marked. After boiling the leaf for a few minutes in water, it is then be
+boiled in alcohol until its colour has faded. Now, after washing the leaf in
+water, dip it in iodine solution. In order to avoid accidents while boiling in
+alcohol, the test tube containing the alcohol and the leaf, should be heated in
+water in a beaker instead of applying direct heat.
+
+Observation: Only the green portion of the leaf becomes blue, deep purple,
+or black after the leaf from iodine solution.
+
+Conclusion: Only the green portion of the leaf produced carbohydrate
+through photosynthesis, because of the presence of chlorophyll. Since there is
+no chlorophyll in the non-green (orange or yellow) portion, carbohydrate was
+not produced, Because of the carbohydrate, the green portion becomes blue or
+deep purple or black in the iodine solution.
+
+Precaution : While boiling the leaf im alcohol, it is better not to use direct heat.
+
+f025
+4.3 Respiration
+
+In previous classes you learned about respiration and how through respiration,
+organisms accomplish growth and derive energy. In this chapter, a more detailed
+discussion will be made on respiration. Energy is required to maintain the process
+of lite of organisms for activities like locomotion, healing of injury, growth and
+reproduction. We have already known that the main source of energy is the sun.
+Through photosynthesis. plants store solar energy in carbohydrates as potential
+energy. The stored energy in the food cannot be directly used by the organisms for
+the maintenance of their life. Durimg respiration, this potential energy is converted
+into kinetic energy (ATP) in the form of heat, which supplies the necessary energy
+for various physiological activities. Carbohydrates, fats, proteins and organic
+acids can be processed and consumed through this process. These complex
+compounds in the bodies of living organisms, are broken down into simple
+compounds and later transformed into ATP. At normal temperature, the process
+of respiration occurs in the living organisms around the clock. But, in the
+growing parts of a plant, such as in floral and lateral buds. germinating seeds,
+and the tip of stem and root, the rate of transpiration is very high. Respiration
+takes place in the cytoplasm and mitochondria of a living cell.
+
+4.3.1 Types of respiration
+
+Based on the availability of oxygen during respiration, the process is divided into
+two types: (1) Aerobic respiration (2) Anaerobic respiration.
+
+(1) Aerobic respiration: The respiration process, which requires oxygen and
+produces CO, HO and a large amount of energy by oxidising the respiratory
+materials (carbohydrates, proteins, lipids, different kinds of organic acids)
+completely, is called aerobic respiration. Aerobic respiration is the typical
+respiratory process of planis and animals. It can be expressed with the following
+equation:
+
+ GeHOe + 60, _filttrentemzymes  gco, + 6H0 +eeey(686 k Cal / Mole) |
+_ -glucase
+
+Forma-10, Biology Class-9-10
+Through aerobic respiration, one molecule of glucose when completely oxidised
+produces 6 molecules of CO, 6 molecules of H,O0 and 38 molecules of ATP.
+
+(2) Anaerobic respiration: Respiration, which occurs in absence of oxygen, is
+
+called anaerobic respiration. That is, in anaerobic respiration, respiratory
+substances are partially oxidised with the help of enzymes to produce different
+types of organic compounds (ethyl alcohol, lactic acid etc.), CO, and a small
+amount of energy,
+
+“CeHinOc _—Sneyme—» 2C2zHs0H + 2CO, +energy(56 k Cal / Mole)
+glucose ethyl alcohol |
+
+Anaerobic respiration only occurs in some microorganisms such as in bacteria,
+yeast tc.
+
+Short description of aerobic respiration
+
+Aerobie respiration is generally divided into four distinct stages:
+
+Stage 1: Glycolysis
+
+When oxidized through chemical reactions, one molecule of glucose (CgH,,0¢)
+is broken down into two molecules of pyruvic acid (C;H,O;). Four molecules of
+ATP (two ATP being used in the process) and two molecules of NADH+H* are
+produced in this stage. In this process, no oxygen is required. It is the initial
+stage for both aerobic and anaerobic respiration. It takes place in the cytoplasm
+ofa cell.
+
+Stage-2: Acetyl Co-A formation
+
+This stage also takes place in the cytoplasm. Each molecule of pyruvic acid,
+produced in glycolysis, is transformed into a molecule of 2-carbon acetyl co-A,
+a molecule of CO, and a molecule of NADH+H' (i.e. from two molecules of
+
+pyruvic acid two molecules of acetyl Co-enzyme-A, two molecules of CO, and
+two molecules of NADH+H+ are produced). Previously it is assumed that this
+
+stage occurs in cytoplasm but the latest data show that the reaction occurs in the
+matrix of mitochondria,
+
+Stage-3: Kreb's cycle
+
+In Kreb's cycle, 2-carbon acetyl Co-A, are oxidized to produce two molecules of
+CO». This cycle is named after the British biochemist Sir Hans Kreb who
+discovered the eycle. In this stage, acetyl Co-A enters the mitochondria and
+
+2025
+£23
+
+participates in Kreb's eyele. All the reactions of this cyele occur in the
+mitochondria. In this cycle, from one molecule of acetyl Co-A, two molecules of
+carbon dioxide, three molecules of NADH+H"*, one molecule of FADH2 and one
+molecule of GTP (Guanosine triphosphate) are produced. So, from two
+molecules of acetyl Co-A, four molecules of CO,, six molecules of NADH+H*,
+two molecules of FADH, and two molecules of GTP are produced. It is notable
+that ATP can be produced directly instead of GTP in the Kreb’s cycle of animal
+cell, But in almost all plants ATP is always produced instead of GTP. Since one
+molecule of ATP is produced in next stage (i,e Electron Transport System) which
+is equivalent of one molecule of GTP. That’s why this difference does not occur
+any variation of total amount of energy derived from Kreb’s cycle.
+
+Stage-4: Electron transport system
+
+Tn this stage, NADH+H+ (reduced NAD), and FADH2 (reduced FAD) produced
+in the above three stages are oxidized. Consequently ATP, water, electrons
+containing high-energy and protons are produced. The energy is released while
+electrons containing high-energy move through the electron transport system.
+This energy is used in the formation of ATP. The electron transport system takes
+place in the mitochondria,
+
+co), Os
+Acetyl Co-A be Acetyl CoA
+Acetyl Co-A Acetyl ConA
+aNADHs ‘WADE
+siete | FADE.
+an or
+Kreb'’s cycle Kreb's cycle
+2003
+
+| CO: +watert+38 ATP +Heat energy |
+
+Figure 4.06 Acrobic respiration process
+In aerobic respiration, one molecule of glucose is completely oxidized to
+
+produces six molecule of CO,, six molecules of water and 38 ATP. This is shown
+in the chart below.
+
+Stage of respiration | Substance produced Used substance | Neat product
+Glycolysis 2 molecules pyruvic acid |
+2 molecules NADH+H* 2 molecules ATP | 6 ATP
+4 molecules ATP | 2 ATP
+Acetyl Co-A 2molecules acetyl Co-A | 2 molecules 2 molecules CO,
+2 molecules CO2 pyruvic acid 6 ATP
+2 molecules NADH+H" |
+Kreb’s Cycle 4 molecules COs 2 molecules | 4 molecules CO,
+6 molecules NADH+H* acetyl Co-A 18 ATP
+2 molecules FADH, 4 ATP
+2 molecules GTP |2 ATP
+| 38 ATP (net total ATP)
+aca | +6 molecules CO;
+
+| molecule NADH+H* or NADH, = 3 molecules ATP
+1 molecule FADH?2 = 2 molecules ATP
+1 molecule GTP = 1 molecule ATP
+
+Stages of anaerobic respiration
+
+Anaerobic respiration has two stages. The two stages are:
+
+Stage -1: Incomplete oxidation of glucose
+
+In this stage, from one molecule of glucose, two molecules of pyruvic acid, four
+molecules of ATP{two of them already being used) and two molecules of
+NADH+H" are produced. This process looks similar to glycolysis in aerobic
+respiration. However, it is considered that the oxidation of glucose here is
+incomplete because the pyruvic acid that is produced here is reduced in the next
+stage.
+
+Stage-2: Incomplete reduction of Pyruvic Acid
+
+With the help of enzymes in the cytoplasm, pyruvic acid is reduced to CO, and
+ethyl alcohol, or only lactic acid. In this case NAD (NADH+H+), which is
+reduced in glycolysis, releases clectron, proton and energy after oxidization and
+these are used to produce lactic acid and in some cases ethanol! from pyruvic
+acid, On the other hand, oxidative phosphorylation does not take place because
+of the absence of oxygen. So in anaerobic respiration, only two molecules of
+ATP are produced from the glycolysis of glucose.
+
+2025
+2025
+
+4.3.2 Factors affecting respiration
+
+The factors affecting respiration are both external and internal.
+
+(a) External factors: External factors affecting respiration are mentioned below:
+T)Temperature: The rate of respiration becomes low at temperatures below
+20°Celsius and above 45° Celsius. The optimum temperature for respiration is from
+20° Celsius to 45°Celsius.
+
+W)Oxygen: In aerobic respiration, pyruvic acid is oxidised into CO, and H,O.
+50, aerobic respiration cannot be carried out withoul oxygen,
+
+Ti) Water: The supply of optimum amount of water keeps in respiration its normal
+state. If the supply of water is too litle or too much, respiration is inhibited.
+TV)Light: Though light is not required for respiration, the rate of respiration is
+higher in day light, because the exchange of CO, and O, through stomata Is easier
+since the stomata is opened.
+
+¥)Carbon dioxide: If the amount of CO, in the air is increased, the rate of
+respiration becomes slower.
+
+b) Internal factors: The internal factors are mentioned below:
+
+I)Food materials: In respiration energy, water and CO, are produced by breaking
+down food materials (respiratory substance), so the amount and types of food
+control the rate of respiration.
+
+IHEnzymes: Many types of enzymes actively take part in the process of
+respiration. So, a deficiency of enzymes causes the rate of respiration to slow.
+TiAge of cells: In young cells ( especially, cells in the meristematic tissue) the
+greater amount of protoplasm causes respiration at a higher speed than in old cells.
+TV)inorganic salts: Though some salts inhibit the process of respiration, some salts
+in the cells are essential for the running of normal activities of the cell and to drive
+the process of respiration.
+
+V)Intracellular water: Water is necessary to dissolve different respiratory
+substances and to increase the effect of enzymes.
+ag!
+Fe:
+
+4.3.3 Significance of respiration
+An organism performs all activities with the energy produced through
+
+respiration. CO, released during respiration is used in the process of
+photosynthesis to produce carbohydrate, the main food of living beings. This
+process helps plants to absorb mineral salts, which indirectly drive the growth
+and other physiological activities in a plant. The energy required for cell division
+is produced through respiration. So, this process also controls the growth of
+organisms. Different sub-alkaline or organic acids are also produced through
+respiration and they help other physiological activities of life. Some bacteria
+cannot live in the presence of oxygen. Their main source of energy is anaerobic
+respiration. ‘Through the process, ethyl alcohol is produced, This process is also
+used in industry. Through this process, lactic acid, through fermentation,
+produces curd, cheese etc. It is also used in making bread, Yeast produces alcohol
+and CO, gas through the process fermentation, CO, makes the bread inflamed.
+
+@) Individual Activity
+
+Activity : Experiment to demonstrate the release of energy in the form of
+heat during respiration.
+
+Essentials: Two thermoflasks, two thermometers, two rubber corks with holes,
+some germinated chick-peas, 10% mercuric chloride solution.
+
+Procedure: Label one of the
+thermoflasks as A and the other as
+B. Some germinatd chickpeas along
+with some water are placed in
+thermoflask A. A thermometer should
+be inserted through the hole of a cork on
+the 'flask A' with its opening sealed well.
+The remaining chickpeas will be placed
+in flask B afier soaking in 10% mereuric
+chloride solution for 10 minutes.
+
+Figure 4.07: Tharmoflask
+
+2023
+2025
+
+A thermometer will also be inserted in thermoflask B. Now, after taking the
+initial temperature of each thermometer 'A' and B', they should be kept at rest.
+Observation: After a few hours the temperature of the thermoflask, containing
+germinated seeds, marked 'A' rises. There is no temperature change in the other flask,
+
+Conclusion: As the chick peas in the flask 'A' was fresh, it carried out respiration
+and released of energy in the form of heat, the temperature in the flask rises. But,
+in thermoflask 'B’, as the seeds are dead and sierilized because they were soaked
+in mercuric chloride solution, the respiration process docs not occur. So, the
+temperature remains unchanged,
+
+Precautions
+1. The seeds should be fresh and well germinated.
+2. The tip of the thermometer should be positioned at the middle of the stacks of seeds.
+
+(?)Exercise
+Y questions:
+
+otrtet
+
+(72) swore >
+
+What is photosynthesis? Represent it by a chemical equation.
+What are the raw materials for photosynthesis?
+
+What is respiration? Represent it by a chemical equation.
+
+State the differences between photosynthesis and respiration,
+State the differences between aerobic and anaerobic respiration,
+
+| el
+
+a ee
+
+petnamth ene
+
+1. Explain the dependence of organisms on photosynthesis.
+2. Discuss the significance of respiration.
+. Which one is evolved as a by-product in the process of photosynthesis?
+
+a. Water b. Carbohydrates
+c. Oxygen d. Carbon dioxide
+. What number of ATP is produced in the glycolysis stage of respiration?
+a. 4 b. 6
+c.8 d. 18
+
+Look at the stem and answer the questions no. 3 and 4.
+
+3. The functions of both A and B are —
+
+1. to intake Oj
+
+ti. torelease H;O
+
+iti, toremove CO
+
+Which one of the following is correct?
+
+ald u b. 1 & tit
+c.U & iil di. ti & tii
+. The process accomplished in the figure X-
+
+i, keeps the environment cold
+
+il. helps the process of photosynthesis
+iii. inhibits the process of respiration
+
+Which one of the following is correct?
+ai & ii b.i & ii
+ci & ii di, i & tii
+
+2025
+PP Ss
+
+What is the chemical formula of pyruvic acid?
+What do you understand by anaerobic respiration?
+
+Explain how the component A of above figure is being produced.
+
+What are the effects on plants if the production of A shown in the figure is
+inhibited? Explain.
+
+Bipasha, a student of class X, likes to eat carrots. As the carrots contain glucose, it
+provides her with energy. Her younger sister asks her how a plant derives energy
+for its growth. She replies that a plant also derives energy through the respiration.
+
+What is photolysis of water?
+What is meant by C, plants?
+
+c. Explain with a chart how much energy is produced in Kreb’s cycle from two
+
+molecules of food eaten by Bipasha.
+What are the effects on plants if the process mentioned above is inhibited?
+
+Forma-11, Biology Class-9-i0

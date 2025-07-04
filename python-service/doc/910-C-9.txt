@@ -1,0 +1,1073 @@
+Chapter Nine
+Acid-Base Balance
+
+Most of fruits slightly acidic.
+
+We use various kinds of compounds in a chemical laboratory. Acids, bases and
+salts are most frequently used. As chemistry learners, you also need to learn
+about acid. base and salt. We mostly use diluted acids and bases instead of
+concentrated acids or bases in our laboratories. We take in acids, bases and salts
+with our food which is important for our bodies. Salt is formed by neutralizing
+acid with base or vice versa, We can determine the acidity from various
+experiments in the laboratory. Litmus test and pH value test are the most
+commonly used, These necessary acids, bases and salts are also harmful to some
+extent to our environment. We will discuss about all these in this chapter.
+
+2025
+2025
+
+Acid- Base Balance 207
+
+explain the characteristics of acids, bases and salts
+
+identify acids, bases and salts from your everyday surroundings
+differentiate between basic and alkaline substances
+
+describe the effect of acid and base on common materials
+
+evaluate the financial effect of acid and alkaline materials on our
+household materials
+
+explain the concept of pH.
+
+explain the importance of measuring pH
+
+realize the importance of equilibrium of acid-base in the maintenance
+of environmental balance
+
+explain the cause of acid rain, its hazards and the ways of protection
+from it
+
+explain the water cycle
+
+explain the hardness of water
+
+identify the advantages of using hard water
+
+explain the financial losses due to use of hard water
+
+describe the causes of water pollution and the means of water
+purification
+mention the harms of drinking arsenic contaminated water
+determine the nature of household/lab/saline water measuring the pH
+comparing the nature of compounds (acid, base) by determining the
+pH value or Litmus test or universal indicator
+
+show interest in using pollution free water
+
+show awareness about the terrible side of acid violence and make
+others aware of them
+
+exhibit effects of acid and base on useful materials with experiments
+take appropriate precautions in using acidic and basic materials
+208 Chemistry
+
+9.1 Acid
+
+Acid is highly important among chemicals. Acid is a kind of chemical which,
+when dissolved in water decomposes into hydrogen ion or proton (H*).
+Hydrochloric acid (HCI), sulfuric acid (H,SO,) etc. are concentrated acids, so
+they get decomposed in aqueous solution:
+
+Hcl{aq) ————® H*(aq) + Cl(aq)
+H,S0,(aq) ————®  2H*(aq) + SO,’ (aq)
+Again, carbolic acid (H,CO,), acetic acid (CH,COOH) etc. are diluted acids.
+They decompose in aqueous solution in the following manner:
+
+HyCO3(aq) —=* 2H*(aq) + CO,*(aq)
+
+CH,COOH(ag) ——— _ HYlaq) + CH,COO-(aq)
+
+In the case with HCl] and 1,50, the decomposition is shown by moonfaced
+arrow mark. That means, these acids get 100% decomposed in water. That is why
+they are called strong acids. The decomposition of the later two acids are shown
+wilh dual faced arrows, meaning they are partially decomposed in water.
+That is why they are called weak acids. For instance, at 25°C temperature, out
+of 1000 CH,COOH molecules, only 4 will be decomposed in water, The rest
+996 molecules remain mtact in water. When the amount of acid in the solution
+of acid and water is higher than water, the solution is called a concentrated
+acid. When the amount of water in such solutions is higher, it is known as
+a dilute acid. Acid tastes sour. You have certainly tasted tamarind which is
+too sour. Tamarind contains tartaric acid which makes it sour. Blue litmus turns
+red when it is put in an acidic solution.
+
+Acid undergoes a reaction with metallic oxide and produces salt and water:
+
+CaO + 2HCl ——  cacl, 4 H,0
+Calcium oxide Hydrochloric acid Calcium chloride Water
+(Metallice oxide) (Acid) (Salt)
+
+2025
+Acid-Base Balance 209
+
+Acid undergoes a reaction with more reactive metals to produce salt and
+hydrogen gas.
+
+2Na + 2Hcl ——$————» _ 2Nacl + Hi
+Sodium Hydrochloric acid Sodium chloride Hydrogen
+(Metal) (Acid) (Salt)
+
+The food items that we take everyday contains various acids. For example, milk
+contains lactic acid, soit drinks contain carbonic acid, lemon or orange has citric
+acid, tamarind has tartaric acid, vinegar has ethanoic acid, tea contains tannic
+acid etc. When we eat or take these foods, the acids go inside our body. They
+help in digesting our food and prevent diseases, Besides, there are pickles
+containing different acids which act as appetizers. Since these acids are weak
+they cannot harm our health. Inside the body, the stomach wall generates
+hydrochloric acid which is a very strong acid. It is used for decomposing food
+inside, However, sometimes there is excess secretion of HCl! from the stomach
+which starts to decompose the cells of the stomach wall. Again, if we remain
+hungry or keep our stomach empty, the HCl decomposes the cells of the stomach
+hurting the stomach living for which we feel pain. This situation is called peptic
+ulcer. Therefore, we need to avoid the foods that inspire excess secretion of acid
+and to stay without food for a long time as well. The chapter will let you know
+many other properties and uses of acid.
+
+9.1.1 Demonstrating Properties of Dilute Acids through Experiments
+
+(i) Taste: All dilute acids are sour in taste. We have already seen that the acidic
+foods are sour, However, remain careful not to taste any acid in the laboratory. If
+your tongue comes in contact with any of these acids, they will instantly corrode
+your tongue. You may try the taste of tamarind instead which will tell you
+tartaric acid tastes sour.
+
+(ii) Corrosive: Acids are corrosive. If you put a piece of metal im acid, the outer
+edge of the metal will be corroded,
+
+(iii) Litmus Test: Acid turns blue litmus into red, Take 2-3 mL hydrochloric
+acid ina test tube and add a blue litmus to it. You will see, the blue colour will
+
+Forma-27, Chemistry Class-9-10
+210 Chemistry
+
+turn red. You may try the same test with H,SO,, HNO, or any other acid. Even
+tamarind or pickles will give you the same result.
+
+(iv) Reaction with Reactive Metals: An Acid undergoes a reaction with
+reactive metals (K, Na, Mg etc.) and produces salts of that metal and hydrogen
+as well. For example. Mg undergoes a reaction with sulfuric acid and produces
+MgsO, and H, gas.
+Me +H,;sO,  ———* Mes0, + H,T
+(v) Reaction between Dilute Acid and Metallic Carbonate: Dilute acids
+undergo reactions with metallic carbonate to produce salt, water and carbon
+dioxide. For example, calcium carbonate and dilute HCl undergo a reaction and
+produce calcium chloride salt, water and carbon dioxide gas. The gas comes out
+in bubbles.
+CaCO, + 2HCl ——> _ cach +H,0 + CO,f
+
+Channel this produced carbon dioxide in lime water, the lime water will turn
+turbid, The reaction is:
+Ca(OH), + CO. ——————_* CaCO, + H;0
+
+The lime water looks turbid as insoluble CaCO, is produced at this stage. This
+turbid lime water again turns opaque when extra CO, is channeled in. At this
+stage CO, and H,O undergo a reaction with CaCO, and produce soluble
+calcium bicarbonate [Ca(HCO,),] which makes the water look opaque.
+
+CaCO; + CO, + H,O = ————» Ca(HCO,)
+
+The metallic carbonates undergo the similar kind of reactions with dilute sulfuric
+acid or dilute nitric acid and produce sulfate or nitrate salts.
+
+Na,CO, + H,SO, WH» Na,S0,+ H,O + CO,
+CaCO, + 2HNO, —~» Ca(NO,), + H,0 + CO,
+
+20235
+2025
+
+Acid- Base Balance 211
+
+(vi) Reaction between Dilute Acids and Metallic Bicarbonates: Metallic
+hydrogen carbonates or metallic bicarbonates also undergo reactions with dilute
+acids and produce salts, water and carbon dioxide. For Example:
+
+Ca{HCO,), + 2HCl ———+ Catl,+2H,0 + 2c0,
+
+2NaHCO, + H,SO, —M—» Na,SO,+ 2H,0+ 2C0,
+
+NaHCO, + HNOs —— NaNdO, + H,0 + CO,
+(vii) Reaction between Dilute Acids and Metal’s Hydroxides (Alkali): Dilute
+acids undergo reactions with metal’s hydroxides and produce salt and water. It is
+a neutralizing reaction. For example, if dilute HCl] solution is slowly added to
+
+dilute NaOH solution, it produces NaCl (salt) and water.
+NaOH + HC] ———* Nac] + H,0
+
+(viii) Reaction between Dilute Acids and Metal’s Oxides: Acids undergo
+reactions with metal’s oxides and produce salt and water. The oxides are usually
+of alkaline nature. That is why the reactions here are also neutralizing reactions.
+
+CaO +2Hcl ——— Cacl, +H,0
+
+In the same way, copper oxide undergoes a reaction with dilute sulfuric acid and
+forms copper sulfate and water.
+
+Hy80, + CuQ  MM——» CuSO, + H,0
+
+Or, calcium oxide and nitric acid undergo a reaction to produce calcium nitrate
+and water.
+
+2HNO, + Cao eo Ca(NOs)s + H,0
+
+9.1.2 The Role of Water in Chemical Properties of Acids
+
+Tn all the discussions above, we have used the phrase “Dilute acid’. Dilute acid
+solution means acid has been added to water to make an acidic solution. The
+question is whether an acid can maintain its properties when added to water or
+they undergo changes. Suppose, you have taken some oxalic acid lattice and put
+a dry blue litmus paper on them. You will observe no change in the colour of
+litmus. ‘he reason here is that dehydrated oxalic acid lattice does not contain
+any hydrogen ion. When you dissolve this dehydrated oxalic acid in water, it
+212 Chemistry
+
+will decompose and donate an H* ion, which will turn the blue litmus into red.
+That means. the hydrogen ion present in an aqueous solution shows acidic
+property.
+
+Citric acid partially decomposes in aqueous solution, The same thing happens in
+the case with ethanoic acid and carbonic acid too.
+
+Partial decomposition means instead of all molecules added in the solution, some
+of them decompose and the rest remains intact.
+
+Citric acid lattice + water — Citric acid (aq)
+
+Citric acid (aq) ~ H* (aq) + citrate ion
+Hydrogen chloride is completely ionized in aqueous solution and produces
+hydrogen ion:
+Hydrogen chloride + water — HCl (aq)
+
+HCl (aq) > Ht (aq) + Cr (aq)
+
+Pure sulfuric acid and nitric acid are colourless liquids. Both the compounds
+remain in the molecular state. Since they are not ionized or hydrogen ion is not
+present in them, pure sulfuric acid and pure nitric acid neither show acidic
+properties nor do they conduct electricity. They produce hydrogen ion only when
+they are dissolved in water, showing an acidic property and conducting
+electricity. So, we can write,
+
+H,50,(1) + water ————* H,50,(aq)
+H,50,(aq) ———* 2H" (aq) + SO,” (aq)
+
+Similarly,
+
+HNO; (1) + water ————» __HNO,,(aq)
+HNO,(aq) ————* Ht (aq) + NO; (aq)
+
+The acids that get partially ionized in aqueous solution are weak acids, Strong
+acids ionize completely in aqueous solution. That shows the weak acids have
+lesser amount of hydrogen ions. Strong acids have comparatively greater
+number of hydrogen ions.
+
+£023
+2025
+
+Acid-Base Balance 213
+
+9.1.3 Concentrated Acids
+
+The acid that contains comparatively lesser amount of water is concentrated
+acid, Different concentrated acids like concentrated hydrochloric acid (HCI).
+concentrated sulfuric acid (H,SO,). concentrated nitric acid (HNO,) etc. are used
+in laboratories. at different times. If these acids come in contact with our body
+parts. they create injury on those spots. That is why, when using these acids, we
+need to put on hand gloves, goggles, mask, apron etc. for safety.
+
+Concentrated Hydrochloric Acid: The solution that is produced when
+hydrogen chloride gas is dissolved in water is called hydrochloric acid. In the
+solution the amount of water is comparatively lesser than the amount of
+hydrogen chloride gas. The moment the cork of the container bottle of
+concentrated HC! is opened, there is a fog created and a highly pungent smell
+spreads all over. That is why, before opening the botile of concentrated HCI,
+nose and mouth should be covered with a mask and eyes should be protected
+with goggles,
+
+HCI(g) + H,0(0) ————» HCl(aq)
+
+Concentrated Nitric Acid: The solution that is produced when nitrogen dioxide
+gas is dissolved in water ts called nitric acid. Comparatively higher amounts of
+NO, gas is dissolved in a small amount of water to prepare nitric acid (HNO,).
+
+3NO0, + HO —_—_ 2HNO; + NO
+
+The moment the cork of the container bottle of concentrated HNO, is opened,
+there is a fog created and a highly pungent smell spreads all over. The colour of
+the container bottle of nitric acid is brown. It is for preventing light for if light
+enters the bottle, the HNO, decomposes. The brown colour of the bottle prevents
+light to enter the bottle.
+
+Concentrated Sulfuric Acid: The solution that is produced when sulfur dioxide
+gas is dissolved in water is called sulfuric acid. Comparatively higher amounts
+of SO, gas is dissolved in a small amount of water to prepare sulfuric acid
+
+(H,SO,).
+
+504 =f H;0 -_ H,50,
+WN4 Chemistry
+
+9.2 Base and Alkali
+
+Base: Generally, metals or metal like reactive radical oxides and hydroxides that
+undergo reactions with acids and produce salt and water are called bases.
+Examples:
+CaO + 2HC] Hse. = Cacl, + H,0
+2KOH + H,SOQ, —M—-+ k,S0, + 2H,0
+NH,OH + HCl ————» NH,Cl+H,0
+
+Apart from CaO and KOH, examples of bases are sodium oxide (Na,O), copper
+oxide (CuO), ferrous oxide (FeO), sodium hydroxide (NaOH), calcium
+hydroxide [Ca(OH),], ferrous hydroxide [Fe(OH),], ammonium hydroxide
+(NH,OH) etc.
+
+Ammonium ion (NH,"), phosphonium ion (PH,”), etc. radicals are reactive like
+metals, Metallic ions like Na’, K~ etc. combined with non-metallic ions like Cl,
+SO,* ete. produce ionic compounds like NaCl, KCl, Na,SO,, K,SO, etc.
+Similarly, NH,’, PH,’ ions combined with Cl, SO ye ions produce ionic
+compounds NH,Cl, PH,Cl, (NH,),SO,, (PH,),50, etc. The reaction between
+acids and bases that produces salt and water are called acid-base neutralizing
+reactions, Therefore it is said that acid neutralizes a base and a base neutralizes
+an acid.
+
+Alkali: Hydroxide compounds of metals or metal like reactive radicals that are
+soluble in water are called alkali. A compound can be an alkali if (i) it contains
+a hydroxide (OH) radical and (ii) it dissolves in water.
+
+NaOH is an alkali for it has an OH radical and it dissolves in water. Fe(OH),
+cannot be called an alkali for although it has an OH’ radical, it does not dissolve
+in water. It is base only. CaO is base but not an alkali for it does not contain an
+OF radical. So, you realize, the bases containing OH radicals and soluble in
+water are alkali. Thus it can be said, all bases are not alkali but all alkalis are
+bases.
+
+There are many basic compounds in our household, The toilet cleaners in our
+houses are base containing sodium hydroxide (NaOH), the glass cleaners
+containing ammonium hydroxide (NH,OH) are bases.
+
+2025
+2025
+
+Acid-Base Balance 215
+
+9.2.1 Properties of Dilute Bases
+
+The solution prepared by adding comparative smaller amounts of base in larger
+amount of water is called a dilute base.
+
+Litmus Test: Take a small amount of dilute sodium hydroxide solution in a test
+tube. Put a piece of red litmus paper in it, You will see the red litmus will turn
+blue. Again, take some NaQH solution in a test tube. Put a blue litmus paper
+in the tube. The blue litmus will remain as it is, blue. This proves, the basic
+
+solution only turns red litmus into blue.
+
+Feelings: If you touch NaOH solution with your hand, it will feel slippery. Basic
+compounds are slippery. Some properties of base are discussed here. However,
+contact with base harms our skin.
+
+92.2 Dilute Base in Reaction with Metallic Salts
+
+Undergoing reaction with aluminum nitrate [AI(NO,),], ferrous nitrate
+[Fe(NO,),|, ferric nitrate [Fe(NO,),]|, zine nitrate [Zn(NO,),] etc. metallic salts,
+dilute base produces the related metallic hydroxide. Mentionable, here we have
+used only nitrate salts. Apart from it, metallic chloride, metallic sulfate, metallic
+sulfate salts will produce the same result. Look at the following example:
+
+Reaction between dilute NaOH and Al(NO,),
+
+If we take some AI(NO,), solution in a test tube and add some drops of dilute
+NaOH solution im it, they produce aluminum hydroxide [Al(OH),] and sodium
+nitrate (NaNO ,): AL(OH), gathers as white precipitate at the bottom of the test
+tube while sodium nitrate remains dissolved in the water and it does not add any
+colour to the water. The reaction:
+
+AI(NO,); + 3NaQH ———*  AI(OH),| + 3NaNC,
+
+Reaction between dilute NaOH and Fe(NO,),
+
+If we take some ferrous nitrate Fe(NO,), solution in a test tube and add some
+drops of dilute NaOH solution to it, ferrous hydroxide [Fe(OH),| and sodium
+nitrate (NaNO,) are produced. Fe(OH), gathers as green precipitate at the bottom
+of the test tube while sodium nitrate remains dissolved in the water and it does
+216 Chemistry
+
+not add any colour to the water. The reaction:
+
+Fe(NO.), + 2NaOH
+Reaction between dilute NaOH and Fe(NO,),
+
+Fe(OH),| + 2NaNO;
+
+If we take some ferric nitrate Fe(NO,), solution m a test tube and add some
+drops of dilute NaOH solution in it, they produce ferric hydroxide [Fe(OT),]
+and sodium nitrate (NaNO,). Fe(OM), gathers as a reddish brown precipitate at
+the bottom of the test tube while sodium nitrate remains dissolved in the water
+and it does not add any colour to the water. The reaction:
+
+Fe(NO,); + 3NaQH —————*  Fe(OH),| + 3NaNO,
+
+Reaction between dilute NaOH and Cu(NQ,),
+
+If we take some copper nitrate [Cu(NO,),| solution in a test tube and add some
+drops of dilute NaOH solution to it, copper hydroxide [Cu(OH),]| and sodium
+nitrate (NaNO,) are produced. Cu(OH), gathers as light blue precipitate at the
+bottom of the test tube while sodium nitrate remains dissolved in the water and
+it does not add any colour to the water. The reaction:
+
+Cu(NO,), + 2NaOH Cul(OH),| + 2NaNO,
+
+Reaction between dilute NaOH and Zn(NO,),
+
+If we take some zine nitrate [Zn(NO,),| solution in a test tube and add some
+drops of dilute NaOH solution to it, zme hydroxide [Zn(OH),| and sodium
+nitrate (NaNO,) are produced, Fe(OH), gathers as white precipitate at the
+botiom of the tesi tube while sodium nitraie remains dissolved in the water and
+it does not add any colour to the water. The reaction:
+
+Zn(NQ3), + Z2NaQH ————* Zn(OH),) + 2NaNO;
+
+Reaction between Alkali (dilute NaOH) and Ammonium Salt
+
+If we take some ammonium chloride (NH,CI) in a container and add some alkali
+(NaOH) solution to it, we get ammonia gas (NH,), sodium chloride (NaCI) and
+water (HO). The reaction:
+
+NH,Cl + NaQH —————* NH; + NaCl + H,0
+
+2025
+Acid- Base Balance 217
+
+Tt is a characteristic reaction between ammonium salt and alkali. Alkali
+undergoes a reaction with any ammonium salt and produces NH, gas. Examples:
+
+NH,Cl + KOH ————* NH, + KCl + H,0
+2NH4Cl + Ca(OH), M———» 2NH, + CaCl, + 21,0
+2NH,C] + CaO ———_—-» _ 2NH; + CaCl, + H,0
+
+9.2.3. Role of Water in the Chemical Properties of Alkali
+
+Both the compounds potassium hydroxide and sodium hydroxide have ions, but
+when they are in solid state, the ions are not free. The noment they are dissolved,
+they become fully ionized and produce free hydroxide tons. Only hydroxide ions
+in the solution carry a negative charge.
+
+KOH(s) +Water ————*  K+(aq) + OH-(aq)
+
+NaOH(s) + Water-———*  Nav(aq) + OH (aq)
+
+Ammonia gas is the summation of ammonia molecules. When ammonia gas Is
+dissolved in water, their reaction produces ammonium ion and hydroxide ion.
+However, ammonia dissolves only partially in water and a very small number of
+hydroxide ion is produced.
+
+Therefore, ammonia solution contains ammonia molecules, water molecules and
+a small number of anmmonium and hydroxide ions. The characteristic of an alkali
+solution depends on the presence of mobile hydroxide ions. The alkalis that
+dissolve partially in aqueous solution are weak alkali. Strong alkali becomes
+fully ionized in aqueous solution. That means, the weak alkali solution consists
+of lesser number of hydroxide ions than that of the strong alkali.
+
+Complete the following tasks. Describe a change that is observable. Write
+down the ionic equation.
+
+Addition of iron ----- to dilute sulfuric acid solution.
+Addition of solid sodium carbonate to dilute hydrochloric acid solution,
+
+Addition of ammonia solution to copper sulfate solution,
+
+Forma-28, Chemistry Class-9-10
+218 Chemistry
+
+9.3 Corrosive Properties of Concentrated Acids and Alkali
+
+Concentrated acids and concentrated alkali are highly corrosive. They can
+corrode clothes and skin. They can damage the eyes if they go into the eyes,
+Concentrated acids and concentrated alkali are added slowly to water and tumed
+into dilute solutions as they dissolve completely.
+
+If by any chance, concentrated acids and concentrated alkali come into contact
+with your body, the spot must be cleaned time and again. Then you should
+
+inform your teacher.
+
+Experiment of Strong and Weak Acids or Strong and Weak Alkali
+
+An experiment will tell you which acid is strong and which is weak. Take
+50 mL dilute hydrochloric acid in a beaker. Now set two graphite rods in
+the beaker in a way so that they do not touch each other. Connect one
+graphite rod with an edge of a battery by a wire and the second graphite
+with the other edge of the battery taking the wire through a bulb. The bulb
+will light up. Observe the brightness of the light.
+
+Now take some ethanoic acid in another beaker, It is a weak acid. Set two
+graphite rods in this beaker also. Connect one graphite rod with the edge
+of a battery by a wire and the second graphite with the other edge of the
+battery talcing the wire through a bulb. The bulb will light up. Observe the
+brightness of the bulb. You will see the brightness of the bulb in the beaker
+
+containing HCl solution is better than the one in ethanoic acid.
+
+% x
+
+Strong acids provide more H* in the aqueous solution than the weak acids. This
+excess amount of H” conducts more electricity in the solution. That is why the
+bulb in the strong acid gives more light. On the other hand, the weak acid
+supplies lesser number of H*in the aqueous solution resulting in lesser
+
+20235
+2025
+
+Acid- Base Balance 219
+amount of electricity conduction in the solution, So, the bulb gives less light.
+Weak acid = Lesser amount of H* (proton) produced
+
+Strong acid — Greater amount of H* (proton) produced
+
+Similarly, an experiment with strong alkali (NaOH) and weak alkali (NH,OH)
+will prove that the bulb in the solution of NaOH will give a brighter light and the
+bulb in the solution of NH,OH will give a dim light. So, it will be proved that
+NaOH is a strong alkali and NH,OH is a weak alkali.
+
+9.4 The Conception of pH
+
+pH is used as a unit to determine the nature of a aqueous solution, a measure of
+the acidity, alkalinity or neutrality of the solution. The pH of a solution is the
+negative logarithm of concentration of hydrogen ions present in the solution.
+
+c=
+
+Where p is written in small hand letter and H is capitalized.
+
+That means-
+
+[H"] expresses the molar concentration of H* ions; how many moles of H* ions
+are there in one liter solution.
+
+The presence of H™ in 1 liter distilled water is 107 moles
+
+The pH of distilled water = -log[H*] = -log(10°-7)
+
+So, the pH of distilled water = 7
+
+When there is any ion within the third bracket in molarity unit, the concentration
+of the ion is expressed. If acid is added to distilled water and for this reason, the
+
+number of H* increases 10 times to make it 10° moles per liter, the pH of the
+
+solution will drop down.
+pH = —log[10~*] = 6
+
+The more the molarity of H+ ion, the lesser the value of pH will be.
+
+Tf alkali is added to distilled water, the OW of alkali will undergo a reaction with
+H’ and lessen the number of H*. For example, due to adding alkali in water, if
+the number of H* drops down to 10°? moles per liter. then the pH will be:
+220 Chemistry
+pH = —log[10-"] = 10
+
+That means, the pH value will nse from 7: the pH value of the alkaline solution
+is more than 7. The significance of pH value 7 is thai the solution is neither alkali
+nor acidic: it is a neutral solution. When the value of pH is less than 7, the
+solution is acidic. When the value of pH is more than 7, the solution is alkaline.
+
+9.4.1 Measuring pH
+
+Measurement of pH is done using a pH scale.
+
+0123 4 5 6 7 8 ¥ 10 11 12 13 14
+
+Fig 9.01: pH Seale.
+
+pH Scale: Although in mathematical terms, the value of pH may be any number
+from negative to positive, in reality, the value is measured on a scale of 0 to 14.
+
+The pH ofa neutral solution is 7, You have already seen that the value of acidic
+solution is less than 7 and the value of alkaline solution is more than 7.
+According to the scale, the strongest acid will have a value of 0 and the strongest
+alkali will have the value of 14.
+
+Measuring System: You have already learned how to measure pH of a solution
+from the molarity of its hydrogen ion. Now you will learn how to measure tt in
+experiments. The process involves the universal indicator, pH paper, pH meter
+
+etc.
+
+Universal Indicator: Universal indicator is the mixture of various acid and
+base indicators. Universal indicator turns to different colours lor different values
+of pH. There is a chart of colours for different values in the Universal indicator.
+
+£023
+2025
+
+Acid- Base Balance 22]
+
+This is known as the Universal Indicator Colour Chart. To know the value of pH
+of an unknown solution, add a few drops of the universal indicator to the solution
+and then compare the colour of solution with the standard colour chart and
+determine the value of pH.
+
+pH Paper: pH Paper is used for knowing the value of an unknown solution.
+Add a small piece of pH paper to the solution, it will change its colour. There is
+a standard colour chart for various pH values. Compare the colour of the pH
+paper with that standard colour chart and determine the value of the pH.
+
+pH Meter: pH Meter is used for knowing the value of the pH] of an unknown
+solution. Inserting the electrode of the pH meter in the unknown solution the
+value of pH can be known directly from the digital display on the pH meter.
+
+Litmus Paper: Litmus paper is the easily available cheaper alternative to know
+the approximate value of pH. The litmus paper is red when the value of pH is less
+than 7 and the colour is blue when the value is more than 7.
+
+” Electrode
+
+iy
+H
+
+Digital
+colour
+display
+F ; ;
+Fig 9.03: pl Meter. Fig 9.04: Red and Blue
+
+Fig 9.02: pH paper and
+standard Colour Chart,
+
+Litmus Paper.
+222 Chemistry
+
+9.4.2, Importance of pH
+
+pH has got limitless significance in terms of bio-chemical reactions in animal
+bodies and use of cosmetics. They are stated below:
+
+Agriculture: pH has a great importance in Fable Pb pH ob cater
+parts of huraan body.
+
+agriculture. Plants absorb various ions, water etc. Tae
+from the soil for its own nutrition. The best value | Human body | PH
+
+of pH of soil in this regard is 6.0-8.0. Again, ifthe | Stomach 1
+
+value is less than 3,0 or more than 10.0, the | Human skin 4.8-5.5
+beneficial microbes in the soil die. When the | Urine 6
+value drops down, measured amounts of CaO is | Blood 7.43-7.45
+
+added to the soil. On the other hand, if the value |Pancreatic juice) 8.1
+
+of pH of the soil rises up, measured amounts of
+
+ammonium sulfate [(NH,),50,] or ammonium phosphate [[NH,),PO,] fertilizers
+are used to settle the pH of the soil.
+
+pH in Different Bio-chemical Reactions of a Body: Various bio-chemical
+reactions occur in different parts of the animal body. They require different
+values of pH in various parts of the body.
+
+Cosmetics: Human beings use different chemicals to to clean their skin,
+beautification of skin, clean the hair and other actions. When the pH of skin is
+4.8-5.5, the skin is acidic and that prevents attacks of microbes on the skin.
+Therefore, the pH of cosmetics is maintained at 4.8-5.5,
+
+9.5 Neutralization Reaction
+
+We know an acid donates I‘ to an aqueous solution while a base donates OF’.
+Therefore, a mixture of acid and base facilitates It and OH to produce water.
+For example, in water, HC! donates IT‘ and NaOl donates OI. I’ we mix both,
+the IT and OF will undergo a reaction to produce water. The negative Cl ion of
+the acid and the positive Na‘ ion of the base will undergo a reaction to produce
+the salt NaCl. The reaction where an acid and a base undergo a reaction to
+produce salt and water is called a neutralization reaction. In this reaction both
+
+2025
+2025
+
+Acid-Base Balance 223
+
+acid and base lose their respective acidity and basicity to produce the neutral
+substance salt and water.
+
+HCl(aq) + NaOH(aq) ———* NaCl{aq) + H,0()
+Acid Base Salt Water
+
+Look at the above reaction. One mole hydrochloric acid neutralizes one mole
+sodium hydroxide completely. Therefore, two moles of hydrochloric acid will
+completely neutralize two moles of sodium hydroxide. Again, the reaction
+between sulfuric acid and sodium hydroxide produces sodium sulfate salt and
+water.
+
+H,S0,(aq) + 2NaOH(aqg) ————* Na,S0,{aq) + 2H,0()
+
+Acid Base Salt Water
+The above reaction shows that one mole sulfuric acid neutralizes two moles
+sodium hydroxide completely. It proves, a specific amount of a specific acid will
+completely neutralize a specific amount of a specific base.
+
+9.5.1 Importance of Neutralization Reaction in Daily Life
+
+In Digestion: Acid is secreted in the stomach for digestion. If [or some reason,
+the amount of acid in the stomach increases, we feel uneasy. Generally, it
+is called acidity. If this acidity continues for a long time, it creates an infection
+in the stomach. We take antacid to neutralize this acidity. Antacid contains
+Al(OH), and Mg(OH),, which are alkaline in nature, They neutralize the excess
+acids inside our stomach,
+
+AI(OH)s + 3HCl| ————* alcl, + 3H,0
+Mg(OH); + 2HC] ———— Mec, + 2H,0
+
+In Dental Care: If you do not clean your mouth after taking some sweets, after
+sometime, you will feel a sour taste inside your mouth. Actually, there are
+innumerable bacteria in our mouth which forms various organic acids from our
+foods. That is why we feel the sour taste. These acids cause decay of the enamel
+(calcium compound) of our teeth. Alkali present in toothpastes neutralizes these
+acids and saves our denture.
+224 Chemistry
+
+In Agriculture: When plants absorb different metallic ions like Fe**, Mg**, Ca**,
+kK? etc. from the soil, the soil becomes acidic. It loses fertility. Lime is used to
+increase the fertility of soil which is chemically calcium oxide (CaO). This lime
+neutralizes the acid in the soi! and brings back the fertility.
+
+9.5.2 Salt
+
+You have already learned acid and base undergo reactions to produce salt and
+water. The positive ion of the salt comes from the base. That is why the positive
+ion is known as the basic radical. The negative ion comes from the acid. That is
+why the negative ion of the salt is called an acid radical. An aqueous solution of
+salt produced from the reaction between a strong acid and a strong base is neutral
+in nature. For example, aqueous solutions of NaCl, Na,SO, etc. are neutral. An
+aqueous solution of salt produced in the reaction between a strong acid and a
+weak base is acidic in nature. FeCl,, Zn(NO,), etc. are examples of this kind. An
+aqueous solution of salt produced in the reaction between a strong base and a
+weak acid is basic im nature. Na,CO,, CH,COONa (Sodium ethanoate) etc, are
+examples of this kind.
+
+9.6 Acid Rain
+
+Oxides of non-metals undergo a reaction with water to produce various acids.
+Pure air has a mixture of a small amount of carbon dioxide and different oxides
+of oxygen. Animals breathe out carbon dioxide in their respiration. The
+temperature of the spot where thunder strikes reaches 3000°C. At that
+temperature, N, and O, present in air undergo reaction and produce NO. This NO
+gets oxidized by oxygen and becomes NO,. These oxides get dissolved in the
+rain water and produce some acids which come down to earth with rain water.
+Rain with these acids is called acid rain.
+
+cO(¢)+ H,00}) * 11,C0,(aq)
+2NO,(g) + H,O(I) t———* HNO,(aq) + HNO,(aq)
+That is why the pH value of rain water is 5-6. However, some man-made reasons
+
+like carbon dioxide emitted from vehicles, power plants and industries mix with
+air which undergoes a reaction with rain water and produces carbonic acid
+
+fi
+|
+=>
+oy
+Acid- Base Balance 225
+
+(H,CO,). Besides, the power plants, brick kilns etc. use coal and petroleum rich
+with nitrogen and sulfur which again produce oxides of these elements. These
+also produce acids which come down with rain water.
+
+That is why, in some places, the amount of acid in rain sometimes goes higher
+than expected, As a result the pH of rain water in these spots may drop down to
+4 or below 4, which ts acid rain. This rain results in a drop down of pH of soil.
+This has severe harmful effect on crops and plants. The pH value of water in the
+water bodies also goes down and makes the situation uninhabitable for the lives
+there. Fish production is hampered. Acid rain also harms the buildings, metallic
+structures, marble architectures and sculptures.
+
+9.7 Water
+
+The other name of pure water is life. Water is polluted everyday due to bathing,
+washing etc. Water becomes hard for various reasons. We can transform hard
+water into mild water following various ways.
+
+9.7.1 Hardness of Water
+
+The source of water is rivers, canals, bils, ponds, sea and tubewell etc. Various
+mineral salts are dissolved in this water. It is not easy to get foam of soap if
+calcium or magnesium chloride, sulfate, carbonate or bicarbonate etc. salts are
+dissolved in the water. This kind of water is called hard water. However, water
+can be hard also if it has iron or manganese salts dissolved in it. Why does not
+this kind of water produce foam of soap? Soap is a sodium or potassium salt of
+higher organic acid. For example, sodium stearate (C, _H,.COONa) is the sodium
+salt of stearic acid. It is used in soap. When we use this soap in hard water, so
+long calcium or magnesium salt remains in the water, it does not produce any
+foam, only the soap is decayed.
+
+2CyjHysCOONa + CaCl, ————> (CjHssCO0),Ca + 2NaCl
+
+Salts of magnesium and other salts also undergo the same kind of reaction. If
+hard water is used in water pipes or boilers of industries, the mineral salts present
+in the water gathers on the pipe as a thick layer and the water flow is obstructed.
+
+Forima-29, Chemistry Class-9-10
+226 Chemistry
+
+In the boiler, there is wastage of heat and the boiler may even burst. The property
+of water that causes the soap not to clean the dirts properly is called hardness of
+Walter.
+
+Hardness of water is of two kinds: temporary hardness and permanent hardness.
+
+(i) Temporary hardness: Hardness of water caused by bicarbonate (HCO,)
+salts of calcium, magnesium, iron ete. in water is called temporary hardness.
+And this kind of water is known as temporary hard water. When heat is applied
+to this kind of water, it produces insoluble carbonate salt. It gathers at the bottom
+of the container as precipitate. The water can easily be separated by using a filter.
+Thus the temporary hardness of water is removed and the water turns into mild
+
+Wafer.
+
+Ca(HCO,), — CaCO,(s)1+ CO(g)T + H,0()
+
+(ii) Permanent hardness: Hardness of water caused by chloride or sulfate salts
+of calcium, magnesium, iron etc. in water is called permanent hardness. And this
+kind of water is known as permanent hard water. Mere heating does not remove
+this kind of hardness. Various measures or reactions are used to remove this
+hardness from water, Usually, the water of closed water body is mild water. Rain
+water is also mild. It does not contain significant amounts of salts of magnesium,
+calcium etc.
+
+How to remove permanent hardness of water: Addition of sodium carbonate
+to permanent hard water reacts with the calcium ion and magnesium ion and
+produces precipitates of calcium carbonate and magnesium carbonate. Thus the
+calcium ion and magnesium ion is removed from water and it becomes mild.
+
+CaCly + Na,cO, ————~ CaCO,|+ 2NaCcl
+
+9.7.2 Water Pollution and Pollution Control
+Water Pollution
+
+A major part of the bocy of animals and plants is water. That is why, all living
+beings need a lot of pure water. However, water is polluted in various ways. For
+example, all domestic disposals and sewage wash away to the water bodies.
+
+20235
+2025
+
+Acid- Base Balance 227
+
+Trashes disposed from hospitals and other places are also washed away to the
+water. Fertilizers and pesticides used in agriculture also get washed into the
+water bodies, Industries dump their chemical trashes, vehicles dump their fuels
+which ultimately reach the water. Thus, water becomes odorous and poisonous.
+Lead, cadmium, mercury, chromium etc, heavy metals mix with water from all
+these trashes. These heavy metals may cause diseases, even like cancer.
+
+Again, the human actions are not only contaminating the surface water. but also
+sub-surface water. The tendency to extract excess sub surface water by shallow
+pumps and too much excavation results in arsenic contamination m sub-surface
+water, Arsenic is a poisonous substance. If a human being drinks too much water
+contaminated with arsenic, he/she may even die.
+
+Pollution Control
+
+Waste treatment facilities are available in the big cities of our country, although
+the number is not sufficient. Bio gas, electricity alongside organic fertilizers can
+be gotten from sewage and rotten domestic disposals. The proper initiative in
+this regard can reduce the environment and water pollution. Small sized bio gas
+plants will utilize all this disposal and sewage and will also be of benefit to us.
+
+Tt must be mandatory to establish effluent treatment plants (ETP) in every
+industry. In no way, the industrial wastes should be disposed directly into the
+open water reservoir. Everyone should be conscious about it. We should keep the
+directorate of environment informed with information about this kind of offence.
+We should keep n mind that organized public consciousness and public opinion
+is the most effective way to prevent water pollution in our country.
+
+9.7.3 Testing the Purity of Water
+
+Colour and Odour Observation: Pure water is colourless, odourless and
+a transparent liquid. Little amounts of mineral salt is dissolved in it. If any min-
+eral salt is dissolved in it in a large amount, it can be called polluted water. In
+general observation, if any odour or any suspended materials in the water or any
+residue is found after filtration then the water is polluted.
+228 Chemistry
+
+Temperature of Water: In summer, the temperature of water is usually 30-35°C
+with an occasional rise up to 40°C. If somehow the temperature of water rises by
+a few degrees then it should be considered heat polluted. If the water used in
+power plants to cool the machineries or hot water from boiler is released directly
+into an open reservoir of water, the heat pollution occurs. We can detect the heat
+pollution with just a thermometer.
+
+pH Value of Water:If the pH value of water is less than 4,5 and greater than 9.5,
+it will be a threat to living beings. pH can be determined by using pH paper or a
+pH meter.
+
+BOD: The elaboration of BOD is Biological Oxygen Demand. It means the
+demands of bio chemical oxygen. The amount of oxygen needed to decompose
+the organic matters in water in the presence of air is known as BOD of that water.
+Water that has much BOD value is a polluted one.
+
+COD: The elaboration of COD is Chemical Oxygen Demand. COD is used to
+express the total chemical matter in water. The quality of the water analyzed by
+measuring the extent of organic pollutants in water (specially in rivers, canals
+etc.). A greater value of COD means that the extent of pollution in that water is
+also greater.
+
+BOD and COD, both are used to denote the pollution level of water. The COD
+value of any water is greater than the BOD value. It happens because the
+necessary amount of oxygen to decompose only the organic matters in water i5
+BOD while COD is the amount of oxygen needed to decompose all organic and
+inorganic matters in water,
+
+Purification of Water
+
+Chlorination: The easiest way of sterilization of water is chlorination. If a
+certain amount of bleaching powder is added to water, the produced chlorine
+oxidizes the germs and kills them. This process is called chlorination of water.
+Filtering the water after adding bleaching powder makes it drinkable.
+
+Boiling: Water can be sterihzed by boiling for 15 to 20 minutes. Noteworthy that
+boiling arsenic contaminated water makes il more harm1ul.
+
+£023
+2025
+
+Acid- Base Balance 229
+
+Sedimentation: Adding one spoonful of alum dust [K,SO,.Al,(SO,),.24H,O] to
+a bucket of water and allowing it to settle for half an hour creates
+sedimentation of all impurities of water to settle at the bottom of the bucket.
+Then by pouring the upper level water into another container, we get pure water.
+This is the way to get tid of all insoluble pollutants from water.
+
+Filtration: Presently filters are available in the market that helps get rid of
+
+germs, arsenic and other pollutants from water. We get pure drinking water using
+these filters.
+
+a the acidic or alkaline nature of apple with litmus me,”
+
+Principle: Food can be acidic, alkaline or neutral. Aqueous solution of
+food that are acidic tums the blue litmus paper into red. Aqueous solution
+of food that are alkaline turns the red litmus paper into blue. The litmus
+paper does not change its colour when the solution is neutral.
+
+Apparatus and Chemicals: mortar. test tube, glass rod, filter paper,
+funnel, blue litmus paper, red litmus paper, distilled water, peeled apple.
+
+Procedure:
+1. Make a paste of the peeled apple in the mortar adding some water to it.
+2. Take the paste in the beaker.
+
+3. Add 10 mL distilled water in the beaker and mix the paste well, using
+the glass rod.
+
+4. Now use the filter paper and the funnel to filter the solution to get the
+watery portion of it from the beaker into the test tube.
+
+5. Observe the change of colour of the litmus papers one by one by
+
+\ ane them in the test tube. P,
+
+fl Observation and decision >
+4Name| Probable Change of Colour in the ee nae
+Food Name Linus Paver Decision
+Apple Blue litmus paper turned red but the red Apple is acidic
+litmus paper didn’t change
+Apple _| Red litmus paper turned blue but the blue | Apple js basic
+litmus paper didn’t change
+Result: If you did the experiment correctly, you would find apple is acidic.
+
+J
+
+NN
+
+Following the procedure stated above, if you catry out experiments with rice
+and cucumber. you will see rice is a neutral food; it does not change the colour
+of red litmus paper into blue or the blue into red. Cucumber is a basic food for
+
+it turns red litmus into blue.
+
+Preparation of pH paper
+
+~\
+
+Take one of the coloured vegetables (red spinach, red cabbage, beet etc.) or
+coloured flower (china rose, red rose etc.). Cut it im small pieces. Boil in steam
+at low temperature. Insert a piece of filter paper in the coloured extract you
+obtained. Dry the paper in air and then cut it into several small pieces. That is
+the pH paper you have made. To know the value of pH, sink it in a solution of
+a known pH and make a colour chart of the pH range. Make pH paper with all
+
+vegetables or flowers are available to you. Select the best one to use.
+
+S
+
+2025
+2025
+
+Acid Base Balance 231
+
+1. Which of the following compounds will be produced when sulfuric acid is added
+to lime stone?
+
+a, CO, b. H,
+c. O, d. SO,
+2. Which of the followings is a base?
+a. solt drinks b. lemon juice
+c. vinegar d. washing soda
+
+3. In the presence of which of the following aqucous solutions does ammonia gas
+becomes alkaline?
+
+a. NH,” ion b. OH ion
+
+c. NH, d. H,O
+4. The reaction between nitric acid and an unknown metal produces a colourless
+solution. When we add sodium hydroxide to the solution, it produces a white
+
+precipitate. However, excess amount of sodium hydroxide dissolves that also. The
+metal is:
+
+a. copper b, iron
+c. lead d. zine
+5, pH of ethanoic acid ts 4. To increase the pH we need to add-
+i. ammonia solution
+il. concentrated hydrochloric acid
+
+iii. solid magnesium carbonate
+232 Chemistry
+
+Which one is correct?
+
+a. iand ii b. i and tii
+
+c, iand it d. i, ii and iii
+6. Which of the followings makes the lime water turbid?
+
+a NO, b. co
+
+c 50 d. CO
+
+1.
+a. What is the colour of NO, gas? x
+b. Explain whether the pH of lime water NH, Cl
+will be greater or less than 7. :
+os ca
+
+c. Explain a chemical property of the
+aqueous solution of gas X.
+d. What will happen if gas X is passed
+through HCl gas? Write the answer
+with an equation.
+2. The effluents produced from textile and dying industries containing paint and
+
+sulfuric acid are dumped in nearby water reservoirs. As a result, those reservoirs
+become unfit for aquatic life.
+
+a. Which acid is found in tamarind?
+
+b. Write down your opinion about the pH of the water reservoirs of the stem.
+
+c. Give a logical advice to control acid pollution by effluent treatment plants in
+textile and dying industries.
+
+d. Analyze the probability of acid rain in the nearby places of textile and dying
+industries along with reaction.
+
+2025

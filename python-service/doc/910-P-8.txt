@@ -1,0 +1,1253 @@
+2025
+
+Chapter Eight
+Reflection of Light
+
+When light reflects on the objects around us and comes into our eyes, we can see
+those objects. In the previous chapter we have learned about sound as a wave. In
+this chapter we will learn about light as a wave. This wave is a different kind of
+wave, called an electromagnetic wave.
+
+When light is reflected on a plane mirror, it creates an image. All of us are
+familiar with this image. Ifa curved mirror is used instead of plane mirror, it will
+create a different kind of image. We will discuss different types of images in
+different mirrors in this chapter.
+212 Physics
+
+® By the end of this chapter we will be able to-
+
+e explain the nature of light.
+
+e _ explain the laws of reflection of light.
+
+e ~—_ explain mirrors.
+
+e explain images.
+
+e explain the formation of images in mirrors by drawing action line of
+light rays.
+
+e explain some common phenomena of formation of images in mirrors.
+
+e _ explain uses of mirrors.
+
+e ~— explain magnification.
+
+e demonstrate formation of images.
+
+e understand the influence of different optical phenomena and their
+
+contributions in our life.
+
+2025
+2025
+
+Reflection of Light 213
+
+8.1. Nature of Light
+
+What we see with our eyes is light. We see trees, the sky, chairs and tables,
+human beings, but that doesn't mean that these are light. Light reflects from
+these objects and comes into our eyes, and the retina of our eyes creates and
+sends signals to our brain. Then our brain can recognize whether it is a tree or a
+human being. The whole process starts with light entering into our eyes.
+
+Wavelength (m)
+10" 10 40° 10° 10 10
+
+JOLARNT
+
+ah
+SARM O1DTY —
+SABM OIPey
+|
+
+Visible light
+
+—-
+[=]
+
+2
+oo
+
+0.6
+
+Sensitivity of eyes
+
+o 2
+BR
+
+0
+400 500 600 700
+Wavelength (nm)
+
+Figure 8.01: Spectrum of light and sensitivity of eyes to different colors
+
+Light is an electromagnetic and periodic wave. Every periodic wave has a wavelength,
+which means light also has a wavelength. Those of us who have produced waves by
+throwing a stone in a pond or by shaking a rope know that we can create waves of
+different wavelengths if we desire. So light may have different wavelengths.
+Electromagnetic waves may have any wavelengths.
+
+These wavelengths may be greater than a few kilometers or may be one trillionth parts
+of one meter.(1trillion=10"") We can only see a small part of this large range of this.
+214 Physics
+
+We cannot see it if the wavelength is larger or smaller than this range. If the wavelength
+is from 400 nm to 700 nm, we can see the electromagnetic wave, and we call that light.
+The colors we see in our eyes are actually lights of different wavelengths. When the
+wavelength is less, it becomes violet. When the wavelength increases, the light
+gradually becomes blue, green, yellow, orange, and red, and at one point it disappears!
+Human eyes cannot see beyond this range- but various insects or other living beings
+can see outside this range. The sensitivity of human eyes to different colors of light is
+shown in Figure 8.1.
+
+@) Do Yourself
+
+Hold a CD in the sunlight and reflect the light on a nearby wall. You can see
+the full spectrum of light on the wall. CDs have sharp indentations which
+work as grating and separate the colors.
+
+In Figure 8.01, the name of different wavelengths is shown. If the wavelength is
+less than the smallest wavelength of visible light, then we call it ultraviolet light.
+If the wavelength is even smaller than it is called x-ray, and even smaller is
+called gamma ray- which comes out from radioactive nucleus. If the wavelength
+is larger than the largest wavelength of visible light, we call it an infrared ray. If
+it gradually becomes larger we call them microwave, and then radio waves! To
+learn physics this division of wavelengths is one of the most important topics.
+
+@) Do Yourself
+
+We cannot see infrared rays with naked eyes because of their high
+wavelengths. A TV remote emits infrared rays that we cannot see. You may
+see this through mobile phone camera because a special type of light sensitive
+IC named CCD is used, which can detect some infrared light with visible
+light.
+
+2025
+2025
+
+Reflection of Light 215
+
+You can see that the wavelengths of visible light are very short but there are
+many interesting experiments in physics, using these we can observe various
+properties of this wavelength.
+
+If we want to know more about light, we can start with reflection.
+
+8.2. Reflection
+
+If we talk about reflection what we
+imagine is standing in front of a
+
+mirror, but reflection is much absorption
+more than that. When light is reflection ee
+sent from one medium to another, fefraction
+
+three different phenomena occur
+simultaneously. One of them is
+reflection and the other two are
+
+refraction and absorption. (Figure first medium second medium
+8.02)
+
+While traversing from the first
+medium into the second medium, if
+: another.
+
+a part of light returns to the first
+
+medium, the phenomenon is called reflection. Some parts of it may enter the
+second medium which is called refraction and some of it may be absorbed which
+is called absorption. In this chapter we will discuss reflection and in the next
+chapter we will discuss refraction.
+
+Figure 8.02: Reflection, refraction and
+absorption of light from one medium to
+
+It has been said earlier that light is a wave. Generally a wave needs a medium to
+travel, (If there is no water how will a wave be created in it). But this is different
+in case of light. As this is a wave consisting of electric and magnetic fields, so
+light does not need any medium to travel. Light can create its wave of electric
+and magnetic fields and can propagate by itself. So when we talked about the
+first and second medium for reflection or refraction, one of this medium can
+even be vacuum. To speak the truth, the examples we see for reflection and
+refraction in glass or water, there, one medium is glass (or water) and other is air.
+Air is such a light medium that we can consider it as a vacuum.
+216 Physics
+
+8.2.1 Laws of Reflection
+
+Before understanding the laws of reflection, we need to define some terms.
+When lights incident from one medium to another, for the time being we assume
+that it is a plane surface. To understand better, we will assume that the light that
+reflects is a light ray or a light beam. When a light ray from the first medium
+to the second medium is incident on a point, first we have to imagine a
+perpendicular at that point which is called a normal. Then imagine a plane that
+contains this incident ray and the normal (Figure 8.03).
+
+The ray, which is incident at a point,
+from the first to the second medium
+is called the incident ray (XO). The
+ray which is reflected (OX’) is called
+the reflected ray. (You are realizing
+that the ray which enters the second
+medium is the refracted ray- we will
+not discuss it in this chapter). The
+angle between the incident ray and
+the normal is called the incident
+angle (0,) and the angle between the
+reflected ray and the normal is the Figur 8.03: Reflection of light from first to
+reflected angle (0). Now we can second medium
+
+state the two laws of reflection:
+
+first medium
+
+second medium
+
+First Law: The reflected ray will be in the plane which we imagined
+through the incident ray and the normal.
+
+Second Law: The reflected angle is equal to the incident angle.
+
+Example
+
+Question: Two mirrors are placed as shown in figure 8.04. A candle is placed at
+point X between the mirrors. Where image of the candle will be formed?
+
+2025
+Reflection of Light 217
+
+Answer: The image will be seen in the mirror. An image of that image will be
+seen eventually in two mirrors. Therefore, as shown in the figure, an infinite
+number of images will be formed.
+
+mirror
+
+jl 6.
+d, hm fi i d, is us
++a x' d, d, Pa x"
+Figure 8.04: If a candle is placed between two parallel mirrors, the image
+X’ and image of image X’ i.e. X”, X’"...will be formed.
+
+——
+—,
+—
+
+Here two laws of reflection have been stated. But everything about reflection is
+not yet discussed. The most important matter has not been discussed yet, that is
+how much will it reflect? If a mirror is used for reflection, it reflects fully. But
+the word reflection is not only meant for mirrors, it may occur between any two
+mediums. Fresnel's law describes how much it will reflect. You will learn more
+about it in higher classes. The main thing is, the larger the angle of incidence, the
+more the amount of reflection (Figure 8.05). In normal glass, light is reflected
+slightly ( only 4-5% ), and the rest is refracted through the glass. But if the angle
+of incidence is higher (like 80° or 90°,) then reflected light increases greatly. You
+can test it standing beside a window.
+
+Figure 8.05: Reflection increases for higher incident angle
+
+Forma-28, Physics, Class 9-10
+218 Physics
+
+Absorption
+
+Much of the beauty of the world around us comes from different colors. But how
+does the color appear? Why is the color of a rose red and a leaf green? You will be
+even more surprised to see a red rose as black under green light or a green leaf as
+black under red light!
+
+This is actually very easy
+to explain; in visible light
+(sometimes called white light) pie (all colors)
+every wavelength is present. Since \ red
+colors depend on the wavelength WA Ys
+of light, it can be said that light of Ya oa
+all colors are present there. When
+all colors are present together, then
+individual colors are not seen
+separately- then we say the light is
+colorless or white light. When this
+light falls upon a red rose, then the
+
+rose absorbs all the colors except
+
+red. The light that reflects and Figure 8.06: Absorbing all colors which
+colour is reflected by an object that is
+
+considered its color.
+
+come to our eyes, only has red and
+we see the rose appears as red.
+Similarly, when light of all colors falls upon a green leaf, it reflects only green
+light and absorbs others, so we see the color of the leaf as green. (Figure 8.06)
+
+If the rose and leaf are seen under full red light then the flower will appear red as
+it does not absorb red color but the leaf will appear black. Because the leaf
+will absorb the color red and will not reflect any color. So we will see the leaf as
+black. Similarly, under green light we will see the leaf green but the rose black.
+Because the red rose will absorb the green light totally and no light will be
+reflected from the rose, so it looks black.
+
+2025
+2025
+
+Reflection of Light 219
+8.2.3 Reflection from smooth and rough planes
+
+Parallel light rays become parallel after reflecting from mirrors or smooth plane
+surfaces because each ray obeys the law of reflection and reflects with an angle
+of reflection equal to the angle of incidence. Even if the plane is not smooth,
+every ray of light will obey the law of reflection. But the rays are incident at
+different angles at different points of the plane, therefore the rays will reflect in
+different angles after reflection. After reflection, the reflected rays are not
+parallel and spread in different directions. (Figure 8.07) These types of
+reflections are called irregular reflection.
+
+WY
+
+Figure 8.07: Light reflects from smooth surfaces and scatters from rough surfaces
+
+8.3 Mirror
+
+All of us have seen mirrors. In a mirror a
+clear image is formed due to uniform
+reflection. A metal layer is placed behind a
+glass mirror for proper reflection. 4% light
+is reflected from the front part of a mirror,
+but the back part reflects fully and forms
+the original image. When the original
+image is very important in optical
+instruments like telescopes, the silver or
+aluminum layer is coated on the glass B
+surface, so that the two images, one 4%
+lighter and other 96% clear are not formed,
+rather it forms a 100% clear image.
+
+Figure 8.08: The image of X
+object will form in X’ position.
+220 Physics
+
+8.3.1 Image
+
+When you stand in front of a mirror, you see your own image. The closer you
+stand; the image seems to appear at the same distance behind the mirror. In
+figure 8.08, X is an object from which three rays have been reflected in mirror
+AB (therefore, incident angle = reflected angle). If we extend the rays behind the
+mitror it will seem to converge to a point X’. This point is the image of object X.
+For a real object, there are infinite number of points and each point forms an
+image and collectively makes the image of the object.
+
+If we want to define the position of the image using geometry we need to draw
+at least two rays. It will be easier to draw the picture if we consider XP (normal
+to the plane) and XO as ray as shown in figure 8.09. Triangle OPX and OPX’ are
+congruent. Therefore XP = X’P, which means the image has formed at a distance
+equal to the distance of the object from the mirror.
+
+Example
+
+Question: Show that, triangle OPX
+and OPX’ are congruent.
+
+Answer: Here, ZXPO = ZX'PO
+because both of them are at right
+angles, as XP is normal to the plane.
+According to the law of reflection,
+incident angle is equal to angle of
+reflection, therefore, 7XOP =ZROA.
+Again ZROA =Z X’OP. B
+Therefore, between triangle OPX and
+OPX’, OP is the common arm and two
+angles on both sides are equal. So,
+
+triangles are congruent
+Therefore, XP = X'P of the object at position X
+
+Figure 8.09: Two light rays XP and
+XO are sufficient to draw an image
+
+The image we see in a mirror is not actually real even though it seems real. This
+is because light is not actually coming from the place it appears to be coming.
+
+2025
+2025
+
+Reflection of Light 221
+
+Later, we will see that sometimes images are really formed by converging light
+and light rays come from there. This type of image is called a real image and it
+is possible to do many things with this type of image. In case of the image
+formed in a mirror, light does not actually come from the image, so this is virtual
+image.
+
+Figure 8.10, shows how an image is formed for an extended object
+instead of a single point. Light coming from points X and Y reflect from the
+mirror and form a virtual images at point X’ and Y’ respectively, light appears
+to be coming from X’ and Y'. You can clearly see that length of XY is equal to
+the length X’Y’. If the arrow head of XY is on top, the arrow head of X’Y' will
+also be on the top.
+
+So the image in a mirror is: x"
+(a) Equidistant from the mirror _ ;
+(b) Virtual ge
+(c) Straight and er
+(d) Equal to the size of the object Y’
+
+Figure 8.10: XY object’s imagex'Y'
+We are reminding these separately, because later we will find that if we use
+mirrors of other types instead of plane mirrors, the image may form at different
+distances, may be real, may be inverted, may even be small or large.
+
+@) Do yourself
+
+Figure 8.11: Kaleidoscope can be made using three glass pieces.
+222 Physics
+
+(Take three pieces of glass of similar size (you can find this from photo-frame)
+stores). Form a triangular shape with these three pieces and wrap them with
+paper. Stick them in a triangular shape with glue as shown in Figure 8.11.
+Cover one side with thin paper. Now put some colorful stones or colored
+beads or pieces of bangles inside it and look from the other side. You will see
+some beautiful patterns. This setup is called a kaleidoscope. If you rotate this
+instrument, you will see the patterns in movement. Continuous reflections on
+the glass create this pattern. You may think that in normal transparent glass
+the reflection is less, but in a kaleidoscope the incident angle is larger,
+therefore the amount of reflection is also higher.
+
+Ne /
+
+v
+a | Example
+
+Question: What is the required
+length of a mirror to see a
+full-length image?
+
+Answer: From the geometry
+shown in Figure 8.12, it can be
+said that the length of the mirror
+is 0.75 meter. The interesting
+thing is that, whether you stand at
+a distance of 1 m or 10 m from the
+mirror, the size of the mirror
+needs to be half of the length of
+you for you to see your whole Figure 8.12: To see the full image it is not
+body. If your mother or father or necessary of a full length mirror.
+anyone wants to buy a full-length
+
+plane mirror, you may suggest
+
+them to buy a half-length plane mirror!
+
+2025
+2025
+
+Reflection of Light 223
+
+Question: Two mirrors are placed mutually at 60°
+angle (Figure 8.13). If light is incident on the first
+mirror at an angle of 60°, what will be the direction
+of light?
+
+Answer: From geometry it can be said that
+the ray will incident on the point B
+
+perpendicularly, and reflect in the opposite Figure 8.13: Two mirrors kept at
+direction. an angle of 60°, light is incident at
+
+@) Individual work
+
+point A on a mirror at an angle 60°.
+
+25 |
+Figure 8.14: Image of an object can be formed using fine holes.
+
+In a dark room, make a very small hole in the middle of a piece of
+cardboard and place a candle before it. On the opposite side of the board,
+hold a white paper, as shown in Figure 8.14. If you do not allow any other
+light to fall on the white paper, you will see an image of the flame of the
+candle. By moving the white paper in forward or backward, the size of
+the image can be made small or big. Is the image real or virtual? Straight
+or inverted? Is it equidistant or not? Large or small?
+
+You can understand, the image is real, inverted, clear at all distances and
+as far as it forms, larger in size. Through this process, a pin hole camera
+is made.
+
+224 Physics
+
+Example
+
+Question: As shown in Figure 8.15, two
+mirrors AO and BO are placed
+perpendicularly to each other. Hold your left
+hand in front of it. Now draw the images of
+
+your hand.
+Answer: Your hand is in AOB. In A'OB is
+
+the front-back image of your hand. In AOB'
+is the up-down image of your hand. Notice
+that in both cases your left hand image
+
+appears to be your right hand. In A'OB! you Figure 8.15: Different reflections
+
+will see the image of the image. of the left hand grip in two mirrors
+kept perpendicularly
+
+This can be the up-down image of A'OB or can be the front-back image of AOB'.
+Notice that after one reflection your left hand seems to be your right hand, but
+after two reflections (reflection of the reflection) your left hand appears as your
+left hand.
+
+8.4 Spherical Mirror
+
+We all have seen ordinary plain mirrors but
+may not have seen a real spherical mirror. But
+the main concept of a spherical mirror can be
+seen in a new shiny spoon. Spherical mirrors
+are of two types- concave and convex. We can
+make concave or convex mirrors by cutting a
+portion of a hollow sphere and coating its
+surface with a silver or aluminium layer.
+Whether the spherical mirror will be concave
+or convex depends on which surface is coated Figure 8.16: The opposite plane
+
+with silver or aluminium. of a spoon works as convex
+mMurror.
+
+2025
+Reflection of Light 225
+
+8.5 Convex Mirror
+
+An actual convex mirror is a part of a real sphere. Let, the radius of the sphere
+be r (Figure 8.17). A part of it has been cut to make provision for reflection of
+light from the convex side.
+
+If a parallel light beam is incident on the mirror, the light will scatter in all
+directions. If we extend the scattered light rays towards the center of the mirror,
+it will seem like they have come from a point. This point is called the focal point.
+The center point of the surface of a convex mirror that reflects the light is called
+pole and the distance of the focal point from the pole is called the focal
+
+length (f).
+
+We can imagine a spherical mirror as a part of a sphere. If the radius of this
+sphere is 1, its focal length would be = 1/2 .
+
+focal
+length.
+
+—_>
+
+a
+
+2 ew
+
+7 Se I
+point™-.| | ~
+
+r
+
+pole
+
+Figure 8.17: Focal length of a convex mirror is half of the radius of the sphere.
+
+Example
+
+Question: Prove that, f= 1/2
+
+Answer: Interestingly, you cannot prove this completely. You can only go close
+to it. Let two rays parallel with the principal axis of a spherical mirror
+
+Forma-29, Physics, Class 9-10
+226 Physics
+
+come from A and B respectively. The first ray has come to point X and the
+second one has come to another point Y. The ray coming to point X will be
+reflected back the way it has come. Let us extend this ray to the center of the
+sphere, O. We can see that OX=r (radius of the sphere). The ray coming from
+point B to point Y will create an angle of incidence Oiwith perpendicular
+ON at that point. The angle of
+reflection of the ray BY is 0,and it will
+be reflected towards YP. If we extend
+PY, it would intersect line OX at point
+F.
+
+FO=FY because in the triangle OFY,
+ZFOY=ZOYF , as FOY= 0; and
+ZFYO= 6...
+
+FY = FX when XY is small compared
+
+to radius r. This is true for most
+convex mirrors. is a small part of a hollow sphere.
+
+So, FO=FY=FX= 1/2
+or focal length f= 1/2
+
+Figure 8.18: A spherical convex mirror
+
+Question: If a plane mirror is considered a spherical convex mirror then
+what is its focal length?
+Answer: Infinite.
+
+We will now see how the image is formed for a spherical mirror. You will see
+that in a convex spherical mirror, images are always virtual where as in a
+spherical concave mirror it may be both real or virtual, depending on the position
+of the object.
+
+8.5.1 Image in a Spherical Convex Mirror
+
+We have already said that the outer part of a spoon acts as a spherical convex
+mirror. You can see an upright and small image of yourself there. This means
+that the image in a convex mirror should always be small.
+
+2025
+2025
+
+Reflection of Light 227
+
+To understand how an image is formed in a spherical convex mirror, we first need
+to understand how light rays reflect on such a mirror. This depends on what
+angle the light rays are incident on the mirror. If we know the rules of reflection
+of only three special light rays, we can easily explain how an image is formed:
+
+Gi) If light rays are travelling towards the center (Figure 8.19, XN or YR ray),
+they are reflected perpendicularly and go back along the line they were as
+incident on.
+
+(ii) If light rays travel parallel to the principal axis (Figure 8.19, XP), they will
+
+appear to have diverged from the focal (F) point.
+
+(iii) If the direction of the light ray is changed, it goes back the way it has
+
+come. When the light ray is travelling towards the focus (Figure 8.19, QP),
+it will be reflected parallel to principal axis (PX).
+
+We can now create an image using these three rules. In figure 8.19, an object XY
+is kept in front of a convex mirror. The light ray travelling from point Y towards
+R will be reflected back along the same path towards Y, which means the image
+of the point Y will be created somewhere along the line YO. To know exactly
+where the image is formed, we
+have to draw another light ray from
+the point X in another direction but
+that’s not necessary because we
+will find it by knowing where the
+image of point X is formed.
+
+To find the image of the point X we Pioure 8.19: In convex mirror if an object KY
+
+have to draw two rays, one by is placed inside focal length, the image X'Y’
+connecting the points X and O as we looks smaller.
+
+have done before. (As the YR ray was
+reflected back to the point Y, similarly this ray will be reflected back towards X
+
+from the point N on the mirror.) The second ray can be drawn parallel to YR, which will
+be incident on point P of the mirror and will appear to have diverged from the point F.
+So we join the line FP and extend it towards Q.
+228 Physics
+
+The line FP intersects line OX at the point X’ i.e. the image of the point X will
+be formed on the point X’. The perpendicular drawn from X’ to OY will intersect
+line OY at Y’. Since it appears that the reflection of X is coming from point X’,
+similarly it will appear that reflection of Y is coming from Y’. Hence, X’Y’ will
+be the image of XY.
+We can observe that X'Y’ is always smaller than XY and the further XY is from
+the convex mirror, the smaller X’Y’ will get! One should know how to draw the
+image of an object placed in front of a concave or convex mirror using the laws
+of reflection. It is a very important procedure in physics.
+It is clear that actually no light is coming from X’Y’, it just appears that the
+image is there. Hence it is a virtual image. Comparing this with the images
+formed by a plane mirror, we can see that-
+(a) The position of this image will be between the focus and pole of the
+mirror. The further the object is, the closer the image to the focus.
+(b) This image is virtual.
+(c) This image is upright.
+(d) This image is small, and the further the object moves from the mirror,
+the smaller the image becomes.
+
+8.6 Concave Mirror
+
+The inner side of a shiny spoon is an
+example of a concave mirror. Those of you
+who have looked at the inner side of a
+spoon must have noticed (Figure 8.20) that
+the image is small, and the interesting thing
+is that the image is inverted! You can take
+your finger very close to the spoon and
+notice that the finger is upright. Now move
+your finger slowly away from the spoon,
+notice that your finger is starting to look
+bigger (we were able to produce images in
+plane mirror or convex mirror but never
+images larger than the real size of the object
+this is the first time we are seeing larger
+
+Figure 8.20: A spoon works as a
+concave mitror
+
+2025
+2025
+
+Reflection of Light 229
+
+image). If you move your finger away slowly then you will notice at one
+point, that the image gets inverted! No matter where you are while moving away
+from that point, it will always remain inverted. (We were never able to create
+inverted images using plane mirrors or convex mirrors— this is the first time we
+are observing an inverted image!)
+
+So you can see that the outside part of a spoon works as a convex mirror and the
+inside of a spoon works as a concave mirror! A real concave mirror is actually a
+part of a sphere. In the case of a convex mirror light was reflected from the
+outside convex shape and in the case of a concave mirror light will be reflected
+
+from the inside concave shape. focal
+If parallel rays are incident on a concave te Pe
+mirror the light rays will converge at a H 2
+
+point after reflection (Figure 8.21). You : A
+can understand that this point is the focal i
+
+point of the concave mirror and the : = ‘
+distance from the pole to this point is pole =< =
+known as the focal distance. Light rays N zs a
+don’t have any option of stopping, so after —=
+converging at a point they will travel \L a
+straight forward and it will look like light is
+
+diverging from that point! Therefore before . ;
+reaching the focal point the rays are Figure 8.21: The focal distance of a
+
+converging (convergent) and after reaching concave mirror is half of the radius of the
+the focal point the rays are diverging sphere
+(divergent).
+
+Example
+
+Question: If we imagine a plane mirror as a spherical concave mirror, what will
+
+be its focal distance?
+Answer: Infinite!
+
+We got the same answer in case of convex mirrors, which means when the focal
+distance increases to infinity then both convex and concave mirrors turn into
+plane mirrors! The focal distance is half of the radius in concave mirrors as in a
+convex mirror.
+230 Physics
+
+8.6.1 Image on concave mirror
+
+Now we have entered the most exciting part! In plane mirrors and convex
+mirrors only one type of image was formed. Two types of images can be formed
+on a concave mirror. If an object is placed within the focal distance it forms one
+type of image, if it is placed at a distance greater than the focal distance it creates
+another type of image.
+
+Before starting that, let us know how light rays reflect from a spherical concave
+mirror. If we know the rules of reflection of three special light rays in a concave
+mirror, we can explain how the image is formed:
+
+(i) If light ray travels along the radius or starts from the center (Figure 8.22,
+
+OP or ON ray), it will reflect perpendicularly and go back the way it has
+come.
+
+(ii) The ray parallel to the principal axis will go through the focal point (F) after
+reflection (QF).
+
+(iii) If the direction of light ray is changed, it goes back the way it has come.
+So a light ray (figure 8.22, FQ) going through the focus will reflect parallel
+(QX) to the principal axis.
+
+Now we can create image for concave mirrors.
+
+At a distance less than focal length
+
+In Fig 8.22, a concave mirror is shown. This mirror is part of a sphere whose
+center is O, focal point of the mirror is F and we want to determine the image of
+the object XY. Light coming from point Y reflects from point P of the concave
+mitror and again goes through point Y towards point O. So it can be
+comprehended that it will stay on a point of line OP or on an extended part of
+line OP. To determine this exact point another ray has to be drawn from point Y
+towards the concave mirror, but we are not doing that. If we can determine the
+image of the point X as before we can find the exact location of the image of
+point Y. To determine the image of point X, two lines have to be drawn from this
+point. The first line will be an extended part of the line OX. It will touch the
+
+2025
+2025
+
+Reflection of Light 231
+
+concave mirror perpendicularly and after reflection will go back the way it has
+come. As shown in figure, another ray from point X can be a ray parallel to the
+principal axis. Because we have already known that parallel ray goes through the
+focal point after reflection. So it will be incident on the point Q and after
+teflection will go through the point FE
+
+Figure 8.22: Image appears larger than the object in the
+concave mirror placed inside the focal length.
+
+After emerging from point X two rays of light will travel towards NO and QF
+and we can see that these two rays have no chance of intersecting. So there
+cannot be an image formed on the right side. But if we are able to look at the left
+side from the right side then it will look like line ON and line FQ coincide at X’
+point- so X’ will be the image of X. If we draw a perpendicular from this point
+on OP axis then we will get X"Y’ which is the full image of XY. No light is
+coming from X’Y’, only we are thinking that the image is being formed there. So
+this image is a virtual image. We can see from the figure that the image is larger
+than the object. Not only will the image be larger but moving the object closer to
+the focal point will create a yet larger image. (If the object is placed just on the
+focal point then the reflected rays will become parallel meaning that the light
+rays won’t be able to coincide to create an image.)
+
+Now let’s see what happens to the image when we place an object within the
+focal distance of a concave mirror:
+
+(a) The position of the image will depend on the position of the real object. The
+closer the object is placed to the focus further the image will be created.
+
+(b) It is virtual
+
+(c) Straight
+
+(d) The length of the image will also depend on its position, the closer it gets to
+the focal point the larger its length becomes.
+232 Physics
+
+At a distance greater than focal distance
+Among all the images we have seen so far, this image is amazing, because we
+
+will witness a real image for the first time, where light will be centralized where
+the image will be created (Figure 8.23).
+
+cases, the image of point Y will be on the
+line YP. We have to draw two lines in
+order to determine the image of point X.
+
+Let, the object be XY and like other [
+a
+
+One line XQ will be parallel to the axis, ?
+and after reflection it traverses through
+
+the focal point F as QF. We can draw the
+second ray through the point F. This will ® \
+reflect in the concave mirror and after
+reflecting, it will become parallel to RS,
+
+Figure 8.23: The image becomes inverted if
+
+as after reflection in the concave mirror 2” object is placed outside focal length of a
+
+parallel rays traverse through the focal
+point, the reverse is also true. Light always follows its path in reverse direction. Lines
+
+concave mirror.
+
+QF and RS intersect at the point X’ and point X’ is the image of point X.
+
+So, the normal drawn on line PO
+from X’ intersects at the point Y’ and
+
+/ x
+: X'Y’ is the image of object XY. This
+image is unique compared to other
+¥" ; images. This is shown in Figure 8.24.
+aN 1a] ¥
+
+The object XY is placed at a distance
+3 more than two times of focal
+\ « distance. This time the image has
+
+become shorter. If the object is
+placed at a distance of two times of
+focal length, its image would appear
+on the same point as shown in Fig
+8.25. Not only this, the image's size
+
+Figure 8.24: In a concave mirror if an
+object is placed at a distance more than two
+times of focal length the image formed is
+inverted and short
+
+2025
+Reflection of Light 233
+
+would be the same as the object. These three different cases can be written precisely
+
+when the object is outside the focal distances. If any object is placed outside the focal
+
+length, the images will be as follows:
+
+(a) The position of the image depends on the position of the object. When the
+object is placed within the focal point and at concave mirror's center, the
+image will be formed outside the center. As the object is placed outside the
+center of curvature of the concave mirror, the image be formed inside the
+
+center. If the object is placed at the center, the image will also form at the
+center.
+
+(b) The image is real. So, as we can say that if the image itself is the object, the
+object becomes the image.
+
+(c) The image is inverted.
+
+(d) The height of the image will depend upon its position. If it is formed in
+between the focal point and the center of curvature, the height of the image
+will be greater than the object. The nearer to the focal point, the greater it
+is. If the object is outside the center of curvature, its height will be shorter
+than the real object. If the object is placed at the center of curvature, the
+size of the image will be the same as the object.
+
+Characteristics of the image formed by a concave spherical mirror:
+
+Position of the object Position of the image Characteristics of the image
+At infinite distance Atfocal point F Real and zero length
+Between infinite distance and Between center Real, inverted and short ened
+center O O and focal point F
+At center O At center O Real, inverted and of equal length
+Between center O and focal point F| Between infinite distance and Real, inverted and magnified
+center O
+Atfocal point F At infinite distance No image is formed
+Between focal point Fand pole P Between infinite distance (Virtual, non-inverted and magnifie|
+andpole P (behind)
+At pole P At pole P Virtual, non-inverted and of equal
+
+length
+
+Forma-30, Physics, Class 9-10
+234 Physics
+
+We applied geometry to determine the position, shape etc. of images for convex
+and concave mirrors. We could do these works using a single formula. The
+formula is :
+
+Where, u is the distance of object from the plane of the mirror, v is the distance
+of the image and fis the focal distance.
+
+Real image is a very important idea. We will find in the next chapter how real
+images can be formed with a lens. You have already seen that there are real light
+rays in a real image, so if it is projected on a screen, it is possible to see the
+image. In ordinary mirrors, you can look at yourself but you cannot project
+yourself on screens with ordinary mirrors.
+
+Question: Figure 8.24 shows that the
+
+image of object XY is formed at
+
+X'Y’. If the object is X'Y’, where will Q x
+the image be formed?
+
+Answer: This is a real image. So if
+X’Y’ is an actual object, the image P
+will be XY.
+
+Question: : If an object is placed just \e
+at a distance double of its focal length
+in a concave mirror, where will the
+
+image be formed? Figure 8.25: In concave mirror, if an
+
+object is placed at a distance double of its
+
+Answer: (Figure 8.25) The image focal length, the image will form at the
+will be formed at the same position, same position in inverted condition.
+be of the same size but in inverted
+
+form.
+
+Till now we have learnt the science of concave mirrors, now we will see how to
+use it.
+
+2025
+2025
+
+Reflection of Light 235
+
+8.7. Magnification
+
+We have seen that an image can be larger or smaller than the real object, this is
+called magnification. Magnification refers to how large the image is than
+the real object. If the length of an object is 1 and length of its image is I', then
+magnification is l'
+
+m=-—
+
+I
+When we see an object through a telescope, how large the object is when seen
+
+with the naked eye as compared to its size as seen by a telescope is known as the
+telescope's magnification.
+
+8.8 Use of Mirror
+
+8.8.1 Plane Mirror
+
+Simple mirrors are most commonly used in our daily lives. Ordinary mirrors are
+used whenever a light ray travelling in one direction is to be redirected in another
+direction. You must have noticed that in a plane mirror right and left side
+alternates. So if we want to keep the right and left unchanged, the image of one
+mirror is to be reflected by a second mirror.
+
+The left and right sides are interchanged in a plane mirror image. Right and left do not
+interchange if two mirrors are used as a single mirror by keeping them at 90°
+angle with each other. You may demonstrate it by using two mirrors (Figure
+8.26).
+
+Figure 8.26: In ordinary mirror the left and right are interchanged, where as two
+mirrors are kept at right angles to leave left and right unchanged.
+236 Physics
+
+An important point to note is, when a good reflection is necessary, quite a
+different kind of reflection is done instead of using an ordinary plane mirror. We
+will see in the next chapter how light is reflected by a completely transparent
+medium.
+
+8.8.2 Convex Mirror
+
+A diminished and erect image can be created by using a convex mirror. So a
+convex mirror is used to see a large scene in a small region. Expert drivers
+always trying to notice of what is happening behind the car while driving. So,
+there is a rear view mirror in front of the driver. Convex mirrors are used in these
+mirrors so that drivers can see a vast area behind the car with the help of a small
+mirror.
+
+8.8.3 Concave Mirror
+
+The most important use of concave mirrors
+
+is in telescopes. Concave mirrors are used in
+
+the largest and the smallest telescopes of the /
+world. Many of us generally think that the
+only function of a good telescope is to create
+a large image of the small objects situated i. ni
+far away. Actually that’s not true, the il
+function of a good telescope is also to create A
+
+a distinct image in very dim light. That is
+
+why the bigger the concave mirror is, the \
+more light it can converge to create a clear
+
+image. Concave mirrors are used in all of
+
+the large telescopes of the world. Figure 8.27: When an intense
+light source is placed at the focal
+
+point, then that light is reflected
+
+Another use of concave mirrors is to create a
+parallel beam of light. Concave mirrors are ‘
+used in search lights of ships or launches. The at the concave MITTOF as parallel
+light source is kept at the focus of the mirror, beam of light.
+
+so the light rays are incident on the concave mirror and reflected back as parallel
+beams of light. The torch lights you use in your daily life, also have the bulb kept just
+at the focus of a concave mirror!
+
+Since an erect and magnified image is formed when an object is placed within the focal
+length of a mirror, we use concave mirrors if we want to see a magnified image of any
+
+2025
+2025
+
+Reflection of Light 237
+
+object. Doctors and dentists often use concave mirrors when they try to observe
+something.
+
+8.8.4 Safe Driving
+
+Development of the transportation system of a country is necessary when a country is
+trying to develop. New roads are constructed and vehicles of many types start moving
+on those roads. You must have noticed that the huge number of vehicles travelling
+through the roads in our country and how the number of vehicles is increasing day by
+day. A huge amount of time is wasted because of traffic jams created due to insufficient
+roads and many people die due to accident on highways. These deaths occur mainly
+due to the reason that drivers jeopardize safe driving for reaching destinations quickly
+rather than safely. Many kinds of awareness is required for safe driving, correct use of
+light is one of them.
+
+Brake lights play an important role while driving. Seeing this light the driver of the
+preceding car can be sure if the car in front is trying to slow down or in which direction
+the car will go. Whether the car will change lanes or not, the turn lights are used to
+inform others. The head lights in front of the car illuminates the dark roads but there are
+some specific rules for using headlights. The high beams are not used when a car is
+coming from the opposite direction so that the eyes of the driver are not dazzled by the
+bright lights. A driver has to be aware of the sides and back of the car besides the front.
+That’s why there’s a rear view mirror in front and side view mirror on both sides of the
+car, Convex mirror are used here so that an image of a large area can be created in such
+a small mirror. A good driver always keeps track of what is happening on all sides of
+the car as well as what’s happening in front of the car.
+
+8.8.5 Invisible Curves of Hilly Roads
+
+Hilly roads are usually curved as well as uneven. Besides, there are hills on one side
+and a deep ditch on the other side of the road. This is why the drivers should be careful
+while driving on hilly roads. Still driving in some areas can be very risky. Especially
+when there is almost a 90° turn ahead and the driver cannot see what is coming from
+the other direction. In these circumstances, a plane mirror is placed at 45° at the turns.
+Then the drivers can see what’s happening on both sides and driving in those areas becomes
+
+comparatively safe.
+238 Physics
+
+(?) Exercise
+General questions
+
+1.How the sensitivity of eyes can determined for different colors?
+
+2. Why are the danger signals shown in red colors though human eyes can see
+yellowish green the most?
+
+3.In mirrors, right and left interchanges, Why do the top and bottom not
+interchange?
+
+4. Why colors cannot be seen in moonlight?
+
+5. Why concave mirrors are used in the telescopes used by astronomers?
+
+6. What do you mean by reflection of light?
+
+7, What do you mean by regular and irregular reflection?
+
+8. What is a mirror?
+
+9. What is called an image? How many types of images are there? What are
+they?
+
+10. How is real image formed in a concave mirror? Demonstrate with the help
+
+of a ray diagram.
+
+Mathematical questions
+
+1. A mirror is placed as shown in figure
+8.28. In which direction will the light ray,
+shown in figure 8.28, go?
+
+2. For a convex mirror (figure 8.29a)
+show where the image will be formed for
+an object XY by drawing a ray diagram.
+
+3. For a concave mirror (figure 8.29 b)
+show where the image will be formed for
+an object XY by drawing a ray diagram.
+
+2025
+2025
+
+Reflection of Light 239
+
+(a) {b)
+
+L.
+= x
+
+SS
+=
+=
+
+Figure 8.29: (a) An object placed inside the focal length of a convex mirror.
+(b) An object placed inside focal length of a concave mirror.
+
+4. For a concave mirror (figure 8.30a) show where the image will be formed for
+an object XY by drawing a ray diagram.
+
+(a) (b)
+
+Figure 8.30: (a) An object placed outside focal length in concave mirror.
+(b) An object placed outside focal length in concaves mirror.
+
+5. For a concave mirror (figure 8.30 b) show where the image will be formed for
+an object XY by drawing a ray diagram.
+
+\o> Multiple choice questions
+wnt
+
+Put the tick (Vy) mark on the correct answer.
+
+1.Where are convex mirrors used?
+(a) Cars (b) Torch light
+(c) Solar oven (d) Radar
+240 Physics
+
+2. How many types of reflections are there?
+(a) 4 (b) 3
+(c) 2 (d) 1
+3. Image produced in a plane mirror -
+(i) equal to object in size
+(ii) can be formed on a screen
+(iii) formed at a distance equal to the distance of the object from the mirror.
+
+Which one of the following is correct?
+(a) i and ii (b) ii and iii
+(c) i and iii (d) i, ii and iii
+
+Answer question number 4 and 5 in light of the above |
+
+ao -}o
+
+figure. : ;
+4. What will be the size of object BO?
+(a) magnified (b) diminished
+
+(d) extremely magnified (d) extremely diminished
+Figure: 8.31
+
+5. What will be the position of the object BO?
+(a) between the focus and the pole (b) at the principal focus
+(c) at the centre of curvature (d) between the centre of curvature and
+infinity
+
+Creative questions
+
+Figure 8.32
+
+2025
+241
+
+1. Figure 8.32
+(a) What is a plane mirror?
+(b) Why is a metal coating given behind a mirror?
+(c) Determine the position of the image of the object PQ by drawing a
+
+figure.
+(d) Compare the mirrors 1 and 2 in the formation of images.
+
+2. Figure 8.33
+(a) What is an image? Q
+(b) Why rays incident normally on the mirror turns back
+along the same path?
+(c) Determine the value of the angle of reflection in Ng
+light of the figure above?
+
+(d) The image formed in the plane mirror PQ is virtual;
+explain with the help of diagram.
+
+3. A group of students found that if a stick of 2 cm length is
+placed in front of a concave mirror, an image of 3.51
+magnification is formed on the screen in the first step. Inthe Figure 8.33
+second step of the experiment they found an image on the
+screen of magnification 6.
+
+P
+
+(a) What is magnification?
+
+(b) Why plain mirrors are not used as view mirrors?
+
+(c) Calculate the length and property of the image of the stick in the first step
+of the experiment.
+
+(d) What are the changes made in the second step of the experiment?
+
+Forma-31, Physics, Class 9-10

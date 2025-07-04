@@ -1,0 +1,1134 @@
+Chapter Ten
+Static Electricity
+
+If you comb your hair in winter and then hold the comb near some small pieces
+of paper, you will notice that the pieces jump towards the comb. Again during
+storm, flashes of lightning and thunder bolts rumble and shake up the whole
+area. Static electricity is responsible in both the cases. Everything around us
+consists of molecules and atoms the nucleus is the center of an atom and the
+electrons revolve around the nucleus. An electron is negatively charged and a
+nucleus is positively charge. If one or more electrons can be separated in any
+way, static electricity is produced. We will discuss the various processes of static
+electricity in this chapter. We will moreover know how force acts between two
+charges when they are kept near to each other.
+
+2025
+2025
+
+Static Electricity 271
+
+® By the end of this chapter we will be able to-
+
+explain the basic causes of production of charge on the basis of the
+structure of atoms.
+explain the causes of production of charges by induction and friction.
+
+detect the nature of the charge by an electroscope.
+
+measure the electric force by applying Coulomb’s law.
+
+explain the causes of production of an electric field.
+
+explain the direction of electric lines of force that can represent the
+direction of the electric field.
+
+explain the electric potential.
+
+explain the function of capacitors to preserve electrical energy.
+explain the usage of static electricity.
+
+explain the strategy to keep safe from the risk of static electricity.
+272 Physics
+
+10.1 Charge
+
+If you comb your hair in winter and then hold the comb near some small pieces
+of paper, you will notice that the pieces jump towards the comb. In cold
+countries during winter air is very dry. When babies crawl on carpet, their hair
+seems to stand straight and it seems one hair is pushing the other. All of you have
+seen thunder bolts during stormy night and observed how flashes of lightning
+comes towards the earth.
+
+In the attraction of paper, repulsion of hair or thunder bolt- the basic thing behind
+these three phenomena is charge. To know what charge is and why charges
+attract or repulse or create thunder bolts, we have to understand the basics, we
+have to know how atoms and molecules are formed.
+
+We all know everything is made of an atom and molecule. There are 118
+atoms in this world, among which 83 are stable, only with these atoms millions
+of different molecules are formed. Water is made of two hydrogen and a oxygen
+atom, a sodium atom and a chlorine atom forms table salt, a carbon with four
+hydrogen atoms form the cooking gas, etc. (You need not be surprised, there are
+only 50 letters in Bengali, with these alphabets thousands of words are built!)
+
+Atom is the building block of everything. Nucleus is the center of an atom and
+electrons revolve around the nucleus. The nucleus consists of a proton and a
+neutron. A proton is positively charged while a neutron is chargeless and an
+electron is negatively charged. The charge of a proton and electron is equal but
+opposite and the magnitude of this charge is 1.6 x 10°° coulomb. In an atom
+generally there are the same number of electrons and protons and so an atom is
+charge neutral. Hydrogen is the simplest atom. The nucleus of hydrogen atom
+consists of only one proton and only one electron is revolving around it. The
+next atom is helium which consists of two protons in the nucleus (and two
+chargeless neutron) and two electrons outside the nucleus. In this way larger
+atoms are formed. Excluding hydrogen atom, we can say the number of protons
+that a nucleus there is at least the same number or generally more than this
+number of neutrons present.
+
+Electrons outside the nucleus do not revolve in the same orbit. As shown in
+figure 10.01, electrons on filling up one orbit go to the next orbit. Electrons in
+orbits close to the nucleus are strongly bound, but for some atoms electrons in
+the outer orbits can be separated with a little effort. Ionization is a process of
+removing the electrons.
+
+2025
+Static Electricity 273
+
+Normally atoms are charge neutral and that means there are an equal number of
+electrons and protons in an atom. But if an electron is removed from the
+outermost orbit, then the number of protons is more than the electrons and the
+atom is not electrically neutral anymore, the amount of positive charge within it
+increases. If one electron is removed, one positive charge is developed in the
+
+atom, if two electrons are removed,
+
+two positive charges are developed.
+
+We then say that the atom has been
+
+ionized or charged. As an atom is Electron
+positively ionized, it can also be
+negatively ionized or charged. That
+is, when one or more isolated
+electrons are attached to an atom,
+then the total charge of the atom is
+negative.
+
+The electrons of an atom revolve
+around its orbit; there are certain
+tules about how the electrons will be
+distributed in the orbits. You have Nucleus
+learnt this elaborately in your
+
+chemistry book. So we will not go
+
+deeper. You know sometimes in the Figure 10.01: An atom of argon. Electrons
+last orbit, there are one or two fill up one orbit and then other orbits
+
+electrons that are nearly free; in such
+materials electrons can make
+movement very easily within the
+materials. We call these materials
+
+electric conductors. Again, there are some materials within which there are no
+electrons that can move freely, in these materials electrons are tightly bound.
+These are called nonconductors. Metals like gold, silver, copper etc. are good
+conductors of electricity. Wood, plastic, glass, rubber etc. are nonconductors of
+electricity.
+
+If we have understood the topics explained so far about the structure of atoms,
+the next topics following static electricity will be very easy to understand.
+
+Forma-35, Physics, Class 9-10
+274 Physics
+
+10.2 Static Electricity by Friction
+
+If a glass rod is rubbed by a piece of silk, (Figure 10.02) electrons start to move
+from the glass to the silk. So the glass rod is positively charged and the silk
+negatively. This happens because silk has more affinity for electrons than the
+glass. Again if a plastic is rubbed using a flannel ( or wool), electrons will move
+to plastic from the flannel. Because plastic has more affinity for electrons than
+the flannel.
+
+plastic
+
+Figure 10.02: If glass is rubbed with silk and a plastic is rubbed with flannel
+positive and negative charges can be produced,
+
+Now we can do an experiment. Suppose, using glass and silk we have positively
+charged two pieces of glass. If we carefully hang one piece of glass with
+insulator silk and then bring the other close to it then we will notice that the glass
+that is hanging is going away due to repulsion (Figure 10.03).
+
+Similarly if we charge negatively two pieces of plastic and hang one of them
+with silk thread and bring the other near to it, we will see the same result, one is
+repelling the other. Now if we bring the positively charged glass rod near to the
+negatively charged plastic rod, then we will see, they will attract one another.
+
+When we learnt gravitational force, there was only one type of mass, so only one
+type of force, and it was attraction. Because there is only one type of mass, there
+
+is nothing called a negative mass. Now we see there are two types of charges
+and so forces are of two types, sometimes attractive, and sometimes repulsive.
+
+N
+S
+AN
+2025
+
+Static Electricity 275
+
+If we have done the experiment properly, we will find that similar charges
+repulse each other and opposite charges attract each other.
+
+$p
+
+Figure 10.03: Like charges repulse each other and unlike charges attract each
+other.
+
+10.3 Electrical Induction
+
+At the beginning of this chapter it was said that if you comb your hair and then
+hold the comb near some small pieces of paper, you will notice that the pieces of
+paper jump towards the comb. The comb is attracting the pieces of paper. We
+know that negative charge has been gathered in the comb and due to this reason
+the comb is attracting the pieces of paper. But there is a slight complexity.We
+know opposite charges attract each other, so to attract the pieces of paper
+opposite charge of the comb has to be created in the paper. Since we know the
+pieces of paper have no charge, then why is the comb attracting them?
+
+This happens due to a process called electric induction. If charge is
+accumulated in glass or plastic and brought near a neutral body, then charge will
+be produced in the neutral body. To explain it, a metal sphere is shown in Figure
+10.04 and kept on a non-conducting stand. Now if positive charge is
+accumulated in a glass rod by rubbing it carefully with silk, and this is brought
+near the sphere, negative charges of the sphere will come closer due to attraction
+and positive charges will move away towards the back portion of the sphere.
+Now the glass rod is positively charged and the part of the sphere near the glass
+rod is negatively charged, so they will attract each other.
+276 Physics
+
+Now we will understand the phenomenon of attraction of paper by the comb.
+When a negatively charged comb is brought near the pieces of paper, then the
+
+Figure 10.04: If a charged body is brought near to a chargeless body, opposite
+charge is induced.
+
+part of the paper closer to the comb is induced with a positive charge, while
+negative charge is induced in the farther parts. The positively charged part of the
+paper is attracted by the comb and the negatively charged part of the paper is
+repulsed by the comb. But as the positively
+charged part is closer to the comb, the attraction
+is more than the repulsion. As a result, the
+pieces of paper jump towards the comb, being
+attracted by the comb. (Figure 10.05)
+
+Another thing happens then which you may
+have noticed yourselves. Pieces of paper which
+jump to the comb and attach to the comb
+almost immediately fall away.
+
+You may understand the reason of this too. If
+the piece of paper gets attached to the comb due
+to attraction, then it does not stay induced
+
+. : Figure 10.05: During
+anymore. It itself becomes accumulated with winter, combing hair and
+negative charge by obtaining negative charge the comb is hold near the
+from the comb. As a result it gets repulsed by pieces of paper, they feel
+the comb and falls down . You can do the attraction.
+
+experiment.
+
+2025
+2025
+
+Static Electricity 277
+
+If water vapor is present in the air, the accumulated charge gets lost quickly. As
+a result, these experiments of static electricity work well in winter.
+
+Example
+
+Question: Suppose there are two metal spheres. Is it possible to create two types
+of charge in the two spheres with a positively charged glass rod?
+
+Figure 10.06: It is possible to induce different charges in two spheres in contact.
+
+Answer: As shown in Figure 10.06, it is possible to induce different charges in
+two spheres and separate them.
+
+We have talked about three different phenomena at the beginning of this chapter.
+You have understood by now why they happen.
+
+The event of the comb has been explained. The crawling of the little baby is also
+easy to understand. Due to friction with the carpet, charge accumulates in its
+body and spreads to the hair also. All hairs have same charge. We know similar
+charge repulses, so each hair repulses each other and becomes straightened. Now
+we can explain the event of the thunderbolt too. Due to friction among clouds,
+charge gets separated. When a large amount of charge is accumulated in the
+clouds, it creates induction of opposite charge below. Sometimes that is so large
+in amount, it becomes connected with the clouds by piercing the air. We call this
+lightning. (Figure 10.07).
+278
+
+10.3.1 Electroscope
+
+Physics
+
+An electroscope is a wonderful equipment for test of static electricity. The
+
+equipment is very simple. To determine
+the presence of charge, it contains two
+light leaves of gold, aluminum or some
+other metal. These two leaves are connect-
+ed to a metal disc by a highly conducting
+rod. The whole setup is kept inside a glass
+bottle with a nonconducting stopper so
+that it can be seen from outside, but air or
+anything else cannot touch the light metal
+leaves.
+
+Charging the electroscope
+
+If a glass rod is rubbed by silk, positive
+charge is accumulated in the rod. Now if
+the glass rod touches the metal disc of the
+
+Figure 10.07: When a large amount
+of charge comes down to ground
+from clouds, we call it lightning.
+
+electroscope, some charge will immediately go to the disc. As the disc is
+connected with the metal rod and the leaves, the charge will spread
+everywhere. When similar charges appear in the gold leaves, the leaves will
+
+repulse each other and create a gap
+between them.
+
+Similarly, if a comb is rubbed with
+flannel, negative charge will accumulate
+in the comb. Now if this comb touches the
+disc, negative charge will spread up to the
+gold leaves and they will repulse each
+other and create a gap.
+
+Determining the Nature of Charge
+
+If charge is accumulated in an object, we
+can determine whether it is positive or
+negative using an electroscope. At first,
+we have to give some known charge to the
+disc of the electroscope. If we create
+a positive charge in the glass rod by
+
+2025
+2025
+
+Static Electricity 279
+
+rubbing it with silk and then touch it to the disc, the reduction of gap between the
+leaves will indicate the electroscope has negative charge. If the gap increases,
+then it will indicate the presence of positive charge.
+
+Induction of Charge
+
+We can determine if an object contains charge without touching the disc. Let us
+imagine, a positively charged rod is brought near the disc. Then the disc will
+have negative charge due to induction (Figure 10.08). To make induction of
+negative charges, negative charge from other parts of the electroscope will have
+to come in the disc and as a result positive charge will be created in the gold
+leaves too. This positive charge will push gold leaves apart.
+
+Instead of bringing a positively charged object, if we bring a negatively charged
+
+object, then there will be gap too between the gold plates. This time it will be due
+to accumulation of negative charges there.
+
+10.4 Electric Force
+
+We have seen earlier that opposite charges attract each other and similar charges
+repel each other. But we do not
+
+know yet how attraction or
+
+repulsion works. To know this, we r
+
+need to look at Coulomb's law. qy Ip
+Coulomb determined how much
+force works between two charges.
+
+Figure 10.09: The force F acting
+
+We have already seen such a law, between two charges q, and q,, can
+Newton's gravitational force law, either be attractive or repulsive.
+which is as follows:
+mm
+F=CG i” 2
+r
+
+The interesting thing is, if mass ml and m, is replaced by q, and q,, we get
+Coulomb's law. G was the constant for gravitational force, now we will use the
+280 Physics
+
+constant k. This is the difference. That is, if two charges q, and q, are placed ata
+distance r, the force (Figure 10.09) working between them will be,
+
+192
+
+Fak
+
+Here the unit of the two charges g, and g, is C and of distance (or r) is m, so we
+may say, the unit of k will be Nm’/C’, so that the unit of F becomes N.
+The value of k:
+
+k =9 x 10? Nm2/C?
+
+Coulomb is the unit of charge. We will see in the next chapter that the flow of
+charge is electricity or current, and the unit of current is ampere. If one ampere
+current flows for one second, the amount of charge that flows is called one
+coulomb (C).
+
+But, the authentic way to understand the coulomb is to understand the amount
+of charge of an electron or proton. Its amount is:
+
+Charge of electron : -1.6 x 10-19 C
+Charge of proton : +1.6 x 107?°C
+
+You can see, if g, and g, both are positive or negative, then the value of F is
+positive and they will repel one another. If one charge is positive and the other is
+negative, then the value of F will be negative, which means the direction of the
+force is changed, that is, the charges will attract one another. We have seen this
+earlier and now the formula shows this too.
+
+Example
+
+Question: A +1 C charge and a -1 C charge are placed at a distance of 10 cm.
+How much force is acting between them?
+
+Answer: Two opposite charges will attract each other. The force acting between
+them: (Figure 10.10 a)
+
+1192
+
+F=k—5
+
+2025
+Static Electricity 281
+
+Here, a =1C
+q2=—1C
+r=10cm=0.10m
+k =9 x 10° Nm?/C?
+So 9x10? x1x (-1) 11
+, = N=-9x1011N
+(0.10)? 9x 10
+ty qt 1m
+@) © — % —— l= —>|
+10cm , a rt
+&) (3)
+(a) (b)
+
+Figure 10.10 : (a) Distance between +1C and -1C is 10cm (b) Distance
+between +5C and +3C is 1m.
+
+Question: Two charges of +5 C and +3 C are placed at a distance of 1 m. Now
+a third charge +q is placed in between them, where will it not feel any force.
+(Figure 10.10 b).
+
+Answer: The +5 C charge will repel +q charge towards the right and the +3 C
+charge repel towards the left. When two charges will repel by equal force, +q
+charge will not feel any force.
+
+So, (+5)q_ , G3)q
+° k x2 k (1 — x)?
+
+5(1 — x}? = 3x?
+2x? —10x+5=0
+_ 10+ vI00—40
+
+4
+x= 4.435 or 0.565
+
+x
+
+As the value of x will be between 0 and 1, so the value of x must be 0.565.
+(Can you try what it would be if the value of x was 4.435?)
+
+Forma-36, Physics, Class 9-10
+282 Physics
+
+Question: There is a proton in the center of a hydrogen atom and an electron
+outside it. The charges of the proton and electron are +1.6107 C and -1.6x10"
+C respectively. If the distance of the orbit of the electron from the nucleus is
+0.5x10° m, how much attraction is found between them?
+
+Answer: 4192
+
+Fak
+
+Here, gq, = +16 107°C
+q2 = —1.6 x 10-19
+k=9x 10? Nm2/C?
+r=0.5x10%m
+
+_ 9x 10° x 1.6 x 1077? x (-1.6 x 10779)
+~ (0.5 x 10-8)2
+
+The negative sign denotes there is attractive force between the proton and the electron
+
+therefore, f N = —9.22 x 10-17.N
+
+Question: How much charge should be stored in the earth and the moon so that
+the gravitational force becomes zero and the moon goes out of its orbit?
+
+Answer: The gravitational force acting between the earth and the moon:
+
+Here, G = 6.67 x 1071! Nkg?m?
+m = 7.35 x 1072 kg
+M = 5.97 x 10 kg
+r = 3.84 x 105km
+
+_ 6.67 X 107" x 7.35 x 1022 x 5.97 x 1024
+
+So, fF, =
+(3.84 x 105)2
+
+N = 1.98 x 10°N
+
+2025
+2025
+
+Static Electricity 283
+
+If an equal amount of charge is kept in the earth and moon, the repulsive force:
+
+9 x 10° x q?
+
+Fz = =———_.
+
+(3.84 x 105)2
+
+Two forces must be equal for reducing gravity by Coulomb force.
+That is Fo = Fr
+
+NC?
+
+9x10°xq?
+
+1.98 x 107° N = NC
+
+~ (3.84 x 105)?
+
+q? = 3.24 x 1027 C?
+q = 5.69 x 1013 C
+
+Therefore, the number of electrons,
+q 5.69x1073¢
+~e@ 1.6x10-9C
+The mass of an electron is 9,11 x 10-31 kg, so the mass of all electrons:
+
+= 3.56 x 1072
+
+(3.56 x 1032) x (9.11 x 10-34) kg = 324 kg
+
+So, if we can keep 324 kg electrons both in earth surface and in moon, the moon
+would come out of its orbit. (The mass of a moderate cow!)
+
+10.5 Electric Field
+
+The force between two charges can be determined by using Coulomb's formula.
+You may remember, for gravitational force, we have determined gravitational
+acceleration without beginning from gravitational force separately. Multiplying
+that acceleration with mass, we determine force.
+
+In case of electric force, we can do that, we can define a new quantity called
+electric field. Multiplying charge g with this, we will get the force F acting on it.
+Therefore, any charge q creates an electric field around it. That electric field E
+
+18:
+
+q
+B=k>
+284 Physics
+
+If any charge g is brought in this electric field, then it will feel F force on it and
+the magnitude of F will be,
+
+F=Eq
+
+As force F is a vector and charge q is a scalar, so, F itself is a vector and its unit
+
+is N/C. You will see, this topic is easier to explain with the help of electric fields.
+
+Electric field cannot be seen, but to make it easy to understand, sometimes one
+type of completely imaginary
+
+lines are drawn, called the
+
+electric lines of force (first ae Z
+introduced by Michael NS 7\\Ne
+directions. To show you, these . ; ;
+
+are drawn in a plane (Fig Figure 10.11: Lines of force diverges from
+
+Faraday). Our known world is
+three dimensional, so the lines
+10.11) positive charge and converges into negative
+
+of force will spread in all
+charge
+
+There are some rules of
+
+drawing lines of forces:
+
+(a) Incase of positive charge the lines of forces emerges from positive charges,
+and in case of negative charge converges into negative charges . In a specific
+point, the direction of tangent line of force is the direction of electric field.
+
+(b) The more the amount of charge, per unit volume or area the more the number
+of lines of forces.
+
+(c) The nearer the lines of force, the more the magnitude of the electric field.
+(d) The lines of force of one charge never intercept the lines of force of another
+charge.
+
+In Figure 10.12 (a), the lines of force of two opposite charges are shown. You
+can see, the lines of force of one charge ended up in another charge. Where the
+magnitude of the electric field is higher, the number of lines of force is higher.
+Also, when the figure is seen, it gives a feeling that the two charges are
+attracting one another. In Figure 10.12 (b), both the charges are positive and
+from the figure it can be seen that, the two charges are repelling one another. Not
+only that, in the middle portion of two charges the electric field due to one
+charge is neutralized by the electric field of the other. As a result the number of
+lines of force is less, and there is a point in the middle where the magnitude of
+
+2025
+2025
+
+Static Electricity 285
+
+the electric field is zero. If both the charges were negative, then the direction of
+lines of force, would change only, besides this everything would be as before.
+
+>
+
+Figure 10.12: Lines of force of (a) opposite charge and (b) same charge
+
+@) Example
+
+Question: What is the magnitude of the electric field at a distance of 10 m for 5
+C charge?
+Answer: We know,
+
+q
+E = ka
+Here, q=5C
+42 = —1.6x 10°17
+r=10m
+k =9 x10? Nm?/c?
+So,
+_9 x10°xS5
+
+_— 8
+102 N/C =4.5 x 10° N/c
+286 Physics
+
+Figure 10.13: Lines of force for +q
+and -2q charge.
+
+Question: A charge of 3 C is experiencing a force of 10 N. What is the electric
+field?
+Answer: We know F=qE
+
+So, F
+E=—
+q
+Here, F=10N
+q=3C
+Therefore, a F_ 10N a5 we
+“gq 3C ~
+
+Question: If there are two charges q and -2q close to each other, what will be
+their lines of force?
+Answer: This is shown in Figure 10.13.
+
+2025
+2025
+
+Static Electricity 287
+
+10.6 Electric Potential
+
+We know that in an electric field E, a charge q experiences a force F=qE when
+brought close to another small positive charge q,, it experiences a repulsive
+force. Therefore, to bring a test charge q from a distance r; along a straight line,
+work has to be done against the repulsive force. The closer the charge q, is
+brought to charge q, the greater the repulsive force it will feel, and thus more
+work must be done. According to Coulomb's law, if the distance between
+charges q and q, is infinite, there will be no force acting between them.
+
+If work W is done in bringing an extremely small positive test charge q,, at con-
+stant velocity, from an infinite distance to a distance r from the charge q, then
+the work done per unit test charge is called the electric potential V of charge q at
+that point. The potential is expressed as:
+
+V=V (rn) = :
+
+For a point charge q, using Coulomb’s law, it can be shown that
+=k?
+V(r)=k -
+
+Electric potential is a scalar quantity. The unit of measurement in the SI System
+of Units is the Volt (V).
+
+If the work done in bringing 1 C positive charge to a point from an infinite
+distance is 1J, then the potential at that point is 1V:
+
+Example
+
+Question: What will be the state of the potential around a positive and a
+
+1 Volt (v) = z= =jc7
+
+negative charge?
+288 Physics
+
+Answer: For the equal and opposite charges equipotential lines are shown
+in figure 10.15. On the left side the potential is positive and it turns negative on
+
+the rightside by decreasing equally. Just at the center, the potential is zero.
+
+Figure 10.15: Equipotential lines for opposite charges.
+
+10.6.1 Potential Difference
+
+You have likely noticed various warnings on electric lines, such as "Danger: Ten
+Thousand Volts." Electric shock is a serious and potentially life-threatening
+hazard; there have been many instances where careless individuals have lost
+their lives due to electric shocks. If you grasp the concept of electrical potential,
+you can better understand what occurs in these situations. When you encounter a
+high potential and touch it, a charge will flow from that higher potential to your
+body, as your body's potential is lower. The amount of charge that flows depends
+on various factors within your own body.
+
+The potential of the object you touch can be either positive or negative. In one
+scenario, electrons may leave your body, while in another, they may enter
+it—both scenarios represent electric current, just in opposite directions.
+
+It's crucial to recognize that charge flows due to the difference in potentia not the
+value of the potential itself. For example, a crow perched on a high-voltage elec-
+tric wire does not suffer an electric shock because its potential matches that of
+the wire, resulting in no difference. Similarly, workers can safely perform
+
+2025
+Static Electricity 289
+
+tasks with bare hands on extremely high voltages, such as ten thousand or twenty
+thousand volts, while suspended in a helicopter. They do not receive electric
+shocks because their body's voltage aligns with that of the wire they are touch-
+ing. In this case, there is no voltage difference, so no charge flows, and thus, they
+remain unharmed.
+
+This illustrates that the voltage difference is what truly matters, not the absolute
+value of the voltage itself—a vital concept for everyone to understand.
+However, when it comes to measuring voltage levels, it is useful to have a
+specific reference voltage. In everyday life, we consider the Earth to have zero
+potential. The Earth is so immense that adding or removing a small amount of
+charge does not affect its potential. Consequently, all measurements are made
+relative to this zero potential. You may have noticed that heavy electrical equip-
+ment is consistently well-grounded (Earthing). This grounding ensures that if a
+significant amount of charge unexpectedly enters the system—due to an acci-
+dent, for example—it can quickly and safely discharge into the ground, minimiz-
+ing the risk of harm to nearby individuals.
+
+10.7 Capacitor
+
+When a conductor is charged or electricity is applied to it, it attains an equipoten-
+tial state. Furthermore, bringing another charged object near a conductor will
+induce a charge on that conductor. The potential of a conductor depends on the
+charges around it. When heat is applied to a material, the resulting temperature
+change depends on its specific heat capacity. If the heat capacity is high, the tem-
+perature will increase only slightly, even with substantial heat input; conversely,
+a substance with a low heat capacity will experience a significant rise in tempera-
+ture with minimal heat added.
+
+Similarly, when a charge is introduced to a system of conductors, the resulting
+increase in potential depends on the characteristics of that system. This charac-
+teristic is known as the capacitance of the conductive system, commonly referred
+
+Forma-37, Physics, Class 9-10
+290 Physics
+
+to as a capacitor. A capacitor with high capacitance requires a large amount of
+charge to produce only a small increase in potential, while a capacitor with low
+capacitance will see a significant rise in potential with just a small amount of
+charge. For example, if a spherical capacitor has a capacitance C and receives a
+charge Q, then its potential V is given by:
+
+y=2
+where for a metallic sphere of radius r the capacitance C is
+
+Tr
+
+C= k
+
+But the most simple and
+effective capacitor is made by Or
+keeping two metal plates side
+by side (Figure 10.16). If one
+plate is charged positively LPP Preyer
+and the other is charged (4
+
+negatively, then an electric
+field is developed between the
+plates and energy is stored in
+that electric field. For a
+
+capacitor, if capacitance is C and voltage is V , then the energy stored in it is:
+
+1
+[rae 3tv’ ]
+g
+e | Example
+
+Question: What is the amount of stored energy if 10 V electric potential is
+applied to a 20uF capacitor?
+Answer:
+
+Energy =5cv? = 5x 20x 10-* x 10? J= 107 J=1myjJ
+
+ae
+
+Figure 10.16: Capacitor formed by
+parallel metal plate .
+
+2025
+2025
+
+Static Electricity 291
+
+10.8 Uses of Static Electricity
+
+We use electricity in our daily life, in industries, laboratories, educational insti-
+tutions and hospitals etc. But we use current electricity (we will discuss it in the
+next chapter) in almost all of these cases. But static electricity is also used in
+some special cases:
+
+10.8.1 Photocopy
+All of us have used a photocopy machine now and then to copy some writing. In
+
+this machine, light is projected on the paper which creates an image of the
+writings on a special kind of roller. Static charges are created on the roller
+similar to the writings on the paper. After that, the roller is brought in contact
+with very fine powder like ink, and black ink is absorbed at the parts of the roller
+where charges are formed. Then this ink is imprinted on a new white page. The
+ink is attached very well to the paper by heating so that the ink doesn't scatter,
+and the process work in this way.
+
+10.8.2 Van de Graaff Machine
+
+Different types of work are done with high voltage. This can be done with a Van
+de Graaff machine using static electricity. Static charges are sprayed on a
+
+rotating insulating belt, by rotating the
+belt it is taken inside a metallic sphere
+(Figure 10.17). A tangent (comb of
+sharp needle) receives the charge from
+above the belt and sends it to the
+metallic sphere. We know, charge
+always flows from higher potential to
+lower potential. It always happens in
+the Van de Graaff generator, because
+inside the metallic sphere the potential metallic
+is equal to the potential of the surface. sphere
+The excess voltage that is created on
+
+the belt due to the excess charge on the
+
+belt, is always higher than the voltage belt S
+of the sphere. Due to this reason, any |
+charge inside the sphere goes to the
+surface of the sphere. In this process,
+
+static charge
+spray
+
+Figure 10.17: Van de Graaff Machine
+292 Physics
+
+by accumulating huge amount of charge on the sphere it is possible to develop
+high potential.
+
+10.8.3 Fuel Truck
+
+When petrol or other fuel trucks supply fuel, then they have to be very careful so
+that no electrical sparks are created suddenly which may produce a big
+explosion. This may happen if static electricity is generated due to friction
+between truck wheels and the road. So behind the truck, a metal chain hangs
+from the tank and stays in contact with the ground. In this way, any static
+electricity produced is directly transferred to the earth through the chain.
+
+10.8.4 Electronics
+
+In cold countries, the amount of water vapor in air is very low and the effects of
+static electricity are very high. Many types of IC (Integrated Circuit) are used
+while working with electronics. Some IC’s can be damaged by even a slightest
+change of voltage to their pins. That is why a touch of the hand while working
+with electronics can damage a valuable IC or the circuit board. For doing work
+under these circumstances, the upper part of a table is connected to the ground
+with a conducting wire. Simultaneously, the hands of the person working are
+connected to the ground using an electrical conducting strap.
+
+10.8.5 Lightning and Lightning Arrestor
+
+When water vapor rises to form clouds, the negative charges (electrons) created
+due to friction between water vapor are stored in the lower altitude clouds. So
+naturally a shortage of electrons is developed in the higher clouds making them
+positively charged. When a large amount of charge is accumulated in the clouds,
+a huge spark is formed inside the clouds to return to neutral state (which we
+know as lightning). Sometimes so much charge is accumulated in the clouds that
+
+they ionize the air and literally travels to the ground. We call that a thunderbolt.
+A huge amount of charge is brought to the earth during a thunderbolt. It ionizes
+the air while travelling through it, so a huge amount of heat, light and sound is
+produced, and such amounts of charge can cause serious harm to the places
+nearby.
+
+2025
+2025
+
+Static Electricity 293
+
+Millions of amperes of electric current can flow during a thunderbolt and for this
+flow of current, the temperature of the air can rise up to 20-30 thousand degree
+Celsius which is even more than the temperature of the sun!
+
+For this temperature we see a bluish white sparkling in the sky. Another thing
+occurs due to this temperature; the air expands to a great extent and moves
+outside, and in the very next moment air from the outside fills in that blank space
+created. This whole thing occurs faster than the speed of sound and an incredibly
+loud noise is created. When the speed of air exceeds that of sound, it is called a
+
+shockwave. The sound of a thunderbolt is a kind of shockwave. Although the
+flashing of light and sound are created at the same time, we see the light first,
+since the speed of light is so much that it reaches us within the next moment. The
+speed of sound is 330 m/s which means it takes 3 s for it to travel one kilometer.
+That is why; we can guess the distance at which the lightning is created by
+calculating how many seconds later we hear the sound of thunder. Roughly
+3 seconds for a kilometer.
+
+Since electric current flows down from the clouds during a lightning, it usually
+strikes tall structures. So to protect tall buildings from thunderbolts, more than
+one pointy metal needle is set up on the roof. This current is then transferred to
+the ground by some heavy conducting wires. The science behind this is very
+simple. We have seen earlier that when a charged object is brought near an
+uncharged body, the uncharged body becomes induced by opposite charge. So
+while the possibility of a thunderbolt occurs, the pointy needles become
+positively charged and an intense electric field is created due to pointy needles.
+The surrounding air and water vapors become ionized due to this electric field
+and these rises above and neutralizes the negative charges of clouds and reduces
+the possibility of being a thunderbolt. When thunder needles are kept on the roof
+of a tall building they often absorb the thunderbolt and the bar carries the huge
+amount of charges directly to the ground. So the current coming down from the
+sky doesn’t go to the ground uncontrolled; rather it goes to the deep ground
+through the heavy wire.
+294 Physics
+
+Not only thunderbolt occurs in the pointy needles, but also the needles can pass
+opposite charges to neutralize the charges stored in the clouds. That is why,
+when lightning arresters are installed in tall buildings, the risk of that building
+being thunderstruck is reduced greatly.
+
+10.8.6 Static Electric Color Spray
+
+Static electric color sprays are used now-a-days to paint cars, bicycles, steel
+cupboards and other metallic things. In these sprays very small particles of
+colors are created and since they are charged, while getting out one particle
+repels another particle and spreads out. So a large space can be smoothly painted
+using spray.
+
+To charge the color particles, the pointy head of the spray is connected with a
+high potential source. The thing to be charged is connected with the opposite
+potential or the earth. As the color particles are charged, they are attracted
+towards the body and firmly attached with the body. Not only that, the color
+
+particles can travel along electric lines of force and can reach the hidden corners
+and create a layer of paint in there.
+
+Q) Investigation 10.01
+
+(— Friction and induction >)
+
+Objective: To create charges from friction and induction
+Apparatus: Comb, aluminium foil.
+
+Theory: While combing hair in winter, negative charges get stored in
+the comb.
+
+Working Procedure:
+
+1) Take a very small piece of aluminium foil and roll it into a ball.
+
+2) After combing the hair, bring the comb close to the aluminium foil
+ball. If enough negative charges are accumulated on the comb, it will
+induce a positive charge at the front side of the ball. (Since aluminium
+foil is a conductor, the electrons in front will easily move back.) The
+front side will be attracted by the comb and the ball will jump and
+
+\_ stick to the comb. ~
+
+2025
+2025
+
+Static Electricity 295
+
+3) Again since the aluminium foil is a conductor, negative charges will
+get absorbed immediately and will fall down being repelled by the
+
+comb.
+(?) Exercise
+General questions
+
+1. There is a minimum value of charge; this is 1.6x10°°C, is there a similar min-
+imum value of mass?
+
+2. Why is it that static electricity experiments don’t work properly during rainy
+season?
+
+3. Can you give equal and opposite charges to two similar metallic spheres
+without touching them?
+
+4. If capacitance is compared to a container, then what should potential be
+compared to?
+
+5. Is it possible for a point to have zero potential but non-zero electric field?
+
+6. Explain the phenomenon of charging a body based on the basis of structure of
+atom.
+
+7. Describe how a body can be charged by the process of friction.
+8. What is electrostatic induction?
+9. What is inducing charge and induced charge?
+
+10. Describe how a body can be charged by the process of electrostatic
+induction?
+296 Physics
+
+11. Describe the construction of a gold leaf electroscope.
+
+12. Describe how a gold leaf electroscope can be charged positively.
+
+13. How can the nature of charge of a charged body be determined by a gold leaf
+electroscope?
+
+14. What are the factors on which the electrostatic force between two charges
+depends?
+
+Mathematical questions
+
+1. 4C and -1C charges are kept 1 m apart. At which point of the line joining
+them, is the magnitude of the electric field zero?
+
+2. An electron in a hydrogen atom revolves around the nucleus due to Coulomb’s
+force. The mass of electron is 9.11x10*! kg and proton is 1.67107’ kg and for
+this there is also a gravitational force between them. Which of these two forces
+is greater and by how much?
+
+3. Draw the electric lines of force for the two charges mentioned in question
+number 1.
+
+4. Equipotential lines for opposite charges are shown in Figure 10.15, show
+electric field from there.
+
+5. Electric field for two charges is shown in Figure 10.13, draw the potential.
+
+\o> , .
+Multiple choice questions
+P 4
+
+Choose the correct answer
+
+1. The name of the apparatus used to determine the presence of charge is —
+a) Ammeter b) Voltmeter
+c) Microscope d) Electroscope
+
+2025
+Static Electricity
+
+2. On which factor does the electrostatic force between two charges
+
+i) the distance between the charges
+
+ii) the nature of the medium in which the charges are placed
+iii) the masses of the charges
+
+Which one of the following is correct?
+
+a) i and ii b) iii
+
+c) ii and iii d) i, ii. and iii
+
+3. The unit of electric field intensity is-
+
+a) N b)Nm
+
+c)Nm! d)NC!
+
+4. Volt is the unit of what?
+
+a) electric field b) electric potential
+c) electric charge d) electric current
+
+5. In Figure 10.18
+
+i) some charges will flow from
+
+sphere Ato sphere B
+
+ii) some charges will flow from
+
+sphere B to sphere A
+
+iii) the charge difference remains same
+
+Which one of the following is correct? Figure 10.18
+a)i b) ii
+C) iii d) i. ii. and iii
+
+Creative questions
+
+297
+
+not depend?
+
+1. Rima, after combing her hair, observes that her comb attracts small pieces of
+paper. Shima says that it happens because the comb is positively charged. Rima
+says that the comb is charged negatively. To solve the problem, Rima and Shima
+
+look for their physics teacher and find him in the physics laboratory. Hearing
+everything he asks them to find the nature of the charge with the help of an
+
+electroscope.
+
+Forma-38, Physics, Class 9-10
+298 Physics
+
+(a) What do you mean by charge?
+
+(b) Explain why an object is charged by friction?
+
+(c) Describe why the comb is charged?
+
+(d) Explain how the nature of charge of the comb can be determined by the
+electroscope.
+
+2. 9,(2C), 4,s(-1C) and g,(1C) are three charges placed on a straight line
+
+sequentially and equidistant from each other.
+rag 1m -1C 1m 1¢
+
+qy q2 q3
+
+(a) What is electric force?
+
+(b) Why are electric field and electric field intensity not the same?
+
+(c) Draw the lines of force produced by three charges.
+
+(d)What should be the magnitude of charge q, be, so that charge ¢, will not feel
+any force on it? Explain.
+
+2025

@@ -1,0 +1,501 @@
+Chapter Six
+National Income and Its Measurments
+
+The economic situation of a country can be understood [rom the national income
+of that country. That is. it is possible to assume whether the country is developed
+or developing or underdeveloped. To know how much the national income of a
+country is, national income has to be measured. In this chapter. the system and
+technique of measuring the national income of Bangladesh will be discussed.
+
+Other tax end dury
+ae
+Sales tax
+
+32%
+
+After studying this chapter, we will be able to-
+
+illustrate the ideas of national income;
+
+show the differences between the national income (NI) and the gtoss domestic
+product (GDP);
+
+compare the national income (ND) and the net national product (NNP);
+illustrate the systems of measuring the national income;
+
+classify the determinants of GDP in two groups, which are factors and technology ;
+prepare a list of the factors outside GDP and
+
+describe the system to measure the national income in Bangladesh.
+
+2025
+National Income and Its Measurement al
+
+6.1 Concepts of National Income
+Gross Domestic Product (GDP)
+
+At a specific time, usually one year, the sum total of the market price of the
+final goods and services produced within the geographical boundary of a
+country is called the gross domestic product or GDP.
+
+Let us assume that three goods are produced within Bangladesh in a year, e.g.
+100 quintals of paddy, 1000 shirts, and 1000 pens. GDP=100 quintal of paddy x
+the market price of paddy + 1000 shirts x market price of shirts + 1000 pens
+x market price of the pens. Thus GDP of a country is calculated by summing the
+result of the multiplication of the amount of all produced goods with their own
+prices. If rice is produced as a final goods from paddy, then at the time of
+calculation, we will have to estimate the production and the price of rice.
+
+Gross National Income (GNI)
+
+At a specific time, usually within one fiscal year, the sum total of the market
+price of the total amount of the final goods and services produced by the citizens
+ofa country is known as the gross national income or GNI. It is also called gross
+national product (GNP).
+
+The gross national income can be determined by adding the gross domestic
+product and the net factor income. Net factor income means the subtraction
+result of the income of the citizens of a country from foreign investments and
+labour, and the income of the foreign citizens from their investment and labour in
+the country being considered. If this amount is negative, the gross national
+income will become less than the gross domestic income. Again, if it is positive,
+the gross national income will become less than the gross domestic income. The
+second one is true in the perspective of Bangladesh.
+
+Net National Income (NNI)/Net National Production (NNP)
+
+In an economy, at a specific time, if the Capital Consumption Allowance or CCA
+or Depreciation is deducted from the monetary price of the final products and
+services, what is left is known as the net national income (NNI) or net national
+product (NNP). The capital consumption allowance means the cost of the
+supervision for the wearing away or decays due to the use of the capital.
+Forma-11, Economics Class 9-10
+$2
+
+Economics
+
+Relationship between Gross Domestic Product and National Income
+
+Gross Domestic Product (GDP)
++ Remittance from local products
+- Income of the foreign factors engaged in domestic market
+Gross National Income/Gross National Production
+- Depreciation cost
+Net National Income/Net National Product
+- Indirect Tax
+National Income (NI)
+
+Task: 1 Give the full meaning of GNI, GDP and CCA?
+Task: 2. What is CCA (Capital Consumption Allowance) really?
+
+6.2 Measurments of Gross Domestic Product— Production, Income
+
+and Expenditure Approach
+
+The national income can be measured basically in three ways. They are— the
+Production approach, the Income approach and the Expenditure approach.
+
+1,
+
+ae)
+
+Production approach: The economy of a country is divided into some
+important sectors. Adding the value of the final products and services
+produced in these sectors in one year, the gross domestic product can be
+calculated. The economy of Bangladesh can be divided into 15 sectors and
+the value of the production is decided sector-wise. In the end, summing up the
+value of production in these 15 sectors, the gross national product is
+determined.
+
+- Income approach: The National income in this system is the sum total of the
+
+income received by the factors used in production. The basic factors used in
+production aré—land. labour, capital and organisation. Their incomes are
+respectively revenue, wage, interest and profit. Therefore, national income =
+Sirevenue +} wage +} interest +} profit.
+
+. Expenditure approach: In this system, the national income is the sum total
+
+of all kinds of expenditure in a society at a specific time. The total
+
+2023
+2025
+
+National Income and Its Measurement 83
+
+expenditure in a society stands for the cost of consumption and investment of
+the individual sector and the governmental expenditure and the net export.
+Therefore, consumption + investment + governmental expenditure + net
+export (= export - Import) = gross domestic product. So, gross domestic
+product or ¥Y =),C+},1+},G+>(X-M). Here, C = consumption, I= investment,
+G=governmental expenditures, (X-M) (export-import) = net export.
+
+If the amount of the gross domestic product calculated in these three systems is
+fairly the same, the measurement is considered to be correct. Due to the mistakes
+in calculation, there may be some difference, but in the real sense, the result will
+be the same.
+
+6.3 Per Capita Gross Domestic Product
+
+GDP per capita means the annual GDP per person. In a specific fiscal year, if the
+total gross domestic product is divided by the total population, the GDP per
+capita can be calculated,
+
+the total gross domestic product of one year
+ihe total population of that year.
+
+As per formula, per capita GDP =
+
+Per capita GDP is one of the indicators of the economic development and the
+standard of living of a country, According to World Bank by this indicator, we
+can determine if a country is developed or underdeveloped, or developing. If the
+per capita GDP is more than a particular level, it has to be understood that the
+country is developed, and if the per capita GDP is less, the country is to be
+
+considered as under developed or developing. At present we do not measure in
+this way, there is a new provision as a high, middle and low income countries.
+
+6.4 Determinants of Gross Domestic Product (GDP)
+
+The amount of the gross domestic product (GDP) of a country depends upon the
+the amount and the productivity of its land and other natural resources, labour,
+capital and technology. Therefore, they are called the determinants of the gross
+domestic product.
+
+1. Land: The gross domestic product depends on land and natural resources.
+The gross domestic product will increase if satisfactory usage of the natural
+resources is possible and if there is necessary fertile land for producing
+B4 Economics
+
+agricultural products. Therefore, land and natural resources are the
+significant determinants of the gross domestic product.
+
+2. Labour: Labour is a significant determinant of the gross domestic product of
+a country. Skilled and efficient labour force is helpful for increasing the gross
+domestic product. If the number of labourers increases and if they know the
+use of technology, and are trained, it becomes helpful for increasing the gross
+domestic product.
+
+3. Capital: Capital is a fundamental determinant of increasing the gross
+domestic product of a country. In the developed countries of today, capital
+works at the root of increasing gross domestic product. On the other hand, the
+developing and underdeveloped countries cannot increase their total national
+income and the gross domestic product due io their lack of capital. Therefore,
+capital is an important determinant of the gross domestic product.
+
+4, Technology: The gross domestic product largely depends on technology.
+Technology can be developed in many ways. For example, new inventions,
+development of the design of the machinery and skills, invention of new
+products, etc. As it can be seen, the use of highly productive seeds instead of
+the regular seeds in the agricultural sector has increased the production of rice
+many times. Similarly, the use of seeds of better quality has also resulted in
+enhanced production of different vegetables, such as gourd, pumpkin, okra or
+finger, etc. Technology basically enhances the productivity of the factors of
+production. As a result, more production is possible with the same production
+factors.
+
+5. Mobility: The gross domestic product depends on the capacity to move the
+resources from the economic activities that are lagging behind or
+diminishing, to the newly expanding economic activities in an economy. For
+example, it may be mentioned that in Bangladesh we can increase the use of
+land and other factors in the production of rice, wheat or corm by decreasing
+the production of jute.
+
+2023
+2025
+
+National Income and Its Measurement 85
+
+6.5 Factors not included in GDP Calculation
+
+The total market price of the final products and services in an economy at a
+specific time is known as the gross domestic product. The following factors are
+never included while calculating GDP.
+
+1. Capital gains and losses: With the change of time there may occur changes
+in national resources or factors of a production institution or the price of the
+produced goods resulting into profit or loss. This profit or loss is not counted
+in calculating GDP. Because, the profit or the loss due to the change in the
+ptice of the resources in course of time does not influence determining the
+national income, Besides, this profit or loss is recorded only in the cases of an
+individual business institution. While there is profit for one institution, the
+same amount of loss occurs for another. So, the influence of profit or loss in
+calculating the GDP is zero.
+
+2. Intermediary goods and services: To calculate national income, only the
+final goods and services are considered. Because, the prices of the
+intermediary goods and services are included in the price of the final goods
+and services. If the intermediary goods and services are considered again
+after the final products, there will be the problem of double counting. For this
+reason, the intermediary goods and services are not considered while
+estimating the GDP.
+
+3. Goods and services free of charge: There are some goods and services in
+the economic system which are not bought or sold through market, e.g. a
+mother rearing her children, the cooking and other household work of
+women, a singer singing to his friends, these are not produced goods.
+Therefore, while estimating the GDP, the value of these services cannot be
+included.
+
+4. No consideration for previous production and transaction: GDP
+calculated for a certain year does not include any production of any previous
+year in the GDP of that year, e.g. old cars, old houses or flats. The price of
+these products is included in the GDP of that year when they were bought.
+The problem of double counting will arise if these are calculated again.
+
+Similarly, the exchange of stock, bond or any paper is not included in the
+GDP.
+&6 Economics
+
+5. Interest on public debt: The interest against a governmental loan is not to
+be included in the GDP. For example, the loan taken by the government
+during a war, does not contribute to the national production. The interest
+against this loan is taken to be the transferrable due. And therefore, it is
+excluded from the GDP.
+
+6. legal activities: Income from any illegal activity is not included in
+estimating the national income. Illegal activities mean, any activity that is not
+acceptable socially and is against the prevailing law of the country.
+
+Task: Make a list of the goods and services that are not included in the
+calculation of gross domestic product.
+
+6.6 Method of Estimation of Gross National Product (GDP) in Bangladesh
+
+Bangladesh Statistics Bureau is a government institution that is entrusted with the
+responsibility of estimating the national income of Bangladesh, Estimating the
+current market price and the fixed price of the goods and services, the Statistics
+Bureau measures the GDP and the GNI every year. For these estimations the
+institution has to collect data from different sources.
+
+Bangladesh Statistics Bureau estimates the GDP and the GNI, using the
+production approach and the expenditure approach. In the production approach,
+to estimate the GDP, the economy is divided into 15 different sectors. These are:
+Estimating the GDP in the Production Approach
+
+Contribution of different sectors in gross national product (GDP) of Bangladesh
+
+1. Agriculture and forest resources: Agriculture is an important sector of the
+domestic product. It is difficult to estimate in any formatted way. To
+estimate the GDP of Bangladesh, this sector is divided into three parts.
+
+(a) Crops and vegetables: The amount of domestic product in this sector is
+estimated from the perspective of the current wholesale market price. For
+example, in 2019-2020 it was Tk. 1,83,019 crore.
+
+2025
+2025
+
+National Income and Its Measurement a7
+
+(b) Animal resources: The estimation of domestic product in this sector also is
+done on the basis of the current market price. In this sub-sector of animal
+resources. In 2019-2020 it was Tk. 46,673 crore.
+
+(c) Forest resources: In the forest sector, because of the lack of data regarding
+the factors, while estimating the GDP, 3% of the price of the total production
+is deducted and the rest is considered to be the value added. In 2019-2020 it
+was Tk, 35,490 crore.
+
+2. Fish resources: GDP is calculated from the perspective of gathering fish
+from the internal anc sea sources. In 2019-2020 it was Tk. 82.457 crore.
+
+3. Minerals and mining: Minerals and mining is taken as a separate sector in
+the industrial sector. In this sector, the market prices of (a) natural gas and
+unrefined oil and (b) other mineral resources and produced goods from mining
+are calculated. The calculation of these sectors are done in terms of gross
+national product. In 2019-2020 it was Tk. 47,335 crore.
+
+4. Industry (manufacturing): In the case of estimating GDP in Bangladesh,
+
+the present market prices of the produced goods of all the industries are
+calculated. In 2019-2020 it was Tk. 5,25,269 crore.
+
+5. Wholesale and retail selling: In this calculation, the GDP product is
+estimated by calculating the wholesale price of goods. In 2019-2020 it
+was Tk, 28,449 crore.
+
+6. Electricity, gas and water resources: GDP is estimated in this sector on the
+basis of the value of supplying the services. This sector is very important for
+Bangladesh. Alongside the government, this sector is extended privately,
+too. In 2019-2020, the sum of these three sectors was Tk. 34,318 crore.
+
+7. Construction: The gross domestic production in this sector is estimated
+from the data received from the individual, the construction institutions, the
+consumers and the government, In reality, the amount of income from this
+sector is less, compared to what it should be because, the current market
+BR
+
+10.
+
+11.
+
+12.
+
+13.
+
+14.
+
+15.
+
+Economics
+
+price is more than the price set by the government. Whereas, GDP is
+calculated based on the price that is fixed by the government. In 2019-2020
+it was Tk. 2,24,167 crore.
+
+Hotels and restaurants: The matter of gross domestic product in this sector
+is estimated from the perspective of produced goods and the selling price of
+the services. In 2019-2020 it was Tk. 2,48,764 crore.
+
+Transport, preservation and communication: This sector is quite a big
+one regarding the estimation of the domestic income. A big portion of this
+sector belongs to the private sector. In 2019-2020 the total income in the
+transport, preservation and communication sector was Tk. 1,01,130 crore.
+
+Financial institutional services: The estimation of this sector depends on
+the price received from the services. In the fiscal year 2019-2020, the
+total income was Tk. 2,12,498 crore. As per the sub-sectors, the income was
+$1,420, 7,504 and 5,341 crore taka respectively.
+
+Real estate, rent and other businesses: The domestic production in this
+
+sector is estimated on the basis of the income received from services. In
+2019-2020 it was Tk. 1,11,799 crore.
+
+Public administration and defence: The domestic income from this sector
+is actually calculated from the expenditures. In 2019-2020 it was
+Tk. 81,894 crore,
+
+Education: In the education sector of Bangladesh the domestic product is
+estimated from expenditures. In 2019-2020 it was Tk. 58.774 crore.
+
+Health and social services: The estimation of the health and social services
+is done by the expenditure approach. In 2019-2020 it was Tk. 2,87,827 crore.
+
+Community, social, and personal services: The estimation of this sector is
+
+also done from the expenditure approach. In 2019-2020 it was Tk. 2,26,228
+crore.
+
+[The Source of all information of this chapter: Bangladesh Economic Review 2020]
+
+20125
+National Income and Its Measurement 89
+
+Exercise
+
+Short questions
+
+Z
+3
+4.
+3
+
+Give an idea of the gross domestic product.
+What is meant by the gross national income?
+What is meant by net national income?
+
+Give the full form of GNI, GDP and NNI.
+What is meant by CCA?
+
+Descriptive questions
+
+1.
+
+2
+3,
+
+Ilfustrate the approaches of estimating national income.
+
+Describe the determinants of gross domestic product.
+Describe the matters that are not included in the accounts of the gross
+domestic product.
+
+Deseribe the contribution of sub-sectors of agriculture in national income
+of Bangladesh.
+
+Multiple-Choice Questions
+
+Ls
+
+2.
+
+What is annual income per person?
+a. national income b. net income
+
+c. GDP d. per capita income
+
+Which one of the following is taken into the estimation of national income?
+a. price of the final goods and services
+
+b. price of the intermediary goods and services
+
+c. interest of governmental loan
+
+d, income by corruption
+
+Forma-12, Economics Class 9-10
+90 Economics
+
+Read the following passage and answer questions 3 and 4.
+
+By sowing better quality seeds in the next year, Rumana got more vegetables
+than what she got in the first year by sowing ordinary seeds on the compound of
+her house.
+
+3. For increasing production, the use of which one of the following did Rumana
+
+change?
+a. land b. labour
+c. technology d. capital
+
+4, This type of change in production
+
+1. increases GDP.
+ii. increases GNI.
+ili. decreases NNI.
+
+Which one of the following is correct?
+a. bu
+
+c. Land ii d. itand ii
+
+Creative Questions
+
+1. Event: 1
+
+Shihab has been working in Bahrain for 10 years. Every month he sends a
+portion of his income to his country.
+
+Event: 2
+
+Mrs Brownie is a British citizen. She is working at a private organization in
+Bangladesh. She also sends money to her country every month.
+
+a. What is net national income?
+How 18 national income estimated by the income approach? Explain.
+How is the sending of money by Shihab related to the estimation of
+national income? Explain.
+
+d. How would the income of Mrs. Brownie influence the national income
+of Bangladesh? Give your own opinion.
+
+2023
+2025
+
+National Income and Its Measurement 9]
+
+9, Zahir went to his grandfather's home at Madhupur. [is grandfather has fish
+
+in his pond. Zahir saw many trees and animals near his grandfather's house.
+He came to know that it is a special kind of region.
+
+a. What is the full form of CCA?
+What is understood by gross domestic product?
+
+Which sector of economy would the region that Zahir finds near his
+grandfather's house be included in?
+
+d, Analyse in the light of the textbook, the contribution of the pisciculture
+by Zahir's grandfather in the economy of Bangladesh.

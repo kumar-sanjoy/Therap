@@ -1,0 +1,1258 @@
+Chapter One
+Physical Quantities and Their Measurements
+
+irae SS
+
+Figure: An Atomic clock made for measuring time very accurately
+
+When you think about science, the image of different instruments, inventions,
+research laboratories etc. might appear in your mind. But the instrument,
+research or laboratory are not the subject matter of science; the actual subject
+matter of science is its scientific view . The greatest contribution of this civilization
+has come from science and that came from the scientific view of the human
+beings of the world. To explore the mysteries of science, sometimes they are
+explained with logic, sometimes examined in laboratories and some other times
+they are scrutinized intensively in nature. From the ancient time to modern era the
+scientists are relentlessly working to advance science. The gradual development
+of physics has been described in this chapter.
+
+Forma-1, Physics, Class 9-10
+2 Physics
+
+If we read the history of physics we will see that it is developed by the combined
+efforts of both theoretical and experimental scientists. In order to carry out
+research in the laboratory, we need to measure different quantities precisely.
+This chapter offers discussion of how the measuring units are developed, how
+one can measure and what type of instrument are used for measuring them.
+
+® By the end of this chapter we will be able to-
+
+e explain the scope and gradual development of physics.
+e describe the objectives of studying physics.
+e explain the physical quantities [with units and magnitude] and the origin of
+physics.
+e explain the necessity of measurement and units.
+e explain the difference between fundamental and derived quantities.
+e explain the international system of measuning units.
+e calculate the dimensions of quantities.
+e calculate the transformation of prefixes of multiple and sub-multiple units.
+e express the concepts and theories of physics by using scientific terms,
+symbols and signs.
+e measure physical quantities using different apparatuses.
+e explain the techniques/methods of exactness and accuracy of measurement.
+e determine the area and volume of uniform objects by using simple
+instruments.
+e determine the length, mass, area and volume of uniform objects used
+in our daily lives.
+
+2025
+2025
+
+Physical Quantities and Their Measurements
+
+1.1 Physics:
+
+Physics is the most ancient branch of science. It is because scientists started
+studying and practising astronomy, the most important branch of physics, before
+other branches of science had flourished. Besides, being the oldest branch,
+physics can said to be the most fundamental branch of science. Chemistry
+flourished on the basis of physics. Biology flourished on the basis of Chemistry,
+and again, many other subjects flourished on the basis of Biology.
+
+Generally, we can say that the branch of science that tries to understand matter
+and energy and the interaction between them is called physics. You must have
+realized that here physics does not refer to only the visible things around us but
+also the things such as molecules-atoms, electrons, protons, neutrons, quarks or
+string etc. Again energy may encompass strong and weak nuclear energy apart
+from our known potential energy, kinetic energy, gravitational energy or
+electromagnetic energy.
+
+1.2 Scope of physics
+
+Since physics is the oldest and the most fundamental branch and other branches
+somehow flourished on the basis of physics, it is very natural that the scope of
+physics is very vast. Not only that, different technologies have flourished based
+on different laws of physics and we are using these in our daily lives (there are
+examples of some instruments used in medical science in the final chapter). At
+present the greatest contribution behind civilization is of electronics and physics
+has the greatest contribution to this technology also. Besides daily activities,
+from destruction of war to space exploration, the contribution of physics is
+present. Not only that, by the combination of other branches of science and
+physics, newer branches have developed, for example, astrophysics consists of
+astronomy and physics. In order to explain organic processes, biophysics has
+been built up by the combination of biology and physics, chemical physics was
+born by the combination of chemistry and physics. Use of physics in Geology
+has developed Geophysics. Medical physics has flourished using physics.
+Therefore the area of physics is very vast and deep as well.
+
+For the advantage of teaching-learning we may divide physics into two principal
+parts. These are:
+
+Classical Physics: This contains mechanics, sound, heat and thermodynamics,
+electricity and magnetism and optics.
+4 Physics
+
+Modern Physics: Modern Physics has been developed using Quantum
+Mechanics and Theory of Relativity. These are molecular and atomic physics,
+nuclear physics, solid state physics and particle physics.
+
+We have mentioned earlier that many kinds of technologies have been
+developed in the world using physics or other branches of science. Using these
+technologies we have made our lives comfortable and meaningful. The
+invention of some dangerous technology has endangered not only our lives but
+also the existence of our earth. Sometimes unjustified and unnecessary
+technology has destroyed the resources of our earth along with creating
+pollution. So remember that technology is not always good, as there are good
+technologis in the world, also there are bad technologis. Using your conscience,
+you have to understand which technology is good or bad.
+
+Physics was not built in a single day, it took hundreds of years to develop. The
+physicists tried to explain, with the help of laws, the mysterious world around
+them. Sometimes those laws were accepted, changed or rejected through
+experiments. Thus, we are able to explain microscopic particle of matter to shape
+of largest universe and we are learning continuously. Perhaps this learning is not
+complete still now- scientists are trying to make it complete, it will be possible
+to explain everything of apparently different subject with the help of a few laws
+one day.
+
+@) Do Yourself
+
+Technology may be good or bad but knowledge can never be bad. In the light
+of invention of physics give logical arguments in favour of this.
+
+Group Work
+
+Arrange a debate on good technology and bad technology that have been
+developed using the laws of physics.
+
+1.3 Development of physics
+
+Modern civilization is the contribution of science. This advancement of science
+has not been achieved in a day. The modern science reached its present state
+
+2025
+2025
+
+Physical Quantities and Their Measurements
+
+gradually following tireless labour of innumerable scientists and researchers. It
+has to be remembered that, in ancient time the exchange of information was not
+so easy, it was very difficult to convey the results of research to one another,
+books were written by hand form and the number of such books were very few.
+Courage was needed to express views against conventional faiths. There are
+examples of imprisonment or even scientists being burnt to death. But the search
+for knowledge was not stopped and by exploring the mysteries of nature, the
+scientists have given us this modern science as a gift.
+
+We can describe the history of physics by dividing it into different stages.
+
+1.3.1 Initial Stage (Greek, Indian subcontinent, China and the
+Contribution of Muslim Civilization)
+
+What we understand by physics at present was introduced in the ancient times,
+by the combination of astronomy, optics, dynamics geometry, and an important
+branch of mathematics. The name of the Greek scientist Thales (624-586 BC)
+can be mentioned specially, because he was the first to deny explanations which
+were only based on religion, myth and extrasensory perception but without logic.
+Thales predicted about the solar eclipse and knew about the magnetic property
+of loadstone. Pythagoras (527 BC) was remarkable among the mathematicians
+and scientists of that time. He had fundamental works on vibrating wire along
+with geometry. Greek philosopher Democritus ( 460 BC) presented the idea first
+that matter has indivisible units, called atom (This name is used by modern
+physics). It was not acceptable to all since there was no chance to prove his idea
+by any scientific process. The theory that everything was made of soil, water, air
+and fire by the greatest philosopher and scientist of that time, Aristotle was much
+more acceptable. Aristarchus (310 BC) first gave the idea of sun centered solar
+
+Figure 1.01: Archimedes and Al Khorgimi
+6 Physics
+
+system. His follower Seleucus proved those ideas with arguments, although
+these arguments have been lost with time. Greek science and mathematics
+reached its peak at the time of Archimedes (287 BC), the greatest scientist of all
+times. The upward thrust of liquids is still included in the content of science. He
+assisted, during the war, by setting enemy ships on fire by converging the solar
+light using a spherical mirror. There was another scientist of Greek era named
+
+Eratosthenes (276 BC), determined the radius of the earth accurately at that time.
+
+After that, the development of science came to a stand-still for almost one
+thousand and five hundred years. Only the civilizations of the Indians, Muslims
+and Chinese kept practising the study of science following Greek convention. In
+the Indian subcontinent Aryabhatta (476), Brahmagupta and Vaskar did a lot of
+valuable works on mathematics and astronomy. Zero was effectively used in the
+Indian subcontinent (Aryabhatta). The name of Al Khorgimi (783 BC) has to be
+specially mentioned among the Muslim mathematicians and scientists. The
+present name algebra has come from the book Al Zaber written by him. Ibne Al
+Hayum (965 BC) is considered as the founder of optics. Al Masudi wrote an
+encyclopedia of thirty parts regarding the history of nature. Everyone knows the
+name of Omar Khayam as a poet. But he was a highly famous mathematician,
+astronomer and philosopher. Chinese mathematicians and scientists have done a
+lot of work in physics. Among them the name of Shen Kuor can be mentioned
+( 1031 ), studied magnets and mentioned the technique of finding directions by
+using a compass during travel.
+
+1.3.2 Rising Stage of Science
+
+In the sixteenth and seventeenth century, a wonderful revolution started in the
+realm of physics. It was the era of European renaissance. In 1543 Copernicus
+gave the explanation of the solar centric solar system in a book. (the publisher of
+the book became afraid of the priest and wrote that it is not a real explanation,
+only a mathematical solution!) The theory was not made available to the people
+for a long time, Galileo (1564-1642) brought it to the fore front. He introduced
+the mathematical formulation. After that he introduced the scientific process to
+prove the law through experiments. Sometimes Galileo is called the father of
+modern science. He fell victin of the anger of the church as the founder of solar
+centric solar system. He had to pass his last days in captivity. In 1687 Newton
+published the three laws of mechanics and the law of gravitational force, which
+provided the foundation of force and dynamics. Besider optics and other works
+scientist Newton invented a new branch of mathematics called calculus along
+with Leibniz.
+
+2025
+2025
+
+Physical Quantities and Their Measurements
+
+Figure 1.02: Copernicus , Galileo and Newton
+
+Before the eighteenth century heat was considered a mass-less liquid. In 1768
+Count Rumford showed that heat is a kind of energy and mechanical energy can
+be converted into heat energy. Lord Kelvin, in 1850, introduced two important
+laws of thermodynamics on the basis of the research work of many other
+scientists.
+
+An extensive research started on electricity and magnets at that time. In 1778
+Coulomb invented the law of force between charges. Many kinds of research
+were started after the invention of the electric battery by Volta in 1800. In 1820
+Oersted showed that magnets can be made by the flow of electricity. In
+
+1831 Faraday invented just the opposite process given by Oersted. They showed
+that electricity can be produced by varying the magnetic field. In 1864 Maxwell
+(Figure 1.03) expressed the varying electric and magnetic fields with a single
+law, the famous Maxwell equation. Here, he also showed that actually light is an
+electromagnetic wave. Electricity and magnets are not different. In fact they are
+the two forms of the same energy. This invention was well-timed because in
+1801 Young proved the wave nature of light through experiments.
+
+1.3.3. Introduction to Modern Physics
+
+From the very beginning of 19th century scientists felt that many things
+could not be explained with the help of existing physics. Dalton introduced
+atomic theory in 1803, Thomson invented an electron within the atom, In 1911
+Rutherford showed that at the center of the atom, there is the smallest nucleus and
+there are positive charges in it. But it was found that the revolving electron
+model around the nucleus could not be explained because, according to
+electromagnetic theory, an electron should radiate its energy and fall into the
+nucleus, but practically it never happens. In 1900, Max Planck introduced
+quantum theory, which made it possible to explain black body radiation. Later, scientist
+Niels Bohr used quantum theory to explain the stability of the atom. In 1924, scientist
+Satyendra Nath Bose applied the concept of quantum theory to develop quantum
+8 Physics
+statistics related to radiation. For this, he is referred to as the father of quantum
+statistics. In recognition of his contributions, a class of fundamental particles was
+named "bosons" after him.Between 1900 and 1930, many prominent scientists,
+
+including Heisenberg, Schrédinger, and Dirac, collectively established the quantum
+theory of matter.
+
+Figure 1.03: Maxwell, Rutherford and Mari Curie
+An imaginary medium called ether was considered as the carrier of the
+electromagnetic wave. In 1887 Michelson and Morley, while trying to prove the
+existence of ether, showed that actually there is no ether and the velocity of
+light is equal in both stationary and moving mediums. We get this explanation
+from Einstein’s theory of relativity in 1905. (Fig-1.04) The most wonderful
+
+equation E = mc? is derived from the theory of relativity in which it is shown
+that the mass of object can be converted into energy.
+
+In 1931 Dirac hypothesised the existence of an anti particle by the combination
+
+of quantum theory and the theory of relativity and it was discovered the following
+year.
+
+a
+
+Figure 1.04: Albert Einstein and Satyendranath Basu
+
+In 1895 Roentgen invented X-rays. In 1896 Becqurel showed that radioactive
+radiation is emitted from the centre of an atom. In 1899 Pierre Curie and Marie
+Curie (Fig:1.03) invented radium and the scientists understood that actually the
+
+atoms are not imperishable and on disintegrating, these atoms may emit radioactive
+radiation .
+
+2025
+Physical Quantities and Their Measurements 9
+
+1.3.4 Contemporary Physics
+
+Due to the invention of electronics and modern technology it is possible to make
+powerful particle accelerators. Accelerating the particle with high energy, new
+particles are being discovered. It is possible to arrange these particles
+systematically using the Theoretical Standard Model. It is possible to explain the
+structure of all the particles using a few elementary particles (and their
+antiparticles) though apparently we think there are an infinite numbers of new
+particles. It is not possible to explain the mass of the particles using the Standard
+Model, so to explain the mass, the existence of a new particle called the Higgs
+Boson was proposed. The identification of the Higgs Boson particle in the
+laboratory in 2013 is treated as a great success of theoretical physics.
+
+In 1924 Hubble showed that all galaxies of the universe are moving away from
+one another, which indicates that the universe is expanding slowly. This means
+that once upon a time the whole universe was concentrated at a point. Scientists
+showed that fourteen billion years ago through a massive explosion called the
+Big Bang the universe was created and it is continuing to expand. Very recently
+scientists showed that this expansion will never stop and every part of the
+universe will keep moving away from one another. Besides, the physicist have
+shown that they can explain only 4% of visible planets, stars, and galaxies of the
+universe, the concept of the mysterious dark matter and dark energy has to be
+accepted to explain the rest of the universe. The scientists are continuing their
+research in this field.
+
+Semiconductors are created from the research of solid state physics resulting in
+present electronics which laid the foundation of modern civilization.
+
+1.3.5 Contributions of Jagadish Chandra Bose
+
+Acharya Sir Jagadish Chandra Bose (Fig: 14.01) was a renowned physicist, as
+well as a successful biologist. He was the first internationally recognized
+scientist of this subcontinent. The forefathers of Jagadishchandra Bose lived at
+the village of Rarikhal of Bikrampur in Dhaka district. He was born in 1858 in
+Mymensingh. His father, Bhagaban Chandra Bose, was a _ deputy
+magistrate of Faridpur district.
+
+His education started in a rural school of Faridpur. Later he completed his studies
+from Hare School and Saint Xavier school and college in Kolkata. After passing
+his B.A. in 1880, he went to England, and from 1880-1884 he completed his
+honors with BA in Physics from Cambridge University, and then acquired B.Sc.
+
+Forma-2, Physics, Class 9-10
+10 Physics
+
+degree from London University. Returning to his motherland in 1885, he became
+a professor of physics in Presidency College. In that time there was not enough
+scopes for research in that college, but he continued his research anyway.
+He was always busy during the day. So, he carried on his research at night.
+
+He conducted a lot of research on how to send radio signals without electric
+wires. In 1895, for the first time he sent a wireless radio signal to distant
+places and demonstrated this publicly. He has great contributions in microwave
+research; he was the first to reduce the wavelength of the electromagnetic wave
+to the order of millimeter (nearly 5 mm).
+Acharya Jagadish Chandra Bose used
+semiconductor junctions to detect radio
+signals. Instead of patenting this invention
+and obtaining commercial benefits from
+it, he opened it for all.
+
+In later years, Jagadish Chandra Bose
+
+discovered many important aspects of plant Figure 1.04(a) Acharya Sir Jagadish
+
+Chandra Bose
+physiology. Among those, the invention of the Cresco graph to record the growth
+
+of plants, detecting very minor movements, and matters of responding to various
+stimuli are worth mentioning. Earlier it was assumed that response to stimuli
+was a chemical process. He showed that it was actually electrical in nature.
+
+In 1917 he established the Bose Biggan Mandir in Kolkata for research on plant
+physiology. The writings of Jagadish Chandra Bose in bengali were compiled in
+a book named ‘Obyakto’. A significant book of his is ‘Response in the living and
+nonliving’. On 23 November 1937, scholar Jagadish Chandra Bose breathed his
+last.
+
+1.4 Objectives of Physics
+
+Already you know that physics is that branch of science which explains the
+change of position of an object with time in the presence of energy and force.
+Like any other science the main objective of physics is to learn, the arena of
+knowing in physics is very large. The objectives of physics are to unfold the
+mysteries of both small atoms and the vast universe. For understanding easily
+we can divide the objectives of physics into three parts:
+
+2025
+2025
+
+Physical Quantities and Their Measurements 11
+
+1.4.1 Unfold the Mystery of Nature
+
+In ancient times in China, a piece of lodestone was seen to attract another by an
+invisible force. This special property of this special type of matter was called
+magnetism. Similarly in ancient Greece, when a substance called amber was
+rubbed with wool, they would attract each other with an invisible force. This
+special type of property is called electricity. Many research were conducted on it
+in the eighteenth century and the scientists discovered that, this is actually two
+different forms of the same force and this force is called an electromagnetic
+force. After the invention of radioactivity while explaining a special radiation
+called beta ray, a new type of force called weak nuclear force was discovered.
+Later, the physicists showed that electrometric force and weak nuclear force are
+the different forms of the same force. Their combination is called the electro
+weak force. The physicists argue that two other forces in nature called
+gravitational force and nuclear force will be brought under the same law in the
+future.
+
+Physics is unveiling the mystery of nature one after another. Similarly we can
+say that an object consists of molecules, later on we see that the molecules
+consist of atoms of elements. Despite the atoms being charge neutral, there is a
+positive charged nucleus at the center and surrounding it, electrons are revolving.
+Though an electron is an elementary particle, it is seen that the nucleus consists
+of protons and neutrons. It is seen that neutrons and protons also consist of
+elementary particles called quarks. At present the research topic is whether
+electrons and quarks are made of strings.
+
+1.4.2 To Know the Laws of Nature
+
+From time immemorial we know that if something is released from above, it falls
+downward and seeing this we can guess that the earth attracts everything towards
+its center. If physics stops after pronouncing only the existence of gravitation,
+this is not enough at all. The knowledge will not be appropriate until we precisely
+know the force by which an object of a definite mass attracts another object of
+another definite mass and how the force varies with the distance between them.
+Newton explained this law of nature properly with the help of the law of
+gravitation. The laws of nature can be used in many other places. So, the motion
+of a falling body is explained with the help of gravitation, similarly the rotation
+of the earth round the sun can also be explained. To know the laws of nature
+properly the scientists analysed them with argumentative discussions, while also
+conducting experiments in the laboratory. Behind the wonderful success of
+12 Physics
+
+physics, both theoretical and experimental research have been conducted. The
+main objectives of physics is to find out the laws of nature by carrying out
+research in these two different fields.
+
+1.4.3 Development of Technology Using the Laws of Nature
+
+From the theory of relativity Einstein deduced the law E = mc? and showed that
+mass can be converted into energy. In 1938, by breaking a nucleus Otto Hann
+and Fritz Strassmann showed that the amount of mass reduced, is converted to
+energy.
+
+Using this formula the nuclear bomb was made and dropped on Hiroshima and
+Nagasaki in the Second World War and millions of people were killed within a
+second. Not only deadly weapons can be made but also it is possible to use for
+the good of mankind. Using this formula, nuclear power plants are made and
+also in Rooppur of our country a nuclear power planty is being made.
+
+Solid state physics is a branch of physics where semiconductors are studied.
+Mixing some special elements with semiconductors, transistors are made. With
+the help of this technology great development of electronics has occurred and
+this has made a major contribution to the present civilization.
+
+In this way we can show that physics has a small or large contribution in every
+field of technology. Contributions of physics only in medical science are discussed in
+the last chapter of this book.
+
+Group Work
+
+[ Prepare a poster on the development of physics.
+
+@) Do Youself
+
+Consider a particular distance as a particular time on a straight line, put the
+important works that different scientists have done from the ancient period to
+the present time on the straight line and show that there is a dark period in the
+history of human civilization. Search out anyone reason, why there is a dark
+period?
+
+2025
+2025
+
+Physical Quantities and Their Measurements 13
+
+1.5 Physical Quantities and Their Measurements
+
+We all know that water becomes ice when it is cooled; it becomes vapor when it
+is heated. Peoples have been observing it from the very ancient times. This
+knowledge alone cannot be science completely, unless we can say at what
+condition and at what temperature water becomes ice after freezing or raising
+the temperature at what condition and at what temperature does it start to boil
+and becomes vapors. This means, in order to be science, everything has to be
+measured. The most important point of science is to be able to explain
+everything accurately after measuring them.
+
+Table 1.01: Seven physical quantities in SI unit
+
+Quantity Unit Symbol
+
+Length meter m
+
+Mass kilogram kg
+Time second s
+Electric current ampere A
+Temperature kelvin K
+
+Amount of substance mole mol
+Luminous intensity candela cd
+
+In this universe anything we can measure is called a quantity. In this physical
+world there are innumerable quantities which can be measured. For example, we
+can name, length, breadth, volume, weight, temperature, colour, rigidity,
+position, velocity, internal material, electrical conductivity, non-conductivity,
+elasticity, heat conductivity, non-conductivity, density, specific heat, pressure,
+melting point, etc, and we cannot finish this list. In brief, in the physical world
+the quantities are endless. You may think that to measure these infinite number
+of quantities, we have to prepare the definitions and units for these infinite
+number of quantities! Actually that is not true, you will be surprised hearing that
+(and definitely be happy) if we can fix seven units of seven quantities, we will
+be able to calculate everything using these seven units. These seven quantities
+are called fundamental quantities. When we express other quantity using these
+
+fundamental quantities that is called a derived quantity. The fundamental
+quantities are length, mass, time, electric current, temperature, amount of
+14 Physics
+
+substance and luminous intensity. These internationally recognized seven units
+of seven fundamental quantities are called SI units, (SI came from the France
+language term ‘System International d’Units) and these are shown in Table
+1.01. Table 1.02 shows some very big to very small quantities of distance, mass
+and time.
+
+Table 1.02: Very big to very small quantities of distance, mass and time
+
+Distance m Mass kg Time Ss
+Nearest galaxy | 6x 101%) |Our galaxy} 2 x 1041 Be bang 4x10”
+Time si
+
+Nearest star | 4x 10°6|| The Sun | 2x 102° |pianosaur-vanished|2 X 10
+Radius of solar system] 6 x 1012) | The Earth | 6 x 1074 Time since Birth 8 x 10%
+Radius of Earth | 6x 10° Ship 7x10’ || Singleday |9 x 10+
+
+Height of Everest | 9 x 10° | | Elephant 5 x 108 Human it 1
+Length of virus |1x10-® | Man 6x10 | Life time of |) 196
+Radius of hydrogen 5x 10-11 Dust 7x 107-7 Vibration of 2x10
+
+atom Green light
+: -15 -31 | Vibration of 1
+Radius of proton |1x 10 Electron 9x10 MeV gamma |4x 1 0-2
+. ight
+1.5.1 Units of Measurement
+
+Among these units second, meter and candela are defined before by some
+constants.
+
+From May 2019 kilogram, kelvin, mole and ampere are also defined by some
+constant of Physics. Now it is possible to measure all units very accurately using
+these constant in any laboratory in the world.
+
+Magnitude of fundamental constants those are essential to measure these seven
+units are specified forever. The magnitude of seven constants are shown in the
+Table 1.03
+
+Constant Magnitude
+Velocity of light (c) 2,99,792,458 meter/second
+Plank’s constant (h) 6.62607015 x 10° joule second
+Charge of electron (e) 1.602176634 x 10°? coulomb
+
+2025
+2025
+
+Physical Quantities and Their Measurements 15
+
+Vibration frequency of C,'3 (Av,,)) 9,192,631,770 hertz
+
+Boltzmann constant (k,) 1.380649 x 10-2 joule/kelvin
+Avogadro constant (N,) 6.02214076 x 10 particles/mole
+Luminous Intensity (Kop) | 683 lumens/watt
+
+New definition of these units:
+
+Second (s): The time required to complete 9,192,631,770 vibrations by
+Cesium-133 (C,'*) atom is called one second.
+
+Meter (m): In vacuum the distance travelled by light in 1/299,792,458 second
+called one meter.
+
+Kilogram (kg): The mass which is obtained by dividing Plank’s constant by
+6.6260701510 m/s is called one kilogram.
+
+Ampere (A): Flow of 1/1.602176634x10°? numbers of charge equivalent to
+charge of electron in one second is called one ampere.
+
+Mole (Mol): Amount of substance that contains 6.02214076x10” particles
+(Avogadro’s number) is called one mole.
+
+Kelvin (K): Amount of change of temperature with the change of
+1.380649 103 joule heat is called one kelvin.
+
+Candela (cd): One candela is defined as the amount of 1/683 watt luminous
+intensity which is emitted by a source of light vibrating 540x10” cycle per
+second into one Steradian solid angle.
+
+Table 1.04: New Sl unit
+
+You should have a practical idea about how
+much is meant by one meter, what amount of
+mass is one kilogram, what time is one
+second, how much hot is one kelvin
+temperature, what amount of electric current
+is one ampere, what is meant by one mole
+substance or what amount of light is one
+candela! Now let us try to give you that idea
+idea. Not only do you have to know it, but
+also you have to feel it. In general it can be
+
+16 Physics
+
+said that:
+
+e The distance from the feet to the stomach of a person of normal height is
+nearly one meter.
+
+e The water contained in one liter bottle or the water kept in four glasses have
+a mass of nearly one kg.
+
+e The time required to say three words ‘one thousand one’ is approximately
+one second.
+
+e If three mobile phones are charging at the same time, one ampere electric
+current is used. (a mobile is charged at nearly 5 V. So, current consumption
+will be Swatt. If lights, fans, refrigerators of a residence run at 220 V and one
+ampere current is used, the power consumption will be 220 watt!)
+
+e Ifwe can feel the fever of anyone by hand, it can be said that his temperature
+has increased by one Kelvin.
+
+e Itis difficult to understand a mole, we can say a a large spoon filled with water
+contains one mole of water molecules. In one cup water, there are ten moles.
+
+e The light coming from a single candle can be said one candela.
+
+You see that none of them are perfect measurements, but easy to realize. If you
+are habituated with this measurement, when in future you will calculate
+anything, then you will have a sense of proportion about it.
+
+1.5.2 Prefix
+
+To study science or physics we have to measure different things. Sometimes we
+need to measure the length of a galaxy (6x10* m), or sometimes we have to
+measure the radius of the nucleus (1x10" m). To measure this huge difference
+in the distance it is not wise to use the same type of numbers, So internationally
+some SI prefixes have been made. Due to this multiplier we will be able to
+express a large or small number by a small prefix. These prefixes are shown in
+Table 1.05. In our daily life we always use these prefixes. To express distance
+we say | kilometer instead of 1000 meter. We say 10 milliliter instead of one
+
+hundredth of a liter to express volume of water.
+
+2025
+Physical Quantities and Their Measurements 17
+
+Table 1.05: The multiples and sub-multiples used in the SI unit
+
+deca da 10" deci d 107
+hecto h 10? centi c 107
+kilo k 10° milli m 10°
+mega M 10° micro H 10°
+giga G 10° nano n 10°
+tera T 10” pico p 10
+peta P 10"° femto f 10”
+exa E 108 atto a 10%
+
+1.5.3 Dimension
+
+We already know that though there is an infinite number of quantities around
+us, we can measure them with the help of seven units only. We have to know, in
+which units a quantity can be expressed. Often we also need to know how this
+quantity is formed with which fundamental quantities (length L, time 7, mass M
+etc.). The power of different fundamental quantities in a quantity is called its
+dimension. For example, we will see next that force is the product of mass and
+acceleration. Again, acceleration is the rate of change of velocity with time. And
+velocity is the rate of change of position with time.
+
+Therefore,
+
+distance
+
+=+= 17-1
+T
+
+dimensions of velocity: =
+
+distance L -
+dimensions of acceleration: roan —=LT?
+time T2
+
+In this book, when we will speak about a new quantity, we will try to mention
+the dimension of it at the same time. You will see that, this always will help you
+to understand the quantity, in a different way. To indicate the dimensions of a
+quantity in this book, it will be shown within third brackets. For example, force
+F is expressed as [F]= MLT?.
+
+Forma-3, Physics, Class 9-10
+18 Physics
+1.5.4 Scientific symbols and notations
+
+The following methods are followed to write the symbol of units:
+
+1. To express the value of a quantity, first we write a number, leave a
+space after it and then write the symbol of the unit. For example, 2.21
+kg, 7.3 X 10? m? or 22 K. The percentage (%) sign also follows the same rule.
+
+However no space is left after a number to write degrees (°) minutes (‘) and seconds (’’).
+
+2. Derived unit produced by multiplication is written using a space between
+two units, e.g. 2.35 Nm
+
+3. Derived unit produced by division is expressed as negative power or slash
+(e.g. ms~+ or m/s)
+
+4. No punctuation mark or period is used with the symbols, as they are
+mathematical expressions but not the abbreviated form of anything.
+
+5. The symbol of unit is written in straight font, for example, m for metre, s
+for second etc. But the symbol of quantities are written in italic or curved
+font, for example, m for mass, v for velocity etc.
+
+6. The symbols of units are written in small letters, for example, cm, s, mol etc.
+But capital letters are used for those units which are taken from the name of scientists
+(N for Newton). If there are many letters in the unit then the first letter will be
+capital only (the unit from the name of Pascal is Pa).
+
+7. The prefix (k, G, M) of unit will be attached with the unit (m, W, Hz) with
+no space. For example, km, GW, MHz.
+
+8. Prefixes more than kilo (10) will be in capital letters (M, G, T).
+
+9. The symbols of units will never be in plural from (e.g. not 25 kgs, always 25 kg).
+
+10. We have to try to write any number or compound unit in a single line. A line
+break can be given between a number and a unit if it is really necessary.
+
+2025
+2025
+
+Physical Quantities and Their Measurements 19
+
+1.6 Measuring Instruments
+
+Once it was very difficult to measure different quantities of physics accurately.
+The job has become much easier due to electronics based instruments. For the
+physics that we will try to learn in this book, knowing how to measure distance,
+mass, time, temperature, electric current and voltage will be enough. Let us
+discuss what type of instruments we will use to measure these:
+
+1.6.1 Scale or Ruler
+
+A Meter scale is used to measure small lengths and definitely you may have seen
+it. Since this is 100 cm or 1 m long, it is called a meter scale. Since in many places
+inch-foot is familiar still now (USA is an example!), inch is marked very often
+on the other side of a meter scale. One inch equals 2.54 cm.
+
+We can measure up to the smallest division on a scale. A meter scale is generally
+divided up to millimeter, so using a meter scale we can measure the length of
+anything up to millimeter. Therefore, if we say the length of anything is 0.364 m,
+this means the length of this is 36 centimeter and 4 millimeter. Using a meter
+scale it is not possible to measure lengths smaller than this - that is, generally we
+can never say the length of a body is 0.3643 m. But from time to time, for
+microscopic purposes we have to measure the smallest length of objects of this
+type, which can be performed by using an interesting scale called vernier scale.
+
+Slide calipersor vernier calipers
+
+Let us consider that the length of an object comes in between
+4 and 5 millimeter marking i.e. the length of the object is greater than 4 mm and
+
+less than 5 mm. We can use the veriner scale to find how much fraction is greater
+than 4mm. This scale is attached to the main scale and can be moved forward
+and backward (Figure 1.05). In the example shown in the figure the length of 9
+min of main scale is divided into 10 divisions on the vernier scale. Therefore every
+
+or . 9 . an: 1
+division of the vernier scale equals jp mm, ie. less than a millimeter by 10
+
+millimeter. If the initial mark of the vernier scale coincides with any mark of the
+millimeter scale, then the next mark of the vernier scale will keep a separation of
+
+77 mm from the actual millimeter mark, and the next will keep a separation of =
+
+mm, third one will keep a separation of 7m mm and so on.
+20 Physics
+
+Therefore no mark of the vernier scale will coincide with the millimeter mark of
+the main scale, finally the 10% mark will coincide again with the ninth millimeter
+mark of the main scale.
+
+Vernier scale
+
+™
+ie at
+Tt TT
+
+0 1 cm 2
+
+Main scale Pal
+
+Figure 1.05: Main scale and movable vernier scale
+
+If we keep the vernier scale in such a way that it does not start from a millimeter
+
+mark rather it starts with a slight (e. g— mm) displacement (Figure 1.06) then the
+
+number of = mm displacements by which it has moved will be the mark
+
+of the vernier scale coinciding with the millimeter mark of the main scale! Therefore,
+it is very easy to measure a length using a vernier scale. First of all, we have to know
+the difference between one division of vernier scale and one division of the main
+scale- this is called the vernier constant-- in brief VC. This can be calculated if we
+divide the length of the smallest division (1 mm) of the main scale by the total
+number of divisions of the vernier scale (in the figure 1.05 and 1.06 it is 10). In
+our example, the value of this :
+1mm
+VC= “10 = 0.1 mm = 0.0001 m
+
+To measure a length, we have to look at the vernier scale after measuring up to
+the last millimeter mark. The mark of the vernier scale that coincides exactly
+with any millimeter mark of the main scale is then found, and then that number
+is multiplied by the vernier constant. We will get the actual length by adding this
+amount with the length measured by the main scale. According to our procedure
+the length shown on the last scale of Figure 1.06 is 1.03 cm or 0.013 m. This
+instrument consisting of a'main scale' and a'vernier scale’ is called a Slide
+calipers or vernier calipers
+
+2025
+2025
+
+Physical Quantities and Their Measurements 21
+
+mop tty ane
+0 1 cm 2
+mop tty ae
+0 1 scm 2
+mop tty mT
+0 i cm 2
+
+Figure 1.06: Vernier scale displaced by one, two and three divisions
+
+Instead of the vernier scale we can use a special type of scale called a screw
+gauge to measure lengths. In a screw gauge when the screw (Figure 1.07)
+rotates, the scale moves forwards or backwards, the threads of the screw are kept
+very fine. After a complete rotation of the screw, the screw with the attached
+scale may advanced by1mm. This displacement of the screw is called the pitch of
+the screw. The circular part of the instrument, by the rotation of which the screw
+moves forwards or backwards is divided into 100 equal parts. For the rotation of
+only one division of the circular scale, the screw advances by a of the pitch.
+
+Therefore, with this scale up to a mm = 0.01 mm of length measurement is
+
+possible. This is called the least count of the screw gauge.
+
+Figure 1.07: A slide calipers with vernier scale and a screw gauge
+
+Now-a-days instead of the vernier scale, attached dials or digital slide calipers
+are available by which lengths can be measured accurately.
+22 Physics
+
+1.6.2 Balance
+
+Mass cannot be measured directly, so mass is
+generally determined by measuring the weight.
+When we say the weight of an object is 1 gm or 1
+kg, then actually we mean that the mass of the
+object is 1 gm or 1 kg. In earlier times to measure
+the mass of an object, a balance was used, there
+the mass of the object was compared with the
+definite mass of a known weight. Now-a-days the
+use of electronic balance (figure 1.08) has
+increased a lot. If we keep the body on the Figure 1.08: Digital weigh
+balance then the sensors of the balance can machine
+
+determine the weight very precisely.
+
+1.6.3 Stop Watch
+
+Stop watches are used to measure time interval
+(figure 1.09). Once accurate stop watches were
+very precious things. Now-a-days very accurate
+stop watches are available in the mobile phone
+at low prices due to the advancement of
+electronics. In a stop watch, time measurement
+is started at any instant of time, and by stopping
+the measurement of time after a definite
+interval, the elapsed time can be determined. An
+interesting matter is that the stop watch can
+measure the time very accurately, but we can never start or stop it with our
+hands with the same accuracy.
+
+@) Do Yourself
+
+(7 here is less probability for all of you to possess slide calipers \
+but if you want, you can make a slide calipers to carry on your work. Make a
+photocopy of figure 1.10, Cut the part of the main scale and the vernier scale
+and then put it together after folding as shown in the figure following the
+steps (1, 2, 3,...... accordingly). Now you can measure any length accurately.
+The slide calipers is also graduated in inch. So to get the length in centimeter
+we need to multiply it with 2.54. yy,
+
+Figure 1.09: Stop watch
+
+2025
+ise)
+N
+
+Physical Quantities and Their Measurements
+
+@) Folding along this line,
+take left part behind.
+
+¥ A,
+3 .
+
+Pox
+
+(1) Folding along this line,
+/ take upper part behind.
+: eT i) eas @) Folding along this line,
+i Inch Pi take lower part behind.
+> *”
+— 1
+@® Folding along this line,
+take the entire folded J
+left part behind. y /
+
+-------------].«—(6) Folding along this line,
+keep upper part vertically.
+
++—(7) Now keep the main scale
+here.
+
+5) Folding along this A :
+in take left part ad \ | —(@) Folding upper part first
+
+? then lower part, cover
+behind. . ‘ the main scale.
+Vernier scale. e J
+
+Figure 1.10 : Making slide calipers with paper
+
+S707
+24
+
+Q) Investigation 1.01
+
+/Objective: To find out the volume of a match box or any other object by
+measuring its length, breadth and height using a slide calipers. If you have
+no slide calipers with you, you can make a slide calipers as shown in figure
+1.10.
+
+1. To measure the length of an object by slide calipers we need to place it
+between the jaws of the slide calipers. The jaws need to touch the object
+from both the sides.
+
+2. Now observe carefully the mark of the main scale that the zero marking
+of vernier scale has just crossed. Mark of the main scale that the. That will
+be the main scale reading M. Notice that, the mark which is very close to the
+main scale, is not the reading of main scale, the mark that has just crossed
+the main scale fully is the main scale reading.
+
+3. At this position find out which mark of the vernier scale coincides with
+any mark of the main scale, this is the vernier coincidence.
+
+Measure the length of the object several times and put it in the table.
+
+In the same way measure the breadth and height of the object.
+Observation:
+
+Determination of vernier constant:
+
+Value of one smallest division of main scale, S = .............6.
+
+Total number of divisions of vernier scale, n= ...............
+
+Vernier constant, VC = s/n= ..........0006
+
+Table 1.06: Table of finding length, breadth and height of a rectangular object:
+
+Object’s No. of |Mainscale| Vernier | Vernier | Reading= | Average
+observations |reading M |coincidence|constant |M + V x VC reading
+Vv vc
+Length
+L
+Width
+WwW
+Height
+(4
+
+Physics
+
+2025
+Physical Quantities and Their Measurements 25
+
+1.7 Error and Accuracy
+
+Error is a negative word and if the word "error in measurement" used, we think
+that the person who is doing the measurement is not performing his duties
+properly and an error has occurred! But this is not the case. Sometimes error
+may occur due to the person who is doing the measurement for his negligence,
+but we have to know that the instrument with which we measure is not error free.
+Therefore, there is a limit of how much accurately we can measure, i.e. it is very
+natural to have errors in measurement. But there is a need to mearuse to what
+extent a measusement is accurate . The reliability of a result will be increased if
+we can inform how accurate the result is when we publish the result of an
+experiment. You can report the measurement of the accuracy of your
+experiment if you know some conventional rules for finding the accuracy of an
+experiment.
+
+Suppose, you are measuring the length of an object by a scale. How accurately
+you will measure the length of the object depends on how finely your scale is
+graduated. If the scale is graduated in 1 cm intervals then you will express your
+result for length in some definite number of cm. But the real length of the object
+is not exactly equal to this mentioned number of cm but perhaps very close to it,
+so there is a possibility of uncertainty in your measured length. That is why, we
+add that amount of uncertainty with the measured result. Therefore, if we see the
+length is close to 4 cm, we will say the length of the object is:
+
+(4.0 + 0.5)cm
+Therefore the length of the object may have any value within 3.5 cm to 4.5 cm.
+
+Example
+
+Question: What is the length of the object ——e
+
+shown in Figure 1.11? | | | | | | | | | |
+Answer: he length of the object is 740.5 |
+
+mm. That is, the length of the object willbe |Q cm 1
+of any value from 6.5 mm to 7.5 mm.
+
+Figure 1.11 : The length of the object
+beside the scale is nearly 7 mm
+
+Forma-4, Physics, Class 9-10
+26 Physics
+
+Now we can discuss how accuracy can be measured. The measurement of
+accuracy is the absolute error. Observing the name we understand that this is the
+difference of the measured value with respect to the actual value. You can
+definitely understand that when we measure anything we don’t know the actual
+value. So, instead of absolute error we use the most probable error. Therefore in
+our previous example the absolute error is
+
+|+0.5 mm] = 0.5 mm
+
+We can consider the relative error after the absolute error. Let us consider that an
+error of 0.5 mm has occurred while measuning length. If the length of the object
+is 1 mm then this error is very serious, but if the length is 1 m then the
+measurement is accurate enough. The concept of relative error has been
+introduced to give a better understanding.
+
+Therefore, Absolute error
+
+Relative error = ————_
+Measured value
+
+So in our previous example:
+Relative error: 0.5 mm/ 7 mm = 0.071
+In percentage this is: 0.071 x 100 = 7.1 %
+
+Question: Suppose you have got 10 cm by measuring the length of a square
+shaped book. Suppose the relative error in the measurement is 10%. What is the
+relative error in its area?
+
+Answer:
+
+Measured area of the object =10 cmx10 cm=100 cm?
+
+Since the relative error of the object is 10%, hence if its length is measured, the
+minimum length will be 9 cm and maximum length will be 11 cm.
+
+“ The minimum area = 9cm x 9cm = 81 cm”
+and the maximum area = 11cm X 11 cm = 121 cm”
+Therefore the absolute error:
+
+100 cm? — 81 cm?| = 19 cm’m?
+or, |121 cm? — 100 cm?| = 21 c¢
+
+Since the values are not equal, we consider the larger one i.e. the absolute
+
+etror is 21 cm?
+
+2025
+2025
+
+Physical Quantities and Their Measurements 27
+
+Therefore, the relative error = 21cm? /100 cm* = 0.21
+In percentage, 0.21 x 100 = 21%
+
+If the error in the measurement of the length is 10%, then in the case of area
+it will be approximately double. Similarly you can show that in the case
+of volume measurements the error will be three times!
+
+Question: You have measured a box by a ruler which is graduated only in cm.
+You have got the length, breadth and height of the box as 10 cm, 5 cm and 4 cm
+respectively. What is the percentage of error in your measurements?
+
+Answer: Since your ruler is graduated only in cm, so your error is + 0.5 cm.
+Therefore the error in your measurements:
+
+Length: 10 + 0.5 cm
+Breadth: 5 +0.5cm
+Height: 4+ 0.5 cm
+Your measured volume: 10 cm x 5 cm x 4.cm = 200 cm?
+Probable smallest volume:
+(10 — 0.5) cm x (5 — 0.5) cm x (4 — 0.5) cm = 149.625 cm?
+Probable largest volume:
+(10 + 0.5) cm x (5 + 0.5) cm x (4 + 0.5) cm = 259.875 cm
+Therefore the volume,
+149.625 cm? < V < 259.875 cm?
+
+Absolute error:
+From 149.625 cm? to 200 cm? is 200 cm? — 149.625 cm? = 50.375 cm?
+From 200 cm? to 259.875 cm? is 259.875 cm? — 200 cm? = 59.875 cm?
+
+Considering the largest value we have the absolute error 59.875 cm?
+
+Relative error: 59.875 cm?/200 cm? x 100 = 29.9375% = 30%
+28
+
+Physics
+
+(?) Exercise
+
+General questions
+
+1.
+2.
+
+Write a report on why we may study physics.
+Wonderful advancement took place in the twentieth century- support the
+statement with examples.
+
+. a) What do you mean by a quantity?
+
+b) Write down the difference between fundamental and derived quantities.
+
+. a) In SI unit which quantities are considered as fundamental quantities?
+
+b) Write down the names of the units of these quantities.
+
+. What do you mean by dimension?
+. Arguments, experimentation and observation- among these three methods
+
+which one would you prefer as the most important for science research.
+
+. Among the seven SI units, one is little bit different from the others. Can you
+
+say which one and why?
+
+. If you and everything around you suddenly becomes half in size, will you
+
+be able to understand the changes?
+. Will you be able to measure the radius of the earth?
+
+© Mathematical questions
+
+. Express the numbers given below using the prefixes in Table 1.05
+(a) 10" Flops (b)10’ bytes (c)10-°gm (d)10°°m
+
+2. In one year how many seconds are there? (for fun express in terms of 77 )
+
+3. How many meters are there in a light year?
+
+{
+. ieee | i T
+4. When measuring the lengt of Mp TTT TT]T
+a bar with a vernier scale, it looks
+as in figure 1.12. What is the 10 1_cm 2
+length of the bar? Figure 1.12: Reading of a vernier scale
+
+5. The dimension of energy is ML’T”, in SI units what is its unit?
+
+2025
+2025
+
+Physical Quantities and Their Measurements 29
+
+\o> , ;
+Multiple choice questions
+P 1
+
+Put tick (V ) mark on the correct answer
+
+1. Who has given the quantum theory at first?
+a) Planck b) Einstein
+c) Rutherford d) Heisenberg
+
+2. The name ‘boson’ came from?
+a) Jagadish Chandra Basu
+b) Subhash Chandra Basu
+c) Satyendranath Basu
+d) Sharat Chandra Basu
+
+3. Which of below is not a fundamental quantity ?
+a) Mass b) Heat
+c) Electric current d) Quantity of substance
+
+4. When a rod is placed between the jaws of a slide calipers, the main scale
+reading is found to be 4 cm, the vernier super-imposition is 7 and if the vernier
+constant is 0.1 mm, what is the length of the rod?
+
+a) 4.07 cm b) 4.7cm
+c) 4.07 mm d) 4.7 mm
+
+From the figure below answer questions 5 and 6.
+
+5. What is the volume of figure (b)
+
+1.3 43
+a) 5ar b) gar
+
+3
+c) -ar3 d) ar?
+4
+
+6. The ratio of the volume of figure
+(a) and figure (b):
+
+a) 1: 0.673 b) 1: 0.0673 s
+
+c) 1: 0.763 d) 1: 0.637
+
+(b)
+Figure 1.13: A block and a cylinder
+30 Physics
+
+Creative questions
+
+1. Rashed, with his newly purchased scale, measured the length of his pencil and
+
+the length came to 11.73 cm. His friend Sujon said that this measurement may
+
+not be correct. Rashed said that he obtained the same result measuring by the
+
+scale several times. When they went to the teacher, he instructed them to use a
+
+vernier scale of constant 0.005 cm. Rashed measured the correct length by the
+
+vernier scale.
+
+(a) What is the vernier constant ?
+
+(b) Why are units required to express the amount of a quantity?
+
+(c) Find a division of vernier scale is equal to what number of divisions of
+main scale.
+
+(d) The frist measurement of length measured by Rashed was irrelevant to
+accurate measurement, explain with logic.
+
+2. Mr Rashid, a science teacher, has given a ruler and a box to the students in his
+physics class and told them to determine the volume of the box. The students
+observed that the ruler could be used to measure upto cm only. They determined
+the length, breadth, and height of the box as 20 cm, 15 cm and 10 cm
+respectively.
+
+(a) What is its dimension?
+
+(b) Why weight and mass are not the same type of quantity?
+
+(c) Determine the percentage of relative error in the measurement of volume
+of the box?
+
+(d) This ruler is appropriate for measuring the area of the book but not
+suitable for measuring the area of the house- analyze the statement.
+
+2025

@@ -1,0 +1,482 @@
+2025
+
+Chapter Ten
+
+Phenomena of Electricity and Magnet
+
+We know that electrons have charge. We call the flop electrons electricity.
+Electricity is lightening our home, school or office. It helps to run fan, radio,
+television, iron, heater, motor, computer and many other things. The use of
+magnet has also flourished our daily life like electricity. In this chapter, we will
+discuss different phenomena related to electricity and magnet.
+
+After studying this chapter, we will be able —
+> to explain the property of charge.
+to explain conductor, non-conductor and semi-conductor.
+to demonstrate the properties of charge through creating static electricity
+to explain how current electricity is produced form static electricity.
+to prepare a simple circuit.
+
+to explain the use of electricity in daily used machine.
+
+YW WWv¥oW iW
+
+to differentiate between magnetic and non magnetic substance through.
+
+demonstrating the property of magnets.
+
+v
+
+to demonstrate the process of preparing magnets from magnetic substance.
+
+y
+
+to explain electric magnets.
+
+> to explain earth's magnetic field.
+112 Science
+
+Lesson 1-2
+
+Origination of Charge
+
+We know that elements are composed of many small
+particles. It is called atom. Atoms are composed of
+electron, proton and neutron. It has nucleus at the centre
+which is composed of proton and neutron. Electrons
+move round the nucleus. Proton is positively (+) charged,
+electron is negatively (-) charged and neutron is neutral
+
+particle. The positive charge on the proton is equal and Fig-10.1
+opposite to the negative charge on the electron.
+
+But it is interesting that the atom itself behaves neutral. Atom is neither positive
+nor negative. There is no charge in atom. What is the reason? The reason is that
+an atom contains similar number of proton and electron. That is why atom is
+charge neutral. When two matters are rubbed, electrons from one substance can
+move into the other. Thus the number of electrons can be raised in a substance.
+Now let's give an example. A glass bottle has been rubbed with a piece of silk
+cloth. It will be seen that silk cloth will attract electron towards it. For that the
+bottle will be positively charged and the silk cloth will be negatively charged. So
+it is clear that no charge is created because of rubbing rather the existing change
+of the matter moves from one to another,
+
+Property of Charge
+
+Now we can definitely understand that how charge is produced. Now we will sce
+what types of properties are shown by the charge (positive and negative). For
+that we will do the following works.
+
+Work: Knowing the properties of charge.
+
+Necessary equipments: two combs, woolen cloth.
+Method: Hang a small comb by tying it with a ribbon
+on a dry stick. It should be hung in such a way that it
+cannot touch any other things. Now hang one more
+plastic comb on another dry stick so that it can move
+freely. Now rub both of the combs with wooden cloth
+for some time. Now bring the combs close to each
+other. What do you observe? The combs are repulsing
+each other. Now bring the woolen cloth close to the
+
+Fig- 10.2; Knowing the
+properties of charge
+
+comb, it will attract the woolen cloth.
+
+2025
+Phenomena of electricity and magnet 113
+
+Work: Demonstrating properties of charge.
+Necessary equipment: two balloons, ribbon, woolen cloth or sweater, piece
+of paper.
+
+Fig- 10,3: Demonsirating Properties of charge
+
+Method: Tie the two balloons with ribbon by blowing them up. Now rub the
+balloon with woolen cloth or sweater and bring it to the pieces of paper. It
+will be seen that the balloon will attract the pieces of paper. What is the
+reason? The reason is that rubbing creates charge in woolen cloth and
+balloon, What will happen when first balloon will bring to the second one?
+You will see that two balloons are going far from one another because the
+rubbing has created similar charge to both of the balloons.
+
+Could you take any decision from the above work? Yes, two decisions can be made
+
+from this:
+
+a. Charges of same nature repel each other (in terms of two balloons and two
+combs).
+
+b. Charges of opposite nature attract each other (Woolen cloth and balloon).
+
+Lesson-3 : Existence of Charge
+Now, we will prove the existence of charge through an easy experiment.
+
+Work : Proving the existence of charge.
+
+Necessary equipments: A plastic comb, a piece of news
+paper. sf
+
+Method: Take a portion of newspaper and cut It into _
+pieces. Now spread the pieces over a table. Now could Te
+you tell what will happen if a plastic comb ts brought to
+
+those pieces of paper? Now bring the comb to those pieces of paper by
+rubbing it through woolen cloth (you can also rub the comb with your dry
+hair). Could you tell what will happen and why? You will see that the pieces
+of papers will jump to the comb.
+
+Here the plastic comb has become negatively charged by receiving electron
+from woolen cloth during rubbing which leads to the attraction towards the
+pieces of paper.
+
+Forma-15, Science, Class-7
+114 Selence
+
+Lesson 4: Conductor, Non-conductor and Semi-conductor
+
+We are familiar with the words conductor and non-conductor. The electrons of
+conductors can move from one atom to another easily. For example, metals,
+especially, silver, copper, aluminum. A new form of carbon, graphite is
+conductor though carbon is a non metal.
+
+Electrons cannot move freely in atoms of non-conductor. But it can be charged
+by rubbing. Besides if electron is received or left, it can be charged. For exam-
+ple: plastic, glass and rubber.
+
+At low temperature the semi-conductor behaves like non-conductor. It behaves
+like conductors when the temperature increases. Germanium, Gallium ete are
+the examples of semi-conductors.
+
+Lesson 5: Producing Current Electricity from Static
+Electricity
+
+From the previous experiments, we have seen that plastic combs attract small
+pieces of paper after being rubbed through woolen cloth. It will not attract the
+small pieces of paper if it is touched by hand. What can be understood from this?
+It has been understood that there is no static electricity in the comb. Where has
+that static electricity gone? This electricity has gone to the ground through hand
+from the comb. The electricity, which flows through a body from one place to
+another or one matter to another, is called current electricity.
+
+Here it is important to remember that a specific and little amount of charge is
+produced because of rubbing. This charge moves to the ground just after being
+touched with hand or metals. The flow of electricity stops when the charge is
+finished. Thus the flow of electricity is created [or a while. To continue this flow
+the continuous supply of electricity from any source should be ensured. We will
+have more idea of it later on.
+
+Lesson - 6: Simple Circuit and Its Use
+
+The flow of electricity needs a path like man needs a path to move on. This path
+of the flow of electricity is known as an electric circuit. Generally the complete
+path of flowing electricity from the positively charged end of the source from
+negative is called electric circuit. Generally bulb and battery are connected with
+wire in this circuit. When they are connected, the circuit completes. The simple
+circuit is shown in the following figure.
+
+2025
+2025
+
+Phenomena of electricity and magnet 115
+
+Fae
+
+Bd,
+
+——{J 6
+
+Fig-10,5; Simple circuit
+
+Lesson —7 and 8
+
+Use of Current Flows
+
+Light and heat can be produced from the flow of electricity. Even various works
+can be completed through using its mechanism. Now, we will introduce you to
+the uses of electric bulb, torch light, iron, heater, electric fan and photocopy
+machine as examples.
+
+Electric Bulb
+
+We all are familiar with to this bulb. Two thick wires are
+placed inside the air free or neutral gas filled air tight bulb,
+There is a coil of a very thin tungsten wire inside an electric
+bulb, The coil is called filament. This bulb produces a lot of
+heat when it is connected with the electric source and this Fig-10.6 : Electric Binb
+filament of bulb emits a huge amount of light.
+
+Torch Light
+We all are familiar with to torch light, There is a small
+bulb with the battery in torch light. The light turns on
+
+when the switch is on. To spread the light a glass is used
+in front of it. Fig-10.7: Torch Light
+
+Electric Fan
+
+Tn electric fan the flow of current is used to do the mechanic -————
+activities. Here the electrical energy transform into -——
+mechanical energy to rotate the fan. A regulator is used to
+control the motion of fan.
+
+Fig- 10.8: Electric Fan
+116 Science
+
+Electric Heater
+
+Many of us are familiar with to electric heater. There is a round disk made of
+non-conductor in the heater. A coil of Nichrome wire is arranged in the coil. The
+wire becomes hot if electricity flows and radiates much heat. In our house this
+electric heater is used to cook food.
+
+Electrical Iron
+
+The structure of electric iron is like electric heater, Here the IN
+Nichrome wire heats the smooth lower iron made surface. The Le =
+production of heat depends on the flow of electricity. If flow —
+
+increases the heat of iron will increase. ;
+Fig-10.9: Blectric Iron
+
+Lesson — 9 and 10: What is Magnet?
+
+There is a story in ancient Greece that there was a shepherd named Magnes who
+used to live at a place named Magnesia in Asia Minor. He used to praze sheep in
+the fields by day and back them home in the evening. One day while returning
+home, he noticed that he could not lift up his stick from the ground. The head of
+it was stuck to a stone. He noticed that the stone hold the iron made top of the
+stick. That means, Magnes observed that iron attracted that unknown stone. This
+stone was named after the name of Magnes. Bengali word of magnet is
+chumbok. We have also observed that magnet has power to attract iron.
+Attraction is a kind of force. Work can be done by force. Therefore, a magnet has
+capacity of domg work. So. magnet is a kind of energy.
+
+Properties of Magnet
+
+Work: Property of magnet.
+
+Necessary equipments: white paper, iron
+fillings, pin, a bar magnet.
+
+Method: Sprinkle some iron fillings over a
+white paper. Keep a bar magnet over the
+
+sprinkled iron fillings or the pins, and lift it “sai. =
+up afier moving it a few times. What — me,"
+been observed? You will observe that iron Fig-10.10
+
+fillings or pins remain stuck to the body of
+the magnet. It will be seen by careful observation that most of the iron fillings
+
+or pins remain stuck to the two ends of the magnet. Amount of iron fillings
+
+2025
+2025
+
+Phenomena of electricity and magnet 117
+
+stuck to the magnet gradually decreases from the end to its middle. You may
+not observe any iron fillings or pins in its middle. It is understood from this,
+that the power of attraction of the magnet is maximum at two points near the
+two ends of the magnet.
+
+Now take two similar bar magnets close
+to each other, You don’t know about the
+poles here. Suspend the bar magnets by
+tying it with a thread at the middle.
+What has been seen? The magnet is
+
+practically lain pointing north and south. qo eo
+Do the same thing with the other magnet.
+
+It will be seen that the magnet will also
+
+; ois oe Fig-10.11: Properties of Magnet
+practically be positioned pointing north
+
+and south, It is understood from this that hanging magnets, without obstruction,
+always lie pointing towards north and south.
+
+Now let us mention north and south poles of magnets respectively by N and S.
+Now bring the north Pole of the first magnet near the north pole of the second
+magnet. What are you seeing? Repulsion occurs. From this it is understood that,
+like poles of magnets repel each other.
+
+Now bring the north pole of the first magnet near the south pole of the second
+magnet. What has been observed? Similarly bring the north pole of the second
+magnet near the south pole of the first magnet. They have come close to each
+other very easily. From this we can take decision that, unlike poles of magnets
+attract each other. Therefore, like poles of magnets repel cach other and unlike
+poles of magnets attract each other.
+
+Lesson — 11: Magnetic and Non- magnetic Substance
+
+Will magnet attract all substances? No, magnet does not attract all the
+substances. Magnet mainly attracts iron, nickel, cobalt and maximum steels.
+These substances are called magnetic substance. Again, magnet does not attract
+many substances. For example: copper. aluminum, brass, wood, silver, plastic
+etc. These are non magnetic substances.
+118 Science
+
+Work: Identification of magnetic and non-magnetic substance.
+Necessary equipment : a magnet and different things of own house.
+Method: Take the magnet in front of each thing separately, See which one
+attracts magnets and which one not. Now fill the table below,
+Name of various things of | Magnet attracts or What type of
+house not substance?
+
+Lesson — 12 and 13
+Transforming Magnetic Substance into Magnets
+
+Magnets can be prepared in many artificial ways. Rubbing and electrical method
+have been discussed below.
+
+Method of Rubbing
+
+A bar magnet and a steel bar are needed for this
+experiment. Rub the steel bar from one to
+another end with a pole of bar magnet. Do this
+for several times. Does the steel bar attract a
+pin? Thus, a steel bar converted into a magnet
+through rubbing. If it has been rubbed through LN} 1s)
+north pole of the magnet, it will be seen that
+
+north pole will be created at the first portion of Fig 10-12: Method of Rubbing
+rubbed steel bar and south pole at the end.
+
+Electrical Method
+
+Take a long iron nail. Coil it with ordinary
+electrical wire available in the market. Connect its
+two ends with a battery's two ends. Now it is seen
+that any part of the nail can attract a pin. The nail
+does not attract a pin if the electric current flow is
+stopped. So it is understood that the nail has been
+converted into a temporary magnet. Strength of
+electro magnet depends on the flow of electric
+current through it.
+
+Fig-10,13 : Electrical Mathod
+
+2025
+2025
+
+Phenomena of electricity and magnet 119
+
+Terrestrial Magnetic Field
+
+If a bar magnet in hung by tying it with a thread at the middle, the magnet
+practically lies pointing north and south. [t occurs because of terrestrial magnets.
+The behaviour of a bar magnet in a globe is similar to the behaviour of terrestrial
+magnets. The effect of terrestrial magnet exists everywhere. Two poles of
+hanging bar magnet indicates two poles of Earth's magnet. Here the north pole
+of bar magnet indicates the north side. But a north pole always attracts a south
+pole. ‘Therefore the south pole of Earth's magnet works as north pole.
+
+New words learned from this chapter
+
+Charge, static electricity and current electricity, conductor, non-conductor and
+semi-conductor, simple circuil, magnetic substance, non-magnetic substance
+and Earth's magnet
+
+What we learned from this chapter
+
+> No charge is created because of rubbing rather charge in matter transforms
+from one substance to another.
+
+> Charges of same nature repel each other and charges of opposite nature
+attract each other.
+
+Vv
+
+In order to maintain supply of electricity, there should be a source, which
+can supply electricity continuously.
+
+Electricity flows in every part of simple circuit continuously.
+
+The attraction of magnet is highest near two poles.
+
+¥ WW
+
+Like poles of magnets repel each other and unlike poles of magnets attract
+each other,
+
+Vv
+
+Hanging magnets, without obstruction, always lie poimting towards north
+and south. It occurs because of Earth's magnet.
+
+EXERCISE
+
+Fill in the blanks
+l. moves round the nucleus.
+2. Semi- conductors generally behave like in low temperature.
+3. The behaviour of a in a globe is similar to the behaviour
+of magnets.
+120 Science
+
+Short answered questions
+
+1. How is charge produced?
+2. How does electric bulb spread light?
+3. How can magnetic substance be transformed into magnet?
+Multiple choice questions
+1. The aim of using regulator in clectric fan is to —
+a, increase the longevity of fan b. decrease sound
+
+c. control motion d, decrease cost
+
+2. Based on the properties of magnets which of the following substances
+belong to same group?
+
+a. nickel, silver, copper b, gold, cobalt, silver
+b, cobalt, iron, nickel d. iron, mercury, aluminum
+
+Observe the following figures carefully and answer the question no, 3 and 4.
+
+NW — neutron
+P — > proton
+« —- electron
+
+Fig: A Fig: B
+3, The characteristics of figure A is: it is
+i. Charge neutral ii. Positively charged iii. Negetively charged
+Which one of the following is correct?
+a. oi. b. ii c. ili d. ii and iti
+4. In case of figure A and B-
+a. Ais negatively charged b. B is positively charged
+
+b. A and B have attraction d. A and B have repulsion
+
+2025
+Phenomena of electricity and magnet 121
+
+Creative question
+
+1. Samiha has a bar magnet. She prepared a magnet by rubbing method and
+another by electrical method.
+
+a. What is called magnetic substance?
+b. Explain that the earth is a huge magnet.
+c. Describe the first method of preparing magnet.
+
+d. “The second type of magnet is strong though temporary”- analyze the
+
+quotation,
+2. As
+el
+fH
++
+Metal sphere
+Fig.1 Fig. 2
+
+a. What is called static electricity?
+b. Why metals are conductor of electricity? Explain.
+c. Explain the function of the figure | ?
+
+d. There are two types of electricity in the second figure. Analyze it by
+mentioning the areas.
+
+Forma-16, Science, Class-7

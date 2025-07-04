@@ -1,0 +1,1179 @@
+Chapter Four
+Work, Power and Energy
+
+Proposed Rooppur Nuclear Power Plant
+
+In this chapter we will see how force works. In terms of physics the word "work"
+has a specific meaning. We will see that a force working on something can move
+it and create kinetic energy. This kinetic energy can convert into potential energy
+and this transformation of energy is a very natural process and different types of
+energy can convert into one another.
+
+One of the important aspect of science is energy and energy plays a most
+important role for the development of mankind. So, how energy can be explored
+from nature will also be discussed.
+
+2025
+2025
+
+Work, Power, Energy 99
+
+® By the end of this chapter we will be able to-
+
+explain the relation between work and energy.
+
+establish the relation among work, force and displacement.
+
+explain kinetic and potential energy.
+
+explain the transformation of energy source.
+
+analyse the contribution of the source of energy regarding economics,
+social and environmental influences.
+
+explain the relation between transformation of energy and conservation
+of energy.
+
+explain transformation of energy and how its use hampers the balance of
+environment.
+
+be conscious about the effective and safe use of energy.
+
+explain the mass-energy relation.
+
+establish the relation between transmission of energy and power.
+measure the efficiency.
+100 Physics
+
+4.1 Work
+
+We use the term ‘work’ in various ways in our daily life. A gatekeeper
+guarding a house all day long, sitting on a tool, may claim to have done a lot of
+work, but in the words of physics that is not any work. In terms of physics the
+word ‘work’ is well defined. If a force F is applied on any object and the object
+traverses a distance s during the application of force (that is displacement
+occurs) then, the amount of work W done by the force is:
+
+W=Fs
+Unit of work: J (Joule)
+Dimension of work [W] = ML?T~2
+
+Force is a vector quantity and the distance traversed or the displacement is also a
+vector quantity but in case of work the product of those two vectors is a scalar
+quantity.
+
+As individual vectors there is no such condition that the direction of force and
+distance travelled has to be same but in these book, we will only discuss the
+force and distance travelled in the same direction.
+
+Have you noticed, while discussing work, we said that the ‘force’ has done the
+work. A person or a machine may push any object to some distance by applying
+a force. In terms of daily life we say that the person or the machine has done the
+work. But in physics, neither the person nor the machine does the work, always
+the force applied does the work. This force may be applied by a person or a
+machine.
+
+Let us assume that, you have pushed an object to a distance s by applying a force
+F and left it after setting it in motion. The object has travelled an additional
+distance d and at last it has stopped. How much work is done?
+
+The amount of work done is W=Fs, as no force was applied while traversing the
+distance d, so no work is done.
+
+2025
+2025
+
+Work, Power, Energy 101
+
+Example
+
+Question: Your mass is 50 kg. You have climbed up a 10 storied building, how
+much work have you done? (Height of each floor is 3 m)
+
+Answer: If your mass is 50 kg, your weight is 50 x 9.8= 490 N. This weight is a force,
+that is acting downwards. If you want to climb up, you have to exert an equal
+force upwards to draw yourself up.
+
+So, upward applied force: 490 N
+
+Distance travelled upwards: 10 x 3 m= 30m
+
+So the amount of work done, 490 N x30 m =14700 J=14.7 kJ
+
+Suppose, a moving object is coming towards you, you try to stop the object by
+applying force F’, the object pushes you backwards by a distance s. How much
+work was done by the force applied by you? Certainly you have noticed that, this
+time the distance traversed is not along the direction of force, rather opposite to
+it. So the amount of work done
+W=F (-s)=-Fs
+
+That is, the work done is negative. In our daily lives, we talk about work and
+useless work, but what is meant by positive and negative work in terms of
+physics? If the work is positive, then it can be said that the work is done by the force.
+If it is negative, then it is said that the work is done ‘on’ the force or against the
+force. We must have a clear conception about energy before understanding what
+has just been written.
+
+4.2 Energy
+
+In our daily life we use the term “energy” for different purposes but in physics it
+has a definite meaning. Generally speaking, there is no difference between
+applying energy or applying force, but in physics, these two phrases mean
+completely different things. In the previous chapter, we have learnt what is
+meant by force, what is meant by energy will be discussed in this chapter.
+
+We all have a shallow idea about energy, because we mention the words
+electrical energy, thermal energy when we make casual conversation.
+Sometimes we even hear about chemical energy or nuclear energy. Though light
+102 Physics
+
+is not mentioned as energy, we can assume that light is one kind energy too. The
+energy which is not mentioned in our daily conversation, but will be discussed a
+lot in physics is kinetic energy. We may think that there are many types of energy
+in nature, but it is interesting that all kinds of energy are the same and we can
+only transform them from one to another! So what is energy?
+
+Ability to do work is energy! Not only that, when a positive work is done by
+applying a force on an object, the force creates an energy in that object. The
+amount of work done on the object is the amount of energy created in it, and the
+person who is applying the force has to give exactly the same amount of energy.
+
+So now you have understood the meaning of negative work. If any force does a
+negative work on an object, then it is to be understood that a certain amount of
+energy is taken away from the energy contained in the object. The amount of
+negative work done is equal to the amount of energy taken away, and he who has
+applied the force gets this energy anyway. So, on any object
+
+Doing positive work > giving energy to the object.
+Doing negative work + taking away energy from the object.
+
+You can clearly understand that energy has no direction and it is a scalar
+quantity. As we produce energy by doing work or do work spending energy,
+these two have the same unit and the same dimension.
+
+Unit of energy: J (Joule)
+Dimension of energy [W] = ML2T-2
+
+Example
+
+Question: You have moved an object 10 m by applying a force of 100 N on it.
+
+If the frictional force is 10 N in the opposite direction, then what is the amount
+
+of work done by you? What is the amount of work done by the frictional force? iS
+N
+
+(Figure 4.01)
+2025
+
+Work, Power, Energy 103
+
+Answer: You have done’ work,
+W=Fs=100 N x10 m=1000 J=1 Kd.
+Work done by the frictional force,
+W=Fs= -10 N x10 m= -100 J
+
+The stone has attained energy because
+
+of the work done by you. Energy has been : q
+lost due to frictional force, so heat may
+also be generated. Figure 4.01: when a force is applied
+
+on a body, frictional force acts in the
+opposite direction.
+
+4.3 Different forms of energy
+
+We use different kinds of energy for different purposes. For example, heat
+energy is needed for water to be heated, we need light energy to see anything, we
+hear by using sound energy. We run machines by using electrical energy, and we
+create electricity from electric cells by using chemical energy. We generate
+electric energy too from the nuclear energy we get by dividing a heavy nucleus
+or by addition of light nucleuses. Energy is developed in our body taking
+nutrition from food, we perform our activities.
+
+The history of our civilization itself is the history of utilization of energy by
+generating energy. We see different forms of such energy around us, for example-
+mechanical energy, heat energy, sound energy, light energy, magnetic energy,
+electrical energy, chemical energy, nuclear energy and solar energy.
+
+The most general form of energy is the mechanical energy, the energy that is
+obtained due to position, shape and motion of the object is called mechanical
+energy. There are two forms of mechanical energy; these are kinetic energy and
+potential energy.
+
+4.3.1 Kinetic Energy
+
+We have discussed earlier that the ability to do work is energy. Everyone of us
+knows that when an object is in motion, it can push another object and set it into
+motion resulting in the object moving a certain distance due to the pushing.
+Making another object move means, definitely a force has been applied there
+and traversing a distance due to this force means work is done there!
+104 Physics
+
+Therefore we can say firmly that the energy that develops due to motion in a
+body is certainly one kind of energy or kinetic energy. In the previous chapter we
+said that the terrible road accidents that happen and the losses that occur are
+mainly due to kinetic energy. When a bus-truck or a car moves at high speed then
+it has a huge amount of kinetic energy.
+
+We can easily calculate how much kinetic energy is produced by an object when
+work is done by a force on that object.
+
+Let an object of mass m be displaced by an amount s due to the application of
+force F. Therefore work done W by the force F is:
+
+W =Fs
+According to Newton’s second law we know,
+F=ma
+Again, from the equations of motion we know that if an object starts its motion
+from rest,
+Then s = Sat? and v = at
+Then work, W = Fs = mas = ma X sat? = sma?t? = mv?
+
+Therefore we can say if a force F makes a displacement s of an object then the
+kinetic energy that is generated:
+
+1
+T =>mv?
+gm
+
+The velocity v is in the square form in kinetic energy, so to double the velocity
+of an object we will need to apply four times of the energy.
+When learning the equations of motion, we noticed that
+
+v? =u? + 2as
+
+Multiplying both sides by sm the equation becomes mv? = mu + mas
+
+If we write F instead of ma and W instead of Fs, then the equation becomes,
+
+* my? == mu? +W
+
+=mv? =-—mu
+
+2 2
+
+That is, if an object moves with velocity u, then its kinetic energy is smu"
+and if W amount of work is done on it, then its kinetic energy is increased to
+
+1 2
+5mv
+
+2025
+Work, Power and Energy 105
+
+Example
+
+Question: A force of 10 N is applied on a stationary object of mass 10 kg for 10
+s. (a) What is the kinetic energy of the object? (b) Calculate the kinetic energy
+after 20 s. (c) If the force is applied for 20 s, then what is the kinetic energy?
+Answer: Acceleration due to 10 N force is:
+
+_F _10N _, 2
+7m 10kg m/s
+
+Therefore velocity after 10 second: 1
+m
+v=at=—,-x10s=10m/s
+s
+
+(a) Then the kinetic energy,
+smv? = =x 10 x 107J = 500)
+
+(b) Acceleration will take place for 10 s, after that no acceleration is present,
+so velocity is unchanged, therefore kinetic energy after 20 s will be the same.
+
+(c) If force is applied for 20 s, then the velocity is,
+v = at =1m/s? x 20s = 20 m/s
+
+Therefore the kinetic energy,
+
+1 2 1 2
+mv? = 5x 10 x 207 J = 2000)
+
+Question: Motion is created in a body of mass 10 kg by applying a force, if its
+kinetic energy becomes 80 J, what is its velocity?
+Answer: Kinetic energy is,
+
+1 2=80
+zm = 80J
+
+Forma-14, Physics, Class 9-10
+106 Physics
+
+_2x80J 160m?
+~ m 10s?
+
+v=4m/s
+
+2
+
+v
+
+4.3.2 Potential Energy
+When we were discussing work, we said that if a force does a positive work on
+
+an object then energy is generated. When we were talking about kinetic energy
+we gave the example of this too. We have shown that by applying a force on an
+object if the object moves by a distance, then its kinetic energy becomes mv"
+
+Now, we will give such an example
+where force is applied and displacement
+occurs even when no kinetic energy is
+produced. Suppose, a spring is kept on a
+table as shown in figure 4.03. You
+applied a force at the free end of the
+spring by your finger and compressed it
+by an amount x. In such a condition, none
+of your hand or spring is in motion, so no
+kinetic energy is present in any of them.
+Since the direction of applied force and
+
+Figure 4.02: Stationary state of a
+spring and compressed by applied
+the distance traversed is in the same force
+
+direction, so the work done is positive. According to the definition of work, here
+energy is to be created. But where is that energy? Here nothing is in motion, so
+definitely there is no kinetic energy.
+
+Those of us who have used springs can guess that energy is definitely hidden in
+the compressed spring. Because if an object of mass m is kept before the
+compressed spring and then released, the spring would exert a force on it and
+make a displacement, which means the spring would perform work. That is it’s
+a kind of energy, even it is not kinetic energy, this is another form of energy. This
+type of stored energy is called potential energy. This energy is developed due to
+the ‘sate or position’ of the object.
+
+2025
+2025
+
+Work, Power, Energy 107
+
+If the constant of a spring is k, and if the spring is compressed by a
+distance x from its normal state, then the potential energy stored in it is,
+
+@) Do Yourself
+
+If a spring is compressed or expanded by an amount x, it will
+exert a force of F= -kx, using this equation it is possible to find out the
+relation, V = 5 kx? Can you find it? (Since the force depends on the length
+of the spring, so calculate the average force and multiply it by the total
+distance.)
+
+Example
+
+Question: A body of mass 10 kg falls on a spring with a velocity of 10 m/s. If
+the spring constant k=100,000 J/m?, what is the compression?
+
+— 12.2
+V=skx
+
+Answer: Kinetic energy of the object,
+
+1 1
+gmv? = 5x 10 x 107} = 500 J
+
+This energy will compress the spring, that is,
+
+1 2 = 500
+2 kx = 900)
+
+therefore, a 2x 500 m= 1 in
+~ 100,000 100
+
+x=0.1m
+
+When we raise anything, then it acquires potential energy. When a piece of stone
+is released freely from above, its speed increases when it comes down. So it
+develops a kinetic energy. This becomes possible because a kind of potential
+energy was stored in it when it was in the ‘above’ position. How much potential
+108 Physics
+
+energy is stored in a stone when the stone is raised above can also be calculated.
+You are realizing that the amount of work to be done when an object is raised
+above is stored in that object as potential energy. If the work done is W,
+
+W=Fh
+
+Here, F is the applied force and / is the height. We have to apply the force F in
+the upward direction and distance traversed is also in the upward direction,
+therefore F is positive. The force that has to be applied for raising the object
+upwards does not change as the spring force and this force is equal to the weight
+of the stone. If the weight of the stone is mg,
+
+F=mg
+and W=mgh
+
+We have to remember that the weight of the stone is a force and it acts
+downwards. We have to apply an upward force equal to the weight of the stone
+if we want to lift it.
+
+Potential energy is stored in a stone of mass m by raising it a distance of h. What
+amount of kinetic energy will be generated in the stone if it is released and
+comes down by a distance h?
+
+Due to the conservation of energy total of its potential energy will transform into
+kinetic energy. We know kinetic energy iss mv*, SO we can write:
+
+; mv’= mgh
+v= 2gh
+Honestly we can say, when we were deducing the laws of falling bodies,
+we deduced this identical law once again! Now we deduced the same law using the
+conception of energy quite in a different way!
+
+Example
+
+Question: A body of mass 10 kg is thrown in the upward direction with a
+velocity of 100 m/s. What will be the height reached by the object?
+
+2025
+2025
+
+Work, Power, Energy 109
+
+Answer: This has been done before with the help of the laws of motin. Now it
+can be done by the transformation of energy.
+Kinetic energy: 1
+
+1
+= smv? = = x10x100"J =50,000)
+
+When the object reaches a height A, at this height the kinetic energy has been
+totally converted into potential energy. So,
+
+mgh = 50,000J
+, 0000 __ 50000
+“ng. tox9g ™ 720
+
+For your understanding the mass 10 kg is mentioned here. But it does not depend
+on the mass. With any mass we will get this answer. For this we might have used
+the formula v’?=2gh directly.
+
+Question: A body of mass 5 kg is thrown in the upward direction with a velocity
+of 50 m/s. At what height will the potential and kinetic energy be the same?
+
+Answer: Initial kinetic energy of the body is
+
+1 1
+To =5mv* = 5X5 x 507) = 6,250 J
+When kinetic energy equals potential energy, then for height 4, we can say
+kinetic energy = potential energy
+kinetic energy + potential energy = primary kinetic energy
+kinetic energy = potential energy = primary kinetic energy/2
+_ 6250]
+
+mgh =—>—
+
+_ 6250) 6250
+
+—2xmg 2x5x98 = O3.78m
+
+You may have already guessed that this problem also does not depend on the
+mass.
+110 Physics
+
+4.4 Sources of energy
+
+The history of world civilization can be simply named as the history of
+utilization of energy. It can be generally said, that a simple means to understand
+how developed a country is to calculate the use of electrical energy per person in
+that country. Different forms of energy of the world are shown in the figure 4.03.
+
+Source of
+
+T ] ] i EE T T 1
+
+Oil Gas Coal Nuclear fre.) Biomass | ae snd Geothermal |
+
+Figure 4.03: Different sources of energy
+
+4.4.1 Non-renewable Energy
+
+As the history of civilization on earth is actually the history of energy utilization,
+we see there is a hunger for energy in every country and every state in the world.
+Everyone is searching for energy and using it in every possible manner.
+
+Fuel Energy (Oil, gas and coal): At this moment, the biggest sources of energy
+of the world are oil, gas or coal. Oil, gas or coal, are all fossil fuels, that is, being
+buried under the ground from millions of years, are transformed into this form
+due to prolonged period of heat and pressure. Coal, oil or gas are to be
+extracted from beneath the ground. The oil that is extracted from the ground
+(Crude oil) is very dense at the primary stage, which are converted into petrol,
+diesel, or kerosene by refining in refineries and some other usable substances are
+found as well. The gas that comes out from beneath the ground is mainly
+methane CH,, water vapors and other gases can be mixed with it and these are to
+be separated. The gas of our country Bangladesh is comparatively much clearer
+and suitable for direct use.
+
+2025
+2025
+
+Work, Power and Energy 111
+
+Nuclear Energy: Many countries are utilizing nuclear energy, and one type of
+fuel is also required there which is uranium. There is a similarity in the energies,
+oil, gas, coal or uranium; they are spent when they are used. Men have already
+estimated the amount of uranium in the world or the amount of oil, gas or coal
+beneath the ground. It is seen that if people continue to use energy at the rate they
+are doing now, the sources of energy like oil, gas, coal or uranium will be
+exhusted hundred years at best. After that our known sources of energy will run
+out. People are not that much concerned about what will happen then, because
+they are almost sure that by them some other sources will be found using science
+and technology. For example, nuclear fusion, using which the sun or stars produce
+their energy. The fuel for fusion comes from one isotope of hydrogen and each
+molecule of water contains two atoms of hydrogen. So, there is no worry for that
+to run out.
+
+4.4.2 Renewable Energy
+
+Human being are not only relying upon new forms of energy in the future, but at
+this very moment they are also dependent on the sources of energy, which will
+not be finished. This energy comes from sunlight, ebb and flow of the waves of
+seas, winds in open fields, hot magma from the interior of the earth or currents
+of water of rivers. It is not difficult to understand that these sources of energies
+are almost inexhaustible. These are called renewable energy- i.e. the energy
+which can be renewed, and because of that, there is nothing to be worried about.
+
+At present one fifth of the energy people are using world wide is this renewable
+energy. As days are going by, people are getting aware of the environment. And
+so the use of this type of energy is increasing more and more.
+
+Hydroelectricity: One fifth of the total energy of the world is renewable energy.
+Most of that part is hydroelectricity, to produce electricity by making a dam in a
+river. Since the water of a river is inexhaustible, therefore the source of energy
+of such a power plant is inexhaustible. This is the conventional concept. But if a
+dam is built on a river, it harms the environment to a great extent; due to this the
+people of the world have become very conscious. Those who are a little bit
+farsighted don’t build such a power plant more.
+
+Biomass: After hydroelectricity, the most renewable energy comes from
+biomass, by biomass we mean wood fuel, straw etc. People in many parts of the
+world have no oil, gas or electricity; they spend their daily life by burning fuel
+wood and straw. The used energy by these poor people is a major part of the total
+energy of the world. Even the dried tree, straw etc. are finished due to burning,
+112 Physics
+
+biomass is called the source of renewable energy because the trees can be grown
+again. It is not lost for ever from the world like oil, gas or coal.
+
+The important sources of energy are solar energy, wind energy, bio fuel and
+geothermal energy besides the two forms of renewable energy, hydroelectricity
+and biomass.
+
+Solar energy: Many of you will be astonished on hearing that, only in one square
+kilometer area we get one thousand megawatt energy from the sun as light and
+heat which is close to the energy of a nuclear power plant. One part of the light
+and heat that comes from the sun is absorbed by the atmosphere. It is absent at
+night and uncontrolled due to cloud and rain. Beside this, the energy comes as
+light and heat energy, it has to pass one step for conversion into electricity. It is
+still said to be the most reliable source of energy. Utilizing solar heat electricity
+can be generated. Now-a-days a common picture of the earth is the solar panel,
+installing this on their roofs; people are generating their own electricity sitting in
+their own residence.
+
+Wind energy: After solar energy, wind energy has occupied an important place
+very quickly. In our country we are not familiar seeing large turbines for wind
+energy, but in many countries of Europe this is a very familiar scene. The place
+at which the wind mill is set up, a large tower is erected upwards, so there is no
+waste of land at all, for this reason the environmentalists like it very much. From
+a wind turbine it is possible to get a few megawatts of electricity! The utility of
+the energy that is generated by using air; is increasing by 30% every year. This
+number is not a small number at all.
+
+Bio fuel: The people of the world are preparing alcohol for drinking purposes
+from a long time- it is one kind of fuel. Preparation of alcohol as fuels from food
+like popcorn and sugarcane are almost an acceptable procedure. The oil that we
+use for cooking purposes can also be used instead of diesel. There are many
+kinds of trees in the world from which we can get fuel oil directly. In many
+countries of the world, the research on biofuel is continuing, moreover many
+countries like Brazil have started using such types of biofuel on a large scale.
+
+Geothermal energy: Another important source of renewable energy is
+geothermal energy. The inner part of our earth is very hot, when a volcano’s
+eruption takes place then we become aware of it. So, if someone can make a
+
+2025
+Work, Power, Energy 113
+
+hole a few kilometers deep, then he will get a giant source of heat energy. The
+process is still not easy so its large scale use has not yet started. In some places
+due to its geographical nature this type of energy is available easily and its use
+has started there.
+
+4.4.3 Transformation of energy and impact on environment
+
+People around the world are becoming conscious about the environment. For
+prosperity we need energy but the people of the modern world cannot tolerate it
+if the environment is destroyed for energy. The people of the world are not ready
+to use any type of energy by any means. They want to explore the energy that is
+hidden in the world not by making conflicts with nature and not by destroying
+the earth.
+
+The largest example of the impact of transformation of energy on nature is the
+fossil fuel or oil, gas and coal. Among these three, the amount of carbon is much
+more and when these are burnt to produce heat energy then carbon dioxide gas
+is produced, which is a green house gas. Therefore, this gas can confine the heat
+of the world and due to this the temperature of the world is increasing slowly,
+which is called global warming. Due to global warming the ice of the polar
+region is melting and the height of the sea level is rising. Bangladesh is one of
+the countries of the world which will be flooded and the farmlands destroyed by
+salt water thus creating a harmful impact on nature. At present, all the countries
+of the world are unitedly trying to decrease the amount of carbon dioxide
+emission.
+
+There is no emission of carbon dioxide in a nuclear power plant. But nuclear
+wastage is highly radioactive and these have to be preserved for millions of
+years for their radioactivity to reach a safe level which is not hazardous for the
+environment. Though nuclear power plant is very safe due to modern
+technology, sometimes owing to people's mistakes or natural calamities major
+accident happens to creates a fatal disaster. Two examples of this type
+areaccidents of Chernobyl of the then Soviet Union and Fukushima of Japan.
+Comparatively the impact of renewable energy on the environment is less. But
+when a dam is made on a river for production of hydroelectricity, then on one
+hand the environment is damaged due to flooding in a large region, whereas on
+the other hand, due to less flow of water draught may be created in the ao
+subsequent regions.
+
+Forma-15, Physics, Class 9-10
+114 Physics
+
+4.5 Conservation and Transformation of Energy
+
+4.5.1 Conservation of energy
+
+In our daily life, the energy we see around us is imperishable. It has no
+destruction, it transforms only from one form to another form. When a stone is
+raised, it develops a potential energy. When the stone is released, the potential
+energy starts decreasing and the kinetic energy starts increasing. Just before it
+touches the ground, its total energy is converted into kinetic energy. But when
+the stone stops after touching the ground, then it contains no kinetic energy and
+no potential energy, where has the energy gone?
+
+(a)
+(h) / r
+
+v=0
+A
+
+(g) —v TV
+
+V
+T Kinetic energy
+\V Potential energy
+
+}
+(d) »
+
+(c
+(e)
+\ TV
+‘ —
+
+le
++
+ce
+
+if) V Velocity V
+TV
+vv
+= Om
+TV _j
+TY
+
+Figure 4.04: A pendulum is oscillating, the total energy is conserved between kinetic energy
+and potential energy.
+
+2025
+2025
+
+Work, Power, Energy 115
+
+You definitely have observed that when a stone hits the ground, it hits by producing
+sound and heat i.e. kinetic energy is transformed into sound or heat energy.
+
+The example (Figure 4.04) of changing between potential and kinetic energy is
+wonderful. A small stone is tied by a thread and hanged from a support. If we
+pull it along one side then the stone goes up by a small amount from its
+stationary position and hence a potential energy is developed in it. Now if we
+release the stone, due to an unbalanced force on it, it starts going towards its
+stationary state, thus creating a motion in it. When it reaches the mid position
+exactly, it attains the maximum velocity. So it does not stop there rather moves
+away in the opposite direction and rises up until its velocity becomes zero.
+Therefore, it again develops a potential energy. When it reaches the maximum
+height it stops there, owing to its potential energy again it starts moving towards
+the stationary state. In this way, the stone oscillates and transformation from
+potential energy to kinetic energy and kinetic energy to potential energy
+continues. This process would continue for an infinite time if there was no
+friction and other causes of energy loss.
+
+Therefore,the transformation of energy is a very natural process. Transformation
+of energy takes place not only between potential energy and kinetic energy. But
+all the known forms of energies around us can transform from one form to another.
+In our daily lives, the energy we see around us cannot be created or even can be
+destroyed, it only changes from one form to another. This is the law of conservation
+of energy.
+
+4.5.2 Transformation of Energy
+Around us we see many examples of transformation of energy, e.g.
+
+(a) Electrical energy
+
+If we want to give example of the transformation of energy, at first we give
+examples of electrical energy. Because this energy can be transformed into
+other energy very easily. Not only this, it is easiest to transmit electrical energy
+from one place to another. Though around us there are many types of
+energy, we supply electrical energy first to our residence but we don’t supply
+other forms of energy. In our daily lives, we see the transformation of electrical
+energy into mechanical energy in electric fans or other motors. (Though actually
+magnetic energy is not different from electrical energy, even then in motor or
+electrical fan we see electrical energy converts first into magnetic energy and
+then converts into mechanical energy.) In the electric iron or heater it is
+116 Physics
+
+converted into heat energy. The electrical energy is converted into light energy
+in light bulbs, tube light or in an LED. To produce sound energy we need to
+vibrate something. It's a kind of mechanical energy. Moreover we can tell, in
+speakers, electrical energy is converted into sound energy. All of us charge the
+battery of our mobile using electricity, where the electrical energy is converted
+into chemical energy.
+
+(b) Chemical energy
+
+Chemical energy is certainly an important example of transformation of energy.
+The gas which is used for cooking is an example of transformation of chemical
+energy into heat energy. Due to this, when electrical energy is supplied to our
+residence, simultaneously gas is also supplied. Due to the conversion of
+chemical energy into heat energy, we also get light energy.
+
+The light of a candle is an example. We see the transformation of chemical
+energy into mechanical energy using gas, patrol, diesel or such type of fuels in
+different kinds of engines. If we observe closely, we will find that at first
+chemical energy is converted into heat energy and then heat energy is converted
+into mechanical energy. But in the era of modern technology, the greatest
+example of conversion of chemical energy is the battery, where chemical energy
+is converted into electrical energy. We cannot find any space where chemical
+energy is not converted into electrical energy using battery starting from mobile
+phone to car or from clock to space shuttle. The amazing example of chemical
+energy is our body or body of living beings, where chemical energy from food is
+converted into mechanical or electrical energy.
+
+(c) Heat energy
+
+If we consider from the viewpoint of quantity, the conversion of maximum
+amount of energy undoubtedly takes place from the heat energy in the world.
+Heat energy is transformed into mechanical energy in all engines of all
+machines. In thermocouple ( applying heat at the junction of two different
+metals), though there are examples of conversion of heat into electrical energy
+directly, actually almost in all the cases heat energy is converted into mechanical
+energy and then mechanical energy is converted into electrical energy. (To save
+the environment we don't like the dissipation of energy now-a-days, so we use
+energy saving bulbs more instead of using light bulbs where light is produced
+due to heating.) We see the transformation of heat energy into light energy from
+heated gas particles of flame of a candle where heat is generated from chemical
+energy or from the filament of a bulb.
+
+2025
+2025
+
+Work, Power, Energy 117
+
+(d) Mechanical Energy
+
+When electrical energy is produced bya generator, actually electrical energy
+is produced by rotating a coil of wire in a magnetic field by utilizing the
+mechanical energy. Heat energy is always being produced due to friction, there
+mechanical energy is transforming into heat energy.
+
+(e) Light Energy: Light is an electromagnetic wave and we can see a definite
+range of the wavelengths of this wave, we call this light. Waves of wavelength
+more or less than this range is present in nature and we have generated those in
+different ways. For example, in a microwave oven, we convert the
+electromagnetic wave into heat energy. Now-a-days using solar cell light is
+transformed directly into electricity. Now-a-days the uses of photographic plate
+is decreasing day by day, but all of us know that the presence of light in a photo
+sensitive photographic film generates chemical energy.
+
+Generator Cooling
+
+tower
+
+Figure 4.05: Structure of a nuclear power center
+
+(f) Mass: You are definitely surprised seeing the word ‘mass’ suddenly in
+different types of transformation of energy. When we mean energy, then we
+never imagine the mass as energy directly. But Einstein showed using his laws
+of relativity, F = mc? and with the help of this equation he informed us about the
+possibility of transformation of mass into energy. In the nuclear bomb, the mass
+was transformed into energy, where a huge amount of heat, light, and sound
+energy destroyed the cities of Hiroshima and Nagasaki. This process of energy
+transformation can be used not only in nuclear bombs but also in nuclear power
+118 Physics
+
+station. Though heat is produced here directly, using this heat energy steam is
+produced and this steam is used to rotate the turbine, then this rotating turbine
+generates electricity in a generator(Fig: 4.05).
+
+We have to know an important matter though such types of transformation are
+taking place around us. Although there is available energy, but this energy
+cannot always be used. In the oceans of the earth, there is a huge amount of
+energy, but we cannot use this energy. (Sometimes using this energy cyclones
+destroy cities, habitations!) When energy is transformed from one form to
+another form, then a part of it is dissipated. Actually this dissipation occurs in the
+form of heat energy and this cannot be regained for further use. This dissipation
+of energy actually is not the limitation of technology. It is a rule restricted by
+physics.
+
+At the very beginning of learning science many don’t know it and they try to
+make an everlasting machine for transformation of energy from one form to
+another form. (A motor is rotating the generator and producing electricity, again
+using this electricity the motor is rotating. This is an example of perpetual
+machine. It will never work).
+
+4.6 Relation between mass and energy
+
+You know, in the theory of relativity by Einstein it is said that the mass of
+an object and the energy are identical things. If the mass m is transformed into
+energy, then this energy is Z, and its amount is E = mc’, here c is the light
+velocity. The velocity of light (3x10* m/s) is huge, if it is squared it becomes
+huge also, it means if we can transform a little mass into energy, we will get a
+huge amount of energy, in a nuclear power plant just this thing is done.
+
+In a nuclear power plant, one of the fuels that are used is uranium 235. Here
+there are 92 protons and 143 neutrons. Its amount in nature is very small, only
+0.7%, its half life is 703,800,000 (704 million) years. A uranium 235 nucleus can
+capture another neutron very easily (if the speed of that neutron is small).Then
+the uranium 235 nucleus becomes very unstable, then it is divided into two small
+nuclei Kr? and Ba''. In addition to this, three more neutrons come out
+(Figure 4.06), which is depicted in the equation below. If anyone finds out the
+mass that remains in the left side of the equation and compares it with the mass
+that remains on the right side, will see that on the right side mass is less, the less
+amount actually emerges out as energy governed by the equation, E= mc’ .
+
+in + 735U > 22Kr + 141Ba + 3in
+
+2025
+2025
+
+Work, Power, Energy 119
+
+Figure 4.06: Energy production from nuclear reaction
+
+In this reaction, the three neutrons that have come out, actually come out with
+huge speed, so the other uranium (733U) nuclei cannot capture them very
+easily. If by some means their kinetic energy can be lowered, then they will be
+captured by other uranium (733U) nuclei and thus will break it creating some
+more energy and releasing three new neutrons. In a nuclear power plant, this
+work is done, so when the speed of the emerging neutrons goes down, they again
+break other nucleuses and this process continues. This process is called a chain
+reaction.
+
+In this process, a huge amount of heat energy is produced, using this heat energy
+water is vaporized and turbine is rotated with the help of this vapor and
+electricity is produced from the generator. This type of power plant is called a
+nuclear power plant. It is possible to get thousands of megawatt power from such
+a power plant very easily. The wastage material that is produced after the nuclear
+reaction is terribly radioactive; so many types of precautionary measures have to
+be taken when processing them. If the excess neutrons that emerge after a
+nuclear reaction are absorbed somewhere else by any means, then the nuclear
+reaction ceases. There is a special type of rod called a control rod to absorb the
+neutrons in a nuclear reactor. These are used to control the nuclear reactor.
+120 Physics
+
+4.7 Power
+
+The term 'power' is used a lot of times in our daily lives, and it is not that the
+term is always used in a positive sense! But the word ‘power’ has a definite
+meaning in physics; power is the rate of doing work. That is, if work W is done
+in time t, then power P is:
+
+Ww
+p=—
+
+t
+We have seen before that work is nothing but transformation of energy. As
+energy can’t be destroyed, so it is only being transformed by doing work. So we
+can say, if we desire, power is the rate of transformation of energy. As work or
+energy is a scalar quantity, then power is also a scalar quantity.
+
+We have known about different quantities, their units, and tried to know their
+
+dimensions in every case while learning physics. Unit and dimension of power
+are:
+
+Unit of power: W (Watt)
+Dimension of power: [P] = ML?T~?
+
+Though we have known it here for the first time, it’s unit is very familiar to us.
+If 1 Joule work is done per second then we say, work done is 1 watt or
+transformation of energy takes place. If we switch on a light bulb of 100 watt
+that means, in this bulb 100 J energy is being spent in each second. When we
+read in the newspaper that a 1000 MW nuclear power plant will be built in our
+country that means in that power plant, 1000 x 10° J electrical energy will be
+produced in each second.
+
+4.8 Efficiency
+
+We have said earlier that a certain amount of energy is wasted every time while
+transforming energy from one form to another. So we have to give a little
+more energy than the amount of work we want to do. We use various types of
+machines and engines in our day to day lives. It is seen always that energy is
+wasted due to friction or some other causes. That is why almost always we need
+to measure how efficiently a machine or engine is using energy. So, we use a
+
+2025
+Work, Power, Energy 121
+
+new quantity called efficiency. Efficiency can be expressed in percentage as:
+
+1 amount of work amount of work —energy wasted
+Efficiency = ————— x 100 = os
+
+energy given energy given
+
+Example
+
+Question: If an object of mass 10 kg is lifted 10 min 15 s using a motor of 1000
+
+x 100
+
+W, then what is the amount of wasted energy? What is its efficiency?
+
+A :
+nswers Amount of work: 10 x 9.8 x 10J = 9,800]
+
+Energy given: 1000 x 15/ = 15,000/
+Energy wasted: 15,000 — 9,800 = 5,200 /
+
+9800 J
+15,000 J
+
+Efficiency = x 100% = 65.3%
+
+You will be surprised to know that, energy is wasted in every step of production
+
+of electricity in a power plant, and if all these wastage is taken into account,
+the efficiency of the power plant can drop down to 30%.
+
+Question: If 10% energy is wasted in every step, what is the efficiency in
+4 steps?
+
+Answer: 0.9 x0.9 x0.9 x0.9 = 0.6561
+Or 65.6%
+
+Forma-16, Physics, Class 9-10
+122 Physics
+
+Q) Investigation 4.01
+(— Physical ability \
+
+Objective: To find out the physical ability of a student
+
+Instruments: A clock and a ruler
+
+Procedure:
+
+1. A building which has stairs to the first or second floor.
+
+2. Count the number of steps of the stairs and measure the height of
+each step. Multiply these two to find out the height of the first or
+second floor from the ground.
+
+3. Measure your mass on a weight measuring machine.
+
+4. Climb the stairs as fast as you can, measure the time needed
+using a clock.
+
+5. In a similar way, measure mass of the other students in the class and
+collect information about the time needed for them to climb the stairs.
+Put the data in the following table.
+
+6. Find out the physical ability of your friends and yourself.
+
+Height of the roof: h=.........
+
+Acceleration due to gravity: g = 9.8 m/s?
+
+Ti
+Name of the Mass i eee Power= 2% w | Average
+studen (m) kg the roof (t) s ’ power
+
+Find out the mean physical ability of all the students and see whether your
+
+\ physical ability is more or less than that. SS)
+
+2025
+2025
+
+Work, Power and Energy 123
+
+(?) Exercise
+General Questions
+
+1. Why is the work done by frictional force is always negative?
+
+2. Ifa spring is cut into two pieces will the spring constant k of the pieces
+increase or decrease?
+
+3. To keep the earth dynamic which one is necessary? Energy or power?
+
+4. Can mass be considered as energy?
+
+5. If velocity is increased by 1%, what will be the percentage increase of kinetic
+energy?
+
+6. Amatch stick is rubbed with its box with a force of 5 N. The stick is dragged
+5 cm.
+(a) What is the energy used in rubbing?
+(b) What is the power needed if it takes 0.5s to drag the stick
+
+7. The reservoir of a hydro-electric project is 800 m high from the sea level and
+the power station is 250 m high. The water of a reservoir rotates a turbine
+coming through the pipe. There is 20 x 108 liter water in the reservoir. If the
+mass of | liter water is 1 kg, find the potential energy stored in the water of
+the reservoir.
+
+8. A boy of 40 kg can reach the roof top using the stairs in 12 s. The number of
+steps of the stairs is 20 and the height of each step is 20 cm.
+(a) What is the weight of the boy?
+(b) What is the height reached by the boy?
+(c) What is the work done to reach the roof top?
+(d) What is the power he uses to reach the roof?
+
+9. It is more advantageous to produce nuclear energy than the power station that
+uses fuel because no green house gas is produced.
+(a) What are the other advantages of using nuclear energy?
+(b) What are the disadvantages of using nuclear energy?
+124
+
+Mathematical questions
+
+1. Change of velocity of an object occurs
+due to the application of different forces at
+different times and this is shown in figure
+4.07. Among OA, AB, BC and CD, when
+has positive, negative or zero work been
+done?
+
+2. A girl of mass 50 kg has gone up the
+stairs at a height of 5 m in 10 s. how much
+work has she done? What is her power in
+horse power?
+
+Physics
+
+valocity (m/s)
+>
+E
+
+time (9)
+
+Figure 4.07: Graph of velocity-time
+
+3. When a force was applied on a stationary object of mass 5 kg for 10s, its
+kinetic energy became 500 J. Find the amount of force applied.
+
+4. Two objects of masses 10 kg and 5 kg
+are attached to the two sides of a pulley and
+is kept stationary 5 m above the ground. If
+you release the two objects, then the 10 kg
+mass starts to come down and the 5 kg
+starts to go up. When the mass 10 kg has
+come down by 1 m and the mass 5 kg has
+gone up by 1 m, what are the velocities of
+the two masses?
+
+5. If a body of 5 kg is released from a
+height of 100 m, at what height will the
+kinetic energy be twice of the potential
+energy?
+
+Figure 4.08: Two different masses
+attached to a pulley
+
+2025
+2025
+
+Work, Power, Energy 125
+
+\o> . ; :
+Multiple choice questions
+P 1
+
+Put the tick (V ) mark on the correct answer
+1. Which is the unit of work?
+(a) Joule (b) Newton
+(c) Kelvin (d) Watt
+
+2. A body of mass 5 kg is kept at 20 cm, 30 m, 40 cm and 50 cm height
+respectively. At which position is its potential energy a maximum?
+(a) 20 cm (b) 30 cm
+(c) 40 cm (d) 50 cm
+Answer the question numbers 3 and 4 according to the following graph.
+
+Y
+iS
+_ 10
+g
+_ 5
+weight of car1000 Kg
+0 t sec x
+
+Figure 4.09: Velocily-time graph
+
+3. In which part of the graph, velocity increases in proportion to time?
+
+(a) part OA (b) part AB
+(c) part CD (d) part DE
+
+4. What is the maximum kinetic energy?
+(a) 1.25 x 10°J (b) 5x 10*J
+(c) 1.25 x 10*J (d) 6.2 x 10°J
+
+5. From the law of conservation of energy it is found-
+i) Energy cannot be created or destroyed. The total energy of the universe
+is a constant and unchangeable.
+ii) Non renewable energy will be finished quickly, so renewable energy
+has to be used.
+iii) We have to use energy effectively and reduce system loss in order to
+126 Physics
+
+save energy.
+Which one is correct?
+a)i b) ii c) ii and iii d) i. ii and iii
+
+6. What type of energy is stored when a spring is stretched?
+(a) Kinetic energy (b) Potential Energy
+(c) Heat Energy (d) Chemical Energy
+
+Creative questions
+
+1, A boy of mass 40 kg and a young man of mass 60 kg start running from the
+ground floor and reach the roof top at the same time. Both of them ran with the
+same velocity of 30 m/min.
+
+(a) What is power?
+
+(b) What do you mean by the work 50J?
+
+(c) Find the kinetic energy of the young man.
+
+(d) Explain with mathematical logic whether the power of both are equal or
+not.
+
+2. Jeny resides in the 5th floor of a building. The height of each stair is 20 cm.
+There are 22 stairs in each floor and Jeny needs 4 minutes time to reach the
+5th floor. Susmita requires 4.5 minutes to reach that 5th floor. It is to be men
+tioned that mass of Jeny and Susmita are 64 kg and 75 kg respectively.
+
+(a) What is the main source of energy?
+
+(b) Write two similarities between work and energy.
+
+(c) Calculate the amount of work done by Jeny.
+
+(d) Between Jeny and Susmita who has more power? Give reasons in favor
+of your answer.
+
+2025

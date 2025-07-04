@@ -1,0 +1,1275 @@
+2025
+
+Chapter Eleven
+Current Electricity
+
+Now-a-days, we cannot spend a single moment properly without electricity. To
+operate machines and other instruments around us, we need electricity. In the
+previous chapter we discussed static electricity. When charge flows through a
+conductor, we call it current electricity or, in brief, electricity. We will describe
+the terms required to explain current electricity and learn the rules of flow of
+electricity. In this chapter we will also discuss how we can measure electricity in
+a circuit and potential difference.
+300 Physics
+
+® By the end of this chapter we will be able to-
+
+e demonstrate the production of current electricity from static electricity.
+
+e explain the direction of electric current and flow of electrons.
+
+e draw a circuit by using the symbols of electric devices and appliances.
+
+e explain conductors, insulators and semiconductors.
+
+e establish a relationship between electric current and potential difference
+by using a graph.
+
+e explain fixed resistance and variable resistance.
+
+e explain electromotive force and potential difference.
+
+e explain dependence of resistance.
+
+e explain resistivity and conductivity.
+
+® use series and parallel connection.
+
+e use an equivalent resistance in a circuit.
+
+e calculate electric power in a circuit.
+
+e explain system loss and load shedding in a circuit.
+
+e describe the safe and effective use of electricity.
+
+e draw a typical house circuit and demonstrate the use of AC sources in its
+different parts.
+
+e draw a poster to build consciousness about dissipation and conservation
+of electricity.
+
+2025
+2025
+
+Current Electricity 301
+
+11.1 Electric current
+
+We have discussed in the previous chapter that if two bodies have a
+potential difference, then charge flows from the body of higher potential to
+the body of lower potential. The flow of charges continues until the
+potential becomes equal. This flow of charge is the flow of current or
+electricity, which we generally call “electricity”. Using this electricity,
+lights turn on, the fan rotates, and the phone charges!
+
+Figure 11.01: Electricity flows from a charged sphere to an uncharged sphere.
+
+11.1.1 Electromotive Force and Potential Difference
+
+You can understand that electricity flows only if there is a potential
+difference. If we want to get a continuous flow of electricity, we have to
+always maintain a potential difference and cannot let it be equal. If
+potential is created using a positive charge in a sphere and then connecting
+it with another uncharged sphere (Figure 11.01) by a metal wire, as the
+electricity starts flowing, the potential difference will start decreasing and
+the potentials will become equal! It is possible to develop a potential
+difference between the two plates of a capacitor by accumulating charges
+there. But if the plates of the capacitor are connected with a wire, the
+potentials will become equal due to flow of charge.
+
+So you can understand that if we want a continuous flow of electricity, we
+need some other process which will maintain a potential difference that
+will not decrease with the flow of charges. All of you have seen such
+technique; these are battery cells or generators. Potential difference is
+302 Physics
+
+produced by a chemical reaction inside the battery cell, if the flow of
+charge starts, chemical substances start decreasing. When chemical
+substances are finished, battery cells cannot create a flow of electricity.
+The ordinary battery cells that we see regularly have a potential difference
+of 1.5 volt.
+
+For the supply of electricity that you have in your school or residence,
+there are two points for using it, one of them is at higher potential and the
+other one is at lower potential. This difference in potential is maintained by
+a generator, which develops this continuously. A battery cell or a generator
+has to send charges continuously from low potential to high potential for
+continuous flow of electricity, and for that it needs energy. If W amount of
+work is done to bring Q amount of charge from low potential to high
+potential in a battery, then the electromotive force or e.m.f of the battery
+
+18S:
+
+EMF =~
+Q
+
+A battery cell or a generator which supplies electric energy has an
+electromotive force or emf. When a battery cell or a generator is connected
+to a circuit, this electromotive force brings the charge through the whole
+circuit.
+
+The amount of potential a battery +15V -1.5V
+produces is its electromotive force or emf. | |
+
+In English it is called “force” but in
+Bengali it is “energy”. Actually, this emf l a
+or electromotive force is not force or
+
+energy at all. We said earlier that in
+
+physics terms like “force” and “energy” (a) (b)
+are very specific. We cannot use one word Figure 11.02: It is possible to
+instead of the other. Unfortunately this make positive and negative
+
+has been done here. But don’t be voltage by a battery cell
+
+confused, because the potential that a battery or generator creates is its
+EMF. We said earlier that the magnitude of the potential is not important,
+
+the
+
+2025
+2025
+
+Current Electricity 303
+
+difference of it is important. So you will see that the value of potential of
+one terminal of a battery cell can be made different, but the difference will
+remains the same.
+
+Example
+
+Question: The potential difference of
+a battery cell is 1.5V. What is the
+
+“3
+actual potential of both terminals? 4 I ] L
+Negative is zero and positive is 1.5V? al ‘iil a TT
+or negative one is -1.5 V and positive | =
+one is zero? Ll i al [
+
+15 3¥ +15
+
+Answer: Both of them can be true. If sy
+
+it is like Figure 11.02 (a) then the
+
+negative is zero and the positive is Figure 11.03: Different positive
+1.5 V. But if it is like 11.02 (b) then and negative voltages are made
+the positive is zero and the negative is using two battery cells.
+-1.5 V.
+
+Example: Make voltage 1.5 V, 3.0 V, -1.5 V, -3.0 V using two 1.5 V battery.
+
+Answer:This is shown in Figure 11.03.
+
+11.1.2 Conductor, Insulator and Semiconductor
+
+Conductor: If we have understood the structure of matter properly, then we
+have understood one thing clearly. In solids the atoms and molecules strongly
+hold their own positions. If temperature is increased the atoms or molecules start
+vibrating, staying at their own position, and don’t move away from their
+positions. When you learnt metallic bonds in your chemistry book, you have
+seen , some electrons of metal atoms are in a free state which can move from one
+place to another. For this reason, those are called conductors. Gold, silver,
+copper, aluminum etc. are good conductors. Charge can be transferred through
+conductors, but we have to remember that this transfer of charge is done by
+304 Physics
+
+electrons; flow of electricity is done by electron, negatively charged electrons!
+
+Insulator: The substance which has no free electron for conducting electricity is
+called an insulator. Plastic, rubber, wood, glass are examples of insulators.
+Mainly, non-metals are insulators.
+
+Semiconductor: There are some substances whose conductivity lies between
+insulators and conductors at normal temperature, but their conductivity
+increases with the rise of temperature. These types of substances are called
+semiconductors. Silicon or germanium examples of semiconductors.
+Semiconductor are elaborately discussed in the last chapter of this book.
+
+11.1.3 Direction of electric flow
+
+We have seen that if two bodies of different potentials are connected by a
+conductor, charge starts flowing and it continues until the potentials become
+equal and we say electric current is flowing. Many of you may have started
+thinking because when we talked about equalizing two different potentials by
+flow of charge, we said that it is true for negative charges, as only negatively
+charged electrons can go from one place to another. Then what happens in case
+of positive charge? As the positive ions are strongly bounded in their own
+positions, how does positive charge move from one place to another?
+
+You may have already realized what happens in that case. The deficiency of
+electron is positive charge. So increasing the deficiency by moving electrons
+means a supply of positive charge! So, if it is said that in Figure 11.01 positive
+charge moves from A to B by flow of electricity, actually it means that electrons
+move from B to A.
+
+The flow of charge is electric current. So far, we have tried to understand it
+normally. Let us specify it a little bit now. Electric current means the rate of
+change of flow of charge with respect to time i.e. if O charge flows in time t, the
+electric current is:
+
+(| O
+
+2025
+Current Electricity 305
+
+If the unit of charge is the Coulomb (C) and of time is second (t), then the unit
+of electric current is ampere A. Interesting thing is, to find the unit of charge we
+said, if one ampere electric current flows for one second then the amount of
+charge that flows is called 1 Coulomb. Electric current is the rate of flow of
+charge; if 1 ampere current flows from A to B, it means 1 coulomb positive
+charge has been moved from A to B. Which actually means that the amount of
+electrons equivalent to 1 Coulomb charge has been moved from B to A.
+Therefore, you see that the direction of electric current is opposite to the
+direction of flow of electrons. (All problems could have been solved if we
+assume the charge of electron is positive, but it has been too late!)
+
+11.2 Relationship between Potential Difference and Electricity
+
+Now we will discuss actual flow of current in a real circuit. We have said before
+that if there is a potential difference between two points and if we connect these
+two points with a conducting wire, electric current will start flowing between the
+points, though we haven't discussed the amount of electric current. Not only that,
+will the amount of current that flows if the connection is made by a gold wire be
+equal to the current that will flow through the connection made by an iron wire?
+
+11.2.1 Ohm’s Law
+
+To see the relationship between
+potential difference and electric
+current we can do an experiment.
+The equipment used for measuring
+voltage is called a voltmeter, and
+the equipment used for measuring
+current is known as ammeter.
+(Actually the same equipment can
+be used sometimes as a voltmeter
+and sometimes as an ammeter by
+turning a switch.) Let us take a few
+battery cells. If the voltage for one
+battery cell is 1.5 V, for two cells it
+will be 2x1.5 = 3 V, for three cells it
+
+will be 3x1.5 = 4.5 V. We can apply Figure 11.04: Current flow relative to
+different potential differences in potential difference due to resistance
+
+Forma-39, Physics, Class 9-10
+306 Physics
+
+this way. Not only this, we can also change the direction of the potential
+difference by reversing the cells. So if we apply different positive and negative
+potential differences between two sides of a wire or some other conductor and
+try to measure the current that flows, we will see that
+
+a) The higher the potential difference the higher the current flow.
+
+b) If potential difference is negative, the electric current also changes
+
+direction.
+
+If we put the result of the experiment on a graph, it will be like figure 11.04 (a):
+
+Therefore,
+Iav
+
+If we do the same experiment by using a wire of some other materials, we will get
+similar results. But the slope of the straight line may be different. (Figure
+11.04(b)) Now if we analyze the results of these two experiments, we will
+understand that for a certain potential difference, the current that flows through
+the first conductor is more than the current that flows through the second
+conductor for the same potential difference. It is as if the flow of current is easier
+through the first conductor and a little difficult through the second one. To
+explain the matter, a quantity named ‘resistance to current flow’ or simply
+‘resistance’ has been introduced. We can see that the relation between voltage
+and electric current can be expressed by a law which is known as Ohm’s law.
+
+fd
+—R
+
+So, the higher the resistance, the lower is the electric current. And the lower the
+resistance, the higher is the current.
+
+The unit of resistance is Ohm and it is expressed by the Greek letter Q. If 1 V
+potential difference is applied in an electric circuit and if it is seen that 1 A
+current flows as a result, it can be said that the resistance of the circuit is 1 Q.
+
+Example
+
+Question: To make fun you can write Ohm’s law differently:
+
+2025
+2025
+
+Current Electricity 307
+
+After writing in big font size, cover any of ¥ J or R with finger. The value of
+the covered one will be obtained from the uncovered ones.
+
+Answer: It is shown in fig 11.05.
+
+' voy &
+IXR * PRN IXR
+
+Figure 11.05: Ohm’s law can be used by this figure. The value of the covered
+quantity by the finger can be expressed by the two other quantities.
+
+11.2.2 Resistance
+
+Resistance is the obstacle to the flow of current. So the more the length of a
+material L, the higher is the hindrance, and resistance.
+
+REL
+
+Again current can flow more easily through a wide path than through a narrow
+path. So, the higher the cross sectional area A of a conductor, the lower is the
+resistance.
+
+Roo
+A
+
+If we want to write these two things as an equation rather than in proportional
+form, a constant p has to be used. So, resistance R is,
+
+L
+R=p7Z
+
+Where the constant p is, p= Re
+308 Physics
+
+For a certain material, p is specific
+
+resistance and its unit is Q m. Table 11.01 : Specific resistance of matter
+
+Matter | Specific resistance (Qm)
+
+To measure how conducting a Silver 1.59 x 10-8
+substance. is, A in term failed Copper 1.68 x 10-8
+conductivity o has been introduced. =8
+The more a substance is electrically Gold 2.44 x a
+conducting, the more isthe value of the Graphite 2.50 x 10
+electrical conductivity. It is reciprocal Diamond 1.00 x 102
+to the specific resistance o. (Table Air 1.30 x 1016
+11.01)
+
+1
+
+o=-
+p
+
+The unit of conductivity o is: (Q m)~1
+
+We have to remember one thing; the resistance of a substance is the hindrance
+to electron flow.
+
+The more the atoms and molecules vibrate the more the barrier the electrons will
+face while going through them. In other words, the more the resistance. As the
+vibrations of the atoms and molecules increases with the increase in
+temperature, so the specific resistance of a conducting substance also increases
+with temperature. So the temperature has to be specifically mentioned while
+expressing resistance or specific resistance of a substance.
+
+Fixed Resistance: Resistors with a definite value are used in different circuits.
+They can be of different shapes and of different types. The resistances that are
+used in laboratory uses, generally the value of the resistances are expressed by
+using bands of different colors on them. How much electric power they can
+tolerate is also specified along with the value of the resistance.
+
+| 4 4
+a) (b)
+Figure 11.06: (a) Fixed and (b) variable resistors
+
+NL)
+
+[
+|
+|
+
+2025
+2025
+
+Current Electricity 309
+
+Variable Resistance: Sometimes an electric circuit needs a resistance, the value
+of which can be changed as per need. The type of resistance, whose value can be
+changed within a certain limit, is called a variable resistance or a Rheostat. A
+fixed resistance has two ends, whereas a variable resistance has an additional
+terminal in the middle, where the changed value of the resistance is obtained. It
+is shown in Figure 11.06.
+
+Example
+
+Question: The specific resistances p of silver, copper, tungsten and nichrome
+wire are 1.6x10°, 1.7x10°*, 5.5x10°, 100x10° Q m respectively, Using a wire
+of 1 m? cross sectional area, make a 1 Q resistance.
+
+Answer:
+We know, R= pl
+A
+where, LZ is the length and A is the cross-sectional area.
+So,
+RA 1x1 1
+L=-=—= -_
+For Silver, Pp Pp
+1
+= = 7
+L = Taq = 025% 107 m
+For Copper,
+1
+= = 7
+L = Tay = 8:9 % 107 m
+For Tungsten,
+1
+= = 7
+L = say qps = 18107 m
+For, Nichrome L= 1 — 108
+~ 700x108 ™
+
+You can see, to create a 1 QO resistance, the length has to be very very long
+(almost 1 Lac kilometer). Practically, very thin wires are used, so A = 1 m? is not
+usually feasible. If we fix the radius as 0.1 mm, then how long will a wire need
+to be to make a 1 O resistance?
+310 Physics
+
+We know, RA
+
+A = ar? = n(10-*)*m?2 = 3.14 x 1078 m2
+
+3.14 x 1078
+For silver, = Texi08 ~ 1.96 m
+For copper, _ 314x107 10° = 1.84
+° ~q7x10-8
+3.14 x 1078
+For tungsten, = exo 0.57m = 57 cm
+-8
+For Nichrome, = eat = 0.03m = 3cm
+
+If the temperature of a conductor is raised, its resistance increases, but the case
+is the opposite for a semiconductor. The resistance decreases if the temperature
+goes up in a semiconductor. The reason is, there are free electrons in a conductor
+for the flow of current, but a semiconductor does not have free electrons. If the
+temperature is raised, some electrons are found for the flow of current, so a
+temperature rise causes the decrease of resistance of a semiconductor.
+
+11.2.3 Circuit
+
+lf we have understood Ohm's law, we should be able to analyse circuits now.
+Before that, let us introduce some of the symbols that are used in circuits:
+(Figure 11.07)
+
+Every substance has some resistance, but we do not consider the resistance of
+electrical wires while using them in circuits in our daily life. When a resistance
+is needed, we use different resistances prepared in special ways. Sometimes we
+use such resistances for some special purposes, where even their magnitudes
+can be changed, these are called variable resistance or rheostat.
+
+2025
+2025
+
+Current Electricity 311
+
+To analyze a circuit, some simple points discussed below are to be remembered:
+
+Cell —|}+—— One way switch ——~e—— _ Variable resistor WV mn
+
+heostat
+Battery ——\\|}— Two way switch —_vT__ or maeostal
+Fixed resistor —-A\\WW—
+AC source ) Fuse —
+Galvanometer. —-(G)—
+
+Bulb
+Crossed wire a u -- —~&)- eter
+Connecting wire ———— Capacitor + L-
+Voltmeter ——(V}—
+
+Wire not —- Coil oll 1010101010 [0s Earth connector tl
+
+connected
+Figure11.07: Some symbols that are used in a circuit.
+
+(a) The amount of current that comes out from the higher potential of a source
+(battery cell, generator whatever may be) after flowing through the entire circuit,
+just the same amount of current comes back to the lower potential.
+
+(b) The amount of current that enters at any point of a circuit, the same amount
+of current will come out from that point, that is, there is no creation or
+
+destruction of current in a circuit. No charge is created here, only transfer of
+charge occurs.
+
+(c) In a circuit Ohm's law is true for two points in any part, that is, if the potential
+difference of those two points is divided by the resistance of that part, the current
+flowing through the circuit can be determined.
+
+ae
+A 6 A = B
+y= ) S R —z :) S A
+D = c D c
+ta) (b)
+
+Figure 11.08: Two circuits with a battery cell and a resistor.
+312 Physics
+
+Now we are ready to analyse a circuit. We may think that we have understood
+the circuit completely if we can find out the potential difference in any part of
+the circuit and how much current is flowing through that part. There may be
+many components in a circuit like battery cell, resistance, capacitor, diode,
+transistor etc. But now we will analyze the circuit composed of only the battery
+cell and resistance. In a circuit, resistances are connected with copper wires,
+though we have seen that copper wire has a specific resistance. But in reality, the
+resistance of the connecting wires is very small with respect to the resistances
+we use in a circuit, so , we do not consider it at all. We will assume that the wire
+has no resistance and the potential is the same over the whole wire.
+
+Now, let us analyse a circuit as shown in figure 1 1.08(a), here, a resistance is
+connected to the two terminals of a battery cell with two wires. Since the part CD
+is connected to the earth, so we can say that the potential of the lower terminal
+of the battery cell is zero. So, the upper terminal of the battery has a potential V
+and there is a resistance in part BC, potential difference between two ends of the
+resistance is,
+
+V—-O0O=V
+
+If the resistance is R, the current I flowing through it will be,
+I= V
+R
+
+So, current I comes out from point A of the battery and enters into point B. We
+have determined the voltage and current at every point of the circuit.
+
+Let us assume in the same circuit, if we connect AB part with the earth rather
+than part DC (Figure 11.08(b)) what will happen then? As the voltage of the
+battery cell is V volt, so the potential difference between A and D must be V, as
+the voltage of A is zero, so the voltage of D must be -V. Therefore, the potential
+difference between B and C has to be,
+
+0-(-V)=V
+Resistance is R, so electric current:
+I= V
+~R
+
+This is the same as the previous value, which is what it is supposed to be. See,
+the magnitude of the potential has changed but the difference is the same.
+
+2025
+Current Electricity 313
+
+Example
+
+Question: Determine the voltage at the points A, B, C and D of the circuit in
+figure 11.09 (a).
+
+Solutions: Voltage at C and D is 0, voltage at A is 3V. To calculate the voltage at
+B, current I of the circuit has to be determined.
+
+pave 3 A=1.0A
+“RR 14+2° °° 7
+
+So, the reduction in voltage from A to B is,
+V=RI=1QxX1A=1V
+So, voltage at pointB, 3V—1V=2V
+
+As the voltage (potential) at all points has been found, verify whether
+Ohm's law works or not?
+
+19 AANA, 8 _AMA-—o £
+
+A 8
+
+Vv iY =e 5 ra ros Va
+=
+
+C
+
+$
+
+| Va
+
+fa} 1]
+
+Figure 11.09: Two circuits composed of a battery and more than one resistor.
+
+Question: Determine the voltages at the points A, B, C, D and E of the circuit
+
+in figure 11.9 (b).
+Solution: Voltage at D is zero
+
+Voltage at Ais 6V
+
+Forma-40, Physics, Class 9-10
+314 Physics
+
+What may be the voltage at E, how can it be determined, many of us may be
+confused about this. Actually the case is very simple. When current flows
+through a resistance, the voltage changes. There is no chance of current flow in
+this part BE of the circuit. It can go nowhere after reaching E starting from B.
+So, the voltage at B and E (and any point between them) does not change, the
+voltage at B remains the same at E.
+
+To determine the voltages of B and E, the current has to be determined. If
+current is I, then V 6V 1
+
+T=F-so4e100+150 5%
+
+So, voltage difference from A to B, 1
+
+So, the voltage at A is 6V and 1V less at B so, the voltage at B is,
+6V-V,=6V-1V=5V
+As the voltage of point B is 5 V, then the voltage of point E is also 5 V. Similarly,
+
+1
+
+The voltage at C is 2 V less than voltage of point B. So, voltage of point C is,
+5V-2V=3V
+
+We have said earlier that the voltage of point D is zero. This can also be verified.
+The voltage of point D is less than point C by V,.
+
+1
+Vz = R3l =15Qx=A=3V
+
+5
+
+So, voltage of point F B c
+
+D = 3V- 3V = 0, as mentioned [—*
+
+earlier. rh a | R230 \3 Ry 60
+
+5|__ S|
+
+Question: Determine the value of — i F
+
+I] and 12 in the circuit shown in Figure 11.10: A circuit where two
+figure 11.10. resistors are connected in parallel.
+
+Solution: Voltage at points A, B and C is 2V.
+Voltage at points D, E, F is 0 volt. So, the current through the resistor BE,
+
+2025
+2025
+
+Current Electricity 315
+The current through resistor CF,
+
+Total current, 2 1
+P=ht+th=ZAt ZA=1A
+
+11.2.4 Equivalent Resistance: Series Circuit
+
+If there is more than one resistance in a circuit, we will see how these resistances
+can be considered as a single equivalent
+resistance. In figure 11.11 there are two A B
+resistances in the circuit, as C is connected to WW
+
+the ground so it’s potential is zero and
+the potential of A is V. We don’t know the Y =~
+potential of B, but we know that the same
+amount of electric current I flows through R,
+and R,,. wel c
+To keep it simple, we can say, the sum of two -
+resistances is the total resistance R and the
+current will be 7= V/(R ), but let us prove this
+rather than writing it.
+
+Let us assume the potential at point B is V,,
+then for the first resistance R, we can write:
+
+Ry
+
+Ra
+
+WWW
+
+Figure 11.11: Two resistances
+connected one after another in a
+circuit.
+
+V-V,
+l= 5
+Ry
+
+Again we can write for the second resistance R,:
+
+ve 0 _Ye
+OR, Re
+Therefore,
+V—-Y, V;
+l= B_ 8
+
+Ry R2
+316 Physics
+
+(V —Vp)R2 = VeRi
+Vp(R, + R2) = VRz
+
+R
+Therefore, =
+Ve R, +R, v
+Ie Ve OV
+Ra Ry +R
+
+We can imagine resistances R, and R, as a single resistance R, where
+
+il
+‘|
+il
+
+ps
+
+Figure 11.12: Many successive resistances or resistors connected in
+a circuit can be imagined as an equivalent resistance or resistor.
+
+If there were more than two resistances (figure 11.12) then also we would be able
+to show that these resistances can be combined as a single resistance R which
+will be the sum of all those resistances. This is called the equivalent resistance.
+This means when a circuit will have R,, R,, R, ... resistances successively (series
+circuit) then the equivalent resistance will be:
+
+11.2.5 Equivalent resistance: Parallel circuit
+
+Now we will place the resistances in parallel instead of one after another (Figure
+11.13). In this circuit we have named different points as A, B, C, D, E and
+F, We can understand from the figure that points D, E and F are connected to the
+ground and so their potentials are zero. So the potential of points A, B, and C is
+V.
+
+2025
+2025
+
+Current Electricity 317
+
+Current J flows from the battery
+cell. This current goes to point B and
+splits into two parts J, and I, and A B C
+flows through the resistances R, and I—>
+R, respectively, then at point E the
+currents converge into J and go back
+to the battery as J. We have already
+said that the current comes from the —|
+battery and flows through the circuit F
+
+and then goes back to the battery. No =
+electric current can be created or
+destroyed except this in a circuit. So
+
+<=
+|
+|
+<—
+VW
+=
+—
+WW
+aa
+
+Figure 11.13: Two parallel resistances are
+
+shown in a circuit.
+I = i, + I,
+
+Now we can find J, and J:
+
+Therefore,
+
+l=ht+h=7+,=V(-+7)
+RR Ra ARa RR
+
+So in this case also, we can define an equivalent resistance R, where
+
+(aX omg to 243
+~R Me RR, Rp
+= A Ry R, mm > = Rg
+
+Figure 11.14: Many parallel resistances or resistors can be imagined as a single
+equivalent resistance or resistor.
+318 Physics
+
+If the resistances are more than two (Fig. 11.14) then the equivatent resistance
+R will be
+
+11.3 Electric Power
+
+When discussing potential, we saw that if a charge is moved by applying
+a potential then some work is done or some energy is lost. So if V potential is
+applied to move a charge Q in a circuit then the amount of work done (or the
+
+applied energy) is W =VOQ Joule
+Power P is the capacity of work done per second, so if Q charge is moved in ¢
+time then w vQ
+
+= L = a = VI Watt
+
+If we use this on a single resistance R, then applying Ohm’s law we can write,
+since
+
+V=RI
+P=PR
+or V
+T=R
+therefore, V2 v2
+p=(5) R=q
+
+If electricity flows through a resistance for time ¢, then Pt energy is supplied there.
+Where does this energy go? When you use a resistance in a circuit and if you
+pass enough electricity through this resistance, then you will notice that it
+always gets hot. That means the electrical energy evolves as heat energy.
+
+The use of bulbs with filaments are getting scarce, because the filament has to be
+heated to create light with this. A big part of the electric energy is used to heat up
+the filament, and energy is wasted. If we touch these bulbs with our hand we can
+feel how much heat energy is created, and this energy is created as PR or V*/R in
+every second.
+
+This is not the only place where the electrical energy is used to create heat
+
+2025
+2025
+
+Current Electricity 319
+
+energy. It provides energy for the fan, fridge, television, computer, charger
+and different types of equipment for different purposes. We can find out how
+much electrical energy is consumed per second in electrical appliances very easily
+from VI. Every house has an electric meters. It continuously measures potential
+(V) and what amount of current is flowing (/). From there it can determine how
+much electrical energy (P=VJ) is provided in each second in the house.
+Multiplying this with the total time we can find the total electrical energy spent.
+The conventional unit of electrical energy spent is kilowatt-hour (kW-h). This
+unit is called Board of Trade Unit (BOT) or briefly, Unit. The electric bill we pay
+is calculated in this unit.
+
+Example
+
+Question: What is the resistance of the filament of a 100 W bulb?
+Answer: 100W is written on a 220V bulb, as
+
+y2
+P = R
+Therefore,
+= v = (220)? OQ = 4840
+~ PP 100 "
+How much current is flowing here?
+_ V _ 220 = 0454
+R484
+
+It can be done in other ways too: P = VI
+
+_P_ 100 _ vasa
+“VY 220.
+
+Question: If a bulb of 60 Watts is lit everyday for 5 hours for 30 days then what
+would be the electric energy usage? If each unit has a price of 10 taka, then what
+will be the total cost for this electricity?
+320 Physics
+
+Answer: We know, spent energy = (P x t) /1000 kilowatt-hour or unit
+P= 60W and t= 5x 30 hour
+Spent energy = 60 x (5 x 30)/1000 unit=9 unit
+
+Total cost of electricity with 10 taka per unit = 9 x 10 taka = 90 taka
+
+11.4 Electrical Supply
+
+When current needs to be transmitted from one place to another in a country, it
+is transformed into a very high voltage. This is done to reduce the loss of
+electricity in electrical wires. You know that, the amount of energy wasted per
+second as heat energy is equal to ?R , so we may conclude that there would be
+no dissipation of energy as heat energy if there was no resistance R in electrical
+wires.
+
+But that is not practically possible; everything has some resistance. That is why,
+if current I can be reduced, the energy lost PR due to heat can also be reduced.
+Since the amount of electrical energy supplied per second is VJ, if the
+potential is increased by 10 times, it is possible to supply the same energy using
+10 times less current. If 10 times less current is supplied, 100 times less heat
+energy will be dissipated. This is because the resistance R of the wire is the same
+in both cases.
+
+Now you may think that the loss of heat energy can also be written as V’/R and
+in that case the heat energy loss will be 100 times due to 10 times increase of
+voltage. It is to be remembered that when we found the energy loss per second
+as V*/R, we then saw V was the potential difference between the two sides of the
+resistance. The V which we are discussing here is not the potential difference
+between the two sides of the wire. It is the value of potential of the electric wire!
+The value of the potential on two sides of the electrical wire is almost equal. So
+the difference is negligible.
+
+11.4.1 System Loss of Electricity
+
+We know that the power plants situated at different parts of the country produce
+electricity. This electricity is to be transmitted to different of the country. To
+distribute electricity, first it is transmitted to the substations of different areas.
+The electrical energy is then distributed to consumers using electricity
+distribution systems.
+
+2025
+Current Electricity 321
+
+The conducting wires that are used to carry electricity from one place to other
+have at least some minimum resistance. When current (J) flows through a
+resistance (R), heat (PR) is generated and this is loss of electrical energy. This
+loss is called system loss. We have already discussed that if electricity is
+supplied at high voltage then for a definite electrical energy, loss is reduced
+because of resistive heat energy. That is why electricity produced in the power
+plants is transformed into high voltage using step up transformers. Before
+distributing the electrical energy for customer use, the electrical supply is again
+brought down to a suitable voltage using a step down transformer.
+
+11.4.2 Load Shedding
+Each power plant produces a definite amount of electric energy and electricity
+
+produced in all power stations is added to the national grid. We have discussed
+earlier that electricity is distributed to consumers from local substations. The
+national grid supplies electricity as per the needs of different areas. If the
+demand of electricity in an area is more than the electricity produced, then
+naturally the required electricity cannot be supplied in that area. Then the
+substations are forced to keep electricity supply off in one area to be able to
+supply electricity to another area. This process is called load shedding. When the
+substation gets the required electricity supply again, it distributes electricity to
+that area again.
+
+If load shedding is to be done for several hours at a stretch, to make load
+shedding tolerable, the authority load sheds in a rotation, in different areas at
+different times.
+
+11.5 Safe Use of Electricity
+
+We cannot think of a moment without electricity. Electricity brings light to our
+house, keeps us cool in the summer by using fans. We watch television and use
+computers using electricity. Electricity runs fridges that preserve food. We use
+it to iron clothes. When the charge of mobiles gets low, we use electricity to
+charge the battery. Rich people use AC in their houses, washing machines to
+wash clothes, and electric heaters to cook. They prepare warm meals by heating
+using microwave ovens.
+
+We can go on telling all day about the uses of electricity in our houses, schools,
+colleges, fields, farms, industries and hospitals etc. In our country, generally
+220V (AC) electricity is supplied, which can give electric shock to people and
+
+Forma-41, Physics, Class 9-10
+322 Physics
+
+may even cause death from those shocks. That is why all electrical appliances
+are made in such a way that no one comes in direct contact with those things.
+
+If electricity passes directly through the heart then only 10 mA of current can
+cause death. The electricity we use for different purposes is AC. The resistance
+of dry skin of human beings is around 100,000 Q which decreases by a thousand
+times when
+
+it gets wet. So from Ohm’s law we can show that the 220 V electricity of our
+country can easily produce fatal current flows. A person with a wet feet standing
+on a wet floor has the worst possible condition of getting an electric shock.
+
+When a person is electrocuted, he can’t move hands and legs because of the
+current flowing through his body. As a result, in spite of having the sense to
+move away from the dangerous condition, he or she won’t be able to do it.
+
+The electricity we use can be dangerous, but if we follow some general
+precautions we can safely use electricity, and millions of people around the
+world are doing so. We should know the following for safe use of electricity:
+
+(a) Electrically insulated cover: Open wire carrying electricity is dangerous,
+so it is always covered with plastic or another insulator. If short circuit occurs for
+any reason i.e. positive and negative wires touches without any resistance then,
+according to Ohm’s law, a large amount of current flows, the wire become
+heated, the plastic burns and can even cause fire. So it should be taken care that
+insulating layer remains unaltered and intact.
+
+(b) Better Connection: The electrical connections should be made correctly
+where electrical equipment run using huge amount of electricity. If the
+connections are not properly done, extra resistance is produced and according to
+FR, it may be heated, may burn the insulating layer, and can damage the
+electrical connection.
+
+(c) Humidity: Water is conductor of electricity, so if water enters any circuit, it
+may be dangerous due to short circuit. A hair drier or electric iron is very
+dangerous to use near water, because if it falls suddenly in the water and anyone
+touches it, an accident may occur by electrocuting the person.
+
+(d) Circuit breaker and fuse: Major accidents of electricity occur when a
+large amount of current flows suddenly due to some defects. To stop sudden
+large flows, circuit breakers or fuses are used. A circuit breaker is made in such
+a way that if a large amount of current flows (more than the safer level), it breaks
+the circuit. A fuse is a comparatively simple method; the amount of current that
+
+2025
+2025
+
+Current Electricity 323
+
+flows through equipment is passed through a thin wire before entering the
+equipment. The thin wire (where the resistance is more, so PR is more i.e. more
+heat) of the fuse becomes heated and burnt, and stops the supply of electricity if
+for any reason excess current tries to flow.
+
+(e)Flow less connection: There are always two wires in an electric supply line,
+one with high potential (Live) and another is voltage less neutral (Neutral).
+
+source of
+“ electricity
+
+neutral ~ neutral
+Figure 11.15: Wrong and correct connection of switch.
+
+When a machine is used, then starting from the live wire the electricity passes
+through the machine and then returns to the source through the neutral
+wire. A voltage less neutral wire is safe, but a high voltage wire should be used
+cautiously. When a switch is used to connect electricity to a machine, it can be
+connected with a high voltage wire or a neutral wire. It is wise to connect the
+switch with the high voltage wire (Figure 11.15). Then high voltage enters the
+machine only when the switch is on. When the switch is off, there is no high
+voltage inside the machine.
+
+(f) Ground: You may have noticed that there are at least two connections in an
+electric supply in school or at home, high voltage and neutral. But if an
+expensive machine (e.g. computer, fridge) is connected to the current, you will
+see that besides high potential and neutral, there is another third connection,
+which is the ground. Generally this is connected to the body or cover of the
+machine. If the machine is electrified accidentally, then current directly flows
+from the cover or body to ground. A fuse burns due to this flow of electricity and
+makes the machine safe. So, if anyone accidentally touches it, he is not
+electrocuted.
+324 Physics
+
+Figure 11.16: Dangerous activities with electricity.
+
+@) Do Yourself
+
+[Make a list of the dangerous activities done with electricity in Figure 11.16. ]
+
+11.6 Design of Circuit in Residence
+
+What a circuit should be like for supplying electricity in a household is shown
+in Figure 11.17. Electricity is supplied at home from a power station through a
+supply cable. Between them, one is live; another is neutral. The live line has high
+voltage, the neutral has zero voltage. The live line is marked red and the neutral
+line is marked blue in the figure. It first passes through an electric meter. This
+meter records how much electricity is consumed. After the meter, it is supplied
+through a consumer unit.
+
+Three circuit breaker or fuse of SA, 1SA and 30A is shown in Figure 11.17.
+These three circuit breakers are connected to the main switch. The electric
+supply of the whole house can be cut off using the main switch.
+
+2025
+2025
+
+Current Electricity 325
+
+In the figure, current is supplied to the lights and fan from the 5A circuit breaker.
+15A is connected with cooking burner. 30A circuit breaker is connected to the
+plug points of the house. We have certainly noticed that this part is like a ring
+which means flow of current can be through two different paths. In this part the
+
+ground is shown differently (green color).
+
+NEUTRAL CONSUMER INIT
+LIVE J
+GROUND ooo] fe] |
+os) (] 5A ie ISA i!
+N L earth
+Supply —] 7 ] a
+Cable of cooker
+(crac) | E
+WW
+LIGHTING CIRCUIT H f L
+on™ LE. Ni ‘
+& FAN CIRCUIT Sockets Bo}
+ou L
+
+A. el
+
+Figure 11.17: Possible circuit for supplying electricity to a house.
+
+@) Do Yourself
+
+What steps should be taken to minimize the dissipation of electricity?
+Describe these in a nice poster.
+
+To create awareness among all with the posters, make arrangements to
+display them.
+
+326 Physics
+
+@) Do Yourself
+
+( Obj ective: Students will be able to analyze the electric circuit design )
+suitable for use in residence.
+Working procedure: A probable circuit for supply of electricity in
+residence is shown in Figure 11.17. Make a new circuit by doing the
+following changes in this circuit.
+(a) Add two more plug points since three plug points are not enough.
+(b) Add a water pump with an appropriate circuit breaker which uses
+electricity.
+(c) Add a second light using two switches in such a way that the light can
+be turned on or off by using any of the switches along with the light
+and fan.
+
+\ yy,
+
+(?) Exercise
+C*) General questions
+me
+
+1. Is it possible to use a capacitor as a battery?
+
+2. Why is it difficult to make an experiment to see if the filament of a filament
+light bulb is following Ohm’s law or not?
+
+3. Electric current is the flow of electrons. When electricity flows the speed of
+electrons is comparatively low. But
+
+electricity flows instantly-how?
+4. For equal potential difference,
+will a high resistance produce more i
+— k— 10cm
+= | al m ‘
+
+heat or a low resistance produce
+more heat?
+5. It is not seen that a crow or a bird
+dies on an electric cable, but a big Figure 11.18: Two square resistors of 1 m?
+bat often dies why? 3
+: . and 100 cm?.
+6. What is electric current?
+
+2025
+2025
+
+Current Electricity 397
+
+7. What are directions of the conventional current flow and electron flow?
+
+8. What are conductor, insulator and semiconductor materials?
+
+9. State Ohm’s law.
+
+10. Show that, V=ZR using Ohm’s Law.
+
+11. Plot a graph of J versus V on a graph paper for an Ohmic substance.
+
+12. Define specific resistance.
+
+13. Show that, the value of the equivalent resistance of resistors connected in
+series is equal to the sum of the different resistances included in the
+combination.
+
+14. What are the causes of using electrical energy that can be dangerous?
+
+15. Acurrent of 2.5 A is flowing through the filament of the headlight of a motor
+car. If the potential difference between the two ends of the filament is 12 V, what
+is the resistance?
+
+16. The electromotive force of a dry cell is 1.5 V. What is the energy spent by the
+cell in driving 0.5 C of charge round the circuit?
+
+17. What are fixed and variable resistors?
+
+18. What do you understand by electromotive force and potential difference?
+
+Mathematical questions
+
+1. Make a2 © resistor using infinite number of 1© resistor.
+
+2. Using nichrome sheet of 1 mm thickness, your friend has made a resistor of
+10 cm x 10 cm square (Figure 11.18). You have made a resistor of lm <lm
+square. What is the value of the resistance made by your friend? What is the
+value of your resistance?
+
+A 8
+A= 20 5 AMY
+Ne
+A= 1
+a ‘) s Ree 30 pees fs Sen
+Aye 10
+o ANA :
+[aero
+
+=
+(@) ()
+
+Figure11.19: Two circuits formed by battery cell and resistors
+328 Physics
+
+3. If the point D of the circuit shown in Figure 11.19 (a) is connected with the
+earth, what are the voltages at the points A, B, C and D? What is the value of I?
+
+4. If instead of point D, the point C is connected with the earth of the circuit
+shown in Figure 11.19 (a), then what is the voltage? What is the magnitude of I?
+
+5. If the point D of the circuit shown in Figure 11.19 (b) is connected with the
+earth, what are the voltages at the points A, B, C and D?
+
+ES) Multiple choice questions
+
+Put the tick (V ) mark on the correct answer
+1. What are the materials through which electric current can flow very easily?
+(a) insulator (b) bad conductor
+(c) semiconductor (d) conductor
+2. If three resistances of values 2Q ,3Q and 4Q are connected in series, then
+what will be the equivalent resistance?
+(a) 8Q (b)7
+(c) 9Q (d) 20Q
+3. The potential difference between the two terminals of a conductor is 100 V. If
+the amount of current flowing through it is 10 A, what will its resistance be?
+
+(a) 1000 (b) 0.1 Q
+(c) 102 (d) none of them
+4. The electrical condition of a circuit is measured by-
+i. Voltmeter
+il. Ammeter
+ili. Generator
+Which one is correct?
+
+(a) iand ii (b) i and iii
+(c) ii and iii (d) i, ii and iii
+
+2025
+Current Electricity 329
+
+Creative questions
+
+1. The length and cross-sectional area of a nichrome wire used in an electrical
+heater, is 20 cm and 2 x 10” m? respectively. The resistivity of nichrome is
+100 x 10% Qm. The nichrome wire is replaced by a copper wire of identical
+length and cross-sectional area. The resistivity of copper is 1.7 x 10% Q m.
+
+(a) What is resistance?
+
+(b) Why does the resistance of conductor increase with increasing
+
+temperature?
+(c) Determine the resistance of the copper wire.
+(d) Analyze the logic of using copper wire.
+
+2. Alvi uses a bulb of 220V-100W during his studies for 3 hours daily. His
+brother Alif uses a table lamp of 220V-40W for 4 hours daily. The cost of each
+unit of electrical energy is 3.5 taka.
+
+(a) Write down Ohm’s law.
+
+(b) Explain, what will be the change in resistance of a conductor if the
+length is increased by 5 times (provided that the temperature, material
+and area of cross-section remain unchanged)?
+
+(c) Determine the current of the lamp used by Alif.
+
+(d) Who is more economical, Alvi or Alif (considering money)? Analyze
+with mathematical arguments.
+
+3. The potential difference of an electric supply line in our country is 220 V.
+The resistance of the filament of an electric bulb is 484 0 . 220 V- 100 Wis
+marked on the bulb.
+(a) Define ampere.
+(b) What does it mean to say that the electromotive force of a dry cell is
+1.5 V?
+(c) If the bulb is connected with the supply line, what will be the electric
+current?
+(d) Propose an experiment to verify 220 V-100 W marked on the bulb.
+
+Forma-42, Physics, Class 9-10

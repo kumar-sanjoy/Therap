@@ -1,0 +1,1659 @@
+Chapter Eight
+
+Chemistry and Energy
+
+In Chapter 7, we saw that most reactions release heat. For example, we cook,
+
+drive vehicles by burning wood, coal, natural gas. That is, heat is released in this
+
+case. The question is, where does this heat come from? Every chemical sub-
+
+stancé contains a type of energy that transforms into heat energy during reac-
+
+tions. This inherent energy of matter is called chemical energy. How does
+
+this energy prevail in the substances? The battery produces electricity which
+
+lights up the torch. Burning mineral oil produces heat which is then converted to
+electricity. Many countries are using the atomic energy to produce electricity.
+Chemistry or chemical reaction or nuclear reaction is involved in all these.
+However, these reactions also have some adverse eflects on us too. This chapter
+will discuss all these things.
+
+2023
+Chemistry and Energy 169
+
++ explain the relation of producing energy with chemical changes.
+* realize the importance of purity of fuel in energy production; limit the
+
+consumption of these fuel for saving the environment and show
+consciousness in selection of appropriate fuels.
+
+* find out chemical reactions related problems and prepare an investigation
+plan, implementation and test its effectiveness keeping the safety
+measures in mind.
+
+* take decision responsibly and spontaneously with confidence in
+performing chemical reactions and in producing energy.
+
+* explain the idea of direct current using the electronic concept of
+oxidation-reduction reactions.
+
+* describe the process of producing electricity by chemical reactions.
+
+* carry out the reactions using electricity.
+
+* present an opinion on the products of electrolysis of different substances
+and their commercial use.
+
+* construct the electrodes of galvanic cells.
+
+* differentiate between an electrolytic cell and a galvanic cell.
+
+* explain the application of an electrochemical cell.
+
+* give an opinion on nuclear electricity production after a relative analysis.
+
+* carry out experiments of exothermic and endothermic reactions.
+
+* show consciousness on the worse effects of chemical reactions.
+
+* show interest on using pure fuel.
+
+* show the change of heat on dissolving salts during chemical changes
+through experiments.
+
+Forma-22, Chemistry Class-9-10
+170 Chemistry
+
+8.1 Chemical Energy
+
+8.1.1 Source of Chemical Energy
+
+Matter has molecules and atoms. An atom remains connected to another atom
+because of attraction energy (bond). The energy by which atoms are connected
+to each other is called chemical energy.
+
+Bond Energy
+
+In a chemical bond, the energy by which an atom remains joined with another
+atom is called bond energy. In sodium chloride, there is an ionic bond between a
+sodium ion and a chloride ton. There is a covalent bond between carbon and
+oxygen in carbon dioxide. In iron, one atom is bonded with another due to a
+metallic bond. The energy that acts here in these cases to maintain the bonds is
+the bond energy.
+
+Inter Molecular Energy
+
+In a covalent compound, the energy that keeps the molecules combined with
+each other is called the inter molecular energy. For example, water is a covalent
+compound, Inter molecular energy combines the molecules of surrounding water
+with a molecule of water. On the other hand, in the ionic compound sodium
+chloride, 06 chloride ions surround a sodium ion. There is energy active in
+between them. Again, each chloride ton is surrounded by 06 sodium ions. They
+are also combined due to the energy.
+
+The attraction energy in between ions of an ionic compound is stronger than inter
+molecular energy present between covalent molecules. That is why the melting
+point and boiling point of ionic compounds is greater than those of covalent
+bond substances.
+
+Due to the same reason, ionic compounds remain as solids at room temperature
+whereas covalent compounds usually remain in liquid or gaseous siate al room
+temperature. However, there are some exceptions like naphthalenes, Even
+though it is a covalent compound, it remains solid in room temperature.
+
+The inter molecular energy in a covalent compound consisting of atoms of two
+elements (FCI) is greater than inter molecular energy in a covalent compound
+consisting of atoms of the same element (I1,).
+
+20235
+2025
+
+Chemistry and Energy 171
+
+Transformation of Energy in Chemical Reactions
+
+Each substance contains some energy. Usually in chemical reactions, the energy
+of the reactants is necessary to make the reactions happen or some chemical
+reactions result in generation of energy. That means, energy is transformed in
+chemical reactions. The energy required to make a reaction take place or the
+resultant energy ftom a reaction may have different forms like heat energy, light
+energy, electricity, sound ete.
+
+Units of Measurement of Energy
+
+Earlier, calorie or kilocalorie was used as unit to measure energy. The heat
+applied to raise the temperature of | gram water by 1°C is called a calorie (cal in
+brief). 1 kilocalorie is 1 thousand calories. Kilocalorie is expressed by keal.
+
+Presently, the international standard unit to measure all kinds of energy is Joule.
+A joule is the work done by a force of one newton acting through one metre
+displacement. It is expressed by the abbreviate j. 1 kilojoule (kJ) is equal to 1000
+joule.
+
+The relation between calorie and joule is 1 cal=4.18 J.
+
+$.1.2 Classification of Chemical Reactions According to Change of Heat
+
+Some reactions occur spontaneously while some reactions require the applica-
+tion of energy. Reactions that occur spontaneously heat is produced during the
+conversion of reactants to products. According to the change of heat, reactions
+
+are of twokinds: (i) Exothermic reactions and (ii) Endothermic reactions. In
+exothermic reactions, the yalue of AH is negative and in endothermic reactions,
+the value is positive.
+
+Any substance has a specific energy at a specific temperature. This energy is
+called internal energy. If we express the total mternal energy of reactants in a
+reaction with E, and the total energy of the products with E,, then the change of
+heat energy in that reaction is:
+
+AH = Total internal energy of the products (E,)
+- Total internal energy of the reactants (E,}
+
+172 Chemistry
+
+In exothermic reactions, the total
+internal energy of reactants (E,) 1s
+greater than the total internal energy of
+products (E.). Therefore, the value of
+AH=(E,-E,) becomes negative,
+
+Heat evolved Heat absorbed
+
+>> 3
+%
+
+For example, when in a reaction, the
+total internal energy of reactants 50
+kJ/mol and the total internal energy of Fig 8.01: Exothennic and Endothermic process,
+products is 20 kI/mol, AH = (20-50)
+
+= -30 kJ/mol.
+
+Again, in endothermic reactions, the total internal energy of reactants is lesser
+than the total internal energy of products. Therefore, the value of AH= E,-E, in
+this case is positive. For example, when in a reaction, the total internal energy of
+reactants 70 kJ/mol and the total internal energy of products is 80 kJ/mol,
+AH = (80-70) =+10 kJ/mol.
+
+Exothermic Reactions
+
+The chemical reactions in which heat is evolved are called exothermic reactions.
+An equation of an exothermic reaction can be written with the word Heat at the
+right side. If it is written with the expression AH, the value will be negative (-).
+You have seen the natural gas burnt while cooking, produces heat. If water is
+poured on dry lime, that substance becomes hotter. Methane is the basic
+ingredient of cooking gas. When we burn this gas, each mole of it reacts with
+oxygen of air and produces carbon dioxide, water and 890 kT heat.
+
+CH,(g) + 20,(¢) ————» COle) + 2H,O0(g) + 890 kj/mol
+Methane Oxygen Carbon dioxide Water Heat
+On,
+
+CHylg) +: 20,(¢) _—F CO(g) + 2H,0(g) : AH = —890 k]/mol
+
+£023
+
+Methane Oxygen Carbon dioxide Water Heat
+2025
+
+Chemistry and Energy 173
+
+Again, dry lime is calcium oxide (CaO). When water is poured in it, calcium
+hydroxide Ca (OH), is produced. Alongside, 63.95 kJ/mol heat is produced.
+That’s the reason of it being heated.
+
+CaO(s) + 2H,0(1) t——®» Ca(OH),(ag) + 63.95 kj/mol
+Caleium Oxide Water Calcium hydroxide heat
+Or,
+Cao(s) + 28,00) ———» Ca(OH),(aq) ; AH = -63.95 kj/mol
+Calcium Oxide Water Calcium hydroxide heat
+In both the above reactions, the total internal energy of reactants (E,) is greater
+
+than the total internal energy of products (E,). That extra energy has evolved as
+heat in the reaction.
+
+Endothermic Reactions
+
+Chemical reactions in which heat is absorbed
+
+are called endothermic reactions. They are
+also called heat absorbing reactions. In the sciiaiaiaiiaiaied” aie
+equation of endothermic reactions. on the
+left side, the head may be recorded. If it is
+written with the expression AH, the value
+will be positive (+). In villages, the outer
+shells of snails or oysters are gathered and
+burnt to produce edible lime. Actually, these
+casts contain about 98% calcium carbonate.
+The heat from the fire transforms this calci-
+um carbonate into calcium oxide and carbon 8.02: Preparation of lime from
+dioxide. The calcium oxide is lime which Oysters,
+remains as left over and the carbon dioxide
+
+mixes in the air,
+174 Chemistry
+
+cacO ss) + 176.8 kJ/mole t——® Ca0(s) + CO,(g)
+Calcium carbonate heat calcium oxide carbon dioxide
+Or,
+
+CaCO.(s) —_\-+ caO(s) + CO.(g) : AH= 176.8 kJ/mole
+
+8.1.3 Calculation of Heat Change in Chemical Reactions Using the Bond
+Energy
+
+The value of AH in a chemical reaction is determined in two ways. We have just
+seen one in the above discussion. In the other, it is determined using the bond
+energy- deduce the total bond energy of products from the total bond energy of
+the reactants. The result in both the ways 1s the same.
+
+The energy required to break the bonds of the atoms of a compound and separate
+them is called the bond energy. Again, the energy required to form the bonds of
+atoms of a compound and combine them is called the bond energy.
+
+During chemical reaction, breaking the bonds of reactants and formation of new
+bonds of products take place. Energy is needed to break the bonds and energy is
+released in bond formation,
+
+In any reaction, if the total bond energy of reactants is B Ls and the total bond
+energy of products is B,, then the heat change in that reaction is:
+
+4 AH =The total bond energy of reactants (B,) )
+— The total bond energy of products(B;)
+
+= Total energy required for breaking the old bonds (B,)
+
+—Total energy released in the formation of new bonds(B,)
+
+\ y,
+
+2025
+2025
+
+Chemistry and Energy 175
+
+In exothermic reactions, the value of B, is lesser than B,, so the value of AH is
+negative while in endothermic reactions, the value of B, is greater than B,. so the
+value of AH is positive.
+
+Table 8.01: Bond and Bond Energy
+
+Bond Ener Bond Ener
+Bond’ | dermal | | Bond (k}/mol) e
+C-H 414 N-H 39]
+c-Cl 326 0-H 464
+
+c-c 344 O=0 A498
+Cat 615 =o $12
+N=N 946 cl-cl 244
+Br-Br 193 I-I 151
+0-0 143 H-H 436
+H-cl 43] H-Br 366
+
+H-I 299 H-F 563
+
+c=0 724 c-O 350
+
+When the table says, the bond energy of O=O js 498 kJ/mol, we understand, 498
+kilojoule heat is required to break an O=O bond. On the other hand, the
+formation of an O-O bond evolves 498 kilojoule heat.
+
+Problem: Determine the heat change in the reaction CH,+ Cl,-
+CHCl + HCl. Given, bond energy of C-H = 414 kJ/mol, bond energy of C-Cl
+= 244 kJ/mol and bond energy of H-Cl = 431 kJ/mol,
+
+Solution: In the reaction CHy+ Cl, ~ CH,€1+ HCl 1 mole C-H bond
+and | mole Cl-Cl bond has been broken among the reactants while | mole H-
+Cl bond and | mole C-Cl bond has been formed. Therefore,
+
+Total bond energy applied on reactants to break bonds = (414 + 244) kJ = 658
+kJ
+176 Chemistry
+
+Total bond energy evolved from products to form bonds = (326 + 431) kJ =
+757 kJ
+
+The heat change in the reaction AH = (658 — 757)k] = —99 kJ
+
+Since the value of AH is negative here, so the reaction is exothermic, This
+reaction evolves 99 kJ/mol heat.
+
+8.2 Uses of Chemical Energy
+
+$8.2 Uses of Chemical Energy
+
+We can transform the chemical energy into different energies and put that to our
+use.
+
+8.2.1 Transformation of chemical energy into different types of energy
+
+Chemical energy can transform into any type of energy like heat, light,
+electricity, sound or mechanical energy. Some examples are discussed below.
+
+Burning of Fuel
+
+We get heat and light energy when we burn coal, natural gas, wood etc. This
+energy is obtained basically from the chemical energy present in these
+substances. Burning is actually to let a substance react with the oxygen of air.
+Methane (CH,) is the main ingredient of natural gas. When methane is burnt, it
+produces carbon dioxide, water vapor, heat and light.
+
+Fireworks
+
+The fireworks that you see on the sky during large festivals render ight, sound
+and mechanical energy. The chemical elements inside the fireworks react with
+each other and the chemical energy in them produces light, sound and mechani-
+cal energy.
+
+Dry Cell
+
+You are familiar with battery. The batteries used in torches and remotes are dry
+cells. The chemical ingredients inside a dry cell react with each other and the
+chemical enerey is transformed into electricity.
+
+2025
+Chemistry and Energy 177
+
+Daniel Cell
+
+The batteries you see on buses, trucks etc, are Daniel cells. Zinc metallic sticks
+in zine sulfate salt solution and copper metallic sticks in copper sulfate salt
+solution are used to make Daniel cells. The following reaction takes place in this
+cell:
+
+Zn(s) + CuSO,{aq) ——® ZnSO, (aq) + Cu(s)
+
+This reaction turns the chemical energy into electricity.
+
+8.2.2 Chemical Energy and Use of Various Energies Obtained from
+Chemical Energy
+
+Chemical energy remains stored in molecules and atoms of elements. When a
+substance reacts with another, then we get chemical energy. We turn thal energy
+into various energies and put them to use. Chemical energy is the most used of
+all kinds of energies on earth.
+
+When wood or natural gas 1s burnt for cooking, their chemical energy turns into
+heat energy. The heat obtained from burning wood is used for making bricks or
+making earthen pots. Iron, steel and ceramic industries require huge amount of
+heat. Coal, petroleum, natural gas etc. mineral fuels are used in heat engines.
+These fuels are burnt in the burning chamber to produce heat and the heat is then
+turned into mechanical energy to run automobiles, ships, planes, trains etc.
+
+The first thing that strikes our mind when we talk about chemical energy is
+photo-synthesis. Plants have chlorophyll in their green parts. Chlorophyll helps
+them to utilize sunlight and conduct the reaction between water absorbed from
+the earth through their roots and carbon dioxide from air. Thus, they produce
+
+glucose (C,H,,0,) and oxygen (O,). This oxygen is released by the plants. This
+
+12
+
+reaction is called photo-synthesis. However, the sunlight that participates in the
+reaction remains in the plant in the form of chemical energy.
+
+Forma-23, Chemistry Class-9-10
+178 Chemistry
+
+Fig 8.03: Photosynthesis.
+
+Besides, the body of both plants and animals produce fat and protein. They also
+contain chemical energy. Again, humans and other animals consume them as
+food. The body of humans and plants can be called chemical engines, Plants get
+chemical energy from this carbohydrate, protein and fat. This energy turns into
+heat or other energy. Plants and animals use these transformed energies to
+conduct different activities. Therefore, it is understood that without chemical
+energy, life is impossible.
+
+8.2.3 Appropriate Use of Chemical Energy
+
+Petroleum, coal natural gas etc. are called fossil fuel. These fuels have chemical
+energy stored in them. Burning these fuels or letting them to react with oxygen,
+heat energy can be obtained. This heat energy is used for cooking, running
+
+automobiles and electricity generation.
+
+Besides providing heat energy, burning these fossil fuels have harmful effects on
+nature. They produce carbon dioxide. The amount of that every year is 21.3
+billion tons of carbon dioxide. This gas is a greenhouse gas, meaning it contains
+heat. As a result, the world is getting warmer day by day. Again, carbon dioxide
+reacts with rain water and produces carbonic acid (H,CO,), When it comes down
+to earth with rain, we call that acid rain, which is very harmful for nature. These
+bad effects of fossil fuels are imposing a threat to life on earth. Therefore, we
+need to be meticulous in using fossil fuels. We should not use excess fossil fuel.
+Excessive use of fossil fuels will end up their reserve. Meticulous use will ensure
+that the reserve remains for our future and they won’t impose any bad effect on
+our lives.
+
+20235
+2025
+
+Chemistry and Energy 179
+
+$.2.4 Importance of Purity of Fuel
+
+We are constantly making use of various kinds of fuels to get chemical energy.
+Their purity is an important factor. If we burn them in insufficient air, carbon
+monoxide is produced alongside carbon dioxide, which is a harmful gas. It is
+dangerous for our health. Natural fuels are of crude form. They have mixture of
+compounds of nitrogen, sulfur, phosphorus etc. That is why, these fuels need
+refinement before being sent to the market. If we burn them without refinement,
+the oxides of these elements also go in the air. These oxides mix with rainwater
+and form acids which again come down to earth with rain. The acid rain is:
+
+CO, + HO — », 4#H,C0,
+Carbon dioxide + Water t+ Carbonic Acid
+
+2505 ac 0, ———* 2504
+Sulfur dioxide + Oxygen ————+ Sulfur trioxide
+2505 + 2H,0 ——> 2Ha504
+Sulfur trioxide + Water —§ Sulfur acid
+
+4 NO, — 2H,0 + 0, —<$$<— 4HNOS
+
+Sullur trioxide + Water + Oxygen ———+ Nitric acid
+
+This acid rain causes huge damage to our environment, Plants die due to this rain,
+Water in water bodies turn acidic which makes survival of the fishes and
+other living bodies tough. Then, the smoke of automobiles consists of
+carbon monoxide, nitrous oxide and unused methane. In the presence of
+sunlight, these react to create various plosonous gases. They are known as
+photochemical smog, Elements of this smog harm the ozone (O,) layer of our
+atmosphere, Ozone protects the earth from the ultraviolet rays of sun. If this
+ozone layer is harmed, ives of humans will be in danger.
+180 Chemistry
+
+§.2.5 Negative Effects of the Use of Chemical Energy
+
+We burn fuels in order to get energy. Mainly, we make use of chemical energy
+through the use of fuels. Although, presently we are using solar energy, nuclear
+energy, wind energy, hydro energy etc. yet, the major part of our required energy
+is provided by fossil fuels. We have already learned that every year, we are
+producing 21.3 billion tons of carbon dioxide gas by burning fossil fuels. Trees
+take in carbon dioxide in its photo-synthesis process. Besides, some other
+natural processes use up half of it. The other half remains on earth. As carbon
+dioxide is a heavy gas, it remains below the atmosphere. It does not undergo
+reactions with other elements of the atmosphere too. However, it has high heat
+absorbing capacity. Due to this, the temperature of the earth is increasing day by
+day. This is called global warming. This global warming is melting the ice of the
+polar region and thus increasing the sea level. Many countries including
+Bangladesh are at risk of being submerged. Besides carbon dioxide, some other
+gases are also contributing to the global warming. It is denoted by the term
+“Greenhouse effect.” The gases responsible are known as greenhouse gases. You
+have already learned about acid rain and photochemical smog. These facts put
+carbon dioxide as a major portion of the greenhouse gases for harming the
+atmosphere. The greenhouse gases undergo reactions with the ozone layer and
+harm its quality. The ozone layer acts as the filter of sunlight in the atmosphere.
+The ultra violet ray of the sun is very harmful for our skin and it may even cause
+cancer, The ozone layer prevents this ultra violet ray.
+
+8.2.6 Uses of Ethanol as Fuel
+
+The other name of ethanol is ethyl alcohol the formula of which is CH,-CH,-OH.
+Burning of this aleohol also produces heat like the fuels already discussed.
+Therefore, it can also be used im engines of all kinds of vehicles and carriers as a
+fuel. Many countries including North America are using it as a mix with fossil
+fuels. All automobiles in USA use fuel with 10% ethanol mixed in it. Thus
+ethanol may be a suitable substitute for fossil fuels relieving the pressure on our
+reserves.
+
+£023
+2025
+
+Chemistry and Energy 181
+
+8.3 Chemical Process by Electricity
+
+8.3.1 Electrochemical Cells
+
+Burning fuels, chemical energy can be turned into heat energy which can again
+be transformed into electrical energy. Now we will learn how to convert chemical
+energy directly into electrical energy and bow to put that electrical energy to use
+in order to conduct reactions. The mechanism that helps chemical reactions to
+convert chemical energy into electrical energy directly or uses electrical energy
+to conduct chemical reactions is called an electrochemical cell. In an
+electrochemical cell, two metal sticks or graphite sticks are submerged in one or
+two electrolytic solutions. The sticks are connected directly or through a battery
+with a metallic wire. The graphite sticks are called electrodes. Electrochemical
+cells are of (wo kinds:
+
+(i) Electrolytic Cells: The cell where electricity is driven from an outer source
+to carry out a chemical reaction inside the cell is called an electrolytic cell.
+
+(ii) Galvanic Cells: The cell where chemical elements undergo reactions and
+produce electrical energy is called a Galvanic cell.
+
+Conductor
+
+The materials, through which electricity can pass, are called electrical
+conductors. For example, metals, graphile, molten salt, salt solution, acid and
+base solutions ete are electrical conductors.
+
+Depending on the mechanism of passing of electricity, conductors are of two
+kinds: Electronic Conductors and Electrolytes.
+
+Electronic Conductors
+
+The substances through which electricity is passed by means of electrons are
+called electronic conductors. You have seen, metals contain metallic bonds. As a
+result, they contain lots of free electrons. Graphite also contains free electrons.
+These substances let electricity pass through and for that, they are electronic
+conductors. For example, tron (Fe), copper (Cu), nickel (Ni) ete. are electron
+conductors.
+182 Chemistry
+
+Electrolyte
+
+The substances that let electricity pass in their melted and solution state but do
+not allow in their solid state and simultaneously brings about a chemical change
+in that substance are called electrolytes. The electrolytes remain ionized during
+their melted or solution state. The ions are used by electrolytes to conduct
+electricity. Ionic compounds and some polar covalent compounds become
+electrolytes in their molten or solution state. For example, sodium chloride
+(NaCl), copper sulfate (CuSO,). sulfuric acid (11,50,). water (H,O), ethanoic
+acid (CH,COOH) ete. are of this type.
+
+Electrolytes are again of two types:
+
+(i) Strong Electrolyte: The electrolytes that remain completely ionized in
+molten or solution state are called strong electrolytes. Sodium chloride (NaCl),
+copper sulfate (CuSO,) and sulfuric acid (H,SO,) are strong electrolytes.
+
+(ii) Weak Electrolytes: The electrolytes that remain ionized at a very little
+amount in molten or solution state are called weak electrolytes. Water (H,0),
+ethanoic acid (CH,COOH) etc. are of this type.
+
+Electrode
+
+Electrode is a metallic or non-metallic electric conductor. They are electronic
+conductors sunk in the solution of electrolytes. In the electrochemical cell, an
+element or ion donates an electron to an electrode in an oxidation reaction. The
+positive ion accepts electrons from the other electrode in the reduction reaction.
+This way, oxidation-reduction occurs in the whole cell. The electrode where
+oxidation oceurs is called the anode electrode and the electrode where reduction
+occurs is the cathode,
+
+8.3.2 Electrolytie Cell, Electrolysis and the Mechanism of Electrolysis
+
+Electrolytic cell uses electricity to conduct chemical reactions. There occurs a
+chemical reaction at the time of electricity passing through molten or solution of
+electrolytes, which is known as electrolysis. When electricity passes through
+molten sodium chloride, it produces chlorine gas at the anode and sodium metal
+at the cathede. This is electrolysis of sodium chloride:
+
+2025
+2025
+
+Chemistry and Energy 183
+
+2Nacl(l) ————  2Na(s) + Ch(g)
+
+Mechanism of Electrolysis of Molten
+Sodium Chloride
+
+Arode (+ve) Mh athode (-ve)
+F
+
+Take molten sodium chloride in a
+
+glassware or ceramic ware. The molten
+sodium chloride contains sodium ion
+(Na*) and chloride ion (CI) ion. Both of
+
+them are able to migrate. Two metallic >
+
+bars or graphite sticks are submerged
+
+into the molten sodium chloride. If we
+
+connect one of them to the positive part Fig $.04: Electrolysis of Sodium Chloride
+of a battery and another to the negative in Electrolytic Cell.
+
+part, the anode connected to the positive part of the battery will atiract negatively
+charged Cl ions while cathodes connected with the negative part of the battery
+will attract positively charged Na* ions. Cl ions will donate electrons at the
+anode and become chlorine gas. The oxidation at the anode:
+
+ck] —— > id,+e
+
+On the other side, Na* accepts electron from the cathode and becomes metallic
+sodium. The recuction at the cathode:
+Nat+e —~> Na
+
+The ion that is attracted by the cathode is called a cation and the ion attracted by
+the anode is an anion.
+
+Identification of Chlorine Gas at Anode with Litmus Paper
+
+If we collect the gas produced during the electrolysis of molten NaCl in a test
+tube and hold a wet blue litmus on the test tube, the paper will turn red. That will
+prove the presence of chlorime gas.
+184 Chemistry
+
+cl + HO —~ Hcl + Hoc!
+Chlorine + Water — Hydrochloric acid + Hypochlorous acid
+
+Since Chlorine gas and water undergo a reaction and produce two acids, the blue
+litmus turns red.
+
+Electrolysis of Concentrate Sodium Chloride Solution
+
+In concentrated sodium chloride solution, NaC] becomes ionized and produces
+Na® and Cl ions.
+
+Nac] ————> Nat + cb
+The difference from molten sodium chloride is that the solution contains H* and
+OF ions too as water is partially ionized here.
+
+HO ——— H* + OH”
+During the electrolysis in this electrolytic cell, Na’ and H* will go towards
+the cathode together. We know, H* ion is more prone to accept electrons than the
+Na‘ ion. So, H* ion accepts one electron at the cathode and becomes a H atom.
+
+Two H atoms again join together and become a H, molecule. The reaction at the
+cathode:
+
+H* + e~ — H (Reduction reaction)
+
+H+H > H,
+
+Cl and OH go simultaneously towards the anode. We know, OH ion is more
+prone to donate an electron than Cl, However, since the molarity of CI in the
+solution is higher than OH ion, so it donates electrons at the anode earher than
+OH. One CI ion donates an electron at the anode and becomes a Cl atom. Two
+Cl atoms join together producing a Cl, molecule. The reaction at the anode:
+
+cl + cl+e ( Oxidation)
+c+cd 7 cL,
+
+2025
+Chemistry and Energy
+
+Na* and OH remain as left Cholorine gas
+
+over in the container. They
+undergo a reaction and
+
+I
+
+: NaC]
+produce NaOH. solution
+
+This way, if any solution
+consists of multiple cations
+and anions, which cation of
+will discharge first at the
+
+185
+
+Hydrogen gas
+
+NaOH
+solution
+
+a a
+
+cathode or which anion will
+
+receive the charge at the Fig 8.05: Electrolysis of Sodium Chloride
+anode is determined by three Concentrate Solution.
+factors:
+
+(i) The Tendency of Cations and Anions to
+Discharge:
+
+If there are more than one kind of cations in an
+electrolysis, there is a priority list for the cations
+which specifies which of them will discharge first.
+The series is called Reactivity Series of Metals or
+Electro Chemical Series. Between any two
+elements of this series, the element above is more
+reactive and it take parts the reaction earlier than the
+other. Again, the one ion of element at the lower order
+between any two elements will accept the electron
+earlier and discharge or become reduced. For
+example, among Na* and H*, H* is at lower order
+than Na* and so, it will discharge accepting
+electrons earlier and be reduced. Again, Fe** is at a
+comparative lower order between Fe* and Zn**. So,
+Fe** will discharge earlier.
+
+Table 8.02: Electrochemical
+
+Cation
+
+Anton
+
+Li
+ra
+Na*
+Mg”
+Al*
+zn*
+Fe**
+Sn*"
+Ph?
+Ht
+cu 4
+Ag’
+
+Au*
+
+There is another series specifying the priority of anions to donate electrons and
+discharge in electrolysis. This series is called Electrochemical Series of Anions.
+
+Forma-24, Chemistry Class-9-10
+186 Chemistry
+
+The one that is at the comparative lower order between any two ions in the
+series will donate an electron earlier and discharge or be oxidized. Between S0,*
+and Cl, Cl is situated lower than the other. So, Cl will donate an electron earlier
+and be discharge or be oxidized, OH is at the lower order between Cl and OH,
+So OF wil discharge, donating an electron first and be oxidized.
+
+(ii) Effect of Concentration of Cations and Anions: When there are more than
+one cations and anions in the solution, the effect of molarity is a more important
+factor than the tendency to discharge. The molarity of Cl ion in 0.1 molar NaCl
+solution at room temperature will be 0.1 molar. On the other hand, ionizing
+water, the molarity of OH’ ion will be 107 molar. That means the molarity of Cl
+ion 1s 10° times larger than that of OH ion. According to the electrochemical
+series, OH’ is situated lower than Cl and it is supposed to be the first to
+discharge. But due to molarity or concentration, Cl ion in this case will be the
+
+first to discharge.
+
+(iii) Nature of Electrode: Sometimes, the kind of electrode causes an exception
+in the above two factors of discharge in an electrolytic cell. NaCl aqua solution
+has two kinds of cations- Na* and H*, When a platinum electrode is used, then
+according to the factor (i), H* discharges and produces H, gas. But this changes
+
+when mercury is used as a cathode and then Na‘ ion discharges earlier.
+Electrolysis of Pure Water
+
+In the electrolysis of pure water, anodes and cathodes of some inert metals are
+used in electrolytic cells. Usually it is platinum. Water exists a little bit tonized:
+
+4H,0 c= 4Ht + 40H
+
+A few drops of sulfuric acid is added to water to increase decomposition of
+water. Now. when electricity is passed through, anode attracts hydroxyl (OH)
+ion and cathode attracts hydrogen (F1') ion. The following reactions take place at
+the electrodes:
+
+20235
+ue,
+=
+ey
+
+Chemistry and Energy 187
+
+Cathode: 4H* + 4e— - 2H, ({ Reduction)
+
+Anode: 40H~ — 0,+ 2H,0 + 4e~ (Oxidation)
+
+Hydrogen is produced at the cathode and Oxygen is produced at the anode.
+
+You may be thinking why some
+
+Oxygen _ Hydrogen gas
+drops of sulfuric acid or some gas Ve
+lattice of NaCl is required here. .
+You know, electricity does not 1 ber l = Beary
+pass until it is a complete of [ool
+‘ G o
+
+circuit, Electron is the medium Mixtweot | Ey] [
+
+. _ _ ‘water and = Cathode, }—— Anode
+of the flow of electricity in gojq
+
+anode, cathode or battery. Water
+hardly gets ionized. So, pure
+
+. ig 8.06: Electrolysis of Water.
+water acts like non-conductor. Fig
+
+To increase the conductivity of water, some drops of sulfuric acid is necessary.
+
+8.3.3 Use of electrolysis
+
+Presently, mills and industries have sprung up all over the world. The
+contributions of electrolysis in the industrial sector is enormous.
+Production of important compounds, extraction of metals from ores, purification
+of metals, protection from decay, prevention of rust etc. processes require
+electrolysis and electrolysis requires electrolytic cells. Some of the usages are
+described below:
+
+Extraction of Metals: Alkali metals, alkaline earth metals. alumimum ete. active
+metals are extracted through electrolysis. Usually, the cathodes produce these
+metals when electricity is passed through the electrodes in the liquids of
+188 Chemistry
+
+such metallic compounds or solutions. For example, in the electrolysis of
+sodium chloride, we find sodium metal at the cathode and chlorine gas at the
+anode.
+
+In the electrolysis of molten pure aluminum oxide or alumina (AlI,O,),
+aluminum metal is produced at the cathode and oxygen gas at the anode.
+
+ALO; —— 2AP+ + 307
+
+Reaction at the anode: 307 ++ 0, + 6e7
+Reaction at the cathode: 2Al* + 6e€ — 2Al
+
+Purification of Metals: After extraction, the metals contains various other
+elements mixed in them. Electrolysis is highly effective to purify these metals.
+Purification of copper, zinc, lead. aluminum ete. involves the electrolysis
+process. The same adulterated metal electrode of the adulterated metal is
+connected to the positive edge of the battery. A pure electrode of the same metal
+is connected to the negative edge of the battery. When electricity is passed
+through, the metallic ion from the impure electrode goes into the solution and
+from the solution the ion is transferred to the pure electrode. As a result, the pure
+
+electrode thickens while the impure electrode decays.
+
+Electroplating: Adding a coating of a metal on another metal is called
+electroplating. The process is used for increasing brightness of a metal or to
+prevent degradation of a metal. Less reactive metals do not react with oxygen of
+the air. To prevent degradation of a metal, a coating of a comparatively less
+reactive metal is given on the outer layer of that metal. Usually, nickel,
+chromium etc. metals are used in electroplating. Iron rusts and decays when it
+comes in contact with water vapor and air. Nickel, chromium or silver coating is
+used on iron. They prevent air and water vapors to come in direct contact with
+
+iron. The process 1s discussed below:
+
+£023
+2025
+
+Chemistry and Energy 189
+
+To electroplate iron products such as
+a spoon, a solution of AgNO, is taken
+
+in a glass container. The product that
+Silver
+
+will receive the coating is connected cAnode)
+
+to the negative edge of a battery and
+thus is dealt as a cathode. A silver foil
+
+Speon
+
+is used as an anode. When electricity ya
+{cathode}
+
+is passed in the solution, the metallic
+
+Ag atom from the anode donates an
+
+electron and goes into the solution as ~ o-
+
+Ag’ ions. This Ag* ion from the ;
+Fig 8.07: Silver Electroplating on Spoon.
+
+solution accepts an electron from the cathode and sticks itself to the cathode as
+
+metallic silver. Thus the coating of silver is done.
+
+Decomposition of AgNO, in solution: AgNO, — Ag* + NOs,
+Oxidation at anode: Ag — Agt+ &
+Reduction at cathode: Ag” + e*— Ag
+
+Commercial Use of Products with Electrolysis
+
+We can do many things with electrolysis. Various metals such as sodium.
+aluminum, zinc, calcium, magnesium etc. are extracted fom ores by
+electrolysis. Besides, purification of copper, gold, silver etc. involves
+electrolysis. The present world has a great demand for these metals.
+
+We know, silver and copper has the least amount of resistance. Since silver is a
+precious metal, copper is generally used in producing an electric wire, Can you
+imagine a place on earth without an electric wire? Alumimum is another
+important metal as it is necessary to make utensils. Since the metal is light, it is
+extensively used in making airplanes. Zinc and magnesium are required to add
+
+coatings on iron products. Chromium, nickel, gold, silver etc. are electroplating
+190 Chemistry
+
+metals on less precious metals to add brightness. This makes the ornaments more
+lucrative.
+
+Chlorine gas produced from electrolysis of sea water is used as an anti-parasite
+agent. Sodium hydroxide is used as a raw material in different industries.
+
+8.4 Production of Electricity by Chemical Reactions
+
+Galvanic Cell or Voltaic Cell
+
+Galvanic or Voltaic cells are those electrochemical cells where the elements
+within undergo reactions to produce electricity. In a Galvanic cell, usually two
+electrodes of different elements are submerged in two different electrolytic
+solutions in two different containers. The more reactive metal electrode is used
+
+as the anode and the less reactive metal electrode is the cathode. In a galvanic or
+woltaic cell, an electrode made of a particular metal must be placed in a solution of a
+salt of the same metal (electrolyte) so that ions of that metal are present in the electro-
+lyte For example, if an electrode is made of copper, it has to be kept in CuSO,
+
+solution. Similarly. a zinc electrode is kept in ZnSO, solution. When the two
+electrodesate externally connected with a metal wire, electrons can {low from one
+to other, meaning low of electricity is ensured. A U shaped salt bridge is created
+between the two electrolytic solutions. The U shaped glass tube contains KCl
+salt solution. To make it more clear to you, the structure of a Daniell cell is
+described below.
+
+Daniell Cell
+
+The cell was invented by John Frederick Daniell in 1836. It is named after him.
+
+Two glass or ceramic containers are taken, one partially filled with copper
+sulphate (CuSO,) solution and another with zinc sulphate (ZnSO,) solution. A
+copper stick is dipped in CuSO, and a zine stick is dipped in ZnSO,. A U-shaped
+
+salt bridge is dipped inthe two solutions, as shown in the picture, to connect
+
+2025
+2025
+
+Chemistry and Energy 191
+
+them. A metal wire is used to connect the two electrodes. A bulb connected at
+the middle of the wire lights up when electricity starts to flow. Here, a zinc atom
+donates two electrons to the zinc electrode and turns into zine ion (Zn**). It
+leaves the electrode and goes into the solution. The zinc electrode accepts the
+two electrons and becomes negatively charged. Then the electrons flow through
+the connecting wire. Since the metallic zinc turns into Zn* in the electrode, so it
+
+is an oxidation reaction at the anode:
+
+Oxidation at anode: Zn + Zn*++2e
+Now, the two electrons from the zine anode enters the copper electrode. Through
+this electrode, the Cu** ion from CuSO, solution accepts the electrons and turns
+into metallic copper (Cu). Since the process is reduction here, so the copper
+electrode is regarded as the cathode electrode.
+
+Reduction at cathode: Cu7+ + 2e — Cu
+The total reaction in the cell: Za + Cu — Zn*+Cu
+
+Sinee zinc has donated electrons at Sane
+the anode, so that constitutes i
+
+oxidation. But donating electron Zing
+only does not complete a reaction. ‘A2°¢°) _ Saige
+The copper ion at the cathode
+
+electrode has accepted those
+
+elecirons and completed the
+reduction reaction, That means half -
+the reaction has occurred at the Fig 8,08: Galvanic (Deniell) cell.
+
+anode and the other half at the cathode. So, the reaction at the anode is oxidation
+
+half reaction and the reaction at the cathode is reduction half reaction, And the
+
+total reaction is a redox reaction.
+
+Electrons from anode enter the cathode through the connecting wire. That means
+es
+
+Chemistry
+
+the flow of electricity occurred here or electricity was produced. That proves, a
+
+Galvanic cell transforms chemical energy into electrical energy.
+
+Table 8.03: Difference between Electrolytic Cell and Galvanic Cell.
+
+Electrolytic Cell
+
+Galvanic Cell
+
+The cell where electric energy is used
+to facilitate a chemical réaction is
+called an electrolytic cell.
+
+The cell where a chemical reaction
+produces electric energy is called a
+Galvanic cell.
+
+In an electrolytic cell the anode is
+positively charged and cathode is
+
+In a Galvanic cell, the anode is
+negatively charged and the cathode is
+
+negatively charged, positively charged.
+
+Producing substances, electroplating,
+metal purification etc.
+electrolytic cells.
+
+Electricity production mechanism
+
+involve | like a battery uses this technology.
+
+Electrodes in Galvanic Cells
+
+There are various kinds of electrodes of Galvanic cell. The easiest to make is a
+metal-metal ion electrode. This kind of electrode can be made by dipping half or
+more than half ofa stick or foil of a metal in a solution contaming ion of the same
+metal, The written expression of such an electrode can be composed of the metal
+name followed by its ion with a vertical lme in between. For example, if a Zn
+stick 1s dipped in a ZnSO, solution, which makes a zinc metal electrode, it can
+be expressed Zn|Zn?*, The reaction that occurs here is:
+
+——
+
+So zn** + 2e
+
+en
+Electrodes of more reactive metals such as sodium, potassium, calcium etc.
+
+cannot be produced in this manner. In such cases, amalgam is commonly used. An
+amalgam is amixture of mercury and active metals.
+
+2025
+Chemistry and Energy
+Identification of Anodes and Cathodes in Galvanic Cells
+
+Determination of anode and
+cathode in a Galvanic cell
+
+193
+
+Table 8.04: Electrode and Reaction.
+
+constituted with two | plectrode Reaction
+
+electrodes depends on the
+
+element they are made of, | 2n/2n* Zn(s) ——— > Zn**(aq) + 2
+Electrodes made of less
+
+2+ ——— 2s,
+
+reactive elements situated at culcu Culs) = cated) + 2e
+the lower ranks of Fe|Fe** Fe(s) === Fe*{aq) + 2
+the electrochemical series
+
+constitute a cathode while the AglAgt Ag(s) ===> Agt(aqg) + &
+more reactive elements of the
+
+upper ranks constitute the anode. Of the ‘Toble 8.05:
+
+electrochemical series, any two elements constituting a
+Galvanic cell, the lower ranked electrode is cathode and the
+higher ranked electrode is anode. For example, if a Galvanic
+cell is constituted with a copper electrode and a silver electrode,
+the copper metal electrode is anode and the silver metal
+electrode is cathode. Table 8.05 shows copper is
+comparatively higher ranked than silver.
+In this cell, copper atom donates electron and turns into copper
+ion.
+Oxidation half reaction at anode:
+
+cu > Cu* +26
+
+Again, silver ion accepts electron and turns into silver atom.
+
+Reduction half reaction at cathode:
+
+Zig’ + Ze — 2Ag
+Adding the two half reactions, we get the total reaction of the
+cell:
+
+Cu + 2Agt — Cu’ + 2Ag
+
+Forma-25, Chemistry Class-9-10
+
+Electrode,
+
+Electrode
+
+LilLit
+
+KIE*
+
+NalNa*
+
+Mg|Mz"*
+
+AIJAP*
+
+zn|Zn**
+
+Fe|Fe?*
+
+NilNi?*
+
+Sn[Sn**
+Pb|Pb**
+
+H,|H*
+
+Culcu
+
+AglAg*
+
+AulAu**
+
+194 Chemistry
+
+Salt Bridge and Its Use
+
+You have seen in the Daniell cell, in anode, metallic zinc donates two electrons
+to become zinc ion. This electron is conducted through the connecting wire
+towards the cathode. As a result, the ion in the anode solution increases.
+
+Oxidation half reaction in anode:
+
+Zn — Zn*+4+2¢
+
+On the other hand, the Cu** ion in the CuSO4 solution at the cathode accepts the
+two electrons and turns into charge neutral Cu atom without changing the
+composition of SO,* ion. As a result, the solution becomes negatively charged
+and the flow of electricity stops within a while. The salt bridge comes into effect
+at this stage. A chemical substance named agar-agar mixed with KCl is put inside
+
+a U-shaped tube. It creates a gel like substance which is called the salt bridge.
+
+Both K* and Cl ions im this
+substance have the same velocity.
+Two cotton buds at the two faces of
+the bridge (like in the fig) help
+connect the two solutions externally.
+
+e
+
+Now, the surplus charges in the
+anode are joined by the same
+number of Cl ion from the bridge in
+the anode solution. Similarly, the
+reduced number of positive charges
+in cathode solution is joined by K*
+ions from the bridge. Thus, the
+charge neutrality of both the Fig 8.09: Salt bridge in Cell.
+solutions is maintained and the flow
+
+of electricity is continued.
+
+20235
+2025
+
+Chemistry and Energy 195
+
+Dry cell
+
+Dry cell is a kind of Galvanic cell. Dry cell transforms chemical energy into
+electrical energy. We use dry cells in torch lights, TV remotes, toy remotes etc.
+Dry cell is also composed of an anode and a cathode.
+
+A small container made of
+zine is used as an anode in a
+
+dry cell. The container is +
+
+filled with a paste of Metall eh
+
+manganese dioxide (MnO,), washer and
+
+ammonium chloride (NH,Cl), seal
+
+zine chloride (ZnCl) and Pail <‘caadic aia
+Carbon tod ~ ——# Zine pot
+
+distilled water. A carbon MnO;, NH4Cl,
+
+(graphite) stick is inserted at ZnCl;
+and distilled water
+
+Paper
+
+the center of the container to
+act as a cathode. When two
+wires connect the two edges Metal based -———“ =
+
+(positive and negative) of a :
+. Fig 8.10: Dry cell.
+bulb or electronic item with
+
+the zine container and the carbon stick, the following reaction occurs:
+
+Zine at the anode donates two elecirons and becomes Zn**:
+
+Anode reaction,
+fn uw», Zn 4 2e
+
+These two electrons come to the carbon rod through the connector and combine
+with ammonium ion (NH,*) and manganese dioxide (MnO,) to produce
+ammonia gas (NH,), dimanganese tri-oxide. The reaction:
+Cathode reaction,
+
+2NH,' + 2Mn0,+ 2e ——+. 2NH; + Mn,0,; + HO
+196 Chemistry
+
+The total cell reaction stands:
+
+zn + 2NH, + 2Mn0, ——» Zn++ 2NH, + Mn,0, + 1,0
+
+When the anode and cathode edges are connecied to a bulb or any electronic
+item, the flow of electricity begins or electricity is generated. Therefore,
+wherever electricity is required, if we connect the dry cell there, the above
+
+reaction will occur and we'll get electricity.
+
+Application of Electrochemical Cells
+
+Coating a metal on another metal has
+been there in practice from the ancient
+age. Now that has increased hugely.
+Electrolysis is used for extraction of
+metals, production of valuable chemicals,
+electricity generation, purification of
+substance etc. Hydrogen fuel cell is used
+for electricity generation. Hydrogen
+molecule is oxidized at ils anode and
+oxygen molecule is reduced at the
+
+cathode to produce water. As a result,
+Fig 8.11: Machine to test Blood Sugar. in the cell electron is conducted from
+
+anode to cathode. This electricity can be
+used to run cars even. All mobile phones, computers, calculators etc. all over
+
+the world use batteries.
+
+Blood sugar in the diabetic patients is tested and determined by a machine that
+uses electrolysis mechanism. The figure above demonstrates that. The part on
+the left hand has small thin anode and cathode in it. There is a small channel in
+between them. When blood is inserted in the channel that forms a complete cell.
+Indeed, the source in the machine would supply electricity that oxidizes glucose
+
+£023
+2025
+
+Chemistry and Energy 197
+
+of blood at the anode. On the other hand, the calculating system of the machine
+determines the number of glucose cells in blood and shows it on the screen
+converting that into digits. Interesting is that all these processes take less than a
+minute.
+
+Effect of Battery on Health and Environment
+
+We use batteries for various purposes. In torch lights, we use dry cells, buses and
+trucks uses lead-storage batteries etc. These batteries use various metals
+and metallic ions. These are
+extremely harmful for our body.
+Dry cell contains zinc and
+manganese dioxide and
+lead-storage battery contains
+lead (Pb), lead oxide (PbO,),
+etc. According to chemical
+properties, these are toxic and
+carcinogenic. We trash them
+
+anywhere we feel like alter use,
+
+That gives the extreme
+
+Fig $8.12: Battery in a Mobile phone.
+
+hazard of mixing with soil and
+water leading to contamination.
+
+8.5 Nuclear Reactions and Generation of Electricity
+
+Nuclear Reaction
+
+The reaction where the nucleus of an element undergoes a transformation is
+called a nuclear reaction. The electron exchange in any chemical reaction occurs
+from the outermost energy layer of an atom or ion, This leaves the nucleus
+intact, But in the case of nuclear reactions, an electron does not have any role;
+the nucleus undergoes change and nucleus of a new element's atom is formed.
+198 Chemistry
+
+The reaction that results in the amalgamation of smaller nucleus into a larger
+nucleus of an atom or the larger nucleus breaking into a smaller nucleus is a
+nuclear reaction, There are various kinds of nuclear reactions, Fission and
+
+Fusion are the two most significant of them.
+
+Nuclear Fission Reaction
+
+The nuclear process in which the nucleus of
+a larger and heavy element is broken into
+the nucleus of smaller elements is called
+a fission reaction. When we © strike
+a735U nucleus with a neutron at low velocity,
+the nucleus becomes almost equally
+divided into two parts and produces
+‘Ba and 32Kr nuclei 03 neutrons
+(in) and a huge amount of energy. It is Fig 8.13: Nuctear Fission Reaction,
+a nuclear fission reaction,
+
+“320 + gn ——» ‘Ypa+ $2kr +3 in +Huge amount of energy
+
+Nuclear Fusion Reaction
+
+The nuclear process in which a number of nucleus of smaller and light elements
+combine into a nucleus of a larger element is called a fusion reaction, Below is
+an example of a fusion reaction:
+
+tH + {7H ———* $He + jn + Huge amount of energy
+
+Fusion reaction is the basis of a hydrogen bomb.
+
+Nuclear Chain Reaction
+
+Basically, the nuclear fission reactions are nuclear chain reactions. The reactions ta
+that do not require application of extra energy to continue once they startare  %
+2025
+
+Chemistry and Energy
+
+called chain reactions. You have seen, when we
+strike a 733U nucleus with a neutron it breaks
+into one ‘2: Ba and one #2Kr nucleus, 03 neutrons
+(jn) and huge amount of energy. If we can control
+the pace of these three neutrons, they will strike
+other *23U isotopes. That way, more neutrons
+will be produced. These newer neutrons will
+
+again do the same thing if they are brought
+
+©
+
+199
+
+1 He
+ry
+
+under control, resulting in more neutrons. This Fig 8.14: Nuclear Fusion Reaction,
+
+kind of reaction is a chain reaction, The control of nuclear chain reaction is quite
+a complex thing and chain reaction is the basis of electricity generation in
+
+nuclear reactors.
+
+Generation of Electricity
+
+Nuclear reactors are used for power generation. The reactor which helps control
+the chain reactions that occur during a nuclear fission reaction is called a nuclear
+reactor. These reactors can produce huge amount of electricity. The smaller
+elements that are produced during a fission reaction are highly accelerated,
+These smaller elements bombard each other as well as the reactor walls and
+
+produce a huge amount of heat
+energy. This heat is channeled
+through to an elevator chamber
+where it is used for producing
+vapors. The vapors are then
+channeled to run turbines so
+that electricity can be
+produced. In some versions,
+the elevator chamber is situated
+within the reactor. Nuclear
+reactors are used for
+
+Fig 8.15: Nuclear reactor.
+
+200 Chemistry
+
+power generation in many countries of the world. The government of
+Bangladesh has taken the necessary preparation for setting up a nuclear power
+generation facility at Ruppoor of Pabna district. Bangladesh will become
+self-sufficient in electricity once the project is complete. In the near future, all
+off Bangladesh will have electricity coverage.
+
+e Make a Galvanic cell to produce electricity.
+
+Principle: The electrochemical ?
+
+cell where electricity is
+
+generated through a chemical zip. |
+
+reaction is called a Galvanic ‘4node) Copper
+cell. Two rods, one zine rod
+partially dipped in zinc
+sulphate (ZnSQ,) solution and
+one copper rod in copper
+sulphate (CuSO,) solution, are /
+connected by a copper wire to Fig 8.16: Electricity production
+
+make the Galvanic cell. Here in a Galvanic cell.
+
+in the cell, the zinc atom donates two electrons and turns into zinc ion (Zn*").
+The electrons reach the copper rod through the connecting wire, Copper ion
+(Cu*') from copper sulphate solution accepts these two electrons and turns
+into metallic copper. The flow of electrons through the copper wire generates
+electricity. The zinc rod acts as an anode and the copper rod as a cathode in
+the cell,
+
+Zn ———+» Zn*+2e (Reaction in anode)
+
+cu** + 2e° ————» Cu (Reaction in cathode)
+
+LS Zn + Cu’* ———+Zn*+Cu (Reaction in Cell) /
+
+2025
+Chemistry and Energy 201
+
+/ Neibiieey Apparatus and Chemicals: Two beakers, zinc gulps \
+(ZnSO,) solution, copper sulphate (CuSO,) solution, zinc rod, copper rods,
+an LED bulb, a salt bridge or a long piece of wet paper, copper wire etc.
+
+Procedure: Follow the figure and dip the zine rod in ZnSO, and the
+copper rod in CuSO, solution in the two beakers. Now place the piece of
+wet paper following the picture so that the two edges are dipped in the two
+solutions. Now connect the copper wire to the zine and copper rods.
+Connect the copper connector part of the wire to the positive edge of the
+LED and the zine connector part to the negative edge of the LED. The LED
+will light up as soon as the connection is settled. At this stage, the zine rod
+will continue to decay as zine ion continues to go into the solution and the
+copper ion from the solution transfers to the copper rod.
+
+In reality, the above reaction occurs inside the cell. The chemical energy in
+the chemical reaction is transformed into electrical energy here.
+
+Caution:
+
+The two solutions have to be of equal volume.
+
+The bridge has to be maintained properly. a
+
+l.
+i
+a Observing the change of temperature after dissolving samaiseiatann
+chloride (NH, CI) in water
+
+Principle: Ammonium chloride, when dissolved in water, gets ionized in
+the following way:
+NH,Cl ————» NH, + cl
+To break the crystal of ammonium chloride and to get its molecules ionized,
+some energy is required. This energy comes from the water which results in
+the fall of temperature of the water. Thus the dissolving of ammonium
+\ chloride in water is an endothermic reaction. uw
+
+Forma-26, Chemustry Class-9-10
+202 Chemistry
+
+(~ \
+
+Apparatus and Chemicals:
+Beaker, ammonium chloride
+(NH,Cl), distilled water, glass rod
+and thermometer.
+
+Procedure: tet
+
+Take 50 gram distilled water in
+the beaker. Record the
+temperature of water with a Fig 8.17: NH,Cl solution in beaker.
+thermometer. Add 10 grams of
+ammonium chloride in the water,
+
+Stir the ammonium chloride with the glass rod so that the substance is fully
+dissolved. Record the temperature as soon as it is dissolved.
+
+Result: The data collected will show that the temperature of water
+decreased when ammonium chloride was dissolved in it. That proves the
+reaction as endothermic.
+
+Ne /
+
+‘i Tt
+
+The observation of change of temperature adding lime in water
+
+Principle: Lime or calcium oxide added to water undergoes the following
+reaction:
+
+cao ++ HQ = ——» Ca(OH), + Heat
+Calcium oxide Water Calcium hydroxide
+
+This reaction is an exothermic reaction. Therefore, the temperature of water
+along with calcium hydroxide is increased.
+
+Apparatus and Chemicals: beaker, calcium oxide (lime), distilled water,
+lass rod and thermometer.
+
+Nee J
+
+20235
+
+2025
+
+Chemistry and Energy 203
+
+( )
+
+Procedure:
+l. Fill half of the beaker with distilled
+
+water. >
+
+2. Record the temperature of water
+using the thermometer.
+
+3, Add lime or calcium oxide to the
+water in the beaker.
+
+4, Stir the solution in the beaker as the Fig 0.18: Solution af lisse in beakee,
+reaction starts.
+
+5. Record the temperature of water as soon as possible with the
+thermometer. You will see, the temperature is higher than the previous one.
+
+Result: Adding lime to water raises the temperature of water. It is an
+exothermic reaction.
+
+XS S
+
+(?) Exercise
+
+1. How many kinds of conductors are there on the basis of electrical conductivity
+mechanism?
+a, One b, Two
+
+c. Three d. Four
+Answer questions 2 and 3 depending on the picture above.
+
+2. The process of the stem does to iron-
+
+a. is Increased in amount b. prevents corrosion
+
+c. increases strength d. increases purity
+204 Chemistry
+
+3. In the above picture:
+i, Ni is corroded Battery
+ii. Fe acts as an anode +| =
+_ Nickel Tron
+iil. Exchange of electron occurs
+
+Which is correct?
+
+a.i and ii b. ii and iii a
+ec. iand iti iv. i, ii and iii “e
+- 5 F S04" Ni?*
+4, Which of the followings acts as an oxidant in the
+dry cell?
+a, Zn rod b. MnO,
+
+c. Carbon rodd. d. NH,"
+
+5. What is the name of the process of giving metallic coating ona different metal
+
+through electrolysis?
+
+a. Voleanizing b. Metal purification
+
+c. Galvanizing d. Electroplating
+6. Which of the followings is used for striking a nucleus during a nuclear
+reaction?
+
+a. Proton b. Electron
+
+c. Positron d. Neutron
+
+7. Electrolysis of an aqueous solution of NaC] with platinum electrode produces-
+1. Hydrogen gas
+it. Chlorine gas
+
+iii, Sodium hydroxide solution
+
+Which is correct?
+ai &il b. ii & ii
+c. i & tii d. i, ti & iti
+
+£023
+2025
+
+Chemistry and Energy 205
+
+1. (i) Petroleum +0, ——» CO, + H,O + Energy
+
+(ii) "U + ont —» Ba + Kr + 3pm’ + Energy
+(iii) Zn + Cucl, ——» Zncl, + Cu + Energy
+
+a. What is electroplating?
+
+b. Why a salt bridge is used in an electrochemical cell?
+
+c. In the stem, the second reaction is not a chemical reaction. — Explain.
+
+d. Compare the reactions (i) and (iii) in terms of production of energy.
+
+ea Battery
+a. What is a metallic conductor?
+
+b. Why is acidic water called an electrolytic
+conductor? Explain
+
+c. Explain the reaction that occurs in an anode of the
+
+above cell of the picture. Molten MgCl,
+
+d. Explain the necessity of electricity supply to the
+illustrated reaction.
+
+ai i. Electrolytic cell ii. Galvanic cell
+
+a. What is an exothermic reaction?
+
+b.Why are some drops of sulfuric acid required in the electrolysis of
+water?
+
+c. Describe the formation of number (i) cell.
+
+d. Analyze the possibility of electricity production through cell number
+
+(ii).

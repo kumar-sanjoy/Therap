@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gn-select-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(170deg,#3D3D3D, #3D3D3D, #3D3D3D,#6EC1E4,#1e6072);
+}
+
+.gn-select-page:has(.gn-loading-overlay) {
+  pointer-events: none; /* Disable interactions with the page content */
+}
+
+/* Loading Overlay */
+.gn-loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px); /* Add blur effect to background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000; /* Increased z-index to ensure it’s above everything */
+  pointer-events: auto; /* Allow interaction with the overlay itself */
+}
+
+.gn-loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #6EC1E4;
+  border-top: 5px solid #F06292;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.gn-loading-text {
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+/* Header */
+.gn-select-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background: #3D3D3D;
+  position: relative;
+}
+
+.gn-company-logo {
+  width: 150px;
+  height: auto;
+}
+
+.gn-back-button {
+  position: absolute;
+  left: 20px;
+  padding: 0.5em 1em;
+  background-color: #ca3f3f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  min-width: 80px;
+  text-align: center;
+}
+
+.gn-back-button:hover {
+  background: #770808;
+}
+
+/* Main Content */
+.gn-select-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+}
+
+.gn-select-title {
+  color: white;
+  font-family: 'Comic Neue', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* Dropdown Menu */
+.gn-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Orbitron', sans-serif;
+  padding-bottom: 3rem; /* Increased to create more space for dropdown */
+  position: relative; /* Ensure menu creates its own stacking context */
+  z-index: 2002; /* Higher z-index to ensure dropdowns are above other elements */
+}
+
+.gn-menu ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  list-style: none;
+}
+
+/* Top-level Menu Items */
+.gn-menu-item[aria-haspopup="true"] {
+  position: relative;
+  padding: 1em 0.5em;
+  margin: 0 2em;
+  min-width: 10em;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-image: 
+      linear-gradient(#393838, #393838), 
+      linear-gradient(135deg, #6EC1E4, #F06292, #F5A623);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  z-index: 2003; /* Higher z-index for menu items */
+}
+
+.gn-menu-item[aria-haspopup="true"]:hover,
+.gn-menu-item[aria-haspopup="true"]:focus-within {
+  background-image: 
+      linear-gradient(#393838, #393838), 
+      linear-gradient(135deg, #F5A623, #F06292, #6EC1E4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.gn-menu-item:hover .gn-sub-menu,
+.gn-menu-item:focus-within .gn-sub-menu,
+.gn-sub-menu:hover {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+}
+
+.gn-sub-menu {
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: 0;
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+  background-color: #424242;
+  z-index: 2004;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  width: 100%;
+  min-width: 10em;
+  max-height: 300px; /* Set a maximum height for the submenu */
+  overflow-y: auto; /* Enable vertical scrolling when content exceeds max-height */
+  scrollbar-width: thin; /* Firefox: Slim scrollbar */
+  scrollbar-color: #6EC1E4 #424242; /* Firefox: Scrollbar colors */
+}
+
+.gn-sub-menu::-webkit-scrollbar {
+  width: 8px; /* Slim scrollbar width */
+}
+
+.gn-sub-menu::-webkit-scrollbar-track {
+  background: #424242; /* Track color */
+}
+
+.gn-sub-menu::-webkit-scrollbar-thumb {
+  background: #6EC1E4; /* Thumb color */
+  border-radius: 4px;
+}
+
+.gn-sub-menu::-webkit-scrollbar-thumb:hover {
+  background: #F06292; /* Thumb color on hover */
+}
+
+.gn-sub-menu .gn-menu-item {
+  margin: 0;
+  padding: 1.2em;
+  width: 100%;
+  text-align: center;
+  z-index: 2005; /* Ensure sub-menu items are above other elements */
+  background: #555;
+  border-radius: 0;
+  border-bottom: none;
+  transition: background 0.2s ease-in-out;
+  min-height: 3.5em;
+}
+
+.gn-sub-menu .gn-menu-item:first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.gn-sub-menu .gn-menu-item:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.gn-sub-menu .gn-menu-item:hover {
+  background: #666;
+  transform: none;
+  box-shadow: none;
+}
+
+.gn-menu a,
+.gn-sub-menu a {
+  color: #f5f5f5;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.gn-menu a:focus,
+.gn-sub-menu a:focus {
+  outline: none;
+}
+
+/* Test Button */
+.gn-test-button {
+  margin-top: 8rem; /* Increased to create more space below dropdown */
+  padding: 1em;
+  min-width: 12em;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-image: 
+      linear-gradient(#393838, #393838), 
+      linear-gradient(135deg, #6EC1E4, #F06292, #F5A623);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 0; /* Keep low to ensure dropdowns appear above */
+}
+
+.gn-test-button:hover {
+  background-image: 
+      linear-gradient(#393838, #393838), 
+      linear-gradient(135deg, #F5A623, #F06292, #6EC1E4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.gn-test-button:disabled {
+  background-image: 
+      linear-gradient(#666, #666), 
+      linear-gradient(#666, #666);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gn-select-header {
+      padding: 8px 15px;
+  }
+
+  .gn-company-logo {
+      width: 120px;
+  }
+
+  .gn-back-button {
+      left: 15px;
+      padding: 0.4em 0.8em;
+      font-size: 0.8rem;
+      min-width: 70px;
+  }
+
+  .gn-select-container {
+      padding: 1.5rem;
+  }
+
+  .gn-select-title {
+      font-size: 1.5rem;
+  }
+
+  .gn-menu {
+      width: 100%;
+      font-size: 14px;
+      padding-bottom: 2.5rem; /* Adjusted for smaller screens */
+  }
+
+  .gn-menu-item[aria-haspopup="true"] {
+      margin: 0.3em;
+      min-width: 8em;
+  }
+
+  .gn-sub-menu .gn-menu-item {
+      padding: 1em;
+      min-height: 3em;
+  }
+
+  .gn-test-button {
+      min-width: 10em;
+      font-size: 1rem;
+      margin-top: 7rem; /* Adjusted for smaller screens */
+  }
+
+  .gn-loading-text {
+      font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gn-select-header {
+      padding: 6px 10px;
+  }
+
+  .gn-company-logo {
+      width: 90px;
+  }
+
+  .gn-back-button {
+      left: 10px;
+      padding: 0.3em 0.6em;
+      font-size: 0.7rem;
+      min-width: 60px;
+  }
+
+  .gn-select-container {
+      padding: 1rem;
+  }
+
+  .gn-select-title {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+  }
+
+  .gn-menu {
+      font-size: 12px;
+      padding-bottom: 2rem;
+  }
+
+  .gn-menu-item[aria-haspopup="true"] {
+      margin: 0.2em;
+      min-width: 7em;
+  }
+
+  .gn-sub-menu .gn-menu-item {
+      padding: 0.8em;
+      min-height: 2.5em;
+  }
+
+  .gn-test-button {
+      min-width: 8em;
+      font-size: 0.9rem;
+      padding: 0.8em;
+      margin-top: 6rem; /* Adjusted for smaller screens */
+  }
+
+  .gn-loading-text {
+      font-size: 1rem;
+  }
+}

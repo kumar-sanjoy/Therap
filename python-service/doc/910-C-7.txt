@@ -1,0 +1,993 @@
+Chapter Seven
+
+Chemical Reactions
+
+We know, properties, characteristics and changes of substances are the
+topics discussed in chemistry. The elements in nature are constantly changing.
+Transformation to a different state is called a physical change while changing
+into a new element with new properties is called a chemical change. These
+changes occur due to certain physical and chemical reactions. This chapter will
+discuss elaborately on kinds of reactions, rates of reactions etc.
+
+2025
+2025
+
+Chemical Reactions 143
+
+differentiate between physical changes and chemical reactions
+
+identify chemical reactions by analyzing the changes in a substance
+classify the chemical reactions- redox/non-redox, reversible;
+irreversible, endothermic/exothermic and detect the types of reactions
+explain the amount of products gained through chemical reactions in
+terms of Le Chatelier’s principle
+
+detect the type of redox-nonredox reactions by analyzing the change
+explain many reactions taking place in various fields of real life
+
+find out ways to prevent or control the harmful reactions in real-life
+situation (like, ways of prevention of rusting on iron made materials)
+explain and compare concerned reaction rates
+
+examine and compare the reaction speed or rate by using various
+materials
+
+show consciousness in using metal substance in our daily life
+
+show the differences in the reaction rate through experiments
+demonstrate the acid-base neutralization reaction and precipitation
+
+reactions
+144 Chemistry
+
+7.1 Changes of Matter
+
+The substances existing in nature undergo changes due to heat, pressure and
+contact with other substances. There are two types of changes: physical change
+and chemical change.
+
+7.11 Physical Change
+
+All chemical substances consist of one or more elements. Sometimes, changes
+occur only in physical conditions of a substance leaving their chemical structure
+unchanged. This is called a physical change. For example, a solid piece of ice, if
+kept at room temperature, absorbs heat from the environment and gradually
+melts into liquid water. Again, heating liquid water up to 100°C will see the
+water vaporize into air. Here, the molecular formula of all three- water, ice and
+vapor is the same- H,O. That means each molecule of them has the same two
+hydrogen and one oxygen atoms in them. Therefore, all three substances are the
+same, only their physical states are different- ice is solid while water is liquid
+and vapor is gaseous. This kind of change ts called a physical change.
+
+ice +heat water +heat me
+(solid) ~ cold (liquid) cold
+(-heat) (-heat)
+
+7.1.2 Chemical Change
+
+Sometimes, due to the change of external temperature or pressure and contact
+with some other substance, some substances change completely into newer
+substances with newer percent composition of the existing elements. This kind
+of change is called a chemical change, That means, the kind of change that forms
+newer substances with newer set of properties is called a chemical change. The
+new substance formed through chemical change gets the same molecules that
+were there in the original elements. Isolated ions or atoms are formed out of the
+dissociation in the bond of the previous element. These isolated ions or atoms
+later constitute new bonds among themselves and create new molecules. As a
+result, chemical change also implies dissociation of old bonding and formation
+of new bonding too. The gas we use for cooking basically consists of methane
+(CH,). When methane gas is burnt in oxygen, carbon dioxide, water vapor and
+heat energy 1s produced. This is a chemical change.
+
+2025
+Chemical Reactions 144
+
+CHig) + Og) M+ Og) + H,0(l)
+
+Similarly, calcium carbonate reacts with hydrochloric acid and produces
+calcium chloride, carbon dioxide and water. This is also a chemical change.
+
+CaCO; (s) + 2HCl (aq) ———— > CaCl, (aq) + CO, (g) + H,0 ())
+
+7.2 Classification of Chemical Reactions
+
+We can classify the chemical reactions on the basis of following way:
+
+7.2.1 Direction of Reaction
+
+According to direction of reaction, chemical reactions are of two kinds:
+Irreversible reactions and Reversible reactions.
+
+Irreversible Reactions
+
+In irreversible reactions, only the reactants convert to products. Products cannot
+be converted to reactants by a reaction if any one of the products from the
+reaction is removed from the reaction medium. For example, calcium
+carbonate, when heated in a container breaks into solid limestone and gaseous
+carbon dioxide. If the carbon dioxide gas is removed from the container, then
+too, the limestone will not convert back to calcium carbonate. Thus, it is an
+irreversible reaction. Irreversible reactions are written in equations with a right
+faced arrow (—) mark in the midst of reactants and products.
+
+CaCO, (s) neat CaO (s) + CO,(g)
+
+Reversible Reactions
+
+In a reversible reaction, the reactants react and convert to products and the
+products react again and revert to reactants. In reversible reactions, two
+reactions continue simultaneously. In one reaction, the reactants react and
+
+Forma-19, Chemistry Class-9-10
+146 Chemistry
+
+produce the product, which is called a forward reaction. In the other one, the
+products react again and convert to the reactant, which is called a backward
+reaction. Reversible reactions are written m the equation with double headed
+half arrow marks in the midst of reactants and products. For example, ethanol
+and ethanoic acid react in the presence of hydrochloric acid and produce ethy]
+ethanoate ester and water. Conversely, ethyl ethanoate ester and water react with
+each other and produce ethanol and ethanoic acid. In an equation, it can be
+
+shown as,
+HC]
+CHOH + CH,COOoH = <——— CH,COOC;H, + H,0
+Ethanol Ethanoic acid Ethyl ethanoate ester Water
+
+Similarly. hydrogen and iodine react and produce hydrogen todide as a product
+and this product again converts into hydrogen and iodine. This is also a
+reversible reaction.
+
+——s
+
++l =
+
+ZHI
+
+Indeed, all reactions are reversible reactions, but in some reactions, the
+backward reaction is of so slow rate, that they appear to be irreversible
+reactions.
+
+7.2.2 Heat Change and Reactions
+
+You have already learned that heat change is a factor in chemical reactions.
+According to absorption of heat and generation of heat, reactions are classified
+into two categories: exothermic reactions and endothermic reactions.
+
+Exothermic Reactions
+
+When heat evolves at the time of producing the products from the reactants, the
+reaction is called an exothermic reaction. For example, | mole nitrogen and 3
+moles hydrogen in the Heber process produce 2 mole ammonia and 92 kilojoules
+of heat. The reaction 1s:
+
+Fe.
+
+N; (g) + 3H, (g) ————_ 4g) + 22K
+200-250 atm
+450°C-550°C
+
+20235
+2025
+
+Chemical Reactions 147
+
+Here, ground Fe acts as the catalyst. According to the balanced equation, the
+heat change during a reaction is called reaction heat. It is denoted by AH. If heat
+is evolved during a reaction, its value is negative.
+
+Fe
+N; (g) + 3H; (g) —————__ NH (g) | AN=-92
+200-250 atm
+
+450°C-550°C
+
+Endothermic Reactions
+
+When heat is absorbed at the time of producing the products from the reactants,
+the reaction is called an endothermic reaction. 1 mole nitrogen and 1 mole
+oxygen react and produce 2 moles nitric oxide. When they do so, they absorb
+180 kJ heat. This is an endothermic reaction.
+
+N.(g) + O2(g) + 180 kj ——_ 2NO(g)
+
+Here also, we can use the symbol of heat AH. In endothermic reactions, the value
+of absorbed heat is positive.
+
+N(g) + O3(g) — 2NO(g) ; AH =+ 180 kj
+
+7.2.3 Electron Transfer
+
+Depending on electron transfer, reactions can be divided into two types: redox
+reactions and non redox reactions.
+
+Redox Reactions
+
+The term Redox combines the initial part of Reduction, Red and the initial part
+of Oxidation, Ox. It means oxidation-reduction. In redox reactions, there occurs
+an electron transfer in the reaction. A reactant donates an electron and the other
+reactant receives that electron. That means, a redox reaction is divided in two
+parts. In one part, the donation of the electron takes place which is called
+oxidation half reaction. In the other half, the other reactant accepts the donated
+electron, which is called the reduction half reaction. The reactant which donates
+the electron in such a reaction ts called reductant and the one which accepts the
+electron is called oxidant.
+148 Chemistry
+
+Na++Cl, ——* Nacl
+
+Here, Na is donating an electron as tt is a reductant substance and conversely, Cl
+is accepting that electron as it is an oxidant substance.
+
+The reaction m which electron donation of an atom occurs or positive charge of
+that atom increases or negative charge of that decreases is called an oxidation
+reaction.
+
+Fe2+ > Fe? + e~ [oxidation reaction]
+
+Na > Nal + e [oxidation reaction]
+
+The reaction in which an atom accepts an electron or the positive charge of an
+atom decreases or the negative charge of an atom increases is called an reduction
+
+reaction. ;
+cf+e — cP [reduction reaction]
+
+cu2++ e + Cul [reduction reaction]
+
+Oxidation Number: Atoms in molecules or radicals sometimes tend to donate
+electrons and sometimes tend to accept electrons. The tendency to donate an
+electron of an atom is denoted by a number added with a plus (+) mark and the
+tendency to accept an electron of an atom is denoted by a number added with a
+minus (-) mark. In any molecule or radical, this number with plus or minus mark
+
+is the oxidation number.
+
+The oxidation number of neutral atoms like Na, My. Fe etc. are taken to be zero
+(0). Similarly, atoms in molecules that consist of homogenous atoms like H,, O,,
+N, CL, Br, ete. are regarded to have oxidation number of zero.
+
+The oxidation number of Fe in FeSO, is +2 while the oxidation number of the
+same atom in Fe metal is 0.
+
+Determining Oxidation Number: In a compound the oxidation number of an
+element depends on the oxidation numbers of other elements of the compound.
+To determine the oxidation number of an element in a compound, standard
+
+oxidation numbers of other elements is used.
+
+£023
+2025
+
+Chemical Reactions 149
+
+Table 7.01: Oxidation Number of Atoms in Different Compounds.
+
+: Formula of | Element and
+Rule of Oxidation Number Co ~ Oxidation
+ompoune’ | Number
+| Oxidation number of metals is positive and | Nacl Na = +1
+| oxidation number of nonmetals is negative Cl=:-1
+Oxidation number of a neutral or free elementis | Fe, H, Fe =
+| Zero H=0
+Total oxidation number of atoms of a neutral | 129 Bate
+‘ O = -2
+compound is zero
+GIG = 2
+Total Oxidation number of atoms of a charged | 50,7, NH, | SOZ= -2
+_ ion is equal to their charge NH, = +1
+_ Oxidation number of alkali metals is +1 Kel, K,CO, | K = +1
+Oxidation number of alkaline earth metals is +2 | 89, Mg50O,4 | Ca = +2
+—_— : _| Me = +2
+Oxidation number of halogen in metal halide is -1) mgcl,, Licl | Cl = -1
+| In most compounds, Oxidation number of hydrogen is) ;WEL. LiAIH, | H = +1
++1 but Oxidation number of hydrogen in metal * °
+| hydride is -1 Hi=<t
+_In most compounds (oxides), Oxidation number of | K,0, CaO O=-2
+oxygen is -2 but Oxidation number of oxygen in 0, H,0 Buwt
+peroxide is -1 and Oxidation number of oxygen in|“? "7"? 7 =
+superoxide is -1/2 (i.¢.- 0.5) NaOy KO, ian
+
+1, Let us suppose the oxidation number of the atom in a compound or ion that is
+to be determined is x.
+
+2. Oxidation numbers of all elements in the compound or ion are to be
+multiplied with their respective number of atoms and then their total is to be
+found.
+
+3, In the case of molecules, the total will be zero (0) and in the case with ions, it
+will be equal to its number of charges added with the marks. For example, we
+need to determime the oxidation number of central atom Mn im KMn0O,.
+Suppose, the oxidation number of Mn is x, oxidation number of K is +1 and O
+is -2. The total in the formula presented above will be equal to the oxidation
+150 Chemistry
+
+number of KMnO,. KMnO, is a charge neutral molecule, therefore, its charge is
+
+0. So,
+(+1)x1 + xx1 + (-2)x4 =0
+Oo k= 7
+
+The oxidation number of Mn is +7.
+
+4. Apart from metal hydride (like LiH, LiAIH:) the oxidation number of
+hydrogen is generally +1. Apart from the exceptions mentioned in table 7.01,
+the oxidation number of oxygen is -2,
+
+Determining the oxidation number of S$ in H,SO,
+Suppose, the oxidation number of 8S =x
+Therefore, (+1)x2 +x + (-2)x4 =0
+
+Or, x =6
+
+The oxidation number of § in H,SO, is +6
+
+Find out the oxidation number of the elements written in red colour among
+the following compounds: CuSO,, HNO,, H,PO,, MnO,, K,Cr,O,, Na,5,0,,
+Cul.
+
+Given: Oxidation numbers of Cu = +2, 0 =-2, H=+1, K=+4+1, Na=+1,1=
+-1.
+
+es al
+
+Oxidation number and valency are not the same. Oxidation number is the
+number of charges in an atom or ion along with its sign. It may be positive or
+negative, integer or [raction. The oxidation number of an element may vary in
+different compounds. On the other hand, valency is the capacity of an element to
+bond with other elements. It is always an integer and is never positive or nega-
+tive. Only, in the case of inert gases, the valency is zero.
+
+2025
+2025
+
+Chemical Reactions 131
+
+Oxidation-reduction is a simultaneous process: You already know what ts
+oxidation and what is reduction and what is an oxidant and what is a reductant.
+Oxidation-reduction reactions takes place simultaneously. Let us consider the
+reaction below:
+
+Na +5 Cl —— Nacl
+
+Here, the reduction agent Na has donated one electron from its outermost shell
+to complete the oxidation half reaction. The oxidant Cl
+has accepted that electron and completed the reduction half reaction.
+
+Oxidation half reaction Na° + Na* + e
+Reduction half reaction c]®« e —s c]
+Tf we add these two half reactions, we get the oxidation-reduction reaction.
+
+Na®+ Ci? Nat + cl = Nacl
+
+It is clear here that the reduction agent has donated the electron to the oxidation
+agent. If oxidation agent Cl wouldn’t accept the electron, the reduction agent Na
+would not have been able to donate the electron. So, it can be said, oxidation and
+reduction will occur together, They are simultaneous processes.
+
+Since the reductant donates an electron and the oxidant accepts that electron,
+therefore, oxidation-reduction is actually the transfer of electrons.
+
+There are some reactions where oxidation-reduction occurs. They are:
+1. Addition Reaction
+
+2. Decomposition Reaction
+
+3. Substitution or Displacement Reaction
+
+4.Combustion Reaction
+152 Chemistry
+
+1. Addition Reaction: A reaction in which a new compound is formed by
+combination of two or more elements or molecules is called an addition
+reaction. For example, chlorine adds with ferrous chloride and produces ferric
+chloride:
+
+2FeCl,(aq) + Clg) ————— FecCl,{aq)
+
+Similarly, hydrogen gas combines with nitrogen gas and forms ammonia gas:
+N, + 3H, —M———» 2NH,
+
+However, the addition reaction where two or more elements combine together to
+form a new compound is called synthesis. According to this definition, the
+reaction for ammonia gas is also a synthesis.
+
+2. Decomposition Reaction: The process in which a compound breaks into one
+or more elements or molecules is called a decomposition reaction. For example,
+when heat is applied on phosphorus pentachloride, it decomposes into
+phosphorus trichloride and chlorine.
+
+heat
+PCI, a PCl, + Ch
+
+Similarly, one water molecule decomposes to produce two different molecules
+on electrolysis, Hydrogen and oxygen are produced in cathode and anode.
+
+electrolysis
+
+2H,0 (1) ————> 2H,(2) + O,(g)
+
+3. Substitution or Displacement Reaction: The process in which an element or
+radical displaces another element or radical from a compound and takes its place
+is called a substitution reaction. For example, zine metal displaces hydrogen
+from sulfuric acid to form zine sulfate and hydrogen gas:
+
+Zn(s) + H,S0,(1) ——————* 2ZnS0,(aq) + H,(g)
+zinc sulfate
+
+2025
+Chemical Reactions 153
+
+4. Combustion Reaction: The process in which
+any compound or element is burnt in the presence
+of atmospheric oxygen and converts to oxides of
+its elements is called a combustion reaction.
+
+«
+a | SP ee
+
+Usually heat is evolved in combustion reactions. €. Nisa? P)
+Pt ee o es add
+
+This process also involves electron exchange, For
+
+example, natural gas or methane reacts with
+oxygen of air and produces carbon dioxide and Fig 7.01: combustion of fuel.
+water.
+
+CH,(g) + 20,(g) ————* C0,(g) + 2H,0(g) + Heat
+Similarly, S, C, Mg and H, produce their oxides and heat evolves when they are
+burnt.
+
+S(s) + O2(g) ——— > $0,(g) + Heat
+c(s) + O{g) Mm———~ cColg) + Heat
+2Mg(s) + O.{g) —mMm—» 2Mg0(g) + Heat
+2H,(g) + O{g) m+ 2H,0(g) + Heat
+
+In all combustion reactions, oxygen accepts an electron donated by the other
+element or compound. Therefore, this kind of a reaction belongs to the
+oxidation-reduction type.
+
+Non Redox
+
+There are some reactions where electron exchange does not occur. These
+reactions are called non-redox reactions. In this kind of reaction, there is no
+involvement of increase or decrease of oxidation number of any reactant because
+there is no electron exchange. Some of these kinds of reactions are discussed
+below: (1) Neutralization reaction (2) precipitation reaction etc.
+
+1. Neutralization Reaction: An acid and a base react with each other and
+neutralize into salt and water, in some reactions, which ate known as
+neutralization reactions. They are also known as acid-base reactions. NaOH and
+HCl, for example neutralize each other and convert to NaCl salt and water:
+
+HCl(aq) + NaOH(aq) ——————* Natl(aq) + H,0())
+
+Forma -20, Chemistry Class-9-10
+154 Chemistry
+
+Heat always evolves from neutralization reactions. That is to say, neutralization
+reactions are exothermic. When both the acid and base are strong, the evolved
+heat amounts to AH = -57.34kJ. In this kind of a reaction, the acid provides the
+hydrogen ion (H*) while the base provides the hydroxide ion (OH). These two
+ions then react and produce water. In NaCl solution, sodium ion is Na’ and
+chlorine ion is Cr.
+
+H* + Cl + Nat + OH” ———_+ Nat +Cl +H,0
+
+In this solution, the two ions Na*, Cl do not participate in the reaction. They are
+called spectator ions. The actual equation of a neutralization reaction is:
+
+Ht+OH ——> H,0+ 57.34kj
+
+Finally, neutralization reaction is the water producing reaction by means of H*
+and OH- ions. Whatever the strength of both the acid and the base we take in this
+kind of reaction they will provide the same ions and produce water. The amount
+of heat that evolves to produce | mole water is called neutralization heat.
+Calculation tells us that it evolves 57.34 kJ heat.
+
+Demonstration of the Neutralization Reaction. Y
+Take 10 mL NaOH solution in a beaker. Take HCl! solution in another
+beaker. Dip a blue litmus paper in the solution. Now use your left hand to
+pour HCI solution with a dropper in the NaOWl solution, Simultaneously
+use a glass tube m your right hand to stir and mix the solutions. The
+moment the blue litmus paper turns red, you will understand HC] has
+neutralized the NaOH solution.
+
+Me HCl(aq) + NaOH(ag) —————® NaClaq) + H,00) /
+
+20235
+2025
+
+Chemical Reactions 153:
+
+2. Precipitation Reaction: When two soluble compounds are mixed in a certain
+solvent and if any new compound is produced that is insoluble or sparsely
+soluble in that solvent, the compound settles at the bottom of the container as a
+solid. This new solid compound at the bottom is called the precipitate. The
+reaction in which the produced compound settles at the bottom of the container
+as precipitate is called the precipitation reaction. For example, when silver
+nitrate (AgNO,) solution is mixed with sodium chloride (NaCl) solution, they
+react to produce silver chloride and sodium nitrate. NaNO, is highly soluble in
+water, so it remains dissolved in the solution. But since solubility of AgCl is
+sparse, it settles at the bottom as precipitate:
+
+NaCl(aq) + AgNO,(aq) oe Agcl(s)| + NaNO;(aq)
+When you add barium chloride (BaCl,) solution with sodium sulfate (Na,SO,)
+solution, they produce barium sulfate (BaSO,) and sodium chloride (NaCl).
+Barium sulfate is precipitated.
+
+Na,SO,{aq) + BaClaq) ————*  BasS0,(s)| + 2NaCl(aq)
+However, there are some precipitation reactions in which there occurs an
+electron exchange. You will know about them in higher classes.
+
+fi ™)
+Demonstration of a Precipitation
+a. Reaction.
+SONIOn
+ofNaOH | * TT In a test tube, take 2-3 mL ferrous
+sulfate solution and add NaOH solution
+Aqueous |_| =| | = ecu that in drops. You will see a green
+solution affa(on, precipitate is forming gradually and
+of Fes, settling at the bottom of the tube.The
+Se two chemical compounds are forming
+Fig 7.02: Precipitation Reaction. solid Fe(OH), precipitate here:
+FeSO, + NaOH ——> _ Fe(OH), | + NajSO,
+
+156 Chemistry
+
+The precipitate compound is denoted by a bottom-faced arrow mark (| )at its
+right.
+
+7.3 Special Types of Chemical Reactions
+
+There are some chemical reactions which do not fall in the redox and non-redox
+classifications, Some of them are discussed below:
+
+Hydrolysis Reactions: The chemical reactions. in which water as a reactant
+reacts with other compounds and produces some new compounds is called
+hydrolysis. Example:
+
+sicl, + Ho os 5i(OH), + 4HCl
+
+Here, SiCl, and H,O are participating in a reaction so it is a hydrolysis reaction.
+This kind of reaction sometimes produces non-transparent soluble compounds.
+In that case, the reaction may be considered as a precipitation reaction. The
+following reaction can be classified as both a hydrolysis reaction and a
+precipilation reaction:
+
+Alcl(s) + 3H,00) M——* Al(OH),(s) + 3HClI(aq)
+
+Here, Al(OT1), is non-soluble in water.
+
+Hydration Reaction: One or more molecules of water combine with ionic
+compounds during formation of a crystal lattice. This kind of reaction is called a
+hydration reaction. Water molecules that combine with ionic compounds is
+called lattice water or hydrated water. For example, 5 moles water (5H,O0)
+combines with copper sulfate (CuSO,) and produces pentahydrate copper sulfate
+(CuSO,.5H,Q).
+
+CuSO, + 5H,0 ——_—"_+ CuSO,.5H,0
+
+Penta hydrated copper sulfate
+
+There are many such reactions:
+
+£023
+2025
+
+Chemical Reactions 157
+
+7ns0, 4 7H,0 ——___» Z2n5Q0,.7H,0
+Heptahydrate Zinc Sulfate
+
+FeSO, a 7H,O = FeSO4.7H,0
+Heptahydrate Ferrous Sulfate
+
+CaCl, + 6H,0 oo CaCl,.6H.0
+
+Hexahydrate Calcium Chloride
+MgCl, + 7H,0 ——+ __ MgCl.7H,0
+
+Heptahydrate Magnesium Chloride
+
+A hydration reaction is basically similar to an addition reaction. However, in
+addition reactions, there is electron exchange while in hydration, there is none.
+
+Isomerization Reaction: Two compounds with similar molecular formula but
+with different properties are called isomers of each other. A chemical reaction in
+which atoms in a molecule rearrange themselves to form one isomer from
+another isomer is called isomerization. For example, H,N,CO molecular
+formula denotes two compounds with varied structural formula: NH,CNO
+(ammonium cyanate) and urea (H,N-CO-NH,). They are isomers of each other.
+When heat is applied to ammonium cyanate, it produces urea.
+
+Heat
+NH,CNO ————+» H,N-CO-NH;
+
+Polymerization Reaction: A large number of molecules of the same compound
+combine together to form a large molecule of heavy atomic mass, at high
+temperature and pressure and in the presence of a catalyst. This reaction 1s called
+polymerization. In such cases, the large molecule is called a polymer and each of
+the smaller molecules that combine together are called monomers. Under the
+effect of 1200 atm. pressure, 200°C temperature and O, catalyst, numerous
+smaller molecules of ethylene combine into a large polymer molecule of
+polythene. This reaction is polymerization reaction of ethylene. Here, ethylene
+molecules are the monomers while polythene molecule is the polymer. In the
+equation, n denotes the number of molecules. fi
+
+Zz
+
+n(CH,=CH,) —_———> (-CH)-CH2-),
+200°C, 1200 atm
+158 Chemistry
+
+7.4 Examples of a Few Real Life Chemical Reactions
+
+7.4.1 Chemical Reactions in Reality
+
+We observe many happenings around us everyday which are caused by chemical
+reactions. Examples:
+
+1. Rust on Iron: We use various instruments made of tron everyday like knife,
+scissors, machete etc. If we keep them exposed in open air, they undergo rusting.
+Here, iron undergoes reaction with oxygen and water vapor and produces ferric
+oxide. Since rust is fragile in nature, oxygen and water vapor from air pass
+through it and continue to corrode the iron. Thus the whole object made of iron
+is ruined.
+
+2Fe + 1.50, + 3H,0 —————» _ 2Fe(OH),
+2Fe(OH), —————+ ___ Fe, 0,.nH,0
+Rust
+
+The number of moles of water in rust is not fixed. That is why, the formula of
+rust is Fe,0;.nH,0 Here, the value of n can be 1, 2, 3, 4..... ete. integers.
+
+Z. Prevention of Corrosion of Copper and Aluminum: We also use copper-
+aluminum products in our day to day life. When products made of Cu and Al
+come in touch with open air, they produce a layer of CuO and ALO,. This layer
+acts to prevent the air to come in direct contact with Cu and Al and no more
+reaction takes place. Thus the decay of Cu and Al is prevented.
+
+3. Relief from the bite of ants and Bee: When ants or bees bite us, we feel pain
+at the spot of the bite. We use lime on that spot to get relief from the pain. The
+ant in its mouth or the bee in its sting carries an acid which is the cause of our
+pain. The lime (base) reacts with that acid and neutralizes it. As a result, we are
+relieved of the pain.
+
+2025
+2025
+
+Chemical Reactions L59
+4, Energy Produced through Respiration: Respiration occurs in every cell of
+our body. In respiration, basically, the glucose (C,H,,0,) molecule is oxidized by
+Q, and in the process CO,, H,O and energy is produced.
+
+CHy20, + 602
+
+6CO, + 6H,O +Entergy
+
+The digestion system in the human body forms excess HCI in many of us. To
+neutralize this acid, many doctors prescribe an antacid type medicine. Antacid is
+a mixture of Mg(OH), and Al(OH),. These two bases neutralize excess HC] and
+the patient feels relieved. The equation of the reaction 1s:
+
+2HCl + Mg(OH), —— Mel, + 2H,0
+
+3HC] + AN(OH); MH» Alcl, + 3H,0
+
+5. Natural Gas as Fuel: Natural gas is used as fuel. Maximum percentage of
+natural gas is composed of methane. When this methane gas is burnt m oxygen,
+it produces CO,, H,O and heat. When we burn CNG, diesel, petrol, kerosene and
+octane, they produce the same products.
+
+CH, +20, ——————> CO, + 2H,0 + Entergy
+7.4.2 Ways of Prevention of Some Harmful Reactions
+
+Many products around us are continuously being decayed or eroded due to some
+chemical reactions, We can make use of our knowledge of chemistry to prevent
+such decaying and save many of them.
+
+(i) To prevent corrosion of rust on iron, one can paint the outside of the tron
+products so that it does not come in contact with air, A coating of a comparatively
+less active metal on iron through electrolysis. which is called electroplating, can
+also save iron from rusting. The process which lays a coating of zine on other
+metals is called galvanizing and the process of tin plating lays a tin coating. The
+process which lays a coating of a metal on other metals through electrolysis is
+called electroplating. This way we can save metals from corrosion.
+160 Chemistry
+
+(ii) The roofs and yards of our houses become slippery during the rainy season.
+We spread sand on those slippery spots. The slippery substance is alkaline.
+Therefore, it requires some acidic substance to be neutralized. Sand (S10,) is
+acidic. This sand neutralizes the alkaline there.
+
+(ili) Sewing needles are kept in coconut oil. The reason is to prevent it from any
+reaction with oxygen and water vapor of air and get corroded.
+
+7.5 Rate of Reaction
+
+We know, in any reaction, reactants convert to products. Some reactions take
+less than 1 second while, some take quite a lot of time.
+
+The amount of products produced from reactants per unit time is called
+the rate of reaction.
+
+Fig 7.03: Reactions with Different Rates. Rust on won, corabustion of candle, Explosion
+of bomb.
+
+For example, when AgNO, is added to the NaC] solution, it takes less than |
+second to create the white precipitate of AgCl. On the other hand, it takes years
+for a bridge to rust. Reactions that take less time have a higher rate of reaction
+and reactions that take more time have a lower rate of reaction.
+
+2025
+Chemical Reactions 161
+
+Experiment on Rate of Reaction
+
+Take four test tubes and mark them 1, 2. 3, 4. Take an approximate
+amount of 0,5 mg sodium carbonate (Na,CO,) or washing soda in each of
+them. Then add normal water to tube 1 and 2 and hot water to 3 and 4,
+Now add 1 mL lemon juice (citric acid) or vinegar (4-10% acetic acid) to
+tube number 2 and 4, Observe the following changes:
+
+eae =
+ea
+
+yinegar/ feng juice
+
+Fig 7.04: Reaction between sodium carbonate and acetic acid or vinegar,
+
+1. Which of the test tubes produces gas bubbles?
+
+2. Which of the test tubes does not produce gas bubbles?
+
+3. Which test tube produces the maximum number of gas bubbles?
+4. Which test tube produces the minimum number of gas bubbles?
+
+Think: Why does gas come out in a larger amount from one of the tubes
+of number 2 and 4?
+
+Forma-21, Chemistry Class-9-10
+162 Chemistry
+
+The above experiment tells you all test tubes do not give the same amount of
+
+product at a certain time
+
+7.5.1 Le Chatelier’s Principle
+
+In some reactions products react and turn into reactants again. When the
+reactants react and produced a new substance that is called a lorward reaction.
+When the products again react and revert back to reactants they are called
+backward reactions. At the start of the reaction, the [orward reaction has a higher
+rate. It decreases gradually with the progress of time. Again, at the start, the rate
+of the backward reaction remains slow bul il increases gradually with the
+progress of time, At a stage, both the rates become equal. This state is known as
+equilibrium of the reversible reaction.
+
+*
+
+Rate of forward reaction
+Rate of both reactions is equal
+
+Rate of backward reaction
+
+time r
+
+Rate of reaction
+
+a
+
+Reactant
+
+equilibrium. concentration
+of both reactant and product
+are unchanged.
+
+Product
+
+Concentration
+
+lime -
+
+Fig 7.05: Chemical equilibrium.
+
+Both forward and backward reactions continue in equilibrium, the amount of
+reactants that have already turned into products in the forward reaction, are equal
+to the reactants that have been produced in the backward reaction at this state.
+Therefore, it appears that the reaction has stopped but in reality it has not.
+However, in equilibrium, if we change the parameters of the reaction such as
+temperature, pressure and
+
+Pa
+=
+a
+2025
+
+Chemical Reactions 163
+
+concentration etc. the equilibrium also changes. Increase and decrease of
+products in equilibrium of a reversible reaction is controlled by the Le
+Chatelier’s principle. The principle is:
+
+At the equilibrium of reversible reactions, if any of the factors (temperature,
+pressure and concentration of reactant) is changed, the equilibrium position
+will shift in such a way that the effect of factor 1s neutralized,
+
+Explanation of Le Chatelier’s Principle:
+
+The effect of temperature, pressure and concentration of reactants in equilibrium
+can be explained by the Le Chatelier’s principle.
+
+Effect of Heat
+
+Let us consider a reversible reaction:
+
+N, + 3H, —— 2NH, + 92 kj]
+
+The forward part of this reaction is exothermic; when reactants N, and H, react
+to produce NH, they also evolve heat. Conversely in the backward part, when
+NH, converts to N, and H,, it absorbs heat. Therefore, heat is required to be
+applied. Now we shall see according to Le Chatellier’s principle, what will
+happen as we apply heat to this reversible reaction. According to the principle,
+if heat is applied, the effect due to that heat has to be neutralized. Application of
+heat will increase the forward reaction, increasing production of heat and that
+will not neutralize the heat. If the reverse reaction is increased, that will absorb
+more heat and neutralize the excess heat. Therefore, according to Le Chatelier’s
+principle, we can say that, if heat is increased, the reverse reaction will also
+increase. In other words, the effect of application of heat in exothermic reactions
+will drive the equilibrium state to the left side, meaning. NH, converts into N,
+and I1,.
+
+In the same way, we can say, decrease of temperature in equilibrium will
+increase the exothermic forward reaction and neutralize the effect of lesser heat.
+164 Chemistry
+
+The equilibrium will shift from left to nght. Reactions that are not affected by
+temperature will not have any effect on its equilibrium too.
+
+Let us consider another reaction:
+
+N2 + 0, + 180 kj — 2NO
+Application of heat to this reaction will increase the forward endothermic
+reaction or the equilibrium will shift left to right; N, and O, will react and
+produce NO. In equilibrium. if heat is decreased, the reverse exothermic reaction
+
+will increase reversing the equilibrium right to left; NO will convert into N, and
+
+0
+
+i
+Effect of Pressure
+
+In equilibrium of gaseous reactions, equilibrium of the reaction will change with
+the change of pressure. In equilibrium, change of the total number of moles of
+reactants and of products will create effect of pressure. Example:
+
+Ng) + 3H{g) ——— > __2NH;(g)
+
+According to Le Chatelier, if pressure is applied, the effect of increased pressure
+has to be neutralized. In the same volume, the gas with the greater number of
+moles has the greater pressure and the gas with the smaller number of moles has
+smaller amount of pressure. In the above reversible reaction, the gaseous
+product has the greater number of moles (1+3 =4) whereas the right side has the
+smaller number (2). So, to neutralize the effect of increased pressure, the
+gaseous substance has to shift from larger number to smaller number. The
+forward reaction will increase and N, and H, will produce NH. In other words,
+the equilibrium will shift from greater moles to smaller moles. So, if pressure is
+decreased at equilibrium, according to the principle, to neutralize the effect of
+decreased pressure, the equilibrium state will shifl toward greater moles from
+smaller moles.
+
+We can consider another reversible reaction:
+
+N,(g) + 0g) ———— > __2NO(g)
+
+£023
+2025
+
+Chemical Reactions 165
+
+Tn this reaction, mole number of reactants is (1+1}) = 2 and mole number of
+product is also 2. Since this reaction has no change in the number of moles, there
+is no change in pressure too. The reaction does not show any effect of
+pressure on its equilibrium,
+
+Effect of Concentration
+
+Equilibrium of all reactions are effected by the concentration of reactants. If in
+the equilibrium state of the reaction, the concentration of any reactant is
+increased, Le Chatelicr says the concentration of the reactantant has to be
+decreased in order to neutralize the effect of increased concentration. Similarly.
+if the concentration of any product is increased, the amount of product is
+neutralized as the reaction reverts and the concentration of reactants is increased.
+That means, the equilibrium shifts toward left.
+
+1. Which of the following acids is present in vinegar?
+a. citric acid b, acetic acid
+c. tartaric acid d. ascorbic acid
+
+2. Which can be used in the wound of bee stinging?
+a. lime b. vinegar
+c. table salt d. water
+
+3. What type of reactions occur when antacid medicine is taken?
+a, neutralization b. combustion
+c. addition d. substitution/displacement
+166 Chemistry
+
+4. In the reaction ,S0,+ MgO ——+
+i. heat is produced
+ii. electron transition occurs
+lil. precipitation occurs
+Which is correct?
+a. b. ii and iii
+c. Land ii d.i, and i
+5. The reaction 2FeCl, + Cl, > 2Fecl,
+1. Isomerization reaction
+
+ii. redox reaction
+iii, addition reaction
+
+Which is correct?
+aiand i ba and i
+c. liand ii d.i, ii and iii
+
+6. What is the oxidation number of Sulfur in H,SO,?
+
+a, +2 b. +4
+c. +6 d.+8
+
+1.Both Opu and Setu use natural gas for cooking. Although there are black
+shades at the bottom of pans in Opu’s house, there is none on the pans at
+Setu’s house.
+
+a. What is irreversible reaction?
+b. What is meant by chemical equilibrium?
+c. What type of reactions occur during cooking in their houses? Explain.
+
+d. In your opinion, in which of the houses of the stem, gas is wasted during
+cooking? Give reasons for your opinion.
+
+2025
+2025
+
+Chemical Reactions
+
+Z Pb(NO,),+ 2K1. 3————
+
+The table below is filled up in the light of the above reaction [K= 39,
+
+167
+
+I= 127):
+Containes Container) Container Container Total |
+Element | 2 Fl 4 | Volume Eccoieetion
+used (mL) |
+Volume of 0.2 |
+Volume of water (mL) 2 | 10 Yellow
+Volume of 0.5 M KI (mL) 1 1 |4
+'Total volume of solution |
+‘of each container . . % 7
+
+a. What is an exothermic reaction?
+
+b. Why aren’t periodic number and valency the same? Discuss
+
+c. What is the total amount of KI used in the period? Determine.
+
+d. Which container will contain more yellow solution? Explain with reasons.
+
+Na+=Cl, ——> Nacl
+
+an + HySO, —— AnSO, + Hy
+
+a. What is an isomerization reaction?
+
+b. What do you understand by a reversible reaction?
+c. Determine the oxidation number of sulfur in the product subsiance of the
+
+2c reaction.
+
+d. In the first reaction of the stem, redox- occurs simultaneously. Analyze.

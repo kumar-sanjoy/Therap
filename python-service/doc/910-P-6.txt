@@ -1,0 +1,934 @@
+Chapter Six
+Effects of Heat on Matter
+
+Heat is a kind of energy. From the concept of energy we may think that heat
+flows always from higher heat energy to lower heat energy, but it is not true. In
+which direction heat will flow, depends on the temperature. In this chapter we
+will see how we can measure heat or temperature and what is the relation
+between them.
+
+Actually heat energy comes from the motion of molecules, atoms or their
+vibrations. If the vibration of molecules of any solid object is increased to a great
+extent, then molecules may go far from another one, that is, a change of state
+may occur. In this chapter we will discuss the effect of heat on solids, liquids and
+gases.
+
+2025
+Effect of Heat on Matter 161
+
+® By the end of this chapter we will be able to-
+
+explain heat and temperature.
+
+explain the thermal properties of matter.
+
+analyse the relationship among Fahrenheit, Celsius and Kelvin scale.
+explain the increase in temperature with the increase of internal energy
+of the substances.
+
+explain the thermal expansion of substances.
+
+explain the expansion in length, area and volume of a solid.
+
+explain the real and apparent expansion of liquids.
+
+explain specific heat and heat capacity.
+
+explain the principle of measurement of heat.
+
+explain the effect of heat in changing the state of matter.
+
+explain melting, vaporization and condensation.
+
+explain melting and boiling point.
+
+explain the effect of pressure on melting point.
+
+explain boiling and evaporation.
+
+explain the latent heat of fusion and vaporization.
+
+explain the cause of cooling and evaporation.
+
+explain the influence of factors on vaporization.
+
+Forma-21, Physics, Class 9-10
+162 Physics
+
+6.1 Heat and Temperature:
+
+Heat is a kind of energy. We have seen that energy can do work. By applying
+force it is possible to displace a body in the direction of the force, for example
+heat is produced by burning fuel oil in a train or a car and this produced energy
+creates motion in the train or car. So this new form of energy is called heat
+energy like light, electricity or kinetic energy.
+
+It is interesting that if we could see on the molecular level i.e., looking at any
+substance if we see its molecules, we should call it "kinetic energy" instead of
+the "heat energy". Because what we mean by heat energy is actually nothing but
+the combined kinetic energy of the molecules of a substance. When the
+molecules of a solid are heated then the molecules vibrate about their fixed
+positions. The more the molecules are heated, the more the vibration increases.
+If the molecules are heated enough the molecules become free by overcoming
+the intermolecular forces among them. Then we call it a liquid. Then the
+molecules move randomly among themselves. Since the molecules are in
+motion, they have kinetic energy. The more the molecules are heated, the faster
+they will move. If the molecules are heated more, they may be completely free
+from their intermolecular forces. Then we call it a gas. The more a gas will be
+heated, the faster its molecules will move. The more the velocity, the more the
+kinetic energy.
+
+Since we cannot see the molecules with our naked eyes, we cannot see their
+movement, so we try to understand the whole thing indirectly, we call it heat
+energy and try to explain the states of matter considering it as temperature. So
+we can say that the energy which is obtained due to molecular vibration or
+motion of a substance is called heat. As it is a form of energy like other energy,
+so its unit is Joule (J). There is another unit of heat which is calorie (cal). The
+amount of heat energy required to increase the temperature of 1 gm of water by
+1° C is called 1 Calorie. 1 Calorie is equal to 4.2 J. You have heard about the
+word “calorie” which is used in case of food. Food Calorie means actually the
+amount of energy obtained from a definite quantity of food and the unit for this
+is kcal or 1000 calorie. But we will not worry about this now. Here we will
+discuss heat energy not energy gained from foods.
+
+2025
+2025
+
+Effect of Heat on Matter 163
+6.1.1 Internal Energy
+
+If we accept heat as energy, the next thing we need to know how heat energy is
+transferred from one place to another. Generally we think that energy always
+flows from higher energy to lower energy. The amount of heat energy that is
+contained in a glass of water is much more than that of a small hot pin. But if we
+put the hot pin into the water, a small amount of the energy of the pin will
+transfer to the water of the glass. Because of this, the flow of heat energy does
+not depend on the amount of heat, it depends on the temperature. If two bodies
+of different temperatures come in contact with each other, always heat transfers
+from the body of higher temperature to
+the body of lower temperature until the
+temperature of the two bodies becomes
+equal.
+
+i
+
+But we have not yet defined the
+quantity called “temperature” yet. But
+it is used so much in daily life that
+nobody faces problems in
+understanding what temperature
+means. According to physics we can
+say that it is the measure of average
+kinetic energy of the molecules of
+matter. From our experience we can
+say that temperature is the thermal
+state which indicates whether an object
+absorbs or rejects heat when it comes in contact with another object. To
+understand this, we can compare it with the height of the surface of water in
+(Figure 6.01).
+
+VAT Ee, Da POPS Na Ed TM AL PUG ad TEAM CA
+
+SRG Fol TH Fle We) LA LY] PI (LS PAM ll] a LAT WD AD
+
+Figure 6.01: Temperature is as like
+the height of water and heat is as
+like the volume of liquid
+
+If the heights of the upper surface of water in the two containers are different,
+and they are connected with a pipe, the flow of water will not be determined by
+which container contains more or less water. Water flow will depend on the
+height of the upper surface of water of the containers. Always water will flow
+from higher height to lower height until the two heights become equal. Here we
+can compare the amount of water with heat energy and the height of the surface
+of water with temperature. It is also true in case of temperature that the heat
+flows until the temperature of the two objects becomes the same.
+164 Physics
+
+6.2 Thermal Properties of matter
+
+To measure the temperature special properties of special substances are used.
+The property of a substance which changes with temperature and, measuring the
+change accurately, the temperature can be measured, is called thermometric
+property. The property of a substance which is used to measure the temperature
+is called thermometric property. You have seen mercury thermometer that
+measures our body temperature. Here mercury is the thermometric substance,
+the volume expansion of mercury is its thermometric property.
+
+There is also an alcohol thermometer except mercury thermometer in which
+alcohol is the thermometric substance and the expansion of alcohol is the
+thermometric property. In a gas thermometer, gas is the thermometric substance
+and the pressure of the gas at constant volume is the thermometric property. As
+the resistance of metal changes with temperature, so the resistance also is used
+as the thermometric property. Different thermometric substances are effective at
+different temperatures, so to measure the very high or very low temperature the
+special thermometric property of a special thermometric substance has to be
+used. Copper and Constantan metals are used as thermometric substances. If two
+junctions of different metals (thermocouple) are kept at different temperatures,
+it produces anemf and by measuring this, the temperature can be calculated. This
+thermocouple is used in industries on a large scale because it can measure the
+
+temperature from -200°C to 1000°C.
+
+If we get the idea of temperature perfectly, we have to know its unit in
+addition to, the important question of how we will measure the temperature. The
+conventional unit of temperature is Celsius (°C), generally it is said that on this
+scale at one atmospheric pressure and at the temperature at which ice melts is
+called 0°C and at the temperature at which water boils is assumed to be 100°C.
+But it is interesting to know that when scientist Celsius introduced this scale of
+temperature, he assumed the temperature of boiling water as zero degree and the
+temperature of fusion of ice as 100 degree; opposite to the present scale!
+
+Although we use the Celsius scale of temperature in our daily lives, its
+international unit is Kelvin (K). Adding 273.15°C with the reading of Celsius
+scale we get the reading of Kelvin scale. If we consider only the difference of
+temperature, there is no difference between Celsius and Kelvin scale. That is, the
+increase in temperature by 10 °C is the same as the increase in temperature by
+
+2025
+2025
+
+Effect of Heat on Matter 165
+
+10 K. But if it is asked that what is the temperature of this room, the answer is
+30 °C, but in Kelvin scale it will be (80+273.15) =303.15 K. You may think that
+the two scales are completely same but the difference between the readings of
+the two scales is 273.15 °C, what is the reason behind this? The reason behind
+this is very wonderful. Generally, we may think that we can imagine any
+ee temperature i.e., it may be very high or
+very low, but actually it is not true.
+
+il There is no problem in imagining a
+4 temperature as high as you wish but it
+L is not possible to imagine a
+temperature as low as you wish. There
+is a lowest temperature and any
+temperature below this is not possible.
+Not only this, we can reach near this
+j temperature but we can never reach at
+Hee Hio73.1sk Hi a0°e this temperature. This temperature is
+called the absolute zero temperature.
+
+| | | On Celsius scale the value of this
+temperature is -273.15 °C. Therefore,
+
+Figure 6.02: Celsius, Kelvin and in Kelvin scale its value is zero Kelvin.
+Fahrenheit scales of temperature In other words it is said that the Kelvin
+scale has been made considering the
+
+absolute zero temperature as zero Kelvin.
+
+‘| 100° c
+
+|
+— a ia |
+Sta
+
+To make any scale of temperature two certain temperatures (or fixed points) are
+needed. In the Kelvin scale one is absolute zero which is taken as zero degree.
+Another one is the triple point of water. At this temperature and at a certain
+pressure (0.0060373 atm) ice, water and water vapour can exist together, so this
+temperature can be defined very accurately. In the Celsius scale its value is 0.01
+°C and to make the similarity with Celsius scale its value is 273.16° in Kelvin
+scale.
+
+Besides, the Kelvin and Celsius scales there is an another scale called the
+Fahrenheit scale in which the temperature of fusion of ice and vaporization of
+water are 32°F and 212°F respectively. In the figure 6.02 three scales are shown
+for comparison, where 0 °C is equal to the temperature 273.15 K, sometimes
+we take this as 273 K in our daily lives. This does not cause a major problem in
+our daily lives.
+166 Physics
+
+6.2.1 Relation among different scales:
+
+A definite temperature is expressed in the Celsius, Kelvin and Fahrenheits scale
+as T., T, and T, respectively. Then we can write:
+
+To-O T-273.15 — Ty—32
+100-0 373.15—273.15 212-32
+
+Or,
+To Tx —273.15 Tr —32
+
+100 ~=—Ss 100 180
+The readings of Kelvin and Fahrenheit scales with respect to T,, will be respectively:
+
+5 3
+Te = 5 Tr — 32)
+
+Example
+
+Question: At which temperature are the readings in Celsius and Fahrenheit scales
+equal?
+Answer: The relation between Celsius and Fahrenheit scale is
+5
+To = 5 (Tr — 32°)
+9T¢ = 5Ty —5 X 32°
+If 7, and T, are equal then we get:
+AT, = —5 x 32° = —160°
+Tc = —40°
+That is, the temperature which shows - 40° C the same temperature also
+shows - 40° F.
+
+Question: At which temperature are the readings in Kelvin and Fahrenheit scale
+equal?
+Answer: The relation between Kelvin and Fahrenheit scale is
+
+5
+Tx — 273.15° = 5 (Tp — 32°)
+
+2025
+2025
+
+Effect of Heat on Matter 167
+
+9T x — 9 X 273.15° = 5Tp —5 x 32°
+If T, and T, are equal then we get,
+
+AT x = 9 X 273.15° —5 x 32°
+Ty = 574.59K
+
+Question: What is the temperature in Celsius if the temperature of a healthy
+body is 98.4 °F?
+Answer: The relation between Celsius and Fahrenheit temperature is
+
+5
+Tc = = (Ty — 32°)
+9
+If T, = 98.4°, we get
+5
+Tce = 9 (98.4° — 32°) = 36.89°
+(i.e., it is nearly equal to 37°C)
+Question: At which temperature the readings in Celsius and Kelvin scale are
+
+equal?
+Answer: Never.
+
+6.3 Thermal Expansion of Matter
+
+6.3.1 Expansion of Solids:
+
+Volume of almost all objects increases to some extent if they are heated. It is not
+difficult to understand the cause of heat and temperature if we explain them with
+the help of an atomic model. We can imagine a solid as a collection of many
+molecules. We can compare the molecular forces among them with a spring. We
+have imagined a spring among molecules to show how molecules are arranged
+in a solid as shown in figure 6.03. When the solid is heated, its molecules will
+vibrate. The higher the temperature, the more the molecules will vibrate. We
+have to improve this spring model to some extent to explain the real nature of
+168 Physics
+
+solids. We have seen in case of a spring that the force by which it is pulled when
+it is expanded to a certain distance, it pushes by the same force when it is
+compressed by the same amount. This is not true completely for the molecules
+of a solid. The amount of force by which molecules pull each other when they
+are moved away to a certain distance they push themselves by much more force
+when they are brought close to each other by the same distance. That is, this
+spring is a special type of spring. Less force is applied to expand but more
+force is applied to compress it.
+Now imagine that the molecules are
+vibrating due to a certain temperature.
+For being a special type of spring during
+vibrations molecules do not come very
+near but can move further away. Now if
+the solid is heated more and the
+molecules will vibrate much more.
+Already you have understood that since
+the molecules cannot come very close
+due to this special type of spring but can Figure 6.03: The molecules are
+go very far easily, so all molecules will connected with each other by a
+establish a new equilibrium to move imaginary spring.
+
+away slightly from one another. When all molecules will move away from one
+another, the whole solid seems to be expanded slightly.
+
+Length, breadth and height of a solid are expand equally in three directions by
+the application of heat. To analyze this expansion three quantities named
+co-efficient of linear expansion, co-efficient of area expansion and co-efficient
+
+of volume have been introduced.
+
+Figure 6.04: Length, cross section and volume of a solid are increased by heating.
+
+2025
+Effect of Heat on Matter 169
+
+If the length of an object is Z, at temperature 7, and the length is increased to L,
+after increasing the temperature to T,, then the co-efficient of linear expansion
+a is
+
+_ (Lz ~ Ly) /L4
+T, -T,
+sO,
+
+Ly = Ly + aL, (T, _- T,)
+
+Similarly if the area of an object is A, at temperature 7, and increasing the
+temperature 7, if the area is increased to A,, then the co-efficient of area
+expansion 3 is
+
+B= (Az — A1)/Ax
+~ 1) —-T,
+
+so,
+Az =A,+ BA, (T2 —T;)
+
+Again similarly if the volume is V, at temperature T, and if the volume is
+
+increased to V,, then the co-efficient of expansion of volume is Y
+
+_ (V, — V,)/V,
+T, -T;
+sO,
+Vz =V, + wW,(T2 — T,)
+
+You see that the unit of three quantities a, B and ¥ is K".
+
+Dimension [a] = [8] = [y] =[T~*]
+
+Question: The length of a steel rod is 10m at 20 °C. If its length becomes
+10.0167 m at 120 °C, then determine the co-efficient of linear expansion of steel
+Answer:
+
+Co-efficient of linear expansion,
+
+Forma-22, Physics, Class 9-10
+170 Physics
+
+Lz — Ly
+
+a=
+
+Ly (Tz — T;)
+Here, L,=10m
+
+Ly = 10.0167 m
+T, = 120°C
+T, = 20°C
+
+_ 10.0167m — 10m
+~ 10m(120 C — 20)
+
+a = 16.7 x10-°°c?
+
+You have seen from the above examples that actually the value of the co-
+efficient of expansion of solids is very small. For this reason, the three different
+co-efficients a, B and Y were not necessary. For working we could explain the
+
+co-efficient of linear expansion only. For example let us assume the matter of
+area expansion.
+
+We see:
+Az = Ay + BA, (T2 — T,)
+
+But area A, is the product of length and width and if we consider the area of a
+square whose length is L,, then its area, after increasing the temperature, will be
+
+A, = 13 = [Ly + aly (T — T)]?
+Or Ag = Li + 2aL4(T, — T) + a7 Li (T. — Ty)?
+
+So, Ay = Ay + 2044 (Ty — Ty) + 02Ay (Ty — 1)?
+
+We have seen that the value of a is very small, so the value of o? is smaller. In
+fact it is so small that if we avoid the whole part with o”, then no problem will
+arise in our analysis or calculation. So we can write:
+
+Az = Ay + 2aA,(T2 _ T,)
+But we know,
+Az = A, + BA, (T, — T,)
+
+2025
+2025
+
+Effect of Heat on Matter 171
+
+Certainly we can write: B= 2a
+
+Similarly we can assume a cube of Z length, width and height. Its volume at
+temperature 7, is V, and the volume becomes JV, after increasing the temperature
+to T,, so we have
+
+V2 = [Ly + aL, (T, — T1)]?
+
+According to the same argument, also here if we avoid the parts with o? and a’,
+then no problem will arise in our analysis or calculation. So only the first two
+
+terms will be present, i.e.
+V2 = 13 + 3aL3 (T, _ T,) oo
+
+But we know V, =73
+That is > V2 = A + 3aV,(T2 _ T,)
+So, Vz =V, + Vi (T2 -— 11)
+
+Certainly we can write
+
+y=3a
+
+In our practical life we have to keep in mind the issue of expansion of solids. You
+have seen the gap between the rails of rail tracks. This has been done taking
+thermal expansion into consideration. If no space was left for expansion, the rail
+lines would bend. Cavities develop in teeth due to lack of regular brushing. The
+dentist fills these cavities with a special type of substance. The co-efficient of
+expansion of the substance has been made very carefully which is equal to that
+of the teeth. If the co-efficient of expansion were less than that of teeth, it would
+come out from the cavity while eating something hot! Again, if the co-efficient
+of expansion of the substance were greater, it would come out from the cavity of
+the tooth while eating something cold! Many of the general people know the
+matter of thermal expansion without studying physics. You will notice that when
+the cork of a bottle is stuck, hot water is poured on it so that the cork becomes
+loose after expansion of the bottle.
+172 Physics
+
+Example
+
+Question: Why does a glass crack when hot water is poured in it?
+
+Answer: More expansion occurs at different parts of glass when temperature is
+increased suddenly, this is why the glass cracks.
+
+Question: The density of gold is 19.30 gm/cc and co-efficient of linear
+expansion is 14x10 °C.What will be the density when the temperature is
+increased to 100 °C?
+
+Answer:
+
+‘ m
+Density, paz
+
+Here, V is volume and m is mass. Though the mass remains the same, the
+volume increases when temperature is increased. So, if the temperature is
+increased to 100° C, the volume will be :
+
+V’ =V + W(T, —T,) =V(1+ 3a 100)
+a=14x10 °c?
+V'=V(1+4.2 x 1073)
+
+-” m — 7 x 0.9958 = 0.9958
+P= T= TF a2 10-3) ~ V * 019958 = 0.99589
+
+p = 0.9958 x 19.30 gm/cc = 19.22 gm/cc
+
+Question: What will be the density if the temperature is increased 1000°C more?
+
+Answer: As the melting point of gold is 1064°C, gold will melt.
+
+6.3.2. Expansion of liquid
+
+Liquids have no length or area. Liquids have only volume. So the expansion of
+a liquid means its volume expansion. While measuring the expansion of a
+liquid, we have to be alert, because a liquid is kept in a container. To measure the
+co-efficient of expansion when the liquid is heated, the container which is also
+
+2025
+2025
+
+Effect of Heat on Matter
+
+173
+
+heated needs to be considered. So the expansion of a liquid in a container
+observed is not real expansion, it is an apparent expansion. Therefore, to
+measure the real expansion, the expansion of the container must be kept in mind
+
+always. Usually, the expansion of liquids is more
+than that of liquids. If it was not the case we could
+not see the apparent expansion. It seems to be
+apparent compression!
+
+The most common example of the expansion of
+liquid is a thermometer. There are many types of
+thermometers, among them perhaps the clinical
+thermometer (Figure 6.05) is the most familiar.
+
+A glass tube contains mercury at the bottom. If heat
+is applied, the volume of mercury is increased and it
+goes up through the capillary tube. To what extent it
+reaches is the measurement of the temperature.
+While measuring the fever by a thermometer, it is to
+be taken out from the mouth or the armpit, a very fine
+curve is made at the bottom of the narrow tube. Due
+to expansion, once the mercury level rises up, it
+cannot come down even after decreasing the
+
+temperature. Mercury is brought down by shaking.
+
+Real and Apparent Expansion
+
+im
+
+)«— Fine curve
+*— Mercury
+
+Figure 6.05 : Fine curve
+is made in tube, so that
+mercury can not fall in
+
+fever measuring
+thermometer.
+
+It has been said earlier that a liquid is always heated in a container. If heat is
+
+applied, the expansion of the container occurrs along
+with the liquid. So the expansion of a container is kept
+in mind to measure the exact expansion of a liquid.
+The expansion of a liquid, without considering the
+expansion of the container, is called apparent
+expansion. If the expansion of a liquid is measured
+considering the expansion of the container, it is called
+real expansion.
+
+If a glass bulb with a long graduated stem is heated
+liquid with filled up to mark A, first we observe that
+the upper level of the liquid comes down to mark B
+(figure 6.06). It will happen because due to the
+application of heat the temperature of the bulb will
+increase before increasing the temperature of the
+
+oO Fr
+
+Figure 6.06 : Real and
+apparent expansion.
+174 Physics
+
+liquid, i.e., the bulb will expand a little bit.
+
+After that if we continue applying heat, the height of the liquid will increase. As
+the expansion of liquids is more than solids, we will observe that finally the level
+of the liquid has reached mark C from B after passing the mark A.
+
+If we multiply the height AB by the cross section of the tube, we will get the
+expansion V,, of the bulb. Again if we multiply the height B, by the cross section,
+we will get the real expansion V, of the liquid. Here the apparent expansion V,
+is
+
+6.3.3 Expansion of Gases
+
+A solid has both shape and volume, so no problem arises in understanding the
+expansion of the solid. Though a liquid has no definite shape, it has a definite
+volume. So, we can explain or measure its expansion. It is very interesting in the
+
+case of gas. Because neither does it
+
+yy‘ have a definite shape nor a definite
+y \ volume. A gas takes the whole
+volume of its container. If the same
+
+amount of a gas is kept in containers
+of different volumes, the pressures
+of the gases will be different. So, we
+
+di can see that the increase of volume
+of a gas will be measured without
+
+changing its pressure as shown in the
+figure 6.07. An object of definite
+
+Figure 6.07 : The volume of air weight is placed on the piston of a
+
+is increased by applying heat. cylinder so that it always applies
+equal pressure to the gas contained
+
+in the cylinder.
+By applying pressure, liquids or solids cannot be compressed very much. But a
+
+gas can be compressed very easily. Therefore, at first we have to know the
+relation between the pressure and volume of a gas. It is called the ideal gas
+
+2025
+2025
+
+Effect of Heat on Matter 175
+
+equation and it is:
+PV = mRT
+
+Here P is pressure, Vis volume, 7 is the amount of gas (measured in mole), R is
+a constant (8.314 JK! mol" ) and T is temperature in Kelvin scale.
+
+Now we can find out the co-efficient of expansion of a gas. At a certain pressure
+ifthe volume of a gas is V, at temperature 7, and the volume is V,, at temperature
+T, the co-efficient of volume expansion B. of the gas will be:
+
+pg, =a WIN,
+P Tz — Ty
+We know,
+P A = nRT,
+P V2 = nRT>
+Hence
+
+P(V, — V,) = nR(T, — T;)
+
+Dividing the left side by PV, and the right side by nRT, we get:
+Ww—-U R- Th
+
+Vi Ty
+So, V2 VM, _ 1
+T,- 1, Ty
+That is _i
+? Bp — Ty
+
+Therefore, you can see that the co-efficients of expansion of gases are not
+constants at all. It is reciprocal to the temperature (7,'), i.e., the less the
+temperature is the more the expansion of solid will be! In other words, at a
+definite pressure and a definite temperature the amount of expansion due to
+increase of temperature by one degree is less than the expansion due to increase
+of temperature by one degree at the same pressure but at low temperature.
+176 Physics
+
+@) Do Yourself
+
+Take two balloons, put a small amount of water into one of them and air of
+the same volume in another one. Now put the two balloons under hot water
+for a small interval of time. You will notice that the balloon containing water
+remains the same, because the expansion of liquid due to heat is smaller but
+the balloons containing air has expanded in volume to a large extent,
+because the expansion of gas is much more higher than that of liquid.
+
+6.4 Effect of Temperature in Change of State
+
+Already you have know that all solids consist of molecules and in solids
+molecules attract one another from a certain position. If heat is applied, their
+vibrations increase and the molecular bonds become weak. They start to move
+rolling upon one another and we call it a liquid. If the temperature is increased
+further, the molecules start to move freely. We called it a gas. Now we observe
+this more deeply and we will be introduced to different quantities which are
+related to the change of state of matter.
+
+When heat is applied to a solid, its temperature goes up. (we will know later at
+what rate the temperature will rise and on what factor it depends.)
+
+If the temperature (at a definite pressure) reaches a definite value, the solid starts
+to melt. This process is called fusion and the temperature at which the fusion
+starts is called the melting point. If we continue to measure the temperature,
+surprisingly we will notice that when fusion has started, the temperature of the
+mixture of some amount of solid and some amount of liquid does not increase
+any more even if heat is applied (as shown in the figure 6.08). During this time
+the heat is used to loosen the intermolecular bonds of the molecules in the solid.
+So, the temperature cannot rise because applied heat cannot make the
+molecules move further. During fusion at a definite melting point the amount of
+heat which is used to convert the whole solid into liquid, is called the Latent Heat
+of Fusion.
+
+2025
+Effect of Heat on Matter 177
+
+On the solid being totally liquefied the temperature starts to increase again (as
+shown in the figure 6.08). The temperature increases gradually and at one stage
+the liquid starts to convert into gas. This process is called vaporization and the
+temperature at which vaporization occurs is called the boiling point. Again,
+everyone is being reminded that this boiling point depends upon pressure.
+
+When the process of vaporization starts by absorbing the heat energy, the
+molecules of the liquid start to become free from the molecular bonds among
+themselves. Here also the temperature does not increase like fusion even if heat
+is applied. During vaporization of liquid the amount of heat by which the whole
+liquid is converted into a gas, that heat is called Latent Heat of Vaporization.
+
+100)
+
+80} ! jt
+
+60} t—_}—_ 17
+40; ‘iI FA
+20 =
+
+Time (s)
+
+Tempereture (°C)
+
+Figure 6.08 : Melting and boiling point does not change during heat.
+
+After converting the whole liquid into a gas the temperature of the gas continues
+to increase if heat is being applied. If the temperature is raised to
+extremely high levels, the molecules will become ionized and a fourth state of
+matter called plasma will start to form but this is something different.
+
+All of us have seen at least one example of the process by which solids can be
+converted into liquids and liquids into gases, that one is ice converted into water
+and water into vapour. Although we do not see directly the latent heat of fusion
+or latent heat of vaporization, but we have felt its effect. When we suddenly
+come to an open place or in open air from a crowded or a closed place, then our
+sweating body becomes cool. This is because during the vaporization of
+sweat, the required latent heat of vaporization is absorbed from our body and our
+body becomes cool. By applying heat solids can be converted into liquids and
+liquids into gases, its reverse process also occurs. By extracting heat gas can be
+
+Forma-23, Physics, Class 9-10
+178 Physics
+
+converted into liquids and liquids into solids. The process of converting a
+gaseous substance from gaseous state to the liquid state is called liquification.
+The process of converting a liquid substance from its liquid state to solid state is
+called solidification.
+
+During the change of state of matter, the transformation from solid to liquid and
+from liquid to solid happens at a particular temperature. But without reaching
+that particular temperature a substance can transform from solid to liquid, liquid
+to gas or directly from solid to gas. It is not difficult to understand this if we go
+back to the molecular model of a substance. If a molecule somehow gets
+sufficient energy and due to this, its kinetic energy is increased sufficiently then
+the molecule may come out from the surface of solid or liquid substance. Since
+a large number of molecules from air are continuously striking the surface of
+solid or liquid, so sometimes some of the molecules of solids or liquids may
+obtain the required energy to become free. The more the surface area is, the
+faster the process will be. All of us have seen this process e.g., a wet object dries
+by itself. For this the temperature does not need to be at the boiling point. Drying
+means the evaporation of the molecules of a liquid. This may happen at any
+temperature and the process is called evaporation.
+
+At the time of evaporation, water absorbs the latent heat of vaporization; the
+reverse process is also true. If vapors transform into water by any process then it
+delivers heat. During a cyclone the air filled with water vapour goes upwards,
+when the vapor transforms into water the latent heat of vaporization is released
+as energy. This energy acts as the source of the devastating energy of a cyclone.
+
+Dependence of Vaporization
+
+You have seen that wet clothes do not dry easily in the rainy season. On the other
+hand in winter the clothes become dry naturally when they are kept inside the
+house. After washing the clothes should be spread well for drying. If the wet
+clothes are kept folded, they remain wet. The matter of drying of wet clothes is
+nothing but the evaporation of water. So, you notice that the evaporation of
+water depends on some factors. To speak the truth, what is true for water is also
+true for other liquids. Therefore, we can make a list of the factors on which the
+evaporation of liquids depends:
+
+Flow of air: The rate of vaporization increases if the air flows faster over the
+liquid.
+
+The area of the exposed surface of the liquid: Evaporation increases as the
+area of the exposed surface of the liquid increases. A glass of water takes quite
+
+2025
+2025
+
+Effect of Heat on Matter 179
+
+some time to evaporate but the same amount of water poured into a plate
+evaporate much faster.
+
+Nature of liquid: The less the boiling point of a liquid, the higher would be the
+rate of evaporation. The rate of evaporation of volatile liquids is a maximum.
+Pressure of air: The lower the pressure of air, the more the rate of evaporation.
+The rate of evaporation in vacuum is a maximum, so air is taken out to make dry
+food with a pump for preservation of the food.
+
+Temperature: If the temperature of the air in contact with the liquid increases,
+the rate of evaporation will increase.
+
+Dryness of air: The drier the air over the liquid surface is, the more the liquid
+evaporates.
+
+6.5 Specific Heat
+
+Heat, temperature and the relation between them are discussed so far, however the
+amount of heat needed to increase the temperature of an object has not been discussed
+yet. You might have noticed that in order to heat some water, it needs to be kept
+on the oven for a long time, but approximately the same amount of metal take
+little time to be heated at the same temperature. This is because, the specific heat
+of a metal is much less compared to water. The amount of heat required to
+increase the temperature of a body of mass 1 kg by 1 K is called the specific heat.
+That is, if an amount of heat Q is required to increase the temperature from 7, to
+T,, the specific heat will be:
+
+Q
+
+s = —
+m(T2 — T;)
+
+[The unit of specific heat-J kg4K7 |
+
+Heat capacity C is the amount of heat required to increase the temperature 1K of
+a body. The amount of heat required to increase the temperature 1K of a body of
+mass 1 kg is called specific heat. So we can easily find out the heat capacity C of
+a body if we know the specific heat of that substance. If the mass of an body is
+m and the specific heat is s, then the heat capacity will be:
+180 Physics
+
+C=ms
+The heat capacity of 10 kg gold is
+
+C = 10x 230 JK? = 2300 JK?
+In comparison the heat capacity of 10 kg water is
+
+C =10x 4200 JK+ = 42,000JK* i.e. about 20 times more.
+
+This means that gold or any other metal can be heated quickly but water cannot
+be heated so easily.
+
+6.6 Fundamental Principles of Calorimetry
+
+In winter during a bath we often pour a little boiling water into a bucket of cold
+water. The boiling water slowly become cold by giving up heat to the cold water.
+The cold water of the bucket also slowly becomes hot by absorbing the heat
+from the boiling water. Within a short time, all the water will get to a
+comfortable temperature by decreasing the temperature of the boiling water and
+increasing the temperature of the cold water. If we wish, we can find things like
+the amount of heat lost or gained, and their final temperature when various
+objects of various temperature are mixed together. To do so we just have to know
+a few rules. They are:
+
+(1) The body at higher temperature gives heat to the body at the lower
+temperature until they reach thermal equilibrium.
+
+(2) The amount of heat given up by the bodies at higher temperature will be
+equal to the heat gained by the bodies at the lower temperature. (We assume
+that no heat is lost in this process by any other means.)
+
+Example
+
+Question: A piece of ice of mass 100 gm is dropped into water of 1 liter at
+temperature 30 °C. What will be the temperature of the water after melting the
+whole piece of ice?
+
+(Latent heat of ice L=334 kJ/kg)
+
+2025
+2025
+
+Effect of Heat on Matter 181
+
+Answer: Let us assume the temperature of ice is 0 °C.
+
+Mass of ice m, = 100 gm = 0.1 kg
+Mass of lliter water m2 = 1kg
+Specific heat of water s = 4.2 x 103 Jkg?K*
+
+The water of 1kg has to supply the heat that is required to melt the piece of ice
+and to raise the temperature of the ice melted water to its final temperature. Let
+us consider the final temperature of water is T, then the amount of heat absorbed
+by the ice is:
+
+Heat required to melt: mL
+
+The heat required to increase the temperature from 0 °C to 7 after melting: m,s(T-0)
+The mass of water m, supplies these amounts of heat, so its temperature will
+decrease.
+
+That is,
+
+The heat supplied: m.s(30° C — T)
+These two types of heat must be equal. Hence:
+mL + m,sT = mzs(30 T — T)
+
+_ 30°C Xmzs— mL
+~ (m, + m,)s
+
+7a BOX 1X42 x 108 — 0.1 x 334 x 10°
+
+=20°C
+(14+ 0.1)4.2 x 103
+
+Question: What is the final temperature if 1 liter of water temperature 20 °C is added
+to 2 liter water at temperature 75 °C?
+Answer: Let us consider the final temperature is T, so the temperature of 2 liter of
+water reaches T by decreasing the temperature from 75 °C. Absorbing this amount of
+heat the temperature of 2 liter water reaches T by increasing the temperature from
+20°C.
+Hence
+
+Mass of 1 liter water m, = 1 kg
+
+Mass of 2 liter water mz = 2 kg
+Specific heat of water s = 4.2 x 10? Jkg?K7

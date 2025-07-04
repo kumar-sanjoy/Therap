@@ -1,0 +1,447 @@
+Chapter Six
+The Structure of Atoms
+
+Everything that you see around you is made of tiny particles called atoms. Atoms
+are far too small to be seen. yet the Scientists have developed ideas about the
+structure of atoms indirectly through various experiments and observations.
+Different particles have different chararacterestics because they are built by
+different type of atoms which have different number of electrons, protons and
+neutrons.
+
+At the end of this chapter we will be able to —
+e explain the structure of the atom;
+explain the atomic number and mass number;
+explain what is isotope;
+explain the distribution of electrons in atoms;
+explain how ions are formed;
+distinguish between cation and anion;
+formulate the chemical formula by using anion and cation;
+describe the use of isotope:
+appreciate the importance of isotopes in our life.
+
+Lessonl-3 : The evolution of the idea of atoms and their structure
+
+By now you have known that all materials are formed by tiny particles. These
+particles can stay in two forms-one is called atom which is the smallest particle
+and the other is molecule, where more than one atom form a stable structure.
+About the tiny particles different scientists and philosophers have expressed
+different opinions at different time. The Greek philosopher Democritus put forward
+for the first time in 400BC, the idea that all matters are formed of tiny particles.
+According to him these particles are indivisible, which cannot be divided further.
+He called it atom. The word atom was chosen from the Greek word atomos
+which means indivisible. Two of his contemporary philosophers Plato and Aristotle
+
+2025
+2025
+
+The Structure of Atoms 59
+
+expressed different opinions. According to Aristotle, matter is continuous and
+as such particles of matter can be divided into smaller and smaller parts with
+work limit. Based on experimental evidence, in 1803 the English scientists John
+Dalton said that the smallest particle of an element is an atom which cannot be divided
+any further. Dalton's idea got acceptance and the idea of Aristotle was rejected.
+In fact atoms are not indivisible and are not the smallest particles of matter.
+Atoms can be divided. Atoms consist of smaller particles which are electrons,
+protons and neutrons.
+
+To remove the limitations of the atomic concepts of Dalton, later others
+proposed alternate models of atom. Out of these models the most accepted
+atomic model is the model proposed by Rutherford and Bohr.
+
+Rutherford and his co-workers at one stage carried out an important experiment
+to find out the correct structure of the atom. From the results of the experiment,
+Rutherford arrived at the conclusion that the whole of the positive charge and
+mass is confined to a small area at the center of the atom, This is now called the
+nucleus. He also explained that most of the space in an alom is empty and the
+negative charge is carried by the electrons, which have negligible mass and
+revolves around the central positive charge. Rutherford- model is similar to the
+model of the solar system but he did not say anything definitely about the orbit
+of the electron. Niels Bohr (in 1913) put forward the idea that the negative
+charge carrying particles revolve in certain allowed orbits.
+
+From the above discussions, we can say that atoms are not indivisible. Atoms are
+formed by electrons, protons and the neutrons. At the centre of the atom there
+exists the nucleus. In the nucleus there are protons with positive charges and
+neutrons which are without charge. Most of the mass of the atom is concentrated
+at the nucleus. The space between the electrons and the nucleus is empty. In fact
+most of the space in the atom is void.
+
+Nucleus
+
+®
+
+Electron otnt
+Fig, 6.1; Blectroa, Proton aod Neutron in Helium Atom
+60 Science
+
+Lesson 4-6 : Atomic number, mass number and isotopes
+
+Different elements have different types of atoms. For example, the atom of
+hydrogen is different from the atom of oxygen. The atom of one element is
+different from the atom of another element in respect of atomic size, atomic mass
+and characteristics. Why is this difference? The difference in behavior of atoms
+arises from the difference in the number of protons and electrons. We know in a normal
+atom the net charge is zero. Therefore, the number of electrons and the number
+of protons are the same. To explain the behaviour of an atom, the number of
+protons is usually used. The number of protons in the nucleus of an atom of an
+element is it's atomic number. There is only one proton in the hydrogen atom,
+therefore the atomic number is |. There are 8 protons in an oxygen atom and its
+atomic number is 8. What information can you get from the atomic number?
+
+Carbon has atomic number 6. Since the atomic number indicates the number of
+protons in the atom of a particular element and the number of protons is equal to
+the number of electrons in each atom, we can understand that Carbon atom must
+have 6 electrons.
+
+Ts it possible to know how many neutrons are there in an atom from its atomic
+number? No, it is not possible to know the number of neutrons in an atom from
+its atomic number. To know the number of neutrons in an atom one has to know
+the atomic number and the mass number of the atom.
+
+The mass of the electrons in an atom is negligible. Most of the mass of an atom
+is due to the mass of the nucleus. Again the mass of a proton is nearly equal to
+the mass of a neutron. The mass number of an atom of an element is expressed
+as the total number of protons and neutrons in the atom. Thus the mass number
+of an element is equal to the number of protons in an atom of the element plus
+the number of neutrons in the atom.
+
+For example, there are 8 protons and 8 neutrons in nucleus of an oxygen atom, therefore,
+the mass number of oxygen is 16. In the case of Sodium there are eleven protons and
+12 neutrons. So the mass number of Sodium is 11 + 12=23. It has been discussed
+before that, if the atomic number and the mass number are known, the number of
+neutrons in the atom can be found out. You will see it clearly from the following
+example.
+
+Example: For an element A the atomic number is 17 and the mass number is 5.
+Find the number of protons and the number of neutrons in an atom of the
+element?
+
+2025
+2025
+
+The Structure of Atoms 61
+
+Solution: The atomic number of element A is 17. Since the atomic number is
+equal to the number of protons the number of protons in the atom of the element
+is 17. Agam the number of electrons in an atom is equal to the number of the
+protons. So the number of electrons is 17.
+
+In an atom the number of protons + the numbers of neutrons = mass number of
+an atom.
+
+Therefore the number of neutrons in an atom of the element A= Mass number of
+the element A-the number of protons in the atom of element A
+
+Thus the number of neutron of an atom of element A= 35-17 =18
+
+Isotope: Already you have come to know that the atom of an element have
+definite number of proton and electron but an element may have different mass
+number, This is because the atoms of an element may have different number of
+neutrons.
+
+(-) Electron
+(+) Proton
+a 5 Q O Neutron
+
+(a) Protiom (bh) Deuterium (ce) Tritium
+
+Figure 6.2: Hydrogen isotope
+
+For example, every hydrogen atom has one electron and one proton. Most of
+hydrogen atoms (protium) have no neutrons. But some hydrogen atoms have one neutron.
+These atoms have mass number 2. Again some hydrogen atoms have two
+neutron and its mass number 3. These isotopes are shown in the fig. 6.2. In the
+same way the different atoms of an element which have the same number of
+protons and electrons but different mass number are called isotopes of that
+element. Most of the carbon atoms have 6 protons and 6 neutrons in their nuclei.
+But some atoms have 7 or § neutrons in their nuclei. Thus mainly carbon has
+three isotopes.
+62 Science
+
+Lesson7 and 8 : The properties and application of isotopes
+
+Since the number of protons and electrons in different isotopes of an element are
+the same, there is no difference in their electrical and chemical properties. This
+is because it is the distribution of electrons in the atom that are responsible for
+all the electrical and chemical properties. But the isotopes can be separated due
+to the difference in their masses.
+
+Usually a particular isotope of an element is more abundant because this isotope
+is more stable compared to other isotopes. The unstable isotopes radiate
+different radiations and particles due to radioactive decay. These are called
+radioactive isotopes. [he properties of radioactive isotopes are used in different
+fields. Some of the uses of radioactive isotopes are described below:
+
+Medical uses of isotopes: Isotopes are used in the diagnosis and treatment of
+diseases. If there is any defect in a narrow artery, it can be detected by sending
+radioactive isotope through the blood flowing in the artery. In the same way the
+affected cell of a cancer patient can be determined by sending radioactive
+isotopes. Again radioactive isotope can be used to destroy the cancer affected
+cells. Another use of radioactive materials is to use its radiation to sterilize
+medical instruments.
+
+Application in agriculture: In agriculture the radiation from isotopes are used
+to control insects. Also it can be used to find out what type of fertilizer and what
+amount of fertilizer is needed for a specific crop.
+
+Fig. 6.5: The use of idotopes in agriculture
+
+Food preservation: Germs and bacteria can be killed by the radiation from
+radioactive isotopes. Therefore radioactive isotopes can be used to make food
+and fruits free from germs.
+
+2025
+2025
+
+The Structure of Atoms 63
+
+Decaying of Bacteria
+
+Fig. 6.4: Use of rays from radioactive materials for bacteria free food.
+
+Use of Isotopes in geological research: You often have heard the news that
+fossils have been discovered which are many million years old. How do the
+scientists come to know the age of the fossils? It can be found out from the decay
+of the isotopes. From the ratio of the stable and unstable isotopes, it is possible
+to find out how old the fossil is.
+
+Lesson 9-11 : The way the electrons are distributed in an atom
+
+You have known that electrons revolve around the nucleus. The electron
+hasdefinite orbits. Now the question is how many electrons will stay in an
+orbit?Look at the diagram 6.2 which represents a hydrogen atom. In the
+hydrogen atom there is one electron in its orbit. In helium atom (Fig. 6.1) two
+electrons revolve around the nucleus in a single orbit. The rule by which the
+maximum numbers of electrons are distributed in the orbits is given by 2n* (here
+n= 1, 2,3 are the successive numbers of orbits). This is the rule for the allowed
+orbits. Some of these orbits can be filled and the rest can be empty. According to
+this a lithium atom has three electrons. Of these two electrons are in the first
+orbit and the third is in the second orbit. In the same way a carbon has six
+electrons, of which two are in the first orbit and the remaining four electrons are
+in the second orbit. According to the rule, the maximum number of allowed
+electrons in the first orbit is two, in the second orbit the number is eight. And in
+the third orbit the number is eighteen. These orbits are called energy levels,
+because each orbit corresponds to definite energy for the electron in 1t. Although
+the orbit is a path and energy level is a fixed value of energy, in general sence,
+these two terms refer to the orbit itself.
+
+ie)
+
+Fig. 6.5: Lithium atom Fig. 6.6: Carbon atom
+64 Science
+
+Now electron distribution of Sodium atom may be seen. There are eleven
+electrons in a sodium atom. How these electrons are distributed in different
+orbits? They must be in the order 2, 8, 1. This means in the first orbit there will
+be 2 electrons, in the second orbit there will be § electrons and in the third orbit
+there will be | electron.
+
+Fig. 6.7: Sodium atom
+In the above diagram we have shown the distribution of electrons which is easy
+to visualize. But to write down the distribution of electrons in a sodium atom, we
+can express it as 2, 8, 1. We have shown below the distribution of electrons in the
+first 18 elements. Starting from the lowest atomic number
+
+Element Atomic Number Symbol | Electronic configaration
+Hydrogen 1
+
+Helium 2
+
+Lithium 3 Li 2,1
+Beryllium 4
+
+Boron 5
+
+Carbon 6
+
+Nitrogen 7 N 2,5
+Oxygen 8
+
+Fluorine 9
+
+Neon 10
+
+Sodium 1l Na 2, 8, l
+Magnesium 12
+
+Aluminium 13
+
+Silicon 14
+
+Phosphorus 15
+
+Sulphur 16
+
+Chlorine 17 cl 2, 8, 7
+Argon 18
+
+2025
+The Structure of Atoms 65
+
+Lesson 12-13: The electron distribution and properties of elements
+
+The properties of elements are basically determined by the electron distribution
+in their orbits. Generally atoms become active or inactive or charged due to
+diffeence in electron distribution.
+
+Tf the last orbit has all the electrons that are allowed in that energy level, then that
+orbit is completely filled. This type of atoms is inert. For examples, there are two
+electrons in a helium atom. The first orbit is allowed to have two electrons.
+Therefore the helium atom is inert and stable. Every atom tends to go to such a
+stable state.
+
+If the number of electrons in the last orbit or the highest state is such that it can
+complete it either by borrowing electrons or losing electrons, it will tend to do
+so. This is because, when the outermost orbit is complete, the negative charge of
+the electrons shield the equal number of protons in the nucleus. This reduces the
+energy of the system and the atom becomes more stable. This redistribution of
+the outer electron takes place by sharing the electron with the neighbouring
+atoms. For example consider the case of Sodium atom, it has 2 electrons in the
+first orbit, 8 electrons in the second orbit and 1 electron in the third orbit. Is it a
+maximum stable state? Surely not. If the sodium atom can lose the single
+electron in the third orbit, its outer most second orbit becomes full and the atom
+will become stable.
+
+The sodium atom will easily lose one electron from the third orbit if some neigh-
+bouring atom has the tendency to grab an electron to fill its outermost orbit. But
+when the sodium atom lose one electron it is no longer charge neutral. Normal
+sodium atom is charge neutral, because it has the same number of protons in the
+nucleus as the number of electrons in the orbits. By losing one electron the
+sodium atom becomes positively charged. This charged atom is called an ion. If
+the charge is positive it is called cation. Thus sodium atom by losing an electron
+becomes anion,
+
+Now let us take another example. Florin atom has electron distribution as 2,7.Is
+it a maximum stable state? Surely not. For stability it needs § electrons in the outermost
+orbit. It can either lose 7 electrons from the second orbit or can grabs one extra
+electron to complete the second orbil. From the energy consideration it is far
+more favourable to snatch one extra electron to complete the second orbit. In the
+vicinity of sodium atoms it can easily take one electron from the sodium atom.
+After receiving one electron from outside the florine atom becomes negatively
+charged. This makes it a negatively charged ion. It is called anion.
+
+Forma-9- Science, Class-8
+66 Science
+
+Thus by receiving or losing electron, atoms become ionized. Of the two atoms,
+the one which lose electron becomes cation. The atom which grabs electron
+becomes anion or negatively charged ion. As a result an attractive force works
+between these oppositely charged ions. If two opositely charged ions come
+closer to each other, they form a bond. In this way atoms of elements form
+molecules of compounds. You will know more about in higher classes.
+
+Na so Na’ +e.
+Fte- ——_» F™
+Na+F = —> Na’ F™ or NaF
+
+What we have learned at the end of this chapter-
+
+- Atoms are not indivisible. Atoms are formed by electrons, protons and
+neutrons.
+
+- At the center of the atom there is the nucleus. In the nucleus there are
+positively charged protons and charge free neutrons. Most of the mass of an
+atom is in the nucleus.
+
+- Negatively charged electron revolves in definite orbits or shells with the
+nucleus at the centre. The space between the electrons and the nucleus is
+empty. In fact most of the space in an atom is empty.
+
+- The first orbit can have maximum of 2? electrons, the second orbit can have
+maximum & electrons and the highest number of electrons for the third orbit is
+18. These orbits are also called energy levels.
+
+- Ifthe highest orbit has the number of electrons which is the maximum number
+allowed, then the orbit is completely full. Such atoms are inert.
+
+- Atoms become comparatively stable and ionized by receiving or losing electrons.
+
+Exercise
+
+Fill in the blanks
+
+According to the opinion of atoms are indivisible.
+Most of the mass of the atom is in the
+
+Most of the space of the atomis
+
+The number of in an atom is called the atomic number,
+The number of protons in the isotopes of an element is
+
+Sac Oo: Re
+
+2025
+2025
+
+The Structure of Atoms 67
+
+Short Answers Question
+
+1. Describe and show with diagram the positions in an atom where
+electrons, protons and neutrons are located.
+
+2. The atomic number of Nitrogen is 7. Show with diagram the
+distribution of electrons in a Nitrogen atom.
+
+3. Discuss the application of isotopes in Medical treatments and Agriculture.
+
+4. Explain with examples how cation and anions are formed.
+
+Multiple Choice Questions
+
+1. How many electrons can stay in the second orbit of an atom ?
+a. 2 b. 8
+c. 18 d. 32
+
+2. It can be concluded from the experiment of Rutherford that-
+i. atoms are indivisible.
+ii. atoms can be divided.
+iii. most of the space in an atom is empty.
+
+Which of the following is correct?
+
+a. il b. m
+
+c. i &iiti d. ii & tii
+After reading the sentence below, give answers to questions no. 3 and 4.
+In an atom of an element there are 10 proton and 8 neutrons .
+
+3, What is the mass number of the atom?
+a. 10 b. 16
+ce. 18 d. 26
+
+4. Which element is this ?
+a. Oxygen b. Sulphur
+c. Sodium d. Neon
+68
+
+Science
+
+Creative Questions
+
+1. The atomic number of atom X is 11. On the other hand the atomic number of
+atom Y is 17 and the number of neutron in the atom is 18.
+
+a.
+b.
+
+a 9
+
+How many isotopes of Carbon are there?
+What is meant by cation?
+What is the mass number of atom Y?
+
+Show the distribution of electrons in X and Y atoms and explain their
+ability to form bond between them ?
+
+Fig-1 Fig-2
+What is meant by the word atom?
+
+What is meant, when it is said that the atomic number of oxygen is 8?
+Explain whether the Fig-1 of stimulus is active or inactive.
+
+Give a comparative description of the atomic structure of the number
+] and number 2 atoms.
+
+2025

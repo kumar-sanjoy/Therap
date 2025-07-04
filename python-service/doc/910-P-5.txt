@@ -1,0 +1,1366 @@
+2025
+
+Chapter Five
+State of Matter and Pressure
+
+Everest winner Nishat Mojumder is breathing using oxygen cylinder at the peak of Mt. Everest
+
+We are familiar with three states of matter- solids, liquids and gases. Among
+them liquids and gases can flow so they are also called fluids. In this chapter we
+will analyse and see how matter exerts pressure in its three states. Not only that,
+elasticity is a special property of matter. We will also discuss how the property of
+elasticity works in the solid, liquid and gaseous state.
+
+Basides solid, liquid and gas, there is another state of matter named plasma, we
+will also try to understand why this state is called the fourth state of matter.
+128
+
+Physics
+
+® By the end of this chapter we will be able to-
+
+explain the change of pressure with the change of force and area.
+determine the expression for pressure at a point in a liquid at rest
+explain the upward pressure on submerged bodies in a liquid
+explain Pascal’s law.
+
+demonstrate practical application of Pascal’s law
+
+explain the theory of Archimedes.
+
+explain the density.
+
+explain the usage of density in our everyday lives.
+
+explain why objects float on water.
+
+explain the atmospheric pressure.
+
+determine atmospheric pressure by using the height of the liquid column.
+
+analyse the change of atmospheric pressure with the increase of height.
+analyse the effect of change of atmospheric pressure on weather.
+explain stress and strain.
+
+explain Hooke’s law.
+
+explain the molecular kinetic theory of matter.
+
+explain the plasma state of matter.
+
+2025
+State of Matter and Pressure 129
+
+5.1 Pressure
+
+Though we use the word 'pressure' in our everyday conversation in many ways,
+the word has a definite meaning in physics. We have talked about applying many
+kinds of forces at different times in the previous chapters. But how the force will
+be applied was untold. For example you can push a stone with your one hand,
+two hands or with your whole body (Fig. 5.01). Though you apply the same
+amount of force every time, the pressure will be different. In the first case you
+applied force through the area of your palm. If your applied force is F, area of
+your palm is A then the pressure
+
+pul
+A
+
+: _N
+Unit of pressure: —z oO Pa (Pascal)
+
+Dimension of pressure [P] = ML~'T~2
+
+Therefore, in the second case because of using two hands, the pressure will be
+half as the area through which the force is being applied is doubled. In the third
+case, you applied force through your whole body, so the area through which
+force is applied will increase more and pressure will be decreased more.
+
+Force is a vector, so you may think that pressure P is a vector! But the interesting
+matter is pressure P is a scalar quantity and if we want to write it perfectly then
+it should be written like as:
+
+Figure 5.01: Pressure depends on the area through which force is applied
+
+Forma-17, Physics, Class 9-10
+130 Physics
+
+Therefore, area itself is considered as a vector! A vector must have a magnitude
+and the direction. The amount of area is the magnitade of vector, the
+perpendicular on the area is the direction of the vector.
+
+Since pressure is a scalar quantity, it has no direction. It is so necessary, because
+the concept of pressure is more important for a liquid and gas than the solid.
+When liquids and gases apply pressure then actually it does not depend on the
+direction. We will see this matter very soon.
+
+Example
+
+Question: Let us assume your mass is 50 kg, area of one side of your body is 0.5
+mand bottom area of your two legs is 0.03 m?. What pressures will you apply on
+the floor when lying down and standing ?
+
+Answer: Mass is 50 kg, therefore weight is: 50 x 9.8N = 490 N
+
+490N_ ON
+
+Pressure when lying down, p = 980 —
+0.5 m2 m2
+
+490N N
+
+ressure when s ng, P 003 m2 16,333 m2
+
+You see less pressure is applied when you are lying down. For this reason when
+one falls in quicksand he has to lie down so that the applied pressure becomes
+lower and he does not submerge quicksand.
+
+Again the opposite is also true, if the area of force applied is less, then the
+pressure increases. The area of the sharp edge of a nail is very small. So when
+the sharp point of the nail is placed on a wood or wall and hammered on the flat
+back head of the nail, the force exerts pressure through the sharp point on the
+wood or wall. As the area of sharp edge of the nail is just a point so pressure is
+very high and the nail can easily penetrate the wood or wall. This is also true in
+the case of a knife. Its sharp edge is narrow, so it can apply more pressure and
+
+2025
+2025
+
+State of Matter and Pressure 131
+
+it is possible to cut easily. Another name of the unit of pressure is Pascal (Pa),
+when 1 N force is applied on an area of 1 m’ we get 1 Pa (1 Pascal) pressure.
+
+5.2 Density
+
+We need to have a clear idea about density before understanding pressure of
+liquids and gases. Density is the amount of mass per unit volume, i.e. if mass of
+a body is m and volume is V, then density is:
+
+PT
+
+. . Table 5.01: Density of ibstan
+Unit of density: kg/m’ or gm/cc ae ensify of some substances
+
+Dimension of density: [P] = ML~3 substances density
+(gm/cc)
+
+Density of some familiar substances is Air 0.00127
+given in table 5.01. Here is a good thing Cork 0.25
+to remember, if temperature increases Wood 0.4 - 0.5
+or decreases, volume ofa substance can Human body 0.995
+be increased or decreased. Since there is Water 1.00
+no change in the mass, the density of
+
+. Glass 2.60
+substance may change with
+temperature. For this when we talk fron 7.80
+about density of a substance, usually we Mercury 13.6
+need to mention the temperature at Gold 19.30
+
+which the density is measured.
+
+Example
+
+Question: 0.25 kg salt is dissolved in 1 kg water, so that the total volume becomes
+1200 cc. What is the density of this water?
+
+Answer: 1 cc is lcm’ therefore
+
+1 cc =(107m)’ =10° mm?
+
+132 Physics
+
+1 kg + 0.25 kg
+
+7200 x 10-6m3 ~ 104% 10° ke/m®
+
+Density of the salted water: p=
+
+Question: Density of Dead Sea water of Jordan is 1.24 kg/liter. What is the
+volume of 1 kg water?
+
+Answer: 1 liter is 1000 cc or 10° m? ,
+
+Therefore, density of Dead sea water,
+
+_ kg 1.24kg _ sa
+p=124 7-3 a3 1.24 x 10° kgm
+Therefore, volume of 1 kg water:
+m 1kg 3.3
+V= = 0.81 x 10-3 m
+
+p 124x103 kgm?
+or 0.81 liter
+
+Example: What is the density of the nucleus? What is the mass of 1 tea
+spoonful of nucleus?
+
+Nucleus consists of neutrons and protons. The mass of one of them is 1.67 x 10-”” kg,
+Their approximate radius is 1.25 fm = 1.25 x 107*5 m . Therefore, if we can
+calculate the density of neutron or proton, it can be considered as the density of
+the nucleus!
+
+; m 1.67 x 10°27 kg 18 3
+Density of nucleus, p= Int 4a = 0.204 x 10°8 kg/m
+=r3) = (1.25 x 10-15 m)3
+3 3
+You need to guess how big this number is! One tea spoon contains
+
+approximately 1 cc materials.
+
+Therefore, mass of 1 tea spoon nucleus is:
+
+m = 0.204 x 1078 kg/m? x 10-® m3 = 2 x 1011 kg
+
+It is roughly the collective mass of all the people of the world.
+
+2025
+2025
+
+State of Matter and Pressure 133
+
+We can see it in another way. An atom has neutron-proton in its nucleus,
+electrons remain outside. Mass of an electron is 1800 times less than the mass of
+neutron-proton. Therefore mass of an atom is really the mass of its nucleus. It
+does not matter too much electrons are not considered. But the things we see
+around us, their shapes are not the volume of the nucleuses. Volume of the
+substances come from the volume of their atoms. Electrons revolve around the
+very tiny nucleus comparatively in a bigger orbit. Radius of an atom is nearly
+1,00,000 times bigger than that of a nucleus.
+
+Therefore, we can say in another way, if we can gather all the people of this world
+and can create pressure to extract all nucleuses by breaking the atoms present in
+their body and then if we put them together, these will be confined in a tea spoon.
+
+5.2.1 Uses of Density in our Daily life
+
+Density plays a vital role in our daily life. Sometimes we do not notice it
+separately. For example, when we take water in a pot and hit it, after a while the
+water starts to boil. It happens because when the water in the lower portion of the
+pot becomes heated and expands, then its density decreases. As the density
+becomes less, that water goes up and the cold water in the neighborhood comes
+down. After some time this water also becomes heated and goes up and so within
+a short period of time the water starts to boil. (The process of heating gas or
+liquid in this way is called convection.) If density of water was not reduced after
+heating, then it would not go up and we could only heat the water in the lower
+part of the pot, by fire of the stove, and it would not be possible to heat the whole
+water of the pot.
+
+In intense sunshine in summer, those who have jumped into a pond have surely
+noticed that though the surface water is hot but the bottom water is cold. Here
+the heat comes from above and after heating, the top water density decreases and
+remains above, the whole water of the pond can not be heated uniformly.
+
+We have seen the balloons flying at the inauguration of various events. In order
+to make balloons fly we need to insert gases lighter than air. Considering safety
+they should be filled with inert helium gas, but helium gas is comparatively
+expensive; so frequently it is done with hydrogen gas which is very dangerous.
+Not only that, as methane gas is lighter than air, which is used as a fuel is
+134 Physics
+
+sometimes used also to fill the balloons, which is similarly dangerous!
+
+We have often seen air balloons. Fires are lit under the balloons, which heat the
+air inside and make it lighter and this helps lift the balloon up.
+
+We can determine whether the eggs are good or rotten by submerging them in
+water. If the eggs have gone bad their density becomes lower than that of water
+and they start to float.
+
+5.3 Pressure in liquids
+
+Those who have jumped in water, they all know, after going into deep water a
+pressure is felt. (Though atmosphere applies a pressure on us but we don’t feel
+it, because our body also applies the same pressure.) Exactly what amount of
+pressure will be felt after going in deep water or any other fluid is already been
+mentioned. The pressure on you will have to be calculated from the weight of the
+column of liquid on you. Let us suppose that you want to determine the pressure
+of the liquid at depth h. Imagine an area A there (Figure 5.02). The weight of the
+column of liquid above this area will exert a force on A.
+
+Volume of the liquid over a surface area
+A is Ah. If the density of the liquid is p ——
+then weight of this liquid or force is, EE
+F = mg = (Ahp)g
+Therefore pressure, h
+
+F  Ahpg
+Paa- a hes
+
+Therefore, in a liquid of fixed density, SO’
+
+pressure rises with the increase of depth.
+In case of water, approximately for a ten
+meter increase in depth, the pressure
+increases by an amount equal to the
+air pressure ( atmospheric pressure) ,;which is 101325 Pa.
+
+Figure 5.02: Pressure is created on
+the lower surface due to the height
+of the liquid.
+
+2025
+2025
+
+State of Matter and Pressure 135
+
+Density can be increased by compressing air or gas by increasing pressure but same
+is not true for liquids (neither for solids !). Liquids cannot be compressed in the
+same way with pressure, so its density cannot be increased or decreased. How
+pressure of water is increases when we go from the surface to the bottom of a sea
+is shown in figure 5.03. Since the density of water is nearly uniform, the
+pressure is increasing at the same rate. Starting from zero at the surface of the
+sea, it is increased a lot at the bottom of the sea.
+
+500
+
+400
+
+300
+
+200
+
+water pressure (Atm.)
+
+100
+
+0 1 2 3 4 5 6
+depth (km)
+
+Figure 5.03: Pressure increases with the increase of depth
+
+Question: The whale can go into a depth of 2,100 m from the sea level. How
+much pressure can it sustain? Assume that 1 atm pressure is increased per
+
+10 m depth
+
+Answer: The whale can sustain the pressure,
+2,100 m
+
+= 70 m/atm m/atm = 210 atm
+136 Physics
+
+Question: Under water, pressure increases by 1 atm for a 33 ft (10 m) increase
+of depth. The divers have gone a maximum depth of 1000 ft (330 m) , how much
+pressure did they have to tolerate?
+
+Answer: Per 10 m depth, pressure increases by 1 atm or | bar. Then, for 330 m
+
+depth, 330m
+
+10 m/atm = 33 atm
+
+Divers had to tolerate 33 atm pressure.
+
+Question: Calculate the pressure at a depth of 50 cm for kerosene (density 800
+kg m), water (density 1000 kg m?) and mercury (density 13600 kg m°).
+
+Answer: For kerosene,
+
+pressure, p= hpg
+
+P = 0.50 m x 800 kg m® x 9.8 N kg"! = 3,920 N m~*
+For water,
+P = 0.50 m x 1000 kg m? x 9.8 Nkg™ = 4,900 Nm?
+
+For mercury,
+
+P = 0.50 m x 13,600 kg m® x 9.8 Nkg? = 666,40N m2
+
+Question: At what depth of the liquids kerosene, water and mercury pressure
+will be 1 atm ?
+
+Answer: We know, for mercury pressure is latm at a depth of 76 cm. Density
+of water is 13.6 times less than mercury, therefore depth of water will be 13.6
+times more.
+
+Therefore, depth for water: 76 cm x 13.6 = 1034 cm = 10.34m
+
+Density of kerosene is 0.8 times less than water, therefore depth for kerosene
+will be 1/0.8=1.25 times more.
+Therefore, depth for kerosene: 10.34 m x 1.25 = 12.92m
+
+2025
+State of Matter and Pressure 137
+
+5.3.1 Archimedes principle and
+
+Buoyancy
+
+It is sure all of you know
+
+Archimedes principle and the story
+
+behind this. The principle is easy,
+
+‘If a body is immersed in a liquid,
+
+the weight of the body is reduced by
+
+an amount equal to the displaced
+liquid’. Now we’ll find this principle.
+A cylinder is immersed in some
+
+amount of liquid is shown in figure
+
+5.04 (This can be any object of any
+
+shape, but for convenience of
+calculation we took a cylinder). Let
+us suppose that the height of the Figure 5.04: The weight of a body is
+
+cylinder is A, cross-sectional area of reduced by an amount equal to the weight
+
+top and bottom of the cylinder is A. of the displaced water.
+
+We imagine that the cylinder is
+
+immersed in such a way that the depth of upper surface is h, and depth of lower
+surface is h,.
+
+We have said many times that, pressure in a liquid (or gaseous) does not work in
+a definite direction. It works in all directions. Therefore the downward pressure
+acting on the upper surface of the cylinder is:
+
+P, = hypg
+and the upward pressure acting on lower surface is:
+P2 = hopg
+
+Therefore, the downward force acting on upper surface and upward force acting
+on lower surface are respectively:
+
+F, = AP, = Ahipg
+F, = AP, = Ahzpg
+
+We do not have to think about how much force is exerted on the surrounding
+surface, because the force experienced by the cylinder from one direction is
+equal and opposite to the force from another direction and neutralize one anoth-
+er.
+
+Forma-18, Physics, Class 9-10
+138 Physics
+
+As the value of /, is greater than h,, so we see the value of F,, is greater than
+F.
+
+1
+Therefore the resultant force will be upwards and its value will be:
+
+F =F, —F, = A(h, —h,)pg
+
+F = Ahog
+As Ah is the volume of the cylinder, P is the density of the liquid and g is
+gravitational acceleration, therefore the force exerted upwards is equal to the
+weight of the liquid which has the same volume as the cylinder. This is precisely
+known as the Archimedes principle. The upwards force is called buoyancy.
+
+@) Do Yourself
+
+Tie a big size potato or a fruit at one end of a rubber band and hang it,
+see how it is elongated. Now let the potato or the fruit be immersed into
+water, you will see the rubber band is compressed slightly. Because in the
+immersed condition the weight of the potato or fruit is less!
+
+5.3.2: Floatation and Immersion of a Body
+
+You have surely understood why an object floats and why an other object is
+immersed. You know an object experiences an upward force due to buoyancy
+which is equal to the weight of the water displaced by the object when it is
+immersed in water. The object will float if that force is greater than the weight of
+the object.
+
+Just the portion of the object which is immersed so that it will displace water
+equal to the weight of the body, only that portion will be immersed exactly, the
+remaining part will not be immersed in water.
+
+If the weight of the body is greater than the weight of the displaced water the
+body will sink in water. But it seems that the weight of the body when immersed
+is less than its real weight.
+
+If the weight of displaced water can be made just equal to the weight of the
+object anyway, then the object remains there where it is put in water, it will not
+float above or even sink below. In our everyday life though it is not seen by us
+but for the movement of the submarine under water this is done.
+
+2025
+2025
+
+State of Matter and Pressure 139
+
+Example
+
+Question: If a piece of wood floats on water what percent of it will be
+immersed? (Density of wood p= 0.5x10?kg/m* density of water
+
+Py = 10 kg/m)
+Answer: In order to float, the weight of the wood must be equal to the mass of the
+water displaced by the immersed part of the wood. That is, if volume of wood is
+
+V then its mass will be Vp, and if the volume of the immersed part of the wood
+is V,, the mass of that amount of water is V,p,,
+
+Therefore, Vo=Vip,
+
+V, pep 05x 10% kg/m? ;
+Vi py 10? kg/m? * 100 = 90%
+
+Question: A piece of wood of mass 10 kg went to sea floating from the river. In
+the river water it was half immersed, how much of it will immerse in the sea?
+
+(Density of sea water, P, = 1.03 x 10°kg/m?)
+
+Answer: Density of river water Py = 10° kg/m?
+
+If volume of wood is V and density is P then mass of wood will be Vp
+
+. . . 1
+In river water the wood is half immersed Vp = 3 Vey
+
+1
+therefore, P= 5 Pw = 0.5 x 10? kg/m?
+
+Ifitis immersed by V, amount in the sea water,
+Vp =Vip,
+
+V,  p _ 0.5 x 103 kg/m?
+
+nh P “nee
+Vp, 1.03 x 103 kg/m3 x 100 = 48.5%
+
+140 Physics
+
+Question: Let’s suppose the mass of the gold crown of Archimedes is 10 kg in
+air and 9.4 kg when immersed in water. What is the density of the crown?
+
+Answer: If the volume of the crown is V and density is ? then
+Vp = 10kg
+Vp—Vpy = 94kg
+
+Vp, = Vp— 9Akg = 10 kg — 9.4 kg = 0.6 kg
+
+0.6k 0.6 k
+y a oS g
+
+= = -3 m3
+a, 7 OF kg/ms = 0.6% 10"? m
+
+_ 10kg 10 kg
+~ VY ~ 0.6x10-3m
+
+= 3
+3 = 16,666 kg/m
+
+Real density of gold is 19,300 kg/m°, therefore it is understood that the crown is
+mixed by impurities.
+
+5.3.4 Pascal’s Law
+
+We have shown many times in this chapter that if pressure is applied on a liquid,
+it is transmitted towards all directions. You will understand that it is normal if
+you think a bit. Because if the pressure is not transmitted into the whole liquid
+then the pressure experienced in one part will be more and it will be less in
+another part. Therefore if we imagine a cross sectional area then force applied
+from one direction will be more than the force from an other direction and due
+to this force the liquid will flow until the pressure becomes equal. Pascal
+expressed this in the form of a law, that is stated below:
+
+Pascal’s Law: If pressure is applied on a liquid or a gas enclosed in a
+container from outside, then this pressure is transmitted equally and acts
+perpendicularly on the surface of the container in contact with the liquid or
+gas.
+
+2025
+2025
+
+State of Matter and Pressure 141
+Applications of Pascal’s Law:
+
+Using Pascal’s law some interesting machines can be fabricated. In figure 5.05 a
+machine like that is shown. Here two cylinders are connected by a pipe. Let’s
+suppose cross sectional area of one cylinder is 4, and that of another cylinder A,
+, and you have applied force F, on the cylinder of cross sectional area A ,.Then
+your applied pressure IS F,
+
+~ Ay
+
+Now this pressure is transmitted through the liquid in all directions and it will
+also be applied on the cross sectional area of the second cylinder.
+
+Therefore the amount of force applied on the second cylinder will be
+
+Fo =PA =F, (2)
+2 2 1 Ay
+
+tr i i
+
+Figure 5.05: Force F, is obtained by
+applying force F’, which depends on the
+
+cross section on which the force is
+applied.
+
+142 Physics
+
+Therefore, you see amazingly that ifthe magnitude of (4,/A,) is 100 then you
+will get 100 times more force on the second cylinder than the force you
+
+applied on the first cylinder!
+
+This process is very effective and used to control very large factories and
+aircrafts. But keep in mind; it is the principle of increasing forces. In this
+process energy cannot be increased ail. You will get back the same amount
+of energy on the second cylinder that you have applied on the first cylinder.
+
+Example
+
+Question: Show that you are getting back the same amount of energy which is
+applied though force is increased.
+
+Answer: Let’s suppose force F’, is applied on the smaller piston and the piston
+moves by a distance 1,.
+
+Therefore, amount of work done W, = Fl,
+
+Force on the bigger piston fF, = F, (2)
+1
+
+As the water displaced by the smaller piston moves the larger piston by a
+distance 1, by pushing, therefore
+
+LA, = L,Ao
+
+A
+Distance travelled by the larger piston: 1, = l, (3)
+2
+
+A A
+Therefore, amount of work done: W, = Fol, = Fy (2) L (2) = F,l,
+1 2
+
+i.e equal to the work done by the smaller piston.
+
+2025
+2025
+
+State of Matter and Pressure 143
+
+5.4 Air Pressure
+
+Air has a certain pressure (Figure: 5.06). We do not feel this pressure distinctly
+because a pressure is also exerted outside from inside of our bodies. So these two
+pressures neutralize one another. There is no air in space, so there is no pressure
+of air, so there is nothing to neutralize the inner pressure of our body and in such
+an environment human bodies may explode instantly due to this inner pressure.
+For this reason the astronauts always wear pressure protected space suits. The
+pressure on the earth surface is 10°M/m?, which means if you imagine an area of
+1m? on the earth surface, then the weight of the column of air on it is 10°N, this
+is approximately the weight of an elephant !
+
+Here, you have to understand something very clearly. It is true, weight is a force
+and this force acts downwards. Force is a vector, so it has both magnitude and
+direction. Pressure is not a vector, it has no
+direction, so it is same in all directions at any
+place. The place where you are standing or sitting
+now, the pressure which air exerts on you is the
+
+same in left , right , up, down or in all directions. < [>
+It is true for air or liquid for all times.
+
+If an air-tight casket made of thin tin or
+aluminum can be made airless in any way, then it
+will be folded or twisted, because in normal
+condition, the outer air pressure was balanced by ~~ _a_!£
+inner air pressure of the casket in turn. After i a
+evacuating the inside air by pumping, there is Figure 5.06: The pressure
+nothing inside to resist the outer air pressure. So of air comes from the
+the outer air pressure will twist the casket weight of the air column.
+
+(figure 5.07).
+
+Air column
+
+144 Physics
+
+You will observe that the casket will not be twisted only from the upper side, it
+will be twisted from all directions. If the pressure comes only from the upper
+side the casket will be twisted only from the upper side. As the pressure is same
+in all directions, so it comes from all directions, and the casket is twisted from
+all directions.
+
+(a) (b) (c)
+Figure 5.07: (a) After evacuating the air from the cube shown in (a) by pumping,
+if the air exerts pressure only from the upper side, the cube would become flat as
+shown in (b). But the pressure comes from all directions so the cube is compressed
+as like the picture shown in (c)
+
+@) Do Yourself
+
+/“Texe an empty one liter water
+
+plastic bottle. Pour some boiling
+water carefully in the bottle and
+shake the water. When the whole
+air inside the bottle becomes hot,
+close the cap of the bottle tightly.
+Now wait for a while or keep the
+bottle in the flow of cold water
+and make it cold. Some vacancy
+will be created inside the bottle
+and it will be folded and twisted
+
+; due to the pressure of the outside
+Figure 5.08: Due to air pressure
+
+the water bottle is folded and air. (Figure. 5.08)
+twisted
+
+2025
+State of Matter and Pressure 145
+
+The pressure on the surface of the earth originates from the weight of the air
+column. So if we rise above then the height of the air column above us will
+decrease, the weight will also decrease, due to this the air pressure will also
+decrease there. The matter is true and how this air pressure decreases with height
+is shown in Figure 5.09. What you have to observe separately is that the air
+pressure has decreased by half after reaching a height of five kilometer.
+Generally, one may ask by reduction of pressure why does it not become zero
+after the next five kilometer? There is a specific reason behind it. Air or gas can
+be compressed by putting a pressure. So on the surface of the earth, air becomes
+most compressed where the air pressure is maximum i.e. the density of air is
+maximum there. As we go above, the pressure of air will reduce, density of air
+will decrease as well.
+
+There are many practical aspects of reducing density of the air with height.
+
+When a plane flies in the
+
+sky, the friction of air acts
+
+asabigproblem.Thehigher — 4
+
+we go, the density of wind E oa
+
+will be reduced, and friction ‘Fy a
+
+will also be reduced. Therefore, @ °°)
+
+really big planes try to fly & 04) —
+
+through as high as possible P| 02 |
+
+in the sky. Generally it may Ea
+seem that why do the planes 0 5 100 15 20 285
+
+not fly height at very big as Height (km)
+
+then the friction will be
+decreased further. The
+reason is that the planes
+need powerful engines to fly and oxygen is required to burn the fuel of those
+engines. The amount of oxygen is less where the density of air is less as at great
+heights. So at higher altitudes the engine of the plane will not work due to the
+shortage of oxygen.
+
+Those who climb to the peak of mountains face the same problem. The higher
+they climb the problem of less oxygen due to reducing density of air is more than
+the problem of less air pressure. For this reason those who climb mountains have
+to practice not only how to survive in less oxygen but also have to learn how to
+
+Figure 5.09: Air pressure reduces with height.
+
+Forma-19, Physics, Class 9-10
+146 Physics
+
+do very hard job like mountain-climbing. So, they have to prepare their bodies.
+
+Example
+
+Question: How much oxygen is there at the peak (29,029 ft) of the Everest?
+
+Answer: 29,029 ft = 8,848 m
+
+We see from the graph that the pressure of the air at this height is only 35%
+of the pressure of air at the earth’s surface. Therefore the amount of oxygen
+there is approximately 1/3 of the oxygen on the earth surface.
+
+5.4.1: Experiment of Torricelli
+
+You have surely had cold drinks with straws. Have you ever thought how the
+cold drinks reaches your mouth when you sip? Really this occurs due to the
+pressure of the air. It would be very easy to understand if you try to drink the
+cold drinks with a 10.5 meter long straw. (This is not realistic at all. But
+acknowledge it for the sake of argument!) Then you would discover that the
+drinks rise 10.3 meter and stop suddenly. No matter how much you try the drinks
+do not rise any more. (We are assuming that the density of cold drinks is close to
+the density of water!)
+
+Mercury is not a liquid to take into mouth but for the sake of argument imagine
+you try to sip it to get it in your mouth with a straw. If the straw is longer than 76
+cm, you will discover that the mercury has stopped just after rising 76 cm.
+You try to sip the mercury does not rise any more! Density of mercury is 13.6
+times more than the density of water, so elevated levels of more but the mercury
+is 13.6 times lesser than the water.
+
+Cold drinks will not rise up through a straw normally if we take a straw in the
+mouth and put it into the bottle. Because the air pressure within your mouth is
+the same as the air pressure of the liquid in which the straw is immersed. The two
+pressures are equal so there is no effective force inside it. Now if you sip, which
+means you try to create a vacancy in your mouth, then the air pressure becomes
+low there. Then the liquid comes above through the straw due to the air pressure
+on the liquid surface.
+
+2025
+2025
+
+State of Matter and Pressure 147
+
+Scientist Torricelli did this experiment of the pressure of air using mercury in the
+year 1643. He did not try to make the mercury rise with a straw by mouth. He
+filled a one ended tube with mercury and he put it in a mercury filled container
+in an inverted way. After falling a
+continuously the mercury stopped at a height
+
+of 76 cm. The vacancy which you try to
+create while sipping liquid, this vacancy was
+created in the upper portion of the glass tube.
+Air is exerting pressure on the mercury and
+that pressure being transmitted everywhere
+of the liquid, even down the tube. There is no
+leakage above the tube, so air cannot exert 76:cm
+pressure through that side. Therefore to
+equalize the pressure there is only a pressure
+under the tube, which is the pressure due to
+the weight of 76 cm mercury column!
+
+The instrument by which air pressure is |
+measured is called a barometer (Figure: | |
+5.10) and till now the pressure of the air is
+
+measured by a barometer which uses the Figure 5.10: Mercury
+process of Torricelli. The height of the becomes stationary just at 76
+mercury column becomes more than 76 cm if cm height due to air pressure.
+the air pressure increases and if pressure decreases the height become less than
+76 cm.
+
+5.4.2 Air Pressure and Weather
+
+Weather has a close relationship with air pressure. You have certainly heard
+many times in weather news about the creation of depression in the sea, which
+means air pressure has been decreased there. Then air starts to come from the
+nearby areas of high pressure to the low pressure area and sometimes a spin is
+created, in special situation that spin creates cyclone. You certainly know the
+news of horrible cyclones in our country.
+
+When you will read about heat and temperature in the next chapter, you will
+know that if the temperature of air is increased, then it expands, as a result
+density and pressure decrease. Air pressure decreases more effectively if the
+148 Physics
+
+amount of vapor inside it increases. Vapor is water, in a molecule of water there
+is an oxygen and two hydrogen atom and molecular mass of water is
+(16+1+1=) 18. The main element of air is nitrogen (atomic mass 14), being
+created by two atoms it’s molecular mass is (14+14=) 28 and oxygen (molecu-
+lar weight 16), is also created by two atoms, so, it’s molecular mass is (16+16=)
+32, which is much more than the molecular mass of water. So, when there is
+vapor in the air, water of less molecular mass takes the place of nitrogen and
+oxygen of higher molecular mass and so the density of air decreases. If the
+density of air decreases, the air pressure also decreases. So, it is possible to
+predict about the local weather seeing the air pressure on a barometer. If the
+barometer shows high pressure then it is understood that the air is dry and the
+weather is good. If the pressure starts to decrease then it is understood that the
+quantity of vapor is increasing. If pressure low then air from the nearby areas
+will come quickly and storm and rain will start.
+
+5.5 Elasticity
+
+All of you must have, one time or another, elongated a spring or a rubber band
+by pulling on it and then releasing it. You have certainly noticed that after
+releasing the spring or the rubber band it regains its previous length. In physics,
+pulling is termed as ‘applying force’ and the change of the length is termed as
+‘deformation’. The word deformation is taken negatively in our daily life. But
+you should not take it negatively here. It is just a change in condition!
+
+Therefore, you understand that when a force is applied to an object, a
+deformation happens inside it (and for this deformation, a counter force is
+created). If the force is withdrawn, deformation stops and the object comes back
+to its initial condition. This property of a substance is called elasticity. But it
+should be remembered that the quantity of the applied force has a limit. If the
+limit is crossed, the substance will not be able to come back to its initial
+condition. A permanent deformation could take place. This limit is termed as the
+elastic limit. After bending a rod slightly, if it is released then it becomes straight.
+If it is bent too much then it remains curved and does not become straight.
+Therefore we can state this like:
+
+Strain: The relative change in length or shape which is made by applying a force
+from outside is called strain. Therefore, if force is applied on an object of
+length L, , and the changed length becomes L then it’s strain is: L— Lo
+
+Lo
+
+2025
+2025
+
+State of Matter and Pressure 149
+
+It is seen that the deformation has no
+
+unit, it is only a number.
+Stress: The force per unit area that ,
+develops within a substance due to Le
+deformation is called stress. T L
+If a force is applied on a body of cross T
+sectional area A and as a result
+deformation occurs, then if this ——
+deformation develops a resistive force a
+F, then stress is: [ \
+F |
+A
+You see it is similar to pressure and its Figure 5.11: Deformation occurs in
+unit is Pa or Pascal. a bar if stress is created by applied
+force.
+
+Hooke’s law: If we have understood stress and strain, it is easy to
+understand Hooke’s law. According to this law, ‘within elastic limits stress
+is directly proportional to strain’.
+
+stress & strain
+
+Therefore,
+Stress = constant x Strain.
+
+That is, there is a constant relating stress to strain for each material; the name of
+this constant is modulus of elasticity.
+
+It will be easy to understand if we discuss two things:
+
+(i) Let us suppose that the length of a wire of cross-sectional area Ais L, ,
+a body of weight W is hanged from it and due to this hanged force the wire is
+elongated from LZ, to ZL (Figure 5.11). This elongated length creates a counter
+force T in the wire (Here the letter 7 is used to mean the word ‘tension’.
+Generally, when a wire is pulled then the force acting in it is named as tension).
+Therefore Stress is 7/A and strainis L-— Ly
+
+Lo
+
+150 Physics
+
+Table 5.02: Young’s modulus of different substances
+
+Therefore, J “ L — Substance G-Pa
+Rubber 0.01-0.1
+Bone 9
+
+Or, = y (" —*) Wood 10
+Glas 50 - 90
+Aluminum 69
+Cupper 117
+Tron 200
+Diamond 1220
+
+Here, Y is a constant. The name of this constant is Young’s modulus. As strain
+has no unit, the unit of Y is Nm? Young’s modulus of some substances are given
+in the table 5.02.
+
+Example
+
+Question: How does the length of a substance change with the change of the value
+of the Young’s modulus?
+Answer: Rate of change of length
+
+toto _4 (2)
+Lo  Y
+
+Therefore, if 7/A remains the same, the higher the value of Y is, change in length
+will be less.
+
+(ii) | Let us consider, in normal condition a gas of volume V, is contained in a
+cylinder.
+
+Due to the application of pressure P, its volume is reduced to V (Figure 5.12).
+Here P is the stress and the Strain is: yp _ Vo
+
+Vo
+
+2025
+2025
+
+State of Matter and Pressure 151
+
+Therefore, we can write
+
+Pe (— “*)
+Vo
+
+V- “*)
+Vo
+
+P=B
+
+Here B is a constant and is called the bulk modulus of elasticity. Unit of B is Nm?
+or Pascal.
+
+Figure 5.12: If pressure is applied in confined air, the air is compressed.
+
+5.6 Three States of Matter: Solid, Liquid and Gas
+
+You certainly know that, everything of the universe is made of molecules!
+(In fact, molecules are not fundamental particles, molecules consist of atoms,
+atom consists of electros and nucleus, nucleus consists of protons and neutrons,
+proton and neutron consists of quarks and the scientists are assuming that
+electrons or quarks are made of strings!). Since, the properties of a matter exist
+in molecules, molecules are considered the smallest unit of matter. For example,
+all properties of water exist in a water molecule, but when it is split into atoms it
+does not exist as water. There will be one oxygen and two hydrogen atoms, both
+in the gas form. Whether the substance is solid, liquid or gas depends on how
+molecules are arranged within the matter (Figure: 5 .13). The most
+152 Physics
+
+familiar example of it is water; it can exist in three states, e.g. solid, liquid and
+gas. Whether it is ice, water or vapor depends on how the molecules are within
+it.
+
+When a substance remains in the gaseous state, then its molecules are free, the
+distance between one another is very large. When the substance is in a liquid
+state, then though the molecule remains comparatively closer but they can move
+with respect to one another. In solid state, molecules remain the closest, but can
+not move with respect to the other.
+
+@ iS) Pals
+@
+@ al o
+
+Figure 5.13: (a) solid (b) liquid (c) gas.
+
+The distance among the molecules of a gas are very large. Those substances have
+no regular volume and shape. Molecules in a liquid remains closer and they have
+a particular volume but no regular shape. In a solid, molecules are very close and
+they are almost in contact with each other, so they have a definite volume and a
+regular shape.
+
+In a gas, molecule can move freely, in liquids the molecules vibrate, and one can
+pass through from one side to the other, in solids though the molecules can
+vibrate but they can not change their position.
+
+Normally we cannot see the molecules of solids, liquids or gases, we see it as
+solid, liquid or gas. The properties of molecules which have been mentioned
+above, are exhibited in their solid, liquid or gaseous state too.
+
+2025
+State of Matter and Pressure 153
+
+Gas : Molecular properties Reflection in gases
+
+Spread through the total volume of the
+
+container in which it is kept.
+Distance among the molecules is | Gas can be compressed by pressure
+more, there exists vacant space
+
+A molecule can move with respect to | Gas can flow easily
+
+Molecules can move beside one another
+
+another
+
+Liquid: Molecular properties Reflection in liquids
+
+Molecules can move beside one Can flow easily, gain the shape of the
+another container in which it is kept.
+Molecules are very close together | Liquid cannot be compressed by
+so there is no vacant space applying pressure
+
+Solid : Molecular properties Reflection in solids
+
+Molecules are rigid in their own There is a definite shape
+
+position
+
+There is almost no distance among) Can not be compressed by pressure
+the molecules
+
+Molecules are confined to their own | Cannot be made to flow
+
+positions
+
+5.6.1 Molecular Kinetic Theory of Matter
+
+If a solid substance is kept on a table, the solid exerts a kind of pressure on the table, on
+the area of the table which it touches. If we want to put some liquid on the table instead
+of solid, it will not work; the liquid will spread over the table. Liquids have to be
+contained in a pot and the liquid exerts pressure not only on the bottom of the container
+but it exerts pressure on the walls of the container in all directions. (If a hole is created in
+the wall of the container, the liquid will come out through this hole due to the pressure of
+liquid.) If we want to put gas then it is not possible to put it in a open container, then it is
+to be stored in a bound region and the gas will exert pressure on the bound surface in all
+directions. Gas is contained in a balloon. If we make a hole on a balloon, air will come
+out through this hole due to the air pressure.
+
+Forma-20, Physics, Class 9-10
+154 Physics
+
+@) Do Yourself
+
+Put a piece of scotch tap on an air filled balloon. Now make a hole on the
+balloon through the scotch tap with a needle. You will see that the balloon
+does not burst but air is coming out.
+
+We mentioned about pressure of gas but didn’t explain its reason. We can
+explain the reason of pressure by the molecular kinetic theory. If a gas is kept in
+a closed space then it puts a pressure on the walls of the container, this can be
+explained with the help of the molecular kinetic theory of substance. In a closed
+region the molecules of a gas starts moving randomly and every time it hits the
+walls of the container it goes back due to reflection. Therefore a gas molecule
+hits the wall with a particular momentum, and returns back with a different
+momentum. You know to change the momentum of an object; a force has to be
+applied on that object. Hitting the wall, the gas molecules apply a force on the
+wall. According to Newton’s third law, the wall also applies a counter force on
+the molecule thus reflecting the molecule.
+
+An enormous number of molecules thus hit the walls of the container and this
+combined force appears as the pressure of the gas.If the temperature of the gas is
+increased, then the kinetic energies of the molecules will increase and the
+molecules will hit the wall harder. This means the pressure will be increased.
+We will see in the next chapter that due to the application of heat, temperature
+increases and as a result pressure also increases.
+
+5.6.2 Fourth State of Substance
+
+Despite solids, liquids and gases, the three different sates of matter, substances
+may have a fourth state named plasma. We know the number of the positively
+charged protons in the nucleus of a molecule or an atom is equal to the number
+of negatively charged electrons outside it. That’s why the combined charge of a
+molecule or atom is zero. Under special conditions a molecule or an atom can be
+ionized, one or more electrons of some atoms can be made free, then separately
+the atoms do not remain charge neutral. A kind of a mixture of ions and electrons
+is made. Though it stays like a gas but all of the properties of gas are not true for
+it. Like we know, a gas has no fixed shape but a fixed shape of plasma can be
+made by a magnetic field.
+
+2025
+2025
+
+State of Matter and Pressure 155
+
+Gases can be turned into plasma by giving excessive heat; plasma also be made
+by a powerful electric field. In our house, plasma is created in a tube light. There
+is also plasma in the luminous advertisement of neon light. The light which is
+seen during thunder is also plasma and the substances which remain in the far
+stars is also in the plasma state. At present, we use nuclear energy in fission
+process by breaking a heavy nucleus. We try to use plasma for creating energy in
+fusion process combining the light nucleuses and now this is a very important
+field of research in physics.
+
+@) Do Yourself
+
+Density of a substance
+
+Objective: Determine the density of a substance
+Apparatus: Spring balance, a solid which can sink in water, water in a pot.
+Theory: Dividing the mass of a body by its volume, density is measured.
+Mass of the body can be measured by a spring balance. It is possible to
+determine the volume of the body using the Archimedes law. After
+immersion, the decrease of the mass in grams is the volume in cc (cm).
+Procedure: 1. Determine the mass of a body using a spring balance.
+2. Tie the body with a thread and hang it from a spring balance
+and determine the weight keeping the body inside the water.
+3. Determine the density of the body.
+
+Table: To determine the density of the matter
+
+Number of | Mass of the | Weight of the Volume | Density of
+
+observaions solid substance| solid substance} of the solid |the substance
+
+M, gm when immersed 3 Mi _ gm
+M, gm-wt | Mi-M, cm M,—M cm3
+
+Ne w,
+
+156 Physics
+
+(?) Exercise
+
+General questions
+
+1. A piece of ice is floating in glass water,
+once the ice melts the height of water is
+glass will increase of decrease?
+
+2. Suppose you sit on a boat in a
+swimming pool with a big stone. You drop
+the stone in the water of the swimming
+pool from the boat. The height of the
+water in the swimming pool will increase
+or decrease or remain the same?
+
+Figure 5.14: A Hermit is sitting on
+a bed of nails.
+
+3. Hermits claim that they can lie down on a bed of nails (Figure 5.14). You
+can do the same, if you want, why?
+
+4. If the glass tube of Torricelli’s barometer is twisted instead of straight then
+will it work ?
+
+5. What is the relation among force, pressure, area?
+
+6. What is density? What is its unit?
+
+7. What is atmospheric pressure?
+
+8. Is Torricelli’s vacuum a vacuum in reality? Explain
+
+9. Establish a relation between pressure and height of a liquid.
+
+Mathematical questions
+
+1. Density of air is 0.0012 gm/cm’, density of gold is 19.30 gm/cm’, if 1 kg
+gold is measured by a balance, what will be its real mass?
+
+2025
+2025
+
+State of Matter and Pressure 157
+
+2. What will be its height if kerosene is used to make a barometer instead of
+
+mercury?
+(Density of kerosene is 0.8 gm/cc)
+
+3. Acrown of gold and an equal weight of pure
+gold are hung from the two sides of a bar and
+then immersed into water (Figure 5.15). If we
+find that in water the weight of the crown is
+
+less, then what will you say about the crown?
+Is it pure or impure? Why?
+
+4. Two water filled cylinders are connected
+by a pipe. The cross sectional area of the two
+cylinders are lcm’? and 1m? and two pistons
+are attached with them. A person of weight
+
+70 kg is sitting on the bigger piston. How
+much force will you have to apply on the
+
+smaller piston if you want to lift him? Figure: 5.15: Crown of gold and
+pure gold is immersed in water
+
+5. A weight of 10 kg is hung from a metal rod of 0.5 m length and 0.01 m? cross
+sectional area. The elongated length is 0.501 m. What is the Young’s
+modulus of this metal rod?
+
+Figure: 5.16 : A man is lifted up by putting pressure on a hydraulic press
+158
+
+Multiple choice questions
+P 4
+
+Put the tick (V ) mark on the correct answer
+
+Physics
+
+1, What is the name of the apparatus used to measure the atmospheric pressure?
+
+(a) Thermometer
+(b) Barometer
+(c) Manometer
+(d) Seismometer.
+2. The amount of liquid pressure is —
+(a) proportional to its depth
+(b) proportional to area.
+(c) Inversely proportional to density
+(d) equal to acceleration due to gravity.
+3. What is the name of the fourth state of matter?
+(a) Gas
+(b) Plasma
+(C) Solid
+(d) Liquid.
+Give answer to question no. 4 & 5
+from the figure
+4. How much pressure will be felt at the
+bottom of the container?
+(a) 98 Pa (b) 980 Pa
+(c) 196 Pa (d) 1960 Pa
+
+Figure 5.17
+
+0.2m
+
+5. If force F is applied on the free surface of the container, then this force-
+i. will exert a pressure at the bottom of the container only.
+
+ii. will exert a pressure on the curved surface of the vessel only.
+
+iii. will exert a pressure in all directions of the vessel.
+
+Which one of the below is correct?
+(a) i (b) ii
+(c) iii (d) i, ii, & iii
+
+2025
+2025
+
+State of Matter and Pressure
+
+Creative questions
+
+Answer the following questions by
+
+observing the figure:
+
+(a) What is density?
+
+(b) Explain the cause of the floatation
+of the body as shown in the figure.
+
+(c) Determine the density of the body.
+
+(d) Explain the effect of gradual
+increase of temperature of the
+liquid.
+
+2, Fahim clamped one end of a rubber
+band of length L, on a wall and hung a
+mass M at the other end. He saw that
+
+159
+
+Volume of water befor
+immersion of object —,
+
+Volume of water after
+
+immersion of object
+62 cm! ji mou
+me Co
+Figure 5.18
+
+the rubber band elongated to a length L,. It regained its initial condition after
+removal of the mass. He recorded the result of his experiment in a table as shown
+
+below.
+
+Mass (kg) 0 0.4/1
+
+14 | 2.2 | 3 4 5
+
+Length with
+mass L(cm)| 10 12 | 15
+
+17 | 21 | 25 | 30 | 36
+
+Length after
+removal of 10 10 | 10
+
+mass L (cm)
+
+10 | 10 | 10 | 10.2 | 10.6
+
+(a) Write Hooke’s Law.
+(b) How stress leads to strain?
+
+(c) If M=2.7 kg, then L,=? Calculate it.
+(d) Draw a picture of a machine which can be used daily by using the
+
+information in the table.

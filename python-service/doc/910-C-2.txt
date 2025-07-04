@@ -1,0 +1,691 @@
+16 Chemistry
+
+Sign 1 Sign 2 Sign 3
+
+a. What is chemistry?
+b. Why do we take antacid for acidity in the stomach?
+
+a The substances containing sign 3 harmful for human beings- explain.
+
+d, Chemical substances containing sign 1 and sign 2 are risky
+when in use- explain.
+
+2025
+Chapter Two
+States of Matter
+
+Matter is a physical entity that has mass and occupies space. Chairs, tables,
+notebooks, pens, ice, water, air- are all matter. All matters may exist in three
+different states- solid, liquid and gaseous states. They have their own
+characteristics and properties in all three states. This chapter will focus on these
+issues.
+
+Forma-3, Chemistry Class-9-10
+Chemistry
+
+explain the physical properties of matter in terms of the postulates of
+kinetic theory of particles
+
+explain diffusion and effusion with the help of kinetic theory
+explain the relationship between physical state of a matter and heat
+demonstrate practically the increase in the rate of diffusion with the
+increase of heat
+
+describe melting and sublimation of solids and distillation of liquids
+demonstrate practically melting and sublimation of solids and
+distillation of liquids
+
+show interest in explaining the real happenings in nature in terms of
+chemistry
+
+use of chemical compounds and thermometer properly
+
+20235
+ue,
+3
+ry
+
+States of Matter 19
+
+2.1 Three States of Matter
+
+Anything that has a certain mass and occupies space is matter. At normal room
+lermmperature some matters may exist as solids, some as liquids and some as
+gasses. For example, at normal room temperature sugar, edible salt, marble etc.
+exist as solids: water, oil, kerosene etc. exist as liquids and nitrogen. oxygen,
+carbon dioxide etc. exist as gasses. Again, changing the temperature. the same
+matter’s state can be transformed into any of solid, liquid or gaseous states.
+Below is given a short discussion on the properties and characteristics of solids,
+liquids and gaseous matters.
+
+[Question: When the temperature is changed, the same substance becomes
+
+solid, liquid and gaseous. Give examples. |
+
+2.1.1 Solids
+
+A solid matter has a specific mass, volume and shape. Molecules of all matters
+have a force of attraction. It is known as inter molecular attraction. This force is
+the most in the solid matters. As a result, the molecules in solids stay very close
+to each other in a fixed state and they take a fixed dimension which cannot be
+compressed with pressure. Again, a solid matter hardly changes shape when the
+temperature is raised. Particles of solids can not move or leave spece, but can
+vibrate in their own place.
+
+2.1.2 Liquids
+
+Liquids have a specific mass and volume but do not have a shape. Liquids take
+the shapes of their containers. Since the molecules of a liquid remain farther
+from each other than those of solids, the inter molecular force of attraction is
+also less than solids. Such matters do not change volume when force is
+projected on them but the volume increases with the rise of temperature. This
+change of volume is greater than that of solids.
+
+(Question: Why are the particles of liquids spaced a little further apart than
+those of solids? |
+
+2.1.3 Gases
+
+Gases have specific mass but they do not have specific volume or shape.
+Whatever quantity of gas is put into any size of container, it takes over the full
+20 Chemistry
+
+size of that container. The molecules in gases stay further than those of liquids
+or solids. The inter molecular force of attraction is also very low among them, A
+sinall quantity of pressure is enough to compress gases and in the same way, a
+sinall amount of temperature is enough to increase the volume of such matters.
+
+2.2 Kinetic Theory of Particles
+
+Every substance is made of small particles which remain together by means of
+an inter molecular force of attraction. These molecules also have a kinetic force
+in them. The attempt to prove the states of substances using inter molecular force
+of attraction and the kinetic force of the particles is known as the kinetic theory
+of particles. When the particles inside a substance remain in very high force of
+attraction, they stay together and cannot move that much. This is the solid state.
+When heat is applied on sucha solid substance, the particles start to vibrate.
+
+* F eee
+
+Solid substance Liquid substance Gaseous substance
+
+Fig 2.01: Kinehe Theory of Particles.
+
+When more heat is applied, the particles lose some of their force of attraction
+and they start some movement. This state of matter is called a liquid. Liquid
+takes the shape of the container without changing their volume, When more heat
+is applied on this liquid state of the substance, the particles receive the heat and
+the kinetic force in them is increased, This kinetic force is increased to a level
+where they lose inter molecular force of attraction almost completely and start
+
+to move freely. This is the gaseous state. That is why gaseous matter has no
+absolute volume. The volume of the container in which it is kept is the
+volume of the gas. When more heat is applied to this state of the substance, the
+particles will only increase their speed of movement.
+
+£023
+2025
+
+States of Matter 21
+
+2.3 Diffusion
+
+The tendency of solid, liquid or gas to spread spontaneously and uniformly in
+any medium is called diffusion. In diffusion process, solid, liquid or gas moves
+spontaneously from a place of higher concentration to lower concentration.
+Remember, what happens if you leave a perfume bottle with its lid open in the
+corner of aroom? Within some time, you will find the whole room smelling of
+perfume. This is an instance of diffusion. If a matter takes lesser time to spread,
+its rate of diffusion is higher and vice versa.
+
+Now, read through the following experiments.
+
+«)
+
+ Repextment 1 >
+At room temperature, take some pure water in a glass jar. Add a small
+quantity of solid pink Potassium permanganate (KMnO,) into it. You will
+see, after sometime, the KMn0O, grains are dissolving into a pink solution.
+Indeed, the KMnO, particles are getting motion and scattering freely in the
+water. In this case, some solid matter is diffused in water or liquid. The rate
+of diffusion of solid matters in water is slow, however, if heat is applied, the
+rate will increase.
+
+Similarly, if we do the experiment of
+
+diffusion of Potassium permanganate in hot
+water, the water will turn into pink solution |
+faster, In this case, the KMnO F particles will
+get added motion due to heat and scatter
+
+faster. This shows that the presence of heat
+increases the rate of diffusion of solids wen
+
+Fig 2.02:KMnQ, solution in water.
+
+Mis r
+
+‘Experiment 2 yl
+Atroom temperature, take some pure water in a beaker and add some liquid
+blue in it. Within a few moments. you will see that the water has turned blue.
+That means, the particles of blue solution or some liquid have diffused in the
+water. The temperature being the same, it has taken the liquid less time to
+diffuse in another liquid than solid KMnO,. That means, the rate of diffusion
+of liquid matter in another liquid is faster than in solid matter. The presence
+
+of heat will increase the rate. Just like solids and liquids, diffusion of gases take
+place in the liquid medium. However, at a given temperature, the diffusion rate a
+gaseous substances is higher than that of solids and liquids in liquid mediums.
+
+See
+
+Fig 2.03: Diffusion of Liquid solution in liquid.
+
+f seseespnci nt 3 7
+
+Diffusion of two gases.
+
+Take a glass tube with both faces open. Take two pieces of cottons. Soak
+a piece of cotton in concentrated hydrochloric acid (HCI) solution and soak
+the other in ammonium hydroxide (NH,OH) solution. Now close the glass
+
+tube fixing each of the cottons to a side of it. Here hydrogen chloride
+
+gas from HCI solution and ammonia gas from NII,OH solution will get
+
+\_dittused.
+
+2025
+2025
+
+States of Matter 23
+
+Within a few moments, you will see a white smoke filling up the tube. It is
+ammonium chloride (NHC), produced in the reaction between hydrogen
+chloride gas and ammonia gas. The white smoke will not be positioned in
+the centre of the tube; it will be nearer to the hydrochloric acid solution. That
+means at a same given time, hydrogen chloride gas has gone a lesser
+distance than ammonia. That also proves that ammonia gas spreads faster
+than hydrogen chloride gas because of its faster rate of diffusion. The reason
+behind it is the difference in their atomic masses. A gas with lesser atomic
+mass will have a better diffusion rate. Here ammonia gas (atomic mass 17)
+
+has spread faster than hydrogen chloride gas (atomic mass 36.5),
+
+white smoke of MHC!
+
+\
+=
+?
+
+wet cotton with HC! solution
+
+wet cotton with NH,OH solution
+
+Fig 2.04; Diffusion of two gases.
+
+Atomic mass of H,, He, N,,O, and CO, gases are 2, 4, 28, 32 and 44 respectively. Since
+hydrogen is the gas with the least atomic mass, its rate of diffusion is faster than others
+
+while carbon dioxide’s being the most, is the slowest.
+
+Ng Z#
+
+24 Chemistry
+
+2.4 Effusion
+
+The passage of gases from a high pressure zone to a low pressure zone through
+
+a fine pore is called effusion.
+
+Take a balloon and fill it with air or helium. Stick a piece of scotch tape on the
+balloon. Now, make a small pore on the balloon through the scotch tape and see
+what happens. The air from the balloon will come out through the hole with
+force (Don’t try it without the scotch tape; the balloon will burst). Air pressure
+inside the balloon was higher than outside. So, when the air found the hole, the
+air from the balloon rushed towards the low pressure region. It is effusion. Like
+the rate of diffusion if heat is applied, the rate of effusion increases. If heat is
+applied, the rate of effusion increases very much like the rate of diffusion.
+
+We use CNG (compressed natural gas) as fuel in our vehicles. Basically, it is
+compressed methane gas at high pressure. When we run our vehicle, this gas
+comes out of the cylinder with high pressure and runs the engine. This is also
+effusion of gas. Again, propane and butane gases are compressed at high
+pressure into liquid and put into cylinders to use them for cooking in the
+households. When we open the cylinder for cooking, it comes out in gaseous
+
+form with pressure. It is another example of effusion.
+
+Effusion and diffusion are by nature, the same kind of actions. The basic
+difference between them is, effusion requires the presence of pressure but
+diffusion does not depend on pressure. In diffusion, solids, liquids or gases
+matter spread around in a suitable medium but in effusion, only gas comes out
+through a fine hole from the container . If we open the cylinder but do not ignite
+our cooker, the gas from the cylinder will just come out and mix with air. This
+is effusion, Then, the gas that comes out would spread around the room, which
+
+is diffusion. Therefore, both the actions may take place one after another.
+
+2025
+States of Matter
+
+25
+
+2.5 Burning of a Candle and the Three States of Wax
+
+Liquid Wax
+
+Solicl Wax
+
+Fig 2.05: Burning of Wax.
+
+Wax is a mixture of various hydrocarbons.
+Organic compounds made of hydrogen and
+earbon are known as hydrocarbons. In the
+burning of a wax, three states of matter can be
+observed simultaneously. There is a thin liner
+inside the wax. When we add fire to it, the
+hydrocarbon particles around the liner melt
+into liquid. The liquid wax absorbs heat and
+vaporizes first. Then the vaporized wax starts
+areaction with oxygen of the air and produces
+carbon dioxide, water vapor, light and heat. A
+portion of the liquid wax remains and turns
+solid again. Thus. in the presence of heat we
+see three states of wax.
+
+2.6 Melting and Boiling
+
+The process of transforming a solid matter into liquid by means of applying heat
+is called melting. At normal pressure (1 atmospheric pressure), the temperature
+at which a solid matter turns into liquid state is called the melting point of that
+solid. Each pure solid matter has its own melting point, like the melting point of
+
+ice is O°C.
+
+The process of transforming a liquid matter into gas by means of heat is called
+boiling. At normal pressure (1 atmospheric pressure), the temperature at which a
+liquid matter turns into gaseous state is called the boiling point of that liquid.
+Each pure liquid matter has its own boiling point, like the boiling point of water
+is 100°C, The boiling process requires heat but solidification requires removal of
+
+heat,
+
+Forma-4, Chemistry Class-9-10
+Experiment 4
+
+Suppose, we want to find out the melting point of urea, a solid matter, First,
+we need to put a net on a triped, upon which we shall place a watch glass.
+Now we shall put some urea on the watch glass. Fix a thermometer with a
+liner on a stand and put the bulb of thermometer in the urea, Now start giving
+heat to the urea, You will find, the urea will start to melt at 133°C
+
+Stand
+
+Liner
+
+Watch
+glass
+
+Fig 2.06: Melting point of urea.
+
+oy
+
+temperature and all the fertilizer will
+melt at the same temperature. This
+133°C is the melting point of urea.
+Again, let's find out the melting point
+of an impure matter, wax. In order to
+find it out, first we need to turn the
+wax into powder. Collect the wax
+powder inside a glass tube with one
+side closed. Now fix a thermometer
+inside following the fig 2.07. Sink the
+glass tube in the beaker in such a way
+so that water can’t get inside the tube.
+Now, start heating the beaker slowly.
+You will find the wax melting at a
+specific range of temperature instead
+of a fixed temperature. This range of
+temperature is the melting point of
+Wada.
+
+tt
+
+20235
+2025
+
+States of Matter 27
+
+la
+
+Melting pomt of impure substances is deme]
+
+than that of pure substances. It is opposite in
+4 the case with boiling point. A mixed matter
+will have no fixed melting and boiling point.
+Since all pure solids have a specific melting
+point, they melt at that temperature. If a
+solid substance melts at any other
+temperature, the solid can be declared
+impure. Again. if it melts over a range of
+temperatures, it is impure too. For example:
+the melting point of sulfur at 1 atm is 115°C,
+But in an experiment, if sulfur melts at any
+other temperature or range of temperatures,
+the sample of sulfur can be declared
+adulterated. Therefore,finding the melting
+point can be a way to find the purity of solid
+substances. a
+
+Fig 2.07: Melting point of wax.
+
+Experiment 5
+
+Boiling Point of Liquids
+
+Some sample of the liquid (Example: water), the boiling point of which
+needs be determined, is taken im a beaker. The beaker is fixed with a
+thermometer. Now, the beaker will be heated carefully with a Bunsen
+burner, At a certain temperature, the water in the beaker will turn into vapor.
+That temperature is the boiling point of water. All the water in the beaker
+will vaporize at 100°C.
+
+That sets the boiling point of water at 100°C (at 1 atm). Since each liquid
+
+matter has a specific boiling point, so a boiling point cannot be the same for
+Pe
+
+28 Chemistry
+
+two liquids. Again, if a liquid is adulterated, it will boil at a different )
+temperature. For example, if we add some alcohol to water, it will boil at a
+different temperature than 100°C. So, boiling point can be a determiner of
+the purity of a liquid.
+
+Stand
+
+Thermometer
+
+aq
+
+a Bunsen burner
+
+Fig 2.08: Boiling point of water.
+
+XN ws
+
+You have learned, the heat used in boiling and melting does not change the
+temperature of the matter. It only transforms the state of the matter.
+
+The experiment below will tell you what will happen if we apply heat on a solid
+to melt it and then heat more to boil it.
+
+Experiment 6
+
+Let us take some ice cubes in a beaker and heat it carefully. We shall keep
+watch on an attached thermometer throughout the process. Let’s assume,
+the initial temperature of the ice was -40°C.
+
+£023
+2025
+
+States of Matter
+
+28
+
+me f- Vapor
+D
+
+Boiling point
+Water of water
+
+_____-}»
+Temperature CC)
+
+* M Axis
+
+(heat absorbed) _ Time
+
+Fig 2.09: Graph of applying heat on ice.
+
+When the temperature of the ice reaches 0°C absorbing the heat, they melt
+into liquid. The temperature remains stagnant at 0°C until all the ice cubes
+melt into the water. That proves 0°C as the melting point of ice. The
+straight line in the temperature is called the melting point line. In the fig
+2.09, line AB is the melting point line. Both ice and water exist through
+the length of the line. If we apply more heat, the temperature of water
+starts to rise, When it reaches 100°C, you'll see more heat will not be able
+to raise the temperature of water anymore. Rather, the water transforms
+into vapor. All the water will vaporize at this 100°C temperature. If we
+apply more heat after that, the temperature of the water vapor will
+increase. The —_ boiling point of water is 100°C. CD is the line of boiling
+polnt. Water and vapor co-exist at this line. J
+
+30 Chenustry
+
+- *
+
+Again, collect the data of cooling the water vapor and set them on a graph
+
+sheet with X axis telling time and Y axis telling temperature. It will be like
+fig 2.10.
+
+y Axis
+
+>
+
+5 —_
+Ss 6
+1 i
+
+:
+
+cats petnnnnnean Boiling point
+
+—— Water
+
+—
+Temperature (°C)
+rae
+
+ul
+o
+i
+
+Bir EET RRnRn CRN eR RL RNP
+
+point — ice
+20 4
+
+0 x Axis
+(heat released) Time , > ;
+
+Fig 2.10: Cooling curve of vapor,
+
+The graph shows the initial temperature of water vapor is 140°C. When in
+the process of cooling it to 100°C, the vapor starts to turn into water. It
+remains 100°C until all the vapor is turned into water. Further cooling starts
+to decrease the temperature of water, When it reaches ()°C, the water starts to
+transform into ice. It remains the same until all the water is turned into ice
+and then the temperature of ice decreases from 0°C. The fig 2.10 shows a
+decrease of temperature of ice to -40°C.
+
+7 yy,
+
+2025
+2025
+
+States of Matter 31
+
+2.7 Distillation and Sublimation
+
+The process of heating a liquid and turning it into gas is called evaporation or
+vaporization. When water from a hot tea is converted to vapors, that is an
+example of vaporization. Again if we cool that vapor, the vapor turns into liquid.
+This process is called condensation. For example, water vapor emits heat and
+turns into water, which is condensation. The process of heating a liquid into
+vapor and then retrieving the liquid from the vapor by cooling it is called
+distillation. That means,
+
+[ Distillation = vaporization + condensation
+
+Figure 2.11 shows the change of state of a volatile substance by applying heat.
+
+gaseous state
+
+o)
+
+applying heat | @
+
+by
+
+1
+
+@
+
+@
+@
+
+0.
+
+solid state
+
+Fig 2.11: Sublimation of substance.
+
+The process in which heating a solid directly turns that solid into a gaseous
+substance instead of a liquid, is called sublimation. Ammonium Chloride
+(NH,Cl), camphor (C,H, ,O), Naphthalene (C,.H,), solid Carbon dioxide (CO,),
+Iodine (I,), Aluminum Chloride (AICL,)etc. are matters that do not turn liquid if
+heat is applied, Instead, they vaporize, These substances are called sublimated
+substances.
+32 Chemistry
+
+Experiment 7
+
+Take some solid aluminum chloride
+salt in a beaker. Put a glass lid on its
+open face. Put some ice cubes on
+the lid. Now, apply heat slowly on
+the beaker. You'll see the solid
+AICL, is turning into gaseous
+form absorbing heat. This gaseous
+AICI, again reaches the lid and
+under the influence of ice.
+condenses itself underneath the lid. Fig 2.11: Sublimation of A/CK,.
+
+*. Z
+
+If a sublimated substance is mixed with some solid matter, it can be retrieved
+by means of the sublimation process. For example, if some ammonium
+chloride (NH,Cl) is mixed with some edible salt (NaCl), it can be separated by
+the process of sublimation. If heat is continuously applied to a sublimated
+substance, it vaporizes. In iodized salt, iodine is a sublimated substance. If you
+
+apply heat to that salt, the iodine will be vaporized from there,
+
+The vapor can be cooled into solid iodine. However, since the mixture of sand
+and glucose does not contain any sublimated substance, therefore, you cannot
+separate them by sublimation.
+
+(?) Exercise
+
+1. What kind of action takes place when hot tea is kept in a tea cup?
+a. vaporization b. sublimation
+
+c. diffusion d. effusion
+
+2025
+States of Matter
+
+2, What will happen to the particles when water vapor is condensed?
+a. size will reduce b. will remain in movement
+c. will vibrate at the same position d. energy will evolve
+
+3 Which of the following pictures is applicable for sublimation?
+
+ime) ‘ _—
+
+Pe **
+loeve
+oo 5
+
+4, Heating curve of unknown solid matter Z tells us:
+i. melting point of Z is 154°C
+
+i. Z 1s volatile
+
+Heating curve af
+4 woknown gabetence Z
+
+il. AB and CD curves indicate the|
+boiling and melting lines of Z
+
+Which of the below is correct :
+
+Temgersrary ("C)
+
+aiandii — b. ti and iti
+
+c.iandiii d.ijii and ni : ai ©. 2
+Thee Aor | i
+
+5, Which of the followings has the highest rate of diffusion?
+
+a. CO, b. NH,
+c. HCl d. H,SO,
+
+6. Which of the followings can be sublimated?
+a. Iodine b. Edible salt
+
+c. Copper sulfate  d.Sodaash
+
+Forma-5, Chemistry Class-9-10
+d.
+3,
+
+Chemistry
+
+What is diffusion?
+When you open the gas a ee
+
+cylinder used for cooking, a Sip Slee
+which action takes place first- ccc Salt
+diffusion or effusion?
+
+If you increase heat, which of
+the matters in the stem will
+vaporize first? Explain.
+
+Can you separate the elements of the two mixtures using the same process’?
+
+Show reasons for your answer.
+
+White smoke of NH,CI
+What is effusion? A. 40cm A. . 60cm 8
+Why are melting point and C ) \;
+boiling point different for J
+the same matter? Wet cotton with HCI solution — Wet cotton with NH,OH
+What kind of change is the anes
+process of the stem?
+Explain.
+
+Why white smoke is produced at the end A of the tube? Explain with logic.
+
+A beaker containing some ice cubes is slowly heated. With the passage of
+
+time, the changes in the state of ice are observed.
+
+What is distillation?
+
+What do you understand by diffusion and effusion?
+
+Present the action of the stem on a graph sheet.
+
+What will happen if you replace ice of the stem with naphthalene?
+Analyze.
+
+foo p
+
+20235

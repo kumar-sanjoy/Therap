@@ -1,0 +1,504 @@
+2025
+
+Chapter Nine
+Electric Circuits and Current Electricity
+
+As we know, the electrons are arranged outside the nucleus of the outermost
+atom. The outermost electrons of the atoms in some substances are weakly
+bound to the nucleus. In these materials, electrons can move easily and so they
+are called conductors. Electric current is the flow of electrons. An electric circuit
+is a closed path made of conductive material through which electrons can flow.
+In this circuit, electrical devices and equipment can be connected in two main
+ways: series and parallel connections.
+
+For current to flow through the components of a circuit, an electric potential
+difference must be created between its two ends.
+
+At the end of this chapter we will be able to—
+e explain the concepts of electric potential and potential defference;
+« explain the idea of AC and DC flow;
+e explain the use of resistance, fuse and key in an electric circuit;
+e explain the difference between current flow and voltage difference graphically;
+
+e show the difference between current and voltage in series and parallel
+cireuits -
+
+* make proper use of ammeter and voltmeter in the measurements of
+current and voltage;
+
+e be conscious and make other people conscious about the effective use of
+electricity and protection against its wastage.
+
+Lesson 1: Electric potential and electric current
+
+According to modern electron theory, every metal contains some free electrons
+that can move freely within the material. When two dissimilar metals are
+connected by wires, the flow of negatively charged electrons from one metal to
+the other depends on a property of the metals known as potential. For this flow
+of electrons to occur, there must be a difference in potential between the two
+a4 Science
+
+metal objects. This flow of electrons continues as long as there is a potential
+difference between the two metals. We refer to the flow of charge as electric
+current. Current flows in metals due to the movement of negatively charged
+electrons.
+
++ —
+Electric current > (x)
+
+The amount of charge that flows through any A a
+cross-section of a conductor in a given time is
+called electric current.
+
+The direction of conventional electric current is ay ie
+opposite to the flow of electrons. Unit of < 1H
+electric current: The unit of electric current is Fig. 9.1 : Electric circuit
+the ampere, usually denoted by the symbol A.
+
+Electric potential: The amount of work required to move a single positive
+charge from an infinite distance to a point next to a charged object is called
+electric potential.
+
+Electric potential difference
+
+Electric potential difference is the amount of work done to move each unit of
+positive charge from one point in an electric field to another. If there is no
+potential difference between two points, no current will flow, and no work will
+be done,
+
+Lesson 2-3 : Different types of current flow
+
+There are two kinds of current flow. (a) Unidirectional current. (b) Alternating
+current.
+
+(a) Non periodic or unidirectional current (DC): If ;
+
+there is no change in the direction of the flow of =
+
+current with time, it is called unidirectional or direct =
+
+current. We get unidirectional current from an electric E
+
+cell or battery. a _ time
+
+Also we can get unidirectional current from a DC Fig. 9.2: Unidirectional current
+
+generator.
+
+2025
+2025
+
+Electric Circuits and Current Electricity 95
+
+(b) Alternating current (AC):
+
+1
+If the direction of current flow changes repeatedly ir
+over time, it is called alternating current (AC). \ py
+When the time interval between changes of | YU AY,
+direction is constant, it is referred to as periodic t
+alternating flow or simply periodic flow. AC is the —- Fig: 9.5: Alternating current
+standard current flow in most countries worldwide because it is relatively easy
+and affordable to generate and distribute. The source of alternating current is
+typically a generator or dynamo, and it is produced in power-generating stations
+across the country. The rate of directional change in periodic flow, known as
+frequency, varies by country. For example, in Bangladesh, the frequency is fifty
+times per second (50 Hz), while in the United States, it is sixty times per second
+(60 Hz).
+Lesson 4-5 : Resistance
+The electric current is produced by the flow of electrons. When there is a differ-
+ence in the potential between two points of a conductor the free electrons are
+subjected to an electric force and electrons move from the low potential to high
+potential. But during this journey the electrons come into collision with the ions
+in the metallic conductor. As a result the movement of electrons is hampered and
+consequently the flow of current is also hampered. The property of creating
+obstacle by conductor is resistance. The property of creating obstacle to the flow
+of current is called resistance.
+Ohm's law: The flow of current through a conductor is determined by the
+differ- ence in the voltage between its two ends. The magnitude of the current
+also depends on the dimensions and composition of the conductor and also its
+tem- perature, Al a definite temperature the current flowing through a conductor
+depends only on the potential difference between its two ends. The resistance of
+a conductor is measured from the ratio of the current flowing through the con-
+ductor and the potential difference between its two ends at a definite tempera-
+ture. Besides, in case of some conductor a relation maintains between the
+current flowing through a fixed size conductor and the potential difference
+between its two ends at a definite temperature. The relation between voltage and
+current for a conductor of defi- nite composition was shaped by George Simon
+Ohm (1789-1854). This is known as ohm’s law. Conductors that follow Ohm’s
+formula are called Ohmic Conductor.
+Ohm's law: At a fixed temperature the current flowing through a particular wire
+
+or conductor is proportional to the voltage difference between the
+two ends of the conductor.
+
+Current flow
+96 Science
+
+From Ohm's law, we can see that if the voltage between the two ends of a
+conductor is high, the current flowing through the conductor will be large and if
+the voltage is low, the current will be low.
+
+Y
+
+Electric current (T), Ampere
+
+x
+i) volt (V¥) ——>
+Fig. 9.4: Graphical representation of Ohm's law.
+
+Vv
+We can write Ohm's law as [ec VY and l= R. where I is the current, V is the
+voltage and R is the resistance of the conductor.
+
+Thus in a particular conductor the current flowing through it is inversely
+proportional to the resistance of the conductor.
+
+The unit of resistance
+
+The unit of resistance in SI unit is ohm. If the voltage difference between the two
+ends of a conductor is one volt and the current flowing through it is 1 ampere,
+the resistance of the conductor will be 1 ohm.
+
+Lesson 6-8 : Electric circuit
+
+Just as people need a path for walking, electricity also needs a certain path. This
+complete or closed path of current flow is called cireuit. When the two ends of a
+current source are connected to one or more resistors, electrical devices, or
+equipment, an electrical circuit forms. The circuit can be closed or opened by the
+help of a key or switch. If the key is closed, the circuit will be complete and
+current will flow. If the key is open, the circuit will not be complete and current
+will not flow.
+
+In ordinary circuits the electric equipment can be connected in two different
+ways. They are
+
+a) series of circuit, b) parallel circuits. R Ry
+a) A Series of circuit ) (7)
+If in a circuit the resistance electric equipment or red =
+components are connected in such a way that one +
+
+end of the first is joined to one end of the second and @. exit ;
+the other is joined to one end of third and so on and ‘ta a
+the successive connections made a complete circuit, = tH zm K
+
+then we get a series of circuit. Fig 9.5: Series Circuit
+
+2025
+Electric Circuits and Current Electricity 97
+
+In the figure resistance Rl and R2 ammeter A and key K are successively
+connected. The ammeter is used to measure the current and it is connected in
+series with the other components of the circuit. If the ammeter terminals are
+marked as + and -, then the positive terminal marked as (+), must be connected
+to the positive terminal of the cell. In this circuit the same current flows in all the
+components of the circuit. But the potential difference in each part may be
+different.
+
+b) A Parallel circuit
+
+If in a circuit more than one resistance or electric component are connected in
+such a way that one end of each of them are connected to one common end of a
+battery and other ends of all the components are connected to the other end of
+the battery. Then such an arrangement forms a parallel circuit. In a parallel
+circuit different currents may flow through the individual components but the
+voltage will be the same between the two terminals of each components.
+
+In the figure the resistance R,, R, and the voltmeter are (ua ase
+- v + parallely connected to each other. A voltmeter is Bulb VR!
+used to measure the difference of voltage between the ie,
+two terminals of a resistance. This is why a voltmeter is Bulb AY?
+connected to the two terminals in Parallel to a
+resistance. The positive terminal of the voltmeter Cell Z
+marked + must be connected to the positive end of the =e Kg
+battery; otherwise you may spoil the instrument. If you _ Fig. 9.6: Parallel Circuit
+connect two bulbs in series to a battery would you find the two bulbs to glow in
+the same way as when one bulb is connected to the battery?
+
+When the bulbs are in series the same current will flow in both the bulbs but this
+current will be lower than the case when one bulb is connected. As a result the
+intensity of light will be less when the two bulbs are in series compared to the
+case when only one bulb is used.
+
+When the bulbs are connected in series and one of the bulbs is fused, the circuit
+will be broken and the other bulb will go off. In case the two bulbs are connected
+in parallel and one of the bulbs is fused, the circuit will not be broken and other
+bulbs will not go off. Thus in parallel connection we can put off any of the bulbs
+without disturbing the other bulbs. The voltage difference of the terminals of
+each bulb will be the same. That is, cach bulb will experience the full voltage of
+the electric cell. As a result, the brightness of both bulbs will be the same. The
+brightness of the bulbs will be same whether they are connected in parallel or
+individually to electric cell. In our domestic uses, it is more convenient to use
+parallel circuits.
+
+Forma-13- Science, Class-8
+38 Science
+
+Activity: Draw the diagram of series circuit and parallel circuit on a white
+paper and show the direction of current flow.
+
+Lesson 9-10 : Ammeter and voltmeter
+
+Ammieter
+
+Ammeter is an electrical instrument. With the apparatus we can directly measure
+the current in a circuit. Ammeter is connected to a circuit in series. In this
+instrument there is a moving coil galvanometer. The galvanometer is an
+instrument by which one can identify and measure the current in a circuit. You
+will know about it in more detail later on.
+
+To see the direction in the moving coil of the galyanometer a
+there is a needle or pointer. The pointer is calibrated in units of ©
+ampere, milliampere or microampere and can move over a
+scale. Like electric cell, there are two connecting terminals in
+an ammeter which are marked as positive and negative
+terminals. Usually the positive end is marked red and the
+negative end is marked black. The symbol of ammeter is ta Fig, 9.7: Ammetez
+
+Voltmeter
+
+The instrument by which the potential difference between two points in a circuit
+can be measured in ampere is called a voltmeter. The voltmeter is connected in
+parallel] between the two points which we want to measure the potential
+difference.
+
+There is a galvanometer in this insirument. To see its
+deflection a needle or pointer is connected to it. The pointer
+moves over a scale which is marked in volts. The voltmeter
+is connected in parallel between the two points of which the
+voltage difference is to be measured. As in the electric cell
+or the ammeter there are two terminals in the voltmeter,
+One of which is positive and the other is negative. Usually
+the positive end is marked red and the negative end is Fig: 9.8; Volimeter
+marked black. The symbol of voltmeter is Rasy a .
+
+Lesson 11: Fuses
+
+If the current in an instrument that we use in our day to day life exceeds certain
+limit, the instrament will be spoiled. In case the current in the electric circuit of
+our house flows too high, it can cause even fire. To avoid such accidents some
+special arrangements are made in the circuit. The special arrangement is the use of
+fuse. Fuse is usually made of thin wire of an alloy of tin and lead, It is fixed over a
+ceramic structure. The wire is thin and its melting point is low. Ifa current flows
+
+2025
+2025
+
+Electric Circuits and Current Electricity 99
+
+through it beyond a certain limit it gets very hot and melts. [a
+
+As a result the circuit goes off. This is how by stopping the al ie
+
+current the fuse protects our instruments. The fuse is a .
+
+connected im series in the circuit. ed “SJ
+Se SO
+
+The fuses can be with different current carrying limits. “|
+Usually fuses of 5 ampere, 15 ampere, 30 ampere and 60 _ ea
+
+: i Fig. 9.9: Fuge 9 7
+ampere are used depending on the necessity. A ten ampere
+fuse means, no current above 10 ampere can pass through it
+because it will then melt and make the circuit off. For
+different types of instruments different fuses are used. For electric lamps, fans,
+televisions etc. a 5 ampere fuse is used. For electric kettle or calendar a 15
+ampere fuse is used, The main fuse of the house may be 30 or 60 ampere.
+
+Try to understand the matter in more detail. Television may be damaged if
+currents above 5 ampere flows. Now think that what will happen if you use a 30
+ampere fuse for television. It will not serve the purpose. What will happen if a
+fuse of 5 ampere is used for electric kettle where more than 5 ampere is needed?
+When you put the current on the fuse will burn. The Standard of fuse must be
+according to the necessity. The use of fuse greater than the needed will not serve
+the purpose of avoiding accidents. [If we use a fuse of value lesser than the
+needed, it will burn tao often. Some people use a number of fuse wires when the
+fuse wire bums. This should not be done. Because the value of the fuse then
+increases. For example the use of two fuses of 10 amperes will make the fuse
+work as a 20 ampere fuse.
+
+Lesson 12: The effective use of electricity and to stop its wastage
+
+In our country the demand for electricity is going on increasing. Although plans
+are being made according to the demand, we are failing to meet the demand. In
+addition to this there is additional threat of climate change. This has created
+additional pressure on the demand of electricity. There is an increase of the
+number of offices, houses, shopping centers. In big buildings there is demand for
+air-conditioners and elevators. There is also demand for electricity in
+construction works. To meei the challenge there is need for efforts on the part of
+the government as well as on the individual level. Everybody should come forward
+to ensure the effective use of electricity and to stop its wastage.
+
+To make proper use of electricity and to stop wastage of energy we can take the
+following steps:
+
+® To be conscious about putting off the light, fan, and air-conditioners in
+
+houses and offices unless their uses become essential.
+® To use florescence or energy saving bulbs to save electricity.
+100
+
+Science
+
+To avoid the use of electricity for cooking and use pressure cooker which
+saves
+
+25% energy.
+
+Not to use air-conditioner unnecessarily.
+
+In buying refrigerators one should avoid bigger ones than needed.
+
+To produce their own needed electricity in big factories using their own
+generators, which will save energy transmission cost.
+
+To take initiatives to use solar energy which is renewable.
+
+New words : Electric potential, electric current, resistance, Ohm's Law.
+Alternating flow, electric circuit, ammeter, unidirectional flow, voltmeter, fuse
+
+What we have learned at the end of this chapter-
+
+When two conductors with a potential difference is connected the electrical
+state which determines the direction of the flow of charge is what we call
+electrical potential.
+
+So long there is a difference of potential between two points on a conductor;
+there is a flow of current.
+
+If we can maintain the potential difference between the points in conductor
+the current will continue to flow.
+
+The property of a conductor which resists the flow of current through it when
+a voltage is applied is called its resistance.
+
+Ata constant temperature the current through a conductor is proportional to
+the potential difference between the two ends of conductor.
+
+When the current flows in a single direction all the time, it is called direct
+current.
+
+When the current changes its direction periodically it is called alternating
+current.
+
+There are two ways of connecting electrical equipment in a circuit.. These are
+called series connections and parallel connection.
+
+With the help of an ammeter the current in a circuit can be measured directly
+in units of ampere.
+
+The instrument by which the potential difference between two points in a
+circuit can be measured in units of volts is called a voltmeter,
+
+Fuse is a special device in the circuit to avoid accidents.
+
+Everyone has to be conscious about the proper use of electricity and to stop
+the wastage of electricity.
+
+2025
+2025
+
+Electric Circuits and Current Electricity 101
+
+Exercise
+Fill in the blanks
+1. Ifthere is between two conductors current will occur.
+2. If between the two ends of a conductor is less the____ will be less.
+3. If we use a fuse of to an electric kettle, this will
+
+Short Answer Questions
+
+1. Define Ohm's law,
+
+2. What is the relation between the resistance and the current flowing
+through a conductor?
+
+Multiple Choice Questions
+
+1. What is the unit of electric current?
+
+a. Coulomb b. Ampere
+c. Volt d. Ohm
+2. What is the source of alternating current?
+a. Battery b. DC Generator
+c. Generator d. Electric Cell
+
+After reading the following paragraph answer questions no.3 and 4
+There are two bulbs and a fan which are connected in the study room of Mina.
+On the other hand in their dining room two tube lights, a fan and an electric
+kettle are connected to the circuit.
+
+3. Fuse of which ampere value is to use in the study room of Mina?
+a. 5 b. 10
+¢. 15 d. 30
+
+4. Ifa fuse of 5 ampere is used in dining room of Mina's family -
+i. there will be saving of electricity.
+ii. there will accidents occurring quite often.
+iii. the fuse will melt, the moment the switch will be made on.
+102
+
+Science
+
+Which of the following is correct?
+
+a. 1& ii b. i& iti
+c. i & ili d. iii & iti
+Creative Questions
+
+1.
+
+Mr. Haque connected two 60 watt bulbs in his office room but connected a
+fan and a television in parallel.
+
+a. What is flow of current?
+
+b. What is meant by 5 ampere fuse?
+
+c. Draw a parallel circuit with the instruments of Mr. Haque.
+
+d. Which one of the two circuits is more convenient? Give your opinion
+after a comparative discussion.
+
+Presently there are problems in electric circuit of Mr, Kofi's house. For
+
+example, one gets a shock when the switch is made on, the bulb Luses. In
+
+such a situation a electrician was called up. He examined the current and the
+
+voltage in the circuit by using two instruments and found some faults. He
+
+suggested the members of the family about the proper use of electricity.
+
+a. What is resistance’?
+
+b. What is meant by 10 kilo ohms?
+
+c. Show by diagram how he connected the two instruments.
+
+d. If the members of Mr. Kofi's family become conscious about the proper
+use of electricity what effect there will be on the personal level and at the
+national level? Explain.
+
+2025
+2025
+
+Chapter Ten
+Acid, Base and Salt
+
+Lemon juice, vinegar, lime, antacid medicine, common salt all are very useful
+materials for us. Some of these are sour or acids, some of these are bases and
+some are salts. The chemical properties of these are different depending on their
+properties they are used for different purposes.
+
+At the end of this chapter we will be able to —
+* explain the characteristics of bases and acid;
+e explain the properties of base;
+e explain the properties of salts ;
+e explain the neutral substances;
+* use instruments properly for experimental works;
+* appreciate the importance of acids, bases and salts in our life;
+
+* create consciousness amongst the member of the group about the
+importance of taking safety measures during the experiments.

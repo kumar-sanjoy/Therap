@@ -1,0 +1,497 @@
+Chapter Eleven
+Light
+
+When a ray of light crosses obliquely from one transparent medium into another
+transparent medium, it is bent at the interface, This is refraction of light. In this
+chapter we will discuss various day to day phenomena where refraction of light
+is involved. These will include the total internal reflection and its application in
+the use of optical fibres. We will also discuss how a magnifying glass works and
+compare the function of our eyes with the function of a camera.
+
+At the end of this chapter, we will be able to-
+
+e discuss different phenomenon of refraction in daily life by drawing
+diagrams;
+
+explain total internal reflection ;
+
+explain how optical fibers work;
+
+explain the function of magnifying glass ;
+
+explain how spectacles work;
+
+explain the functions of camera and our eyes;
+®@ appreciate the usefulness of light in performing the different activities in daily life.
+
+Lesson 1: The refraction of light
+
+Have you seen your image in a window glass? You must have marked that your
+image in the window glass is rather indistinct. Do you find a difference between
+this image and the image you see in the mirror?Why the image in the window
+glass is dull? The reason is that glass is transparent and most of the light falling
+on it passes through. Only a small fraction of the incident light is reflected back
+which forms the dull image.
+
+Let us now see in detail how the direction of light changes when passes from one
+medium into another. First of all we begin with the following activity:
+
+2025
+2025
+
+Light 115
+
+Activity: The concept of refraction
+
+Necessary components: A long pencil, a drinking glass
+
+with water in it
+
+Methodology: Take a glass which is 3/4 filled with water.
+
+You now put the pencil in the partially filled glass of water L
+in an inclined way like the figure 11.1. How does the part
+
+of the pencil look under the water?
+
+Observe the immersed part of the pencil. Write down the
+observed results. We know that we can see an object only
+when light reaches our eyes reflected from the object. You
+surely have seen that apparently the immersed part of the pencil — Fig. 11.1 ; Refraction of light
+look shorter, thicker and broken along the bottom of the glass.
+
+In the above experiment light from the bottom of the immersed part of the pencil
+reaches us after refraction. Before the light from the immersed part of the pencil
+reaches our eye it passes from the denser transparent medium water to rarer
+medium air and is deflected in the surface. If light passes straight through two
+different medias, the pencil will look straight certainly. But you observed that it
+seemed broken under water. The apparent bending of the pencil gives evidence
+that light is refracted at the surface between the two different Medias. This
+change of direction of ight is known as refraction of light. Light follows a
+straight path when the mectum is fixed and transparent. But light change its
+direction as soon as it enters into another medium. This change will take place
+according to the density of the changes medium. It is to be noted that if light falls
+normally on the surface, there will be no change of direction of hght.
+
+Lesson 2-3: Laws of refraction of light
+Light rays follow the laws of refraction. Do the following experiment first?
+
+Activity: Refraction of light of a glass slab.
+
+Necessary components: Pins, glass slab, drawing board a N
+Methodology: Fix a sheet of white paper om the drawing FD
+board. Pui the glass slab at the cenier of the white paper and
+draw its boundary line. Now remove the glass slab and draw and
+incident ray AB. Fix two pins P and Q approximately 5 cm
+apart on the line AB. Put back the glass slab in the previous
+position and try to look at the pins P and Q from the opposite ak on
+side of the slab. (Teachers help may be needed). Now put two
+pins R and S on the opposite side in such a way that if you
+look from this side all the pins PORS appear to be in a
+straight line through the slab, Rernove the slab and draw the
+
+Fig. 11.2 : Refraction of light
+with respect to glass slab,
+
+116 Science
+
+line CD through the points marked by the pins R and 5. Draw the refracted ray BC, the
+normals MM” and NN“ as in the figure. Using a protractor draw the incident angle ABN. the
+refracting angle CBN’ , and the emergent angle DCM.
+
+From the above experiment what observations R
+can you make? Here light is entering from
+
+rarer medium air to the denser medium glass. ok,
+
+From the measurement of angles it is observed
+
+that the angle of incidence i is greater than the f
+
+angle of refraction r and is equal to the / 7
+emerging angle e. What conclusions can you Fig.11.3: Refraction of light from
+draw fron these? dense medium to racer medium.
+
+@® When a ray of light enters from rarer medium to a denser medium then it
+bends towards the normal. In this case the angle of incidence is greater than
+the angle of refraction.
+
+e@ When the light ray is reflected from one medium (like air) into another
+medium (like glass) and finally emerge out in the original medium angle of
+incidence is equal to the angle of emergence.
+
+® The incident ray, the refracted ray and the normal drawn at the incident point
+on the surface separating the two media, all lie in the same plane.
+
+® Jn addition to this it is observed from the above experiment that light rays in
+passing from denser medium to rarer medium bends away from the normal.
+In this case the angle of incidence is smaller than the angle of refraction.
+
+e@ When the ray of light is mcident along the normal, then the angle of
+incidence, the angle of refraction and the angle of emergence are all zero. In
+this case there is no change in direction of the incident ray.
+
+Lesson 4-5: Practical application of refraction
+You will find the application of refraction in the following cases
+
+1) When a straight rod is immerged obliquely in water and
+looked at from above, how the part of the rod that is under
+water will appear? If you observe carefully you will see
+that the rod is appearing smaller, thicker and raised
+upwards. In fact it appears so because of refraction. As
+you see in the figure, light is refracted from the denser
+medium water into the rarer medium air and enters your
+eyes. Every part of the emerged rod is raised upwards. As
+a result the rod appears lifted upwards and reduced in
+lengths and increased in diameter.
+
+Fig-11.4: Refraction of light
+
+2025
+2025
+
+Light N17
+
+2) Take a steel mug or a ceramic cup. Put a coin in the mug or ay
+in the cup. Keep your eyes in such a position that you just
+fail to see the coin. If now somebody pours water in the cup,
+the coin will be come visible at one stage. It has been
+possible due to refraction phenomenon. Due to refraction
+light bends in passing from the denser medium water into 5.115 viruaiimege ofa
+rarer medium air and create a virtual image of the coin — svisdoetoretmtanof light
+which you see.
+
+(3) Did you ever hunt fishes? Does a fish stay at the position
+at which you see the fish in transparent water? Not at all. In
+fact, we observe the virtual image of the fish. The fish stays at
+a position which a bit lower than where it appears to be. Ifyou
+hunt the fish with a spear, you have to aim it at a deeper and
+farther position than its apparent position. Something similar
+
+Fig.1 16: Change of 4
+happens about the appearance of steps under transparent —‘“fositun or tshes due”
+
+water. The real position of a step under water is lower than it = ***Hor of hght
+appears when we look obliquely.
+
+People failing to realize it, may have a fall. Such events you can see if you visit
+the Sera Island of saint martin, The water there is very transparent. Stones and
+algae under water appear much closer to the eye than they really are. This
+happens due to refraction of light.
+
+Lesson 6-7: Total internal reflection and critical angle
+
+When a ray of light eniers a rarer medium from a denser medium, the refracted
+ray bends away from the normal drawn at the point of incidence of the ray. As a
+result the angle of refraction becomes larger than the angle of meidence. In this
+way as the angle of incidence increases the corresponding angle of refraction
+increases. For a
+
+particular combination of such pair of media there is a
+particular value of the angle of incidence, which in this
+case must be smaller than 90°, the corresponding angle
+of refraction becomes 90° which means the refracting
+ray passes along the surface of separation of the two
+media. The angle of incidence which corresponds to this
+situation is called the critical angle. Now, what will
+happen if the angle of incidence is greater than the
+critical angle? The angle of refraction can not naturally and critical angle
+be greater than 90°.
+
+Lp ll pllyl
+
+118 Science
+
+It has been observed experimentally that in this case the light ray instead of
+being refracted is reflected back in the medium from the surface level. Thus the
+boundary surlace here acts as a reflecting surface and this reflection occurs
+according to the laws of ordinary reflection. This phenomenon is called total
+internal refection. This means that the light ray from denser medium in this case
+is reflected at the boundary surface following the ordinary law of reflection and
+returns back totally to the denser medium.
+
+According to the figure the angle of incidence corresponding to the incident ray
+PO is less than the critical angle and the corresponding reflected ray is OP’ For
+the incident ray QO the angle of incidence is equal to the critical angle, and the
+corresponding reflected ray is QO” which is traveling along the boundary
+surface. This means the corresponding angle of refraction is 90°. For the ray RO,
+the angle of incidence is greater than the critical angle. In the case the ray OR ‘is
+reflected back by the total internal reflection. Now the question is what
+difference is there between ordinary reflection and total internal reflection?
+
+In the case of ordinary reflection there is always some partial refraction along
+with the reflection. But in the total reflection it is observed that the incident ray
+is totally reflected.
+
+The conditions for total internal reflection
+
+1) Tt occurs only when the light ray goes from a denser medium to a rarer
+medium.
+
+2) The angle of incidence in the denser medium must be greater than the
+critical angle corresponding to the pair of media chosen.
+
+Lesson 8: Optical fibre and magnifying glass
+Optical fibre
+
+The optical fibre is a very thin fibre of glass. It is even thinner than human hair
+and is flexible and extremely transparent. It is used as the carrier of the light rays.
+When light rays enter in this fibre, they undergo repeated total internal reflection
+at the walls of the fibre. This process continues till the rays reach the other end
+of the fibre. Usually doctors use a bundle of optical fibres in a flexible tube
+through which light rays are guided to examine different internal parts of the
+human body like the stomach or colon. Another use of optical fibre is optical
+communication. Since light consists of high frequency electro-magnetic waves,
+it can carry much more information. In optical fibre the loss of signal strength is
+very low and one can send information to long distances and along curved paths
+by using it.
+
+2025
+2025
+
+Light 119
+
+Magnifying glass
+
+A magnifying glass is a type of convex lens that makes objects appear
+larger. When an object is placed within a certain distance of a convex lens
+and viewed from the opposite side, an upright, magnified, and virtual
+image of the object is seen. The closer this i image
+is formed to the eye, the larger the eye’s viewing
+angle will be, making the image appear larger.
+However, if the image is formed closer than a point
+known as the “near point” (the closest distance at
+which the eye can see clearly), it will no longer
+appear sharp. When the image forms at this near
+point, it becomes most clearly visible to the naked
+eye.
+
+When a beam of light parallel to the lens’s axis Fis!!-8 -Magnitymg glass
+strikes a convex lens, the point where the light rays converge is called the
+focal point. The distance from this focal point to the lens along its axis is
+known as the focal length. To magnify objects or text that are hard to see
+with the naked eye, a convex lens with a short focal length is used. This
+lens, enclosed in a suitable frame, is known as a magnifying glass, reading
+glass, or simple microscope. This device doesn’t offer a high degree of
+magnification.
+
+With the teacher's guidance, you can observe this type of magnifying glass.
+
+Lesson 9-10: Human eye
+
+The eye is one of our five sense organs. We see things by our eyes. The working
+of the human eye is similar to the working of a camera. The special parts of a
+human eye are shown in the picture. It's main parts are desenbed below.
+
+a) Eye-ball: In the cavity of the eye there is a spherical object which can be rotated
+
+within a certain limit. This is known ag eye ball.
+
+b) Selera: This is a white covering of the eye-ball which 1s hard, fibrous and opaque.
+
+It protects the eye from external harmful effects and preserves the shape of the eye.
+
+ce) Cornea: Frontal part of the sclera is called cornea.
+This part of the sclera is transparent and is bulged m4
+outwards more than other parts. Come ‘7 FRuna
+
+d) Choroid: It is a black membrane covering the inner pees abi
+body of sclera. Because of its blackness, the light t= “ ——
+entering the eye is not reflected. Fig i
+
+of Human eye
+
+e) Irish: It is an opaque membrane which stays just
+behind the comea. This membrane can be of
+different colour like blue, deep brown, black etc.
+for different persons.
+120 Science
+
+f) Pupil: It is a circular hole at the centre of the cornea which is connected to
+muscular cells. The size of the aperture of the pupil can be changed by the
+expansion and shrinkage of the muscles attached to it.
+
+g) Crystalline convex lens: This is a convex lens made of soft jelly like material
+which is situated behind the cornea.
+
+h) Retina: It is a light sensitive rose coloured translucent membrane located
+behind the eye-ball. When light falls on retina it creates some excitements in
+those nerves and produce the sensation of sight in the brain.
+
+i) Aqueous hummour and vitreous hummour: The space between the lens
+and the cornea is filled with some kind of transparent watery substance. This is
+called aqueous hummour.
+
+The space between the lens and the retina is filled with jelly like material. This
+is called vitreous hummour. ;
+
+Photographic camera
+
+This instrument is used to take photographic
+pictures on photographic plates with the help of
+lenses. This is why it is called Photographic
+Camera or in Short Camera. The different parts of
+the camera are: 1) Camera Box, 2) Camera lens, |
+3) Aperture, 4) Shutter, 5) Screen, 6) Photographic
+
+pa I a
+Plate, 7) Slide. Fig 1110: Photographic Camera
+
+The working of a camera: Before taking the photograph of an object the
+ground glass screen of the camera is directed to the Object PQ and the shutter is
+opened. Now by adjusting distance between the lens and the screen the image Pq
+of the object is focused on screen which is placed opposite to the object. The
+proper brightness of the image is obtained by adjusting the aperture. Now
+removing the ground glass screen the shutter is closed and the ground glass is
+replaced by the photographic plate. Now, the cover of the slide is removed and
+the photographic plate is exposed to a definite amount of light through the
+shutter and aperture. After that the aperture is again closed. This controlling of
+light is called the exposure. The incident light causes chemical reaction to the
+silver halide grains contained in the emulsion of the photographic plate.
+
+2025
+Light 121
+
+Now the slide is covered and the photographic plate is taken to the dark room,
+and then the photographic plate is taken out from the slide and the plate or film
+is kept immersed in a chemical solution called developer. The parts of the film
+ate chemically reduced trom the silver halide to metallic silver, the reduction
+takes place. Those parts of the object which emitted more light, the more
+quantity of silver is stored to those parts of the plate, darkens the corresponding
+parts of the film proportionately. The thickness of the coating of silver depends
+on the brightess of light and duration of exposure. After washing the film it is
+dipped in hypo (Sodium thiosulphite). As a result those parts of the film which
+had not been exposed to light get their silver halide dissolved. The film is then
+washed in water. Thus we get the negative picture of the photograph of the
+object. To get the positive of the picture of the negative film it is placed over a
+photographic paper coated with silver halide and exposed to the light for a short
+time. After this the paper is washed in hypo as before and the positive picture is
+obtained after washing and drying.
+
+A comparison between an eye and a camera
+
+Camera Eye
+
+1) Tt is a light proof closed box which is 1) The eye behaves as a light proof
+painted black inside. For this black enclosure. Its walls are black so light
+colour light incident on it is not falling on it is not reflected,
+iidaecleaes 2) With the help of the eve lid, the eye lens can
+
+2) Using the shutter the lens of the camera be kept exposed to light but i lid cannot kept
+can be kept exposed to light for any exposed to light for any length of time.
+length of time.
+
+3) The amount of light needed to form the | 3) Depending on the intensity of light the
+picture can be controlled by adjusting aperture of the cornea is automatically
+the circular aperture of the camera. adjusted to allow the necessary light to
+
+form the image.
+
+4) Acamera has many lenses and each lens hag a aa
+specific focal length, The lens-use functioning | 4) By adjusting the muscles attached to the
+focal length can be changed by moving the eye lens, its focal length can be changed
+
+lens backward and forward. by changing ils curvature.
+5) The image of the object is formed by its | 5) Cornea, aqueous humour eye-lens,
+convergent lens. vitreous humour together make a
+
+convergent lens, like system to form the
+
+image of an object.
+
+6) A real inverted and reduced image of the 6° An real inverted and reduced image of
+object is formed on the photographic the object is formed on the light
+plate. sensitive retina.
+
+Forma-|6- Science, Class-8
+122 Science
+
+New words: Refraction of light, total internal reflection, critical angle
+What we have learnt at the end of this chapter-
+
+- Inacertain transparent medium light propagates in a straight line but it enters
+a second medium of different it bends by an amount which depends on the
+optical density of the second medium.
+
+- When light falls perpendicularly and transparently on the surface separating
+the two media, its direction does not change.
+
+- When light enters from ararer medium into a denser medium it bends towards
+the normal drawn at the point of incidence on the surface separating the
+
+media. When light enters from the denser medium into a rarer medium it
+bends away from the normal.
+
+- For total internal reflection the angle of the incidence in the denser medium
+must be greater than the critical angle that corresponds to the two media.
+
+- There are many similarities between the working procedure of a human eye
+and that of photography camera,
+Exercise
+Fill in the blanks
+1. The path of light when it enters a different medium depends on
+2. The ray of light that falls along the normal to the surface emerges
+
+7
+
+3. In total internal reflection, the angle of is greater than the
+Short Answer Question
+
+1. Why light changes direction when it enters in a different medium?
+2. What is critical angle? When is it formed?
+3. What are the differences between a human eye and a camera?
+
+Multiple Choice Questions
+
+1. What is the term used for the sclera in front of the eye?
+a. Lens b. Retina
+c. Cornea d. Iris
+
+2, Optical fiber is used for -
+
+i, fuel
+li. examining stomach
+iii. telecommunication
+
+Which one of the following is correct? a
+a 1&u b. i&in ce. ii & iii d. i, 11 & ii
+2025
+
+Light 123
+
+Answer questions no. 3 and 4 from the following figure
+
+OS
+Sr OK SF
+
+3. In which figures light is propagating from denser medium into rare medium?
+
+ax FB b. Q
+ce R d. §
+4. In which of the figures the angle of incidence is equal to the refracting angle?
+a. P&R b. Q&R
+c. Q&S d. S&P
+
+Creative Questions
+
+l. One day Anis went to a pond to take a bath. He put his feet on the visible
+steps under transparent water. But since the steps were at a greater depth than
+they appeared to,he fell down. On the other hand his younger brother is
+catching fish in the pond using spear failed to throw the spike correctly.
+a. What is refraction of light?
+b, What is the cause of change in the direction of light?
+
+c. Explain why Anis fell in the pond ?
+
+d
+
+. What type of trick makes Anis’ brother successful in hunting the fish?
+Explain your answer.
+
+gityitys dy
+
+a. What is total internal refracion?
+b. What is meant by optical fiber?
+c. Explain critical angle in the figure.
+
+d. Explain the path of Ray RO with diagram.

@@ -1,0 +1,473 @@
+2025
+
+Chapter Seven
+The Earth and Gravitation
+
+Newton put forward the law of gravitation that all particles in the universe attract
+each other by a force which is proportional to the product of their masses and
+inversely as the squares of their distance apart. Does this force of attraction vary
+from place to place? On what factor does this force depend? In this chapter, we
+will discuss gravitation, gravity, acceleration due to gravity, mass and weight.
+
+At the end of this chapter we will be able to—
+e explain gravitation;
+¢ explain the distinction between gravitation and gravity;
+e explain the acceleration due to gravity;
+® distinguish between mass and weight:
+
+¢ explain the change of weight of an object due to the influence of
+gravitational acceleration;
+
+e realize the impact of gravitational acceleration in our life.
+70 Science
+
+Lesson 1: Gravitation
+
+If we jump we cannot go up very much. We fall back to the surface of the
+earth. Fruits fall from trees on the earth. Why do all these happen? The
+reason is that the earth attracts these objects towards it. It is not only the
+earth that attracts us, in fact all objects in the universe attract one other.
+This universal attractive force is called gravitation force.
+
+‘You might have heard the story of Newton and the fall of an apple from the
+tree on the ground. As the story goes, Newton was sitting in his garden and
+was engaged in thought. Suddenly he saw an apple to fall on the ground.
+The question came to his mind, why did the apple fall towards the ground?
+Something must be attracting it towards the ground. After much
+speculation, he came to the conclusion that the earth attracts every object
+towards it. Later on, he came to more specific conclusion that it is not only
+the earth but all objects in the universe attract each other towards their
+centre. The attractive force that exists between any two particles in the
+universe is called gravitational force.
+
+Newton's law of gravitation and gravitational force
+
+Each particle in the universe attracts every other particle with a force
+which is proportional to the product of their masses and inversely
+proportional to the square of the distance between them. Newton
+developed an important theorem. That the gravitational attraction between
+two homogeneous spheres is proportional to the product of their masses
+and inversely proportional to the square of the distance between their
+centres. This is because for spherical bodies, the whole mass of the sphere
+can be assumed to be at the centre of the sphere, provided the observer is
+outside the sphere and the sphere is homogeneous.
+
+If we assume that the two point objects or spherical bodies have masses m, and
+m, and the distance between them is d. Then the gravitational force F acting
+between them is given by
+
+Mm My
+
+F=G—3
+
+2025
+2025
+
+The Earth and Gravitation 71
+
+Here G is the consiant of proportionality. lt is called
+the universal gravitational constant. This means that if
+two spherical bodies, each of which has mass one
+kilogram and the distance between them is one meter,
+the attractive force between them is G in magnitude. If
+the bodies are spherical the distance is measured from
+the centres of the spheres.
+
+From the formula of gravitation. we find that if the distance between the two object
+is fixed and the product of their masses is doubled, the gravitational force
+becomes double. When the product of the masses is three times, the corresponding
+force will be three times greater. If the distance between the objects is doubled,
+keeping the product of the masses constant, the corresponding force will be one
+fourth and when the distance is made three times larger, the corresponding force
+becomes one ninth of original force. The earth moves round the sun due to the
+influence of gravitational force just as a ball attached to a string can be made to
+revolve because of the tension in the string. Now answer— why do the planets revolve
+round the sun?
+
+Zw
+
+Fig. 7.1 : Gravitational force
+
+Lesson 2-3 : Gravity and the acceleration due to gravity
+
+Gravity: We know that every material or particle in the universe attracts each
+other. When this mutual attraction involves any two objects in the universe, we
+call it gravitation. If one of the objects is the earth and the attraction on the object
+is due to the earth, we call it gravity. When a cricket ball is thrown upwards, it
+falls back to the earth due to the attraction of the earth.
+
+Just as the earth attracts the cricket ball towards it with a downward force, the
+cricket ball attracts the earth with the same upward force. But since the earth is
+very heavy compared to the cricket ball, it moves very little towards the cricket
+ball. On the other hand, the cricket ball having little mass compared to the earth,
+accelerates toward the earth. The accelerating force due to the earth on any object
+near to it is called gravity. Thus the attractive force between sun and the moon is
+called gravitation. But the attractive force thal acts between you and the earth or
+between your science book and the earth will be called gravity.
+
+Acceleration due to gravity: We know that when a force is applied on an object its
+velocity increases. The rate at which velocity increases with time is called acceleration,
+
+The force of gravity also causes acceleration. This acceleration is called the
+acceleration due to gravity. The acceleration due to gravity is indicated by g. Since
+g is a form of acceleration, its unit is that of acceleration, that is meter/second’,
+72 Science
+
+Let us assume that M = the mass of the earth, m =the mass of an object near
+the earth. d = the distance between the object and the centre of the earth
+From the formula of gravitation, the gravitation force, p= G Min ‘
+Again we get from the relation between force and acceleration, the force of
+eravity — mass * acceleration due to gravity. That is F = mg.
+
+From the above relation we get,
+_ GMm
+a
+GM
+
+d?
+
+or, g=
+
+In this equation m is absent on the right side. This means that the acceleration due
+to gravity does not depend on the mass of the bocly subjected to gravity. Since G
+and the mass of earth M is constant, so the value of g depends on the distance of
+matter d from the centre of earth. Thus the value of g is independent of the mass
+of the object but is not independent of its position. It means that if the distance of
+different places d is different from the center of the earth, the value of g will also
+be different at different places.
+
+Variation of the acceleration due to gravity: The distance of the surface from
+the center of the earth, that means if the earth is considered round, its radius will
+= _ GM
+
+be =R,theng="yr -
+
+Since the earth is not a perfect sphere, R is not really constant. So the value of g
+is not equal everywhere at the surface of the earth. As we move from the pole to
+the equator, the value of R increases and the value of g decreases. At the equator
+the value of g is minimum. It is 9.78 meter/sec? . The value of g in the polar region
+is 9.832 meter/sec2 at the surface of the earth. For the convenience of calculation
+the value of ¢ is taken as 9.8 meter/sec?. At the surface of the earth, the value of
+gis 9.8 meter/sec2 .It means for a freely falling body near the surface of the earth,
+the velocity increases by 9.8 meter/sec at every second.
+
+Ifa body is allowed to fall from above, it reaches to the surface of the earth due to
+the force of gravity. If we allow a piece of stone and a piece of paper to fall from
+the same height, will they teach the surface of the earth at the same time? Since
+the acceleration due to gravity does not depend on the mass of the body, therefore
+the acceleration acting on both the stone and the paper are the same. As a result
+both of them should be expected to reach the surface of the earth at the same time.
+But in reality the stone will reach the surface of the earth before the paper. This is
+because of the air resistance. Air obstruction is relatively Ingh on a piece of
+paper. So, it falls slowly downwards. The stone and the piece of paper would
+have reached the ground at the same time if there were no wind obstruction.
+
+2025
+The Earth and Gravitation B
+
+Lesson 4: Mass and weight ee 8
+In our day to day use of language we often make no distinction between mass and
+
+weight. But in physics the two words mean different entities. In fact when we say
+that the weight of a bag of rice is 50 kg, we actually refer to their masses. In this
+respect the use of the word weight of an object is scientifically wrong. But what
+is the difference between mass and weight’
+
+Mass: All objects are made of materials. Mass of an object refer to the amount of
+material present in an object. This property of the material does not depend on
+location, shape or state of motion, according to Newtonian physics. The mass of
+the objects depends on the number and kind of atoms and the bonds by which the
+object 1s formed. The international unit of mass is kg. A heavy mass is expressed
+in units of tones. One ton is 1000 kg. Small masses are expressed in units of
+gram. Thus the mass of your pencil is 5 gram. Thousand gram make one
+kilogram(kg). More appropriate meaning of mass comes from Newton's law
+F=ma.
+
+Thus the mass of an object is the ratio of F and acceleration. If the mass is greater
+it resists the increase of velocity more for the same applied force. Mass is thus
+related to inertia of motion,
+
+Weight: We know that if a body is thrown upward, it comes back to the earth.
+This is due to the weight of the body which push the object towards the earth. We
+can say the force of gravity causes this downwards pull.
+
+The force with which the earth attracts an object is called its weight. If only the
+force of gravity acts on an object and the gravitational acceleration is ¢ at some
+point on earth and the mass of the object is m then the weight of the object at that
+point will be W, W = mg.
+
+The unit of weight is newton. The weight of an object with mass 10 kilograra is,
+W= 10 * 9.8 newton = 98 newton.
+
+Generally, we can determine the weight of an object by using a spring balance.
+
+Lesson 5: The relation between mass and weight
+
+We know that the amount of material in an object is its mass. It is a constant
+parameter, which does not change due to change of its location to any height
+above the earth. If an astronaut has a mass 7 5 kg, it will remain unchanged when
+he is in the surface of the earth or on the surface of the moon or in an orbit of the
+moon or earth. The amount of material by which an astronaut is built does not
+change due to change of position and that is why its mass remain unchanged.
+Since the mass of an object is constant, its weight changes due to change in the
+
+Forma-10- Science, Class-8
+74 Science
+
+value of g. As one goes more and more above the surface of the earth, the weight of
+an object becomes less and less. The reason for which the value of the
+acceleration due to gravity changes are also the causes of change in weight of an
+object. The weight of an object is not an fundamental parameter. For example, an
+object may have weight at one place and may not have any weight at another
+place. At the centre of the earth, the value of acceleration due to gravity is zero
+and therefore, the weight of an object there must also be zero. At a distant space,
+where there is no gravitational force, the weight of an object must be zero.
+
+The value of the gravitational acceleration of the moon is about 4 of the
+gravitational acceleration on the earth. So, the weight of a Ikg object will be
+about a8 newton (N) = 1.63 N.
+
+The weight of an object at a location depends on its distance from the centre of
+the earth, If the distance is increased, the force of gravity due to earth at that
+point decreases. As a result, the weight of an object there decreases, At the
+surface of the earth the weight of mass | kilogram is 9.8 newton. But at a distant
+point from the earth, its weight decreases with the increase of distance.
+
+The weight of an object vary slightly also at different positions on the surface of
+the earth. One reason for this is that, the earth is not a perfect sphere and the
+acceleration due to gravity is not same at all the points on the earth's surface.
+However, this variation is so small that it can be detected only by using a very
+sensitive weighing machine. We neglect this variation in most of our calculation.
+An object will weigh maximum at the two poles. At these places one kilogram
+will weigh 9.83 newton. At the equator, this weight will be least with a value of
+9.78 newton. At the equinoctial point, the weight is 9. 79 newton.
+
+The weight of a body increases in proportion to its mass. Therefore, the
+instruments which are used to determine weight can also be used to measure the
+mass of the object. Often spring balance is calibrated in units of kilogram.
+Balances and weighing instruments are calibrated in such a way that we
+sometimes use the kg unit for measuring both mass and weight. It is of course a
+wrong practice. Weight is a form of force and for scientific calculation it should
+be expressed in units of newton. When we buy a packet of rice or milk on which
+one kg is marked, we understand that each of these packets has one kilogram mass.
+But their weights are not 1 kg. On the surface of the earth they will weigh 9.8
+newton. These packets will weigh different from planets to planets or on the
+moon, although their masses will remain unchanged.
+
+2025
+al
+my
+>
+a
+
+The Earth and Gravitation 75
+
+Lesson 6: The acceleration due to gravity and the weight of an object are
+different at different places on the earth
+The weight of an object depends on the acceleration due to gravity g. The
+reasons for which the value of g changes are also the reasons for which the
+weight of an object changes. The weight of an object is not an invariant quantity.
+Its value changes from place to place on earth. The reasons, for which the weight
+of an object changes are described below —
+(A) At different places on the surface of the earth: The weight of an object is
+different at different locations on the earth because of the shape of the earth and
+its different locations.
+(1) For the shape of the earth: Since the earth is not a perfect sphere,all points
+on the surface of the earth are not at equal distance from the centre of the earth.
+As the value of g at a point depends on its distance from the centre of the earth,
+the value of g becomes different in different places on the earth's surface. At the
+equilateral area the radius of the earth is largest and the value of g is lowest (9.
+78 meter/sec*) there. This is why weight of an object is minimum in this
+region. As we move from the equator to the poles, the radius of the earth
+decreases and the value of g increases (9.83 meter/sec*), Because of this the
+weight of an object also increases. At the poles the radius of the pole is minimum
+and the value of g is maximum. As a result, the weight of an object is highest in
+this region.
+(2) For the diurnal rotation of the earth: Gravitational acceleration decreases
+for rational motion or instantaneous motion of earth around its own axis. If there
+was no instantaneous motion (i.c assume there is no day and night on earth). then
+the value of gravitational acceleration would have been greater than the current
+(rotating earth) gravitational acceleration.
+(3) For angular distance (latitude) from pole: Gravitational acceleration
+increases progressively from equatorial region to polar region. This also
+increases the weight of the object.
+
+(B) For the increase of height from the earth's surface: As we soar to higher
+heights, the value of the acceleration due to gravity decreases. Because of the
+greater height from the surface of the earth, the lower is the value of the weight
+of an object. Thus the value of g is less at the top of a mountain.
+
+(c) At a point inside the earth: As we go deeper inside the earth the value of the
+acceleration due to gravity goes on decreasing. Because of this the weight of an
+object goes on decreasing, as we go deeper and deeper inside the earth. Thus the
+weight of an object is less inside a mine. At the centre of the earth the value of
+the acceleration due to gravity is zero. Therefore, if we take an object to the
+centre of the earth, there will be no force of attraction of the earth on the object
+and its weight will be zero.
+76 Science
+
+Lesson7-8 : The variation of weight in a lift and in space: Weightlessness
+
+The value of ¢ is constant al any given location on Earth. As aresull, a person's weight is also
+constant at that location. However, a person can experience fluctuations in the perceived
+weight, and in certain situations, may even feel weightless. This difference arises because
+actual weight and perceived weight are not the same. An example of this is the perceived
+weight inside the elevator,
+
+(1) Perceived weight inside a motionless lift: A rider inside a stationary elevator exerts a
+force on the floor equal to the actual weight (w = mg). The elevator floor, in turn, exerts an
+equal and opposite reaction force on the rider, which the rider perceives as his weight. In this
+situation, the perceived weight is equal to the actual weight. |
+
+(2) Perceived weight in an elevator moving at constant ia f _\ »
+velocity: A rider in an elevator moving up or down at constant : Fy
+velocity is also moving at the same constant velocity. As a result, |
+only the rider's actual weight (the force of gravity) acts on him.
+The rider exerts a foree on the elevator floor equal to his actual I
+weight, and the elevator floor exerts an equal and opposite
+reaction force on the rider. Therefore, the rider's perceived x .
+weight is equal to his actual weight.
+
+(3) Weight in an upward-accelerating elevator: To start an | \
+
+elevator moving upward from a stationary position, an additional ae PR
+
+upward force—greater than the combined weight of the elevator Fig. 7.2; Litt
+
+and the rider-—must be exerted by the elevator’s cable. This causes the floor of the elevator to
+exert a force on the rider that is greater than his actual weight, resulting in a perceived weight
+that is higher than his actual weight. This perceived weight can also be considered a reaction
+force.
+
+(4) Weight in o downward-accelerating elevator: To move a stationary elevator upward, the
+tension in the elevator cables must be reduced from the total weight of the elevator and the
+rider. When the elevator moves downward. the floor of the clevator exerts a force on the rider
+that is less than their actual weight. So, the rider's perceived weight is less than his actual
+
+weight.
+
+(5) Weight inside a free-falling elevator: If the lift's supporting cable or wire breaks, the
+elevator will fall freely downward with the rider, ignoring air resistance and other friction.
+Since there 1s no tension in the elevator’s cables due to the break, the floor of the elevator exerts
+no force on the nder. As a result, the rider experiences weightlessness.
+
+The free fall of an elevator is similar to a spacecraft orbiting the Earth or the Moon. Astronauts
+orbit the Earth ma circular path at a fixed altitude, The weight of the spacecraft (W = mg) and
+the weight of the astronaut (W = mg) contribute to this circular motion, and both the spacecraft
+and the astronaut experience the same acceleration. Therefore, the acceleration of the astronaut
+telative to the walls of the spacecraft is zero, and the astronaut does not exert any force on the
+walls or Noor of the spacecrafi. As a result. the astronaut does not feel any reaction force against
+his weight and experiences weightlessness, In this condition, if an object is released from the
+spacecrafi, it will not fall; even if a glass of water is turned upside down, the water will not fall
+either. Everything will appear weightless. Towever, nothing is traly weightless; the astronaut
+still has mass, the location has gravitational acceleration (g), and thus, there 1s still the Earth's
+attraction, or weight. This momentary sensation of weightlessness is created sirmply because the
+spacecraft is moving with acceleration equal to g. If, at that moment, the spacecraft is not
+orbiting the Earth in a circular path or is standing still rather than free-falling toward the Earth,
+the astronaut will feel his weight.
+
+2025
+2025
+
+The Earth and Gravitation 77
+
+New words: Gravity, gravitational constant, acceleration due to gravity, mass,
+weight, weightlessness, lift.
+What we have learned at the end of this chapter
+
+The attractive force that exists between any two material particles in the
+universe due to their masses is called the gravitational force.
+
+Every material particle in the universe attract every other particle and the
+value of the mutual attractive force is proportional to the product of their
+masses and inversely proportional to the square of the distance between them.
+This force is directed along the line joining the two masses
+
+The attractive force that works between the earth and any other material is
+called force of gravity.
+
+The rate at which the velocity of a free fallmg body change due to the force
+of gravity is called the acceleration due to gravity.
+
+The ideal value of the g, acceleration due to gravity is 9.8 meter/sec2.
+
+The amount of material present in an object is its mass.
+
+The force with which the earth attracts an object to its centre is called the
+weight of an object.
+
+Exercise
+
+Short Answer Questions
+
+1. Ifthe distance between two objects is increased three times, how much
+change will occur to the force of attraction between them and why this
+change will occur?
+
+2. What do you understand by the acceleration due to gravity?
+
+Write down three points of difference between mass and weight.
+
+4. Explain why the masses of two objects will be the same when measured
+by a balance on the earth and the moon.
+
+5. Why there is a difference in the weight of the same object when
+measured at the polar region and in the equitorial region.
+
+a
+
+Multiple Choice Questions
+
+1.
+
+What is the unit of weight?
+a. gram b. kilogram
+c. quintal d. newton
+
+2. Which of the following comments is correct with reference to the mass of an object?
+
+a. The mass of an object changes with the change in its location.
+
+b. The attractive force on an object due to the earth is nothing but mass .
+c. The net amount of material in an object is its mass.
+
+d. The unit of mass is newton.
+78 Science
+
+From the figure given below, give answer to questions no. 3 and 4
+
+P Q
+: 30 gram —~ 40 gram
+_ a
+
+jem
+
+3. The attractive force between P and Q depends on-
+i. the masses of the object.
+ii, the distance between the objects.
+itt. the nature of the medium.
+
+Which one is correct?
+a i&il b. 1 & ii
+c. Ua iil d. iu & i.
+4. If the product of the masses of the two objects becomes 3600 gram?, what
+will be the change in the force of attraction between them?
+a, Will be half b. Will be double
+c. Will be three times d. Will be four times
+
+Creative Questions
+1. Nuha let a stone of mass 50 gram and a piece of paper to fall from the fifth
+floor of their building at the same time. Her brother standing on the ground
+observes that stone reached the ground earlier than the piece of paper.
+a. What is gravity?
+b. What is meant by acceleratiobn due to gravity?
+c. Find the weight of the stone?
+d. Explain why the stone reached the ground earlier than the paper.
+2. A body of mass 120 kg is carried to the moon by a rocket. It is observed
+that, though the mass of the object did not change, its weight changed.
+a. What is mass?
+b. What is the difference between mass and weight?
+c. Find the weight of the object on the moon.
+d. Will there be any change of weight of the object on the moon? Explain.
+
+2025

@@ -1,0 +1,690 @@
+Chapter One
+Introduction to Economics
+
+From cradle to grave, human beings continually struggle with financial
+problems for their survival. Throughout their lives, they try to overcome various
+obstacles. The subject economics helps them in numerous ways to overcome
+these problems or obstacles. Economics plays a very significant role in
+achieving human, social and national development. So to learn about this
+subject is very important. This chapter discusses briefly the origin and
+development of economics, the major economic problems, the definition and
+principles of economies, the circular flow of income and the different economic
+systems.
+
+Y hh i " : as
+After studying this chapter, we will be able to-
+
+describe chronologically the origin and development of economics;
+explain the mutual relationship between scarcity and unlimited want;
+describe the concept of economics;
+
+describe the ten main principles of economics;
+
+introduce the various economic systems and
+
+evaluate the comparative advantages and disadvantages of different
+economic systems.
+
+Forma-!, Economics Class 9-10
+2 Economics
+
+1.1 The Origin and Development of Economics
+
+The economics that we study today was not so complex in earlier times. The way of
+living of human being was much simpler in ancient or premitive socicties. Food,
+clothing and habitation—these were the basic needs of people. The practice of
+exchanging goods was very limited. Basically, physical labour was the only means
+of production. There were no class-divisions among people in society. They were
+united into a body with no feeling of defeat or victory to them; it was the main
+pinciple of premitive society. Production and consumption were the main aim
+of that society. During the time of the prophet Moses (a:), in 2500 BC in
+Hebrew Civilization, there had been some simple discussions about economics
+in religious and philosophy books. Law, religion, morality, philosophy and
+economics were all discussed together at that time. There was no existence of
+economics as a separate discipline. Knowing about production, consumption
+and running the day-to-day family life was then called economics.
+
+The English word ‘economics’ has been derived from the Greek word
+‘oikonomia’. Oikonomia means the management of the household. Plato
+(427 —347 BC) and Aristotle (384 — 322 BC) were the two great thinkers of the
+Greek Civilization. They have discussed various fundamental topics of
+economics, including individual property, the wages of the labourers, slavery
+system and interest.
+
+In ancient India in the 4th BC, Koutillya’s (Chanakya) ‘Arthashastra’ (Treatise on
+Economy) focused elaborately on the issues of politics, society, economics and
+military affairs of the whole country. From the last part of the 16th century tll
+the last part of the 18th century, the expansion that occurred in the international
+trade in England, France and Italy has been termed as Mercantilism. For
+increasing the wealth of the country, the power of the state and making the
+surplus in its trade, the merchants of England exported more and imported less.
+Goods produced in England were exported to different countries of the world in
+huge quantities and valuable minerals (gold, silver, diamond, etc.) were
+
+2023
+2025
+
+Introduction to Economics 3
+
+imported. By the middle of the 18th century, the French took a stance against the
+luxurious lifestyle of the rich people of their country, excessive taxation and the
+metcantilism of England, and propagated the tenets of Physiocracy. According
+io the physiocrats only agriculiure, including mining and pisciculture, was the
+productive sector. On the other hand, industry and trade were considered
+non-productive sectors.
+
+In this way, during the ancient and the Middle Ages discussions about
+economics had been gradually becoming complicated. However, economics
+received the recognition as a separate discipline when the British economist
+Adam Sraith wrote his farnous book, “An Inquiry into the Nature and Causes of
+the Wealth of Nations’ in 1776. This book by Adam Smith is the basis of
+modern economics.
+
+Task: Write chronologically about the origin and development of economics.
+
+1.2 Two Major Economic Problems: Scarcity and Unlimited Wants
+
+Human beings cannot get everything they desire, This is known as want. There
+is no end to this need in life, For example, you are a student. Suppose you have
+one thousand taka, You need a shirt, a pair of pants and a pair of good shoes, In
+this way you will find that you need many more things. But you have only one
+thousand taka, Compared to your needs, the amount of money is very little, In
+economics, this is known as ‘scarcity of resources’. Because of scarcity, a person
+chooses or selects things according to their importance. If there had been no
+need to choose, there would have been no need for this discipline, economics.
+
+Scarcity and Unlimited Wants
+
+The main problem of humans is not to be able to get everything according to
+their wants. To produce any goods (e.g. books) or services (e.g. medical
+services), resources are necessary. But “wealth is limited.’ Thus it is possible to
+get limited goods by means of the limited wealth. Therefore, with limited wealth
+all the necessities in life cannot be fulfilled. This is indeed the reason of scarcity.
+4 Economics
+
+Scarcity would have not been created if there had been lesser needs. Famous
+economist Professor L. Robins says, “Economics is a science that analyses
+human behavior related to the combination of unlimited wants and alternatively
+usable scarce resources.” According to economist Samuelson, since resources
+are scarce, the question of the best utilization of the resources in society holds
+such importance. The want for resources obtained from nature like sunlight or
+the wind is very high. But we do not have to spend any money to get these.
+Usually there is no scarcity of these resources. Since the wants of humans are
+too many and the resources are limited, all their wants cannot be satisfied.
+Amongst mumerous wants, human beings satisfy only a few, And they fulfil
+these wants judging the importance of these wants. Humans satisfy the most
+
+necessary wants on a priority basis, This is known as selection of wants.
+
+1.3 Concept of Economics
+
+With the development of knowledge and science, the sphere of economics has
+grown as well to a great extent. As a combination of the knowledge of
+economics from both the past and the present, economics as a discipline is now
+much developed or enriched. Among those who have presented economics as a
+subject or discipline, Adam Smith, David Ricardo and John Stuart Mill think of
+economics as a science of production and distribution of wealth. Of them Adam
+Smith is regarded as the father of economics. This trend of economics is known
+as classical economics. Back then the name of economics was Political
+Economy. Classical economists believed in the doctrine/theory/ principle named
+‘laissez faire’ of the government in economic activities.
+
+Definition of Economics Given by Adam Smith: “Economics is a science that
+explores the nature and reason of the wealth of nations.” Economics grows
+centring wealth or resources. So to acquire resources is the main purpose of
+people’s economic activities, The weaknesses of Smith’s definition are; 1) In
+this definition there is no mention of how economics would satisfy people's
+unlimited wants by means of their limited resources. 2) Although national
+resources have been given more emphasis in this definition, persons and their
+activities have been ignored. 3) Acquiring resources has been emphasized
+whereas how these resources would be acquired has not been mentioned. 4) In
+this definition, resources stand for goods, but there is no mention of services.
+
+2023
+2025
+
+Introduction to Economics 5
+
+Definition of Economics Given by Professor Marshall: Professor Alfred
+Marshall emphasizes human welfare more than resources, He says, “Economics
+discusses the general activities of human life.” The basic point of discussion
+about economics is the income of human beings and their expenditure of that
+money for the purpose of satisfying their wants. That is, the main purpose of
+economics is to accomplish human welfare. Marshall has only discussed the
+accomplishment of human welfare in real life. Whereas at present, the problem
+of searcity is the main problem of economics, and this basic issue has not been
+taken into consideration in the definition of Marshall. Marshall and his followers
+Robins, Jevons, Walras, Edgeworth Pareto etc. are known as the Neo-classical.
+
+Definition of Economics Given by Professor L. Robins: Professor L. Robins
+has defined economics in such a way that it has been much more acceptable than
+the definitions given by others. In his opinion, “Economics is a science that
+analyses human behavior related to the combination of unlimited wants and
+aliernatively usable scarce resources.” The characteristics of this definition are:
+1) Human wants are unlimited and the nature and volume of the wants are
+different. 2) The resource and time to fulfill the wants are very limited. 3) One
+very important part of the discussion of economics is how to adjust unlimited
+wants by means of limited resources. 4) As the supply of the resources is limited,
+we have to try to satisfy our varied wants with the same resources, 5) Wants are
+to be satisfied on the basis of their priority. For these reasons, this definition is
+considered to be a more acceptable one.
+
+Criticism of the Definition of Robins: 1) Robins has observed the subject
+matter of economics from a wider point of view. 2) Human beings often like
+some things in their personal and social lives, which are not discussed in
+economics. 3) It is not mentioned that the main purpose of economic activities is
+human welfare. 4) The social position of economics has not been discussed in
+Robins’ definition. 5) The economic development of the modem world has not
+been included in his definition. 6) Robins has only discussed economics with
+price, but he skipped to discuss national income, employment system,
+investment, distribution, etc.
+6 Economics
+
+Concept of Keynesian Economics: In the context of 1930’s great depression
+the laissez faire doctrine of the classical economists proved totally futile, At that
+time, British Economist John Maynard Keynes raised strong logic in favour of
+the government interference to uplift the economy from the recession, Accord-
+ing to Keynes, due to different reasons, marketing system can not provide the
+solution of the economic problem, However, interference of the government that
+means the increasing of government expenditure; decreasing the tax rate and
+increasing of entire consumption help to come out from the recession.
+
+1.3.1 Microeconomics and Macroeconomics
+The main two branches of economics are:
+
+1, Microeconomics
+
+2. Macroeconomics
+
+Microeconomics refers to the micro unit of economics and Macroeconomics
+refers to aggregate economic behaviour.
+
+Difference between Micro and Macro Economics:
+
+Microeconomics: The branch of economics which discusses the behaviour of
+an individual, household, a farm or analysis marketing of a comodity is called
+Microeconomics.
+
+Macroeconomics: The economics that analysis the total behaviour (such as:
+total consumption, total investment, national production, unemployability,
+income and expenditure of govt. inflation, international trade etc.) of economics
+is called Macroeconomics.
+
+1.4 The Ten Principles of Economics
+
+We have to meet unlimited wants from the perspective of limitation of resources
+in our society. According to economist Gregory Mankiw, before discussing
+concepts and ideas of economics, it is important to know about the ten
+fundamental principles of economics. ‘These are:
+
+2025
+2025
+
+~J
+
+Introduction to Economics
+
+1. People Face Trade-offs
+
+To get something that we like we often have to sacrifice some other thing that we
+also like. To give an example, if you spend all your time studying economics,
+you will have to keep off from studying Bangla or English. Similarly, if you are
+watching television, you will not be able to spend time for playing. If the
+government is spending more for the military sector in the budget, it is reducing
+its expenditure in other civil sectors including the education sector. That is, a
+person in society chooses an alternative for a trade-off.
+
+2. Opportunity Cost
+
+If you are spending time at school for your studies, you cannot help your father
+or mother with their work at home or outside. Whereas if you were involved in
+any economic activity that your parents are domg, they would be monetarily
+benefitted. But you are studying at school (not helping with your parents’
+economic activity). Here not being able to work for your parents because of your
+studies is the opportunity cost of studies.
+
+3. Rational People Think at the Margin
+
+People think at the margin. After the feast at a wedding ceremony, some of you
+may think that it would have been better if you had eaten a Little more, and some
+others may think that it would have been better if you had eaten a little less. This
+little more to eat ora little less to eat is the marginal eating. Suppose, you have
+achieved an A in economics. You might think that if you had studied a little
+more, you could have obtained an A+. Human beings also think of marginal
+advantages and disadvantages. For example, you ate three bananas one after
+another, The third banana is the marginal banana. The satisfaction you got from
+the marginal banana is known as the marginal utility. To have that third banana,
+the money that you have spent is known as the marginal cost. As a rational
+being, you will eat the marginal banana only when the marginal utility will be
+greater than the marginal cost.
+g Economics
+
+4, People Respond to Incentives
+
+Inspiration or incentives play an important role in every task. If people get
+incentives, they perform their job with better care. If your father tells you that he
+will buy you a bicycle if you can get a GPA 5, surely your enthusiasm for studies
+will be greatly enhanced. Similarly, in economics if the labourers get incentives,
+they will produce more.
+
+5. Trade can Make Everyone Better-Off
+
+The United States produces cars cheap, and we can produce garments cheap. In
+the circumstances, if we trade with the States giving them our garments in
+exchange for their cars, we both will profit from the trade.
+
+6. Markets are Usually a Good Way to Organize Economic Activities
+
+Economic activities are organized by the market system, The reciprocal actions
+and reactions between the firms and the households determine the price of any
+goods. The owners of the firms supply goods observing the market demands and
+numerous households buy these goods and services as per their incomes and
+needs. So market prices are determined by the actions and reactions between
+demand and supply.
+
+7. Government can Sometimes Improve Market Outcomes
+
+The market system is run by the signal of the ‘invisible hand’. But it always does
+not turn out to be correct. For many reasons, the invisible hand fails to succeed.
+In these situations governmental interventions are a must. The interventions are
+necessary to ensure the proper supply of goods like education, health, law and
+order, electricity, etc., the proper utilization of resources, and to prevent the
+centralized monopoly of resources, environmental pollution and corruption.
+
+8. A Country's Standard of Living Depends on Its Ability te Produce Goods
+and Services
+
+The standard of living of those countries is high whose capabilities for producing
+goods and services are better. The production capacity of the people of
+
+20125
+Introduction to Economics 9
+
+developed countries is much better and as a result their per capita income is
+much higher. The per capita income in 2018 in the United States was $62794.6 and
+in Japan was $39290 (Source: The World Bank). As a result, they have better
+food, better healthcare and better civic facilities. The working capacity of the
+workers also increases. They can produce many more goods and services in less
+time and less labour.
+
+9. Prices Rise When the Government Prints Too Much Money
+
+The power to print money rests with the central bank. If the central bank prints
+too much money, inflation will occur. That means the price level of goods rises.
+Inflation causes the value of money to fall. For example, you can get the
+necessary materials for your studies, spending taka 500. But when the value of
+money falls, you will have to spend taka 650 to get the same things, which is taka
+150 more (650-500=150). As the prices of goods go up, you have to spend more
+money to get the same things.
+
+10. Society Faces a Short-Run Trade-Off between Inflation and
+Unemployment
+
+The rise in the price level of the goods is known as inflation. The unemployed
+people are those labourers who want to work at the market wages but cannot get
+jobs. When inflation decreases, unemployment rises. On the other hand, when
+unemployment diminishes, inflation increases.
+
+1.5 The Circular Flow of Income ( the two sectors)
+
+In economics who are involved with production, exchange, consumption and
+distribution are called economic agent. These agents interact with each other in
+the marketing process.
+
+There are two types of agents in a simple economy: consumers or households and
+producers or firms. How the income and expenditure flow in a circular motion
+between these two types of agents are shown here in the diagram below.
+
+Forma-2, Economics Class 9-10
+10 Economics
+
+Income Goods & Service Expenditure
+
+market Lag
+
+Goods & Goods &
+services sell services purchase
+ace Households
+Factors of Labour, land,
+production capital
+Factors of
+~ production market
+Wage, rent, Interest Income
+
+Diagram: Circular flow of Income
+
+In the above diagram, it is observed that there are two types of agents in econom-
+ies. For example, the firms and the households, Firms or the owners of the firms
+purchase the materials of production. Later they organize these materials and
+produce goods and services, They supply these produced goods and services to
+the market or sell these. On the other hand, households earn by selling different
+elements of production under their ownership such as labour, land and capital.
+(Labour earns wages, the owners of land earn rents and capital earns interest.
+Meeting all these expenditures, an entrepreneur sells the produced goods or
+services to the market. The entrepreneur keeps excess profit for themselves
+before selling produced goods or services. For this reason the surplus income of
+the entrepreneur is called profit). The households purchase goods or services
+from the firms with their income. Thus the wheel of economy revolves around
+the circular flow of produced goods, services and income. And this is known as
+“the circular flow of income”.
+
+1.6, Different Types of Economic Systems
+
+Our resources are limited but our demand is unlimited. Limitation of wealth and
+searcity of wealth is the economic reality of human life. For this reason, we
+
+2023
+2025
+
+Introduction to Economics 11
+
+have to face many problems. To a greater extent, these problems are considered
+as the fundamental economic problem, The problems are as follows:
+
+a) What will we produce and what will we not produce? For instance. will
+we produce paddy, or clothes?
+
+b) What type of technology or machine will we use for production? What
+do we want to produce?
+
+c) For whom will we produce? Who will consume it?
+Different types of economic system have been developed in the world on the
+basis of economic problem solving process. The main of these systems are:
+| .Capitalistic or market economic system
+2. Socialistic or command economic system
+3. Mixed economic systern
+4, Islamic economic system
+
+1, Capitalistic or Market Economic System
+
+In this economic system production materials are private properties. Without
+any interference from government in automated price system the entire
+economme activities are run by non-governmental initiatives. This type of
+economy is called Capitalistic or Market economy. The capitalistic economy
+started in whole Europe during the end of the 18" century after the French
+revolution. Classical economist Adam Smith and his followers used to support
+this economic system,
+
+Characteristics of Capitalistic or Market Economy
+
+The major characteristics of the capitalist economy are mentioned below:
+
+|. Private Property: In capitalist economy, majority of the resources or
+the materials of production of the society are under individual ownership.
+The owner can exchange or consume these properties.
+
+2. Private Enterprise: In capitalism maximum economic activities,
+e.g. production, exchange, distribution. consumption, etc are run by
+individual enterprises. Governmental interference is not expected in these
+enterprises.
+12 Economics
+
+3. Free Competition: In this system, many firms get involved in free
+competition regarding the production of goods and services. As a result,
+the prices of the goods remain less and newer inventions are possible.
+
+4. Automatic Price System: The price of the goods is determined through the
+bargaining between the sellers and the buyers.
+
+5. Profit: The producer, in capitalism, produces for the target of the highest
+profit possible.
+
+6. Consumers’ Liberty: Every consumer is free to buy and consume goods
+according to his‘her individual choice, wish and taste. The producer
+supplies goods as per the demand of the consumer and the opportunity of
+profit,
+
+7. Inequality of Income: In a capitalist society there remains a greater
+inequality of income between the rich and the genera! people in society. To
+some extent, unemployment is inevitable in capitalist economy.
+
+8. Role of the Government: Government, in this system, remains engaged in
+the maintenance of law and order, protecting the state, and securing the
+rights of wealth.
+
+The activities of the capitalist economy are run in different sectors of
+economy, through mutual dependence. None works selflessly; rather everyone
+performs the economic activities for their own interests.
+
+Solution
+
+a) In this system all the decisions are determined according to the logic of the
+market. For example, if the demand and price of any goods is higher, the
+production of these goods will also be higher. The relative demand of the market
+will determine the order of production.
+
+b) Due to technology the production cost can be the lowest in the market. Goods
+will have to be produced by using this technology.
+
+c) The owners will earn or consume according to price of production determined
+in the market.
+
+2023
+2025
+
+Introduction to Economics 13
+
+So it is observed that the production, the process of production and the
+distribution of production are determined by market through the competition of
+the owners of materials and the sellers and buyers. The buyers and sellers are the
+personal owners of the total wealth and production materials. The price of
+productions and others are determined by the internal activities of the buyers and
+sellers.
+
+2. Socialistic or Command Economic System
+
+In socialist economy, the state or the society holds the ownership of most of
+the resources and factors of production. State or society is the owner of the
+majority of the industries and institutions of production and they are run by the
+directions of the government. The state or the society decides which products
+will be produced and in what quantity, how and for whom.
+
+Characteristics of Socialistic or Command Economic System
+
+1. State or Social Ownership Resources: In socialist economy
+government is the owner of most of the resources (land, industries, mines,
+ete.) and factors of production. Co-operative organizations and joint social
+groups work under state.
+
+2. Central Planning: State or government decides all planning centrally. The
+productions and distributions are done according to this plan.
+
+3. Lack of Consumers’ Freedom: In most of the cases in socialism, the
+consumers consume the goods that are produced by state and central
+planning. No consumer produces or consumes anything spending money on
+his/her own will.
+
+4. Lack of Free Competition: As the production in maximum cases is run by
+state enterprise, there is no free competition among the huge number of
+private entrepreneurs.
+
+5. Absence of private Profit: In socialism production is run for national
+demand and overall welfare of the state not for private profits. So no
+industry is developed by private enterprises. Agriculture, industry and trade
+all are under the ownership of state and social ownership. So there is no
+private profit.
+14 Economics
+
+Solution
+
+In this system the central authority determines what products will be produced.
+Here the owner of the total wealth and production materials is the state or
+society. As their representative the Central Planning Ministry finally determines
+everything such as the types of production, choice of technology, price, income
+and consumption, etc. All the players of economy have to follow their
+instructions as law. So, this system is called the command system. In this system
+priority is given to social interest or social welfare. other than self interest or
+profit.
+
+Group task: Present the comparison of the capitalist and socialist economic
+system.
+
+3. Mixed Economic System
+
+The economy in which individual ownership and private enterprise exist side by
+side with state enterprise and control, is known as the mixed economy. That is,
+in this economic system, private and state enterprises play a combined role. In
+most of the countries of the world, mixed economy exists for example, the
+United States, the United Kingdom, Germany, Bangladesh, India, etc.
+
+Characteristic of Mixed Economy
+
+In different countries of the world, the characteristics of mixed economy are of
+different kinds. Usually, the following characteristics of mixed economy are
+observed:
+
+1. The Private Co-operative and State Ownership of Resources: In mixed
+economy an individual can freely possess and enjoy his/her movable and
+immovable properties and also can trade those off. Side by side with that, the
+government runs the institutions that provide the public properties
+(highway) and services (healtheare).
+
+2. Private Enterprise: In mixed economy, most of the economic activities
+
+along with production, trading, distribution and consumption, are organized
+and conducted by private enterprises.
+
+2025
+2025
+
+Introduction to Economics 15
+
+3. State Enterprise: In mixed cconomy, state enterprises are undertaken
+alongside private enterprises. The vital and heavy industries, national
+security and institutions that are significantly public-related, are conducted
+by the state.
+
+4. Profit: It is possible to earn profits by conducting maximum economic
+activities in the private sector.
+
+5. Freedom of the Consumer: In this system, the consumer enjoys full
+freedom regarding the trading and consuming of general products. However,
+if the government deems it necessary, it can influence the price of the goods
+and control the production and consumption of any goods as per its
+necessity, for example, smoking, production of drugs and consumption, ete.
+
+Many people consider this mixed economy as a better economic system since
+pure capitalism or socialism can be found nowhere in the world, In this systems,
+private and public sectors remain side by side. For this reason, besides individual
+freedom government’s control remain in the field of production, exchange,
+distribution and consumption.
+
+Islamic Economic System
+The economic system which is developed on the belief of fundamental roles of
+Islam is called Islamic economic system.
+
+Characteristic of Islamic Economic System
+
+In Islamic economic system,it is said that all the resources of the world have to
+be used for the welfare of human kind. The important characteristics of this
+system are as follows:
+
+1. Belief in Islam: The fundamental rules of Islamic economy are complied and
+directed according to religion, religious philosophy, religious customs, rules
+and regulations.
+
+te Interest-Free Deposit: Islamic economic system does not allow interest.
+Here interest-free deposit system is conducted in banking sectors.
+16 Economics
+
+3. Zakat and Fitra: Zakat based distribution system has been introduced in
+this system. For this. Zakat and fitra are collected from the rich in order to
+distribute among them the poor.
+
+In this system, all the economic activities are conducted by the laws of Islam. In
+the context of production and consumption the laws of Quran and Sunnah have
+
+to be followed.
+
+Task: Which economic system is similar to the economic system of Bangladesh?
+Explain.
+
+Exercise
+
+Short Questions
+
+1, What is meant by scarcity and unlimited wants?
+
+2. Illustrate the definition of economics given by Adam Smith.
+3. What is meant by the circular flow of income?
+
+4, What is capitalistic economic system?
+
+5. What is mixed economic system?
+
+Descriptive Questions
+
+1, Discuss the origin and development of economics.
+2. Define economics. Which of the definitions is more acceptable and why?
+
+3, Discuss the ten principles of economics.
+
+20125
+Introduction to Economics Vy
+Multiple-Choice Questions
+
+1. Whois the father of economics?
+a. David Ricardo b. Aristotle
+c. Adam Smith d. L. Robins
+
+2. Market is a good medium to organize economic activities. Because, there
+a. one can bargain.
+b. one can buy consumer products at a cheap price.
+
+c, goods can be produced according to the demand.
+
+Which one of the following is correct?
+a. land ii b. iand ili
+
+©. and iii d. i, di and iti
+
+Read the following passage and answer question numbers 3 and 4
+
+Nabil went to the market to buy sugar and found that the price of sugar is too
+high. A buyer standing beside him told hira that sugar is being sold at the
+governmental selling centre at a reasonable price just across the street.
+
+3. Which economic system is prevailing in Nabil's country?
+a. islamic b. mixed
+
+c. capitalistic d. socialistic
+
+4. In the economic system of Nabil's country,
+
+a, there grows mequality of income. b. interest-free loan is exchanged.
+c. stability of price is persistent. d. there is no freedom of private
+enterprise.
+
+Forma-3, Economics Class 9-10
+18 Economics
+
+Creative Questions
+
+Nadi’s father says to Nadi- “If you do well in the exam, I will buy a bicycle for
+you.” Hearing this Nadi becomes happy and thinks, if she gets the cycle, she will
+be able to go to college by riding it. In this way, she can save her fare. So by
+decreasing time for sports and watching television, she studies more for making
+good result.
+
+a. According to landowner, which one is the production sector?
+b. What do you understand by scarcity? Explain.
+c. Inthe above stem which subjects are found of economics? Explain.
+
+d. Do you think besides the referred issues in the stem, there are more
+relevant issues? Explain with your opinion.
+
+2, Asad has been living in couniry ‘A’ for a long time. Recently he came to visit
+his own country and he told his younger brother about the experiences of his life
+abroad, The per capita income of the people of that country is very high. The
+owner of the institution that he works for did not need permission from the
+government before establishing his factory. And also, he can consume any
+product that he likes.
+
+a. Itlustrate the definition of economics given by Adam Smith.
+b. Describe the importance of incentive in economics.
+
+c. Explain the real face of the existing economic system of the country ‘A’.
+d. Analyse the difference betweenthe economic system of the country ‘A’ and
+that of Bangladesh.
+
+2025

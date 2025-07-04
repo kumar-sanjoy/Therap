@@ -1,0 +1,1162 @@
+Chapter nine
+
+Refraction of light
+
+The velocity of light in a vacuum is 2.99792458 x10°ms". If light enters a
+medium, its velocity decreases from this. To explain this process a quantity named
+refractive index is defined. You can easily show that light changes its direction due to
+the change of its velocity while passing from one medium to another. Due to this
+property of light, or refraction, a wonderful event may happen named total
+internal reflection. We will discuss various uses of total internal reflection in this
+chapter.
+
+Convex and Concave lens can be made by using refraction. Which type of
+images can be formed using these two lens will be discussed in this chapter.
+
+2025
+2025
+
+Refraction of light
+
+® By the end of this chapter we will be able to-
+
+explain the laws of refraction.
+
+explain the refractive index.
+
+explain total internal reflection.
+
+explain the use of optical fibers.
+
+describe lenses and their classification.
+
+describe different qualities of lense by drawing a ray diagram.
+
+describe the image formed by lenses by drawing a ray diagram.
+
+describe the power of lenses.
+
+243
+244 Physics
+
+9.1 Refraction of light
+
+You know that when light moves from one medium to another, three different
+events may happen . One is reflection, where some amount of light come back
+to the first medium while entering the second medium and we have discussed
+this in the previous chapter. Another one is refraction, when light passes from the
+first medium to the second. We will discuss this in this chapter. Another one is
+absorption, when some amount of light is absorbed, which we will not discuss
+here.
+
+In order to understand refraction a quantity named the refractive index (n) is
+used. We know the velocity of light in a vacuum is 2.99x108 ms"! and when it
+passes through a medium this velocity decreases. In a medium, the factor by
+which the velocity of light reduces is the refraction of light of that medium .
+For instance the velocity of light in water is 2.26x108 ms” therefore the
+refractive index of water is
+
+c 299x108 ms? _
+vy 2.26X108 ms?
+i.e. the velocity of light in a vacuum is 1.33 times greater than the velocity of
+light in water .
+
+n= 1.33
+
+Table 9.01: Refractive index
+
+The refractive index of the glass fiber in a
+of some substance
+
+fiber optic cable is 1.5.
+
+Therefore, the velocity of light in the fiber is Vacuum 1,00
+Ai
+v =3X108 ms1/1.50 = 2.00 x 108 ms? i 1,00029
+i, . . Water 1.33
+Refractive index is a number and it has no Normal glass| 1.52
+unit. As the maximum velocity of light is c, ;
+Diamond 2.42
+
+the value of always greater than 1 . In
+Table 9.01 the refractive index of some substances are given.
+
+Naturally, the refractive index of a vacuum will be 1.
+
+The refractive index of air is 1.00029 which is so close to 1that we will take it as
+1 during calculations.
+
+Example
+
+Question : Calculate the velocity of light in the mediums shown in Table 9.01 .
+
+Auswer : Velocity of light in any medium: v = <
+
+2025
+Refraction of light 245
+
+In vacuum v = 3 x 108 ms?/1.00 = 3x10® ms?
+In air v = 3X 108 ms1/1.00029 = 3x10 ms?
+Inwater v=3x108ms1/1.33 = 2.26 x 108 ms?
+
+In normal glass v = 3 x 10° ms1/1.52 = 2x 108 ms?
+In diamond v = 3 x 108 ms*/2.42 = 1.24 x 108 ms
+
+To determine the refractive index of a
+medium is, the wavelength of light
+for which the refractive index is
+
+measured must be stated, because the first medium
+
+refractive index depends on the
+wavelength of light.
+
+9.1.1 Laws of refraction
+
+What we need to understand the
+laws of refraction are already known.
+In the case of reflection of light we
+have imagined a normal from the Figure 9.01 : Refraction of light from
+point of incident. We do the same first medium to the second
+
+here . In Figure 9.01 we will call the
+
+angle between the incident ray and the normal as the angle of incidence and the
+angle between the refracted ray and the normal as angle of refraction.
+
+second medium
+
+/ First Law of Refraction: The refracted ray will lie on the same plane as the
+incident ray and the normal.
+
+Second Law of Refraction: If the refractive index of the first medium is n,,
+the refractive index of the second medium is n,, the angle of incidence is 0, ,
+the angle of refraction is 9,, then
+
+Se nisiné; = nz sin & y,
+
+If you remember this, you will be able to solve all problems about
+refraction of light.
+
+2025
+246 Physics
+If the first medium is air then taking n,=1, (Figure 9.02)
+
+we can write m= sind,
+2=7
+sin 6,
+
+As the value of n, is greater than 1, 0, < 6, i.e after refraction, the ray of light
+will bend towards the normal . We say the medium is denser if the value of n is
+greater . We are not calling the medium denser due to its mass . Here the
+meaning of a denser medium the that the value of n is more . Therefore,
+according to the second law of refraction, when a ray of light enters from a rarer
+medium to a denser medium, the refracted ray bends towards the normal. When
+it enters from a denser medium to a rarer medium, it goes away from the normal
+(Figure 9.02). Remember that refractive index of a medium has no direct relation
+
+with density of that medium.
+
+rarer medium rarer medium ! a,
+
+my
+
+1 na . denser medium /}
+i \denser medium t
+
+Figure 9.02 : The refracted ray bends towards the normal when entering
+from a rarer medium to a denser medium, and it goes away from the
+normal when entering from a denser medium to a rarer medium.
+
+Here only the incident ray and refracted rays are drawn, as refraction of light is
+discussed, but we must remember that when a ray of light goes from one
+medium to another every time some amount of light is reflected. How much light
+will be reflected and how much light will refracted depends on the angle of
+incidence. When there is an increase in the angle of incidence, the reflection
+increases.
+
+2025
+2025
+
+Refraction of light 247
+
+@) Do Yourself
+
+(— >
+
+=a)
+No
+i
+—
+
+Figure 9.03 : Refraction of light in water and glass
+
+Put a coin in a cup and place the cup in front of you so that the coin is
+not seen . How is it possible to see the coin without moving your head?
+After pouring water in the cup, the coin will be seen. Due to refraction
+light will bend and reach your eyes. It will also seem as if the coin has
+
+moved upwards.
+Ne y,
+
+Example
+
+Question: A ray of light is incident on a medium of n= 1.6 with an angle
+of incidence 45 (Figure 9.04 a) . With what angle will it enter into the
+second medium ?
+
+Answer: We know 7, sin@, = nz sin &
+
+ind, = “sing, =x == 0.44
+Therefore sin @, = te sin; = 7% ie
+0, = 26°
+
+Question : In Figure 9.04 b, a ray is incident from air to another medium at an
+angle of 60° and refracted at angle 8f 45 . What is the refractive index of the
+second medium?
+248 Physics
+
+(b)
+
+Figure 9.04: (a) Angle of incidence of light is 45° (b) Angle of
+incidence is 60° and angle of refraction is 45°
+
+Answer : We know n,sin@, = nz sin 0,
+
+1x sin60°= n,sin45°
+
+9.1.3 Relative refractive index
+
+We said that the refractive index of a medium is always greater than 1. Because
+, as the refractive index of a medium is a comparison of the velocity of light in
+that medium with the velocity of light in a vacuum, it will be greater than 1.
+Sometimes the refractive index of a medium is expressed in comparison with
+another medium. Then the refractive index may be less than 1 depending on
+which medium is being compared with which.
+
+For example, if water is the first medium and glass is the second medium (Figure
+
+9.05) then nz sin@, = nz sin A,
+
+ny = 1.33
+Nz = 1.52
+
+The refractive index of glass compared to water:
+
+vi W/m nz _ sinh
+
+Vi
+
+vw |, “ny, siné,
+
+=1.14
+
+which is greater than 1. Here, vy, means speed of light in vacuum.
+
+2025
+Refraction of light 249
+
+The refractive index of water while compared to with glass
+
+nm,  sin@
+
+Mm sind = 0.88
+
+which is less than 1.
+
+You therefore divide the refractive
+index of the medium that you want to
+determine by the refractive index of
+the medium with respect to which
+you want to determine the refractive
+index .
+
+Diamond with respect to water : 1.82
+Water with respect to diamond : 0.55
+Diamond with respect to glass : 1.59
+Glass with respect to diamond : 0.63
+
+ny
+water
+
+glass nz
+
+But in physics usually the refractive
+index of a particular substance is
+used, not the refeactive index of one Figure9.05: Refraction of light from
+substance in comparison to another. water to glass
+
+9.2 Total Internal Reflection
+
+When discussing reflection, we learned that when perfect and total reflection
+is needed, then instead of mirror a perfect transparent medium is
+used, and a kind of reflection is made. This is called total internal
+reflection. It is a very easy and exciting process. Here, light rays are sent
+to a rarer medium from a denser medium using the refraction of light. We
+know (and have used many times) that the law of refraction is
+n, sin@, =n, sin8, ie if n, is greater than n, then 6, is greater than @,.
+
+Suppose you are sending a ray of light from a denser(n, ) medium to a rarer(n,)
+medium (Figure 9.06).According to the laws of reflection and refraction some
+amount of light will be reflected and some will be refracted . As 6, will be greater
+than 0, therefore staying 6,(90°,0, will be equal to 90° and after this there will
+
+be no scope of light to be refracted, i.e when 6, will be equal to 90°, total
+light has to be reflected . The value of 6, at which 8, = 90° is called the critical angle ,.
+
+Forma-32, Physics, Class 9-10
+250
+
+Physics
+n,sin90° =n, sing,
+. n
+sind, =—
+n,
+6 8
+mh \ ny my
+ca
+Ty fiz Ts
+Oy 6; 8: 0,
+a a, LAN
+8 <68e 6, =6e
+
+6) > Oc
+
+Figure 9.06: When passing from a denser medium to a rarer medium, total internal
+reflection of light may occur .
+
+ie n, sin90° = n, sin 6,
+
+: ny
+or sin 6, = —
+Ng
+
+If we know the values of n, and n, we could calculate an angle 9, for which
+the above law is true. Therefore, the law can be expressed as
+
+_1{™%
+9; = sin™+ (=)
+N2
+
+nz for glass = 1.52 and
+mn, for air = 1.00
+m 1.00
+
+me = 152 7 066
+
+Figure 9.07 : Most teeming reflection
+occurs in total internal reflection .
+
+It is possible to show that, sin 41.8° = 0.66 or sin~1(0.66) = 41.8°,
+therefore the critical angle 6, = 41.8°
+
+2025
+2025
+
+Refraction of light 251
+
+When sending light from transparent glass to air, if the ray of light is incident at
+an angle greater than 41.8°, the ray of light will not emerge from transparent
+glass and will be totally reflected . If you have a prism then you will be able to
+see total internal reflection with your own eyes. In Figure 9.07, at the glass-air
+separating surface the incident angle is 45° ,which is greater than the critical
+angle 41.8° of glass-air. Therefore total internal reflection will occur here.
+
+Example
+
+Question : What will happen if you want to do this experiment under
+water ? (n, for glass is 1.52 and n, for water is 1.33)
+
+Answer: In water = 0.88 ,therefore the critical angle of glass will be 61.6°
+because sin 61.6° =0.88
+
+or sin'(0.88) = 61.6°
+
+As the angle of incidence is 45° , which is less than the critical angle 61.6°, total
+internal reflection will not occur.
+
+Question : Light incidents at an angle of
+75° from a medium of refractive index
+1.45. With what angle will the ray of
+
+light emerge if there is air on the other 7
+
+side . = m= 1.45
+Answer : We know NO n= 0
+n, sinO; = nz sin 9, Os
+1.45 x sin75° = 1x sin 6, |
+sin @2 = 1.40 Figure 9.08 : Light incidents at angle 75°.
+
+We know the value of sin 6, will not be greater than 1, but here it happens
+because light is totally reflected without refracting . Therefore whenever we
+want to see the refraction of light from a denser medium to a rarer medium then
+it is better to determine the critical angle first. If light incidents at an angle less
+than this critical angle, only then it is possible to get refraction.
+252 Physics
+
+In this case if the critical angle is 9,
+
+1
+sind, = 145 = 0.69
+
+6, = 43.6°
+Therefore, if light incidents at angle 75° , then total internal reflection will happen
+instead of reflection.
+
+9.2.1 Rainbow
+
+You may be thinking that you have never seen total internal reflection. But those
+who have seen a rainbow have seen total internal reflection . A rainbow is
+formed by the total internal reflection of water. Those who have not separated
+white light into different colors with prism , have seen this in a rainbow . If the
+sun shines after rain, we see a rainbow. Because there are water droplets in the
+air, in that water total internal reflection occurs, where different colors of light
+bends in different angles . The bands of different color of the rainbow are formed
+by these light rays . Those of you who have seen a rainbow have seen that the
+rainbow always forms in the sky opposite to the sun. Surely now you have
+understood the reason for this.
+
+Figure 9.08 (a): Rainbow
+
+9.2.2 Mirage
+
+Mirage is a common phenomenon in the desert You will be surprised to hear
+that a mirage also happens due to total internal reflection. The word comes from
+changes of density of air due to heat in the desert. We know heated air, being
+lighter, goes up, but due to the heated sands in the desert the nearby air may
+hotter than the upper air. Thus, we can imagine the air in desert as in Figure 9.09.
+
+2025
+2025
+
+Refraction of light 253
+
+In order to illustrate this easily only three layers are shown. The density of the
+air in upper level is high and so the refractive index is high. Air in the lower level
+is heated, so density is low and its refractive index is also low. During refraction
+of light from the tree, in each layer the angle of refraction will increase and at the
+lowest level total internal reflection may happen. When entering a medium of
+lower refractive index from a medium of higher refractive index there is a
+possibility of crossing the critical angle because the angle of incidence is higher
+if it is seen from far . So a mirage is seen from far and cannot be seen from near.
+If a person looks at a tree from far away, he can see the tree directly, and due to
+total internal reflection he can also see an image of that tree under the tree. It will
+seem that the image of the tree is seen due to the existence of water under the
+tree. After coming closer, it will be clear that there is no water.
+
+Figure 9.09 : Mirage is seen due to the difference of density of the air in the desert.
+
+While driving a car on a heated road in the summer, a wet road is seen far away
+for the same reason. After coming closer it is seen that the road is dry. This is
+also a kind of mirage.
+
+9.3 Uses of refraction
+
+There are different uses of refraction. The uses which play
+important roles in our lives are:
+254 Physics
+
+9.3.1 Optical fiber
+
+Electric wire is replaced by thin glass fiber for communication of the new world.
+
+In the past, information was sent with
+electric signals; now information is sent
+with light signals. In a free state light
+goes in straight line, but in an optical
+fiber the light is trapped so it is possible
+to turn it in any direction by rotating on
+
+any side . Figure 9.10: Light can pass through
+An optical fiber is a very thin fiber of optical fiber by total internal
+glass. The inner part of it is called the reflection.
+
+core and the outer part is called clad . Although the two are made of same glass,
+the refractive index of the inner part (core) is greater than that of the outer part.
+For this reason light can be taken very long distances by trapping it in optical
+fibers the through total internal reflections (Figure 9.10). Light can be taken
+hundreds of kilometers through optical fibers, because the absorption of light in
+optical fibers is very low. Absorption would have been greater if the visible light
+was there so infrared rays of long wavelength are used in optical fibers. How
+optical fibers are used in a process called endoscopy of medical science is
+described in the last chapter.
+
+Example
+
+Question: If the refractive index of the
+core in an optical fiber is 1.50 and the T=
+refractive index of the clad is 1.45, (Figure __ oF kd oo
+9.11) what is the angle of incidence of |
+
+light for total internal reflection to occur?
+
+ny 1.45
+
+. 4 (1
+Answer : 6, = sin (2) Figure 9.11: Total internal reflection
+occurs from core to clad in optical
+Here fiber
+
+m= 145 4 nz = 1.50
+
+2025
+2025
+
+Refraction of light 255
+
+45
+6, = sin"? (=) = sin-1(0.97) = 75°
+
+Therefore light has to incident at an angle of 75° or more.
+
+9.3.2 Periscope and binocular
+
+There is something called periscope
+
+in submarines and it is possible to see
+
+above the water surface while under & ~ NX
+water by periscope. The periscope is |
+made by a prism and its total internal
+
+reflection is more effective than a periscope
+
+made of ordinary mirrors (Figure
+
+9.12). In order to reduce the length of
+
+binoculars, total internal reflection is
+done using prisms in it.
+
+9.3.3 Prism
+
+Interms of optics, if a transparent
+medium is bound by another
+two surfaces of a _ transparent
+medium are not parallel, this is
+called prism. The light goes out ina
+direction parallel to the direction
+in which it enters the transparent
+medium. Though the direction
+
+remains unchanged, the light ray bends a little bit from the main ray. In the case
+of prism the direction of light changes (Figure 9.13). While entering the first
+surface the ray bends toward the normal. The second surface is not parallel, so
+when going out from this surface the light ray moves away from the normal but
+cannot move towards the main ray. Though in a prism the direction of light
+changes, it is important for another reason. After entering the prism, how much
+the ray of light will deviates from the main direction depends on the refractive
+index of the prism. We know that the refractive index depends on the wavelength
+or the color of light. So there is a different refractive index for different colors.
+Therefore, if there exists different colors in the same ray of light, when passing
+through a prism the ray of light of each color will change its direction in different
+angles. Therefore we will see that when coming out from the prism the light is
+separated into its component colors. This was first shown by Newton.
+
+Figure 9.12 : Prism is used instead
+mirror in periscope
+256 Physics
+
+9.3.4 Lens
+
+A lens is created using two spherical sides or a AN
+
+spherical side and a plane Using lenses, starting Vs ‘original direction
+from spectacles, sensitive optical instruments a. fe of light
+
+like telescopes and microscopes are > cena o
+
+made. A lenses are also used in video ot fe va
+projectors and cameras. In this chapter, “ if emithed light
+we'll broadly discuss about lenses, direction
+
+fl d thei rties.
+types of lenses and their properties Figure 9.13: In prism rays of light
+
+deviate towards the base of the
+prism.
+
+9.4 Types of lenses
+
+In convex and concave mirrors, we’ve seen that, when light enters these mirrors,
+sometimes it focuse to a point (converging ray) or sometimes it diverges
+(diverging ray) and the image is formed. That image is sometimes real and
+sometimes virtual. Sometimes it is big, sometimes it is small. Using these images
+in many ways, optical instruments have been
+developed.
+
+Many types of images are made by convex or
+concave mirrors which also be made by
+lenses and they are used in many ways. We
+have all seen lenses (because the spectacles
+are actually a kind of lens). Those of you who
+have used spectacles or have seen others using
+spectacles have certainly noticed that lens of
+spectacles can be divided into two types.
+Small things can be seen bigger with one
+kind oflens (usually the lenses of spectacles
+for old people are like this). Again big things
+can be seen smaller with another kind of lens.
+( Usually the lens of spectacles of the young people are like this). The lenses with
+which small things are seen bigger are called convex or (sometimes) converging
+lenses. The lenses with which big things are seen smaller are called concave or
+(sometimes) diverging lens. Mid portion of the lenses with which small things
+are seen bigger or convex lens is thicker than the edges. And the mid portion of
+
+Figure 9.14: Cross section of
+a convex and a concave lens
+
+2025
+Refraction of light 257
+
+the concave lens is thinner than the edges as shown in 9.14. If we see the cross
+section of the concave or convex lens we can understand that both are bound
+with two round circles. The radius of these two circles can be different or the
+same. The centers of these circles are called the centres of curvature. In the
+picture 9.15, C, and C, are the centres of curvature.
+
+Different kinds of lenses are used in everyday life or in different subjects of
+science.
+
++ + + a
+GQ C2 Ci C2
+
+Figure 9.15: Convex and concave lens can be imagined as the part of two
+circles.
+
+We will keep our discussion limited to
+thin lenses. Though the difference
+between thin and thick lenses can be
+
+understood by their names, let us va
+explain this more. Looking at the cross . ~
+. deviated ray —"
+section of the lens, we can see that  gicction 1 oe
+though the lens has a curvature in the ae a
+
+surface, at the middle the two surfaces we,
+are almost parallel. We know when light -
+passes through a parallel surface it is ofiginal ray
+deviated a little from the main direction
+direction due to refraction (Figure
+9.16).
+
+As the parallel surface thickens, the
+rays of light will deviate more. If the
+parallel surfaces are close to each other
+,we can say that main rays of light go
+
+Figure 9.16: When passing through
+thick glass light rays are deviated
+from main rays due to refraction.
+
+Forma-33, Physics, Class 9-10
+258 Physics
+
+out roughly in the same direction, there is no deviation .
+
+In the case of those lenses in which light ray passing through it, the direction of
+the ray remains unchanged is called a thin lens. (Figure 9.17). We can say that
+the point of the middle of a thin lens through which light rays do not deviate
+when passing through it is called the center of that lens (Figure 9.17, point O)
+or the Optical center.
+
+Figure 9.17: When passing through a thick lens rays of light deviate a little;
+when passing through a thin lens light rays do not change direction.
+
+9.4.1 Concave lens
+
+While discussing about convex and
+concave mirrors, we first learned
+about convex mirrors. In the case of
+lens at first we will discuss concave
+lens. Because a concave lens forms the
+image a like a convex mirror.
+
+In the case of a convex mirror we saw |
+that parallel rays diverts in all __| facal
+directions during reflection. In the ' length
+case of concave lens the same thing
+occurs. The incident parallel rays on
+this lens are diverted during refraction.
+
+Figure 9.18: Rays of light diverges
+when passing through a concave lens.
+If we extend the refracted rays of light
+backwards, it would seem that they
+are spreading out directly from a point.
+
+2025
+2025
+
+Refraction of light 259
+
+That point is called the focal point and the distance from the focal point and the
+center of lens is called the focal length. (Figure 9.18)
+
+In case of a convex mirror, light is incident from one side. In the case of a
+lens, light can be incident on it from both sides. Every lens has a focal length
+
+.The focal length of a lens remains the same whichever direction the light is
+incident on it. If parallel light
+incidents on this lens, the rays spread
+out, and appear to diverge from focal
+point. If the direction of the rays of
+light is reversed then they goes back
+through the direction they came. So if
+we can reverse the direction of
+divergent rays, then they will emerge
+in parallel and will go in the inverted
+direction (Figure 9.19).
+
+To understand how an image is
+formed in concave lens, we need to
+know how light rays are refracted
+through a concave lens. It depends on
+the angle with which the light ray is
+
+falling. If we know the three special rules of refraction of light, we can explain
+how the image is formed:
+
+Figure 9.19: While passing through
+concave lens rays of light converging
+rays emerge in parallel.
+
+(i) Ifthe ray of light is centripetal (Figure 9.20, YO or XO ray) it goes
+straight after refraction.
+(ii) The rays which are parallel with the principle axis, (Figure 9.20 XP) will
+(PS) appear to diverge from the focal point (F) after refraction.
+(iii) If the direction of the light ray is reversed then it goes back through
+the way it came. Therefore, if any ray goes (Figure 9.20, SP) towards
+the focus then it will be refracted in parallel with the principle axis.
+Now we can find out how the image of an object will be in a concave lens.
+Suppose an object XY is kept near a concave lens. (Figure 9.20) To make the
+analysis easy, we have taken the point Y of that object on the principle axis YR.
+To find where the image of a point will be formed, at least two rays should be
+drawn from that point. But we can find the image of Y without drawing two rays.
+It is possible to draw a ray along the principle axis YR, so we know the image of
+this point will be formed on this axis. We will get the image of point Y if we
+260 Physics
+
+draw a normal on this axis from image of X.
+
+Imagine two rays from point X, one is XP which is incident on the lens in
+parallel with the axis. This will diverge when emerged and will appear to
+diverge from the focus, so if a line is drawn from the focus F to P and
+elongated, then we’ll find
+
+that ray. Let us draw the
+
+second ray from point X i S
+towards the center of the x P
+
+lens. According to the
+tules of thin lenses it will
+emerge directly along the
+direction of XT. The point
+where XT and FS
+intersect each other is the
+image X of X. If we draw
+a normal from X' on the
+
+axis we will get the image
+X' Y'of XY. Figure 9.20 : An object looks small in a concave
+lens
+
+The things which are seen in the case of convex mirror are true in the case of
+concave lens.
+
+(a) Its position will be in between the center and focus of the lens.
+(b) It is virtual
+
+(c) It is erect.
+
+(d) It is small.
+
+9.4.2 Convex Lens
+
+The images in convex lens are amazing. The image which we got from a
+concave mirror, is the same as the images in a convex lens. We have seen in the
+case of a convex mirror that if a parallel ray falls on it, then it converges at the
+focal point. The same thing happens in the case of a convex lens, if parallel rays
+fall on it, they will meet at the focal point (Figure 9.21) and again spread out.
+
+Therefore, using previous logic we can say that if light diverges from a point and
+the source of the divergent light (Figure 9.22) is placed in the focal point of a
+lens, then while passing through the lens, rays of light will emerge as parallel
+
+2025
+2025
+
+Refraction of light 261
+
+rays (in the case of light, it is always true that if the light goes from A to B and if
+the direction of the ray is changed, it will always go from B to A). Now let us find
+the position of the image for different positions of an object .
+
+—— focal length «— —+ focal length <—
+
+Figure 9.21: When passing through a Figure 9.22: If the light spot is kept
+convex lens, parallel rays of light at the focal point ,the converging lens
+converge at the focal point. makes the rays parallel.
+
+Before starting, let us learn how light ray refracts in a convex lens. If we know
+three special rules of the refraction of light through convex lens, we can describe
+how the image is formed .
+
+(i) Ifthe rays of light is centripetal (Figure 9.23, YO or XO ray) it goes
+
+straight after refraction.
+
+(ii) The rays which are parallel with the principle axis, (Figure 9.23, XO) will
+
+(CT) pass through focal point (F) after refraction.
+
+(iii) If the direction of the light ray is reversed then it goes back the way it
+came. Therefore, if any ray goes (Figure 9.23, TC) through the focus then
+it will be refracted in parallel (CX)
+
+Now we can form the image for a convex lens.
+262 Physics
+
+The distance less than Focal length
+
+Imagine an object XY, which is kept between the lens and the focal point (Fig-
+ure 9,23). By the same logic described before, we can say that the image of point
+Y will be formed on YOF line. Ifa perpendicular is drawn from the image of X
+on this axis, we’ll get the position of the image of Y.
+
+S
+
+Figure 9.23: A bigger image is seen in a convex lens if the object is placed within the
+focal length.
+
+Now let’s draw two rays from the point X. XC line, which is parallel with the
+axis will go towards the direction of T through the focal point F. If a ray from
+point X is drawn through the center point of the lens, it will go straight along XO
+towards S. CFT and XOS will not meet going forward, which means there is no
+chance of forming a real image. If the two lines are extended backward, they
+will meet at point X', which is the image of X.
+
+The normal which is drawn from the point X'on the line YF touches YF at the
+point Y'. This is the image of point Y.
+
+The closer the XY object is to the lens ,the bigger the image will be. The closer
+the object is to the focal point F, the bigger the image will be. When the object
+will be exactly on point F, the size of the image will be infinite. Now we can say,
+if an object is kept between the center of the lens and the focal point of a convex
+lens, the image of the object:
+
+(a) Will be formed in the same direction as the object.
+(b) Will be virtual.
+
+(c) Will be erect and
+
+(d) Will be big.
+
+2025
+2025
+
+Refraction of light 263
+
+Outside the focal length
+
+Now let’s see what happens if the object is kept outside the focal length. Three
+different things can happen in this case, like in a concave mirror. (i) The object
+is outside the focal length but inside twice of the focal length. (ii) The object is
+outside twice of the focal length and (iii) The object is exactly on the twice of the
+focal length. Let’s examine this
+one by one.
+
+(i) First, the object will be kept
+outside the focal length but
+inside twice of the focal
+length. In Figure 9.24, the
+image of the point Y of the
+object XY will be on the YO
+line. So, we find the image
+of the point X, as before.
+The ray from point X which is
+parallel to the axis will
+go through the focal Figure 9.24: If he object is at the outside the
+point F. Another ray will focal length but inside the twice of the focal
+pass through the center length, the real, inverted and bigger image is
+point along line XO. formed.
+
+The point X', where the two
+
+lines meet, is the image of point X. If a normal is drawn from X' to the axis
+YO, then the point will be the position of the image of the point Y. Therefore, for
+the image of XY. we can say :
+
+(a) The position of the image will be outside twice of the focal length
+(b) It is real
+
+(c) It is inverted
+
+(d) It is bigger than the size of the object
+
+(ii) Now let’s see what will happen if the object is kept outside twice of the focal
+length. It is seen that if the object XY is kept at exactly twice of the focal length
+(Figure 9.25), then the size of the image will be same as the object XY and the
+position of the object will be at the same distance from the center of the lens.
+The closer the object will be brought to the focal point, the further away the
+264 Physics
+
+image will be formed, and the size of it will start to increase. As the ray of light
+actually goes through the image, it is a real image and it is seen clearly in the
+picture that the image is inverted i.e:
+
+x!
+
+! 2f 1 f bk-f—
+
+Figure 9.25: If the object is placed at a distance twice the focal length, the
+size of the image will be same as the object.
+
+(a) The position of the image will be on the twice of the focal length
+(b) It is real
+
+(c) It is inverted
+
+(d) It is the same size as the object
+
+(iii) Now let's see if the object is
+placed outside at a distance
+twice of the focal length. Where
+and what kind of image of the
+object is formed?
+
+The process of drawing this
+image is the same as the
+previous one but (Figure 9.26)
+the object is to be drawn outside
+twice of the focal length. We 1
+
+know that if the object is kept on
+twice of focal length, then a = Figure 9.26: If the object is placed at outer
+side of the twice of the focal length then
+
+small, inverted, real image is formed.
+
+same size image is formed at the
+same distance.
+
+2025
+Refraction of light 265
+
+As the object is gradually moved away, the image becomes smaller and starts to
+come closer the focal point. If the object is brought to infinity, the image of it will
+be formed exactly on the focal point. Therefore, if an object is kept at the
+distance outside twice of the focal length, then the image is :
+
+(a) Between the focal length and twice of the focal length
+
+(b) Real
+
+(c) Inverted
+
+(d) Small
+
+Example
+
+Question: If an object is kept outside twice of its focal length, then a real image
+of the object is formed. If the object is kept at the position of the image, then where
+will the image be formed?
+
+Answer: If the direction of the light ray is changed, then one is converted to another.
+
+Do Yourself
+
+~\
+
+If the light from a distant object falls on a lens, then it forms its image on
+the focal point of the lens. Using this process you can find the focal length of
+a convex lens. In order to do it you should move the lens forward and
+backward until a distinct image is formed on the wall. When the image is
+distinct, then measure the distance from the lens to the wall. This is the focal
+length of this lens.
+
+If you don’t have any convex lens, you can do the experiment using the glass
+of spectacle. Often the spectacles of elderly people are made with convex
+lenses. If closer things are seen bigger by the glass of the spectacle, then
+ou’ll understand that it is a convex lens. )
+
+Ne
+
+9.4.3 Power of Lens
+
+The most familiar use of lens is in spectacles. If you have experimented with the
+lenses of spectacles of many people, you have seen that many of their spectacles are
+made of convex lens, and many are made of concave lens. Usually we explain the
+lenses by discussing power.
+
+Forma-34, Physics, Class 9-10
+266 Physics
+
+You have certainly heard people say that the power of a lens of somebody is high.
+What do we mean by the word power?
+
+The conception of power
+
+comes from the matter of
+
+seeing big and small using a
+
+lens .If we place a body in front
+
+of two different lenses at the
+
+same distance, and the object 7
+looks bigger in one lens than in
+another lens , then we say the
+power of the lens is higher in
+which the object looks bigger.
+If you think about it you will
+see that the smaller the focal
+length of the lens, the object is
+seen bigger (Figure 9.27).
+Therefore the power of a lens P
+is inversely proportional to the
+focal length. If the focal length
+is fin meters then unit of power
+P is the diopter. If the power of Figure 9.27 : The lens which have as much as
+
+the glass is 2.5 (Nobody uses mater the focal length , the object is seen to be
+diopter in general conversation).
+
+Then the focal length of this
+glass will be
+
+bigger
+
+f= 3 = = m = 0.4m (the unit is in meter)
+
+Power is not only used only for convex lens to show bigger objects. In the case of
+concave lens the same power is used to show smaller images. In the concave lens in
+which the object is seen as much as smaller, the power will be greater or the focal
+length will be smaller. In the case of a convex lens the power is positive and in the
+case of a concave lens the power is negative.
+
+2025
+Q
+S
+AQ
+
+Refraction of light 267
+
+(?) Exercise
+
+General questions
+
+1. The velocity of light in a denser medium is less. Is there anything which can
+go with the velocity greater than the velocity of light?
+
+2. At noon why is rainbow not seen ?
+
+3. Drops of water can work like a lens. What is focal length of this lens ?
+
+Mathematical questions
+
+Figure 9.32: Total reflection angle will be changed if liquid drops of different
+refractive index are placed on the point of incidence.
+
+1. If a ray of light passes through glass
+having shape shown in Figure 9.32, then
+the critical angle of total internal
+reflection 65° is found. Due to a drop of
+liquid at the point of incidence, total
+internal reflection happened at angle
+75°. What is the refractive index of the
+liquid.
+
+2. The focal length of a convex lens
+made of glass is 10 cm. If a lens of
+exactly the same size is made of
+diamond then what will be its focal
+length?
+
+7
+
+=m =
+
+Figure 9.33: An object which is
+kept at a point outer side of the
+focal length.
+
+3. Draw the rays for object XY and show the position of the image as accurately
+as possible (Figure 9.33).
+268 Physics
+
+=> =
+<= x
+paul
+
+{a) (b)
+
+Figure 9.34: (a) An object kept inside of the focal length of a convex
+lens (b) an object kept outside of the focal length of a convex lens.
+
+4. Draw the rays for object XY and show the position of the image as accurately
+as possible (figure 9.34 a).
+
+5. Draw the rays for object XY and show the position of the image as accurately
+as possible (figure 9.34 b).
+
+Multiple choice questions
+P 4
+
+Choose the correct answer.
+1. Where will the image of an object be when it is placed in a denser medium
+and looked at from a rarer medium?
+a) raised upward b) gone downward
+c) remained at the same place d) moved aside
+Answer the questions 2 & 3 from Figure 9.35
+2. What is the angle of refraction here?
+a) 0° b) 90°
+c) 180° d) 45°
+
+=
+
+3. What will happen if the angle of incidence is g by
+bigger?
+a) Total internal refraction
+b) Total internal reflection
+c) Refraction and reflection
+d) Reflection Figure 9.35
+
+2025
+2025
+
+Refraction of light 269
+
+4. The ray diagram usually used to draw the image for a convex lens is —
+
++ ; + F'
+F ine oO} FE F /i\ F'
+
+(!) (ii) (iii)
+Figure 9.36
+(a)i (b)ii
+(c)i & ii (d)i, it & iii
+5. Which is the unit of power of a lens?
+a) Dioptre b) Watt
+c) Horsepower d) Meter
+
+Creative questions
+
+1. Shiuli, a tenth-grade student, has difficulty seeing the writing on the black-
+board in the class. After consulting a doctor, she was prescribed glasses with
+lenses of -2D power. Her elder brother, Togor, drew a ray diagram to show her
+where the image would form for an object positioned 1 meter away from the
+lens. He also explained to Shiuli whether the image formed would be real or
+virtual.
+
+(a) What is a lens?
+
+(b) How can the nature ofa lens be identified without touching it?
+
+(c) Determine the focal length of Shiuli’s glasses.
+
+(d) Draw the ray diagram illustrated by Togor in the stimulus and analyze his
+steps in explaining it to Shiuli.

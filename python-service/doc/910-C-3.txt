@@ -1,0 +1,949 @@
+2025
+
+Chapter Three
+Structure of Matter
+
+Electronic configuration in different energy level of hydrogen.
+
+Have you ever thought what the things around us are made of? What is our
+body made of ? Yes, like us, the ancient philosophers also used to think of these
+questions, The ancient Greek scholars used to think, there were four basic
+elements- soil, water, air and fire. All other things according to them were made
+of these four elements. Greek philosopher Democritus was the first to say that all
+substances have a unit which is very small and indivisible. He called it the Atom.
+This however did not get any recognition as it lacked any scientific proof.
+Afier 2500 years John Dalton, the British scientist, gave a theory on atoms in 1803
+which was based on data collected from various experiments. He said, every matter of
+the universe is made of small, indivisible particles. He honoured the Greek
+
+philosopher by naming these particles Atom. Later on, it was proved that atoms
+36 Chemistry
+
+are not indivisible. Any atom can be divided into electrons, protons and
+neutrons. This chapter will focus on various models of the atom, fundamental
+
+particles of atom, configuration of the electrons etc.
+
+* write symbols of elements from their English and Latin names
+
++ describe the characteristics of fundamental and stable particles
+
+* describe atomic number, mass number and relative atomic mass
+
+* calculate the relative molecular mass from the relative atomic mass
+* calculate the number of electrons, protons and neutrons of an atom
+* explain the uses of isotopes
+
+* describe the Rutherford and Bohr models of atom’s structure
+
+* explain whether the Rutherford or the Bohr model is more
+acceptable
+
+* arrange electrons of atoms in orbits and different sub-orbits
+
+£023
+2025
+
+Structure of Matter 47
+
+3.1 Elements and Compounds
+
+Elements
+
+Certainly you have seen gold. silver or iron. No matter how far you divide pure
+gold, you will get nothing but gold. The same is applicable in the cases with
+silver or iron. When divided. the matter which does not yield anything but itself,
+is called element. Besides the above three, nitrogen. oxygen, phosphorus,
+carbon, helium, argon, magnesium, sulfur etc. are also elements. So far, a total
+of 118 elements have been discovered. Out of them, 98 elements are available in
+nature and the rest are made in the laboratory. The second group is known as
+artificial elements. Do you know that your body contains as many as 26 different
+elements?
+
+Compounds
+
+You have already known that an element yields the element only. If water is
+analyzed, we shall find two different elements- hydrogen and oxygen. The same
+way, if we analyze writing chalk, we get calcium, carbon and oxygen. The
+substances which, if divided, give away two or more elements are called
+compounds. In a compound, elements will always exist in the same ratio. For
+example, chemical analysis of any water sample collected from any place will
+show two hydrogens and one oxygen. That means, the ratio of hydrogen and
+oxygen atoms im water is 2:1. The characteristics of compounds are different
+from those of elements they are made of. Again, for example, at normal room
+temperature, hydrogen and oxygen are gaseous elements but when they make
+water, it is a liquid.
+
+3.2 Atoms and Molecules
+
+Atoms are the smallest particles of elements that contain the characteristics of
+the elements. For example: Nitrogen atoms contain the characteristic features of
+nitrogen while oxygen atoms contain the same of oxygen.
+
+When two or more atoms remain connected with each other in a chemical bond,
+itis known as a molecule. You will learn about chemical bonds in detail in
+chapter five. Two oxygen atoms (QO) bond te each other to form an oxygen
+38 Chemistry
+
+molecule (O,). Again, a carbon atom (C) bonds with two oxygen atoms (O) to
+generate a carbon dioxide (CO,) molecule. When more than one atoms of a
+specific element bond each other, they produce that element’s molecule, like O,.
+When atoms of different elements bond together to produce a molecule, it is
+called a molecule of the compound, like CO,,.
+
+3.3 Symbols of Elements
+
+Table 3.01: Symbols of Elements.
+
+The abbreviated form of English or
+
+Latin name of an element is called its Element Symbol |
+symbol. Each element has its own Hydrogen a
+symbol. There is a system of writing a Oxygen o
+symbol of an element. Nitrogen N
+
+a. The first letter of an English name of an element is usually the symbol and that hag
+to be written using capital letters. For example, the symbol of Hydrogen is (H),the
+symbol of carbon (C) and the symbol of oxygen (0) ete.
+
+b. When the first letter of two or more elements is the same, one of them is
+expressed by the first letter. The other element(s) get the first two letters; the
+first letter is capitalized, followed by a smal! hand second letter.
+
+Table 3.02: Symbols of Elements (First letter same).
+
+Element Symbol] Element _ Symbol
+Carbon c Cobalt co |
+| Chlorine cl Cadmium | cd
+
+Calcium Ca Chremium (Cr
+
+c. Some elements have got ther symbols from their Latin name.
+Table 3.02: Symbols of Elements (Latin Name),
+
+Element | Latin Name | Synbol | Element Latin Name (Symbol
+
+Sodium =| Natrium Na | | Gold Aurum AU
+
+Copper | Cuprum Cu Lead | Plumbum Fb
+
+Potassiura | Kalium K Tungsten Wolfram W
+
+Silver Argentum Ag Iron Ferrum Fe
+
+Tin Stannum $n Mercury | Hydrurgyrum | Hg a
+Antimony | stibium Sb “
+
+2025
+
+‘Structure of Matter 30.
+
+chapter four and show it to your teacher.
+
+L Collect names and symbols of some elements from the Periodic table given "|
+
+3.4 Formula
+
+One Hydrogen molecule is expressed
+as H,. It means, there are two
+
+Table 3.04: Formula of Molecules.
+
+Hydrogen atoms in that molecule, | NameofMolecule | Formula
+Again, one molecule of water is Nitrogen. N2
+expressed as H,O, meaning, it contains Ammonia NH;
+
+two Hydrogen atoms and an Oxygen Chlorine Cl,
+atom. The following table shows Sulfuric Acid H,S0,
+formulas of some common molecules: Hydrochloric Acid | Hcl
+
+3.5 The Fundamental Particles of an Atom
+
+Each atom consists of three stable particles- electrons, protons and neutrons.
+These particles are called fundamental particles of atoms. Protons and neutrons
+remain in the nucleus at the center of the atom while electrons continue to
+move around the nucleus.
+
+Electron: Electron is one of the fundamental particles of atom containing negative
+charge. The amount of this charge is -].60x10°' coulombs. It is expressed
+
+through the symbol e. An electron has the mass of 9.11104 g. The relative
+charge of electron is taken to be -1 and the mass of electron is 1/1840 of proton
+and neutron, That is why, the relative mass of electron is taken as 0.
+40 Chemisiry
+
+Proton: Proton is one of the stable particles of an atom containing positive
+charge. The charge is +1.60 «10° coulomb. It is expressed by p. The mass of
+proton is 1.67 x 10% g. The relative charge of proton is taken as +1 and relative
+mass is taken as 1.
+
+The characteristic properties of fundamental particles of atoms are presented in
+
+the following list.
+Table 3.05: Fundamental Particles.
+
+Nameof |Symbol! Actual Charge | Actual Mass | Relative | Relative
+Particle Charge | Mass
+Electron e | -1,60 » 10° coulomb) 9,110 x 10 g =] 0
+Proton p | #1.60 * Lo“ “coulomb, 1.673 = 10* g +1 1
+Neutron n |0 1.675 « 10% g 0 1
+
+Neutron: Neutron is another stable particle of an atom containing no charge.
+Neutron prevails in atoms of all elements except hydrogen. Expressed by n, a
+neutron has a mass slightly more than a proton. Its relative charge is O and
+
+relative mass is 1.
+
+3.5.1 Atomic Number
+
+Atomic number of an element is determined by the number of protons present in
+the nucleus of that element’s atom. Fer example: an atom of Helium (He) has
+two protons in its nucleus, so the atomic number of Helium is 2. Again, an
+Oxygen atom has eight protons in its nucleus, so the atomic number of Oxygen
+is 8 The atomic number denotes an atom.Therefore, the atomic number can
+also be called the ID number of an element, If the atomic number is 1, we
+understand it is Hydrogen, if the atomic number is 2, we understand itis Helium,
+if the atomic number is 9, we understand it is Fluorine. Thus, atomic number is
+the permanent identity of an atom. Proten number or atomic number is
+expressed by Z. Since all atoms are charge neutral, so they contain the same
+number of electrons as is the number of protons in its nucleus.
+
+2025
+Structure of Matter 41
+
+3.5.2 Mass Number
+
+The mass number of an atom is denoted by the total number of protons and
+neutrons in its nucleus. The mass number is expressed by A. Since the mass
+number is the summation of neutrons and protons, we can get the number of
+neutrons in an atom by deducing its proton number from the mass number. The
+mass number of Sodium (Na) is 23, its proton number is 11; so the number of
+
+neutrons in sodium is (23 - 11) = 12.
+
+The atomic number of an atom is written at the lower left commer of its symbol
+while its mass number is written at the upper left corner. In the case with Sodium
+(Na), it will be written as
+
+(sas Number (A) >
+Dee.
+11Na
+
+J
+
+Table 3.05: Short Form of Different Elements.
+
+Atomic Number/
+Proton Number (7)
+
+|. Mass Number | Number of
+_,| Atomic/Proton ; Short
+Symbol Number (z) Mugaber . Neuens (A| Form
+H 1 1 1 0 1
+4H
+He 2 4 2 2 4 He
+2
+
+Student Task: Find out the mass number, number of protons and electrons
+for {Li and 3Be.
+
+Forma-6, Chemistry Class-9-10
+42 Chemistry
+
+3.6 Atomic Model
+
+3.6.1 Rutherford’s Atomic Model
+Rutherford has given a model on the structure of atom in 1911, The model
+
+slates:
+
+a. In the centre of an atom there is a positively charged dense central core. This
+core is called the nucleus of the atom. Protons and electrons are situated inside
+and out side this nucleus respectively. Since, compared to the whole mass of
+the atom, the mass of electron is zero, so protons and neutrons imside the
+
+nucleus determines the whole mass and positive charges of the atom.
+b. The Nucleus is very small and most of the space inside an atom is void.
+
+c, Electrons in an atom always move round the nucleus in different orbits like
+the planets revolve round the sun in the solar system. The number of electrons
+in an atom is same as the number of protons. Since the charge of an electron and
+
+proton in an atom are equal and opposite, therefore the overall charge of an atom
+
+is zero.
+
+d. The electrons with negative charge are Electron
+attracted to the positively charged ‘Mncclene
+nucleus. The force of this attraction
+
+is centripetal and due to this centripetal = ss Orbit
+force, electrons move round the nucleus
+
+like our earth does a round the sun. Fig 3.01: Rutherford’s Atomic Model.
+
+Rutherford’s model is known as the solar system model for its continuous
+parallelism to the solar system. Again, since the Rutherford model first gave the
+
+idea of a nucleus, tt is also called the nuclear model.
+
+20235
+2025
+
+Structure of Matter 43
+Limitations of Rutherford’s Model
+
+Rutherford is the first scientist to introduce the idea of a nucleus and orbits of an
+electron. Although his model is the first acceptable atomic model, it has some
+limitations. They are:
+
+a. Rutherford’s model did not give any idea about the size and shape of the orbits
+
+along which the electrons move.
+
+b. Planets in the solar system are electrically neutral but electrons and nucleus
+are charged, A parallelism between some charge neutral elements and charged
+
+elements is not quite correct.
+
+c. There is no satisiactory explanation paar ia
+wT —~
+regarding how the electron will move round Pa ai Pai aS
+; ‘ f -~—.
+
+the nucleus in the case of atoms having more / rig eae N ay x
+than one electron. | Ka , 4 Vy
+
+\ a fey
+
+: . ~ = _ f/f #
+
+d. According to Maxwell's electromagnetic = ow’
+
+theory of radiation, any charged particle
+
+moving in a circular path, always emits Fig 3.02: Electron falling on nucleus.
+
+energy and its radius will gradually grow
+
+smaller. At a stage, itis supposed to fall into the nucleus. That will be the end of
+the atom or at least its stability will be in trouble. However, that doesn’t happen
+in nature; in other words, according to Maxwell's theory, Rutherford’s atomic
+
+model is not correct.
+
+3.6.2 Bohr’s Atomic Model
+
+Scientist Neils Bohr gave some corrections to Rutherford’s atomic model in
+1913, This corrected model is called the Bohr’s atomic model. The main
+postulates of this model are:
+
+a. The electron moves around the nucleus in a circular motion, about an axis.
+This circular motion is called an energy level or orbit. They are also known as
+44 Chemistry
+
+shell or permanent orbit or principal energy level. Electrons do not absorb or
+emit any energy when they revolve round these fixed orbits. If we express the
+permanent orbit as n, then n= 1, 2, 3, 4 etc. In other words, ifn = 1, the principal
+energy level is K, when n = 2, L is the principal energy level, when n= 3, M is
+ithe principal energy level, when n= 4, N is the principal energy level ete,
+
+b. According to Bohr’s model, the angular momentum of an electron in an
+energy level is mvr = nh/2z . Here,
+
+m = the mass of electron ( 9.11*107! ke)
+
+T= the radius of the orbit that the electron follows
+
+v = the velocity of electron in the permanent orbit
+
+h= Plank constant (h = 6.62610 m* kg’s)
+
+n= principal energy level or principal quantum number (n= 1, 2, 3, 4,
+
+.)
+
+According to this. the energy level with a lesser value of nis the lower energy
+level and the energy level with a higher value of n is the higher energy level.
+
+id ~ Energy level ———___ laa
+
+Ernitted energy
+
+Positree charged
+npc les
+
+Absorbed energy —~
+Fig 3.03: Bohr’s Atomie Model.
+
+When an electron moves a round in its principal energy level, it doesn’t absorb
+or emit any energy. However, it absorbs energy when it moves from a lower to a
+higher energy level. The same way, an electron emits energy when it moves from
+
+a higher to a lower energy level. This absorbed or emitted energy is hv = he/A. a
+oy
+
+Here,
+2025
+
+Structure of Matter 45
+
+e = velocity of light (3108 ms”)
+v= frequency of absorbed or ennitted energy (unit s' or Hz)
+A= length of energy wave absorbed or emitted (unit m)
+
+The light emitted when an electron moves from higher energy level to lower
+energy level creates an atomic spectra when it goes through a prism.
+Success of Bohr’s Model
+
+a. Rutherford compared the orbits of electrons around nucleus to that of the
+planets in the solar system. It did not mention anything about the size of the
+energy levels. Bohr’s atomic model specifies the circular size of the energy
+levels.
+
+b. Rutherford’s model does not mention about the changes in structure of atom
+when they absorb or emit energy. The Bohr model states that the electron moves
+from lower to upper energy level when the atom absorbs energy and it moves
+from upper to lower energy level when the atom emits energy.
+
+c. The Rutherford model doesn’t explain the atomic spectra but the Bohr model
+can explain the atomic spectra of hydrogen (H) atom with one electron.
+
+Limitations of Bohr’s Model
+
+a. Although the Bohr model can explain the spectrum of hydrogen containing
+one electron, it cannot explain the spectrum of ions or atoms contamimg more
+than one electron.
+
+b. When electrons are transferred from one energy level to another.
+according to Bohr, there will be a single line in the spectrum. But highly
+sensitive apparatus shows every line consists of several fine lines. Why each line
+is the summation of various lines is not explained.
+
+c. The Bohr model specifies that orbits of electrons in an atom is circular.
+However, later on, it was proved that the orbits can be of oval shape too.
+
+3.7 Orbital Electronic Configuration of Atoms
+
+The Bohr model states about the principal energy level. Each principal energy
+level can contain 2n? electrons at the highest, where n = 1, 2, 3 etc. According to
+this formula:
+AG Chemistry
+
+For energy level K, n = 1, so, the highest number of electrons in K is 2n? = (2x
+17) =2.
+
+For energy level L, n = 2, so, the highest number of electrons in L is 2n? = (2 x
+2) =8.
+
+For energy level M, n = 3, so, the highest number of electrons in M is 2n* = (2x
+37) = 18.
+
+For energy level N. n = 1, so, the highest number of electrons in N is 2n’ = (2x
+4?) = 32.
+
+Table 3.06: Electron Configuration of Elements [H(1) — Zn(30)].
+
+Atomic Blement K |L |M|N| | Atomic Element K [L |M |N
+Number Number
+
+1 it 1 16 5 2 & | 6
+
+2 He |2 17 ca j2 is [7
+
+i Ti 2 t 18 Ar |2 8 &
+
+4 Be "4 Z 19 K a 8 rad 1
+5, B a 3 20 Ca 2 o o z
+6 c 2 4 21 Sc 2 | 8 9 12
+7 N a 5 ae Ti 2 |8 10) 2
+8 Oo 2 6 23 V 2 a 11) 2
+9 F |2(7 24 cr |2 |s |13]4
+10 Ne 2 8 25 Mn | 2 a TF [2
+al Na 2 8 1 26 Fe ft 8 14 |) 2
+12 Mg |2 /8 |2 27 co |2 |s 15/2
+15 Al 2 8 |3 28 Ni 2 5 16 | 2
+14 Si 2 8 | 4 29 Cu 2 § 18 | 1
+15 F a, 8 |5 30 an a 8 18 |Z
+
+2025
+2025
+
+Structure of Matter 47
+
+The atomic number of Hydrogen is 1, meaning it has one electron which will
+
+reside in energy level R. ‘The atomic number of helium (He) is 2. So, its electron
+number is also 2 and these two electrons will enter the first energy level known as the
+K-shell. The atomic number of lithium (Li) is 3. So, its electron number is also 3, and
+the first 2 of the 3 electrons will enter the K-shell. Since the principal energy level,
+K-shell cannot contain more than two electrons, its third electron will enter the second
+energy, L-shell.
+
+In the same way, the atomic number of sodium (Na) is 11. So, its electron number is
+also 11. These electrons are arranged in the energy levels as follows: 2 electrons in the
+K shell, 8 in the L shell, and the remaining 1 electron in the M shell.
+
+A careful look will tell you that the electronic configuration from Hydrogen to
+Argon follows the rule stated above. However it doesn’t remaim the same in the
+case with elements from Potassium (K) onwards. We know that the highest
+capacity of the third principal energy level (M) is 18. But the 19* electron of
+Potassium and 19" and 20" electrons of Calcium enter the fourth principal
+energy level (N) even betore fulfilling the third. In the case with Scandium (Sc),
+the 21st electron has returned to the third principal energy level after its 19" and
+20™ went to the fourth principal level. Beginning from the atomic number 19
+onwards, bwo electrons enter the fourth level first and then the rest return to level
+three. Still, we find exception in the case with Cr and Cu. We need to understand
+the idea of sublevels of energy before we attempt to understand it.
+
+3.7.1 Concept of Energy Sublevel
+
+We have seen all energy levels are specified with n. These levels are again
+divided into sublevels which are expressed by |. The value of | is from 0 to n-1.
+These sublevels are called orbitals. They are identified with s, p, d, f etc.. The
+value of / for different orbitals is shown below:
+
+When n= 1, /=0. There will be one orbital: 1s.
+
+When n= 2. /=0, 1. There will be two orbitals: 2s, 2p.
+
+When n= 3, /=0, 1, 2. There will be three orbitals: 3s, 3p, 3d.
+
+When n=4, /= 0, 1,2, 3. There will be four orbitals: 4s, 4p, 4d, 4f.
+When n= 5, /=0,1, 2, 3, 4. There will be five orbitals, However, if all the
+
+electrons are configured in the 4s, 4p, 4d, 4f orbitals, then there won't be any
+necessity for the fifth. The same is the case with n = 6, 7, and 8.
+48
+
+Chemistry
+
+The number of subshells in each prmcipal energy level is calculated by the formula (2/
+
++ 1). Each subshell has an electron-carrying capacity of 2. Thus,éaeh orbital contains
+
+2(21 + 1) number of electrons. We already know each principal energy level
+has 2n* number of electrons. Now we shall see that the summation of all
+
+orbitals turn into this 2n*:
+
+Table 3.07: Electronic Configuration in Energy Levels (n = 1-4).
+
+Level n | Sublevel/ Name Symbol | of Electrons in of Electrons in
+according to | according Orbital 2(2/+1) Energy Level
+D to! ~2n?
+] 0 5 15 2 a
+o § 25 2
+2 24+6=8
+1 p 2p 6
+0 5 35 z
+3 1 E 3 6 eee se
+P P = 18
+2 d | 3d 10
+0 8 45
+‘ f: p 4p 6 2+ 6+ 10+
+2 d Ad 10 14 = 32
+3 f | af 14
+
+3.7.2. The Principles of Electronic Configuration in Atoms
+
+there are three principles for electron arrangement in atoms: (1) Pauli’s Exclusion Prin-
+ciple, (2) Aufbau Principle, and (3) Hund’s Rule. You will find a detailed discussion of
+these principles in the higher secondary chemistry textbook. Here, we have provided a
+brief overview of these principles to explain electron configuration in an atom. Here the
+
+basic concepts of these principles and the electron arrangement of atoms are briefly
+discussed, Electron first enters the lowest energy orbital of an atom and then gradually
+
+goes into the highest energy orbital. That means, the electron will enter the lowest
+energy level first and the highest level later. The energy level of the orbital is
+determined by the summation of value of principal energy level (n) and value of
+energy sublevel (/). The orbital that has a lesser value of (n + I) is of lesser
+energy level and it gets the first entry of an electron. The orbital that has ahigher &
+value of (n+ 1) is of higher energy level and it gets the later entry of an electron. ”
+Structure of Matter 49
+
+For 3d orbital, n = 3 and |= 2, so the value (n + 1) becomes (3 + 2 = 5), Again,
+for 4s,n=4 and 1=0, so the value (n+ 1) becomes (4+ 06 =4). It shows 4s orbital
+has lower energy than 3d orbital, Therefore, the electron will first enter 4s and
+then will go to 3d. Again, if the value (n + I) of two orbitals are equal, then the
+orbital with lesser value of n has lower enerzy and the electron will enter here
+first. In the same way, the orbital with higher n gets the electron later for bemg
+higher in energy.
+
+For example, the values (ntl) of 3d and 4p are 3+2 = 5 and 4+1 = 5
+respectively. Here in this case, since the value of n in orbital 3d is lesser than
+orbital 4p, so it is lower in energy and orbital 4p, being higher energetically will
+get electrons later. According to this system, the gradual sequence of energy of
+orbital in receiving electrons will be:
+
+ls <= 2s < 2p < 38 < 3p < 4s < 3d < 4p < 5s =< 4d <5p
+«6s = 4f = 5d < 6p = 7s =< 5f < 6d =< 7p = 8s
+
+We can easily remember the sequence
+of energy level from the chart below:
+
+We have seen, the orbital s can contain a oe
+maximum of two electrons, the orbital p
+
+\y
+
+can contain a maximum of six electrons,
+the orbital d can contain a maximum of
+ten electrons and the orbital f can
+contain a maximum of fourteen
+electrons. Following this, we can
+configure the electrons of the following Fig 3.04: Sequence of Energy of Orbitals.
+elements.
+
+K(19)—> — 1s* 2s? 2p® 35? 3p® 4st
+
+Ca(20)—> 1s* 2s? 2p® 3s* 3p® 4s*
+
+$c(21)—» 1s* 2s? 2p* 3s* 3p* 3d? 4s*
+
+Ti(22)—> 1s? 2s? 2p* 3s* 3p* 3d? 4s?
+
+Forma-7, Chenstry Class-9-10
+50 Chemistry
+Since the 4s orbital is lower in energy than the 3d orbital, so the 19th electron of
+Potassium enters 4s instead of 3d. Again, in the case with Scandium, 19" and 20"
+electrons go inside 4s and then the 21st electron goes to the higher energy 3d
+orbital.
+
+Always remember, when writing the electronic configuration, write down all
+
+orbitals of an energy level side by side; otherwise there is chance of making
+
+mistakes. For example: the configuration of Fe (26) will be
+n=1 n=2 n=3 n=4
+
+Fe(26)> | 18° 2s? 2p® | 3s? 3p dé | 4s?
+
+Fe(26)— 1s? 2s’ 2p°3s* 3p® 3d° 4s?
+
+3.7.3 Some Exceptions in Electronic Configuration
+
+Commonly, if the orbital of the energy sublevel p and d are half full (p’, &) or
+complete (p*, d'), that kind of electronic configuration is the most stable. That
+way, the electronic configuration of Cr(24) is supposed to be Cr(24) —  1s?2s?
+2p* 3s? 3p* 3d* 4s? . But the interest of 3d to be half full brings one electron from
+4s. That way, the final configuration stands at Cr(24) 1s? 2s? 2p* 3s? 3p® 3d? 4s!
+
+Do Yourself
+The electronic configuration of Cu(29) is Cu(29) 1s? 2s? 2p*3s?3p*3d!°4s!
+whereas it is supposed to be |s*2s*2p*3s?3p*3d*4s . Explain the reason.
+
+3.8 Isotopes
+
+Atoms of the same element with equal number of protons but different numbers
+of neutrons and mass are called isotopes of each other. The three atoms in the
+table below have the same number of protons. Therefore, they are isotopes of
+each other. Hydrogen has seven isotopes ('H, 7H, *H, *H, °H, °H, *H). Three of
+them are available in nature and the remaining four are laboratory made.
+
+20235
+Structure of Matter 51
+
+Table 3.08: Three Natural Isotopes of Hydrogen.
+
+Name Symbol | Proton Mass Neutron
+Number Number Number
+ra A A-2Z
+Hydrogen or iH 1 1 0
+Proteum
+Deuterium 2D 1 2 1
+Tritium ey 1 3 2
+
+3.9 Atomic Mass or Relative Atomic Mass
+
+We already know that, the mass number of an element's atom is the summation
+of the number of protons and neutrons present in its nucleus. It certainly implies
+the idea that the mass number is an integer. But you will see the atomic mass of
+copper is 63.5 and the atomic mass of chlorine 35.5. How is that possible?
+Indeed, it is the relative atomic mass. What is it and why is it necessary?
+
+The mass of an atom of Fluorine is 3.16x10% g
+
+The mass of an atom of Aluminium is 4.482x10™ g
+
+It is really hard to use such small masses. That is why, 1/12 th of a Carbon 12
+isotope is taken as a unit and then the atomic mass of other atoms are determined
+
+relative to that.
+
+1/12 th atomic mass of Carbon 12 isotope is 1.66 «107 g
+
+Therefore, the relative mass of the element:
+
+mass of one atom of element
+
+> of mass of a Carbon 12 isotope
+
+2025
+32 Chemistry
+
+If we know the actual mass of an atom, we can determine its relative atomic
+mass. We have to divide the total real mass of an atom by 1.6610 ¢ to get the
+relative atomic mass. Example:
+
+The real mass of an Al atom is 4.482 x10 3g
+
+4482 x 107748
+
+So, the relative atomic mass of an Al atom is = —————_=-
+Les x 10-348
+
+=27
+
+The relative atomic mass 1s a ratio of two masses, so it doesn’t have any unit.
+
+3.9.1 Determining the Average Relative Mass of an Element from Pereentage
+of Isotope
+Most of the elements in nature have more than one isotope. We calculate the
+average relative mass of those elements having more than one isotope from their
+percentage of availability in nature. The steps in this calculation are:
+Step 1: Multiply the mass numbers of all isotopes of that element with the
+percentage of natura! availability of those isotopes.
+
+Step 2: Get the summation of all the results of step 1.
+
+Step 3: Divide the total of step 2 by 100. This will give the average
+relative mass of that element,
+
+Suppose, an element A has 2 isotopes. If the mass number and natural
+availability of one of these isotopes are p and m respectively while the same of
+the other are q and n, then,
+pxm + qxn
+
+100
+Example: There are two isotopes of chlorine in nature,?Cl and “C1.
+
+The average relative atomic mass of that element is =
+
+Naturally available percentage of *Cl = 75%
+
+Naturally available percentage of 7°C1=25%
+
+: ‘ . 35X75 + 37X25
+So, the average relative atomic mass of chlorine = ————————__ = 35.5
+
+100
+
+£023
+2025
+
+Structure of Matter 53
+
+In the periodic table also, you will see that the average relative atomic mass 1s
+shown as 35.5. The periodic table displays the average relative atomic mass.
+
+Example: If there are two naturally available isotopes of an clement, then we
+can calculate the percentage of those isotopes available in nature from the
+average relative atomic mass.
+
+Suppose, in nature “Cu is available in x% and Cu is available in (100- x) %
+
+the average relative atomic mass of Copper = pA ie = 63.5
+
+100
+
+or x = 75%
+
+Naturally available percentage of Cu = 75% and
+Naturally available percentage of Cu = 25%
+
+3.9.2 Getting the Relative Molecuhr Mass from Relative Atomic Mass
+
+We can get the relative molecular mass of an atom by taking the summation of
+the multiplied value of relative atomic mass of the atoms with their respective
+number of atoms. Generally, relative atomic mass is considered as atomic mass
+and relative molecular mass as molecular mass.
+
+The atomic mass of Hydrogen (H) atom in a H, molecule is 1 and it has two
+atoms, so the relative molecular mass of I, molecule is 1x2 = 2.
+
+Similarly, in a H,80, molecule, the relative atomic mass of H is |] and number
+of atoms are 2. The relative atomic mass of Sulfur is 32 and number of atom is
+1. The relative atomic mass of Oxygen is 16 and number of atom is 4. Therefore,
+the relative molecular mass of sulfuric acid will be 1x2 + 32x1 + 16x4=98.
+54 Chemistry
+
+3.10 Radioactive Isotopes and Their Uses
+
+We have already learned about isotopes in this chapter. There are some isotopes
+the nucleus of which spontaneously synthesize themselves and emit alpha (a),
+beta (8) and gamma (y) rays.Isotopes of and element that emit radioactive rays
+are called radioactive isotopes. So far, scientists have gathered information
+more than 3000 isotopes. Some of them are natural and some are laboratory made.
+The physics book for your class discusses about various isotopes and their
+radioactivity in details. We will learn about their uses here.
+
+Controlled use of radioactive isotopes has made many an impossibility possible.
+Presently, such isotopes are used in medical science, agriculture, preservation of
+food and seeds, electricity generation ete.
+
+3.10.1. Medical Science
+Medical science employs radioactive isotopes for various purposes.
+
+Diagnoses
+
+Wecan take pictures of a patient’s affected area using radioactive isotopes, Technetium-99
+(*Tc) is injected inside the body in this system. When it gathers a particular isotope at
+
+a certain place inside the body, the isotope emits gamma rays. The gamma ray
+
+identification camera [rom outside can take the photo of that spot of the body. The
+
+lifetime of this isotope is 6 hours. Since it loses its radioactivity within a short time, it
+
+is sate,
+
+Treating Diseases
+
+Radioactive isotope was first used to cure thyroid cancer. The patient is made to drink
+a solution of I], This isotope reaches the thyroid and emits beta rays which destroys
+the affected cells. Iridium isotope is used to treat brain cancer. "Co isotope is used to
+diagnose and treat tumors. The gamma rays emitted from this isotope destroys the
+cancer aifected cell and tissue. *P isotope is used for treatment of leukemia.
+
+2025
+2025
+
+Structure of Matter 45
+
+3.10.2 Agriculture Sector
+
+Nutrition of Crops
+
+Sufficient fertilizers are required for nutrition of crops. The quantity of fertilizer
+is an important issue. Excess fertilizer costs more than necessary. It is also
+harmful for the environment. Again, less than necessary fertilizer won't be of
+any help. Radioactive isotopes help to determine the amount of Nitrogen and
+Phosphorus present in the soil. Plants absorb radioactive Nitrogen and
+Phosphorus via its roots which is then transferred to different parts of its body.
+Geiger Muller counters help to identify the presence of these isotopes and helps
+to determine the presence of the two elements in soil. Then we can determine the
+
+remedy too.
+
+Getting Rid of Harmful Insects
+
+Harmful insects are always a threat to a good crop. They not only lessen the
+production of craps but also they introduce various harmful microbes to the
+planis. We use insecticices to rid of these insects. These insecticides are harmful
+for our body and environment as well. These insecticides also manage to kill
+other insects that were of help for our crops. Insecticides enriched with
+radioactive isotopes have helped us to determine the standard of use of
+insecticides for a particular crop.
+
+Development of Crops
+
+Radioactive isotopes also play a significant role in developing hybrid varieties
+by bringing genetic changes in the original crop.
+
+3.10.3 Generation of Electricity
+
+A huge amount of heat is found in fission reactions or by breaking some atoms
+into smaller atoms. Driving this heat energy through generators, we can produce
+electricity. We call such power plants, nuclear power plants. The fourth chapter
+of your physics book discusses this in detail.
+
+The government of Bangladesh is going to establish a nuclear power plant in
+Rooppur of Pabna. It is hoped that the power plant will be able to produce
+2400MW electricity.
+56 Chemistry
+
+Fig 3.05: Rooppur Nuclear Power Plant.
+
+3.10.4 Impact of Radioactive Isotope
+
+It is true that radioactive isotopes are there for a good number of benefits. But
+al the same time, they have the potential to harm us too. The alpha, beta and
+gamma rays emitted from such isotopes can bring about genetic changes to cells
+which may cause cancer. The atom bombs used in Hiroshima and Nagasaki of
+Japan during the WWII killed lacs of people. The Chernobyl accident of 1986 in
+Russia has killed numerous people and has done harm to the adjacent
+environment.
+
+2025
+Structure of Matter 57
+
+1. Zis an element with its 111] protons and mass number 252. Which is the most
+
+appropriate expression for the atom?
+
+a. Hig & Jib
+
+a
+2. What is the relative atomic mass of the wee Posnaaset
+element X? (Here, X is just a symbol, not an : Availability
+element) aoe 25
+
+ae 75
+a.l48 b. 150
+c.152 d,153
+
+3. Ifthe real mass of an element is 4.482»107 then its relative atomic mass will
+be-
+
+a. 25 b. 40
+
+c. 29 d..27
+
+4, The formula <7Al Al shows that the element has
+
+1 proton number 13
+il. mass number 27
+ill. electron number 10
+
+Which of the below is correct?
+a.iand ii b. ii and iti
+c. iand ii d. iii and ii
+
+5. What is the atomic number of Potassium?
+a. 15 b. 17
+¢. 19 d. 21
+
+Forma-8, Chemistry Class-9-10
+58 Chemistry
+
+6, How many energy sublevels are there in N shell?
+asl b. 2
+c.3 d.4
+
+7, The atomic number of Se is 21. Which is the correct electron configuration of
+Se?
+
+a. 1s? 25? 2p° 3s? 3p® 4s? b. 1s? 257 ap® 3s? 3p® 45?
+
+C. 1s? 2s? 2p* 3s* 3p* 3d! 4s? sd. 1s? 25? 2p* 35? ap*
+
+1.Farid, a class 9 student drew the following picture as he was asked
+to draw an atom model.
+
+a. What is the atomic number? ne
+a —_— —
+we i = a ws %
+64 1 Pa i ~~ \ % \
+b.The nucleon number of °*¥ and r i ¢ #25 , °
+64 29 ,\ @, 1 , !
+3g atoms are the same but they differ Le ye! oe
+in the number of neutrons- explain. ~~ a ~~“ g—electron
+
+c. The picture drawn by Farid refers to the limitations of an atomic model.
+Describe that model.
+
+d. The drawn picture shows that an atom will not be stable- elucidate.
+
+2. Element A= Co, element B = *P and compound C = H,SO,
+
+a. What is a symbol?
+
+b When is the spectra created in an atom? Discuss
+c. Find out the relative molecular mass of compound C.
+d
+
+The isotopes of A and B play significant roles in our lives. Explain.
+
+20235

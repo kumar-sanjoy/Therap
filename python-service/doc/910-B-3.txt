@@ -1,0 +1,487 @@
+Chapter Three
+Cell Division
+
+Different types of cell division occur in all types of organisms from
+unicellular to multi-cellular. One land of cell division causes increases in body
+growth of the organism, and in the other type of cell division, developed
+reproductive cells and in some other cases organism multiplies through binary
+
+fission. In this chapter, you will lear how different types of cell division
+occur.
+
+PN25
+* explain the concept of cell division;
+
+* describe the types of cell division;
+
+* explain mitosis;
+
++ describe the stages of mitosis;
+
+* analyse the significance of mitosis cell division in living bodies;
+
+* explain metosis;
+
+* explain the role of meiosis in the development of reproductive cells;
+
+* understand the role of cell division in maintenance of the continuity of life.
+
+Forma-07, Biology Class-9-10
+3.1 Cell Division and its classification
+
+Every living body is made up ofa cell or cells. The life of every organism starts
+with a single cell. In fact, every cell is originated from a pre-existing one. The
+increase of cells in number through division is very natural and important.
+The bodies of some organisms are composed of a single cell. They are called
+unicellular organisms, such as, bacteria, Amoeba, Plasmodium etc. These
+organisms multiply themselves from the division of a single cell. Other
+organisms are composed of more than one cell. They are called multicellular
+organisms. Humans, mango and banyan trees etc. are composed of crores of
+cells. A giant banyan tree also initiates its structure after the formation of a
+single cell (zygote by the union of two gametes). After the fertilization of an
+egg, the structure of a human is achieved with crores of cells dividing through
+the process of cell division. Again, male and female gametes are produced for
+the emergence of new generations. Cells divide through the process of cell
+division for the growth and reproduction of organisms.
+
+Types of cell division:
+
+Two important types of cell division that occur in living beings are: Mitosis
+and Meiosis.
+
+3.2 Mitosis
+
+Through this process of division an eukaryotic cell divides into two identical
+daughter cells. In this process, the nucleus and chromosomes are divided only
+once, and two identical daughter cells are produced with the same type of
+chromosomes in number, physical and structural features as their mother cell.
+
+This is also known as equational division. Mitosis occurs in somatic cells of
+eukaryotic organisms and through this division, as the number of cells
+increases, plants and animals grow. The process usually takes place in the body
+cells of animals and in the meristems of the plant parts growing, such as the tip
+of stems and roots, plumule and radicle, developing leaves, buds etc. This kind
+of cell division also occurs in lower plants and animals during asexual
+reproduction.
+
+3.2.1 Stages of Mitosis: Mitosis is 4 contmuous process. During nutosis,
+karyokinesis is usually followed by cytokinesis. Karyokinesis and cytokinesis
+represent the division of nucleus and the division of cytoplasm respectively.
+Before starting division, a cell has to prepare itself. This stage is called
+interphase. For ease of deseription, mitosis can be divided into five stages. They are:
+(a) Prophase, (b) Prometaphase. (c) Metaphase, (d) Anaphase. (e) Telophase.
+
+iy
+S
+
+Lae |
+£23
+
+(a) Prophase: This is the first stage of mitosis. At the onset of the stage, the nucleus
+becomes little larger and chromatin fibers start condensing into short, thick and
+tightly coiled structures called chromosomes. Previously it is considered that
+this changes of chromosome occur due to water reduction but modern research
+shows that the matter is extremely complex process having no relation with
+water. At this stage, chromosome can be seen with a compound microscope.
+Though every chromosome then divides into two sister chromatids, at the
+centromere they remain attached. As the chromosomes are still tangled, it is
+difficult to easily count the number of chromosomes in a cell.
+
+Tl
+
+Nuclear
+membrane
+
+(Furst stage! (Last sage)
+Figure: 3.02 Prophase (Animal cell)
+
+(b) Prometaphase: Early in this stage, spindle apparatus with two poles is
+developed in plant cells from fiber protein. The middle plane of the spindle
+apparatus is called the equator. Some fibers of the spindle apparatus, made of
+microtibules of cytoskeleton, are stretched from one pole to the other. These are
+
+called Spindle fibers. At this stage, kinetochores in the centromeres of
+chromosomes attach to some fibers of the spindle apparatus. Kinetochores are
+) —— Pole
+| — Spindle apparatus Centriole
+—— Chromosome
+—— Disappearing
+} autsvtics Chromosome
+Spindle fiber
+— Disappearing wig:
+nuclear membrane Nee Aster ray
+Animal cell
+
+Figure: 3.03 Pro-metaphase
+
+protein structures assembled on centromeres, and they link the chromosomes
+with mitotic spindles. These fibers are generally called traction fibers. They are
+also sometimes called chromosomal fibers as chromosomes are attached with
+them. Chromosomes then start assembling on the equatorial plane. The nuclear
+membrane and nucleolus start to disintegrate and disappear. In animal cells, the
+spindle apparatus is developed from centrioles, and the centrioles remain in the
+two poles with astral rays spreading out from them,
+
+(c) Metaphase: At the onset of the stage, all the chromosomes assemble at the
+equator, from the two poles. The centromere of each chromosome remains on the
+equator but the two arms take positions towards the poles. In this stage. the
+
+Pol i
+= ( mea Spindle fiber
+—— Spindle fiber
+
+— Spindle fiber Chromatid
+— Chromosomal
+
+region
+
+Chromosome Centromere
+
+Pole Aster ray
+
+Annmal cell
+Plant cell
+
+Figure: 3.04 Metaphase
+chromosomes look short and thick. The two chromatids of each tend to be
+separated from each other. At the end of this stage, the division of the centromere
+starts. The nuclear membrane and nucleolus disappear completely.
+
+(d) Anaphase: The sister chromatids become the two sister chromosomes and
+they are pulled apart. The cleaved centromere moves to the pole, while the
+chrornatids trail behind. Each chromosome, splitting into two, moves to the
+two poles, and so the number of chromosome remains unchanged, On the
+
+2025
+2025
+
+|) 7 Disappearing
+/ spindle fiber
+
+} - 1 shaped
+
+Pole
+
+Animal cell
+ent cetl Figure : 3.05 Anaphase
+
+centromere in the chromosome, the chromosomes look V, L, J or L shaped, and
+these chromosomes are called metacentric, sub-metacentric, acrocentric and
+telocentric respectively, At the end of the anaphase stage, the daughter
+chromosomes are completely pulled apart to the two poles and start their
+elongation.
+
+(e) Telophase: This is the last stage of mitosis and a reversal of the prophase.
+Chromosome again starts to become thin and long. Previously thought that the
+increasing of water is the reason for this. But modern research has shown that it
+is a complex process and not depending on the amount of water in the
+chromosome. Finally they mtertwined and form nuclear reticulum, The
+nucleolus also reappears. The nuclear membrane reappears around the nuclear
+reticulum. So, ultimately, two new nuclei are formed in the two poles. The
+spindle apparatus disintegrate and so, the spindle fibers gradually disappear.
+
+Pp ———— Coll Plate
+Ts Disappearing
+spimlle Fiber
+(aes nucleus
+
+-SS==s Figure: 3.06 Tel { Animal cell
+
+At the end of the telophase stage, some small parts from the endoplasmic
+reticulum aggregate in the equatorial plane, and collectively form the structure of
+the cell plate. Equal distribution of the cytoplasmic organelles is accomplished. As
+a result, two identical daughter cells are developed. In the case of an animal cell,
+a contractile ring on the plasma membrane at the equatorial plane pinches off the
+two nuclei.
+
+Anaphase Te elophase Daughter cells
+Figure 3.07: Different stages of mitosis division under light microscope
+
+e529) Group Activity.
+
+Activity: To prepare models of various chromosomes based on the position |
+of centromeres.
+
+Essentials: Rope or thread, art paper. glue, scotch tape, cutter, sign pen.
+Procedure: First, we will prepare the model of a chromosome during the
+metaphase stage. Take two pieces of rope or thread of equal length. These
+two pieces will be the models of the two sister chromatids of a chromosome.
+Make a knot in the middle of the rope. This knot is the model of the
+centromere. If the knot is made properly, we will get a model of the
+metacentric chromosome, from whose centromere four arms seem lo appear.
+Two of these four arms belong to one chromatid while the other two belong
+to the other chromatid. The length of all arms are equal.
+
+Figure 3.08 : Different types of the model of chromatid on the basis of the position of
+centromere which is vissible in the phase of mataphase ( from teft to right)
+
+Similarly, take two more pieces of rope or thread of equal length and prepare
+a model of a submetacentric chromosome by placing the knot a bit away
+from the center. If knots are placed near the poles. a model of an acrocentric
+chromosome will be made. And if the knot is placed right at the poles, then
+it will be a model of a teloceniric chromosome. Now, use glue or scotch tape
+
+ey
+S
+a
+2025
+
+to stick these four kinds of models on an art paper. Label the models with a sign
+pen. Write Metaphase as the heading on the art paper.
+
+Now, through the same process, prepare models of chromosomes seen in the
+Anaphase stage. First make the four models of metacentric, submetacentric,
+acrocentric and telocentric chromosomes of the metaphase stage. In the
+anaphase stage, each chromosome is divided mto two parts along the
+centromere such that one chromatid with half of the centromere remains in
+each part. So here we will cut the chromosome model of the metaphase stage
+along the knot into two, so there is one chromatid in each part.
+
+We will see that each of the two chromatids from the metacentric
+chromosome looks like the letter “V’ as the position of the centromere is at
+the middle of the chromatids. If the chromatid taken half from the
+submetacentric choromosome with the centromere a bit away from the
+center, it takes the appearance of English letter *L’. Similarly, the chromatids
+taken from the acrocentric and telocentric chromosomes will look like *J*
+and ‘T’ respectively. Now stick the model of these four chromatid models on
+art paper with glue or scotch tape. Label the model with the sign pen. Write
+the word Anaphase as the heading on this art paper.
+
+Now present both art papers in the classroom. Explain how the
+chromosome or chromatid looks in metaphase or anaphase stage.
+
+Significance of mitosis
+
+The significance of mitosis in the living body of organisms is immense. The
+balance between the nucleus and cytoplasm of a cell in terms of volume and
+amount is maintained by mitosis. Through mitosis, the growth in the body of
+multicellular organisms occurs. All multicellular organisras start their life from a
+single cell zygote. The repeated division of this single cell produces innumerable
+cells and thus an organism grows to completion. It may seem that if the cells
+multiply one at a time, it would take a long time to take the complete shape of a
+living being (the human body has 30 trillion cells). But this is not true. All cells are
+capable of mitosis when provided with necessary nutrients. If each cell division
+takes one day to complete, the number of cells necessary for human beings can
+
+be created in 40 — 50 days.
+As the number and feature of chromosomes remain unchanged in cells produced
+through mitosis, growth in organisms takes place systematically. Mitosis plays a
+role in the maintenance of the size, shape and volume of cells. Unicellular
+organisms reproduce through mitosis. Mitosis plays an important role in the
+vegetative reproduction of organisms and increasing the number of reproductive
+
+cells. It is essential to form new cells for growth and healing of injuries. The life
+span of some cells is predetermined and they are, accordingly, replaced through
+the process of mitosis. As identical cells are produced through mitosis,
+qualitative features of the living world remain unchanged. Mitotic errors may
+result m abnormal mass of cells called tumours, with or without cancer cells.
+
+Tumour and cancer: All of us are familiar with the words ‘tumour’ and ‘cancer’.
+These are the results of irregular cell divisions. In mitosis, a cell divides into two,
+two cells divide into four and so on. The process remains controlled. If this
+control is lost due to any reason, cell division occurs in an regular way. This
+results in the formation of a tumour.
+
+The formation of cancer cells is also the result of uncontrolled, irregular cell
+division. Research has shown that various types of germs, chemicals or
+radioactivity can be responsible for the development of cancer cells. Two genes,
+E6 and E7 of the papilloma virus. produce a chemical substance that displaces
+two protein molecules which control cel! division. As a result, the controlling
+factor of cell division is eliminated, and a tumour is formed. Sometimes these
+two genes amalgamate with those of host cell and stop the functions of protein
+molecules that control increase of cell. This leads to cancer cells or in other word
+cancer.
+
+Cancer is a dangerous disease. Cancer can develop in the liver, lungs. brain,
+breasts, skin or uterus almost all organs of the body.
+
+Activity; The teacher will group the students, ask them to present the |
+different mitotic stages after drawing them on their own.
+
+f025
+Cell Division o4
+3.3 Meiosis
+
+In this process of cell division, four daughter cells are produced from an
+eukaryotic cell. The nucleus divides twice and the chromosomes divides once in
+this process and the number of chromosomes becomes half in the daughter cells
+from that of the mother cell, So, the amount of DNA also become near about half,
+As the number of chromosome decreases this process of cell division is called
+reductional division.
+
+The question is why meiosis occurs. In mitosis. the number of chromosomes in the
+daughter cells remains the same as that of their mother cell. Mitosis is essential for
+the growth and asexual reproduction of organisms. In sexual reproduction, the
+union of male and female gametes is required. If the number of chromosomes in
+the reproductive cells would be the same as the somatic cell, the zygote would
+contain twice number of chromosomes than that of the somatic cell. Suppose the
+number of chromosomes in a somatic reproductive cell of an organism is 4. In the
+zygote the number of chromosomes would be §, and so the new organisms will
+have body cells with § chromosomes, that is. twice that of its mother organism.
+Ifevery life cycle of an organism continues thal way, the number of chromosome
+would be doubled again and again. In the second chapter, we learnt that
+chromosomes have the genes controlling the features of organisms. If the number
+of chromosome is increased life cycle after life cycle, the offspring will be
+fundamentally different. In sexual reproduction, even through the union of
+male and female gametes, the number of chromosomes remains the same
+generation after generation as the number of chromosomes becomes half in the
+reproductive cells than that of the mother cell. At the time of development of
+teproductive cells and in any stage of
+the life cycle of plants in lower
+groups, meiosis occurs. The feature
+
+oF a (E
+
+dr an) ay,
+of possessing half number of )
+chromosome is called haploid. When val fa)
+the haploid (n) cells are fused, the {n)
+state of cell having two sets of
+chromosome is called a diploid (20). pyemardiai (n)
+As meiosis occurs. the features in the on QO 65)
+species of living organisms stay the 7m —
+
+Th,
+
+Figure: 3.09 concept of meiosis cell division
+
+ut
+
+in)
+
+same, generation after generation.
+
+Forma-08, Biology Class-9-10
+58 Biology
+Meiosis mainly occurs in the primordial germinal cells during the development of
+gametes. Meiosis occurs in the anthers and ovules of flowering plants and in the
+testes and ovaries of animals. During the development of the haploid meiosis
+occurs in the zygotes of pollen from diploid pollen mother cells in haploid plants
+like fungus, algae and mosses.
+
+Two consecutive divisions occur in a cell in the process of meiosis, called
+meiosis- I and meiosis-II respectively.
+
+Premordial germinal ce
+
+In the first division (meiosis-I), the
+
+number of chromosomes in a
+
+daughter cell becomes half that of  ,yeiosis
+its mother cell. The second division
+
+a ‘i .
+is simply mitosis. Ovum (| A FV Jspenn
+
+—_
+: : . + Diploid
+number in organisms remains constant. @ . vive
+Genetic diversity is also found in species Zygote C>- Taploid
+
+Because of meiosis, the chromosome
+
+of organisms as the exchange of Figure: 3.10 Formation of zygote
+
+genes occurs during meiosis. due to meiosis cell division
+
+In reality, sometimes a new species may come into being if suddenly the number
+of chromosomes increases. For example, one species of frog Xenopus laevis was
+created when the chromosome set of another species Yenopus tropicalis was
+doubled. In somatic cells (not reproductive cells) of different members of the
+Plant kingdom (such as vegetables like potato), this is a normal process,
+Sometimes we select this species of plant intentionally, or even create them in
+a planned way because their size is comparatively
+bigger. Such species are helpful in mecting the
+increasing demand of food. Besides creating
+homologous chromosomes through genetic
+recombination, meiosis also contributes in
+maintaining genetic diversity or genetic variation.
+Through sexual reproduction, a population
+
+maintains its genetic diversity and creates unique
+individuals in each new generation. SSS eaeetnpen
+
+B. Nemagues laevis
+
+2025
+£23
+
+Genetic variation among the members of a species is what ensures that the species
+
+is able to survive in a changing environment. Ecosystems are not static, and species
+need genetic variation on which natural selection can operate so that they can
+adjust with a new or changed environment. [fall of the individuals of a species are
+too genetically similar and have no genetic variation, then there is less
+possibility of surviving in a new situation. A single disease or change in the
+environment could drive the species to extinction. But if genetic variation exists in
+aly species, there is the possibility of survival in a new environment. At least some
+members of the species will be able to escape danger that may be fall on them.
+Thus, meiosis increases the possibility of survival by creating genetic diversity.
+
+(?)Exercise
+
+1. What is cell division?
+2. What is meant by equational cell division?
+
+1. Describe the difterent stages of mitosis with labeled diagrams.
+2. Discuss the significance of mitosis.
+
+ey) Multiple choice questions
+
+l. In which stage does a nucleus become larger?
+
+a. Prophase b. Metaphase
+
+c. Anaphase a. Telophase
+2, Through meiosis-
+
+i. the number of chromosomes is changed,
+
+li. haploid gametes are developed.
+
+ili, consistency of features in organisms is maintained,
+Which one of the following is correct?
+
+a, i &ii b, ii & ii
+
+c. i & iii di, tt & iii
+Answer the following questions 3 and 4 based on the figure given below.
+
+Figure-A
+Figure-B
+
+3. Inthe cell division of figure A-
+
+i. the mother cell and the daughter cells bear same features.
+ii. the number of chromosome becomes half in the newly developed cell.
+iil. chromosomes divide once.
+
+Which one of the following is correct?
+
+a.i & ii b. ii & iti
+
+6.1 & iti da, Wi & ii
+
+The division in the figure B is different trom that of figure A and so-
+a. the number of chromosomes remains the same in the daughter cells.
+b, the number of chromosomes increases.
+
+c. abnormal cells are produced.
+
+d. the normal growth of the body occurs.
+
+ao oF p
+
+Stage-A Stage-B
+
+Where does mitosis occur?
+
+Write in detail why meiosis is called ‘reductional division’.
+
+In stage B what changes occur? Explain.
+
+Analyse what problems may emerge if the process expressed in the figures above
+isnot accomplished properly.
+
+2025

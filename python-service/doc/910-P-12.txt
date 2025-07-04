@@ -1,0 +1,686 @@
+Chapter Twelve
+Magnetic Effects of Current
+
+' ie
+
+The Children are making electromagnet in the largest practical class of the world arranged
+in Kuliarchar.
+
+All of us were charmed at one point of our life when observing the attraction or
+repulsion of magnet. Though magnetism and electric current seems to be
+completely different topics, these are two different forms of the same energy, that
+will be discussed in this chapter. We will see that as electric current can produce
+a magnetic field, similarly a varying magnetic field can also produce an electric
+current.
+
+In this chapter along with the magnetic effects of current, we will discuss how
+different instruments can be made and can be used by using magnets and
+electricity.
+
+2025
+2025
+
+Magnetic Effects of Current
+
+® By the end of this chapter we will be able to-
+
+e explain the magnetic effects of electric current.
+
+e explain electromagnetic induction.
+
+e explain induced current and induced electric power.
+e explain the main principles of motors and generators.
+e explain the main principles of transformers.
+
+e explain the functions of step-up and step-down transformers.
+
+e understand the various uses and contributions of current in our life.
+
+331
+332 Physics
+
+12.1: Magnet
+
+All of you have seen a magnet. If a magnet is brought close to iron like materials,
+then it attracts the iron. There is nothing visible between the magnet and iron but
+an invisible force is pulling it. When observing that for the first time, one kind
+of surprise is developed in all.
+
+Those of you who have played the magnets must have noticed (Figure 12.01)
+that there are two poles of a magnet. The similar poles repel, while the dissimilar
+poles attract each other.
+
+“ es
+
+Figure 12.01: Dissimilar poles of a magnet attract, and similar poles repel.
+
+The poles are generally named the north and south poles.
+
+If a bar magnet is suspended freely, it always points towards the north-south
+direction.
+
+The pole which directs towards the north direction is called the north pole, and
+the pole which directs towards the south is called the south pole. This occurs due
+to the fact that the earth itself has a magnetic field; when a magnet is suspended;
+the magnet aligns itself along that field.
+
+We can discuss how two magnets attract one another. But first we have to know
+from where the force of a magnet comes.
+
+12.2: Magnetic Effects of Current
+
+Those of you who have handled magnets cannot imagine that it is not different
+from electricity, and a magnet can be made by electricity or flow of charges!
+
+2025
+2025
+
+Magnetic Effects of Current 333
+
+When a charge is kept in a place, an electric field is produced around it. Similarly,
+if electric current flows through a wire, a magnetic field will be is created around
+it.
+
+Let us assume that a wire penetrates through the middle of a cardboard
+and some small compasses are placed on the cardboard around the wire. The
+compasses will be aligned along north-south direction. Now if a current
+(moderately strong) passes through the wire, you will surprisingly notice that
+suddenly the compasses are arranging themselves one after another. You will get
+an impression that a circular magnetic field around the wire has been generated
+due to the electric current.
+
+Figure 12.02: Directions of the compasses around electric current
+
+Now, if the current is stopped, then again the compasses align along the
+north-south direction. If the direction of current is changed, you will find that the
+compasses will arrange themselves again, but now the direction of the
+compasses in the circle will be reversed. This is because the current always
+produces a magnetic field around it in a definite direction.
+
+If current flows through a conducting wire, then the direction of the magnetic
+lines of force produced due to this can be obtained from the right hand rule. If
+the thumb indicates the direction of current, then the other fingers will indicate
+the direction of the magnetic field ( Figure 12.03).
+334 Physics
+
+Magnetic field
+
+>)
+ig
+
+ih,
+
+Flow of current ‘i
+iB | ) |
+
+Figure 12.03: The magnetic field around the electric
+current. Magnetic field has no beginning or ending.
+
+| Flow of current
+
+Question: Figure 12.04
+shows that current is flowing
+upwards from inside the
+
+book. Which of the magnetic
+fields is correct? Co) (o)
+Answer: The left figure is
+
+correct.
+
+12.2.1: Solenoid
+If a wire is straight and Figure:12.04: Magnetic field around the
+
+current passes through it, then current carrying wire
+
+the nature of the magnetic lines of force was shown in Figure 12.03. How will it
+be the magnetic lines of force if the wire is circular instead of being straight?
+This is shown in Figure 12.05. You are able to understand that the more the
+current, the stronger the magnetic field is. There is a limit to how much current
+can be pass through a wire, since the wire is heated as ?R. Moreover, the
+maximum amount of current that can pass through a wire depends on the source
+of electricity. Therefore if we want to produce a strong magnetic field, then
+instead of making a single loop, a coil is made by a insulated wire, winding it
+
+2025
+2025
+
+Magnetic Effects of Current 335
+
+several times. This coil is called a solenoid. A strong magnetic field can be
+generated by that coil. Every loop of the coil will create a magnetic field due to
+the electric current flowing through it. So the combined magnetic field is
+stronger.
+
+Current
+
+Figure 12.05: Magnetic field produced Figure 12.06: Direction of the magnetic
+due to current flowing through a loop. field (applying right hand rule) due to
+the current through a loop.
+
+If current flows through a circular coil, then the direction of its magnetic field
+can also be found with the help of the right hand rule. The thumb indicates the
+direction of the magnetic field, while the other fingers show the direction of the
+current (Figure 12.06). A coil of wire or a solenoid behaves like a bar magnet,
+and the direction of the thumb will be the north pole of this magnet.
+
+12.2.2: Electromagnet
+
+A more powerful magnetic field can be created if a piece of iron is inserted
+inside a solenoid than the magnetic field that can be produced by using current
+only. The three metals iron, cobalt and nickel have special magnetic properties.
+These metallic pieces can be considered as an accumulation of individual tiny
+magnets, which generally don’t act as a magnet as they are aligned in different
+directions. These substances consist of an enormous number of small
+magnets that are randomly oriented. Since the small magnets are randomly
+oriented, the piece of iron does not act as a magnet.
+
+But when this piece is kept inside a solenoid or a coil, and if current is passed
+through the solenoid, then the magnetic field produced by that current aligns the
+individual tiny magnets.
+336
+
+Figure12.07: Strong magnetic field
+is produced when randomly oriented
+small magnets get aligned due to
+flow of current.
+
+Physics
+
+Therefore, the magnetic field produced by
+the current and the magnetic field
+produced by the iron piece itself combine
+to produce a strong magnetic field (Figure
+12.07). The interesting point is, as the
+current is stopped, the small magnets
+present within the iron piece become
+randomly oriented again, and the entire
+magnetic field will disappear.
+
+A magnet prepared by this process
+is called an electromagnet. Uses of
+electromagnets are endless, Such as in the
+sound we hear in speakers and earphones
+(Figure 12.08).
+
+Here, according to the vibration and
+intensity of sound, current is sent. That
+current produces an_ electromagnet
+according to the vibration and intensity of
+the sound. This electromagnet vibrates a
+diaphragm and produce the sound.
+
+12.2.3: Effect of Magnet on a Current Carrying Wire
+We know that the opposite poles of two magnets attract each other and the
+
+similar poles repel. We also know
+that a current carrying wire
+generates a magnetic field around it.
+If we place a wire in a magnetic field
+and current is allowed to flow
+through this wire, then due to the
+creation of magnetic field by the
+current, it will experience a force. In
+Figure 12.09, magnetic lines of
+force from the north pole of a
+magnet to the south pole, and a
+current carrying wire placed
+between the poles is shown. The
+wire comes out perpendicularly
+from inside the paper.
+
+permanent
+
+diaphragm magnent
+
+electromagnet
+
+\
+
+NY]
+
+Fig:12.08: Electromagnet is used in
+speaker
+
+2025
+Magnetic Effects of Current 337
+
+If current flows through the wire (from bottom to up) that current will create a
+circular magnetic field around it and thus rearrange the magnetic lines of force,
+by combining with the magnetic field that goes from the north pole to the south
+pole. At the bottom of the wire the lines of forces will be more and at the top of
+the wire the lines of forces will be less, which will push the wire in upward
+direction.
+
+If the direction of current through the wire is reversed, then the direction of the
+circular magnetic field will also be reversed. Then the density of the lines of
+force at the top of the wire will be more and hence push the wire downward.
+
+Current
+i.
+. :
+
+Figure 12.09: A current carrying wire placed in a magnetic field experiences a
+force.
+
+12.2.4 D.C Motor
+
+You know that a magnet can be used to apply force on another magnet. In other
+words, we can say a magnetic field can be used to apply force on another
+magnetic field. Since a wire cannot carry very much current, it cannot produce a
+strong magnetic field. That is why with the help of another magnetic field a
+strong force cannot be applied on it. You have seen that ifa coil of wire is made
+winding many times and a piece of iron or armature is inserted into it, then by
+passing a little amount of current through the wire, the coil becomes a strong
+electromagnet that can create a very strong magnetic field. If we imagine the coil
+is to be a bar magnet, and keep it in another magnetic field, then we can analyze
+what kind of attractive or repulsive force it feels and also the direction of motion
+due to it. In Figure 12.10, an electromagnet of this type is placed in another
+magnetic field, and how it changes its position due to the repulsive force is
+shown. If the electromagnet is allowed to rotate about an axis, passing through
+its center, then it will try to go to a position like in the next figure.
+
+Forma-43, Physics, Class 9-10
+338 Physics
+
+If we can make such a condition that as soon as the electromagnet reaches the
+next position, the current passing through the electromagnet is changed, then
+just after reaching there, the bar magnet made of coil alternates its polarities,
+
+i—, a ee
+|—+— = —J = | _
+
+N CAMs N Dy s N| 27s N eo 5
+
+— > ee etl a a
+
+Figure 12.10: In an electric motor current is passed through an electromagnet
+in such a way that it can rotate always.
+
+i.e. its north pole becomes the south pole and the south pole becomes north pole.
+So due to repulsion, it will try to move again, i.e. it will experience a rotational
+force. It will try to reach the next stable position, but just after reaching there if
+the direction of the current is again changed, it will not stop there. Rather, it will
+continue its rotation. That’s why, when it reaches one stable position, if current
+
+in it flows in such a way that it
+
+experiences a rotational force due to aa,
+repulsion, then it will continue to &
+rotate.
+
+In order to change the direction of
+current, we have to use a mechanical N AY S
+technique with the help of a simple
+device called a commutator. The two
+wires of the electromagnet are placed
+on two sides of the rotating axis
+around which the main coil rotates in
+such a way that it touches two
+terminals of the main electric current
+at the commutator. When the
+terminals touch it, then it will flow the
+current in such a way that it tries to
+move away the electromagnet always
+by repulsion. When it moves away from the terminals of the main current, no
+current flows in the electromagnet, then it continues its rotation due to inertia of
+motion.
+
+Figure 12.11: An electric motor.
+
+2025
+2025
+
+Magnetic Effects of Current 339
+
+For your understanding, it is presented in a easy way (Figure 12.11). In a
+practical motor, there may be many coils around the armature and each coil gets
+current from the commutator and the armature continues its rotation.
+
+12.3 Electromagnetic Induction
+
+We see a lot of machines that rotates around us, it may seem to us that this is the
+magnet and the biggest contribution of the magnetic field! Actually the biggest
+contribution of magnets and magnetic fields is electromagnetic induction, that
+is, the production of electricity with the help of magnetic fields.
+
+Scientist Oersted first showed that if the magnetic field is changed through a
+conducting loop, then an electromotive force is developed within the loop,
+which can flow current through the loop. This property is used to build an
+electric generator, where by changing the magnetic field through a conducting
+loop, generates eleetricity.
+
+If the two ends of a coil are connected
+with an ammeter and a bar magnet is
+inserted in it, then at the time of
+inserting the magnet we will see a
+sudden flow of current in the ammeter
+(Figure 12.11). When we will pull it
+out, again we will see a sudden flow
+of current in the ammeter, but now in
+the opposite direction. If we change
+the pole of the magnet, then we will
+see the change of direction of current
+in the ammeter also! During the time
+of changing the magnetic field in a _— Figure 12.12: When a magnet enters
+coil of wire, the generation of voltage into a solenoid current is produced in it.
+and current in the coil is called elec-
+
+tromagnetic induction. This voltage is called induced voltage, and the current is
+called induced current.
+
+340 Physics
+
+During this experiment, to change the magnetic field in the coil, we brought the
+magnet towards the coil away from it. If we could change the magnetic field in
+an other way, then we would observe the same thing.
+
+Another way of changing the magnetic field in the coil is to bring another coil
+near it (instead of bringing the magnet) and producing magnetic field in the
+second coil by flowing current through it. Ifa battery and a switch are connected
+with the second coil to produce magnetic field in it, then by turning the switch
+‘on’, a magnetic field can be produced in the coil, again turning the switch ‘off’,
+the magnetic field can be removed. Keeping the second coil near the first coil,
+if a magnetic field is produced once in it and the magnetic field is removed
+again, then the magnetic field will be changed in the first coil and due to this we
+will see current in the ammeter! When current is produced by turning on the
+switch, then the ammeter will show the presence of the current by deflecting its
+needle in one direction. When the switch is turned off, the needle will deflect in
+another direction, and show the current flowing in the opposite direction.
+
+One thing we have to remember: when the magnetic field changes, only then
+does the current flow. If a strong magnet is kept inside a coil, no current will
+flow through the coil. Only by moving the coil, the magnetic field is changed,
+then a current will flow through it.
+
+12.3.1 Generator
+
+When we were trying to understand how a motor works, we saw that a current
+passes through an electromagnet in a magnetic field which cause it to rotate. Let
+us see the matter in another way. If instead of giving connection of a battery cell
+with two terminals of an electromagnet of a motor, we connect an ammeter there
+and rotate the electromagnet. What will happen then?
+
+Of course, the magnetic field within the coil will change, so a current will flow
+through the coil. That is, the electromagnet of the motor that we have rotated by
+passing current through it, if we rotate that electromagnet or coil, the reverse
+thing happens, electricity is generated. In this way a generator is built.
+Therefore, if we rotate the armature of a DC motor, we get DC electric current,
+if AC motor is rotated it gives AC current.
+
+2025
+2025
+
+Magnetic Effects of Current 341
+
+12.3.2 Transformer
+
+Changing a magnetic field creates
+current— this property is used to
+prepare transformer. In Figure b
+12.13 a rectangular iron core is @)
+shown to understand how a
+
+transformer works. Conducting
+wires have been winding on the
+
+two sides of the core— of course Figure 12.13: If AC potential is applied
+there are insulating covers on the in primary coil of a transformer, it
+
+conducting wires, so that if it produces potential in the secondary coil
+touches anything metallic a short
+
+circuit doesn’t occur. In the figure, we see that on the left side of the core an AC
+voltage source is connected. Since the wire is connected by winding the iron
+core, so when current will flow the core will be magnetized and the magnetic
+lines of force will pass through the rectangular iron core.
+
+Since we have connected AC voltage source, the magnetic strength inside the
+core will increase or decrease and will change its direction, i.e. the magnetic field
+will change continuously. On the other side of the iron core, there is wire winding
+also (definitely covered with insulator). The magnetic field will change
+continuously in that coil through the iron core, and this change will produce an
+electromotive force (emf) in the coil of the right side. If we wish, we can see it
+in a voltmeter. The transfer of electricity from one coil to another coil in this
+process (directly, without any electrical connection) is called transformer.
+
+ALAA ALAA,
+VU
+
+We can do some amazing things with this transformer. If the number of turns of
+both the coils is the same, then for a definite AC voltage applied in the left side
+coil, we will get the same AC voltage in the right side coil. If the number of turns
+on right side is ten times of that of the left side, then the voltage becomes ten
+times. If the number of turns on the right side is ten times less, then the voltage
+will be ten times less. The coil on the left side where AC voltage is applied is
+called the primary coil and the right side coil (from where voltage is returned
+back) is called the secondary coil. You may think that if it is possible to be
+happened, then why don’t we arrange an enormous amount of electrical energy
+by giving small numbers of turns and applying small voltage in the primary coil
+and by giving much more turns in the secondary coil, and thus obtaining a much
+higher voltage? We have to remember one thing: the amount of electrical energy
+applied per second is measured by the formula VI (voltage x current). The
+342 Physics
+
+amount of VI that is applied in the primary coil is just equal to the amount of the
+VI that we get back from the secondary coil. Therefore, if the voltage is
+increased by ten times in the secondary coil, then the current in the secondary
+coil will be reduced by ten times.
+
+For your understanding, a rectangular core is shown. Practical transformers are
+constructed a bit differently, the secondary coil is winded on the primary coil
+and the core is also slightly different.
+
+If the number of turns in the primary coil is , and that of the secondary coil is
+n,, if AC voltage V, is applied in the primary coil, then the AC voltage V, that
+will be found in the secondary coil depends on number of turns.
+
+Vv. V; Vp _ Vs v; = (“5\y,
+5X Ns, Vp ONy 80, a, =, = constant or, Vs = Tp P
+
+If J, current flows through the primary coil, then the current J, flowing in the
+
+secondary coilis found from conservation of electrical power.
+Vp Np
+
+hence, Vp IP = VsIs 80,15 = (2) lp = (=) Is
+‘s Ss
+
+The transformer has a greater number of turns in the secondary coil than the
+primary coil and due to this, the AC voltage applied in the primary coil increases
+in the secondary coil is called a step-up transformer. For transmission of
+electricity, a step up transformer is used to increase the voltage by many times.
+The transformer which has less turns in the secondary coil than the primary coil
+and due to this, the AC voltage applied in the primary coil decreases in the
+secondary coil. This is called a step down transformer.
+
+Example
+
+Question: The number of turns in the primary coil of a transformer is 100 and
+the number of turns in the secondary coil is 1000. 10 V DC is applied in the
+primary coil. What is the voltage in the secondary coil?
+
+Answer: Zero. Transformer does not work with DC voltage.
+
+Question: The number of turns in the primary coil of a transformer is 100 and
+the number of turns in the secondary coil is 1000. 12 V AC is applied in the
+primary coil. What is the voltage in the secondary coil?
+
+2025
+2025
+
+Magnetic Effects of Current 343
+
+Answer: V5 = (5) Vp = e) x 12V = 120V AC
+
+np 100
+
+Example: In the above transformer, if 1A current flows through the primary
+coil, what is the maximum current that will flow through the secondary coil?
+
+Answer: Is = (=) Ip = (=) x1A=01A
+
+(?) Exercise
+General questions
+
+1. If you send an electron beam from one end to the
+other end of your room and see that it is going
+upward, what explanation will you give?
+
+2. While making an electromagnet, an insulated N
+
+wire is wrapped around an iron bar. Is it better to
+
+use a single turn with a thick wire or many turns
+
+with a thin wire? Why?
+
+3. Between two iron bars, one is a magnet and the Figure 12.14: Change of
+other is not. Without hanging or without using any position of a magnet
+
+instrument, can you identify which one is iron and inside a loop.
+which one is magnet?
+
+4. Earth is a huge magnet. Is the north pole of the earth the north pole or the
+south pole of that magnet?
+
+5. Electricity is produced by moving the magnet, it always tends to oppose the
+change. Remembering this, if the magnet shown in Figure 12.14 is raised
+upward, then in which direction will current flow in the loop?
+344 Physics
+
+6. What is magnetic effect of electric current?
+
+7. What is an electromagnet?
+
+8. What is a generator? What are the functions of generator?
+
+9. What is the difference between a generator and electric motor?
+
+10. What are the functions or activities of step up and step down transformers?
+11. How can the intensity of electromagnet be increased?
+
+12. A transformer is connected with a 240 V AC source. The number of turns of
+its primary and secondary coil are 1000 and 50 respectively. What is the voltage
+of its secondary coil?
+
+Mathematical questions
+
+1. Due to the flow of I amount of current through a coil having 10 turns made of
+an insulated wire, a magnetic field B is produced. What will be the magnetic
+field if the number of turns is 100?
+
+2. In the above case, to increase the number of turns by 50 more, if by
+mistake 50 turns are given in the reverse direction, what will be the magnetic
+field?
+
+ry
+
+—
+
+Figure 12.15: Magnetic field around a current carrying wire
+
+3. By observing the Figure 12.15, in which direction is the current flowing in
+each wire?
+
+4, The number of turns in the primary coil of a transformer is 100, here by
+applying 15 V AC in the primary, 150 V AC is obtained in the secondary coil.
+What is the number of turns in the secondary coil?
+
+Q
+S
+N
+Magnetic Effects of Current 345
+
+EX) Multiple choice questions
+
+Put a tick mark (1) beside the correct answer
+1, What will happen to the magnetic field if electric current flows through a
+solenoid made by insulated wire wound over a cylinder?
+
+a) Will be condensed and weak
+
+b) Will be condensed and strong
+
+c) Will be less condensed and weak
+
+d) Will be less condensed but strong
+
+2. In which of the following functions is, electromagnetic induction used?
+(a) Transistor
+(b) Motor
+(c) Amplifier
+(d) Transformer
+
+3. In which of the following process is, electromotive force produced-
+i) If any magnet is kept motionless in a wire coil
+ii) If any wire coil is rotated in a magnetic field
+iii) If any magnet is rotated around a motionless wire coil
+Which one is correct of the following?
+(a)i (b) ii (c) i and ii (d) ii and iii
+
+A bar magnet is moving to and fro through a coil of wire. As a result, voltage is
+induced in the coil. The induced voltage depends on some factors. Now,
+answer questions number 4 and 5.
+
+4. In case of electromagnetic induction, the induced voltage depends on which
+of the following?
+
+(i) Intensity of the magnetic field
+
+(ii) Resistance of the coil moving in the magnetic field
+
+(iii) Speed of the coil moving in the magnetic field.
+Which one of the following is correct?
+
+(a)i (b) ii (c) i and ii (d) ii and iii
+
+Forma-44, Physics, Class 9-10
+346 Physics
+
+5. What will happen to the induced electric current, if the number of turns of
+the coil is increased?
+
+a) The electric current will be reduced
+
+b) The electric current will be increased
+
+c) The magnitude of electric current will be zero
+
+d) The magnitude of electric current will be negative
+
+Creative questions
+
+1. Answer the following question
+based on the diagram: A
+(a) What is the name of the
+object marked A? 240 ~
+
+(b) Explain the principle on . |
+
+which this machine has
+Oo A
+
+aware eaeaws
+We
+
+been made.
+(c) Calculate the electric np =50
+current in the primary coil
+of this device.
+(d) Explain the function of
+this device mathematically
+on the basis of data.
+
+2. A straight long wire is passed through a large piece of paper perpendicularly
+and connecting a 1.5 Volt pencil battery with it, current is flown through the
+wire and some iron dust is spread on the paper.
+(a) What is the magnetic effect of current?
+(b) How will the iron dust get arranged on the paper?
+(c) What changes are to be made to the structure of the wire to increase
+the intensity of the induced magnetic field? Elaborate.
+(d) Analyse the phenomenon that will happen if the wire is wrapped
+around an iron nail and if one end of the iron nail is taken near to the
+iron dust?
+
+2025

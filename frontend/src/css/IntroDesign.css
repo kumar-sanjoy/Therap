@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.header-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.intro-page {
+  @apply min-h-screen flex flex-col bg-white text-[#343434];
+}
+
+.intro-header {
+  @apply flex items-center justify-between p-4 bg-white shadow-sm h-16;
+}
+
+.intro-logo {
+  @apply h-16 w-auto transition-transform duration-300 hover:scale-105;
+}
+
+.intro-nav-btn {
+  @apply px-4 py-2 bg-white text-[#343434] rounded hover:bg-gray-200 transition;
+}
+
+.intro-hero {
+  @apply bg-white py-16;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent;
+}
+
+.intro-features {
+  @apply p-6 bg-gradient-to-b from-white to-gray-200;
+}
+
+.feature-item {
+  @apply bg-[#343434] p-6 rounded-lg shadow-md text-center text-white transition-transform duration-300 hover:-translate-y-2;
+}
+
+.intro-footer {
+  @apply p-4 bg-[#343434] text-center text-sm text-white;
+}
+
+.animated-gradient-text {
+  background: linear-gradient(90deg, #4f46e5, #9333ea, #2563eb);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% center }
+  100% { background-position: 200% center }
+}
+
+@media (max-width: 768px) {
+  .intro-title { @apply text-3xl; }
+  .intro-hero { @apply p-4; }
+  .features-title { @apply text-2xl; }
+  .feature-item { @apply w-full; }
+  .intro-nav-btn { @apply px-3 py-1 text-sm; }
+}
+
+@media (max-width: 480px) {
+  .intro-logo { @apply h-12 w-auto; }
+  .intro-title { @apply text-2xl; }
+  .intro-hero { @apply p-4; }
+  .intro-cta-btn { @apply px-3 py-1 text-sm; }
+  .features-title { @apply text-xl; }
+  .feature-item { @apply p-4; }
+  .intro-nav-btn { @apply px-2 py-1 text-xs; }
+}

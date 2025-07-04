@@ -1,0 +1,712 @@
+2025
+
+Chapter Eight
+
+Chemical Reaction
+
+Different types of chemical reaction are going on around us. There chemical
+reactions are some times releasing energy, sometimes creating useful new
+materials and sometimes helping us cure diseases.
+
+At the end of this chapter we will be able to—
+
+e explain different types of chemical reactions ;
+
+® explain different types of energy transformations through chemical reactions;
+explain the transformations of energy in dry cells;
+explain electrolysis:
+use properly the chemicals and different instruments in chemical experiments.
+appreciate the contributions of chemical reactions in our life;
+
+Lesson 1-2 : Symbol, formula and valency
+
+In class seven, you have got some ideas about symbol and formula. According
+to structure, chemists have divided all the substances of the world as elements
+and compounds. Till now, 118 elements have been found out. Generally,
+symbols are expressed by the first one or two letters of he English or Latin name
+of the elements. The short expression of the element is called symbol. For
+example :
+
+Hydrogen H, Oxygen O, Calcium Ca etc.
+Again, the short expression of molecule of compound is called formula. For
+
+example : formula of hydrogen molecule H, , Oxygen molecule O,, Hydrogen
+chloride molecule HCl etc.
+a0 Science
+
+To write the formula of compound, we need to know the valency of the element.
+According to the number of valency of the element, elements form compounds
+by chemical bondage. We can compare the valency of elements with our hand.
+The elements having valency one, means it has one hand. Hydrogen and chlorine
+both are one handed elements. So, their valency is one. Therefore, the formula
+of hydrogen chloride is HC1. The valency of oxygen is two. It means, the one
+atom of oxygen has two hands. Through these two hands, oxygen can be
+attached with two atoms of one handed hydrogen. For this reason, the formula of
+water is H20.
+
+The valency of nitrogen and carbon are 3 and 4 respectively. So, the formula of
+ammonia is NH; and methane is CH,. The formula of hydrogen chloride, water,
+ammonia and methane can be shown in the following :
+
+H H H
+SF
+A ) Hoo
+“ |
+H-Cl H 4H Hl H
+Hydrogen chloride Water Ammonia Methane
+
+It may be mentioned here that some elements have more than example : the
+valency of sulphur is 2 and 4, Iron is 2 and 3 ete.
+
+Therefore, the valency of the element means the number of hydrogen atom
+attached to that element. At the time of formation of a compound, it is to be
+considered that all the hands or valency of an element are satisfied.
+
+Table : The valency of some elements and radicals
+
+Element Walency-1 Valency-2 Valency-3 Valoncy-4
+Noo-metal | Hydeogen (1) Oxygen (0) Nitrogen (N) Carbon (C}
+Fluorine (F} Sulphur (5) Phosphorus (P) Sulphur (8)
+Chlorme (C1) Carbon (C)
+Bromine (Br)
+lodine (1)
+Metal Sodium (Na} Calcium (Ca) Alominiumn (Al) Tin (Sn) {ie}
+Potassium (K) Magnesium (Mg) ron (Fe) (ic) Lead (Pb) (ic)
+Copper (Cu} (ous) | Zine (Zn) Gold yAu) fic}
+Silver (Ag) Iron (Fe) (ows)
+Gold (An) (ous) Copper (Cu) (ic)
+Tin (Sn) tous)
+Lead (Pb} (oush
+Radicals Ammonium (NH,*) | Carbonate (co, } | Phosphate (PO.?” }
+Hydroxyl (OH ) Sulphate (80,2° )
+Nitrite (NO, } Sulpkite (80,2)
+Nitrate (NO,” }
+Bicarbonate (HOO, }
+
+2025
+Chemical Reaction #1
+
+In the above table 50,2, CO,*°, NO; NH," etc. group of atoms do not stay
+independently. They participate in compound formation like elemental atom. This
+sroup of atoms is called radical.
+
+To write the molecular formula, the following rules are to be mantioned.
+
+1. Lf the valency of the element or radical is same, it is not necessary to write valency
+in the formula, Only element and radical are to be written together. For example:
+CaO (calcium oxide), NHyCl(ammonium chloride}, NH,NO, (ammorium niirate) etc.
+
+2. lfthe valency of one element is any multiple of valency of another element, the valency
+of both elements is divided by that multiple. Then the divided result is exchanged and is
+written as suffix. For example: carbon dioxide C,O, — CO,. Here the valency of
+carbon and oxygen is respectively 4 and 2.
+
+3, Ifthe valency of both clements is different but not any multiple like valency of A is X and
+the valency of B is Y then the formula of compound formed- with A and B is Ay Bx, The
+valency of element A is written at the suffix on B and the valency
+of element B is written at the suffix of A. For example alluminium oxide ( Al,O,)
+
+Lession 3-4 : Chemical equation
+
+To describe the chemical reaction we need to know about chemical reaction, A
+chemical reaction can be divided into two parts.
+
+One part contains the reactants and in the other part, the prodcuts or the newly
+formed substances. For example :
+
+5 + 0, : > 50,
+Sulphur Oxygen Sulphur dioxide
+
+Reactants represent the prior state of the reaction and products the resultant state
+of the chemical reaction. In any chemical reaction, atoms cannot be created or
+destroyed; but they are rearranged only. The total number of atoms present in the
+teactants before the reaction always equals the total number of atoms of the
+product afier the reaction. So the reactants and their product have the same
+number of atoms of a specific element. In the light of the above discussion,
+chemical equation may be defined as follows:
+
+A chemical equation is a shortened expression of a chemical reaction, It uses
+some symbols, formulas and some mathematical signs to denote the reactants
+and the products. For example :
+
+Zn + H,50, ———?> ZnSO, + H,
+Zine Sulphuric acid Zinc sulphate Hydrogen
+
+Forma-11- Science, Class-8
+82 Science
+
+The rules of writing chemical equations
+
+1, In a chemical equation the formula or symbols of the reacting substances or
+reactants are written on the left of the sign of eugality (=) and the symbols or
+formulas of the products are written on the right of it.
+
+2. Ifthe reactants or products are more than one, a plus ( +) sign is put between
+the formula and the symbols.
+
+3, Ifthe number of molecule is more than one then the number is used before
+the formula.
+
+4, An arrow sign (—+) is used to indicate that the reaction moves towards the
+products from the reactants. Instead of an arrow sign, an equals sign ( =)
+may also be used. However, the equation has to be balanced on both sides.
+
+5. The number of atoms of different elements present in the reactants before
+chemical reaction must be equal to the number of atoms of different elements
+in the predcuts formed after the reaction. So, to make balance the symbol or
+formula must be multiplied by the required number.
+
+To balance the chemical equation
+
+Hydrogen reacts with oxygen to prodcue water. So the formula of hydrogen and oxygen
+is to be written on the left of the equals sign ( =) and the formula of the product will
+be written on the right. The reaction may be expressed as follows :
+
+Hy = 0;
+
+The number of H and O atoms before the reaction and their numbers alter the
+reaction should be same. To make the number equal it will have to multiplied on
+the right side by 2. The equation now stand as :
+
+H,0
+
+2H, + 0, = 21,0
+
+From the above equation the total number of oxygen and hydrogen atoms
+before and after of the reaction can be calculated :
+
+2H, a 0, = 2H,0
+(22) + (1*2) = 2x (2+])
+or, 4 + 2 - 2x3
+or, 6 - 6
+
+Therefore, the number of atoms before and after the reaction is equal.
+
+2025
+2025
+
+Chemical Reaction 83
+
+Lesson 5 : Chemical reaction: addition
+
+Activity: Understanding addition reaction
+
+Necessary components: test tube, mortar, spirit lamp or burner, iron powder,
+sulphur, balance
+
+Methodology: Properly clean the test tube and dry it. Using the balance measure
+1 gram of iron powder and 4 gram of sulphur (keeping the ratio same different
+amounts of iron and sulphur can be taken) and grind them together in the mortar.
+Put the powders in the test tube. Now heat the bottom of the test tube using the
+flame low while heating. When the mixer in the test tube becomes red hot, stop
+healing, keep the test tube above the mortar so that in case the test tube breaks the
+materials im it will not be spoiled. After cooling the test tube, break it and separate
+out Its contents.
+
+The material that you obtain from the test tube will look deep gray. You will see
+that the light yellow sulphur or iron in it. became the iron powder and the
+sulphur chemically combined to produce a new material called ferrous sulphide.
+
+Fe + Ss > FeS
+Iron Sulphur ferrous sulphide
+
+This type of chemical reaction in which more than one element combined to
+produce a new kind of chemical substance is called synthesizing reaction, In the
+same way zinc and sulphur can chemically react to produce zinc sulphide.
+
+7 + 5 7ns
+Ane Sulphur Zinc sulphide
+
+It is to be mentioned here that in the above two reactions compounds are formed
+from elements. However, it is also possible that two compounds can chemically
+combine to form a new compound. For example, ammonium chloride is
+produced by adding hydrogen chloride with ammonia.
+
+NH3 + HCl > NHgCl
+Ammonia Hydrogen Chloride Ammonium Chloride
+
+Lesson 6-7 : Combustion reaction
+
+Activity: Observation of combustion reaction between sulphur and oxygen.
+Necessary components: A combustion spoon with a long handle, some
+amount of sulphur, spirit lamp or burner
+
+Methodology: Take some sulphur in your combustion spoon. Go on heating
+the spoon with the flame of your burner. What do you find?
+
+a4 Science
+
+First you will see sulphur to melt and then you will see blue flame and smell a
+pungent smell. The heating of sulphur reacts with oxygen in the air and produces
+sulphur dioxide (SO,) gas which gives pungent smell.
+
+5 + Oz - * 502
+
+Sulphur Oxygen Sulphur dioxide
+
+Activity: Observation of combustion reaction between magnesium and
+oxygen,
+
+Necessary components: Magnesium ribbon, forceps (cight centimeter).
+Spritlamp or burner
+
+Methodology: Wear protective spectacles. Hold the end of the ribbon on the
+flame you can do it by a lights also, Observe carefully, what happens?
+
+The ribbon catches fire and a bright flame is seen. It happens because
+magnesium bums due to the reaction with the oxygen of the air and we see the
+flame. When all the magnesium is burnt out, the flame will extinguish
+automatically, Do you find anything like ashes? It is actually magnesium oxide
+which has been formed through the burning of magnesium in oxygen.
+
+2 Mg + Oz - +  ZMgO
+
+Magnesium Oxygen Magnesium oxide
+
+Activity: To know the process of burning of a candle.
+
+Necessary components: Candle, match
+
+Methodology: Ignite the candle using a match stick. Observe carefully what
+is happening? With the passage of time the size of the candle reduces. Due to
+burning the candle melts at the top by the heat produced. A small part of the
+melted wax flows down the candle, but most of the melted wax turns into
+vapour by being sucked up through the wick of the candle. This vapour, by
+combustion process, reacts with the oxygen in the air and produce heat and
+light.
+
+2025
+2025
+
+Chemical Reaction 85
+
+Lesson 8-9 : Substitution or displacement reaction
+
+Activity: Observing the reaction between iron and copper sulphate.
+
+Necessary components: [ron powder, copper sulphate, water and test tube
+
+The procedure: Fill the test tube with water to one forth its volume. Take some
+coppersulphate in it and shake to make a solution of copper sulphate. Now put in
+some iron powder in this blue solution of copper sulphate and shake thoroughly. Do
+you find any change? The blue colour of solution is gradually turning into green and
+small particles are forming at the bottom of the test tube. Why the blue colour of
+the solution turns green?
+
+Here a chemical reaction has taken place, as a result ferrous sulphate and copper
+have been formed. The colour of iron sulphate is light green which turns the blue
+colour of the solution into light green.
+
+Fe + CusO4 ———————+ FeSQ4 + Cu
+Iron Copper sulphate ferrous sulphate Copper
+In this reaction iron is removing copper from copper sulphate and occupying its
+
+place to form ferrous sulphate and pure copper.
+
+This type of chemical reaction, where an element replaces another element from
+a compound and occupies its place producing a new compound is called
+displacement reaction.
+
+You can add zinc, magnesium ete. and see what type of change occurs.
+
+Decomposition rection
+
+Activity: Observing the decomposition reaction of limestone.
+
+Necessary components: Limestone, spatula or spoon, test tubes, lime water, outlet
+tube, bunsen burner or spirit lamp, clamp, stand, cork and hand gloves
+Methodology: Wear the hand gloves and with the help of the spatula take 5 gram
+of limestone in the test tube. Now heat the bottom of the test tube with the flame of
+the burner. Observe very carefully.
+
+Carbon dioxide is being produced. The limestone which was taken in the test
+tube decomposed into carbon dioxide gas and formed calcium oxide due to
+heating ..
+
+CaCO3 heat, CaO " CO>
+Calcium carbonate (limestone) Calcium oxide Carbon dioxide
+
+Now you can examine whether the gas is carbon dioxide or not. Take 1-2
+milliliter of lime water in the other test tube and fix it as shown in the figure. You
+will see that the lime water is turning opaque. The carbon dioxide thus produced
+passed through the outlet tube to the second test tube and caused reaction there
+between lime water and carbon dioxide. The lime water becomes opaque due to
+the formation of calcium carbonate.
+
+86 Science
+
+CO> + Ca(OH) CaCO +4 HO
+Carbon dioxide Lime water Calcium carbonate ‘Water
+Examples of decomposition reactions are given below :
+If copper carbonate is heated, it breaks and produces copper
+oxide and carbon dioxide.
+CuCO3 heat cu 4, CO»
+Copper carbonate Copper oxide Carbon dioxide
+
+On the other hand when potassium chlorate is heated it
+decomposes into potassium chloride and oxygen gas.
+
+2KCIO3 heat 2KCl + 309 Fig. &.1:Decomposition
+Potassium chlorate Potassium chloride Oxygen
+
+Lesson 10-11: Transformation of energy through chemical reaction
+
+Your Activity: You have known what type of chemical reaction goes on when
+a candle burns. Can you say now if any energy transformation occurs here? If
+you put your hand near the candle you feel hot. Again if the candle is ignited in
+the dark things become visible. We can therefore say that we feel hot because the
+burning candle produces heat and we can see things around the candle because
+it produces light. Candle is a chemical substance. When it is burned, the
+chemical energy stored in it transforms into heat energy and light energy. We
+use heat energy for cooking. Thus we find that chemical reaction cause
+transformation of energy.
+
+Activity: The reaction between baking soda and lemon juice.
+
+Necessary components: Baking soda, lemon juice, dropper
+
+Methodology: Take some baking soda in a test tube. Gradually add lemon juice to
+it by using the dropper. What do you find? ‘There will be lot of bubbles. If you touch
+the bottom of the test tube do you feel it cold?
+
+Lot of citric acid is present in the lemon juice which reacts with the baking soda to
+produce sodium citrate, carbon dioxide gas and water. The bubbles you see are
+nothing but carbon dioxide gas.
+
+Baking soda + Citric acid -——+ Sodium citrate + Carbon dioxide + Water
+
+Why is the test tube felt cold? The reason is that the reaction absorbed heat.
+
+2025
+2025
+
+Chemical Reaction a7
+
+Now you can add vinegar to baking soda instead of lemon juice and see what
+happens?
+
+Activity: Experiment for the reaction between lime water and vinegar.
+Necessary components: lime. vinegar, beaker, hand gloves, dropper
+Methodology: Using the hand gloves put some lime in the beaker. Now
+gradually add vinegar with the help of the dropper. Touch the beaker by your
+hand. Do you feel it hot? What is the reason? Here, due to the reaction
+between lime and vinegar. Calcium acitate and water is formed and lot of
+heat is released. Due to the generation of heat the beaker is felt hot.
+
+CaO + CH,;,COOH —————-+ (CH,COO),Ca + H,0
+
+Lime Acitic acid Calcium acitate Water
+Here lime is alkaline substance and acitic acid is acidic substance. This type of
+reaction where substances of opposite characteristics react with each others and
+produce neutral substance is called neutralization reaction.
+
+Now you can add lemon juice instead of vinegar and see what type of reaction
+occurs?
+
+Activity: Observation of the reaction between lime water and vinegar.
+Necessary components: Lime, water, vinegar, beaker, hand gloves, spatula,
+dropper
+
+Methodology: Take five gram of lime ( different amount can also be taken).
+
+Add 40 gram of water drop by using the dropper. Touch the beaker with
+hand gloves on. Do you find any difference after adding water?
+
+The beaker is getting very hot and the solution is bubbling as happens to boiling
+water. Here due to the addition of water into lime, there is a chemical reaction
+between them and calcium hydroxide is formed,
+
+CaO +) HO + CaO),
+
+Calcium Oxide ( Lime) Water Calcium hydroxide
+The product Ca(OH)2 is well known as slaked lime. Slaked lime or Ca(OH)2
+dissolves in water very slightly. Huge heat-energy is produce in this reaction. As
+
+aresult, water evaporates. The saturated solution of Ca(OH)2 in water is called
+lime water.
+
+Keep the suspensions that you get from the above experiment for some time. The
+clean water that you get at the top is lime water.
+88
+
+Lesson 12-14: Dry cells
+
+Science
+
+Dry cells are portable source of electrical energy. We use dry cells in torch light,
+remote controller, toy cars and in many electric machines. We will discuss how
+
+this cell is made and how it works.
+To make such a dry cell first of all, ammonium
+
+chloride (NH4Cl), charcoal powder and manganese
+dioxide (Mn0,) to be mixed horoughly with little
+
++—— Metal cap (4)
+
+i: : . . +4 Mixture of
+
+water added to make a paste. This mixture is taken in (| ammoniam
+icing : ' ' hlotide,
+
+a cylindrical shaped zine container. A carbon rod is carbon st
+
+introduced at the centre of the container in such a way ca
+
+that it does not touch the zine container. At the top of
+the carbon rod there is a metal cup. The upper part of
+the cell is covered by a layer of pitch. The surface of
+the zine cylinder acts as the negative electrode or as
+the anode. The carbon rod with the metal cap acts as
+the positive electrode or cathode.
+
+Now let us see how it works-
+
+oe ae oe
+
+la. Zinc container (—}
+
+Fig. #.2: Dry cell
+
+transformation.
+
+Activity: To make a electric circuit using a dry cell and observe the energy
+
+Necessary components: An electric bulb, dry cell, two copper wires
+
+Methodology: Connect one end of a copper wire to the anode of the dry cell.
+Connect the other copper wire with the cathode of the dry cell. Now connect the
+free ends of the copper wires through the bulb as shown in the figure. The bulb
+will light up. This is because an electric circuit is completed through the cell,
+
+bulb and the wires.
+
+What type of energy transformation did take place here?
+The completion of the electric circuit causes the bulb
+to give light. This light is coming from the battery.
+The source of energy of the cell is the chemicals used
+in the cell. This means zine, charcoal powder,
+ammonium chloride and manganese dioxide. We can
+say the chemical energy stored in the chemicals in
+the cell is the source of electrical energy.
+
+-
+“f
+
+id _
+
+——
+
+~
+eo
+
++
+
+Fig. 6.3: Dry cell cirewit
+
+2025
+Chemical Reaction &9
+
+Electrolysis
+
+Activity: To know about electrolysis.
+Necessary components: One dry cell, two copper wires, two zinc rods
+(electrode), water, salt, one glassware.
+
+Methodology: Take 300 milliliter of water, 30 ,-—* I\||- =
+gram of sodium chloride in a glassware and stir | peey |
+them thoroughly. Now connect the two zinc rods to
+the battery using the copper wires as shown in the
+figure. Look carefully at the zine rods. Do you find
+bubbles of gas on the body of both the rods?
+
+Nacl
+
+fig 8.4: Electrolysis
+
+Yes, the reason is that sodium chloride gets dissociated in aqua solution to
+produce sodium ion (Na*) and chloride ion (CT )
+
+NaCl — Nat + Cl
+
+This is how water getting dissociated produces Hydrogen ion and Hydroxil ion.
+Due to the flow of electricity through dissolved salt connected with battery.
+Hydroxil ion and chloride ion go towards Anode. Chloride ion through
+chemical reaction produces chlorine (Cl,) gas when it reaches anode. As a result
+we find bubbles on the anode, on the other side, Sodium ion and Hydrogen ion
+(H') produce H, through chemical reaction by reaching cathode. As a result the
+bubble of hydrogen gas becomes visible on the cathode and Sodium ion (Na‘*)
+and Hydroxil ion (OH ) remains in the solition.
+
+cl + & Cl
+
+Chloride ion electron Chlorine atom
+cl + Cl > CL
+
+Chlorine atom Chlorine atom Chlorine gas
+H + e H
+
+Hydrogen ion electron Hydrogen
+
+H + H = H,
+
+Hydrogen atom Hydrogen atom Hydrogen gas
+
+Forma-12- Science, Class-8
+50 Science
+
+Due to the flow of electricity through Sodium Chloride solution Chlorine gas
+produces on the anode and Hydrogen on the cathode and Sodium Hydroxide
+remains in the solution.
+
+The solutes that carries electricity in dissolved state and produces different
+solutes by chemical reaction due to electricity is called Electrolyte.
+
+All materials do not produce chemical reaction due to electric current. The
+materials do not allow electric current to pass through in their dissolved state or
+in the melted form do not take part in chemical reaction. These materials are
+called non electrolyte. Sugar, glucose are such examples.
+
+New words : Valency, radical, addition, combustion, displacement,
+
+neutralization, anode, cathode, electrolysis, electrolyte, slack lime.
+What we have learned at the end of this chapter
+
+- According to the number of valency of the element, elements form compounds by
+chemical bondage.
+
+- The chemical equation reactants stay at the left side of the arrow and the products
+stay at the right side.
+
+- By addition reaction more than one substance can combine to form a new
+material.
+
+- By combustion reaction a substance can burn with the help of oxygen in the air and
+produce lot of energy as heat and light.
+
+- In substitution reaction an element can replace another element from a compound
+and produce a new substance.
+
+- A chemical reactions in which a compound is broken down to more than one new
+substance is called decomposition reaction.
+
+- By chemical reaction there is transformation of energy.
+
+- Inneutralization reaction substances of opposite properties react to transform each
+other into neutral substances. In the combustion reaction the chemical energy
+generally transform into heat and light energy.
+
+- When dry cell are used the chemical energy transforms into light or other form
+of energy.
+
+- Those materials which in the dissolved state or melted state allow electricity to
+pass through it are called electrolyte.
+
+- Those materials do not allow electricity to pass through them im melted or dissolved
+state are called nonelectrolyte.
+
+2025
+2025
+
+Chemical Reaction 91
+
+Exercise
+
+Fill in the blanks
+are created by chemical reaction.
+The chemical reaction between calcium oxide and carbon dioxide
+forming calcium carbonate is a reaction.
+By combustion reaction energy is produced.
+In a dry cell the cylinder of zine act as ‘
+Hydrochloric acid is electric substance,
+
+bao
+
+tn f U3
+
+Short Answer Questions
+
+What do you understand by combustion reaction? Give examples.
+Explain what is meant by neutralizing reaction?
+
+Explain what happens when water is added to lime?
+
+Describe briefly the construction a dry cell.
+
+“Poe he
+
+Explain the main difference between electrolyte and non-electrolyte
+substances with examples.
+
+Multiple Choice Questions
+
+1. Which one is slaked lime?
+a, CaO b. CaCO;
+c. CaCl d. Ca(OH)
+
+2. From which of the decomposition reactions given below does a diver
+gets his oxygen.
+a. CaCO; b. CuCO,
+
+c. KCIO3 d. NHgCl
+In the light of the paragraph below, answer the questions no. 3 and 4
+
+Shapna took some lime in a beaker in the lab. Then some vinegar is added by
+a dropper. After some time she touched the beaker to find out the change of
+temperature.
+
+3. What type of chemical reaction will occur between the compounds?
+a. Combustion b. Neutralizing
+c. Addition d. Substitution
+a2 Science
+
+4. The reaction between the compounds will produce —
+i. calcium acetate
+ii. calcium carbonate
+
+iii, water
+
+Which one of the following is correct?
+a. i & ii b. i & iii
+c. it & tii d. i, ti & iit
+
+Creative Questions
+1. Fahad and Farhan carried out some chemical reactions, which are as follows:
+
+i. Carbon + Oxygen heat
+
+ts
+
+ii. Lime stone heat
+
+fa
+
+iti, Hydrogen + Oxygen ——————>
+iv. Zine + Sulphuric acid ——————>
+
+What is the symbol of baking powder?
+What is the type of number ti. reaction, explain?
+
+c. Explain the generation of gas of elements in the above stimulation
+reactions.
+d. Although the reactions i. and ii. are additive, there is some difference
+between them, explain
+2. Rita was watching the dance of her doll by connecting the battery of her doll.
+At this moment the electricity went off and her younger sister Oishori
+brought a lighted candle.
+
+a. What is the neutralization reaction?
+
+b, Whatis meant by lime water?
+
+c. Explain the construction of Rita's battery.
+
+d. Explain how the energy of battery of the doll and the candle transforms.
+Project: Form a group of 4 to 5 and identify 5 chemical reactions which are
+closely related to our day to day life. Think whether there is
+transformation of energy in these reactions. If there are transformations
+
+of energy, try to find out. Make a report, what kind of transformation occure
+during the translformation of energy.
+
+2025
