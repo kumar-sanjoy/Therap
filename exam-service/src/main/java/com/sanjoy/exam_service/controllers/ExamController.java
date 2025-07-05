@@ -192,6 +192,7 @@ public class ExamController {
     }
 
 
+    @SuppressWarnings("null")
     @PostMapping("/submit-written")
     public Mono<ResponseEntity<String>> submitWrittenProxy(@RequestParam("image") MultipartFile imageFile,
                                                            @RequestParam("question") String questionText) {
