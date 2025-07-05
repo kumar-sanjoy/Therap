@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  python-server:
+    build:
+      context: ./python-service
+    ports:
+      - "5000:5000"
+    environment:
+      - GOOGLE_API_KEY=AIzaSyDPdFfFzkIYl8P9hUAFrdBUVwIoaQmlDt4
+
+  exam-service:
+    build:
+      context: ./exam-service
+    ports:
+      - "8091:8091"
+    environment:
+      - AI_BACKEND_URL=http://python-server:5000
