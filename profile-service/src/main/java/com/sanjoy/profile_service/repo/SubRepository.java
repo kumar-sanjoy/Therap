@@ -1,6 +1,6 @@
-package com.sanjoy.exam_service.repo;
+package com.sanjoy.profile_service.repo;
 
-import com.sanjoy.exam_service.models.Sub;
+import com.sanjoy.profile_service.models.Sub;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

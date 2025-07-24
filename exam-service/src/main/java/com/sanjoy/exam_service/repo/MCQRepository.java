@@ -15,6 +15,6 @@ import java.util.Optional;
 public interface MCQRepository extends JpaRepository<MCQ, Long> {
     Optional<MCQ> findIdByStatement(String question);
 
-    @Query("SELECT m.statement FROM MCQ m WHERE m.mistakenByStudent.id = :studentId AND m.sub.id = :subjectId")
-    List<String> findStatementsByStudentIdAndSubject(@Param("studentId") Long studentId, @Param("subjectId") Long subjectId);
+    @Query("SELECT m.statement from MCQ m WHERE m.mistakenByStudent.username = :username AND m.sub.id =:subjectId")
+    List<String> findStatementByStudentUsernameAndSubject(@Param("username") String username, @Param("subjectId") Long subjectId);
 }

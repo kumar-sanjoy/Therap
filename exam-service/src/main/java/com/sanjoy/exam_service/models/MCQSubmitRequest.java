@@ -10,16 +10,8 @@ import java.util.Map;
  */
 @Data
 public class MCQSubmitRequest {
-    private Long userId;
+    private String username;
     private String subject;
     private Map<String, Boolean> questions;
-
-
-    @Override
-    public String toString() {
-        return "MCQSubmitRequest{" +
-                "userId=" + userId +
-                ", questions=" + questions +
-                '}';
-    }
+    private int difficultyLevel;
 }
