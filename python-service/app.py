@@ -1,14 +1,16 @@
 # === Standard Library Imports ===
 import io
 import random
+import json
 
 # === Third-Party Library Imports ===
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, Response
 from flask_cors import CORS
-# from PIL import Image
-import numpy as np
-# import easyocr
+import requests
 from dotenv import load_dotenv
+import math
+import numpy as np
+import pandas as pd
 
 # === Langchain Imports ===
 from langchain_community.document_loaders import TextLoader
@@ -18,15 +20,13 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.output_parsers import ResponseSchema, StructuredOutputParser
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-# === EasyOCR Initialization ===
-# reader = easyocr.Reader(['en'])
 
 # === Usage Notes ===
 # To run:
 # .\env\Scripts\Activate.ps1
 # python app.py
 # If fresh install:
-# pip install Flask flask-cors pillow numpy easyocr python-dotenv langchain langchain-google-genai langchain-community langchain-core langchain-text-splitters
+# pip install Flask flask-cors python-dotenv langchain langchain-google-genai langchain-community langchain-core langchain-text-splitters requests
 
 load_dotenv()
 
@@ -38,19 +38,105 @@ subject_map = { 'a': 'P', 'b': 'C', 'c': 'B' }
 
 model = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=1)
 
+def train_q_table_from_history(history_data, num_states=11, num_actions=10, alpha=0.1, gamma=0.9):
+    """
+    Trains a Q-table from history data using Q-learning.
 
-# def image_to_text(img):
-#     image_bytes = img.read()
-#     image = Image.open(io.BytesIO(image_bytes))
-#     image = image.convert("RGB")  # EasyOCR expects RGB images
+    :param history_data: list of lists [performance_level, difficulty_level, correct_bool]
+    :param num_states: int, number of performance levels (default 11)
+    :param num_actions: int, number of difficulty levels (default 10)
+    :param alpha: float, learning rate
+    :param gamma: float, discount factor
+    :return: tuple of (Q-table as ndarray, function to select best difficulty)
+    """
 
-#     # Convert image to array for EasyOCR
-#     image_np = np.array(image)
+    Questions = np.zeros((num_states, num_actions))
 
-#     # Extract text using EasyOCR
-#     results = reader.readtext(image_np, detail=0)  # detail=0 gives plain text only
-#     extracted_text = '\n'.join(results)
-#     return extracted_text
+    for state, action_difficulty, correct in history_data:
+        action = action_difficulty - 1  # difficulty levels 1-10 → action index 0-9
+
+        if correct:
+            reward = 1 + action_difficulty / 10  # positive reward for success
+        else:
+            reward = -math.log(action_difficulty + 1) / 5  # negative reward for failure
+
+        next_state = state  # assuming performance level remains the same
+        best_next_q = np.max(Questions[next_state])  # best possible future reward
+        Questions[state, action] += alpha * (reward + gamma * best_next_q - Questions[state, action])
+
+    def select_difficulty(performance_level):
+        """
+        Given a performance level (0-10), returns the best difficulty level (1-10).
+        """
+        return int(np.argmax(Questions[performance_level])) + 1
+
+    return select_difficulty
+
+
+@app.route("/profile/teacher/generate-report", methods=["POST"])
+def generate_report():
+    input_data = request.get_json()
+    mistaken_questions = input_data.get("mistakenQuestions")
+    questions_text = "\n".join(mistaken_questions)
+
+    parser3 = StructuredOutputParser.from_response_schemas([
+        ResponseSchema(name="report", description="The weakness report for the student in Bengali")
+    ])
+
+    prompt = PromptTemplate(
+    input_variables=["questions"],
+    partial_variables={"format_instruction": parser3.get_format_instructions()},
+    template="""\
+        আপনি একজন দক্ষ শিক্ষক, যিনি খুব সুন্দরভাবে ছাত্রদের দুর্বলতা বিশ্লেষণ করতে পারেন।
+        একজন ছাত্র নিচের প্রশ্নগুলোর উত্তর দিতে পারেনি। 
+        এই প্রশ্নগুলোর ভিত্তিতে ছাত্রের দুর্বলতাগুলি বিশ্লেষণ করে বাংলায় একটি প্রতিবেদন লিখুন।
+
+        প্রশ্নসমূহ:
+        {questions}
+
+        {format_instruction}
+        ***উত্তরটি অবশ্যই উপরের JSON ফর্ম্যাটে দিন। অন্য কিছু লিখবেন না।***
+    """
+    )
+
+
+    chain = prompt | model | parser3
+    weakness_report = chain.invoke({"questions": questions_text})
+
+    response_data = json.dumps(weakness_report, ensure_ascii=False)
+    return Response(response=response_data, status=200, mimetype='application/json')
+
+def image_to_text(image_file_or_path, api_key='helloworld', language='eng'):
+    try:
+        if isinstance(image_file_or_path, str):
+            with open(image_file_or_path, 'rb') as f:
+                image_bytes = f.read()
+            filename = image_file_or_path.split('/')[-1]
+        else:
+            image_bytes = image_file_or_path.read()
+            filename = 'uploaded_image.jpg'  # Default fallback name
+
+        files = {
+            'filename': (filename, image_bytes, 'image/jpeg')  # Explicit name + content type
+        }
+
+        response = requests.post(
+            'https://api.ocr.space/parse/image',
+            files=files,
+            data={'language': language, 'isOverlayRequired': False},
+            headers={'apikey': api_key}
+        )
+
+        result = response.json()
+        if result.get("IsErroredOnProcessing") is False:
+            print(result['ParsedResults'][0]['ParsedText'])
+            return result['ParsedResults'][0]['ParsedText']
+        else:
+            print("[ERROR] OCR failed:", result.get("ErrorMessage"))
+            return None
+    except Exception as e:
+        print("[EXCEPTION] Something went wrong:", e)
+        return None
 
 @app.route("/exam/written", methods=["GET"])
 def written_test():   
@@ -83,63 +169,59 @@ def written_test():
     
     return jsonify({"question": question_from_model.content})
 
-# @app.route("/exam/submit-written", methods=["POST"])
-# def evaluate(): 
-#     print('submit-written hit')
-#     if 'image' not in request.files: 
-#         return jsonify({"messege": "error"}), 404
+@app.route("/exam/submit-written", methods=["POST"])
+def evaluate(): 
+    print('submit-written hit')
+    if 'image' not in request.files: 
+        return jsonify({"messege": "error"}), 404
     
-#     image_file = request.files['image']
-#     image = Image.open(image_file)
-#     image = image.convert("RGB") 
-#     # # # # # # # image.show()
+    image_file = request.files['image']
+    studentAnswer = image_to_text(image_file)
 
-#     image_np = np.array(image)
+    question = request.form.get("question")  
 
-#     results = reader.readtext(image_np, detail=0)  # detail=0 gives plain text only
-#     studentAnswer = '\n'.join(results)
+    parser = StrOutputParser()
+    evaluation_template = """
+        তুমি একজন বাংলাদেশি শিক্ষক। একজন শিক্ষার্থী একটি প্রশ্নের উত্তর দিয়েছে এবং এখন তোমাকে তার উত্তর মূল্যায়ন করতে হবে।
+        তাকে ১০ এর মধ্যে নম্বর দাও, মন্তব্য লেখো এবং ভবিষ্যতে ভালো করার জন্য একটি পরামর্শ দাও — সবকিছু বাংলায় লেখো।
 
-#     question = request.form.get("question")  
+        প্রশ্ন:
+        {question}
 
-#     parser = StrOutputParser()
-#     evaluation_template = """
-#         তুমি একজন বাংলাদেশি শিক্ষক। একজন শিক্ষার্থী একটি প্রশ্নের উত্তর দিয়েছে এবং এখন তোমাকে তার উত্তর মূল্যায়ন করতে হবে।
-#         তাকে ১০ এর মধ্যে নম্বর দাও, মন্তব্য লেখো এবং ভবিষ্যতে ভালো করার জন্য একটি পরামর্শ দাও — সবকিছু বাংলায় লেখো।
+        উত্তর:
+        {answer}
+    """
+    prompt = PromptTemplate(
+        input_variables=["question", "answer"],
+        template=evaluation_template
+    )
 
-#         প্রশ্ন:
-#         {question}
+    evaluation_chain = prompt | model | parser
 
-#         উত্তর:
-#         {answer}
-#     """
-#     prompt = PromptTemplate(
-#         input_variables=["question", "answer"],
-#         template=evaluation_template
-#     )
-
-#     evaluation_chain = prompt | model | parser
-
-#     if studentAnswer.strip():
-#         final_result = evaluation_chain.invoke({
-#             'question': question,
-#             'answer': studentAnswer
-#         })
-#         return jsonify({"result": final_result}), 200
-#     else:
-#         return jsonify({"result": "not found"}), 404
+    if studentAnswer.strip():
+        final_result = evaluation_chain.invoke({
+            'question': question,
+            'answer': studentAnswer
+        })
+        return jsonify({"result": final_result}), 200
+    else:
+        return jsonify({"result": "not found"}), 404
     
-@app.route("/exam/mcq", methods=["GET"])
+@app.route("/exam/mcq", methods=["POST"])
 def fresh_test():   
     print('mcq exam hit')
-    cls = request.args.get("className")
-    sub = request.args.get("subject")
-    chapter = request.args.get("chapter", type=int)
-    ques_count = request.args.get("count", type=int)
+    data = request.get_json()
+    cls = data.get("className")
+    sub = data.get("subject")
+    chapter = data.get("chapter")
+    ques_count = data.get("count")
+    ques_perf = data.get("performance")
 
+    get_best_difficulty = train_q_table_from_history(ques_perf)
+    difficulty = get_best_difficulty(5)
+    print(difficulty)
 
-    difficulty = 'hard'
     parser = JsonOutputParser()
-
     txt_name = f"doc/{class_map.get(cls, 'unknown')}-{subject_map.get(sub, 'X')}-{chapter}.txt"
     
     try:
@@ -159,7 +241,8 @@ def fresh_test():
             template="""
                 You are an expert Bangladeshi high school teacher.
 
-                Based on the following chapter content, generate exactly {ques_count} {difficulty} level Bangladeshi board exam-style MCQ questions in Bengali.
+                Based on the following chapter content, generate exactly {ques_count} questions of difficulty level {difficulty} where the difficulty level 
+                lies between 1 to 10 (10 is most difficult) Bangladeshi board exam-style MCQ questions in Bengali.
                 The correct answer must be present among the options.
 
                 Each question must follow *strictly* this JSON structure (inside a dictionary with the key "mcqs"):
@@ -196,7 +279,7 @@ def fresh_test():
         questions_from_model = chain.invoke({"text": text, "difficulty": difficulty, "ques_count": ques_count}) # works fine
 
         try:
-            return jsonify(questions_from_model)
+            return jsonify({ "mcqs": questions_from_model['mcqs'], "difficulty": difficulty })
         except Exception as e:
             return jsonify("dict sending failed")
     
@@ -213,6 +296,7 @@ def doubtSolver():
     if 'image' in request.files:
         image_file = request.files['image']
         image_doubt = image_to_text(image_file)
+        print(image_doubt)
 
     if 'question' in request.form:
         text_doubt = request.form.get("question")
@@ -320,7 +404,6 @@ def generateNotes():
     
     return jsonify(notes_from_model)  
 
-
 @app.route("/exam/previous-mcq", methods=["POST"])
 def review_practice():
     print('previous-mcq hit')
@@ -392,6 +475,7 @@ def review_practice():
         # print(item.get("answer"))
         
     return jsonify(model_output_data)
+
 
 
 app.run(host="0.0.0.0", port=5000, debug=True)

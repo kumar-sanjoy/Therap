@@ -68,9 +68,6 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody User user) {
-
-        System.out.println(user.getUsername());
-        System.out.println(user.getPassword());
         try {
             Authentication authentication = authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword())
@@ -81,7 +78,7 @@ public class AuthController {
 
             Map<String, Object> response = new HashMap<>();
             response.put("jwt", jwt);
-            response.put("message", "Login successful");
+            response.put("username", userDetails.getUsername());
             System.out.println(response);
 
             return ResponseEntity.ok(response);

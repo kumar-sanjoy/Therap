@@ -17,6 +17,7 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String username;
 
     // Stores up to 10 recent MCQ outcomes (true = correct, false = wrong)
     @ElementCollection

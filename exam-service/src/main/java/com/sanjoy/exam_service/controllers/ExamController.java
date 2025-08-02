@@ -5,6 +5,7 @@ import com.sanjoy.exam_service.models.MCQSubmitRequest;
 import com.sanjoy.exam_service.models.Student;
 import com.sanjoy.exam_service.models.Sub;
 import com.sanjoy.exam_service.repo.MCQRepository;
+import com.sanjoy.exam_service.repo.PerformanceDiffLevelRepo;
 import com.sanjoy.exam_service.repo.StudentRepository;
 import com.sanjoy.exam_service.repo.SubRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +29,6 @@ import org.springframework.web.reactive.function.client.WebClientResponseExcepti
 import java.io.IOException;
 import java.util.*;
 
-
 /**
  * @author kumar
  * @since 6/17/2025
@@ -48,29 +48,46 @@ public class ExamController {
     @Autowired
     private SubRepository subRepository;
 
+    @Autowired
+    private PerformanceDiffLevelRepo pdlr;
+
     public ExamController(WebClient.Builder webClientBuilder,
         @Value("${ai.backend.url}") String aiBackendUrl) {
         this.webClient = webClientBuilder.baseUrl(aiBackendUrl).build();
     }
 
-    @GetMapping("/mcq")
+    @PostMapping("/mcq")
     public Mono<ResponseEntity<Map<String, Object>>> newExam(
+            @RequestParam String username,
             @RequestParam String className,
             @RequestParam String subject,
             @RequestParam String chapter,
             @RequestParam int count) {
         String pythonEndpoint = "/exam/mcq";
+        List<Object []> performanceRecord = pdlr.findPerformanceInfo(username, subject);
+        for (Object[] row : performanceRecord) {
+            int performance = (Integer) row[0];
+            int difficultyLevel = (Integer) row[1];
+            boolean isCorrect = (Boolean) row[2];
+
+            System.out.println("Performance: " + performance +
+                    ", Difficulty Level: " + difficultyLevel +
+                    ", Is Correct: " + isCorrect);
+        }
 
         System.out.println(count);
 
-        return webClient.get()
-                .uri(uriBuilder -> uriBuilder
-                        .path(pythonEndpoint)
-                        .queryParam("className", className)
-                        .queryParam("subject", subject)
-                        .queryParam("chapter", chapter)
-                        .queryParam("count", count)
-                        .build())
+        Map<String, Object> requestBody = Map.of(
+                "className", className,
+                "subject", subject,
+                "chapter", chapter,
+                "count", count,
+                "performance", performanceRecord
+        );
+
+        return webClient.post()
+                .uri(pythonEndpoint)
+                .bodyValue(requestBody)
                 .retrieve()
                 .bodyToMono(new ParameterizedTypeReference<Map<String, Object>>() {})
                 .map(responseMap -> {
@@ -78,16 +95,16 @@ public class ExamController {
                             ((List<?>) responseMap.get("mcqs")).size());
                     return new ResponseEntity<>(responseMap, HttpStatus.OK);
                 });
+
     }
 
     @GetMapping("/previous-mcq")
     public Mono<ResponseEntity<Map<String, Object>>> oldExam(
-            @RequestParam Long userId,
+            @RequestParam String username,
             @RequestParam String className,
             @RequestParam String subject,
             @RequestParam String chapter,
             @RequestParam Long count) {
-
 
         Optional<Sub> subOpt = subRepository.findByName(subject);
         if (subOpt.isEmpty()) {
@@ -99,7 +116,7 @@ public class ExamController {
             return Mono.just(ResponseEntity.badRequest().body(errorResponse));
         }
         Sub sub = subOpt.get();
-        List<String> previousQuestions = mcqRepository.findStatementsByStudentIdAndSubject(userId, sub.getId());
+        List<String> previousQuestions = mcqRepository.findStatementByStudentUsernameAndSubject(username, sub.getId());
 
         Map<String, Object> requestBody = new HashMap<>();
         requestBody.put("previousQuestions", previousQuestions);
@@ -116,9 +133,10 @@ public class ExamController {
 
     @PostMapping("/submit-mcq")
     public ResponseEntity<String> submitMcq(@RequestBody MCQSubmitRequest request) {
-        Long userId = request.getUserId();
-        Map<String, Boolean> questions = request.getQuestions();
+        String username = request.getUsername();
         String subject = request.getSubject();
+        Map<String, Boolean> questions = request.getQuestions();
+        int difficultyLevel = request.getDifficultyLevel();
 
         Optional<Sub> subOpt = subRepository.findByName(subject);
         Sub sub;
@@ -130,12 +148,18 @@ public class ExamController {
             sub = subOpt.get();
         }
 
-        Optional<Student> studentOpt = studentRepository.findById(userId);
+        Student student;
+        Optional<Student> studentOpt = studentRepository.findByUsername(username);
         if (studentOpt.isEmpty()) {
-            return ResponseEntity.badRequest().body("Student not found with ID: " + userId);
+            student = new Student();
+            student.setAttemptCount(0);
+            student.setCorrectCount(0);
+            student.setUsername(username);
+            studentRepository.save(student);
+        } else {
+            student = studentOpt.get();
         }
 
-        Student student = studentOpt.get();
         if (student.getLast10Performance() == null) {
             student.setLast10Performance(new ArrayList<>());
         }
@@ -146,7 +170,10 @@ public class ExamController {
         for (Map.Entry<String, Boolean> entry : questions.entrySet()) {
             String question = entry.getKey();
             Boolean wasCorrect = entry.getValue();
-            student.recordAttempt(wasCorrect);
+            student.recordAttempt(wasCorrect); // insert into last 10 performance
+
+            int performanceLevel = (int) student.getLast10Performance().stream().filter(Boolean::booleanValue).count();
+            pdlr.insertPerformance(username, subject, performanceLevel, difficultyLevel, wasCorrect);
 
             if (!wasCorrect) {
                 totalWrong += 1;
@@ -159,7 +186,10 @@ public class ExamController {
                     mcq.setStatement(question);
                     mcq.setMistakenByStudent(student);
                     mcq.setSub(sub);
+                    System.out.println(mcq);
                     mcqRepository.save(mcq);
+                    System.out.println(mcq);
+
                 }
             }
         }
@@ -168,7 +198,6 @@ public class ExamController {
 
         return ResponseEntity.ok("Data received successfully. Total attempts: " + totalAttempt + ", Wrong answers: " + totalWrong);
     }
-
 
 
 
@@ -192,7 +221,6 @@ public class ExamController {
     }
 
 
-    @SuppressWarnings("null")
     @PostMapping("/submit-written")
     public Mono<ResponseEntity<String>> submitWrittenProxy(@RequestParam("image") MultipartFile imageFile,
                                                            @RequestParam("question") String questionText) {
