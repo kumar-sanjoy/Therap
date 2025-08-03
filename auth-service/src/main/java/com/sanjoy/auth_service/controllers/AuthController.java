@@ -39,6 +39,7 @@ public class AuthController {
 
     @PostMapping("register")
     public ResponseEntity<?> registerUser(@RequestBody User user) {
+        System.out.println("register hit");
         try {
             userDetailsService.register(user);
             User registerResponse = new User();
@@ -68,13 +69,14 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody User user) {
+        System.out.println("login hit");
         try {
             Authentication authentication = authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword())
             );
             UserDetails userDetails = (UserDetails) authentication.getPrincipal();
             String jwt = jwtUtil.generateToken(userDetails);
-            System.out.println(jwt);
+//            System.out.println(jwt);
 
             Map<String, Object> response = new HashMap<>();
             response.put("jwt", jwt);

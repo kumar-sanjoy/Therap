@@ -32,7 +32,6 @@ import java.util.concurrent.TimeUnit;
  */
 @RestController
 @RequestMapping("/learn")
-@CrossOrigin(origins = "*")
 public class LearningController {
 
     private final WebClient webClient;
@@ -92,12 +91,13 @@ public class LearningController {
     }
 
 
-@SuppressWarnings("null")
 @PostMapping("/doubts")
     public Map<String, String> sendDoubt(
             @RequestParam(required = false) MultipartFile image,
+            @RequestParam(required = false) MultipartFile audio,
             @RequestParam(required = false) String question) throws Exception {
 
+    System.out.println("doubts hit");
         MultipartBodyBuilder builder = new MultipartBodyBuilder();
 
         if (image != null && !image.isEmpty()) {
@@ -109,6 +109,17 @@ public class LearningController {
                                 }
                             })
                     .contentType(MediaType.parseMediaType(image.getContentType()));
+        }
+
+        if (audio != null && !audio.isEmpty()) {
+            builder.part("audio",
+                            new ByteArrayResource(audio.getBytes()) {
+                                @Override
+                                public String getFilename() {
+                                    return audio.getOriginalFilename();
+                                }
+                            })
+                    .contentType(MediaType.parseMediaType(audio.getContentType()));
         }
 
         if (question != null && !question.isEmpty()) {
@@ -131,6 +142,7 @@ public class LearningController {
             @RequestParam String className,
             @RequestParam String subject,
             @RequestParam String chapter) {
+        System.out.println("note hit");
 
         String pythonEndpoint = "/learn/notes";
 

@@ -35,7 +35,7 @@ import java.util.*;
  */
 @RestController
 @RequestMapping("/exam")
-@CrossOrigin(origins = "*")
+//@CrossOrigin(origins = "*")
 public class ExamController {
     private final WebClient webClient;
 
@@ -64,6 +64,11 @@ public class ExamController {
             @RequestParam String chapter,
             @RequestParam int count) {
         String pythonEndpoint = "/exam/mcq";
+        System.out.println("username " + username);
+        System.out.println("className " + className);
+        System.out.println("Subject " + subject);
+        System.out.println("Chapter " + chapter);
+        System.out.println("count " + count);
         List<Object []> performanceRecord = pdlr.findPerformanceInfo(username, subject);
         for (Object[] row : performanceRecord) {
             int performance = (Integer) row[0];
@@ -106,12 +111,12 @@ public class ExamController {
             @RequestParam String chapter,
             @RequestParam Long count) {
 
+        Map<String, Object> errorResponse = new HashMap<>();
         Optional<Sub> subOpt = subRepository.findByName(subject);
         if (subOpt.isEmpty()) {
             Sub sub = new Sub();
             sub.setName(subject);
             subRepository.save(sub);
-            Map<String, Object> errorResponse = new HashMap<>();
             errorResponse.put("error", "Not enough questions practiced for the subject: " + subject);
             return Mono.just(ResponseEntity.badRequest().body(errorResponse));
         }
@@ -206,6 +211,7 @@ public class ExamController {
                                            @RequestParam String subject,
                                            @RequestParam String chapter) {
         String pythonEndpoint = "/exam/written";
+        System.out.println("written hit");
 
         return webClient.get()
                 .uri(uriBuilder -> uriBuilder
@@ -224,6 +230,7 @@ public class ExamController {
     @PostMapping("/submit-written")
     public Mono<ResponseEntity<String>> submitWrittenProxy(@RequestParam("image") MultipartFile imageFile,
                                                            @RequestParam("question") String questionText) {
+        System.out.println("submit written hit");
         if (imageFile.isEmpty()) {
             return Mono.just(new ResponseEntity<>("{\"message\": \"error: No image file provided.\"}",
                     HttpStatus.BAD_REQUEST));

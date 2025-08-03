@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { IoMdArrowRoundBack } from 'react-icons/io';
 import { FaLightbulb, FaCheckCircle, FaTimesCircle, FaTools } from 'react-icons/fa';
 import { GrNotes } from 'react-icons/gr';
@@ -9,6 +9,7 @@ import '../css/PrevQuizDesign.css';
 
 const Prev = () => {
     const navigate = useNavigate();
+    const location = useLocation();
 
     const [questions, setQuestions] = useState([]);
     const [index, setIndex] = useState(0);
@@ -63,11 +64,23 @@ const Prev = () => {
                     return;
                 }
 
-                const res = await fetch(`${API_BASE_URL}${API_ENDPOINTS.PREV_MISTAKES}?userId=${userId}`);
-                
+                // Get params from location.state or fallback to defaults
+                const className = location.state?.className || location.state?.class || 'Class 9';
+                const subject = location.state?.subject || 'Science';
+                const chapter = location.state?.chapter || 'Chapter 1';
+                const count = location.state?.count || 10;
+                const params = new URLSearchParams({
+                    userId,
+                    className,
+                    subject,
+                    chapter,
+                    count: count.toString()
+                });
+
+                const res = await fetch(`${API_BASE_URL}${API_ENDPOINTS.PREVIOUS_MCQ}?${params.toString()}`);
                 if (res.ok) {
                     const data = await res.json();
-                    setQuestions(data.mistakes || []);
+                    setQuestions(data.mcqs || data.questions || data.mistakes || []);
                 } else {
                     console.error('Failed to fetch mistakes');
                 }
@@ -77,7 +90,7 @@ const Prev = () => {
         };
 
         fetchMistakes();
-    }, [navigate]);
+    }, [navigate, location.state]);
 
     useEffect(() => {
         if (questions.length > 0) {

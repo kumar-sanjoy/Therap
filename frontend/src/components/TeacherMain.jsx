@@ -24,12 +24,12 @@ const TeacherMain = () => {
           return;
         }
 
-        const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.TEACHER_DASHBOARD}`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ userId }),
+        const params = new URLSearchParams({
+          teacherId: userId
+        });
+        
+        const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.TEACHER_PROFILE}?${params.toString()}`, {
+          method: 'GET'
         });
 
         if (response.ok) {
@@ -53,11 +53,12 @@ const TeacherMain = () => {
       setIsLoading(true);
       setError('');
       try {
-        const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.TEACHER_DASHBOARD}`, {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json',
-          },
+        const params = new URLSearchParams({
+          teacherId: userId
+        });
+        
+        const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.TEACHER_PROFILE}?${params.toString()}`, {
+          method: 'GET'
         });
 
         // Check Content-Type header
@@ -84,14 +85,16 @@ const TeacherMain = () => {
           throw new Error(`Failed to parse server response as JSON. Response: ${rawText}`);
         }
 
-        // Validate data structure and ensure it's an array
+        // Validate data structure and extract students array
         if (isMounted) {
-          if (Array.isArray(data)) {
-            setStudents(data);
-          } else if (data === null) {
-            setStudents([]); // Treat null as an empty array
+          if (data && data.students && Array.isArray(data.students)) {
+            setStudents(data.students);
+            setDashboardData(data);
+          } else if (data === null || !data.students) {
+            setStudents([]); // Treat null or missing students as an empty array
+            setDashboardData(data);
           } else {
-            throw new Error('Expected an array of student data');
+            throw new Error('Expected students array in response data');
           }
         }
       } catch (err) {

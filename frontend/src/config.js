@@ -1,30 +1,35 @@
 // API Configuration
-export const API_BASE_URL = 'http://localhost:8091';
+export const API_BASE_URL = 'http://localhost:8080';
 
-// API Endpoints
+// API Endpoints - Updated to match Spring Boot backend
 export const API_ENDPOINTS = {
     // Auth endpoints
-    LOGIN: '/api/login',
-    SIGNUP: '/api/signup',
+    LOGIN: '/auth/login',
+    SIGNUP: '/auth/register',
     FORGOT_PASSWORD: '/api/forgot-password',
     GOOGLE_AUTH: '/api/google-auth',
     
+    // Exam endpoints
+    MCQ: '/exam/mcq',
+    SUBMIT_MCQ: '/exam/submit-mcq',
+    PREVIOUS_MCQ: '/exam/previous-mcq',
+    WRITTEN_QUESTION: '/exam/written',
+    SUBMIT_WRITTEN: '/exam/submit-written',
+    
     // Learning endpoints
-    LEARN: '/api/learn',
-    QUIZ: '/exam/mcq',
-    WRITTEN: '/api/written',
-    SUBMIT_WRITTEN: '/api/submit-written',
+    LEARN: '/learn/learn',
+    CLEAR_DOUBT: '/learn/doubts',
+    GENERATE_NOTE: '/learn/notes',
     
-    // Notes and Doubts
-    GENERATE_NOTE: '/api/notes',
-    CLEAR_DOUBT: '/api/doubts',
+    // Profile endpoints
+    TEACHER_PROFILE: '/profile/teacher',
+    STUDENT_PROFILE: '/profile/student',
     
-    // Progress and Stats
+    // Legacy endpoints (keeping for backward compatibility)
+    QUIZ: '/api/quiz',
     STATS: '/api/stats',
     NEW_MISTAKES: '/api/newMistakes',
     PREV_MISTAKES: '/api/prevMistakes',
-    
-    // Teacher endpoints
     TEACHER_DASHBOARD: '/api/teacher/dashboard',
     TEACHER_API: '/api/teacher'
 };

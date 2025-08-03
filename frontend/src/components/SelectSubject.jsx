@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { IoMdArrowRoundBack } from "react-icons/io";
-import { FaBook, FaQuestionCircle, FaPen, FaSpinner } from "react-icons/fa";
+import { FaBook, FaQuestionCircle, FaPen, FaSpinner, FaGraduationCap, FaFlask, FaGlobe, FaChartLine, FaBriefcase, FaLeaf } from "react-icons/fa";
 import { API_BASE_URL, API_ENDPOINTS, DEV_MODE, ROUTES } from '../config';
 import flowLogo from '../assets/flow-main-nobg.png';
 import { useSearchParams } from 'react-router-dom';
@@ -20,6 +20,17 @@ const SelectSubject = ({ mode: propMode }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
+  // Load recent selections from localStorage
+  useEffect(() => {
+    const savedClass = localStorage.getItem('class');
+    const savedSubject = localStorage.getItem('subject');
+    const savedChapter = localStorage.getItem('chapter');
+    
+    if (savedClass) setSelectedClass(savedClass);
+    if (savedSubject) setSelectedSubject(savedSubject);
+    if (savedChapter) setSelectedChapter(savedChapter);
+  }, []);
+
   const classConfig = {
     'Class 7': { subjects: ['Science'], chapters: { Science: 14 } },
     'Class 8': { subjects: ['Science'], chapters: { Science: 14 } },
@@ -31,6 +42,16 @@ const SelectSubject = ({ mode: propMode }) => {
       subjects: ['Physics', 'Chemistry', 'Biology', 'Economics', 'Geography', 'Business Entrepre.'],
       chapters: { Physics: 13, Chemistry: 12, Biology: 13, Economics: 9, Geography: 15, 'Business Entrepre.': 12 },
     },
+  };
+
+  const subjectIcons = {
+    'Physics': FaFlask,
+    'Chemistry': FaFlask,
+    'Biology': FaLeaf,
+    'Economics': FaChartLine,
+    'Geography': FaGlobe,
+    'Business Entrepre.': FaBriefcase,
+    'Science': FaFlask
   };
 
   const availableSubjects = selectedClass ? classConfig[selectedClass]?.subjects || [] : [];
@@ -74,13 +95,28 @@ const SelectSubject = ({ mode: propMode }) => {
 
   const getTitleMessage = () => 'Select Your Learning Path';
 
-  const themeColor = mode === 'learn' ? 'blue' : mode === 'mcq' ? 'purple' : 'green';
+  const getModeDescription = () => {
+    switch (mode) {
+      case 'learn': return 'Explore concepts through interactive learning modules';
+      case 'mcq': return 'Test your knowledge with multiple choice questions';
+      case 'written': return 'Practice with detailed written responses';
+      case 'notes': return 'Generate comprehensive study notes';
+      default: return 'Choose your preferred learning method';
+    }
+  };
+
+  const themeColor = mode === 'learn' ? 'blue' : mode === 'mcq' ? 'purple' : mode === 'notes' ? 'yellow' : 'green';
 
   const handleStart = async () => {
     if (!selectedClass || !selectedSubject || !selectedChapter) {
       setError('Please select all options');
       return;
     }
+
+    // Save selections to localStorage for later use
+    localStorage.setItem('class', selectedClass);
+    localStorage.setItem('subject', selectedSubject);
+    localStorage.setItem('chapter', selectedChapter);
 
     setIsLoading(true);
     setError('');
@@ -102,6 +138,9 @@ const SelectSubject = ({ mode: propMode }) => {
               { question: "Explain the process of photosynthesis", wordLimit: 200 },
               { question: "Describe the water cycle", wordLimit: 150 }
             ]
+          },
+          notes: {
+            content: "This is mock notes content for testing purposes."
           }
         };
 
@@ -110,6 +149,7 @@ const SelectSubject = ({ mode: propMode }) => {
           case 'mcq':
           case 'test': navigate(ROUTES.QUIZ, { state: { data: mockData.mcq } }); break;
           case 'written': navigate(ROUTES.WRITTEN, { state: { data: mockData.written } }); break;
+          case 'notes': navigate(ROUTES.SHOW_NOTES, { state: { data: mockData.notes } }); break;
           default: setError('Invalid mode');
         }
       } else {
@@ -119,23 +159,93 @@ const SelectSubject = ({ mode: propMode }) => {
           return;
         }
 
-        const requestData = { userId, class: selectedClass, subject: selectedSubject, chapter: selectedChapter };
-        const endpoint = mode === 'learn' ? API_ENDPOINTS.LEARN : (mode === 'mcq' || mode === 'test') ? API_ENDPOINTS.QUIZ : API_ENDPOINTS.WRITTEN;
-
-        const response = await fetch(`${API_BASE_URL}${endpoint}`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(requestData)
-        });
+        let response;
+        
+        if (mode === 'learn') {
+          // Learning endpoint uses GET with query parameters
+          const params = new URLSearchParams({
+            className: selectedClass,
+            subject: selectedSubject,
+            chapter: selectedChapter
+          });
+          response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.LEARN}?${params.toString()}`, {
+            method: 'GET'
+          });
+        } else if (mode === 'mcq' || mode === 'test') {
+          // MCQ endpoint uses GET with query parameters
+          const params = new URLSearchParams({
+            className: selectedClass,
+            subject: selectedSubject,
+            chapter: selectedChapter,
+            count: '10' // Default count
+          });
+          response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.MCQ}?${params.toString()}`, {
+            method: 'GET'
+          });
+        } else if (mode === 'written') {
+          // Written question endpoint uses GET with query parameters
+          const params = new URLSearchParams({
+            className: selectedClass,
+            subject: selectedSubject,
+            chapter: selectedChapter
+          });
+          response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.WRITTEN_QUESTION}?${params.toString()}`, {
+            method: 'GET'
+          });
+        } else if (mode === 'notes') {
+          // Notes endpoint uses GET with query parameters
+          const params = new URLSearchParams({
+            className: selectedClass,
+            subject: selectedSubject,
+            chapter: selectedChapter
+          });
+          response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.GENERATE_NOTE}?${params.toString()}`, {
+            method: 'GET'
+          });
+        }
 
         if (!response.ok) throw new Error('Failed to fetch data');
         const data = await response.json();
 
         switch (mode) {
-          case 'learn': navigate(ROUTES.LEARN, { state: { data } }); break;
+          case 'learn': 
+            navigate(ROUTES.LEARN, { 
+              state: { 
+                className: selectedClass,
+                subject: selectedSubject,
+                chapter: selectedChapter
+              } 
+            }); 
+            break;
           case 'mcq':
-          case 'test': navigate(ROUTES.QUIZ, { state: { data } }); break;
-          case 'written': navigate(ROUTES.WRITTEN, { state: { data } }); break;
+          case 'test': 
+            navigate(ROUTES.QUIZ, { 
+              state: { 
+                className: selectedClass,
+                subject: selectedSubject,
+                chapter: selectedChapter,
+                count: 10
+              } 
+            }); 
+            break;
+          case 'written': 
+            navigate(ROUTES.WRITTEN, { 
+              state: { 
+                className: selectedClass,
+                subject: selectedSubject,
+                chapter: selectedChapter
+              } 
+            }); 
+            break;
+          case 'notes': 
+            navigate(ROUTES.SHOW_NOTES, { 
+              state: { 
+                className: selectedClass,
+                subject: selectedSubject,
+                chapter: selectedChapter
+              } 
+            }); 
+            break;
           default: setError('Invalid mode');
         }
       }
@@ -153,13 +263,14 @@ const SelectSubject = ({ mode: propMode }) => {
         <div className="fixed inset-0 bg-white/95 backdrop-blur-sm flex flex-col items-center justify-center z-50">
           <div className="relative flex flex-col items-center justify-center">
             {/* Main loading icon with smooth animation */}
-            <div className={`relative mb-6 ${mode === 'learn' ? 'animate-float' : mode === 'mcq' ? 'animate-pulse' : 'animate-bounce'}`}>
+            <div className={`relative mb-6 ${mode === 'learn' ? 'animate-float' : mode === 'mcq' ? 'animate-pulse' : mode === 'notes' ? 'animate-bounce' : 'animate-bounce'}`}>
               {getLoadingIcon()}
               
               {/* Subtle glow effect */}
               <div className={`absolute inset-0 rounded-full opacity-20 ${
                 mode === 'learn' ? 'bg-blue-400' : 
                 mode === 'mcq' ? 'bg-purple-400' : 
+                mode === 'notes' ? 'bg-yellow-300' :
                 'bg-green-400'
               } blur-md`}></div>
             </div>
@@ -172,6 +283,7 @@ const SelectSubject = ({ mode: propMode }) => {
                   className={`w-2.5 h-2.5 rounded-full ${
                     mode === 'learn' ? 'bg-blue-500' : 
                     mode === 'mcq' ? 'bg-purple-500' : 
+                    mode === 'notes' ? 'bg-yellow-400' :
                     'bg-green-500'
                   }`}
                   style={{
@@ -187,6 +299,7 @@ const SelectSubject = ({ mode: propMode }) => {
               <p className={`text-xl font-semibold mb-2 ${
                 mode === 'learn' ? 'text-blue-600' : 
                 mode === 'mcq' ? 'text-purple-600' : 
+                mode === 'notes' ? 'text-yellow-500' :
                 'text-green-600'
               }`}>
                 {getLoadingMessage()}
@@ -200,6 +313,7 @@ const SelectSubject = ({ mode: propMode }) => {
                 className={`h-full rounded-full ${
                   mode === 'learn' ? 'bg-gradient-to-r from-blue-400 to-blue-600' : 
                   mode === 'mcq' ? 'bg-gradient-to-r from-purple-400 to-purple-600' : 
+                  mode === 'notes' ? 'bg-gradient-to-r from-yellow-300 to-yellow-500' :
                   'bg-gradient-to-r from-green-400 to-green-600'
                 }`}
                 style={{
@@ -208,7 +322,7 @@ const SelectSubject = ({ mode: propMode }) => {
                 }}
               ></div>
             </div>
-            <p className="text-xs text-gray-400">Loading your {mode === 'learn' ? 'learning materials' : mode === 'mcq' ? 'quiz questions' : 'practice exercises'}</p>
+            <p className="text-xs text-gray-400">Loading your {mode === 'learn' ? 'learning materials' : mode === 'mcq' ? 'quiz questions' : mode === 'notes' ? 'study notes' : 'practice exercises'}</p>
             
             {/* Floating particles with different animations */}
             <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -218,6 +332,7 @@ const SelectSubject = ({ mode: propMode }) => {
                   className={`absolute rounded-full ${
                     mode === 'learn' ? 'bg-blue-300/40' : 
                     mode === 'mcq' ? 'bg-purple-300/40' : 
+                    mode === 'notes' ? 'bg-yellow-200/40' :
                     'bg-green-300/40'
                   }`}
                   style={{
@@ -275,17 +390,42 @@ const SelectSubject = ({ mode: propMode }) => {
         </button>
       </header>
 
-      <div className="flex-1 overflow-y-auto flex items-center justify-center">
-        <div className="w-full max-w-[2000px] mx-auto p-6 md:p-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 text-center mb-6 md:mb-8">
-            {getTitleMessage()}
-          </h2>
+      {/* Mode Indicator Banner */}
+      <div className={`bg-gradient-to-r ${
+        mode === 'learn' ? 'from-blue-500 to-blue-600' : 
+        mode === 'mcq' ? 'from-purple-500 to-purple-600' : 
+        mode === 'notes' ? 'from-yellow-400 to-yellow-500' :
+        'from-green-500 to-green-600'
+      } text-white py-3 px-6 shadow-md`}>
+        <div className="max-w-4xl mx-auto flex items-center justify-center">
+          <div className="flex items-center gap-3">
+            <div className="p-2 bg-white/20 rounded-lg">
+              {mode === 'learn' ? <FaBook className="text-lg" /> : 
+               mode === 'mcq' ? <FaQuestionCircle className="text-lg" /> : 
+               <FaPen className="text-lg" />}
+            </div>
+            <div className="text-center">
+              <h1 className="text-lg font-semibold capitalize">{mode} Mode</h1>
+              <p className="text-blue-100 text-sm">{getModeDescription()}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex-1 overflow-y-auto flex items-center justify-center bg-gradient-to-br from-gray-50/50 via-white to-gray-100/50">
+        <div className="w-full max-w-4xl mx-auto p-8 md:p-12">
+
           
           {error && (
-            <p className="text-red-600 bg-red-50 p-3 rounded-lg text-center mb-6 max-w-lg mx-auto">
-              {error}
-            </p>
+            <div className="max-w-lg mx-auto mb-6">
+              <div className="bg-red-50 border border-red-200 rounded-xl p-4 flex items-center gap-3">
+                <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                <p className="text-red-700 font-medium">{error}</p>
+              </div>
+            </div>
           )}
+
+
 
           <SelectionForm
             classConfig={classConfig}
@@ -300,7 +440,10 @@ const SelectSubject = ({ mode: propMode }) => {
             loading={isLoading}
             error={error}
             themeColor={themeColor}
+            subjectIcons={subjectIcons}
           />
+
+
         </div>
       </div>
     </div>

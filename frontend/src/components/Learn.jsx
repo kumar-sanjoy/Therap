@@ -5,23 +5,75 @@ import { GrFormNextLink } from "react-icons/gr";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import TextDisplay from "./TextDisplay";
 import flowLogo from '../assets/flow-main-nobg.png';
-import { API_BASE_URL, API_ENDPOINTS } from '../config';
+import { API_BASE_URL, API_ENDPOINTS, DEV_MODE } from '../config';
 
 const Learn = () => {
   const { state } = useLocation();
   const navigate = useNavigate();
-  const [chunks, setChunks] = useState(state?.content || []);
+
+  // Inject dummy data if state is missing or incomplete
+  const dummyState = {
+    class: 'Class 9',
+    subject: 'Science',
+    chapter: '1',
+    content: [
+      'Welcome to Class 9 Science, Chapter 1! This is a dummy learning chunk for testing.',
+      'This is the second chunk of dummy content. Proceed to see more.',
+      'You have reached the end of the dummy content. Ask any question!'
+    ]
+  };
+  const effectiveState = state && state.class && state.subject && state.chapter && state.content && state.content.length > 0 ? state : dummyState;
+
+  const [chunks, setChunks] = useState(effectiveState.content);
   const [currentChunkIndex, setCurrentChunkIndex] = useState(0);
   const [question, setQuestion] = useState('');
   const [messages, setMessages] = useState(
-    state?.content && state.content.length > 0
-      ? [{ type: 'content', text: state.content[0] }]
+    effectiveState.content && effectiveState.content.length > 0
+      ? [{ type: 'content', text: effectiveState.content[0] }]
       : []
   );
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const messagesEndRef = useRef(null);
   const textareaRef = useRef(null);
+
+  // Fetch learning content on mount
+  useEffect(() => {
+    const fetchLearningContent = async () => {
+      if (DEV_MODE) return; // Skip API call in dev mode
+
+      try {
+        const className = state?.className || state?.class || 'Class 9';
+        const subject = state?.subject || 'Science';
+        const chapter = state?.chapter || 'Chapter 1';
+        
+        const params = new URLSearchParams({
+          className,
+          subject,
+          chapter
+        });
+
+        const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.LEARN}?${params.toString()}`, {
+          method: 'GET'
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          // Assuming the backend returns content in a specific format
+          if (data.content && Array.isArray(data.content)) {
+            setChunks(data.content);
+            setMessages([{ type: 'content', text: data.content[0] }]);
+          }
+        } else {
+          console.error('Failed to fetch learning content');
+        }
+      } catch (error) {
+        console.error('Error fetching learning content:', error);
+      }
+    };
+
+    fetchLearningContent();
+  }, [state]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -53,6 +105,19 @@ const Learn = () => {
     const combinedQuestion = chunks[currentChunkIndex]
       ? `${chunks[currentChunkIndex]}\n\nQuestion: ${question}`
       : question;
+
+    if (DEV_MODE) {
+      // Simulate a dummy bot response
+      setTimeout(() => {
+        setMessages((prevMessages) => [
+          ...prevMessages,
+          { type: 'bot', text: `This is a dummy answer to: "${question}" (DEV_MODE)` },
+        ]);
+        setQuestion('');
+        setIsLoading(false);
+      }, 700);
+      return;
+    }
 
     const formData = new FormData();
     formData.append('question', combinedQuestion);
@@ -137,7 +202,7 @@ const Learn = () => {
         {/* Page Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
           <h1 className="text-2xl md:text-3xl font-bold text-[#343434]">
-            {`${state?.class} ${state?.subject} Chapter ${state?.chapter}`}
+            {`${effectiveState?.class} ${effectiveState?.subject} Chapter ${effectiveState?.chapter}`}
           </h1>
           <div className="bg-white p-4 rounded-lg shadow-sm w-full md:w-80 lg:w-96">
             <div className="flex items-center justify-between mb-2">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { FaUpload, FaCheckCircle, FaArrowLeft, FaPen } from 'react-icons/fa';
 import { IoMdArrowRoundBack } from "react-icons/io";
@@ -9,7 +9,7 @@ import TextDisplay from "./TextDisplay";
 const WrittenQuestion = () => {
     const navigate = useNavigate();
     const location = useLocation();
-    const question = location.state?.question || "What is the difference between evaporation and boiling?";
+    const [question, setQuestion] = useState(location.state?.question || '');
 
     const [image, setImage] = useState(null);
     const [previewURL, setPreviewURL] = useState('');
@@ -18,6 +18,28 @@ const WrittenQuestion = () => {
     const [feedback, setFeedback] = useState('');
     const [showFeedback, setShowFeedback] = useState(false);
     const [error, setError] = useState('');
+
+    // Fetch written question if not present in location.state
+    useEffect(() => {
+        if (!question) {
+            // Get params from location.state or fallback to defaults
+            const className = location.state?.className || location.state?.class || 'Class 9';
+            const subject = location.state?.subject || 'Science';
+            const chapter = location.state?.chapter || 'Chapter 1';
+            const params = new URLSearchParams({
+                className,
+                subject,
+                chapter
+            });
+            fetch(`${API_BASE_URL}${API_ENDPOINTS.WRITTEN_QUESTION}?${params.toString()}`)
+                .then(res => res.json())
+                .then(data => {
+                    // Assume the backend returns { question: '...' } or similar
+                    setQuestion(data.question || 'No question found.');
+                })
+                .catch(() => setQuestion('No question found.'));
+        }
+    }, [question, location.state]);
 
     const handleImageChange = (e) => {
         const file = e.target.files[0];
@@ -42,27 +64,14 @@ const WrittenQuestion = () => {
         formData.append("question", question);
 
         try {
-            const userId = localStorage.getItem(STORAGE_KEYS.USER_ID);
-            if (!userId) {
-                navigate('/login');
-                return;
-            }
-
             const res = await fetch(`${API_BASE_URL}${API_ENDPOINTS.SUBMIT_WRITTEN}`, {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    userId,
-                    question: question.question,
-                    wordLimit: question.wordLimit
-                }),
+                body: formData,
             });
 
             if (res.ok) {
                 const data = await res.json();
-                setFeedback(data.feedback);
+                setFeedback(data.feedback || data.message || 'Submitted successfully!');
                 setShowFeedback(true);
             } else {
                 const data = await res.json();

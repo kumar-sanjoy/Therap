@@ -237,9 +237,7 @@ const AskQuestion = () => {
 
                 // Use FormData to handle both text and image
                 const formData = new FormData();
-                formData.append('userId', userId);
                 formData.append('question', question.trim());
-                formData.append('subject', selectedSubject);
 
                 // Add image if uploaded
                 if (imageFile) {

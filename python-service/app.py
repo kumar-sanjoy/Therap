@@ -279,7 +279,7 @@ def fresh_test():
         questions_from_model = chain.invoke({"text": text, "difficulty": difficulty, "ques_count": ques_count}) # works fine
 
         try:
-            return jsonify({ "mcqs": questions_from_model['mcqs'], "difficulty": difficulty })
+            return jsonify({ "mcqs": questions_from_model['mcqs'], "difficultyLevel": difficulty })
         except Exception as e:
             return jsonify("dict sending failed")
     
@@ -338,6 +338,7 @@ def process_lesson():
     sub = request.args.get("subject")
     chapter = request.args.get("chapter")
 
+    print(sub, chapter)
     txt_name = f"doc/{class_map.get(cls, 'unknown')}-{subject_map.get(sub, 'X')}-{chapter}.txt"
 
     template = """
