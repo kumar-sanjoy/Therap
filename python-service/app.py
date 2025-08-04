@@ -34,7 +34,7 @@ app = Flask(__name__)
 CORS(app)
 
 class_map = { 'a': '910', 'b': '8', 'c': '7', 'd': '6' }
-subject_map = { 'a': 'P', 'b': 'C', 'c': 'B' }
+subject_map = { 'a': 'P', 'b': 'C', 'c': 'B', 'd' : 'E', 'e': 'G', 'f' : 'BE' }
 
 model = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=1)
 

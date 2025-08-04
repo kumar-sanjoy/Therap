@@ -3,6 +3,7 @@ package com.sanjoy.profile_service.controllers;
 import com.sanjoy.profile_service.models.Student;
 import com.sanjoy.profile_service.repo.MCQRepository;
 import com.sanjoy.profile_service.repo.StudentRepository;
+import com.sanjoy.profile_service.service.PracticeStreakService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -17,10 +18,12 @@ import java.util.*;
  */
 @RestController
 @RequestMapping("/profile")
-@CrossOrigin(origins = "*")
+//@CrossOrigin(origins = "*")
 public class ProfileController {
 
     private final WebClient webClient;
+    private final PracticeStreakService streakService;
+
 
     @Autowired
     StudentRepository studentRepository;
@@ -29,8 +32,9 @@ public class ProfileController {
     MCQRepository mcqRepository;
 
     public ProfileController(WebClient.Builder webClientBuilder,
-                          @Value("${ai.backend.url}") String aiBackendUrl) {
+                          @Value("${ai.backend.url}") String aiBackendUrl, PracticeStreakService streakService) {
         this.webClient = webClientBuilder.baseUrl(aiBackendUrl).build();
+        this.streakService = streakService;
     }
 
     @GetMapping("teacher/generate-report")
@@ -94,6 +98,7 @@ public class ProfileController {
     @GetMapping("/student")
     public ResponseEntity<Map<String, Object>> getStudentProfile(@RequestParam("username") String username) {
 
+        int currentStreak = 0;
         Student student;
         Optional<Student> studentOpt = studentRepository.findByUsername(username);
         if (studentOpt.isEmpty()) {
@@ -103,6 +108,7 @@ public class ProfileController {
             student.setLast10Performance(new ArrayList<>());
         } else {
             student = studentOpt.get();
+            currentStreak = streakService.getCurrentStreak(username);
         }
 
         Map<String, Object> stdResponse = new HashMap<>();
@@ -110,6 +116,7 @@ public class ProfileController {
         stdResponse.put("attemptCount", student.getAttemptCount());
         stdResponse.put("correctCount", student.getCorrectCount());
         stdResponse.put("last10Performance", student.getLast10Performance());
+        stdResponse.put("currentStreak", currentStreak);
 
         return ResponseEntity.ok(stdResponse);
     }

@@ -40,6 +40,7 @@ public class AuthController {
     @PostMapping("register")
     public ResponseEntity<?> registerUser(@RequestBody User user) {
         System.out.println("register hit");
+        System.out.println(user.getUsername());
         try {
             userDetailsService.register(user);
             User registerResponse = new User();
@@ -70,6 +71,8 @@ public class AuthController {
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody User user) {
         System.out.println("login hit");
+        System.out.println(user.getUsername());
+//        System.out.println(user.getPassword());
         try {
             Authentication authentication = authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword())

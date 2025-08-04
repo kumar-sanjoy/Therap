@@ -43,6 +43,9 @@ public class CustomUserDetailsService implements UserDetailsService {
     }
 
     public void register(User user) {
+
+        System.out.println(user.getUsername());
+        System.out.println(user.getPassword());
         // 1. Check if username already exists
         if (userRepo.findByUsername(user.getUsername()).isPresent()) {
             throw new IllegalStateException("Username already exists");

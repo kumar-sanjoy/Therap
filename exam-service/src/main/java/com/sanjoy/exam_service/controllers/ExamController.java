@@ -8,6 +8,7 @@ import com.sanjoy.exam_service.repo.MCQRepository;
 import com.sanjoy.exam_service.repo.PerformanceDiffLevelRepo;
 import com.sanjoy.exam_service.repo.StudentRepository;
 import com.sanjoy.exam_service.repo.SubRepository;
+import com.sanjoy.exam_service.service.PracticeStreakService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
@@ -38,6 +39,7 @@ import java.util.*;
 //@CrossOrigin(origins = "*")
 public class ExamController {
     private final WebClient webClient;
+    private final PracticeStreakService streakService;
 
     @Autowired
     private MCQRepository mcqRepository;
@@ -52,8 +54,9 @@ public class ExamController {
     private PerformanceDiffLevelRepo pdlr;
 
     public ExamController(WebClient.Builder webClientBuilder,
-        @Value("${ai.backend.url}") String aiBackendUrl) {
+        @Value("${ai.backend.url}") String aiBackendUrl, PracticeStreakService streakService) {
         this.webClient = webClientBuilder.baseUrl(aiBackendUrl).build();
+        this.streakService = streakService;
     }
 
     @PostMapping("/mcq")
@@ -168,6 +171,9 @@ public class ExamController {
         if (student.getLast10Performance() == null) {
             student.setLast10Performance(new ArrayList<>());
         }
+
+        // save the current streak of a username:
+        streakService.logPractice(username);
 
         int totalAttempt = questions.size();
         int totalWrong = 0;
