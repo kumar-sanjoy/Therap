@@ -2,6 +2,7 @@ package com.sanjoy.profile_service.controllers;
 
 import com.sanjoy.profile_service.models.Student;
 import com.sanjoy.profile_service.repo.MCQRepository;
+import com.sanjoy.profile_service.repo.PerformanceDiffLevelRepo;
 import com.sanjoy.profile_service.repo.StudentRepository;
 import com.sanjoy.profile_service.service.PracticeStreakService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,9 @@ public class ProfileController {
 
     @Autowired
     MCQRepository mcqRepository;
+
+    @Autowired
+    PerformanceDiffLevelRepo performanceDiffLevelRepo;
 
     public ProfileController(WebClient.Builder webClientBuilder,
                           @Value("${ai.backend.url}") String aiBackendUrl, PracticeStreakService streakService) {
@@ -111,12 +115,14 @@ public class ProfileController {
             currentStreak = streakService.getCurrentStreak(username);
         }
 
+        List<Object[]> subjectData = performanceDiffLevelRepo.findCorrectVsTotalPerSubjectAndUser(username);
         Map<String, Object> stdResponse = new HashMap<>();
         stdResponse.put("id", student.getId());
         stdResponse.put("attemptCount", student.getAttemptCount());
         stdResponse.put("correctCount", student.getCorrectCount());
         stdResponse.put("last10Performance", student.getLast10Performance());
         stdResponse.put("currentStreak", currentStreak);
+        stdResponse.put("subjectProgress", subjectData);
 
         return ResponseEntity.ok(stdResponse);
     }

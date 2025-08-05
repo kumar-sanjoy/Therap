@@ -41,6 +41,9 @@ public class AuthController {
     public ResponseEntity<?> registerUser(@RequestBody User user) {
         System.out.println("register hit");
         System.out.println(user.getUsername());
+        System.out.println(user.getRole());
+//        return ResponseEntity.ok("Registration successful");
+
         try {
             userDetailsService.register(user);
             User registerResponse = new User();
@@ -72,18 +75,23 @@ public class AuthController {
     public ResponseEntity<?> login(@RequestBody User user) {
         System.out.println("login hit");
         System.out.println(user.getUsername());
-//        System.out.println(user.getPassword());
         try {
             Authentication authentication = authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword())
             );
             UserDetails userDetails = (UserDetails) authentication.getPrincipal();
             String jwt = jwtUtil.generateToken(userDetails);
-//            System.out.println(jwt);
+
+            User dbUser = (User) userDetailsService.loadUserByUsername(user.getUsername());
+            if (dbUser.getRole() != user.getRole()) {
+                return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+                        .body("Invalid role for this user.");
+            }
 
             Map<String, Object> response = new HashMap<>();
             response.put("jwt", jwt);
             response.put("username", userDetails.getUsername());
+            response.put("role", user.getRole());
             System.out.println(response);
 
             return ResponseEntity.ok(response);

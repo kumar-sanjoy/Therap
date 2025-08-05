@@ -1,4 +1,4 @@
-package com.sanjoy.exam_service.models;
+package com.sanjoy.profile_service.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

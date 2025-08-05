@@ -35,7 +35,7 @@ export const API_ENDPOINTS = {
 };
 
 // Development Mode
-export const DEV_MODE = true;
+export const DEV_MODE = false;
 
 // App Constants
 export const APP_NAME = 'FLOW';

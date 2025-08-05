@@ -5,6 +5,8 @@ import io.netty.handler.timeout.ReadTimeoutHandler;
 import io.netty.handler.timeout.WriteTimeoutHandler;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.core.io.ByteArrayResource;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.UrlResource;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -22,6 +24,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.netty.http.client.HttpClient;
 
+import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -32,6 +40,7 @@ import java.util.concurrent.TimeUnit;
  */
 @RestController
 @RequestMapping("/learn")
+//@CrossOrigin(origins = "*")
 public class LearningController {
 
     private final WebClient webClient;
@@ -161,4 +170,92 @@ public class LearningController {
                                 .body(Map.of("error", e.getMessage()))
                 ));
     }
+
+    private static final String UPLOAD_DIR = System.getProperty("user.dir") + "/uploads/";
+
+
+    @PostMapping("/upload")
+    public ResponseEntity<Map<String, String>> uploadImage(
+            @RequestParam(value = "image", required = false) MultipartFile image,
+            @RequestParam(value = "question", required = false) String question) {
+
+        System.out.println("🔄 Received upload request.");
+        System.out.println("📝 Question: " + question);
+        System.out.println("🖼️ Image present: " + (image != null && !image.isEmpty()));
+        System.out.println("📋 Request received at: " + System.currentTimeMillis());
+
+        // Check if both are empty
+        if ((image == null || image.isEmpty()) && (question == null || question.trim().isEmpty())) {
+            System.out.println("❌ Both image and question are empty");
+            return ResponseEntity.badRequest().body(Map.of("message", "No image or question provided."));
+        }
+
+        try {
+            String answer;
+
+            if (image != null && !image.isEmpty()) {
+                // Handle image upload
+                File dir = new File(UPLOAD_DIR);
+                if (!dir.exists()) dir.mkdirs();
+
+                String filename = image.getOriginalFilename();
+                Path filePath = Paths.get(UPLOAD_DIR, filename);
+                image.transferTo(filePath.toFile());
+
+                System.out.println("✅ Saved image to: " + filePath.toAbsolutePath());
+                answer = "Received question: " + question + " and saved image: " + filename;
+            } else {
+                // Handle text-only question
+                System.out.println("📝 Processing text-only question");
+                answer = "Received question: " + question;
+            }
+
+            return ResponseEntity.ok(Map.of("answer", answer));
+
+        } catch (IOException e) {
+            System.out.println("💥 Error saving file: " + e.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(Map.of("message", "Upload failed: " + e.getMessage()));
+        } catch (Exception e) {
+            System.out.println("💥 Unexpected error: " + e.getMessage());
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(Map.of("message", "Unexpected error: " + e.getMessage()));
+        }
+    }
+
+
+    @GetMapping("/view/{filename:.+}")
+    public ResponseEntity<Resource> serveImage(@PathVariable String filename) {
+        System.out.println("👁️ Requested to view image: " + filename);
+
+        try {
+            Path filePath = Paths.get(UPLOAD_DIR).resolve(filename).normalize();
+            Resource resource = new UrlResource(filePath.toUri());
+
+            if (!resource.exists()) {
+                System.out.println("❌ Image not found: " + filePath);
+                return ResponseEntity.notFound().build();
+            }
+
+            System.out.println("✅ Serving image from: " + filePath.toAbsolutePath());
+
+            String contentType = Files.probeContentType(filePath);
+            if (contentType == null) {
+                contentType = "application/octet-stream";
+            }
+
+            return ResponseEntity.ok()
+                    .contentType(MediaType.parseMediaType(contentType))
+                    .body(resource);
+
+        } catch (MalformedURLException e) {
+            System.out.println("💥 Invalid URL for image: " + filename);
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        } catch (IOException e) {
+            System.out.println("💥 Error reading image file: " + e.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }
+
 }
