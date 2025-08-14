@@ -3,13 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import { jwtDecode } from 'jwt-decode';
 import { FaGoogle } from 'react-icons/fa';
-import { API_BASE_URL, API_ENDPOINTS, STORAGE_KEYS } from '../config';
+import { API_BASE_URL, API_ENDPOINTS, STORAGE_KEYS, DEV_MODE } from '../config';
+import { useDarkTheme } from './DarkThemeProvider';
 
 // Dynamically import GoogleLogin to ensure client-side rendering only, preventing flicker
 const GoogleLogin = lazy(() => import('@react-oauth/google').then(mod => ({ default: mod.GoogleLogin })));
 
 // Mock backend status (unchanged)
-const isBackendOnline = false;
+const isBackendOnline = true;
 
 // Updated GoogleLoginWrapper using Suspense for lazy loading
 const GoogleLoginWrapper = ({ onSuccess, onError, isSignUp }) => {
@@ -59,7 +60,7 @@ const CustomGoogleButton = ({ onSuccess, onError, isSignUp }) => {
 
 const Login = () => {
   const [isRightPanelActive, setIsRightPanelActive] = useState(false);
-  const [loginData, setLoginData] = useState({ USER: '', USER_PASS: '' });
+  const [loginData, setLoginData] = useState({ username: '', password: '' });
   const [signUpData, setSignUpData] = useState({ name: '', email: '', password: '' });
   const [userRole, setUserRole] = useState('student');
   const [showForgotPassword, setShowForgotPassword] = useState(false);
@@ -67,14 +68,16 @@ const Login = () => {
   const navigate = useNavigate();
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const { isDarkMode } = useDarkTheme();
 
   // Custom Google button (unchanged)
   const GoogleAuthButton = ({ isSignUp, userRole, onClick }) => {
     return (
       <button
         type="button"
-        className={`group flex items-center justify-center gap-2 px-4 py-2 w-full border border-gray-300 rounded-lg bg-white text-sm font-semibold transition-all duration-300 hover:shadow-md hover:scale-[1.02] ${userRole === 'teacher' ? 'hover:bg-[#1E90FF]/10' : 'hover:bg-[#FF4B2B]/10'
-          }`}
+        className={`group flex items-center justify-center gap-2 px-4 py-2 w-full border border-gray-300 rounded-lg bg-white text-sm font-semibold transition-all duration-300 hover:shadow-md hover:scale-[1.02] ${
+          userRole === 'teacher' ? 'hover:bg-[#1E90FF]/10' : 'hover:bg-[#FF4B2B]/10'
+        }`}
         onClick={onClick}
       >
         <FaGoogle className="text-gray-600 group-hover:text-[#4285F4]" />
@@ -96,31 +99,106 @@ const Login = () => {
     setError('');
     setIsLoading(true);
 
+    // If DEV_MODE is enabled, use mock authentication
+    if (DEV_MODE) {
+      console.log('🔍 [LOGIN DEBUG] DEV_MODE enabled - using mock authentication');
+      
+      // Simulate API delay
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      // Mock successful login response
+      const mockUserData = {
+        id: loginData.username,
+        username: loginData.username,
+        jwt: 'mock-jwt-token-' + Date.now(),
+        role: userRole
+      };
+      
+      // Store user data in localStorage
+      localStorage.setItem(STORAGE_KEYS.USER_ID, mockUserData.id);
+      localStorage.setItem(STORAGE_KEYS.USERNAME, mockUserData.username);
+      localStorage.setItem(STORAGE_KEYS.TOKEN, mockUserData.jwt);
+      localStorage.setItem(STORAGE_KEYS.ROLE, userRole);
+      
+      console.log('🔍 [LOGIN DEBUG] Mock login successful, navigating to:', userRole === 'student' ? '/main' : '/teacher');
+      
+      // Navigate based on user role
+      navigate(userRole === 'student' ? '/main' : '/teacher');
+      setIsLoading(false);
+      return;
+    }
+
+    const fullUrl = `${API_BASE_URL}${API_ENDPOINTS.LOGIN}`;
+    console.log('🔍 Current API_BASE_URL:', API_BASE_URL);
+    console.log('🔍 Login endpoint:', API_ENDPOINTS.LOGIN);
+    console.log('🔍 Full URL being called:', fullUrl);
+    console.log('🔍 Frontend Origin:', window.location.origin);
+    console.log('🔍 Request data:', { username: loginData.username, password: loginData.password });
+
     try {
-      const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.LOGIN}`, {
+      const response = await fetch(fullUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          'Origin': window.location.origin,
         },
-        body: JSON.stringify({
-          username: loginData.USER,
-          password: loginData.USER_PASS,
-          ROLE: userRole
-        }),
+        mode: 'cors',
+        credentials: 'include',
+        body: JSON.stringify({ username: loginData.username, password: loginData.password }),
       });
 
-      const data = await response.json();
+      console.log('🔍 Response status:', response.status);
+      console.log('🔍 Response headers:', Object.fromEntries(response.headers.entries()));
+
+      if (!response.ok) {
+        if (response.status === 403) {
+          setError('CORS Error: Backend is blocking the request. Please check backend CORS configuration.');
+          console.error('CORS Error - Status 403: Backend is rejecting the preflight request');
+          return;
+        }
+        if (response.status === 0) {
+          setError('Network Error: Cannot connect to backend. Please check if the server is running.');
+          console.error('Network Error - Status 0: Cannot connect to backend');
+          return;
+        }
+        if (response.status === 401) {
+          setError('Invalid username or password. Please check your credentials and try again.');
+          console.error('Authentication Error - Status 401: Invalid credentials');
+          return;
+        }
+      }
+
+      let data;
+      try {
+        data = await response.json();
+        console.log('🔍 Response data:', data);
+      } catch (jsonError) {
+        console.error('🔍 JSON parse error:', jsonError);
+        if (response.status === 401) {
+          setError('Invalid username or password. Please check your credentials and try again.');
+        } else {
+          setError('Server returned an invalid response. Please try again.');
+        }
+        return;
+      }
 
       if (response.ok) {
-        localStorage.setItem(STORAGE_KEYS.USER_ID, loginData.USER);
-        localStorage.setItem(STORAGE_KEYS.TOKEN, data.token);
+        localStorage.setItem(STORAGE_KEYS.USER_ID, data.id || data.userId || data.username);
+        localStorage.setItem(STORAGE_KEYS.USERNAME, data.username || loginData.username);
+        localStorage.setItem(STORAGE_KEYS.TOKEN, data.jwt || data.token);
         localStorage.setItem(STORAGE_KEYS.ROLE, userRole);
         navigate(userRole === 'student' ? '/main' : '/teacher');
       } else {
         setError(data.message || 'Login failed');
       }
     } catch (err) {
-      setError('Something went wrong');
+      console.error('🔍 Fetch error:', err);
+      if (err.name === 'TypeError' && err.message.includes('Failed to fetch')) {
+        setError('Network Error: Cannot connect to backend server. Please check if the server is running at ' + API_BASE_URL);
+      } else {
+        setError('Something went wrong: ' + err.message);
+      }
     } finally {
       setIsLoading(false);
     }
@@ -131,25 +209,64 @@ const Login = () => {
     setError('');
     setIsLoading(true);
 
+    // If DEV_MODE is enabled, use mock signup
+    if (DEV_MODE) {
+      console.log('🔍 [SIGNUP DEBUG] DEV_MODE enabled - using mock signup');
+      
+      // Simulate API delay
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      console.log('🔍 [SIGNUP DEBUG] Mock signup successful');
+      setError('Account created successfully! Please check your email and click the confirmation link to activate your account.');
+      // Slide to sign-in panel instead of navigating
+      setIsRightPanelActive(false);
+      setIsLoading(false);
+      return;
+    }
+
     try {
       const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.SIGNUP}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          'Origin': window.location.origin,
         },
-        body: JSON.stringify({ ...signUpData, ROLE: userRole }),
+        mode: 'cors',
+        credentials: 'include',
+        body: JSON.stringify({ 
+          username: signUpData.name, 
+          email: signUpData.email, 
+          password: signUpData.password, 
+          ROLE: userRole 
+        }),
       });
+
+      console.log('🔍 Signup Response status:', response.status);
+
+      if (!response.ok) {
+        if (response.status === 403) {
+          setError('CORS Error: Backend is blocking the request. Please check backend CORS configuration.');
+          return;
+        }
+      }
 
       const data = await response.json();
 
       if (response.ok) {
-        setError('Account created successfully! Now you can sign in.');
+        setError('Account created successfully! Please check your email and click the confirmation link to activate your account.');
+        // Slide to sign-in panel instead of navigating
         setIsRightPanelActive(false);
       } else {
         setError(data.message || 'Signup failed');
       }
     } catch (err) {
-      setError('Something went wrong');
+      console.error('🔍 Signup error:', err);
+      if (err.name === 'TypeError' && err.message.includes('Failed to fetch')) {
+        setError('Network Error: Cannot connect to backend server. Please check if the server is running at ' + API_BASE_URL);
+      } else {
+        setError('Something went wrong: ' + err.message);
+      }
     } finally {
       setIsLoading(false);
     }
@@ -160,12 +277,29 @@ const Login = () => {
     setError('');
     setIsLoading(true);
 
+    // If DEV_MODE is enabled, use mock forgot password
+    if (DEV_MODE) {
+      console.log('🔍 [FORGOT_PASSWORD DEBUG] DEV_MODE enabled - using mock forgot password');
+      
+      // Simulate API delay
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      console.log('🔍 [FORGOT_PASSWORD DEBUG] Mock forgot password successful');
+      setError('Password reset instructions sent to your email');
+      setShowForgotPassword(false);
+      setForgotPasswordEmail('');
+      setIsLoading(false);
+      return;
+    }
+
     try {
       const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.FORGOT_PASSWORD}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json',
         },
+        mode: 'cors',
         body: JSON.stringify({ email: forgotPasswordEmail, role: userRole }),
       });
 
@@ -186,12 +320,21 @@ const Login = () => {
   };
 
   const handleGoogleAuth = async () => {
+    // If DEV_MODE is enabled, use mock Google auth
+    if (DEV_MODE) {
+      console.log('🔍 [GOOGLE_AUTH DEBUG] DEV_MODE enabled - using mock Google authentication');
+      setError('Google authentication is not available in development mode. Please use regular login.');
+      return;
+    }
+
     try {
       const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.GOOGLE_AUTH}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json',
         },
+        mode: 'cors',
       });
 
       const data = await response.json();
@@ -208,23 +351,26 @@ const Login = () => {
 
   return (
     <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID || ''}>
-      <div className="flex justify-center items-center flex-col bg-gray-100 min-h-screen m-[-20px_0_50px] font-sans">
+      <div className="flex justify-center items-center flex-col min-h-screen m-[-20px_0_50px] font-sans bg-gray-100 dark:bg-gray-900">
         {/* Role Toggle */}
-        <div className="relative flex gap-4 mb-8 bg-gray-200 rounded-lg p-1 shadow-inner">
+        <div className="relative flex gap-4 mb-8 rounded-lg p-1 shadow-inner bg-gray-200 dark:bg-gray-700">
           <div
-            className={`absolute top-1 bottom-1 left-1 w-1/2 rounded-lg transition-all duration-300 ease-out ${userRole === 'student' ? 'bg-gradient-to-r from-emerald-500 to-emerald-600 transform translate-x-0' : 'bg-gradient-to-r from-indigo-500 to-indigo-600 transform translate-x-full'
-              }`}
+            className={`absolute top-1 bottom-1 left-1 w-1/2 rounded-lg transition-all duration-300 ease-out ${
+              userRole === 'student' ? 'bg-gradient-to-r from-emerald-500 to-emerald-600 transform translate-x-0' : 'bg-gradient-to-r from-indigo-500 to-indigo-600 transform translate-x-full'
+            }`}
           ></div>
           <button
-            className={`relative z-10 px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 ${userRole === 'student' ? 'text-white' : 'text-gray-700 hover:text-gray-900'
-              }`}
+            className={`relative z-10 px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 ${
+              userRole === 'student' ? 'text-white' : isDarkMode ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-gray-900'
+            }`}
             onClick={() => setUserRole('student')}
           >
             Student
           </button>
           <button
-            className={`relative z-10 px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 ${userRole === 'teacher' ? 'text-white' : 'text-gray-700 hover:text-gray-900'
-              }`}
+            className={`relative z-10 px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 ${
+              userRole === 'teacher' ? 'text-white' : isDarkMode ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-gray-900'
+            }`}
             onClick={() => setUserRole('teacher')}
           >
             Teacher
@@ -233,16 +379,20 @@ const Login = () => {
 
         {/* Main Container */}
         <div
-          className={`relative bg-white rounded-xl shadow-[0_14px_28px_rgba(0,0,0,0.25),0_10px_10px_rgba(0,0,0,0.22)] w-full max-w-4xl min-h-[480px] overflow-hidden transition-all duration-300 ${userRole === 'teacher' ? 'shadow-[0_14px_28px_rgba(0,100,0,0.25),0_10px_10px_rgba(0,80,0,0.22)]' : ''
-            } ${isRightPanelActive ? 'right-panel-active' : ''}`}
+          className={`relative rounded-xl shadow-[0_14px_28px_rgba(0,0,0,0.25),0_10px_10px_rgba(0,0,0,0.22)] w-full max-w-4xl min-h-[480px] overflow-hidden transition-all duration-300 ${
+            isDarkMode ? 'bg-gray-800' : 'bg-white'
+          } ${
+            userRole === 'teacher' ? 'shadow-[0_14px_28px_rgba(0,100,0,0.25),0_10px_10px_rgba(0,80,0,0.22)]' : ''
+          } ${isRightPanelActive ? 'right-panel-active' : ''}`}
         >
           {/* Sign Up Form */}
           <div
-            className={`absolute top-0 h-full transition-all duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] w-1/2 left-0 ${isRightPanelActive ? 'opacity-100 z-[5] translate-x-full' : 'opacity-0 z-[1]'
-              }`}
+            className={`absolute top-0 h-full transition-all duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] w-1/2 left-0 ${
+              isRightPanelActive ? 'opacity-100 z-[5] translate-x-full' : 'opacity-0 z-[1]'
+            }`}
           >
-            <form onSubmit={handleSignUp} className="bg-white flex flex-col items-center justify-center h-full px-12 text-center">
-              <h1 className="font-bold mb-4 text-3xl">Create Account</h1>
+            <form onSubmit={handleSignUp} className={`flex flex-col items-center justify-center h-full px-12 text-center ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
+              <h1 className={`font-bold mb-4 text-3xl ${isDarkMode ? 'text-white' : 'text-black'}`}>Create Account</h1>
               <div className="my-5">
                 <CustomGoogleButton
                   onSuccess={handleGoogleAuth}
@@ -254,8 +404,13 @@ const Login = () => {
                 type="text"
                 name="name"
                 placeholder="Name"
-                className={`bg-gray-100 border-none p-3 my-2 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 hover:bg-gray-50 focus:bg-white focus:shadow-sm ${userRole === 'teacher' ? 'focus:ring-indigo-500' : 'focus:ring-emerald-500'
-                  }`}
+                className={`border-none p-3 my-2 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 focus:shadow-sm ${
+                  isDarkMode 
+                    ? 'bg-gray-700 text-white placeholder-gray-400 hover:bg-gray-600 focus:bg-gray-600' 
+                    : 'bg-gray-100 text-black placeholder-gray-500 hover:bg-gray-50 focus:bg-white'
+                } ${
+                  userRole === 'teacher' ? 'focus:ring-indigo-500' : 'focus:ring-emerald-500'
+                }`}
                 value={signUpData.name}
                 onChange={handleSignUpInputChange}
                 required
@@ -264,8 +419,13 @@ const Login = () => {
                 type="email"
                 name="email"
                 placeholder="Email"
-                className={`bg-gray-100 border-none p-3 my-2 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 hover:bg-gray-50 focus:bg-white focus:shadow-sm ${userRole === 'teacher' ? 'focus:ring-indigo-500' : 'focus:ring-emerald-500'
-                  }`}
+                className={`border-none p-3 my-2 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 focus:shadow-sm ${
+                  isDarkMode 
+                    ? 'bg-gray-700 text-white placeholder-gray-400 hover:bg-gray-600 focus:bg-gray-600' 
+                    : 'bg-gray-100 text-black placeholder-gray-500 hover:bg-gray-50 focus:bg-white'
+                } ${
+                  userRole === 'teacher' ? 'focus:ring-indigo-500' : 'focus:ring-emerald-500'
+                }`}
                 value={signUpData.email}
                 onChange={handleSignUpInputChange}
                 required
@@ -274,16 +434,22 @@ const Login = () => {
                 type="password"
                 name="password"
                 placeholder="Password"
-                className={`bg-gray-100 border-none p-3 my-2 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 hover:bg-gray-50 focus:bg-white focus:shadow-sm ${userRole === 'teacher' ? 'focus:ring-indigo-500' : 'focus:ring-emerald-500'
-                  }`}
+                className={`border-none p-3 my-2 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 focus:shadow-sm ${
+                  isDarkMode 
+                    ? 'bg-gray-700 text-white placeholder-gray-400 hover:bg-gray-600 focus:bg-gray-600' 
+                    : 'bg-gray-100 text-black placeholder-gray-500 hover:bg-gray-50 focus:bg-white'
+                } ${
+                  userRole === 'teacher' ? 'focus:ring-indigo-500' : 'focus:ring-emerald-500'
+                }`}
                 value={signUpData.password}
                 onChange={handleSignUpInputChange}
                 required
               />
               <button
                 type="submit"
-                className={`rounded-3xl border px-12 py-3 my-3 text-white font-bold text-base uppercase tracking-wider transition-all duration-300 hover:shadow-lg hover:brightness-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 ${userRole === 'teacher' ? 'border-indigo-500 bg-indigo-500 focus:ring-indigo-500' : 'border-emerald-500 bg-emerald-500 focus:ring-emerald-500'
-                  }`}
+                className={`rounded-3xl border px-12 py-3 my-3 text-white font-bold text-base uppercase tracking-wider transition-all duration-300 hover:shadow-lg hover:brightness-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+                  userRole === 'teacher' ? 'border-indigo-500 bg-indigo-500 focus:ring-indigo-500' : 'border-emerald-500 bg-emerald-500 focus:ring-emerald-500'
+                }`}
               >
                 Sign Up
               </button>
@@ -305,21 +471,23 @@ const Login = () => {
               </div>
               <input
                 type="text"
-                name="USER"
+                name="username"
                 placeholder="Username"
-                className={`bg-gray-100 border-none p-3 my-2 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 hover:bg-gray-50 focus:bg-white focus:shadow-sm ${userRole === 'teacher' ? 'focus:ring-indigo-500' : 'focus:ring-emerald-500'
-                  }`}
-                value={loginData.USER}
+                className={`bg-gray-100 border-none p-3 my-2 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 hover:bg-gray-50 focus:bg-white focus:shadow-sm ${
+                  userRole === 'teacher' ? 'focus:ring-indigo-500' : 'focus:ring-emerald-500'
+                }`}
+                value={loginData.username}
                 onChange={handleInputChange}
                 required
               />
               <input
                 type="password"
-                name="USER_PASS"
+                name="password"
                 placeholder="Password"
-                className={`bg-gray-100 border-none p-3 my-2 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 hover:bg-gray-50 focus:bg-white focus:shadow-sm ${userRole === 'teacher' ? 'focus:ring-indigo-500' : 'focus:ring-emerald-500'
-                  }`}
-                value={loginData.USER_PASS}
+                className={`bg-gray-100 border-none p-3 my-2 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 hover:bg-gray-50 focus:bg-white focus:shadow-sm ${
+                  userRole === 'teacher' ? 'focus:ring-indigo-500' : 'focus:ring-emerald-500'
+                }`}
+                value={loginData.password}
                 onChange={handleInputChange}
                 required
               />
@@ -335,8 +503,9 @@ const Login = () => {
               </a>
               <button
                 type="submit"
-                className={`rounded-3xl border px-12 py-3 my-3 text-white font-bold text-base uppercase tracking-wider transition-all duration-300 hover:shadow-lg hover:brightness-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 ${userRole === 'teacher' ? 'border-indigo-500 bg-indigo-500 focus:ring-indigo-500' : 'border-emerald-500 bg-emerald-500 focus:ring-emerald-500'
-                  }`}
+                className={`rounded-3xl border px-12 py-3 my-3 text-white font-bold text-base uppercase tracking-wider transition-all duration-300 hover:shadow-lg hover:brightness-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+                  userRole === 'teacher' ? 'border-indigo-500 bg-indigo-500 focus:ring-indigo-500' : 'border-emerald-500 bg-emerald-500 focus:ring-emerald-500'
+                }`}
               >
                 Sign In
               </button>
@@ -346,12 +515,14 @@ const Login = () => {
           {/* Overlay Container */}
           <div className={`absolute top-0 left-1/2 w-1/2 h-full overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] z-[100] ${isRightPanelActive ? '-translate-x-full' : ''}`}>
             <div
-              className={`relative -left-full h-full w-[200%] text-white transition-all duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] ${userRole === 'teacher' ? 'bg-gradient-to-r from-indigo-500 to-indigo-600' : 'bg-gradient-to-r from-emerald-500 to-emerald-600'
-                } ${isRightPanelActive ? 'translate-x-1/2' : ''}`}
+              className={`relative -left-full h-full w-[200%] text-white transition-all duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] ${
+                userRole === 'teacher' ? 'bg-gradient-to-r from-indigo-500 to-indigo-600' : 'bg-gradient-to-r from-emerald-500 to-emerald-600'
+              } ${isRightPanelActive ? 'translate-x-1/2' : ''}`}
             >
               <div
-                className={`absolute flex flex-col items-center justify-center px-10 text-center h-full w-1/2 transition-all duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] ${isRightPanelActive ? 'translate-x-0' : '-translate-x-[15%]'
-                  }`}
+                className={`absolute flex flex-col items-center justify-center px-10 text-center h-full w-1/2 transition-all duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] ${
+                  isRightPanelActive ? 'translate-x-0' : '-translate-x-[15%]'
+                }`}
               >
                 <h1 className="font-bold mb-4 text-3xl">Welcome Back!</h1>
                 <p className="text-sm font-normal leading-5 tracking-wider my-5">
@@ -366,14 +537,15 @@ const Login = () => {
               </div>
 
               <div
-                className={`absolute right-0 flex flex-col items-center justify-center px-10 text-center h-full w-1/2 transition-all duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] ${isRightPanelActive ? 'translate-x-[15%]' : 'translate-x-0'
-                  }`}
+                className={`absolute right-0 flex flex-col items-center justify-center px-10 text-center h-full w-1/2 transition-all duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] ${
+                  isRightPanelActive ? 'translate-x-[15%]' : 'translate-x-0'
+                }`}
               >
                 <h1 className="font-bold mb-4 text-3xl">
                   {userRole === 'teacher' ? 'Hello, Teacher!' : 'Hello, Friend!'}
                 </h1>
                 <p className="text-sm font-normal leading-5 tracking-wider my-5">
-                  {userRole === 'teacher'
+                  {userRole === 'teacher' 
                     ? 'Join our platform to transform your teaching experience with AI-powered tools'
                     : 'Enter your personal details and start journey with us'
                   }
@@ -418,8 +590,9 @@ const Login = () => {
                     </button>
                     <button
                       type="submit"
-                      className={`px-4 py-2 text-white rounded-lg ${userRole === 'teacher' ? 'bg-indigo-500' : 'bg-emerald-500'
-                        } hover:brightness-110 transition-all duration-300`}
+                      className={`px-4 py-2 text-white rounded-lg ${
+                        userRole === 'teacher' ? 'bg-indigo-500' : 'bg-emerald-500'
+                      } hover:brightness-110 transition-all duration-300`}
                     >
                       Send Reset Link
                     </button>

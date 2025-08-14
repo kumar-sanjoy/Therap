@@ -3,8 +3,8 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { IoMdArrowRoundBack } from 'react-icons/io';
 import { FaLightbulb, FaCheckCircle, FaTimesCircle, FaTools } from 'react-icons/fa';
 import { GrNotes } from 'react-icons/gr';
-import { API_BASE_URL, API_ENDPOINTS, STORAGE_KEYS, DEV_MODE } from '../config';
-import flowLogo from '../assets/flow-main-nobg.png';
+import { API_BASE_URL, EXAM_API_BASE_URL, API_ENDPOINTS, STORAGE_KEYS, DEV_MODE, mapClassForExamAPI, mapSubjectForExamAPI } from '../config';
+import flowLogo from '../assets/flow-dark.png';
 import '../css/PrevQuizDesign.css';
 
 const Prev = () => {
@@ -16,6 +16,7 @@ const Prev = () => {
     const [question, setQuestion] = useState(null);
     const [lock, setLock] = useState(false);
     const [score, setScore] = useState(0);
+    const [answerArray, setAnswerArray] = useState([]);
     const [showScore, setShowScore] = useState(false);
     const [showHint, setShowHint] = useState(false);
     const [showExplanation, setShowExplanation] = useState(false);
@@ -56,6 +57,15 @@ const Prev = () => {
             }, 800);
             return;
         }
+
+        // Check if questions are passed from SelectSubject
+        if (location.state?.questions && location.state.questions.length > 0) {
+            setQuestions(location.state.questions);
+            setIsLoading(false);
+            return;
+        }
+
+        // Fallback: fetch questions if not passed from SelectSubject
         const fetchMistakes = async () => {
             try {
                 const userId = localStorage.getItem(STORAGE_KEYS.USER_ID);
@@ -68,21 +78,33 @@ const Prev = () => {
                 const className = location.state?.className || location.state?.class || 'Class 9';
                 const subject = location.state?.subject || 'Science';
                 const chapter = location.state?.chapter || 'Chapter 1';
-                const count = location.state?.count || 10;
+                const count = location.state?.count || 3;
+                const username = localStorage.getItem(STORAGE_KEYS.USERNAME) || 'default_user';
                 const params = new URLSearchParams({
-                    userId,
-                    className,
-                    subject,
+                    username,
+                    className: mapClassForExamAPI(className),
+                    subject: mapSubjectForExamAPI(subject),
                     chapter,
                     count: count.toString()
                 });
-
-                const res = await fetch(`${API_BASE_URL}${API_ENDPOINTS.PREVIOUS_MCQ}?${params.toString()}`);
+                const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
+                const res = await fetch(`${EXAM_API_BASE_URL}${API_ENDPOINTS.PREVIOUS_MCQ}?${params.toString()}`, {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                        'Content-Type': 'application/json'
+                    }
+                });
                 if (res.ok) {
                     const data = await res.json();
                     setQuestions(data.mcqs || data.questions || data.mistakes || []);
+                } else if (res.status === 400) {
+                    setError('Not enough questions practised for this subject. Please practice more questions first.');
+                    setQuestions([]);
                 } else {
                     console.error('Failed to fetch mistakes');
+                    setError('Failed to load previous mistakes. Please try again.');
+                    setQuestions([]);
                 }
             } catch (error) {
                 console.error('Error fetching mistakes:', error);
@@ -118,7 +140,10 @@ const Prev = () => {
 
     const checkAnswer = (e, selectedKey) => {
         if (!lock && question?.options) {
-            if (selectedKey === question.answer) {
+            const isCorrect = selectedKey === question.answer;
+            setAnswerArray(prev => [...prev.slice(0, index), isCorrect ? 1 : 0, ...prev.slice(index + 1)]);
+            
+            if (isCorrect) {
                 e.target.classList.add("bg-green-100", "border-green-500", "text-green-800");
                 setScore(score => score + 1);
             } else {
@@ -138,6 +163,7 @@ const Prev = () => {
     const next = () => {
         if (lock) {
             if (index === questions.length - 1) {
+                // Just show the score without submitting to backend
                 setShowScore(true);
                 return;
             }
@@ -155,7 +181,7 @@ const Prev = () => {
     };
 
     const reset = () => {
-        navigate('/select');
+        navigate('/main');
     };
 
     // Loading screen with rolling animation
@@ -174,8 +200,18 @@ const Prev = () => {
     if (error) {
         return (
             <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-200 flex flex-col">
-                <div className="fixed inset-0 bg-white/90 backdrop-blur-sm flex flex-col items-center justify-center z-50">
-                    <p className="text-[#343434] text-lg font-semibold">{error}</p>
+                <div className="fixed inset-0 bg-white/95 backdrop-blur-sm flex flex-col items-center justify-center z-50">
+                    <div className="text-center">
+                        <FaTimesCircle className="text-red-500 text-6xl mx-auto mb-4" />
+                        <h2 className="text-2xl font-bold text-gray-800 mb-2">No Previous Mistakes</h2>
+                        <p className="text-gray-600 mb-6 max-w-md">{error}</p>
+                        <button 
+                            className="px-6 py-3 bg-[#343434] hover:bg-gray-800 text-white font-medium rounded-lg transition-all hover:shadow-md"
+                            onClick={() => navigate('/main')}
+                        >
+                            Go Back to Main
+                        </button>
+                    </div>
                 </div>
             </div>
         );
@@ -204,27 +240,6 @@ const Prev = () => {
                         <h2 className="text-xl md:text-2xl font-bold text-[#343434] tracking-tight">Previous Mistakes</h2>
                     </div>
                     <div className="p-8">
-                        {!showScore && (
-                            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
-                                <div className="flex gap-2">
-                                    <button className="flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-yellow-100 text-[#343434] rounded-lg font-medium border border-gray-200 transition-all" onClick={() => setShowHint(true)}>
-                                        <FaLightbulb className="text-yellow-400" /> Hint
-                                    </button>
-                                    <button className="flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-blue-100 text-[#343434] rounded-lg font-medium border border-gray-200 transition-all" onClick={() => {
-                                        highlightAnswer();
-                                        setShowExplanation(true);
-                                        setLock(true);
-                                    }}>
-                                        <GrNotes className="text-blue-400" /> Explanation
-                                    </button>
-                                    <button className="flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-green-100 text-[#343434] rounded-lg font-medium border border-gray-200 transition-all" onClick={() => setShowAdvice(true)}>
-                                        <FaTools className="text-green-400" /> Advice
-                                    </button>
-                                </div>
-                                <div className="text-sm text-gray-500 font-medium">{index + 1} of {questions.length}</div>
-                            </div>
-                        )}
-
                         {showScore ? (
                             <div className="flex flex-col items-center justify-center gap-6">
                                 <FaCheckCircle className="text-green-500 text-5xl mb-2" />
@@ -233,6 +248,25 @@ const Prev = () => {
                             </div>
                         ) : (
                             <>
+                                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+                                    <div className="flex gap-2">
+                                        <button className="flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-yellow-100 text-[#343434] rounded-lg font-medium border border-gray-200 transition-all" onClick={() => setShowHint(true)}>
+                                            <FaLightbulb className="text-yellow-400" /> Hint
+                                        </button>
+                                        <button className="flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-blue-100 text-[#343434] rounded-lg font-medium border border-gray-200 transition-all" onClick={() => {
+                                            highlightAnswer();
+                                            setShowExplanation(true);
+                                            setLock(true);
+                                        }}>
+                                            <GrNotes className="text-blue-400" /> Explanation
+                                        </button>
+                                        <button className="flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-green-100 text-[#343434] rounded-lg font-medium border border-gray-200 transition-all" onClick={() => setShowAdvice(true)}>
+                                            <FaTools className="text-green-400" /> Advice
+                                        </button>
+                                    </div>
+                                    <div className="text-sm text-gray-500 font-medium">{index + 1} of {questions.length}</div>
+                                </div>
+
                                 <h2 className="text-xl font-semibold text-[#343434] mb-6">{index + 1}. {question.question}</h2>
                                 <ul className="space-y-4 mb-6">
                                     {question?.options && Object.entries(question.options).map(([key, value], i) => (
@@ -266,7 +300,13 @@ const Prev = () => {
                                     </div>
                                 )}
 
-                                <button className="px-6 py-3 bg-[#343434] hover:bg-gray-800 text-white font-medium rounded-lg transition-all hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed" onClick={next} disabled={!lock}>Next</button>
+                                <button 
+                                    className="px-6 py-3 bg-[#343434] hover:bg-gray-800 text-white font-medium rounded-lg transition-all hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed" 
+                                    onClick={next} 
+                                    disabled={!lock}
+                                >
+                                    {index === questions.length - 1 ? 'Finish' : 'Next'}
+                                </button>
                             </>
                         )}
                     </div>

@@ -67,11 +67,12 @@ public class ExamController {
             @RequestParam String chapter,
             @RequestParam int count) {
         String pythonEndpoint = "/exam/mcq";
-        System.out.println("username " + username);
-        System.out.println("className " + className);
-        System.out.println("Subject " + subject);
-        System.out.println("Chapter " + chapter);
-        System.out.println("count " + count);
+        System.out.println("mcq exam hit");
+//        System.out.println("username " + username);
+//        System.out.println("className " + className);
+//        System.out.println("Subject " + subject);
+//        System.out.println("Chapter " + chapter);
+//        System.out.println("count " + count);
         List<Object []> performanceRecord = pdlr.findPerformanceInfo(username, subject);
         for (Object[] row : performanceRecord) {
             int performance = (Integer) row[0];
@@ -125,6 +126,11 @@ public class ExamController {
         }
         Sub sub = subOpt.get();
         List<String> previousQuestions = mcqRepository.findStatementByStudentUsernameAndSubject(username, sub.getId());
+
+        if(previousQuestions.isEmpty()) {
+            errorResponse.put("error", "Not enough questions practiced for the subject: " + subject);
+            return Mono.just(ResponseEntity.badRequest().body(errorResponse));
+        }
 
         Map<String, Object> requestBody = new HashMap<>();
         requestBody.put("previousQuestions", previousQuestions);

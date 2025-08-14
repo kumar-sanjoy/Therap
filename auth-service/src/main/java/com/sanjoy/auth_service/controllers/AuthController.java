@@ -89,7 +89,7 @@ public class AuthController {
             }
 
             Map<String, Object> response = new HashMap<>();
-            response.put("jwt", jwt);
+            response.put("token", jwt);
             response.put("username", userDetails.getUsername());
             response.put("role", user.getRole());
             System.out.println(response);

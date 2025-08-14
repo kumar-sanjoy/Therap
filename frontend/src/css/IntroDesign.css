@@ -95,7 +95,7 @@
 }
 
 .intro-page {
-  @apply min-h-screen flex flex-col bg-white text-[#343434];
+  @apply min-h-screen flex flex-col;
 }
 
 .intro-header {

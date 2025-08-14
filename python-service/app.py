@@ -216,13 +216,19 @@ def fresh_test():
     chapter = data.get("chapter")
     ques_count = data.get("count")
     ques_perf = data.get("performance")
+    print(ques_perf)
 
-    get_best_difficulty = train_q_table_from_history(ques_perf)
-    difficulty = get_best_difficulty(5)
-    print(difficulty)
+    if not ques_perf:  
+        difficulty = 1
+    else:
+        get_best_difficulty = train_q_table_from_history(ques_perf)
+        difficulty = get_best_difficulty(5)
+
+    print('making questions of difficulty: ', difficulty)
 
     parser = JsonOutputParser()
     txt_name = f"doc/{class_map.get(cls, 'unknown')}-{subject_map.get(sub, 'X')}-{chapter}.txt"
+    print(txt_name)
     
     try:
         loader = TextLoader(txt_name, encoding='utf-8')
@@ -277,6 +283,7 @@ def fresh_test():
         
         chain = prompt | model | parser
         questions_from_model = chain.invoke({"text": text, "difficulty": difficulty, "ques_count": ques_count}) # works fine
+        print(questions_from_model)
 
         try:
             return jsonify({ "mcqs": questions_from_model['mcqs'], "difficultyLevel": difficulty })

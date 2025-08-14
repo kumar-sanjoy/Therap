@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaPlay, FaStar, FaUsers, FaGraduationCap } from 'react-icons/fa';
-import flowLogo from '../../assets/flow-main-nobg.png';
+import flowLogo from '../../assets/flow-dark.png';
 
 const Hero = ({ navigate }) => {
   return (

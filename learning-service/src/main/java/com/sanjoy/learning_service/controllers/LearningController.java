@@ -121,6 +121,7 @@ public class LearningController {
         }
 
         if (audio != null && !audio.isEmpty()) {
+            System.out.println("Audio received...");
             builder.part("audio",
                             new ByteArrayResource(audio.getBytes()) {
                                 @Override
@@ -142,8 +143,12 @@ public class LearningController {
                 .retrieve()
                 .bodyToMono(new ParameterizedTypeReference<Map<String, String>>() {});
 
-        return responseMono.block(); // blocking to return synchronously for simplicity
-    }
+    Map<String, String> result = responseMono
+            .doOnNext(map -> System.out.println(map))
+            .block();
+
+    return result;
+}
 
 
     @GetMapping("/notes")

@@ -24,7 +24,7 @@ export const DarkThemeProvider = ({ children }) => {
     // Save to localStorage
     localStorage.setItem('darkMode', JSON.stringify(isDarkMode));
     
-    // Apply to document
+    // Apply dark class to HTML element for Tailwind dark mode
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
     } else {

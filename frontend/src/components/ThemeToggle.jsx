@@ -23,11 +23,10 @@ const ThemeToggle = ({ className = '', size = 'md' }) => {
       className={`
         ${sizeClasses[size]}
         rounded-full 
-        bg-gray-200 dark:bg-gray-700 
-        hover:bg-gray-300 dark:hover:bg-gray-600 
         transition-all duration-300 
         flex items-center justify-center
         shadow-sm hover:shadow-md
+        ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-200 hover:bg-gray-300'}
         ${className}
       `}
       aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}

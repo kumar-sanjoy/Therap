@@ -3,13 +3,15 @@ import { useNavigate } from 'react-router-dom';
 import { FaBook, FaPen, FaChevronLeft, FaChevronRight, FaUser, FaSignOutAlt, FaQuestionCircle, FaStickyNote, FaHistory, FaFire, FaGraduationCap, FaTrophy, FaStar, FaChartLine } from 'react-icons/fa';
 import { LuNotebookPen } from "react-icons/lu";
 import { ImBooks } from "react-icons/im";
-import flowLogo from '../assets/flow-main-nobg.png';
-import { API_BASE_URL, API_ENDPOINTS } from '../config';
+import { API_BASE_URL, API_ENDPOINTS, DEV_MODE, STORAGE_KEYS } from '../config';
 import ThemeToggle from './ThemeToggle';
 import { useDarkTheme } from './DarkThemeProvider';
+import flowLogoLight from '../assets/flow-main-nobg.png';
+import flowLogoDark from '../assets/flow-dark.png';
 
 // FlowLoadingScreen Component
 const FlowLoadingScreen = () => {
+  const { isDarkMode } = useDarkTheme();
   const [progress, setProgress] = useState(0);
   const [loadingStage, setLoadingStage] = useState('Initializing...');
 
@@ -68,7 +70,7 @@ const FlowLoadingScreen = () => {
           <div className="relative inline-block">
             {/* Actual FLOW logo */}
             <img 
-              src={flowLogo} 
+              src={isDarkMode ? flowLogoDark : flowLogoLight} 
               alt="FLOW Logo" 
               className="w-40 mx-auto mb-4 drop-shadow-2xl transform hover:scale-105 transition-transform duration-500" 
             />
@@ -182,7 +184,6 @@ const FlowLoadingScreen = () => {
 
 const MainPage = () => {
   const { isDarkMode } = useDarkTheme();
-  const DEV_MODE = true;
   const navigate = useNavigate();
   const [isSidebarOpen, setIsSidebarOpen] = useState(() => {
     const stored = localStorage.getItem('sidebarOpen');
@@ -226,22 +227,44 @@ const MainPage = () => {
     } else {
       const fetchStats = async () => {
         try {
-          const userId = localStorage.getItem(STORAGE_KEYS.USER_ID);
-          if (!userId) {
+          const userName = localStorage.getItem(STORAGE_KEYS.USERNAME);
+          const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
+          
+          console.log('🔍 Debug - userId:', userId);
+          console.log('🔍 Debug - token:', token);
+          
+          if (!userName || !token) {
+            console.log('🔍 Debug - Missing userId or token, redirecting to login');
             navigate('/login');
             return;
           }
 
           const params = new URLSearchParams({
-            studentId: userId
+            username: userId
+          });
+          
+          console.log('🔍 Debug - API URL:', `${API_BASE_URL}${API_ENDPOINTS.STUDENT_PROFILE}?${params.toString()}`);
+          console.log('🔍 Debug - Headers:', {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
           });
           
           const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.STUDENT_PROFILE}?${params.toString()}`, {
-            method: 'GET'
+            method: 'GET',
+            headers: {
+              'Authorization': `Bearer ${token}`,
+              'Content-Type': 'application/json'
+            },
+            credentials: 'include'
           });
+          
+          console.log('🔍 Debug - Response status:', response.status);
+          console.log('🔍 Debug - Response headers:', Object.fromEntries(response.headers.entries()));
 
           if (response.ok) {
             const data = await response.json();
+            console.log('🔍 Debug - Backend response data:', data);
+            
             // Backend returns: { id, attemptCount, correctCount, last10Performance }
             // Convert to frontend stats format
             const accuracy = data.attemptCount > 0 ? Math.round((data.correctCount / data.attemptCount) * 100) : 0;
@@ -251,7 +274,7 @@ const MainPage = () => {
               totalQuestions: data.attemptCount,
               totalRight: data.correctCount,
               totalWrong: data.attemptCount - data.correctCount,
-              lastTenPerformance: data.last10Performance || [],
+              lastTenPerformance: data.last10Performance.map(result => result ? 'right' : 'wrong'),
               streak: streak,
               subjects: {
                 math: { completed: 15, accuracy: 85 },
@@ -259,8 +282,10 @@ const MainPage = () => {
                 english: { completed: 8, accuracy: 92 }
               }
             });
+            setIsLoading(false);
           } else {
             console.error('Failed to fetch stats');
+            setIsLoading(false);
           }
         } catch (error) {
           console.error('Error fetching stats:', error);
@@ -300,12 +325,19 @@ const MainPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <div className={`min-h-screen bg-gradient-to-br ${
+      isDarkMode 
+        ? 'from-gray-900 via-gray-800 to-gray-900' 
+        : 'from-gray-50 via-white to-blue-50'
+    }`}>
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-full bg-white dark:bg-gray-800 text-[#343434] dark:text-gray-100
-          transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] ${sidebarWidth} shadow-xl z-30 
-          ${sidebarHighlight} ${sidebarOverlay} border-r border-gray-100 dark:border-gray-700`}
+        className={`fixed top-0 left-0 h-full transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] ${sidebarWidth} shadow-xl z-30 
+          ${sidebarHighlight} ${sidebarOverlay} border-r ${
+          isDarkMode 
+            ? 'bg-gray-800 text-gray-100 border-gray-700' 
+            : 'bg-white text-[#343434] border-gray-100'
+        }`}
         onMouseEnter={() => !isSidebarOpen && setIsSidebarHovered(true)}
         onMouseLeave={() => setIsSidebarHovered(false)}
         style={isMobile && !sidebarOpen ? { display: 'none' } : {}}
@@ -324,14 +356,14 @@ const MainPage = () => {
             }}
           >
             {isSidebarOpen ? (
-              <img src={flowLogo} alt="FLOW Logo" className="w-24 transition-all duration-300 ease-in-out" />
+              <img src={isDarkMode ? flowLogoDark : flowLogoLight} alt="FLOW Logo" className="w-24 transition-all duration-300 ease-in-out" />
             ) : (
               isLogoHovered ? (
                 <div className="p-2">
                   <FaChevronRight className="text-2xl text-gray-600 dark:text-gray-300" />
                 </div>
               ) : (
-                <img src={flowLogo} alt="FLOW Logo" className="w-20 transition-all duration-300 ease-in-out" />
+                <img src={isDarkMode ? flowLogoDark : flowLogoLight} alt="FLOW Logo" className="w-20 transition-all duration-300 ease-in-out" />
               )
             )}
           </div>
@@ -388,7 +420,7 @@ const MainPage = () => {
               </div>
               {isSidebarOpen && <span className="ml-4 font-medium">Notes</span>}
             </button>
-            <button onClick={() => navigate('/prev')} className="w-full p-4 flex items-center hover:bg-orange-50 dark:hover:bg-orange-900/20 hover:text-orange-700 dark:hover:text-orange-300 rounded-xl transition-all duration-200 mb-2 group">
+            <button onClick={() => navigate('/select', { state: { mode: 'revise' } })} className="w-full p-4 flex items-center hover:bg-orange-50 dark:hover:bg-orange-900/20 hover:text-orange-700 dark:hover:text-orange-300 rounded-xl transition-all duration-200 mb-2 group">
               <div className="p-2 bg-orange-100 dark:bg-orange-900/30 rounded-lg group-hover:bg-orange-200 dark:group-hover:bg-orange-800/40 transition-colors duration-200">
                 <FaHistory className="text-lg text-orange-600 dark:text-orange-400" />
               </div>
@@ -473,20 +505,34 @@ const MainPage = () => {
           </div>
 
           {/* Subject Progress */}
-          <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 mb-8">
+          <div className={`rounded-2xl shadow-lg border p-6 mb-8 ${
+            isDarkMode 
+              ? 'bg-gray-800 border-gray-700' 
+              : 'bg-white border-gray-100'
+          }`}>
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold text-[#343434]">Subject Progress</h2>
+              <h2 className={`text-2xl font-bold ${
+                isDarkMode ? 'text-gray-100' : 'text-[#343434]'
+              }`}>Subject Progress</h2>
               <FaChartLine className="text-2xl text-emerald-500" />
             </div>
             <div className="space-y-6">
               {Object.entries(stats.subjects).map(([subject, data]) => (
-                <div key={subject} className="flex items-center justify-between p-4 bg-gray-50 rounded-xl">
+                <div key={subject} className={`flex items-center justify-between p-4 rounded-xl ${
+                  isDarkMode ? 'bg-gray-700' : 'bg-gray-50'
+                }`}>
                   <div>
-                    <h3 className="font-semibold capitalize text-lg">{subject}</h3>
-                    <p className="text-sm text-gray-500">{data.completed} questions completed</p>
+                    <h3 className={`font-semibold capitalize text-lg ${
+                      isDarkMode ? 'text-gray-200' : 'text-gray-800'
+                    }`}>{subject}</h3>
+                    <p className={`text-sm ${
+                      isDarkMode ? 'text-gray-400' : 'text-gray-500'
+                    }`}>{data.completed} questions completed</p>
                   </div>
                   <div className="flex items-center gap-4">
-                    <div className="w-32 bg-gray-200 rounded-full h-3">
+                    <div className={`w-32 rounded-full h-3 ${
+                      isDarkMode ? 'bg-gray-600' : 'bg-gray-200'
+                    }`}>
                       <div
                         className="bg-gradient-to-r from-emerald-500 to-emerald-600 h-3 rounded-full transition-all duration-500"
                         style={{ width: `${data.accuracy}%` }}
@@ -500,16 +546,26 @@ const MainPage = () => {
           </div>
 
           {/* Recent Activity */}
-          <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
+          <div className={`rounded-2xl shadow-lg border p-6 ${
+            isDarkMode 
+              ? 'bg-gray-800 border-gray-700' 
+              : 'bg-white border-gray-100'
+          }`}>
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold text-[#343434]">Recent Activity</h2>
+              <h2 className={`text-2xl font-bold ${
+                isDarkMode ? 'text-gray-100' : 'text-[#343434]'
+              }`}>Recent Activity</h2>
               <FaHistory className="text-2xl text-indigo-500" />
             </div>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
               {stats.lastTenPerformance.map((result, index) => (
-                <div key={index} className="flex flex-col items-center p-4 bg-gray-50 rounded-xl">
+                <div key={index} className={`flex flex-col items-center p-4 rounded-xl ${
+                  isDarkMode ? 'bg-gray-700' : 'bg-gray-50'
+                }`}>
                   <div className={`w-4 h-4 rounded-full mb-2 ${result === 'right' ? 'bg-green-500' : 'bg-red-500'}`}></div>
-                  <span className="text-sm text-gray-600">Q{index + 1}</span>
+                  <span className={`text-sm ${
+                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>Q{index + 1}</span>
                   <span className={`text-xs font-semibold ${result === 'right' ? 'text-green-600' : 'text-red-600'}`}>
                     {result === 'right' ? '✓' : '✗'}
                   </span>
