@@ -8,6 +8,7 @@ import com.sanjoy.exam_service.repo.MCQRepository;
 import com.sanjoy.exam_service.repo.PerformanceDiffLevelRepo;
 import com.sanjoy.exam_service.repo.StudentRepository;
 import com.sanjoy.exam_service.repo.SubRepository;
+import com.sanjoy.exam_service.service.PracticeStreakService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
@@ -35,9 +36,10 @@ import java.util.*;
  */
 @RestController
 @RequestMapping("/exam")
-@CrossOrigin(origins = "*")
+//@CrossOrigin(origins = "*")
 public class ExamController {
     private final WebClient webClient;
+    private final PracticeStreakService streakService;
 
     @Autowired
     private MCQRepository mcqRepository;
@@ -52,8 +54,9 @@ public class ExamController {
     private PerformanceDiffLevelRepo pdlr;
 
     public ExamController(WebClient.Builder webClientBuilder,
-        @Value("${ai.backend.url}") String aiBackendUrl) {
+        @Value("${ai.backend.url}") String aiBackendUrl, PracticeStreakService streakService) {
         this.webClient = webClientBuilder.baseUrl(aiBackendUrl).build();
+        this.streakService = streakService;
     }
 
     @PostMapping("/mcq")
@@ -64,6 +67,12 @@ public class ExamController {
             @RequestParam String chapter,
             @RequestParam int count) {
         String pythonEndpoint = "/exam/mcq";
+        System.out.println("mcq exam hit");
+//        System.out.println("username " + username);
+//        System.out.println("className " + className);
+//        System.out.println("Subject " + subject);
+//        System.out.println("Chapter " + chapter);
+//        System.out.println("count " + count);
         List<Object []> performanceRecord = pdlr.findPerformanceInfo(username, subject);
         for (Object[] row : performanceRecord) {
             int performance = (Integer) row[0];
@@ -106,17 +115,22 @@ public class ExamController {
             @RequestParam String chapter,
             @RequestParam Long count) {
 
+        Map<String, Object> errorResponse = new HashMap<>();
         Optional<Sub> subOpt = subRepository.findByName(subject);
         if (subOpt.isEmpty()) {
             Sub sub = new Sub();
             sub.setName(subject);
             subRepository.save(sub);
-            Map<String, Object> errorResponse = new HashMap<>();
             errorResponse.put("error", "Not enough questions practiced for the subject: " + subject);
             return Mono.just(ResponseEntity.badRequest().body(errorResponse));
         }
         Sub sub = subOpt.get();
         List<String> previousQuestions = mcqRepository.findStatementByStudentUsernameAndSubject(username, sub.getId());
+
+        if(previousQuestions.isEmpty()) {
+            errorResponse.put("error", "Not enough questions practiced for the subject: " + subject);
+            return Mono.just(ResponseEntity.badRequest().body(errorResponse));
+        }
 
         Map<String, Object> requestBody = new HashMap<>();
         requestBody.put("previousQuestions", previousQuestions);
@@ -164,6 +178,9 @@ public class ExamController {
             student.setLast10Performance(new ArrayList<>());
         }
 
+        // save the current streak of a username:
+        streakService.logPractice(username);
+
         int totalAttempt = questions.size();
         int totalWrong = 0;
 
@@ -206,6 +223,7 @@ public class ExamController {
                                            @RequestParam String subject,
                                            @RequestParam String chapter) {
         String pythonEndpoint = "/exam/written";
+        System.out.println("written hit");
 
         return webClient.get()
                 .uri(uriBuilder -> uriBuilder
@@ -224,6 +242,7 @@ public class ExamController {
     @PostMapping("/submit-written")
     public Mono<ResponseEntity<String>> submitWrittenProxy(@RequestParam("image") MultipartFile imageFile,
                                                            @RequestParam("question") String questionText) {
+        System.out.println("submit written hit");
         if (imageFile.isEmpty()) {
             return Mono.just(new ResponseEntity<>("{\"message\": \"error: No image file provided.\"}",
                     HttpStatus.BAD_REQUEST));

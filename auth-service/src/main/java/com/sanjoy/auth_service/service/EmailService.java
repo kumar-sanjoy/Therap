@@ -26,6 +26,9 @@ public class EmailService {
         this.mailSender = mailSender;
     }
 
+    @Value("${frontend.url}")
+    private String frontendUrl;
+
     @Async
     public void send(String to, String token) {
         try {
@@ -35,10 +38,10 @@ public class EmailService {
             message.setSubject("Confirm your email");
 
             String messageBody = """
-                Thank you for registration. Please confirm your email.
+               Thank you for registration. Please confirm your email.
 
-                http://localhost:%d/register/confirmToken?token=%s
-                """.formatted(serverPort, token); // Using text blocks and formatted() for cleaner string concatenation
+               http://%s/register/confirmToken?token=%s
+                """.formatted(frontendUrl, token); // Using text blocks and formatted() for cleaner string concatenation
 
             message.setText(messageBody);
 

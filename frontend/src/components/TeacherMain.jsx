@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { API_BASE_URL, API_ENDPOINTS, STORAGE_KEYS } from '../config';
 import StudentDetailsModal from './StudentDetailsModal';
 import '../css/TeacherMainDesign.css';
-import flowLogo from '../assets/flow-white.jpg';
+import flowLogo from '../assets/flow-dark.png';
 
 const TeacherMain = () => {
   const navigate = useNavigate();
@@ -14,6 +14,7 @@ const TeacherMain = () => {
   const [sortBy, setSortBy] = useState('studentId');
   const [sortOrder, setSortOrder] = useState('asc');
   const [dashboardData, setDashboardData] = useState(null);
+  const [isGeneratingReport, setIsGeneratingReport] = useState(false);
 
   useEffect(() => {
     const fetchDashboardData = async () => {
@@ -24,12 +25,17 @@ const TeacherMain = () => {
           return;
         }
 
-        const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.TEACHER_DASHBOARD}`, {
-          method: 'POST',
+        const params = new URLSearchParams({
+          teacherId: userId
+        });
+        
+        const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
+        const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.TEACHER_PROFILE}?${params.toString()}`, {
+          method: 'GET',
           headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ userId }),
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+          }
         });
 
         if (response.ok) {
@@ -53,11 +59,17 @@ const TeacherMain = () => {
       setIsLoading(true);
       setError('');
       try {
-        const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.TEACHER_DASHBOARD}`, {
+        const params = new URLSearchParams({
+          teacherId: userId
+        });
+        
+        const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
+        const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.TEACHER_PROFILE}?${params.toString()}`, {
           method: 'GET',
           headers: {
-            'Content-Type': 'application/json',
-          },
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+          }
         });
 
         // Check Content-Type header
@@ -84,14 +96,16 @@ const TeacherMain = () => {
           throw new Error(`Failed to parse server response as JSON. Response: ${rawText}`);
         }
 
-        // Validate data structure and ensure it's an array
+        // Validate data structure and extract students array
         if (isMounted) {
-          if (Array.isArray(data)) {
-            setStudents(data);
-          } else if (data === null) {
-            setStudents([]); // Treat null as an empty array
+          if (data && data.students && Array.isArray(data.students)) {
+            setStudents(data.students);
+            setDashboardData(data);
+          } else if (data === null || !data.students) {
+            setStudents([]); // Treat null or missing students as an empty array
+            setDashboardData(data);
           } else {
-            throw new Error('Expected an array of student data');
+            throw new Error('Expected students array in response data');
           }
         }
       } catch (err) {
@@ -181,6 +195,57 @@ const TeacherMain = () => {
     });
   }, [sortedStudents]);
 
+  // Generate comprehensive student report
+  const generateReport = async () => {
+    setIsGeneratingReport(true);
+    setError('');
+    
+    try {
+      const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
+      if (!username) {
+        setError('User not logged in');
+        return;
+      }
+
+      const params = new URLSearchParams({
+        username: username
+      });
+      
+      const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
+      const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.TEACHER_REPORT}?${params.toString()}`, {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        console.log('Report generated successfully:', data);
+        
+        // Handle the report data - could be a download link or report content
+        if (data.reportUrl) {
+          // If backend returns a download link
+          window.open(data.reportUrl, '_blank');
+        } else if (data.reportContent) {
+          // If backend returns report content, you could display it in a modal
+          alert('Report generated successfully! Check the console for details.');
+        } else {
+          alert('Report generated successfully!');
+        }
+      } else {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.message || `Failed to generate report. Status: ${response.status}`);
+      }
+    } catch (error) {
+      console.error('Error generating report:', error);
+      setError(error.message || 'Failed to generate report. Please try again.');
+    } finally {
+      setIsGeneratingReport(false);
+    }
+  };
+
   return (
     <div className="tm-select-page">
       {isLoading && (
@@ -196,7 +261,16 @@ const TeacherMain = () => {
         </button>
       </header>
       <div className="tm-teacher-container">
-        <h2 className="tm-teacher-title">Teacher Dashboard</h2>
+        <div className="tm-header-section">
+          <h2 className="tm-teacher-title">Teacher Dashboard</h2>
+          <button 
+            className="tm-generate-report-btn"
+            onClick={generateReport}
+            disabled={isGeneratingReport}
+          >
+            {isGeneratingReport ? 'Generating Report...' : 'Generate Report'}
+          </button>
+        </div>
         {error ? (
           <p className="tm-no-students">{error}</p>
         ) : students.length === 0 ? (

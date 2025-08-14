@@ -12,35 +12,26 @@ import Teacher from './components/TeacherMain'
 import Intro from './components/Intro/Intro'
 import WrittenQuestion from './components/WrittenQuestion';
 import Learn from './components/Learn';
-
-// Theme wrapper component
-const ThemeWrapper = ({ children }) => {
-  return (
-    <div className="min-h-screen bg-white text-[#343434] antialiased">
-      {children}
-    </div>
-  );
-};
+import EmailConfirmation from './components/EmailConfirmation';
 
 function App() {
   return (
     <Router>
-      <ThemeWrapper>
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/" element={<Intro />} />
-          <Route path="/main" element={<MainPage />} />
-          <Route path="/select" element={<SelectSubject />} />
-          <Route path="/quiz" element={<Quiz />} />
-          <Route path="/ask" element={<Ask />} />
-          <Route path="/prev" element={<Prev />} />
-          <Route path="/note" element={<Note />} />
-          <Route path="/shownotes" element={<ShowNote />} />
-          <Route path="/written-question" element={<WrittenQuestion />} />
-          <Route path="/learn" element={<Learn />} />
-          <Route path="/teacher" element={<Teacher />} />
-        </Routes>
-      </ThemeWrapper>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register/confirmToken" element={<EmailConfirmation />} />
+        <Route path="/" element={<Intro />} />
+        <Route path="/main" element={<MainPage />} />
+        <Route path="/select" element={<SelectSubject />} />
+        <Route path="/quiz" element={<Quiz />} />
+        <Route path="/ask" element={<Ask />} />
+        <Route path="/prev" element={<Prev />} />
+        <Route path="/note" element={<Note />} />
+        <Route path="/shownotes" element={<ShowNote />} />
+        <Route path="/written-question" element={<WrittenQuestion />} />
+        <Route path="/learn" element={<Learn />} />
+        <Route path="/teacher" element={<Teacher />} />
+      </Routes>
     </Router>
   );
 }

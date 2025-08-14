@@ -1,36 +1,75 @@
 // API Configuration
-export const API_BASE_URL = 'http://localhost:8091';
+export const API_BASE_URL = 'http://localhost:8080';
+export const EXAM_API_BASE_URL = 'http://localhost:8080';
+export const LEARNING_API_BASE_URL = 'http://localhost:8080';
 
-// API Endpoints
+// Class and Subject Mapping for Exam API
+export const class_map = { 
+  '9': 'a', 
+  '10': 'a', 
+  '8': 'b', 
+  '7': 'c', 
+  '6': 'd' 
+};
+
+export const subject_map = { 
+  'Physics': 'a', 
+  'Chemistry': 'b', 
+  'Biology': 'c',
+  'Science': 'a',
+  'Economics': 'd',
+  'Geography': 'e',
+  'Business Entrepre.': 'f'
+};
+
+// Mapping functions
+export const mapClassForExamAPI = (className) => {
+  // Extract the number from className (e.g., "Class 9" -> "9")
+  const classNumber = className?.split(' ')[1];
+  return class_map[classNumber] || 'a'; // Default to 'a' if not found
+};
+
+export const mapSubjectForExamAPI = (subjectName) => {
+  return subject_map[subjectName] || 'a'; // Default to 'a' if not found
+};
+
+// API Endpoints - Updated to match Spring Boot backend
 export const API_ENDPOINTS = {
     // Auth endpoints
-    LOGIN: '/api/login',
-    SIGNUP: '/api/signup',
+    LOGIN: '/auth/login',
+    SIGNUP: '/auth/register',
+    CONFIRM_EMAIL: '/auth/confirm-email',
     FORGOT_PASSWORD: '/api/forgot-password',
     GOOGLE_AUTH: '/api/google-auth',
     
-    // Learning endpoints
-    LEARN: '/api/learn',
-    QUIZ: '/exam/mcq',
-    WRITTEN: '/api/written',
-    SUBMIT_WRITTEN: '/api/submit-written',
+    // Exam endpoints (using port 8091)
+    MCQ: '/exam/mcq',
+    SUBMIT_MCQ: '/exam/submit-mcq',
+    PREVIOUS_MCQ: '/exam/previous-mcq',
+    WRITTEN_QUESTION: '/exam/written',
+    SUBMIT_WRITTEN: '/exam/submit-written',
     
-    // Notes and Doubts
-    GENERATE_NOTE: '/api/notes',
-    CLEAR_DOUBT: '/api/doubts',
+    // Learning endpoints (using port 8092)
+    LEARN: '/learn/learn',
+    CLEAR_DOUBT: '/learn/doubts',
+    GENERATE_NOTE: '/learn/notes',
     
-    // Progress and Stats
+    // Profile endpoints
+    TEACHER_PROFILE: '/profile/teacher',
+    STUDENT_PROFILE: '/profile/student',
+    TEACHER_REPORT: '/profile/teacher/generate-report',
+    
+    // Legacy endpoints (keeping for backward compatibility)
+    QUIZ: '/api/quiz',
     STATS: '/api/stats',
     NEW_MISTAKES: '/api/newMistakes',
     PREV_MISTAKES: '/api/prevMistakes',
-    
-    // Teacher endpoints
     TEACHER_DASHBOARD: '/api/teacher/dashboard',
     TEACHER_API: '/api/teacher'
 };
 
 // Development Mode
-export const DEV_MODE = true;
+export const DEV_MODE = false;
 
 // App Constants
 export const APP_NAME = 'FLOW';
@@ -39,6 +78,7 @@ export const APP_VERSION = '1.0.0';
 // Local Storage Keys
 export const STORAGE_KEYS = {
     USER_ID: 'userId',
+    USERNAME: 'username',
     TOKEN: 'token',
     USER_DATA: 'userData'
 };
@@ -47,6 +87,7 @@ export const STORAGE_KEYS = {
 export const ROUTES = {
     LOGIN: '/login',
     SIGNUP: '/signup',
+    EMAIL_CONFIRMATION: '/register/confirmToken',
     FORGOT_PASSWORD: '/forgot-password',
     RESET_PASSWORD: '/reset-password',
     MAIN: '/main',

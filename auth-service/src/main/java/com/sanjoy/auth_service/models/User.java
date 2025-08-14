@@ -13,10 +13,17 @@ import java.util.List;
  * @author kumar
  * @since 6/15/2025
  */
+
+
+
 @Entity
 @Table(name = "users")
 @Data
 public class User implements UserDetails {
+
+    enum Role {
+        STUDENT, TEACHER, ADMIN
+    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -35,11 +42,17 @@ public class User implements UserDetails {
     @Column(name = "enabled")
     private boolean enabled;
 
-    public User(String username, String password, String email, boolean enabled) {
+    @Enumerated(EnumType.STRING)
+    @Column(name = "role")
+    private Role role = Role.STUDENT;
+
+
+    public User(String username, String password, String email, boolean enabled, Role role) {
         this.username = username;
         this.password = password;
         this.email = email;
         this.enabled = enabled;
+        this.role = role;
     }
 
     public User() {
@@ -47,9 +60,9 @@ public class User implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        SimpleGrantedAuthority authority = new SimpleGrantedAuthority("ROLE_USER");
-        return List.of(authority);
+        return List.of(new SimpleGrantedAuthority("ROLE_" + role.name()));
     }
+
 
     @Override
     public String getPassword() {

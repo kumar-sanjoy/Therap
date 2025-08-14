@@ -30,12 +30,12 @@ const StudentDetailsModal = ({ studentId, onClose, onFetchStudentDetails }) => {
     setIsLoading(true);
     setError('');
     try {
-      const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.TEACHER_API}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ studentId: studentIdStr }),
+      const params = new URLSearchParams({
+        studentId: studentIdStr
+      });
+      
+      const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.STUDENT_PROFILE}?${params.toString()}`, {
+        method: 'GET'
       });
 
       console.log('Response status:', response.status);
@@ -50,14 +50,15 @@ const StudentDetailsModal = ({ studentId, onClose, onFetchStudentDetails }) => {
       console.log('Fetched student details:', data);
 
       if (response.ok) {
-        if (data.report && typeof data.report === 'string') {
+        // Backend returns student data: { id, attemptCount, correctCount, last10Performance }
+        if (data && data.id) {
           console.log('Setting details:', { ...data, studentId: studentIdStr });
           setDetails({ ...data, studentId: studentIdStr }); // Store studentId for retry
         } else {
-          throw new Error('Invalid report data structure');
+          throw new Error('Invalid student data structure');
         }
       } else {
-        throw new Error(data.error || `Server responded with status ${response.status}`);
+        throw new Error(data.message || `Server responded with status ${response.status}`);
       }
     } catch (err) {
       console.error('Error fetching student details:', err);
@@ -125,8 +126,31 @@ const StudentDetailsModal = ({ studentId, onClose, onFetchStudentDetails }) => {
           </div>
         ) : details ? (
           <div className="modal-details">
-            <h2 className="modal-title">Student Report</h2>
-            <TextDisplay content={details.report} />
+            <h2 className="modal-title">Student Profile</h2>
+            <div className="student-profile-data">
+              <div className="profile-item">
+                <strong>Student ID:</strong> {details.id}
+              </div>
+              <div className="profile-item">
+                <strong>Total Attempts:</strong> {details.attemptCount}
+              </div>
+              <div className="profile-item">
+                <strong>Correct Answers:</strong> {details.correctCount}
+              </div>
+              <div className="profile-item">
+                <strong>Accuracy:</strong> {details.attemptCount > 0 ? Math.round((details.correctCount / details.attemptCount) * 100) : 0}%
+              </div>
+              <div className="profile-item">
+                <strong>Last 10 Performance:</strong>
+                <div className="performance-list">
+                  {details.last10Performance && details.last10Performance.map((result, index) => (
+                    <span key={index} className={`performance-item ${result ? 'correct' : 'incorrect'}`}>
+                      {result ? '✓' : '✗'}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
             <button className="modal-close-button" onClick={onClose}>
               Close
             </button>
