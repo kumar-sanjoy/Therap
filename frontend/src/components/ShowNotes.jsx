@@ -6,7 +6,7 @@ import { PDFDownloadLink } from '@react-pdf/renderer';
 import '../css/ShowNotes.css';
 import flowLogo from '../assets/flow-main-nobg.png';
 import flowLogoDark from '../assets/flow-dark.png';
-import { DEV_MODE, LEARNING_API_BASE_URL, API_ENDPOINTS, STORAGE_KEYS, mapClassForExamAPI, mapSubjectForExamAPI } from '../config';
+import { LEARNING_API_BASE_URL, API_ENDPOINTS, STORAGE_KEYS, mapClassForExamAPI, mapSubjectForExamAPI } from '../config';
 import { FaDownload, FaVolumeUp, FaPause, FaStop } from 'react-icons/fa';
 import { GrNotes } from "react-icons/gr";
 import NotesPDF from './NotesPDF';
@@ -25,6 +25,28 @@ const ShowNotes = () => {
   const [notes, setNotes] = useState([]);
   const [error, setError] = useState('');
   const utteranceRef = useRef(null);
+
+  // Check authentication on mount
+  useEffect(() => {
+    const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
+    const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
+    const role = localStorage.getItem(STORAGE_KEYS.ROLE);
+    
+    if (!token || !username) {
+      navigate('/login');
+      return;
+    }
+    
+    // Check if user has the correct role for this page (ShowNotes is student-only)
+    if (role !== 'STUDENT') {
+      if (role === 'TEACHER') {
+        navigate('/teacher');
+      } else {
+        navigate('/login');
+      }
+      return;
+    }
+  }, [navigate]);
 
   // Load available voices for TTS
   useEffect(() => {
@@ -65,13 +87,8 @@ const ShowNotes = () => {
     let isMounted = true; // Prevent setting state if component unmounts
     
     const fetchNotes = async () => {
-      console.log('🔍 [SHOW_NOTES DEBUG] fetchNotes called');
-      console.log('🔍 [SHOW_NOTES DEBUG] State received:', state);
-      console.log('🔍 [SHOW_NOTES DEBUG] DEV_MODE:', DEV_MODE);
-      
       // If we have notes in state, use them (this means data was already fetched in SelectSubject)
       if (state?.note && state.note.length > 0) {
-        console.log('🔍 [SHOW_NOTES DEBUG] Using notes from state, count:', state.note.length);
         if (isMounted) {
           setNotes(state.note);
           setIsLoading(false);
@@ -81,7 +98,6 @@ const ShowNotes = () => {
       
       // If skipInitialLoading is true but no notes provided, something went wrong
       if (skipInitialLoading) {
-        console.log('🔍 [SHOW_NOTES DEBUG] skipInitialLoading is true but no notes provided');
         if (isMounted) {
           setError('Notes data not found. Please try again.');
           setIsLoading(false);
@@ -95,40 +111,14 @@ const ShowNotes = () => {
         setError('');
       }
       
-      // If DEV_MODE, use mock data
-      if (DEV_MODE) {
-        console.log('🔍 [SHOW_NOTES DEBUG] Using DEV_MODE mock data - SKIPPING API CALL');
-        const mockNotes = [
-          "**Chapter 1: Motion**\n\n- Motion is the change in position of an object with respect to time.\n- Distance is the total path length covered by an object.\n- Displacement is the shortest distance between initial and final positions.\n- Speed is the rate of change of distance.\n- Velocity is the rate of change of displacement.",
-          "**গতি সম্পর্কে:**\n\n- গতি হল সময়ের সাপেক্ষে বস্তুর অবস্থানের পরিবর্তন।\n- দূরত্ব হল বস্তু দ্বারা অতিক্রান্ত মোট পথের দৈর্ঘ্য।\n- সরণ হল প্রাথমিক এবং চূড়ান্ত অবস্থানের মধ্যে সবচেয়ে ছোট দূরত্ব।\n- বেগ হল দূরত্বের পরিবর্তনের হার।\n- বেগ হল সরণের পরিবর্তনের হার।",
-          "**Key Formulas:**\n\n- Average Speed = Total Distance / Total Time\n- Average Velocity = Total Displacement / Total Time\n- Acceleration = Change in Velocity / Time",
-          "**সূত্রসমূহ:**\n\n- গড় বেগ = মোট দূরত্ব / মোট সময়\n- গড় বেগ = মোট সরণ / মোট সময়\n- ত্বরণ = বেগের পরিবর্তন / সময়",
-          "**Types of Motion:**\n\n1. Uniform Motion: Constant speed\n2. Non-uniform Motion: Variable speed\n3. Circular Motion: Motion along a circular path\n4. Oscillatory Motion: To and fro motion",
-          "**গতির প্রকারভেদ:**\n\n১. সমবেগ গতি: ধ্রুব বেগ\n২. অসমবেগ গতি: পরিবর্তনশীল বেগ\n৩. বৃত্তীয় গতি: বৃত্তাকার পথে গতি\n৪. দোলন গতি: এদিক-ওদিক গতি"
-        ];
-        if (isMounted) {
-          setNotes(mockNotes);
-          setIsLoading(false);
-        }
-        return;
-      }
-      
       // Fetch notes from API
       try {
         const className = state?.className || state?.class || 'Class 9';
         const subject = state?.subject || 'Science';
         const chapter = state?.chapter || '1';
         
-        console.log('🔍 [SHOW_NOTES DEBUG] Raw parameters:', { className, subject, chapter });
-        
         const mappedClassName = mapClassForExamAPI(className);
         const mappedSubject = mapSubjectForExamAPI(subject);
-        
-        console.log('🔍 [SHOW_NOTES DEBUG] Mapped parameters:', { 
-          className: mappedClassName, 
-          subject: mappedSubject, 
-          chapter 
-        });
         
         const params = new URLSearchParams({
           className: mappedClassName,
@@ -137,11 +127,7 @@ const ShowNotes = () => {
         });
 
         const apiUrl = `${LEARNING_API_BASE_URL}${API_ENDPOINTS.GENERATE_NOTE}?${params.toString()}`;
-        console.log('🔍 [SHOW_NOTES DEBUG] API URL:', apiUrl);
-        console.log('🔍 [SHOW_NOTES DEBUG] LEARNING_API_BASE_URL:', LEARNING_API_BASE_URL);
-        console.log('🔍 [SHOW_NOTES DEBUG] API_ENDPOINTS.GENERATE_NOTE:', API_ENDPOINTS.GENERATE_NOTE);
-
-        console.log('🔍 [SHOW_NOTES DEBUG] Making API call to:', apiUrl);
+        
         const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
         const response = await fetch(apiUrl, {
           method: 'GET',
@@ -151,96 +137,82 @@ const ShowNotes = () => {
           }
         });
 
-        console.log('🔍 [SHOW_NOTES DEBUG] Response status:', response.status);
-        console.log('🔍 [SHOW_NOTES DEBUG] Response ok:', response.ok);
-        console.log('🔍 [SHOW_NOTES DEBUG] Response headers:', Object.fromEntries(response.headers.entries()));
-
         if (response.ok) {
           const data = await response.json();
-          console.log('🔍 [SHOW_NOTES DEBUG] Response data:', data);
-          console.log('🔍 [SHOW_NOTES DEBUG] Response data type:', typeof data);
-          console.log('🔍 [SHOW_NOTES DEBUG] Is data an object?', typeof data === 'object' && data !== null);
           
           if (!isMounted) return; // Don't set state if component unmounted
           
           // Check for note array in the response (API sends under 'note' field)
-          console.log('🔍 [SHOW_NOTES DEBUG] Checking data.note:', data.note);
-          console.log('🔍 [SHOW_NOTES DEBUG] data.note type:', typeof data.note);
-          console.log('🔍 [SHOW_NOTES DEBUG] Is data.note an array?', Array.isArray(data.note));
-          console.log('🔍 [SHOW_NOTES DEBUG] data.note length:', data.note ? data.note.length : 'undefined');
-          console.log('🔍 [SHOW_NOTES DEBUG] data.note value:', JSON.stringify(data.note, null, 2));
-          
           if (data.note && Array.isArray(data.note)) {
-            console.log('🔍 [SHOW_NOTES DEBUG] Note array found, length:', data.note.length);
-            console.log('🔍 [SHOW_NOTES DEBUG] First note item:', data.note[0]);
             if (isMounted) {
               setNotes(data.note);
               setIsLoading(false);
             }
           } else if (data.note && typeof data.note === 'string') {
             // Handle case where note might be a single string
-            console.log('🔍 [SHOW_NOTES DEBUG] Note string found, converting to array');
             if (isMounted) {
               setNotes([data.note]);
               setIsLoading(false);
             }
           } else if (data.note && typeof data.note === 'object' && data.note !== null) {
             // Handle case where note might be an object that needs to be converted
-            console.log('🔍 [SHOW_NOTES DEBUG] Note object found, attempting to convert');
             try {
-              const noteArray = Object.values(data.note);
-              console.log('🔍 [SHOW_NOTES DEBUG] Converted note array:', noteArray);
-              if (isMounted) {
-                setNotes(noteArray);
-                setIsLoading(false);
+              // Handle the specific format {"note ": " ............ " }
+              if (data.note.hasOwnProperty('note ')) {
+                const noteValue = data.note['note '];
+                if (isMounted) {
+                  setNotes([noteValue]);
+                  setIsLoading(false);
+                }
+              } else {
+                // Fallback to Object.values for other object formats
+                const noteArray = Object.values(data.note);
+                if (isMounted) {
+                  setNotes(noteArray);
+                  setIsLoading(false);
+                }
               }
             } catch (error) {
-              console.error('🔍 [SHOW_NOTES DEBUG] Error converting note object:', error);
+              console.error('Error converting note object:', error);
               if (isMounted) {
                 setError('Invalid notes format received from server.');
                 setIsLoading(false);
               }
             }
           } else if (data.notes && Array.isArray(data.notes)) {
-            console.log('🔍 [SHOW_NOTES DEBUG] Notes array found, length:', data.notes.length);
             if (isMounted) {
               setNotes(data.notes);
               setIsLoading(false);
             }
           } else if (data.lesson && Array.isArray(data.lesson)) {
-            console.log('🔍 [SHOW_NOTES DEBUG] Lesson array found, length:', data.lesson.length);
             if (isMounted) {
               setNotes(data.lesson);
               setIsLoading(false);
             }
           } else if (data.content && Array.isArray(data.content)) {
-            console.log('🔍 [SHOW_NOTES DEBUG] Content array found, length:', data.content.length);
             if (isMounted) {
               setNotes(data.content);
               setIsLoading(false);
             }
           } else {
-            console.log('🔍 [SHOW_NOTES DEBUG] No note array found in response');
-            console.log('🔍 [SHOW_NOTES DEBUG] Available keys in data:', Object.keys(data));
-            console.log('🔍 [SHOW_NOTES DEBUG] Full response structure:', JSON.stringify(data, null, 2));
             if (isMounted) {
               setError('No notes available for this chapter. Please try a different chapter or subject.');
               setIsLoading(false);
             }
           }
         } else {
-          console.error('🔍 [SHOW_NOTES DEBUG] Failed to fetch notes, status:', response.status);
+          console.error('Failed to fetch notes, status:', response.status);
           const errorText = await response.text();
-          console.error('🔍 [SHOW_NOTES DEBUG] Error response body:', errorText);
+          console.error('Error response body:', errorText);
           if (isMounted) {
             setError('Failed to fetch notes. Please try again.');
             setIsLoading(false);
           }
         }
       } catch (error) {
-        console.error('🔍 [SHOW_NOTES DEBUG] Error fetching notes:', error);
-        console.error('🔍 [SHOW_NOTES DEBUG] Error name:', error.name);
-        console.error('🔍 [SHOW_NOTES DEBUG] Error message:', error.message);
+        console.error('Error fetching notes:', error);
+        console.error('Error name:', error.name);
+        console.error('Error message:', error.message);
         if (isMounted) {
           setError('Unable to connect to server. Please check your connection and try again.');
           setIsLoading(false);
@@ -419,7 +391,11 @@ const ShowNotes = () => {
                 <PDFDownloadLink
                   document={<NotesPDF title={dynamicTitle} notes={notes} />}
                   fileName={`${dynamicTitle.replace(/[^a-zA-Z0-9\u0980-\u09FF\s]/g, '_').replace(/\s+/g, '_')}_notes.pdf`}
-                  className="flex items-center gap-2 px-4 py-2 bg-[#343434] hover:bg-gray-800 text-white rounded-lg font-medium shadow-sm transition-all border border-gray-700 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium shadow-sm transition-all border disabled:opacity-50 disabled:cursor-not-allowed ${
+                      isDarkMode 
+                          ? 'bg-white hover:bg-gray-100 text-gray-900 border-gray-300' 
+                          : 'bg-[#343434] hover:bg-gray-800 text-white border-gray-700'
+                  }`}
                 >
                   {({ loading }) => (
                     <>
@@ -465,7 +441,11 @@ const ShowNotes = () => {
               </select>
               
               <button
-                className="flex items-center gap-2 px-4 py-2 bg-[#343434] hover:bg-gray-800 text-white rounded-lg font-medium shadow-sm transition-all border border-gray-700 disabled:opacity-50 disabled:cursor-not-allowed"
+                className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium shadow-sm transition-all border disabled:opacity-50 disabled:cursor-not-allowed ${
+                    isDarkMode 
+                        ? 'bg-white hover:bg-gray-100 text-gray-900 border-gray-300' 
+                        : 'bg-[#343434] hover:bg-gray-800 text-white border-gray-700'
+                }`}
                 onClick={speakNotes}
                 disabled={notes.length === 0 || (isSpeaking && !isPaused)}
                 aria-label={isPaused ? 'Resume text-to-speech' : 'Start text-to-speech'}

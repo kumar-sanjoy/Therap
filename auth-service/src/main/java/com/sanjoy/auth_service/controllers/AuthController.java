@@ -3,6 +3,8 @@ package com.sanjoy.auth_service.controllers;
 import com.sanjoy.auth_service.service.CustomUserDetailsService;
 import com.sanjoy.auth_service.security.JwtUtil;
 import com.sanjoy.auth_service.models.User;
+import com.sanjoy.auth_service.service.PracticeStreakService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -23,6 +25,9 @@ import java.util.Map;
 @RestController
 @RequestMapping("/auth")
 public class AuthController {
+
+    @Autowired
+    PracticeStreakService practiceStreakService;
 
     private final CustomUserDetailsService userDetailsService;
     private final AuthenticationManager authenticationManager; // Added for login
@@ -89,9 +94,11 @@ public class AuthController {
             }
 
             Map<String, Object> response = new HashMap<>();
-            response.put("token", jwt);
+            response.put("jwt", jwt);
             response.put("username", userDetails.getUsername());
             response.put("role", user.getRole());
+            int currentStreak = practiceStreakService.getCurrentStreak(user.getUsername());
+            response.put("streak", currentStreak);
             System.out.println(response);
 
             return ResponseEntity.ok(response);

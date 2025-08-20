@@ -1,89 +1,43 @@
-import React, { useState, Suspense, lazy } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { GoogleOAuthProvider } from '@react-oauth/google';
-import { jwtDecode } from 'jwt-decode';
 import { FaGoogle } from 'react-icons/fa';
-import { API_BASE_URL, API_ENDPOINTS, STORAGE_KEYS, DEV_MODE } from '../config';
-import { useDarkTheme } from './DarkThemeProvider';
-
-// Dynamically import GoogleLogin to ensure client-side rendering only, preventing flicker
-const GoogleLogin = lazy(() => import('@react-oauth/google').then(mod => ({ default: mod.GoogleLogin })));
-
-// Mock backend status (unchanged)
-const isBackendOnline = true;
-
-// Updated GoogleLoginWrapper using Suspense for lazy loading
-const GoogleLoginWrapper = ({ onSuccess, onError, isSignUp }) => {
-  return (
-    // Suspense handles the loading state while GoogleLogin loads
-    <Suspense fallback={<div className="w-full h-[40px] bg-white border border-gray-300 rounded-lg flex items-center justify-center text-gray-600 text-sm font-semibold">Loading...</div>}>
-      <GoogleLogin
-        onSuccess={onSuccess}
-        onError={onError}
-        useOneTap
-        theme="outline"
-        shape="rectangular"
-        text={isSignUp ? "signup_with" : "signin_with"}
-        width="100%"
-      />
-    </Suspense>
-  );
-};
-
-const CustomGoogleButton = ({ onSuccess, onError, isSignUp }) => {
-  const handleClick = () => {
-    // @ts-ignore
-    if (window.google && window.google.accounts) {
-      // @ts-ignore
-      window.google.accounts.id.initialize({
-        client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID,
-        callback: onSuccess,
-      });
-      // @ts-ignore
-      window.google.accounts.id.prompt();
-    } else {
-      onError();
-    }
-  };
-
-  return (
-    <button
-      type="button"
-      onClick={handleClick}
-      className="w-full flex items-center justify-center gap-2 px-4 py-2 border border-gray-300 rounded-lg bg-white text-sm font-semibold transition-all duration-300 hover:shadow-md hover:scale-[1.02] hover:bg-gray-50"
-    >
-      <FaGoogle className="text-[#4285F4]" />
-      {isSignUp ? 'Sign up with Google' : 'Sign in with Google'}
-    </button>
-  );
-};
+import { GoogleOAuthProvider } from '@react-oauth/google';
+import { API_BASE_URL, API_ENDPOINTS, STORAGE_KEYS } from '../config';
 
 const Login = () => {
   const [isRightPanelActive, setIsRightPanelActive] = useState(false);
   const [loginData, setLoginData] = useState({ username: '', password: '' });
   const [signUpData, setSignUpData] = useState({ name: '', email: '', password: '' });
-  const [userRole, setUserRole] = useState('student');
+  const [userRole, setUserRole] = useState('STUDENT');
   const [showForgotPassword, setShowForgotPassword] = useState(false);
   const [forgotPasswordEmail, setForgotPasswordEmail] = useState('');
   const navigate = useNavigate();
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const { isDarkMode } = useDarkTheme();
 
   // Custom Google button (unchanged)
   const GoogleAuthButton = ({ isSignUp, userRole, onClick }) => {
     return (
       <button
         type="button"
-        className={`group flex items-center justify-center gap-2 px-4 py-2 w-full border border-gray-300 rounded-lg bg-white text-sm font-semibold transition-all duration-300 hover:shadow-md hover:scale-[1.02] ${
-          userRole === 'teacher' ? 'hover:bg-[#1E90FF]/10' : 'hover:bg-[#FF4B2B]/10'
+        className={`group flex items-center justify-center gap-3 px-4 py-3 w-full border border-gray-300 rounded-lg bg-white text-sm font-semibold transition-all duration-300 hover:shadow-md hover:scale-[1.02] text-gray-700 hover:bg-gray-50 ${
+          userRole === 'TEACHER' ? 'hover:border-indigo-300' : 'hover:border-emerald-300'
         }`}
         onClick={onClick}
       >
-        <FaGoogle className="text-gray-600 group-hover:text-[#4285F4]" />
-        {isSignUp ? 'Sign up with Google' : 'Sign in with Google'}
+        <FaGoogle className="text-gray-600 group-hover:text-[#4285F4] text-lg" />
+        <span>{isSignUp ? 'Sign up with Google' : 'Sign in with Google'}</span>
       </button>
     );
+  };
+
+  // Helper function to check if form is valid
+  const isSignUpFormValid = () => {
+    return signUpData.name.trim() && signUpData.email.trim() && signUpData.password.trim();
+  };
+
+  const isLoginFormValid = () => {
+    return loginData.username.trim() && loginData.password.trim();
   };
 
   const handleInputChange = (e) => {
@@ -99,41 +53,14 @@ const Login = () => {
     setError('');
     setIsLoading(true);
 
-    // If DEV_MODE is enabled, use mock authentication
-    if (DEV_MODE) {
-      console.log('🔍 [LOGIN DEBUG] DEV_MODE enabled - using mock authentication');
-      
-      // Simulate API delay
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      // Mock successful login response
-      const mockUserData = {
-        id: loginData.username,
-        username: loginData.username,
-        jwt: 'mock-jwt-token-' + Date.now(),
-        role: userRole
-      };
-      
-      // Store user data in localStorage
-      localStorage.setItem(STORAGE_KEYS.USER_ID, mockUserData.id);
-      localStorage.setItem(STORAGE_KEYS.USERNAME, mockUserData.username);
-      localStorage.setItem(STORAGE_KEYS.TOKEN, mockUserData.jwt);
-      localStorage.setItem(STORAGE_KEYS.ROLE, userRole);
-      
-      console.log('🔍 [LOGIN DEBUG] Mock login successful, navigating to:', userRole === 'student' ? '/main' : '/teacher');
-      
-      // Navigate based on user role
-      navigate(userRole === 'student' ? '/main' : '/teacher');
-      setIsLoading(false);
-      return;
-    }
-
     const fullUrl = `${API_BASE_URL}${API_ENDPOINTS.LOGIN}`;
-    console.log('🔍 Current API_BASE_URL:', API_BASE_URL);
-    console.log('🔍 Login endpoint:', API_ENDPOINTS.LOGIN);
-    console.log('🔍 Full URL being called:', fullUrl);
-    console.log('🔍 Frontend Origin:', window.location.origin);
-    console.log('🔍 Request data:', { username: loginData.username, password: loginData.password });
+
+    // Debug: Log the login request data
+    console.log('🔍 [LOGIN DEBUG] Login request:', {
+      username: loginData.username,
+      role: userRole,
+      endpoint: fullUrl
+    });
 
     try {
       const response = await fetch(fullUrl, {
@@ -145,55 +72,46 @@ const Login = () => {
         },
         mode: 'cors',
         credentials: 'include',
-        body: JSON.stringify({ username: loginData.username, password: loginData.password }),
+        body: JSON.stringify({ 
+          username: loginData.username, 
+          password: loginData.password,
+          role: userRole 
+        }),
       });
-
-      console.log('🔍 Response status:', response.status);
-      console.log('🔍 Response headers:', Object.fromEntries(response.headers.entries()));
 
       if (!response.ok) {
         if (response.status === 403) {
           setError('CORS Error: Backend is blocking the request. Please check backend CORS configuration.');
-          console.error('CORS Error - Status 403: Backend is rejecting the preflight request');
           return;
         }
-        if (response.status === 0) {
-          setError('Network Error: Cannot connect to backend. Please check if the server is running.');
-          console.error('Network Error - Status 0: Cannot connect to backend');
-          return;
-        }
-        if (response.status === 401) {
-          setError('Invalid username or password. Please check your credentials and try again.');
-          console.error('Authentication Error - Status 401: Invalid credentials');
-          return;
-        }
-      }
-
-      let data;
-      try {
-        data = await response.json();
-        console.log('🔍 Response data:', data);
-      } catch (jsonError) {
-        console.error('🔍 JSON parse error:', jsonError);
-        if (response.status === 401) {
-          setError('Invalid username or password. Please check your credentials and try again.');
-        } else {
-          setError('Server returned an invalid response. Please try again.');
-        }
+        
+        const errorData = await response.json();
+        setError(errorData.message || 'Login failed');
         return;
       }
 
-      if (response.ok) {
-        localStorage.setItem(STORAGE_KEYS.USER_ID, data.id || data.userId || data.username);
-        localStorage.setItem(STORAGE_KEYS.USERNAME, data.username || loginData.username);
-        localStorage.setItem(STORAGE_KEYS.TOKEN, data.jwt || data.token);
-        localStorage.setItem(STORAGE_KEYS.ROLE, userRole);
-        navigate(userRole === 'student' ? '/main' : '/teacher');
-      } else {
-        setError(data.message || 'Login failed');
-      }
+      const data = await response.json();
+
+      // Debug: Log the login response data
+      console.log('🔍 [LOGIN DEBUG] Login response:', {
+        id: data.id,
+        username: data.username,
+        role: data.role,
+        normalizedRole: data.role ? data.role.toUpperCase() : 'STUDENT'
+      });
+
+      // Store user data in localStorage
+      localStorage.setItem(STORAGE_KEYS.USER_ID, data.id);
+      localStorage.setItem(STORAGE_KEYS.USERNAME, data.username);
+      localStorage.setItem(STORAGE_KEYS.TOKEN, data.jwt);
+      // Normalize role to uppercase for consistency
+      const normalizedRole = data.role ? data.role.toUpperCase() : 'STUDENT';
+      localStorage.setItem(STORAGE_KEYS.ROLE, normalizedRole);
+
+      // Navigate based on user role
+      navigate(normalizedRole === 'STUDENT' ? '/main' : '/teacher');
     } catch (err) {
-      console.error('🔍 Fetch error:', err);
+      console.error('Login error:', err);
       if (err.name === 'TypeError' && err.message.includes('Failed to fetch')) {
         setError('Network Error: Cannot connect to backend server. Please check if the server is running at ' + API_BASE_URL);
       } else {
@@ -208,21 +126,6 @@ const Login = () => {
     e.preventDefault();
     setError('');
     setIsLoading(true);
-
-    // If DEV_MODE is enabled, use mock signup
-    if (DEV_MODE) {
-      console.log('🔍 [SIGNUP DEBUG] DEV_MODE enabled - using mock signup');
-      
-      // Simulate API delay
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      console.log('🔍 [SIGNUP DEBUG] Mock signup successful');
-      setError('Account created successfully! Please check your email and click the confirmation link to activate your account.');
-      // Slide to sign-in panel instead of navigating
-      setIsRightPanelActive(false);
-      setIsLoading(false);
-      return;
-    }
 
     try {
       const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.SIGNUP}`, {
@@ -242,8 +145,6 @@ const Login = () => {
         }),
       });
 
-      console.log('🔍 Signup Response status:', response.status);
-
       if (!response.ok) {
         if (response.status === 403) {
           setError('CORS Error: Backend is blocking the request. Please check backend CORS configuration.');
@@ -261,7 +162,7 @@ const Login = () => {
         setError(data.message || 'Signup failed');
       }
     } catch (err) {
-      console.error('🔍 Signup error:', err);
+      console.error('Signup error:', err);
       if (err.name === 'TypeError' && err.message.includes('Failed to fetch')) {
         setError('Network Error: Cannot connect to backend server. Please check if the server is running at ' + API_BASE_URL);
       } else {
@@ -276,21 +177,6 @@ const Login = () => {
     e.preventDefault();
     setError('');
     setIsLoading(true);
-
-    // If DEV_MODE is enabled, use mock forgot password
-    if (DEV_MODE) {
-      console.log('🔍 [FORGOT_PASSWORD DEBUG] DEV_MODE enabled - using mock forgot password');
-      
-      // Simulate API delay
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      console.log('🔍 [FORGOT_PASSWORD DEBUG] Mock forgot password successful');
-      setError('Password reset instructions sent to your email');
-      setShowForgotPassword(false);
-      setForgotPasswordEmail('');
-      setIsLoading(false);
-      return;
-    }
 
     try {
       const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.FORGOT_PASSWORD}`, {
@@ -320,13 +206,6 @@ const Login = () => {
   };
 
   const handleGoogleAuth = async () => {
-    // If DEV_MODE is enabled, use mock Google auth
-    if (DEV_MODE) {
-      console.log('🔍 [GOOGLE_AUTH DEBUG] DEV_MODE enabled - using mock Google authentication');
-      setError('Google authentication is not available in development mode. Please use regular login.');
-      return;
-    }
-
     try {
       const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.GOOGLE_AUTH}`, {
         method: 'GET',
@@ -351,27 +230,47 @@ const Login = () => {
 
   return (
     <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID || ''}>
-      <div className="flex justify-center items-center flex-col min-h-screen m-[-20px_0_50px] font-sans bg-gray-100 dark:bg-gray-900">
+      <div className="flex justify-center items-center flex-col min-h-screen m-[-20px_0_50px] font-sans bg-gray-100 login-container">
+        {/* Force light theme styles for Login component */}
+        <style>{`
+          .login-container input {
+            background-color: white !important;
+            color: black !important;
+            border-color: #d1d5db !important;
+          }
+          .login-container input::placeholder {
+            color: #6b7280 !important;
+          }
+          .login-container input:focus {
+            background-color: white !important;
+            color: black !important;
+            border-color: #3b82f6 !important;
+          }
+          .login-container input:hover {
+            background-color: #f9fafb !important;
+          }
+        `}</style>
+        
         {/* Role Toggle */}
-        <div className="relative flex gap-4 mb-8 rounded-lg p-1 shadow-inner bg-gray-200 dark:bg-gray-700">
+        <div className="relative flex gap-4 mb-8 rounded-lg p-1 shadow-inner bg-gray-200">
           <div
             className={`absolute top-1 bottom-1 left-1 w-1/2 rounded-lg transition-all duration-300 ease-out ${
-              userRole === 'student' ? 'bg-gradient-to-r from-emerald-500 to-emerald-600 transform translate-x-0' : 'bg-gradient-to-r from-indigo-500 to-indigo-600 transform translate-x-full'
+              userRole === 'STUDENT' ? 'bg-gradient-to-r from-emerald-500 to-emerald-600 transform translate-x-0' : 'bg-gradient-to-r from-indigo-500 to-indigo-600 transform translate-x-full'
             }`}
           ></div>
           <button
             className={`relative z-10 px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 ${
-              userRole === 'student' ? 'text-white' : isDarkMode ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-gray-900'
+              userRole === 'STUDENT' ? 'text-white' : 'text-gray-700 hover:text-gray-900'
             }`}
-            onClick={() => setUserRole('student')}
+            onClick={() => setUserRole('STUDENT')}
           >
             Student
           </button>
           <button
             className={`relative z-10 px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 ${
-              userRole === 'teacher' ? 'text-white' : isDarkMode ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-gray-900'
+              userRole === 'TEACHER' ? 'text-white' : 'text-gray-700 hover:text-gray-900'
             }`}
-            onClick={() => setUserRole('teacher')}
+            onClick={() => setUserRole('TEACHER')}
           >
             Teacher
           </button>
@@ -379,10 +278,8 @@ const Login = () => {
 
         {/* Main Container */}
         <div
-          className={`relative rounded-xl shadow-[0_14px_28px_rgba(0,0,0,0.25),0_10px_10px_rgba(0,0,0,0.22)] w-full max-w-4xl min-h-[480px] overflow-hidden transition-all duration-300 ${
-            isDarkMode ? 'bg-gray-800' : 'bg-white'
-          } ${
-            userRole === 'teacher' ? 'shadow-[0_14px_28px_rgba(0,100,0,0.25),0_10px_10px_rgba(0,80,0,0.22)]' : ''
+          className={`relative rounded-xl shadow-[0_14px_28px_rgba(0,0,0,0.25),0_10px_10px_rgba(0,0,0,0.22)] w-full max-w-4xl min-h-[480px] overflow-hidden transition-all duration-300 bg-white ${
+            userRole === 'TEACHER' ? 'shadow-[0_14px_28px_rgba(0,100,0,0.25),0_10px_10px_rgba(0,80,0,0.22)]' : ''
           } ${isRightPanelActive ? 'right-panel-active' : ''}`}
         >
           {/* Sign Up Form */}
@@ -391,67 +288,82 @@ const Login = () => {
               isRightPanelActive ? 'opacity-100 z-[5] translate-x-full' : 'opacity-0 z-[1]'
             }`}
           >
-            <form onSubmit={handleSignUp} className={`flex flex-col items-center justify-center h-full px-12 text-center ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
-              <h1 className={`font-bold mb-4 text-3xl ${isDarkMode ? 'text-white' : 'text-black'}`}>Create Account</h1>
-              <div className="my-5">
-                <CustomGoogleButton
+            <form onSubmit={handleSignUp} className="flex flex-col items-center justify-center h-full px-12 text-center bg-white">
+              <h1 className="font-bold mb-6 text-3xl text-black">Create Account</h1>
+              
+              {/* Error Display */}
+              {error && (
+                <div className="w-full mb-6 p-3 bg-red-100 border border-red-300 rounded-lg">
+                  <p className="text-red-700 text-sm">{error}</p>
+                </div>
+              )}
+              
+              <div className="w-full mb-6">
+                <GoogleAuthButton
                   onSuccess={handleGoogleAuth}
                   onError={() => setError('Google authentication failed')}
                   isSignUp={true}
+                  userRole={userRole}
+                  onClick={handleGoogleAuth}
                 />
               </div>
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                className={`border-none p-3 my-2 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 focus:shadow-sm ${
-                  isDarkMode 
-                    ? 'bg-gray-700 text-white placeholder-gray-400 hover:bg-gray-600 focus:bg-gray-600' 
-                    : 'bg-gray-100 text-black placeholder-gray-500 hover:bg-gray-50 focus:bg-white'
-                } ${
-                  userRole === 'teacher' ? 'focus:ring-indigo-500' : 'focus:ring-emerald-500'
-                }`}
-                value={signUpData.name}
-                onChange={handleSignUpInputChange}
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                className={`border-none p-3 my-2 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 focus:shadow-sm ${
-                  isDarkMode 
-                    ? 'bg-gray-700 text-white placeholder-gray-400 hover:bg-gray-600 focus:bg-gray-600' 
-                    : 'bg-gray-100 text-black placeholder-gray-500 hover:bg-gray-50 focus:bg-white'
-                } ${
-                  userRole === 'teacher' ? 'focus:ring-indigo-500' : 'focus:ring-emerald-500'
-                }`}
-                value={signUpData.email}
-                onChange={handleSignUpInputChange}
-                required
-              />
-              <input
-                type="password"
-                name="password"
-                placeholder="Password"
-                className={`border-none p-3 my-2 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 focus:shadow-sm ${
-                  isDarkMode 
-                    ? 'bg-gray-700 text-white placeholder-gray-400 hover:bg-gray-600 focus:bg-gray-600' 
-                    : 'bg-gray-100 text-black placeholder-gray-500 hover:bg-gray-50 focus:bg-white'
-                } ${
-                  userRole === 'teacher' ? 'focus:ring-indigo-500' : 'focus:ring-emerald-500'
-                }`}
-                value={signUpData.password}
-                onChange={handleSignUpInputChange}
-                required
-              />
+              
+              <div className="w-full space-y-4">
+                <div>
+                  <label htmlFor="name" className="sr-only">Name</label>
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    className={`w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 focus:shadow-sm bg-white text-black placeholder-gray-500 hover:bg-gray-50 focus:bg-white !bg-white !text-black ${
+                      userRole === 'TEACHER' ? 'focus:ring-indigo-500 focus:border-indigo-500' : 'focus:ring-emerald-500 focus:border-emerald-500'
+                    }`}
+                    value={signUpData.name}
+                    onChange={handleSignUpInputChange}
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="sr-only">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    className={`w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 focus:shadow-sm bg-white text-black placeholder-gray-500 hover:bg-gray-50 focus:bg-white !bg-white !text-black ${
+                      userRole === 'TEACHER' ? 'focus:ring-indigo-500 focus:border-indigo-500' : 'focus:ring-emerald-500 focus:border-emerald-500'
+                    }`}
+                    value={signUpData.email}
+                    onChange={handleSignUpInputChange}
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="password" className="sr-only">Password</label>
+                  <input
+                    id="password"
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    className={`w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 focus:shadow-sm bg-white text-black placeholder-gray-500 hover:bg-gray-50 focus:bg-white !bg-white !text-black ${
+                      userRole === 'TEACHER' ? 'focus:ring-indigo-500 focus:border-indigo-500' : 'focus:ring-emerald-500 focus:border-emerald-500'
+                    }`}
+                    value={signUpData.password}
+                    onChange={handleSignUpInputChange}
+                    required
+                  />
+                </div>
+              </div>
+              
               <button
                 type="submit"
-                className={`rounded-3xl border px-12 py-3 my-3 text-white font-bold text-base uppercase tracking-wider transition-all duration-300 hover:shadow-lg hover:brightness-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
-                  userRole === 'teacher' ? 'border-indigo-500 bg-indigo-500 focus:ring-indigo-500' : 'border-emerald-500 bg-emerald-500 focus:ring-emerald-500'
+                disabled={isLoading || !isSignUpFormValid()}
+                className={`w-full mt-6 rounded-3xl border px-12 py-3 text-white font-bold text-base uppercase tracking-wider transition-all duration-300 hover:shadow-lg hover:brightness-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed ${
+                  userRole === 'TEACHER' ? 'border-indigo-500 bg-indigo-500 focus:ring-indigo-500' : 'border-emerald-500 bg-emerald-500 focus:ring-emerald-500'
                 }`}
               >
-                Sign Up
+                {isLoading ? 'Signing Up...' : 'Sign Up'}
               </button>
             </form>
           </div>
@@ -461,53 +373,77 @@ const Login = () => {
             className={`absolute top-0 h-full transition-all duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] w-1/2 left-0 z-[2] ${isRightPanelActive ? 'translate-x-full' : ''}`}
           >
             <form onSubmit={handleLogin} className="bg-white flex flex-col items-center justify-center h-full px-12 text-center">
-              <h1 className="font-bold mb-4 text-3xl">Sign in</h1>
-              <div className="my-5">
-                <CustomGoogleButton
+              <h1 className="font-bold mb-6 text-3xl text-black">Sign in</h1>
+              
+              {/* Error Display */}
+              {error && (
+                <div className="w-full mb-6 p-3 bg-red-100 border border-red-300 rounded-lg">
+                  <p className="text-red-700 text-sm">{error}</p>
+                </div>
+              )}
+
+              <div className="w-full mb-6">
+                <GoogleAuthButton
                   onSuccess={handleGoogleAuth}
                   onError={() => setError('Google authentication failed')}
                   isSignUp={false}
+                  userRole={userRole}
+                  onClick={handleGoogleAuth}
                 />
               </div>
-              <input
-                type="text"
-                name="username"
-                placeholder="Username"
-                className={`bg-gray-100 border-none p-3 my-2 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 hover:bg-gray-50 focus:bg-white focus:shadow-sm ${
-                  userRole === 'teacher' ? 'focus:ring-indigo-500' : 'focus:ring-emerald-500'
-                }`}
-                value={loginData.username}
-                onChange={handleInputChange}
-                required
-              />
-              <input
-                type="password"
-                name="password"
-                placeholder="Password"
-                className={`bg-gray-100 border-none p-3 my-2 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 hover:bg-gray-50 focus:bg-white focus:shadow-sm ${
-                  userRole === 'teacher' ? 'focus:ring-indigo-500' : 'focus:ring-emerald-500'
-                }`}
-                value={loginData.password}
-                onChange={handleInputChange}
-                required
-              />
+              
+              <div className="w-full space-y-4">
+                <div>
+                  <label htmlFor="username" className="sr-only">Username</label>
+                  <input
+                    id="username"
+                    type="text"
+                    name="username"
+                    placeholder="Username"
+                    className={`w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 hover:bg-gray-50 focus:bg-white focus:shadow-sm text-black !bg-white !text-black ${
+                      userRole === 'TEACHER' ? 'focus:ring-indigo-500 focus:border-indigo-500' : 'focus:ring-emerald-500 focus:border-emerald-500'
+                    }`}
+                    value={loginData.username}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="login-password" className="sr-only">Password</label>
+                  <input
+                    id="login-password"
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    className={`w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 hover:bg-gray-50 focus:bg-white focus:shadow-sm text-black !bg-white !text-black ${
+                      userRole === 'TEACHER' ? 'focus:ring-indigo-500 focus:border-indigo-500' : 'focus:ring-emerald-500 focus:border-emerald-500'
+                    }`}
+                    value={loginData.password}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </div>
+              </div>
+              
               <a
                 href="#"
                 onClick={(e) => {
                   e.preventDefault();
                   setShowForgotPassword(true);
                 }}
-                className="text-gray-600 text-sm my-3 hover:text-gray-900 hover:underline hover:scale-105 transition-all duration-300 ease-out"
+                className="text-gray-600 text-sm mt-4 hover:text-gray-900 hover:underline hover:scale-105 transition-all duration-300 ease-out"
               >
                 Forgot your password?
               </a>
+              
               <button
                 type="submit"
-                className={`rounded-3xl border px-12 py-3 my-3 text-white font-bold text-base uppercase tracking-wider transition-all duration-300 hover:shadow-lg hover:brightness-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
-                  userRole === 'teacher' ? 'border-indigo-500 bg-indigo-500 focus:ring-indigo-500' : 'border-emerald-500 bg-emerald-500 focus:ring-emerald-500'
+                disabled={isLoading || !isLoginFormValid()}
+                className={`w-full mt-6 rounded-3xl border px-12 py-3 text-white font-bold text-base uppercase tracking-wider transition-all duration-300 hover:shadow-lg hover:brightness-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed ${
+                  userRole === 'TEACHER' ? 'border-indigo-500 bg-indigo-500 focus:ring-indigo-500' : 'border-emerald-500 bg-emerald-500 focus:ring-emerald-500'
                 }`}
               >
-                Sign In
+                {isLoading ? 'Signing In...' : 'Sign In'}
               </button>
             </form>
           </div>
@@ -516,7 +452,7 @@ const Login = () => {
           <div className={`absolute top-0 left-1/2 w-1/2 h-full overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] z-[100] ${isRightPanelActive ? '-translate-x-full' : ''}`}>
             <div
               className={`relative -left-full h-full w-[200%] text-white transition-all duration-500 ease-[cubic-bezier(0.65,0,0.35,1)] ${
-                userRole === 'teacher' ? 'bg-gradient-to-r from-indigo-500 to-indigo-600' : 'bg-gradient-to-r from-emerald-500 to-emerald-600'
+                userRole === 'TEACHER' ? 'bg-gradient-to-r from-indigo-500 to-indigo-600' : 'bg-gradient-to-r from-emerald-500 to-emerald-600'
               } ${isRightPanelActive ? 'translate-x-1/2' : ''}`}
             >
               <div
@@ -542,10 +478,10 @@ const Login = () => {
                 }`}
               >
                 <h1 className="font-bold mb-4 text-3xl">
-                  {userRole === 'teacher' ? 'Hello, Teacher!' : 'Hello, Friend!'}
+                  {userRole === 'TEACHER' ? 'Hello, Teacher!' : 'Hello, Friend!'}
                 </h1>
                 <p className="text-sm font-normal leading-5 tracking-wider my-5">
-                  {userRole === 'teacher' 
+                  {userRole === 'TEACHER' 
                     ? 'Join our platform to transform your teaching experience with AI-powered tools'
                     : 'Enter your personal details and start journey with us'
                   }
@@ -564,17 +500,19 @@ const Login = () => {
           {showForgotPassword && (
             <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[1000]">
               <div className="bg-white rounded-lg p-8 max-w-md w-full mx-4 relative">
-                <h2 className="text-2xl font-bold mb-4">Reset Password</h2>
+                <h2 className="text-2xl font-bold mb-4 text-black">Reset Password</h2>
                 <p className="text-gray-600 mb-4">
                   Enter your email address and we'll send you instructions to reset your password.
                 </p>
                 <form onSubmit={handleForgotPassword}>
+                  <label htmlFor="forgot-email" className="sr-only">Email</label>
                   <input
+                    id="forgot-email"
                     type="email"
                     value={forgotPasswordEmail}
                     onChange={(e) => setForgotPasswordEmail(e.target.value)}
                     placeholder="Enter your email"
-                    className="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300"
+                    className="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all duration-300 text-black placeholder-gray-500 hover:bg-gray-50 focus:bg-white focus:shadow-sm focus:border-indigo-500 focus:ring-indigo-500 !bg-white !text-black"
                     required
                   />
                   <div className="flex justify-end gap-4">
@@ -590,11 +528,12 @@ const Login = () => {
                     </button>
                     <button
                       type="submit"
-                      className={`px-4 py-2 text-white rounded-lg ${
-                        userRole === 'teacher' ? 'bg-indigo-500' : 'bg-emerald-500'
+                      disabled={isLoading}
+                      className={`px-4 py-2 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed ${
+                        userRole === 'TEACHER' ? 'bg-indigo-500' : 'bg-emerald-500'
                       } hover:brightness-110 transition-all duration-300`}
                     >
-                      Send Reset Link
+                      {isLoading ? 'Sending...' : 'Send Reset Link'}
                     </button>
                   </div>
                 </form>

@@ -1,6 +1,8 @@
 package com.sanjoy.exam_service.repo;
 
 import com.sanjoy.exam_service.models.DailyPracticeLog;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDate;
@@ -13,5 +15,8 @@ import java.util.List;
 public interface DailyPracticeLogRepository extends JpaRepository<DailyPracticeLog, Long> {
     List<DailyPracticeLog> findByUsernameOrderByPracticedOnDesc(String username);
     boolean existsByUsernameAndPracticedOn(String username, LocalDate practicedOn);
+
+    @Transactional
+    @Modifying
     void deleteByUsername(String username);
 }

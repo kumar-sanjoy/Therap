@@ -31,10 +31,16 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+
+# At the top of your Flask app
+app.config['JSON_AS_ASCII'] = False
+app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
+
+# If using older Flask versions, you might also need:
+app.json.ensure_ascii = False
 
 class_map = { 'a': '910', 'b': '8', 'c': '7', 'd': '6' }
-subject_map = { 'a': 'P', 'b': 'C', 'c': 'B', 'd' : 'E', 'e': 'G', 'f' : 'BE' }
+subject_map = { 'a': 'P', 'b': 'C', 'c': 'B', 'd' : 'E', 'e': 'G', 'f' : 'BE', 'S': 'S' }
 
 model = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=1)
 
@@ -173,7 +179,7 @@ def written_test():
 def evaluate(): 
     print('submit-written hit')
     if 'image' not in request.files: 
-        return jsonify({"messege": "error"}), 404
+        return jsonify({"message": "Error: No image file provided"}), 400
     
     image_file = request.files['image']
     studentAnswer = image_to_text(image_file)
@@ -203,9 +209,16 @@ def evaluate():
             'question': question,
             'answer': studentAnswer
         })
-        return jsonify({"result": final_result}), 200
+        # print(final_result)
+        
+        # Create response with proper JSON encoding for Bengali
+        response = jsonify({"feedback": final_result})
+        response.headers['Content-Type'] = 'application/json; charset=utf-8'
+        return response, 200
     else:
-        return jsonify({"result": "not found"}), 404
+        response = jsonify({"feedback": "উত্তর খুঁজে পাওয়া যায়নি"})
+        response.headers['Content-Type'] = 'application/json; charset=utf-8'
+        return response, 404
     
 @app.route("/exam/mcq", methods=["POST"])
 def fresh_test():   
@@ -283,7 +296,6 @@ def fresh_test():
         
         chain = prompt | model | parser
         questions_from_model = chain.invoke({"text": text, "difficulty": difficulty, "ques_count": ques_count}) # works fine
-        print(questions_from_model)
 
         try:
             return jsonify({ "mcqs": questions_from_model['mcqs'], "difficultyLevel": difficulty })
@@ -295,23 +307,28 @@ def fresh_test():
 
 @app.route("/learn/doubts", methods=["POST"])
 def doubtSolver():
-    print('doubt hit')
-    image_doubt = ''
-    text_doubt = ''
-    if 'image' not in request.files and 'question' not in request.form:
+    print("doubt hit")
+
+    image_doubt = ""
+    text_doubt = ""
+
+    if "image" not in request.files and "question" not in request.form:
         return jsonify({"error": "No valid input provided"}), 400
-    if 'image' in request.files:
-        image_file = request.files['image']
-        image_doubt = image_to_text(image_file)
-        print(image_doubt)
 
-    if 'question' in request.form:
-        text_doubt = request.form.get("question")
+    if "image" in request.files:
+        image_file = request.files["image"]
+        try:
+            image_doubt = image_to_text(image_file)  # assumes you already defined this
+            print("Extracted text from image:", image_doubt)
+        except Exception as e:
+            return jsonify({"error": f"Image processing failed: {e}"}), 500
 
-    
+    if "question" in request.form:
+        text_doubt = request.form.get("question", "").strip()
+
     doubt_schema = ResponseSchema(
         name="response",
-        description="A useful explanation in Bengali clearing the doubt of the student"
+        description="A useful explanation in Bengali clearing the doubt of the student",
     )
     parser = StructuredOutputParser.from_response_schemas([doubt_schema])
 
@@ -319,24 +336,101 @@ def doubtSolver():
         input_variables=["text"],
         partial_variables={"format_instruction": parser.get_format_instructions()},
         template=(
-            "You are an expert at solving doubts Bangladeshi students.\n"
-            "Generate a very useful explanation in Bengali for the following doubt in JSON format."
-            "If the doubt is not anything about study or learning, then simply say I can't help you with that.\n\n"
-            "The response should have:\n"
+            "You are an expert at solving doubts for Bangladeshi students.\n"
+            "Generate a very useful explanation in Bengali for the following doubt in JSON format.\n"
+            "If the doubt is not related to study or learning, then simply say: I can't help you with that.\n\n"
+            "The response must have:\n"
             "- A 'response' key containing the actual explanation content\n\n"
-            "Chapter content:\n"
+            "Doubt:\n"
             "{text}\n"
             "{format_instruction}"
-        )
+        ),
     )
 
     try:
         chain = prompt | model | parser
-        result = chain.invoke({"text": str(text_doubt + image_doubt)})
-        doubt_response = result
+        combined_doubt = f"{text_doubt} {image_doubt}".strip()
+        print("Final doubt text:", combined_doubt)
+        result = chain.invoke({"text": combined_doubt})
+        return jsonify({"answer": result.get("response")}), 200
     except Exception as e:
-        return jsonify(f"Error generating solve of doubt: {e}")
-    return jsonify(doubt_response)
+        import traceback
+        return jsonify({"error": f"Error generating solve of doubt: {str(e)}"}), 500
+
+# @app.route("/learn/doubts", methods=["POST"])
+# def doubtSolver():
+    print("doubt hit")
+
+    text_doubt = ""
+    image_bytes = None
+    audio_bytes = None
+
+    if not any(k in request.files for k in ["image", "audio"]) and "question" not in request.form:
+        return jsonify({"error": "No valid input provided"}), 400
+
+    # Handle image input
+    if "image" in request.files:
+        image_file = request.files["image"]
+        try:
+            image_bytes = image_file.read()
+            print(f"Received image of size {len(image_bytes)} bytes")
+        except Exception as e:
+            return jsonify({"error": f"Image processing failed: {e}"}), 500
+
+    # Handle text input
+    if "question" in request.form:
+        text_doubt = request.form.get("question", "").strip()
+
+    # Handle audio input
+    if "audio" in request.files:
+        audio_file = request.files["audio"]
+        try:
+            audio_bytes = audio_file.read()
+            print(f"Received audio of size {len(audio_bytes)} bytes")
+        except Exception as e:
+            return jsonify({"error": f"Audio processing failed: {e}"}), 500
+
+    # Prepare structured output parser
+    doubt_schema = ResponseSchema(
+        name="response",
+        description="A useful explanation in Bengali clearing the doubt of the student",
+    )
+    parser = StructuredOutputParser.from_response_schemas([doubt_schema])
+
+    # Build prompt including text and placeholders for binary inputs
+    prompt_text = text_doubt
+    if image_bytes:
+        prompt_text += "\n[IMAGE ATTACHED]"
+    if audio_bytes:
+        prompt_text += "\n[AUDIO ATTACHED]"
+
+    prompt = PromptTemplate(
+        input_variables=["text", "image", "audio"],
+        partial_variables={"format_instruction": parser.get_format_instructions()},
+        template=(
+            "You are an expert at solving doubts for Bangladeshi students.\n"
+            "Generate a very useful explanation in Bengali for the following doubt in JSON format.\n"
+            "If the doubt is not related to study or learning, then simply say: I can't help you with that.\n\n"
+            "The response must have:\n"
+            "- A 'response' key containing the actual explanation content\n\n"
+            "Doubt text:\n{text}\n"
+            "{format_instruction}"
+        ),
+    )
+
+    try:
+        # Here we send the raw bytes to the model as part of the prompt context
+        # Depending on your model API, this may require base64 encoding
+        input_data = {"text": prompt_text, "image": image_bytes, "audio": audio_bytes}
+        chain = prompt | model | parser
+        print("Final doubt data sent to model:", {k: ("<binary>" if isinstance(v, bytes) else v) for k, v in input_data.items()})
+        result = chain.invoke(input_data)
+        return jsonify({"answer": result.get("response")}), 200
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        return jsonify({"error": f"Error generating solve of doubt: {str(e)}"}), 500
+
 
 @app.route("/learn/learn", methods=["GET"]) 
 def process_lesson(): 
@@ -349,7 +443,9 @@ def process_lesson():
     txt_name = f"doc/{class_map.get(cls, 'unknown')}-{subject_map.get(sub, 'X')}-{chapter}.txt"
 
     template = """
-        আপনি একজন ভালো বাংলাদেশী শিক্ষক এবং আপনার কাজ হলো নিচের বিষয়বস্তু একজন শিক্ষার্থীকে বোঝানো। টিপস, কৌতুক, উদাহরণ সহকারে একটি স্বতন্ত্র ছাত্রকে বোঝানোর জন্য একটি প্রতিক্রিয়া তৈরি করুন। সম্পূর্ণ প্রতিক্রিয়াটি শুধুমাত্র বাংলা ভাষায় হবে, কোনো ইংরেজি শব্দ ব্যবহার করা যাবে না।
+        আপনি একজন ভালো বাংলাদেশী শিক্ষক এবং আপনার কাজ হলো নিচের বিষয়বস্তু একজন শিক্ষার্থীকে বোঝানো। টিপস, 
+        কৌতুক, উদাহরণ সহকারে একটি স্বতন্ত্র ছাত্রকে বোঝানোর জন্য একটি প্রতিক্রিয়া তৈরি করুন। সম্পূর্ণ প্রতিক্রিয়াটি শুধুমাত্র 
+        বাংলা ভাষায় হবে, কোনো ইংরেজি শব্দ ব্যবহার করা যাবে না।
         {text}
     """
     prompt = PromptTemplate(input_variables=["text"], template=template)
@@ -366,6 +462,7 @@ def process_lesson():
         try:
             result = chain.invoke({"text": chunk.page_content})
             response.append(result.content)
+            # print(result)
         except Exception as e:
             print(f"Failed to generate blog for chunk {i + 1}: {e}")
 
@@ -376,7 +473,8 @@ def generateNotes():
     print('note hit')
     cls = request.args.get("className")
     sub = request.args.get("subject")
-    chapter = request.args.get("chapter")
+    chapter = request.args.get("chapter", "X")
+    print(cls, sub, chapter)
     
     txt_name = f"doc/{class_map.get(cls, 'unknown')}-{subject_map.get(sub, 'X')}-{chapter}.txt"
     loader = TextLoader(txt_name, encoding='utf-8')
@@ -418,7 +516,7 @@ def review_practice():
     input_date = request.get_json()
     mistaken_questions_statement = input_date.get('previousQuestions')
     ques_count = input_date.get('count')
-    print(mistaken_questions_statement)  
+    # print(mistaken_questions_statement)  
     
     mistake_size = len(mistaken_questions_statement)
     questions_from_model = []

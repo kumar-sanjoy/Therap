@@ -16,9 +16,9 @@ export const subject_map = {
   'Physics': 'a', 
   'Chemistry': 'b', 
   'Biology': 'c',
-  'Science': 'a',
+  'Science': 'S',
   'Economics': 'd',
-  'Geography': 'e',
+  'Geography': 'g',
   'Business Entrepre.': 'f'
 };
 
@@ -38,12 +38,13 @@ export const API_ENDPOINTS = {
     // Auth endpoints
     LOGIN: '/auth/login',
     SIGNUP: '/auth/register',
-    CONFIRM_EMAIL: '/auth/confirm-email',
+    CONFIRM_EMAIL: '/auth/confirm-email', // GET method - expects token as query parameter
     FORGOT_PASSWORD: '/api/forgot-password',
     GOOGLE_AUTH: '/api/google-auth',
     
     // Exam endpoints (using port 8091)
     MCQ: '/exam/mcq',
+    MCQ_QUESTIONS: '/exam/mcq',
     SUBMIT_MCQ: '/exam/submit-mcq',
     PREVIOUS_MCQ: '/exam/previous-mcq',
     WRITTEN_QUESTION: '/exam/written',
@@ -51,6 +52,7 @@ export const API_ENDPOINTS = {
     
     // Learning endpoints (using port 8092)
     LEARN: '/learn/learn',
+    LEARN_CONTENT: '/learn/content',
     CLEAR_DOUBT: '/learn/doubts',
     GENERATE_NOTE: '/learn/notes',
     
@@ -58,6 +60,7 @@ export const API_ENDPOINTS = {
     TEACHER_PROFILE: '/profile/teacher',
     STUDENT_PROFILE: '/profile/student',
     TEACHER_REPORT: '/profile/teacher/generate-report',
+    STUDENT_DETAILS: '/profile/student/details',
     
     // Legacy endpoints (keeping for backward compatibility)
     QUIZ: '/api/quiz',
@@ -68,9 +71,6 @@ export const API_ENDPOINTS = {
     TEACHER_API: '/api/teacher'
 };
 
-// Development Mode
-export const DEV_MODE = false;
-
 // App Constants
 export const APP_NAME = 'FLOW';
 export const APP_VERSION = '1.0.0';
@@ -80,6 +80,7 @@ export const STORAGE_KEYS = {
     USER_ID: 'userId',
     USERNAME: 'username',
     TOKEN: 'token',
+    ROLE: 'role',
     USER_DATA: 'userData'
 };
 

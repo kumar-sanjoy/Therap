@@ -66,7 +66,7 @@ const Header = ({ logo }) => {
             </button>
             
             {/* Dropdown Menu */}
-            <div className={`absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2`}>
+            <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2">
               <div className="p-4">
                 <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Platform Features</div>
                 {featuresDropdown.map((item, index) => (

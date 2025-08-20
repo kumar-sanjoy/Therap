@@ -36,7 +36,6 @@ import java.util.*;
  */
 @RestController
 @RequestMapping("/exam")
-//@CrossOrigin(origins = "*")
 public class ExamController {
     private final WebClient webClient;
     private final PracticeStreakService streakService;
@@ -53,6 +52,9 @@ public class ExamController {
     @Autowired
     private PerformanceDiffLevelRepo pdlr;
 
+    @Autowired
+    private PracticeStreakService practiceStreakService;
+
     public ExamController(WebClient.Builder webClientBuilder,
         @Value("${ai.backend.url}") String aiBackendUrl, PracticeStreakService streakService) {
         this.webClient = webClientBuilder.baseUrl(aiBackendUrl).build();
@@ -68,11 +70,6 @@ public class ExamController {
             @RequestParam int count) {
         String pythonEndpoint = "/exam/mcq";
         System.out.println("mcq exam hit");
-//        System.out.println("username " + username);
-//        System.out.println("className " + className);
-//        System.out.println("Subject " + subject);
-//        System.out.println("Chapter " + chapter);
-//        System.out.println("count " + count);
         List<Object []> performanceRecord = pdlr.findPerformanceInfo(username, subject);
         for (Object[] row : performanceRecord) {
             int performance = (Integer) row[0];
@@ -114,6 +111,7 @@ public class ExamController {
             @RequestParam String subject,
             @RequestParam String chapter,
             @RequestParam Long count) {
+        System.out.println("Previous-mcq hit.");
 
         Map<String, Object> errorResponse = new HashMap<>();
         Optional<Sub> subOpt = subRepository.findByName(subject);
@@ -211,6 +209,7 @@ public class ExamController {
             }
         }
 
+        practiceStreakService.logPractice(username);
         studentRepository.save(student);
 
         return ResponseEntity.ok("Data received successfully. Total attempts: " + totalAttempt + ", Wrong answers: " + totalWrong);
@@ -239,6 +238,7 @@ public class ExamController {
     }
 
 
+    @SuppressWarnings("null")
     @PostMapping("/submit-written")
     public Mono<ResponseEntity<String>> submitWrittenProxy(@RequestParam("image") MultipartFile imageFile,
                                                            @RequestParam("question") String questionText) {
@@ -272,6 +272,10 @@ public class ExamController {
                     .bodyValue(body)
                     .retrieve()
                     .toEntity(String.class)
+                    .doOnNext(response -> {
+                        System.out.println("Response from Python OCR server: " + response);
+                        System.out.println("Body: " + response.getBody());
+                    })
                     .onErrorResume(WebClientResponseException.class, e -> {
                         System.err.println("Error from Python OCR server (" + e.getStatusCode() + "): " + e.getResponseBodyAsString());
                         return Mono.just(new ResponseEntity<>(e.getResponseBodyAsString(), e.getStatusCode()));
@@ -280,6 +284,7 @@ public class ExamController {
                         System.err.println("An unexpected error occurred while communicating with Python OCR server: " + e.getMessage());
                         return Mono.just(new ResponseEntity<>("{\"message\": \"error: Failed to communicate with Python OCR server.\"}", HttpStatus.INTERNAL_SERVER_ERROR));
                     });
+
 
         } catch (IOException e) {
             System.err.println("Error reading incoming image file: " + e.getMessage());

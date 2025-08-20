@@ -1,4 +1,4 @@
-package com.sanjoy.exam_service.models;
+package com.sanjoy.auth_service.models;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

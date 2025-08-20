@@ -1,6 +1,6 @@
-package com.sanjoy.exam_service.repo;
+package com.sanjoy.auth_service.repo;
 
-import com.sanjoy.exam_service.models.DailyPracticeLog;
+import com.sanjoy.auth_service.models.DailyPracticeLog;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDate;
