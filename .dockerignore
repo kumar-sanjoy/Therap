@@ -1,0 +1,26 @@
+# Ignore unnecessary files to speed up build
+.git
+.gitignore
+README.md
+.env
+.vscode
+.idea
+
+# Ignore Gradle build artifacts (will be built inside container)
+*/build/
+*/gradle/wrapper/gradle-wrapper.jar
+*/.gradle/
+*/gradlew
+*/gradlew.bat
+
+# Ignore other build artifacts
+*/node_modules/
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore temp files
+*.tmp
+*.swp
+.DS_Store
