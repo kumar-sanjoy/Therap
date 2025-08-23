@@ -525,7 +525,7 @@ def generate_lesson():
                 result = chain.invoke({"text": chunk.page_content})
                 response.append(result.content)
             except Exception as e:
-                # print(f"Failed to generate lesson for chunk {i + 1} ")
+                print(f"Failed to generate lesson for chunk {i + 1} ")
 
         return jsonify({"lesson": response}), 200
         
@@ -637,7 +637,7 @@ def generate_practice_questions():
                 question_result = chain.invoke({"text": question})
                 questions_from_model.append(question_result)
             except Exception as e:
-                # print(f"Error generating question {i+1} ")
+                print(f"Error generating question {i+1} ")
 
         # Format response
         model_output_data = {
@@ -671,7 +671,7 @@ def internal_error(error):
     return jsonify({"error": "Internal server error"}), 500
 
 
-@app.errorhandler(413)
+@app.errorhandler(413) 
 def too_large(error):
     return jsonify({"error": "File too large"}), 413
 
