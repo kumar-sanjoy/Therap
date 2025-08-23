@@ -70,7 +70,7 @@ public class LearningController {
             @RequestParam String subject,
             @RequestParam String chapter) {
 
-        System.out.println("Learn request started at: " + System.currentTimeMillis());
+        // System.out.println("Learn request started at: " + System.currentTimeMillis());
 
         return webClient.get()
                 .uri(uriBuilder -> uriBuilder
@@ -83,12 +83,11 @@ public class LearningController {
                 .bodyToMono(new ParameterizedTypeReference<Map<String, Object>>() {
                 })
                 .map(responseMap -> {
-                    System.out.println("Learn request completed at: " + System.currentTimeMillis());
+                    // System.out.println("Learn request completed at: " + System.currentTimeMillis());
                     return ResponseEntity.ok(responseMap);
                 })
                 .onErrorResume(e -> {
-                    System.out.println("Learn request failed at: " + System.currentTimeMillis() +
-                            " with error: " + e.getMessage());
+                    // System.out.println("Learn request failed at: " + System.currentTimeMillis() + " with error: " + e.getMessage());
                     return Mono.just(
                             ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                                     .body(Map.of("error", e.getMessage())));
@@ -102,7 +101,7 @@ public class LearningController {
             @RequestParam(required = false) MultipartFile audio,
             @RequestParam(required = false) String question) throws Exception {
 
-        System.out.println("doubts hit");
+        // System.out.println("doubts hit");
         MultipartBodyBuilder builder = new MultipartBodyBuilder();
 
         if (image != null && !image.isEmpty()) {
@@ -117,7 +116,7 @@ public class LearningController {
         }
 
         if (audio != null && !audio.isEmpty()) {
-            System.out.println("Audio received...");
+            // System.out.println("Audio received...");
             builder.part("audio",
                     new ByteArrayResource(audio.getBytes()) {
                         @Override
@@ -141,7 +140,7 @@ public class LearningController {
                 });
 
         Map<String, String> result = responseMono
-                .doOnNext(map -> System.out.println(map))
+                // .doOnNext(map -> System.out.println(map))
                 .block();
 
         return result;
@@ -152,7 +151,7 @@ public class LearningController {
             @RequestParam String className,
             @RequestParam String subject,
             @RequestParam String chapter) {
-        System.out.println("note hit");
+        // System.out.println("note hit");
 
         String pythonEndpoint = "/learn/notes";
 
@@ -179,14 +178,14 @@ public class LearningController {
             @RequestParam(value = "image", required = false) MultipartFile image,
             @RequestParam(value = "question", required = false) String question) {
 
-        System.out.println("🔄 Received upload request.");
-        System.out.println("📝 Question: " + question);
-        System.out.println("🖼️ Image present: " + (image != null && !image.isEmpty()));
-        System.out.println("📋 Request received at: " + System.currentTimeMillis());
+        // System.out.println("🔄 Received upload request.");
+        // System.out.println("📝 Question: " + question);
+        // System.out.println("🖼️ Image present: " + (image != null && !image.isEmpty()));
+        // System.out.println("📋 Request received at: " + System.currentTimeMillis());
 
         // Check if both are empty
         if ((image == null || image.isEmpty()) && (question == null || question.trim().isEmpty())) {
-            System.out.println("❌ Both image and question are empty");
+            // System.out.println("❌ Both image and question are empty");
             return ResponseEntity.badRequest().body(Map.of("message", "No image or question provided."));
         }
 
@@ -203,22 +202,22 @@ public class LearningController {
                 Path filePath = Paths.get(UPLOAD_DIR, filename);
                 image.transferTo(filePath.toFile());
 
-                System.out.println("✅ Saved image to: " + filePath.toAbsolutePath());
+                // System.out.println("✅ Saved image to: " + filePath.toAbsolutePath());
                 answer = "Received question: " + question + " and saved image: " + filename;
             } else {
                 // Handle text-only question
-                System.out.println("📝 Processing text-only question");
+                // System.out.println("📝 Processing text-only question");
                 answer = "Received question: " + question;
             }
 
             return ResponseEntity.ok(Map.of("answer", answer));
 
         } catch (IOException e) {
-            System.out.println("💥 Error saving file: " + e.getMessage());
+            // System.out.println("💥 Error saving file: " + e.getMessage());
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body(Map.of("message", "Upload failed: " + e.getMessage()));
         } catch (Exception e) {
-            System.out.println("💥 Unexpected error: " + e.getMessage());
+            // System.out.println("💥 Unexpected error: " + e.getMessage());
             e.printStackTrace();
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body(Map.of("message", "Unexpected error: " + e.getMessage()));
@@ -227,18 +226,18 @@ public class LearningController {
 
     @GetMapping("/view/{filename:.+}")
     public ResponseEntity<Resource> serveImage(@PathVariable String filename) {
-        System.out.println("👁️ Requested to view image: " + filename);
+        // System.out.println("👁️ Requested to view image: " + filename);
 
         try {
             Path filePath = Paths.get(UPLOAD_DIR).resolve(filename).normalize();
             Resource resource = new UrlResource(filePath.toUri());
 
             if (!resource.exists()) {
-                System.out.println("❌ Image not found: " + filePath);
+                // System.out.println("❌ Image not found: " + filePath);
                 return ResponseEntity.notFound().build();
             }
 
-            System.out.println("✅ Serving image from: " + filePath.toAbsolutePath());
+            // System.out.println("✅ Serving image from: " + filePath.toAbsolutePath());
 
             String contentType = Files.probeContentType(filePath);
             if (contentType == null) {
@@ -250,10 +249,10 @@ public class LearningController {
                     .body(resource);
 
         } catch (MalformedURLException e) {
-            System.out.println("💥 Invalid URL for image: " + filename);
+            // System.out.println("💥 Invalid URL for image: " + filename);
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         } catch (IOException e) {
-            System.out.println("💥 Error reading image file: " + e.getMessage());
+            // System.out.println("💥 Error reading image file: " + e.getMessage());
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
     }

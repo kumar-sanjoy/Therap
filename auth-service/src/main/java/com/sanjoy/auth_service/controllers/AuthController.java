@@ -44,10 +44,10 @@ public class AuthController {
 
     @PostMapping("register")
     public ResponseEntity<?> registerUser(@RequestBody User user) {
-        System.out.println("register hit");
-        System.out.println(user.getUsername());
-        System.out.println(user.getRole());
-//        return ResponseEntity.ok("Registration successful");
+        // System.out.println("register hit");
+        // System.out.println(user.getUsername());
+        // System.out.println(user.getRole());
+        // return ResponseEntity.ok("Registration successful");
 
         try {
             userDetailsService.register(user);
@@ -63,7 +63,7 @@ public class AuthController {
         } catch (Exception e) {
             // Catch any other unexpected exceptions
             // Log the exception for internal debugging
-            System.err.println("Error during user registration: " + e.getMessage());
+            // System.err.println("Error during user registration: " + e.getMessage());
             // Return 500 Internal Server Error for unhandled exceptions
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An unexpected error occurred during registration.");
         }
@@ -94,8 +94,8 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody User user) {
-        System.out.println("login hit");
-        System.out.println(user.getUsername());
+        // System.out.println("login hit");
+        // System.out.println(user.getUsername());
         try {
             Authentication authentication = authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword())
@@ -115,14 +115,14 @@ public class AuthController {
             response.put("role", user.getRole());
             int currentStreak = practiceStreakService.getCurrentStreak(user.getUsername());
             response.put("streak", currentStreak);
-            System.out.println(response);
+            // System.out.println(response);
 
             return ResponseEntity.ok(response);
 
         } catch (AuthenticationException e) {
             // Log the authentication exception details
-            System.err.println("Authentication failed for user: " + user.getUsername());
-            System.err.println("Authentication error: " + e.getMessage());
+            // System.err.println("Authentication failed for user: " + user.getUsername());
+            // System.err.println("Authentication error: " + e.getMessage());
             e.printStackTrace();
 
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
@@ -130,9 +130,9 @@ public class AuthController {
 
         } catch (Exception e) {
             // Log the unexpected exception with full stack trace
-            System.err.println("Unexpected error during login for user: " + user.getUsername());
-            System.err.println("Error type: " + e.getClass().getSimpleName());
-            System.err.println("Error message: " + e.getMessage());
+            // System.err.println("Unexpected error during login for user: " + user.getUsername());
+            // System.err.println("Error type: " + e.getClass().getSimpleName());
+            // System.err.println("Error message: " + e.getMessage());
             e.printStackTrace();
 
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)

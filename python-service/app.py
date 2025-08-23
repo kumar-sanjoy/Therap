@@ -5,7 +5,12 @@ A comprehensive educational platform API for Bangladeshi students
 providing doubt solving, exam generation, learning materials, and performance tracking.
 
 Usage:
-    python app.py
+# === Usage Notes ===
+# To run:
+# .\env\Scripts\Activate.ps1
+# python app.py
+# If fresh install:
+
 
 Requirements:
     pip install Flask flask-cors python-dotenv langchain langchain-google-genai 
@@ -173,7 +178,7 @@ def health_check():
 @app.route("/learn/doubts", methods=["POST"])
 def solve_doubts():
     """Solve student doubts using text, image, or audio input"""
-    print("Doubt solving endpoint accessed")
+    # print("Doubt solving endpoint accessed")
     
     try:
         text_content = ""
@@ -193,7 +198,7 @@ def solve_doubts():
             image_file = request.files["image"]
             try:
                 image_content = Image.open(image_file.stream)
-                print("Image processed successfully")
+                # print("Image processed successfully")
             except Exception as e:
                 return jsonify({"error": f"Image processing failed: {str(e)}"}), 500
 
@@ -206,7 +211,6 @@ def solve_doubts():
             try:
                 audio_file.save(filepath)
                 audio_transcription = transcribe_with_gemini(filepath)
-                print(f"Audio transcribed: {audio_transcription}")
             except Exception as e:
                 return jsonify({"error": f"Audio transcription failed: {str(e)}"}), 500
             finally:
@@ -248,7 +252,7 @@ def solve_doubts():
             parsed_result = parser.parse(result.content)
             response_text = parsed_result.response
         except Exception:
-            print("JSON parsing failed, extracting text manually")
+            # print("JSON parsing failed, extracting text manually")
             response_text = result.content
             
             if '```json' in response_text:
@@ -265,14 +269,14 @@ def solve_doubts():
         return jsonify({"answer": response_text}), 200
         
     except Exception as e:
-        print(f"Error in solve_doubts: {str(e)}")
+        # print(f"Error in solve_doubts: ")
         return jsonify({"error": f"Internal server error: {str(e)}"}), 500
 
 
 @app.route("/profile/teacher/generate-report", methods=["POST"])
 def generate_weakness_report():
     """Generate weakness report based on mistaken questions"""
-    print('generate-report endpoint accessed')
+    # print('generate-report endpoint accessed')
     try:
         input_data = request.get_json()
         mistaken_questions = input_data.get("mistakenQuestions", [])
@@ -356,7 +360,7 @@ def generate_written_test():
 @app.route("/exam/submit-written", methods=["POST"])
 def evaluate_written_answer():
     """Evaluate written answer from uploaded image"""
-    print('submit-written endpoint accesses')
+    # print('submit-written endpoint accesses')
     try:
         if 'image' not in request.files:
             return jsonify({"error": "No image file found"}), 400
@@ -395,14 +399,14 @@ def evaluate_written_answer():
         return jsonify({"result": result.content}), 200
         
     except Exception as e:
-        print(f"Error in evaluate_written_answer: {str(e)}")
+        # print(f"Error in evaluate_written_answer: ")
         return jsonify({"error": "Internal server error"}), 500
 
 
 @app.route("/exam/mcq", methods=["POST"])
 def generate_mcq_test():
     """Generate MCQ test with adaptive difficulty"""
-    print('MCQ exam endpoint accessed')
+    # print('MCQ exam endpoint accessed')
     
     try:
         data = request.get_json()
@@ -422,7 +426,6 @@ def generate_mcq_test():
             get_best_difficulty = train_q_table_from_history(ques_perf)
             difficulty = get_best_difficulty(5)
 
-        print(f'Generating questions of difficulty: {difficulty}')
 
         # Load document content
         try:
@@ -484,7 +487,7 @@ def generate_mcq_test():
 @app.route("/learn/learn", methods=["GET"])
 def generate_lesson():
     """Generate interactive lesson content"""
-    print("Lesson generation endpoint accessed")
+    # print("Lesson generation endpoint accessed")
     
     try:
         cls = request.args.get("className")
@@ -522,7 +525,7 @@ def generate_lesson():
                 result = chain.invoke({"text": chunk.page_content})
                 response.append(result.content)
             except Exception as e:
-                print(f"Failed to generate lesson for chunk {i + 1}: {str(e)}")
+                # print(f"Failed to generate lesson for chunk {i + 1} ")
 
         return jsonify({"lesson": response}), 200
         
@@ -533,7 +536,7 @@ def generate_lesson():
 @app.route("/learn/notes", methods=["GET"])
 def generate_notes():
     """Generate study notes from chapter content"""
-    print('Notes generation endpoint accessed')
+    # print('Notes generation endpoint accessed')
     
     try:
         cls = request.args.get("className")
@@ -580,7 +583,7 @@ def generate_notes():
 @app.route("/exam/previous-mcq", methods=["POST"])
 def generate_practice_questions():
     """Generate practice questions based on previously mistaken questions"""
-    print('Previous MCQ practice endpoint accessed')
+    # print('Previous MCQ practice endpoint accessed')
     
     try:
         input_data = request.get_json()
@@ -634,7 +637,7 @@ def generate_practice_questions():
                 question_result = chain.invoke({"text": question})
                 questions_from_model.append(question_result)
             except Exception as e:
-                print(f"Error generating question {i+1}: {str(e)}")
+                # print(f"Error generating question {i+1} ")
 
         # Format response
         model_output_data = {

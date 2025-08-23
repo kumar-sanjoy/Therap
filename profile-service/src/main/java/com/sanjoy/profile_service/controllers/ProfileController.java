@@ -67,10 +67,10 @@ public class ProfileController {
                     .bodyToMono(String.class)
                     .block();
 
-            System.out.println("Received weakness report from Python AI backend: " + response);
+            // System.out.println("Received weakness report from Python AI backend: " + response);
             return response;
         } catch (Exception e) {
-            System.err.println("Error calling Python AI backend: " + e.getMessage());
+            // System.err.println("Error calling Python AI backend: " + e.getMessage());
             return "Failed to generate weakness report from AI: " + e.getMessage();
         }
     }

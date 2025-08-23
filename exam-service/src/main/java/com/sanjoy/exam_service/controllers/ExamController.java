@@ -66,19 +66,17 @@ public class ExamController {
             @RequestParam String chapter,
             @RequestParam int count) {
         String pythonEndpoint = "/exam/mcq";
-        System.out.println("mcq exam hit");
+        // System.out.println("mcq exam hit");
         List<Object []> performanceRecord = pdlr.findPerformanceInfo(username, subject);
-        for (Object[] row : performanceRecord) {
-            int performance = (Integer) row[0];
-            int difficultyLevel = (Integer) row[1];
-            boolean isCorrect = (Boolean) row[2];
+        // for (Object[] row : performanceRecord) {
+        //     int performance = (Integer) row[0];
+        //     int difficultyLevel = (Integer) row[1];
+        //     boolean isCorrect = (Boolean) row[2];
 
-            System.out.println("Performance: " + performance +
-                    ", Difficulty Level: " + difficultyLevel +
-                    ", Is Correct: " + isCorrect);
-        }
+        //     System.out.println("Performance: " + performance + ", Difficulty Level: " + difficultyLevel + ", Is Correct: " + isCorrect);
+        // }
 
-        System.out.println(count);
+        // System.out.println(count);
 
         Map<String, Object> requestBody = Map.of(
                 "className", className,
@@ -94,8 +92,7 @@ public class ExamController {
                 .retrieve()
                 .bodyToMono(new ParameterizedTypeReference<Map<String, Object>>() {})
                 .map(responseMap -> {
-                    System.out.println("Received MCQs from Python backend. Number of MCQs: " +
-                            ((List<?>) responseMap.get("mcqs")).size());
+                    // System.out.println("Received MCQs from Python backend. Number of MCQs: " + ((List<?>) responseMap.get("mcqs")).size());
                     return new ResponseEntity<>(responseMap, HttpStatus.OK);
                 });
 
@@ -108,7 +105,7 @@ public class ExamController {
             @RequestParam String subject,
             @RequestParam String chapter,
             @RequestParam Long count) {
-        System.out.println("Previous-mcq hit.");
+        // System.out.println("Previous-mcq hit.");
 
         Map<String, Object> errorResponse = new HashMap<>();
         Optional<Sub> subOpt = subRepository.findByName(subject);
@@ -204,9 +201,9 @@ public class ExamController {
         }
         studentRepository.save(student);
 
-        System.out.println(performanceRecords);
-        System.out.println(newMcqs);
-        System.out.println(student);
+        // System.out.println(performanceRecords);
+        // System.out.println(newMcqs);
+        // System.out.println(student);
         return ResponseEntity.ok("Data received successfully. Total attempts: " + totalAttempt + ", Wrong answers: " + totalWrong);
     }
 
@@ -217,7 +214,7 @@ public class ExamController {
                                            @RequestParam String subject,
                                            @RequestParam String chapter) {
         String pythonEndpoint = "/exam/written";
-        System.out.println("written hit");
+        // System.out.println("written hit");
 
         return webClient.get()
                 .uri(uriBuilder -> uriBuilder
@@ -233,10 +230,11 @@ public class ExamController {
     }
 
 
-    @PostMapping("/submit-written")
+    @SuppressWarnings("null")
+	@PostMapping("/submit-written")
     public Mono<ResponseEntity<String>> submitWrittenProxy(@RequestParam("image") MultipartFile imageFile,
                                                            @RequestParam("question") String questionText) {
-        System.out.println("submit written hit");
+        // System.out.println("submit written hit");
         if (imageFile.isEmpty()) {
             return Mono.just(new ResponseEntity<>("{\"message\": \"error: No image file provided.\"}",
                     HttpStatus.BAD_REQUEST));
@@ -267,21 +265,21 @@ public class ExamController {
                     .retrieve()
                     .toEntity(String.class)
                     .doOnNext(response -> {
-                        System.out.println("Response from Python OCR server: " + response);
-                        System.out.println("Body: " + response.getBody());
+                        // System.out.println("Response from Python OCR server: " + response);
+                        // System.out.println("Body: " + response.getBody());
                     })
                     .onErrorResume(WebClientResponseException.class, e -> {
-                        System.err.println("Error from Python OCR server (" + e.getStatusCode() + "): " + e.getResponseBodyAsString());
+                        // System.err.println("Error from Python OCR server (" + e.getStatusCode() + "): " + e.getResponseBodyAsString());
                         return Mono.just(new ResponseEntity<>(e.getResponseBodyAsString(), e.getStatusCode()));
                     })
                     .onErrorResume(Exception.class, e -> {
-                        System.err.println("An unexpected error occurred while communicating with Python OCR server: " + e.getMessage());
+                        // System.err.println("An unexpected error occurred while communicating with Python OCR server: " + e.getMessage());
                         return Mono.just(new ResponseEntity<>("{\"message\": \"error: Failed to communicate with Python OCR server.\"}", HttpStatus.INTERNAL_SERVER_ERROR));
                     });
 
 
         } catch (IOException e) {
-            System.err.println("Error reading incoming image file: " + e.getMessage());
+            // System.err.println("Error reading incoming image file: " + e.getMessage());
             return Mono.just(new ResponseEntity<>("{\"message\": \"error: Failed to process incoming image file.\"}", HttpStatus.INTERNAL_SERVER_ERROR));
         }
     }
