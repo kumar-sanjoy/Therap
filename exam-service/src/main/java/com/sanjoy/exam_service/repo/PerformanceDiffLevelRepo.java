@@ -17,6 +17,7 @@ public interface PerformanceDiffLevelRepo extends JpaRepository<PerformanceDiffL
     List<Object[]> findPerformanceInfo(@Param("username") String username, @Param("subject") String subject);
 
 
+    // will delete this:
     default void insertPerformance(String username, String subject, int performance, int difficulty, boolean isCorrect) {
         PerformanceDiffLevel p = new PerformanceDiffLevel();
         p.setUsername(username);

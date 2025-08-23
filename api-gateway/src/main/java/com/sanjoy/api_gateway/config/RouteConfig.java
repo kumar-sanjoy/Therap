@@ -29,15 +29,12 @@ public class RouteConfig {
 
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
-        String authUrl = System.getenv().getOrDefault("AUTH_SERVICE_URL", "http://localhost:8090");
-
         return builder.routes()
-                .route("auth-service", r -> r.path("/auth/**").uri(authUrl))
-                .route("exam-service", r -> r.path("/exam/**").uri(System.getenv("EXAM_SERVICE_URL")))
-                .route("learning-service",
-                        r -> r.path("/learn/**").uri(System.getenv("LEARNING_SERVICE_URL")))
-                .route("profile-service",
-                        r -> r.path("/profile/**").uri(System.getenv("PROFILE_SERVICE_URL")))
+                .route("auth-service", r -> r.path("/auth/**").uri(authServiceUrl))
+                .route("exam-service", r -> r.path("/exam/**").uri(examServiceUrl))
+                .route("learning-service", r -> r.path("/learn/**").uri(learningServiceUrl))
+                .route("profile-service", r -> r.path("/profile/**").uri(profileServiceUrl))
                 .build();
     }
+
 }

@@ -80,6 +80,7 @@ public class ProfileController {
 
         // Fetch all students
         List<Student> students = studentRepository.findAll();
+        students.removeIf(student -> student.getUsername().equals(username));
 
         // Prepare response
         Map<String, Object> response = new HashMap<>();

@@ -5,7 +5,7 @@ langchain_community==0.3.27
 langchain_core==0.3.67
 langchain_google_genai==2.1.6
 langchain_text_splitters==0.3.8
-numpy==2.2.6
+numpy
 pandas
 pillow==11.3.0
 python-dotenv==1.1.1

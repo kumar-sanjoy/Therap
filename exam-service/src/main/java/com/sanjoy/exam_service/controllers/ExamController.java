@@ -1,9 +1,6 @@
 package com.sanjoy.exam_service.controllers;
 
-import com.sanjoy.exam_service.models.MCQ;
-import com.sanjoy.exam_service.models.MCQSubmitRequest;
-import com.sanjoy.exam_service.models.Student;
-import com.sanjoy.exam_service.models.Sub;
+import com.sanjoy.exam_service.models.*;
 import com.sanjoy.exam_service.repo.MCQRepository;
 import com.sanjoy.exam_service.repo.PerformanceDiffLevelRepo;
 import com.sanjoy.exam_service.repo.StudentRepository;
@@ -17,6 +14,7 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
@@ -29,6 +27,7 @@ import org.springframework.web.reactive.function.client.WebClientResponseExcepti
 
 import java.io.IOException;
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @author kumar
@@ -38,7 +37,6 @@ import java.util.*;
 @RequestMapping("/exam")
 public class ExamController {
     private final WebClient webClient;
-    private final PracticeStreakService streakService;
 
     @Autowired
     private MCQRepository mcqRepository;
@@ -56,9 +54,8 @@ public class ExamController {
     private PracticeStreakService practiceStreakService;
 
     public ExamController(WebClient.Builder webClientBuilder,
-        @Value("${ai.backend.url}") String aiBackendUrl, PracticeStreakService streakService) {
+        @Value("${ai.backend.url}") String aiBackendUrl) {
         this.webClient = webClientBuilder.baseUrl(aiBackendUrl).build();
-        this.streakService = streakService;
     }
 
     @PostMapping("/mcq")
@@ -144,74 +141,72 @@ public class ExamController {
 
 
     @PostMapping("/submit-mcq")
+    @Transactional
     public ResponseEntity<String> submitMcq(@RequestBody MCQSubmitRequest request) {
         String username = request.getUsername();
         String subject = request.getSubject();
         Map<String, Boolean> questions = request.getQuestions();
         int difficultyLevel = request.getDifficultyLevel();
 
-        Optional<Sub> subOpt = subRepository.findByName(subject);
-        Sub sub;
-        if (subOpt.isEmpty()) {
-            sub = new Sub();
-            sub.setName(subject);
-            subRepository.save(sub);
-        } else {
-            sub = subOpt.get();
-        }
-
-        Student student;
-        Optional<Student> studentOpt = studentRepository.findByUsername(username);
-        if (studentOpt.isEmpty()) {
-            student = new Student();
-            student.setAttemptCount(0);
-            student.setCorrectCount(0);
-            student.setUsername(username);
-            studentRepository.save(student);
-        } else {
-            student = studentOpt.get();
-        }
+        Sub sub = subRepository.findByName(subject).orElseGet(() -> subRepository.save(new Sub(subject)));
+        Student student = studentRepository.findByUsername(username)
+                .orElseGet(() -> studentRepository.save(new Student(username)));
 
         if (student.getLast10Performance() == null) {
             student.setLast10Performance(new ArrayList<>());
         }
 
         // save the current streak of a username:
-        streakService.logPractice(username);
+        practiceStreakService.logPractice(username);
+
+        List<PerformanceDiffLevel> performanceRecords = new ArrayList<>();
+        List<MCQ> newMcqs = new ArrayList<>();
+        Set<String> existingQuestions = mcqRepository.findExistingQuestions(
+                questions.keySet().stream()
+                        .filter(q -> !questions.get(q)) // Only check wrong answers
+                        .collect(Collectors.toSet())
+        );
 
         int totalAttempt = questions.size();
         int totalWrong = 0;
-
         for (Map.Entry<String, Boolean> entry : questions.entrySet()) {
             String question = entry.getKey();
             Boolean wasCorrect = entry.getValue();
             student.recordAttempt(wasCorrect); // insert into last 10 performance
 
             int performanceLevel = (int) student.getLast10Performance().stream().filter(Boolean::booleanValue).count();
-            pdlr.insertPerformance(username, subject, performanceLevel, difficultyLevel, wasCorrect);
+            performanceRecords.add(new PerformanceDiffLevel(
+                    username, subject, performanceLevel, difficultyLevel, wasCorrect
+            ));
 
             if (!wasCorrect) {
-                totalWrong += 1;
+                totalWrong++;
 
-                // Check if MCQ with this statement already exists to avoid duplicates
-                Optional<MCQ> existingMcqOpt = mcqRepository.findIdByStatement(question);
-                MCQ mcq;
-                if(existingMcqOpt.isEmpty()) {
-                    mcq = new MCQ();
-                    mcq.setStatement(question);
-                    mcq.setMistakenByStudent(student);
-                    mcq.setSub(sub);
-                    System.out.println(mcq);
-                    mcqRepository.save(mcq);
-                    System.out.println(mcq);
-
+                // Only create MCQ if it doesn't exist and wasn't already processed
+                if (!existingQuestions.contains(question)) {
+                    MCQ newMCQ = new MCQ();
+                    newMCQ.setStatement(question);
+                    newMCQ.setSub(sub);
+                    newMCQ.setMistakenByStudent(student);
+                    newMcqs.add(newMCQ);
+                    existingQuestions.add(question); // Prevent duplicates in same batch
                 }
             }
+
         }
 
-        practiceStreakService.logPractice(username);
+        if (!performanceRecords.isEmpty()) {
+            pdlr.saveAll(performanceRecords);
+        }
+
+        if (!newMcqs.isEmpty()) {
+            mcqRepository.saveAll(newMcqs);
+        }
         studentRepository.save(student);
 
+        System.out.println(performanceRecords);
+        System.out.println(newMcqs);
+        System.out.println(student);
         return ResponseEntity.ok("Data received successfully. Total attempts: " + totalAttempt + ", Wrong answers: " + totalWrong);
     }
 
@@ -238,7 +233,6 @@ public class ExamController {
     }
 
 
-    @SuppressWarnings("null")
     @PostMapping("/submit-written")
     public Mono<ResponseEntity<String>> submitWrittenProxy(@RequestParam("image") MultipartFile imageFile,
                                                            @RequestParam("question") String questionText) {

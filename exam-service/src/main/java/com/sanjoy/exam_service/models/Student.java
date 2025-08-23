@@ -1,7 +1,9 @@
 package com.sanjoy.exam_service.models;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
@@ -12,6 +14,8 @@ import java.util.List;
 
 @Data
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 public class Student {
 
     @Id
@@ -36,5 +40,11 @@ public class Student {
 
         attemptCount++;
         if (isCorrect) correctCount++;
+    }
+
+    public Student(String username) {
+        this.username = username;
+        this.attemptCount = 0;
+        this.correctCount = 0;
     }
 }

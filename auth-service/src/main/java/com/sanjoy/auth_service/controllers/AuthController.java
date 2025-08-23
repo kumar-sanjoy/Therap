@@ -71,9 +71,25 @@ public class AuthController {
 
     @GetMapping("/register/confirmToken")
     public ResponseEntity<String> confirmToken(@RequestParam("token") String token) {
-        userDetailsService.confirmToken(token);
-        return ResponseEntity.ok("Token confirmed");
+        try {
+            userDetailsService.confirmToken(token);
+            return ResponseEntity.ok("Token confirmed successfully");
+        } catch (IllegalStateException e) {
+            if (e.getMessage().contains("already confirmed")) {
+                return ResponseEntity
+                        .status(HttpStatus.CONFLICT) // 409 Conflict
+                        .body("User already confirmed");
+            }
+            return ResponseEntity
+                    .badRequest()
+                    .body(e.getMessage());
+        } catch (Exception e) {
+            return ResponseEntity
+                    .status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("Something went wrong");
+        }
     }
+
 
 
     @PostMapping("/login")
