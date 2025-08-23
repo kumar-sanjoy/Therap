@@ -671,7 +671,7 @@ def internal_error(error):
     return jsonify({"error": "Internal server error"}), 500
 
 
-@app.errorhandler(413)
+@app.errorhandler(413) 
 def too_large(error):
     return jsonify({"error": "File too large"}), 413
 
