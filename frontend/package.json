@@ -19,6 +19,7 @@
     "@tailwindcss/vite": "^4.1.10",
     "jspdf": "^3.0.1",
     "jwt-decode": "^4.0.0",
+    "lucide-react": "^0.539.0",
     "pdfmake": "^0.2.20",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

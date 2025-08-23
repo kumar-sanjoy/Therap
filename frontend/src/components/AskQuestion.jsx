@@ -5,7 +5,7 @@ import { FaCamera, FaQuestionCircle, FaLightbulb, FaUpload, FaCheckCircle, FaTim
 import flowLogo from '../assets/flow-main-nobg.png';
 import flowLogoDark from '../assets/flow-dark.png';
 import TextDisplay from "./TextDisplay";
-import { API_BASE_URL, LEARNING_API_BASE_URL, API_ENDPOINTS, STORAGE_KEYS, DEV_MODE } from '../config';
+import { API_BASE_URL, LEARNING_API_BASE_URL, API_ENDPOINTS, STORAGE_KEYS } from '../config';
 import { useDarkTheme } from './DarkThemeProvider';
 
 const AskQuestion = () => {
@@ -27,10 +27,31 @@ const AskQuestion = () => {
     const [isRecording, setIsRecording] = useState(false);
     const [mediaRecorder, setMediaRecorder] = useState(null);
     const [audioChunks, setAudioChunks] = useState([]);
-    const [transcription, setTranscription] = useState('');
-    const [isTranscribing, setIsTranscribing] = useState(false);
+    const [audioBlob, setAudioBlob] = useState(null); // Store audio blob for sending to backend
     const [recordingTime, setRecordingTime] = useState(0);
     const recordingTimerRef = useRef(null);
+
+    // Check authentication on mount
+    useEffect(() => {
+        const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
+        const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
+        const role = localStorage.getItem(STORAGE_KEYS.ROLE);
+        
+        if (!token || !username) {
+            navigate('/login');
+            return;
+        }
+        
+        // Check if user has the correct role for this page (AskQuestion is student-only)
+        if (role !== 'STUDENT') {
+            if (role === 'TEACHER') {
+                navigate('/teacher');
+            } else {
+                navigate('/login');
+            }
+            return;
+        }
+    }, [navigate]);
 
     const handleImageUpload = (e) => {
         const file = e.target.files[0];
@@ -61,6 +82,11 @@ const AskQuestion = () => {
         }
     };
 
+    const handleRemoveAudio = () => {
+        setAudioBlob(null);
+        setAudioChunks([]);
+    };
+
     const handleMediaClick = () => {
         fileInputRef.current.click();
     };
@@ -68,24 +94,16 @@ const AskQuestion = () => {
     // Voice recording functions
     const startRecording = async () => {
         try {
-            console.log('🔍 [AUDIO DEBUG] Starting audio recording...');
-            console.log('🔍 [AUDIO DEBUG] navigator.mediaDevices:', navigator.mediaDevices);
-            console.log('🔍 [AUDIO DEBUG] window.isSecureContext:', window.isSecureContext);
-            console.log('🔍 [AUDIO DEBUG] User Agent:', navigator.userAgent);
-            
             // Check if mediaDevices is supported
             if (!navigator.mediaDevices) {
-                console.error('🔍 [AUDIO DEBUG] navigator.mediaDevices is undefined');
                 throw new Error('MediaDevices API is not supported in this browser');
             }
             
             if (!navigator.mediaDevices.getUserMedia) {
-                console.error('🔍 [AUDIO DEBUG] navigator.mediaDevices.getUserMedia is undefined');
                 
                 // Check for legacy getUserMedia support
                 if (navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia) {
-                    console.log('🔍 [AUDIO DEBUG] Legacy getUserMedia found, but not supported in this implementation');
-                    throw new Error('Legacy MediaDevices API detected but not supported. Please use a modern browser.');
+                    throw new Error('Legacy MediaDevices API detected but not supported in this implementation');
                 }
                 
                 throw new Error('MediaDevices API is not supported in this browser');
@@ -93,35 +111,53 @@ const AskQuestion = () => {
             
             // Check if we're in a secure context (HTTPS or localhost)
             if (!window.isSecureContext) {
-                console.error('🔍 [AUDIO DEBUG] Not in secure context');
                 throw new Error('MediaDevices API requires a secure context (HTTPS or localhost)');
             }
             
-            console.log('🔍 [AUDIO DEBUG] All checks passed, requesting microphone access...');
             const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
 
-            // Check for supported MIME types
-            const mimeTypes = [
-                'audio/webm;codecs=opus',
-                'audio/webm',
-                'audio/mp4',
-                'audio/ogg;codecs=opus',
-                'audio/wav'
-            ];
-
+            // Safari-specific MIME type handling
+            const userAgent = navigator.userAgent.toLowerCase();
+            const isSafari = userAgent.includes('safari') && !userAgent.includes('chrome') && !userAgent.includes('chromium');
+            
             let selectedMimeType = null;
-            for (const mimeType of mimeTypes) {
-                if (MediaRecorder.isTypeSupported(mimeType)) {
-                    selectedMimeType = mimeType;
-                    break;
+            
+            if (isSafari) {
+                // Safari prefers these formats
+                const safariMimeTypes = [
+                    'audio/mp4',
+                    'audio/aac',
+                    'audio/wav'
+                ];
+                
+                for (const mimeType of safariMimeTypes) {
+                    if (MediaRecorder.isTypeSupported(mimeType)) {
+                        selectedMimeType = mimeType;
+                        break;
+                    }
+                }
+            } else {
+                // Other browsers
+                const mimeTypes = [
+                    'audio/webm;codecs=opus',
+                    'audio/webm',
+                    'audio/mp4',
+                    'audio/ogg;codecs=opus',
+                    'audio/wav'
+                ];
+
+                for (const mimeType of mimeTypes) {
+                    if (MediaRecorder.isTypeSupported(mimeType)) {
+                        selectedMimeType = mimeType;
+                        break;
+                    }
                 }
             }
 
             if (!selectedMimeType) {
-                throw new Error('No supported audio format found');
+                console.warn('No supported audio format found, using default');
+                selectedMimeType = 'audio/webm'; // Fallback
             }
-
-            console.log('Using MIME type:', selectedMimeType);
 
             const recorder = new MediaRecorder(stream, {
                 mimeType: selectedMimeType
@@ -137,11 +173,8 @@ const AskQuestion = () => {
             recorder.onstop = async () => {
                 const audioBlob = new Blob(chunks, { type: selectedMimeType });
                 setAudioChunks(chunks);
-                setIsTranscribing(true);
-
-                // Transcribe the audio
-                await transcribeAudio(audioBlob);
-
+                setAudioBlob(audioBlob); // Store the audio blob for sending to backend
+                
                 // Stop all tracks
                 stream.getTracks().forEach(track => track.stop());
             };
@@ -164,20 +197,39 @@ const AskQuestion = () => {
                 stack: error.stack
             });
             
+            const userAgent = navigator.userAgent.toLowerCase();
+            const isSafari = userAgent.includes('safari') && !userAgent.includes('chrome') && !userAgent.includes('chromium');
+            
             if (error.message.includes('MediaDevices API is not supported')) {
                 setError('Audio recording is not supported in this browser. Please try typing your question.');
             } else if (error.message.includes('secure context')) {
                 setError('Audio recording requires HTTPS or localhost. Please use a secure connection.');
             } else if (error.name === 'NotSupportedError') {
-                setError('Audio recording is not supported in this browser. Please try typing your question.');
+                if (isSafari) {
+                    setError('Safari audio recording requires HTTPS. Please use a secure connection or try typing your question.');
+                } else {
+                    setError('Audio recording is not supported in this browser. Please try typing your question.');
+                }
             } else if (error.name === 'NotAllowedError') {
-                setError('Microphone access denied. Please allow microphone permissions and try again.');
+                if (isSafari) {
+                    setError('Safari requires microphone permission. Please allow access in Safari settings and try again.');
+                } else {
+                    setError('Microphone access denied. Please allow microphone permissions and try again.');
+                }
             } else if (error.name === 'NotFoundError') {
                 setError('No microphone found. Please connect a microphone and try again.');
             } else if (error.name === 'NotReadableError') {
-                setError('Microphone is already in use by another application. Please close other apps using the microphone.');
+                if (isSafari) {
+                    setError('Safari microphone is in use. Please close other apps using the microphone and try again.');
+                } else {
+                    setError('Microphone is already in use by another application. Please close other apps using the microphone.');
+                }
             } else {
-                setError('Could not access microphone. Please check permissions and try again.');
+                if (isSafari) {
+                    setError('Safari audio recording failed. Please check microphone permissions and try again.');
+                } else {
+                    setError('Could not access microphone. Please check permissions and try again.');
+                }
             }
         }
     };
@@ -195,55 +247,7 @@ const AskQuestion = () => {
         }
     };
 
-    const transcribeAudio = async (audioBlob) => {
-        try {
-            if (DEV_MODE) {
-                // Mock transcription for development
-                await new Promise(resolve => setTimeout(resolve, 2000));
-                const mockTranscription = "This is a mock transcription of your voice input. In a real implementation, this would be the actual transcribed text from your audio.";
-                setTranscription(mockTranscription);
-                setQuestion(prev => prev + (prev ? ' ' : '') + mockTranscription);
-            } else {
-                // Real transcription using Web Speech API or external service
-                const formData = new FormData();
 
-                // Determine file extension based on MIME type
-                let fileExtension = 'webm';
-                if (audioBlob.type.includes('mp4')) {
-                    fileExtension = 'mp4';
-                } else if (audioBlob.type.includes('ogg')) {
-                    fileExtension = 'ogg';
-                } else if (audioBlob.type.includes('wav')) {
-                    fileExtension = 'wav';
-                }
-
-                formData.append('audio', audioBlob, `recording.${fileExtension}`);
-
-                const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
-                const response = await fetch(`${API_BASE_URL}/transcribe`, {
-                    method: 'POST',
-                    headers: {
-                        'Authorization': `Bearer ${token}`,
-                    },
-                    body: formData,
-                });
-
-                if (response.ok) {
-                    const data = await response.json();
-                    setTranscription(data.transcription);
-                    setQuestion(prev => prev + (prev ? ' ' : '') + data.transcription);
-                } else {
-                    const errorData = await response.json().catch(() => ({}));
-                    throw new Error(errorData.message || 'Transcription failed');
-                }
-            }
-        } catch (error) {
-            console.error('Transcription error:', error);
-            setError('Failed to transcribe audio. Please try typing your question.');
-        } finally {
-            setIsTranscribing(false);
-        }
-    };
 
     const formatTime = (seconds) => {
         const mins = Math.floor(seconds / 60);
@@ -262,13 +266,9 @@ const AskQuestion = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log('🔍 [ASK_QUESTION DEBUG] handleSubmit called');
-        console.log('🔍 [ASK_QUESTION DEBUG] Question:', question);
-        console.log('🔍 [ASK_QUESTION DEBUG] Image file:', imageFile);
-        console.log('🔍 [ASK_QUESTION DEBUG] DEV_MODE:', DEV_MODE);
         
-        if (!question.trim() && !imageFile) {
-            setError('Please enter your question or upload an image');
+        if (!question.trim() && !imageFile && !audioBlob) {
+            setError('Please enter your question, upload an image, or record audio');
             return;
         }
 
@@ -276,76 +276,50 @@ const AskQuestion = () => {
         setError(null);
 
         try {
-            if (DEV_MODE) {
-                // Simulate API delay
-                await new Promise(resolve => setTimeout(resolve, 2000));
+            const userId = localStorage.getItem(STORAGE_KEYS.USER_ID);
+            if (!userId) {
+                navigate('/login');
+                return;
+            }
 
-                // Generate mock answer based on the question and image
-                const mockAnswer = generateMockAnswer(question.trim(), selectedSubject, imageFile);
-                setAnswer(mockAnswer);
+            // Use FormData to handle both text and image
+            const formData = new FormData();
+
+            if (question.trim()) {
+                formData.append('question', question.trim());
+            }
+
+            if (imageFile) {
+                formData.append('image', imageFile);
+            }
+
+            if (audioBlob) {
+                formData.append('audio', audioBlob);
+            }
+
+            const apiUrl = `${LEARNING_API_BASE_URL}${API_ENDPOINTS.CLEAR_DOUBT}`;
+            
+            const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
+            const response = await fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    // Don't set Content-Type header - let browser set it with boundary for FormData
+                },
+                body: formData,
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                
+                // Clear doubt API returns 'answer' field
+                const answerText = data.answer || data.response || 'No answer received';
+                
+                setAnswer(answerText);
                 setShowAnswer(true);
             } else {
-                const userId = localStorage.getItem(STORAGE_KEYS.USER_ID);
-                if (!userId) {
-                    navigate('/login');
-                    return;
-                }
-
-                // Use FormData to handle both text and image - same approach as ImageUpload test
-                const formData = new FormData();
-
-                if (question.trim()) {
-                    formData.append('question', question.trim());
-                    console.log('🔍 [ASK_QUESTION DEBUG] Added question:', question.trim());
-                }
-
-                if (imageFile) {
-                    formData.append('image', imageFile);
-                    console.log('🔍 [ASK_QUESTION DEBUG] Added image:', imageFile.name, imageFile.size, imageFile.type);
-                }
-
-                // Log FormData contents for debugging (same as ImageUpload test)
-                console.log('🔍 [ASK_QUESTION DEBUG] FormData contents:');
-                for (const [key, value] of formData.entries()) {
-                    if (value instanceof File) {
-                        console.log(`  ${key}: [File] ${value.name} (${value.size} bytes, ${value.type})`);
-                    } else {
-                        console.log(`  ${key}: "${value}"`);
-                    }
-                }
-
-                const apiUrl = `${LEARNING_API_BASE_URL}${API_ENDPOINTS.CLEAR_DOUBT}`;
-                console.log('🔍 [ASK_QUESTION DEBUG] Clear doubt API URL:', apiUrl);
-                console.log('🔍 [ASK_QUESTION DEBUG] Sending request to:', apiUrl);
-                
-                const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
-                const response = await fetch(apiUrl, {
-                    method: 'POST',
-                    headers: {
-                        'Authorization': `Bearer ${token}`,
-                        // Don't set Content-Type header - let browser set it with boundary for FormData
-                    },
-                    body: formData,
-                });
-
-                console.log('🔍 [ASK_QUESTION DEBUG] Response status:', response.status);
-                console.log('🔍 [ASK_QUESTION DEBUG] Response ok:', response.ok);
-
-                if (response.ok) {
-                    const data = await response.json();
-                    console.log('🔍 [ASK_QUESTION DEBUG] Response data:', data);
-                    
-                    // Clear doubt API returns 'response' field
-                    const answerText = data.response || 'No answer received';
-                    console.log('🔍 [ASK_QUESTION DEBUG] Response text:', answerText);
-                    
-                    setAnswer(answerText);
-                    setShowAnswer(true);
-                } else {
-                    const data = await response.json().catch(() => ({ message: 'Unknown error' }));
-                    console.error('🔍 [ASK_QUESTION DEBUG] Error response:', data);
-                    setError(data.message || `Failed to get answer (Status: ${response.status})`);
-                }
+                const data = await response.json().catch(() => ({ message: 'Unknown error' }));
+                setError(data.message || `Failed to get answer (Status: ${response.status})`);
             }
         } catch (error) {
             console.error('Error submitting question:', error);
@@ -353,325 +327,6 @@ const AskQuestion = () => {
         } finally {
             setIsSubmitting(false);
         }
-    };
-
-    // Function to generate mock answers based on question content and subject
-    const generateMockAnswer = (question, subject, imageFile) => {
-        const questionLower = question.toLowerCase();
-
-        // Physics answers
-        if (questionLower.includes('newton') || questionLower.includes('force') || questionLower.includes('motion')) {
-            return `**Newton's Laws of Motion:**
-
-**First Law (Law of Inertia):**
-An object remains at rest or in uniform motion unless acted upon by an external force. This means objects naturally resist changes in their state of motion.
-
-**Second Law:**
-Force equals mass times acceleration (F = ma). The greater the mass, the more force is needed to accelerate it.
-
-**Third Law:**
-For every action, there is an equal and opposite reaction. When you push against a wall, the wall pushes back with equal force.
-
-**Real-world Example:**
-When you're in a car that suddenly stops, your body continues moving forward due to inertia (First Law). The seatbelt applies a force to stop you (Second Law), and you feel the seatbelt's force pushing back against you (Third Law).`;
-        }
-
-        if (questionLower.includes('gravity') || questionLower.includes('gravitational')) {
-            return `**Gravitation:**
-
-**Universal Law of Gravitation:**
-Every object in the universe attracts every other object with a force that is directly proportional to the product of their masses and inversely proportional to the square of the distance between them.
-
-**Formula:** F = G(m₁m₂)/r²
-Where G is the universal gravitational constant (6.67 × 10⁻¹¹ Nm²/kg²)
-
-**Key Points:**
-• Gravity is always attractive
-• Force decreases with distance squared
-• All objects have gravitational pull
-• Earth's gravity is 9.8 m/s²
-
-**Interesting Fact:**
-Even though you're much smaller than Earth, you still exert a gravitational force on it! However, it's so small that it's negligible compared to Earth's pull on you.`;
-        }
-
-        if (questionLower.includes('electricity') || questionLower.includes('current') || questionLower.includes('voltage')) {
-            return `**Electricity Fundamentals:**
-
-**Electric Current:**
-Flow of electric charges through a conductor. Measured in Amperes (A).
-
-**Voltage (Electric Potential):**
-The electrical pressure that drives current flow. Measured in Volts (V).
-
-**Resistance:**
-Opposition to current flow. Measured in Ohms (Ω).
-
-**Ohm's Law:** V = IR
-Voltage equals current times resistance.
-
-**Series Circuit:**
-• Same current flows through all components
-• Total voltage is sum of individual voltages
-• Total resistance is sum of individual resistances
-
-**Parallel Circuit:**
-• Same voltage across all components
-• Total current is sum of individual currents
-• Total resistance is less than smallest individual resistance
-
-**Safety Note:**
-Always be careful with electricity. Never touch electrical components with wet hands!`;
-        }
-
-        // Chemistry answers
-        if (questionLower.includes('acid') || questionLower.includes('base') || questionLower.includes('ph')) {
-            return `**Acids and Bases:**
-
-**Acids:**
-• Sour taste
-• Turn blue litmus paper red
-• Conduct electricity
-• pH less than 7
-• Examples: HCl, H₂SO₄, CH₃COOH
-
-**Bases:**
-• Bitter taste
-• Turn red litmus paper blue
-• Slippery to touch
-• pH greater than 7
-• Examples: NaOH, KOH, Ca(OH)₂
-
-**pH Scale:**
-• 0-6: Acidic
-• 7: Neutral
-• 8-14: Basic
-
-**Neutralization Reaction:**
-Acid + Base → Salt + Water
-Example: HCl + NaOH → NaCl + H₂O
-
-**Indicators:**
-• Litmus paper
-• Phenolphthalein
-• Universal indicator
-
-**Real-world Applications:**
-• Antacids neutralize stomach acid
-• Soap is basic
-• Lemon juice is acidic`;
-        }
-
-        if (questionLower.includes('chemical') || questionLower.includes('reaction') || questionLower.includes('equation')) {
-            return `**Chemical Reactions and Equations:**
-
-**Chemical Reaction:**
-A process where substances transform into new substances with different properties.
-
-**Types of Reactions:**
-
-**1. Combination Reaction:**
-A + B → AB
-Example: 2H₂ + O₂ → 2H₂O
-
-**2. Decomposition Reaction:**
-AB → A + B
-Example: 2H₂O₂ → 2H₂O + O₂
-
-**3. Displacement Reaction:**
-A + BC → AC + B
-Example: Fe + CuSO₄ → FeSO₄ + Cu
-
-**4. Double Displacement:**
-AB + CD → AD + CB
-Example: AgNO₃ + NaCl → AgCl + NaNO₃
-
-**Balancing Equations:**
-• Number of atoms must be equal on both sides
-• Use coefficients to balance
-• Never change subscripts
-
-**Conservation of Mass:**
-Mass is neither created nor destroyed in a chemical reaction.`;
-        }
-
-        // Biology answers
-        if (questionLower.includes('cell') || questionLower.includes('mitochondria') || questionLower.includes('nucleus')) {
-            return `**Cell Structure and Function:**
-
-**Cell Theory:**
-• All living organisms are made up of cells
-• Cell is the basic structural and functional unit
-• All cells arise from pre-existing cells
-
-**Key Organelles:**
-
-**Nucleus:**
-• Control center of the cell
-• Contains genetic material (DNA)
-• Surrounded by nuclear membrane
-
-**Mitochondria:**
-• Powerhouse of the cell
-• Produces energy through cellular respiration
-• Has its own DNA
-
-**Endoplasmic Reticulum:**
-• Transport system of the cell
-• Rough ER: Has ribosomes, makes proteins
-• Smooth ER: Makes lipids, detoxifies
-
-**Golgi Apparatus:**
-• Packaging and secretion center
-• Modifies and packages proteins
-
-**Lysosomes:**
-• Digestive enzymes
-• Breaks down waste and foreign materials
-
-**Vacuoles:**
-• Storage and waste disposal
-• Large in plant cells, small in animal cells`;
-        }
-
-        if (questionLower.includes('photosynthesis') || questionLower.includes('chloroplast')) {
-            return `**Photosynthesis:**
-
-**Definition:**
-Process by which plants convert light energy into chemical energy (glucose).
-
-**Equation:**
-6CO₂ + 6H₂O + Light Energy → C₆H₁₂O₆ + 6O₂
-
-**Two Stages:**
-
-**1. Light-Dependent Reactions:**
-• Occurs in thylakoid membranes
-• Uses light energy to split water
-• Produces oxygen, ATP, and NADPH
-
-**2. Light-Independent Reactions (Calvin Cycle):**
-• Occurs in stroma
-• Uses ATP and NADPH to fix CO₂
-• Produces glucose
-
-**Requirements:**
-• Sunlight
-• Carbon dioxide
-• Water
-• Chlorophyll
-
-**Products:**
-• Glucose (food for plant)
-• Oxygen (released into atmosphere)
-
-**Importance:**
-• Provides food for all living organisms
-• Maintains oxygen levels in atmosphere
-• Basis of food chains`;
-        }
-
-        // Math answers
-        if (questionLower.includes('algebra') || questionLower.includes('equation') || questionLower.includes('solve')) {
-            return `**Algebraic Problem Solving:**
-
-**Linear Equations:**
-Equations with variables raised to the power of 1.
-
-**Example:** 2x + 3 = 7
-**Solution:**
-1. Subtract 3 from both sides: 2x = 4
-2. Divide both sides by 2: x = 2
-
-**Quadratic Equations:**
-Equations with variables raised to the power of 2.
-
-**Standard Form:** ax² + bx + c = 0
-
-**Methods to Solve:**
-1. **Factoring:** Find factors that multiply to give the equation
-2. **Quadratic Formula:** x = (-b ± √(b² - 4ac)) / 2a
-3. **Completing the Square:** Convert to perfect square form
-
-**Example:** x² - 5x + 6 = 0
-**Solution by Factoring:**
-(x - 2)(x - 3) = 0
-x = 2 or x = 3
-
-**Key Tips:**
-• Always check your answer by substituting back
-• Remember to consider both positive and negative solutions
-• Practice makes perfect!`;
-        }
-
-        // General science
-        if (questionLower.includes('atom') || questionLower.includes('molecule') || questionLower.includes('element')) {
-            return `**Atomic Structure:**
-
-**Atom:**
-The smallest unit of an element that retains its properties.
-
-**Structure:**
-• **Nucleus:** Contains protons and neutrons
-• **Electrons:** Orbit around the nucleus in shells
-
-**Subatomic Particles:**
-• **Protons:** Positive charge, mass = 1 amu
-• **Neutrons:** No charge, mass = 1 amu
-• **Electrons:** Negative charge, mass ≈ 0 amu
-
-**Atomic Number:**
-Number of protons (determines the element)
-
-**Mass Number:**
-Number of protons + neutrons
-
-**Isotopes:**
-Atoms of the same element with different numbers of neutrons
-
-**Molecule:**
-Two or more atoms chemically bonded together
-
-**Element:**
-Pure substance made of only one type of atom
-
-**Compound:**
-Substance made of two or more different elements chemically combined`;
-        }
-
-        // Default answer for unrecognized questions
-        return `I understand you're asking about "${question}". This is a great question that shows you're thinking critically about the subject.
-
-**General Approach to Answering Questions:**
-
-**1. Break Down the Question:**
-• Identify key terms and concepts
-• Understand what's being asked
-• Look for context clues
-
-**2. Apply Relevant Concepts:**
-• Use your knowledge of the subject
-• Connect to related topics you've learned
-• Consider real-world applications
-
-**3. Structure Your Answer:**
-• Start with a clear definition or explanation
-• Provide examples or evidence
-• Conclude with a summary
-
-**4. Verify Your Understanding:**
-• Check if your answer makes sense
-• Consider alternative perspectives
-• Ask follow-up questions if needed
-
-**Study Tip:**
-When you encounter questions like this, try to:
-• Draw diagrams or mind maps
-• Explain the concept to someone else
-• Practice with similar problems
-• Review related topics
-
-Would you like me to help you break down this question further or explore related concepts?`;
     };
 
     return (
@@ -860,11 +515,53 @@ Would you like me to help you break down this question further or explore relate
                                 </h3>
                                 
                                 {/* Browser Compatibility Info */}
-                                {(!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) && (
-                                    <div className="text-xs text-orange-600 bg-orange-50 px-2 py-1 rounded border border-orange-200">
-                                        ⚠️ Audio recording not supported
-                                    </div>
-                                )}
+                                {(() => {
+                                    // More comprehensive Safari detection
+                                    const userAgent = navigator.userAgent.toLowerCase();
+                                    const isSafari = userAgent.includes('safari') && !userAgent.includes('chrome') && !userAgent.includes('chromium');
+                                    const hasMediaDevices = navigator.mediaDevices && navigator.mediaDevices.getUserMedia;
+                                    const isSecureContext = window.isSecureContext;
+                                    
+                                    // Debug logging
+                                    console.log('🔍 [AUDIO DEBUG] Browser check:', {
+                                        userAgent: navigator.userAgent,
+                                        isSafari,
+                                        hasMediaDevices: !!hasMediaDevices,
+                                        isSecureContext,
+                                        mediaDevices: !!navigator.mediaDevices,
+                                        getUserMedia: !!navigator.mediaDevices?.getUserMedia
+                                    });
+                                    
+                                    if (!hasMediaDevices) {
+                                        console.log('🔍 [AUDIO DEBUG] No MediaDevices support detected');
+                                        return (
+                                            <div className="text-xs text-orange-600 bg-orange-50 px-2 py-1 rounded border border-orange-200">
+                                                ⚠️ Audio recording not supported
+                                            </div>
+                                        );
+                                    }
+                                    
+                                    if (!isSecureContext) {
+                                        console.log('🔍 [AUDIO DEBUG] Not in secure context');
+                                        return (
+                                            <div className="text-xs text-orange-600 bg-orange-50 px-2 py-1 rounded border border-orange-200">
+                                                ⚠️ HTTPS required for audio
+                                            </div>
+                                        );
+                                    }
+                                    
+                                    if (isSafari) {
+                                        console.log('🔍 [AUDIO DEBUG] Safari detected, showing Safari indicator');
+                                        return (
+                                            <div className="text-xs text-blue-600 bg-blue-50 px-2 py-1 rounded border border-blue-200">
+                                                🎤 Safari audio recording
+                                            </div>
+                                        );
+                                    }
+                                    
+                                    console.log('🔍 [AUDIO DEBUG] All checks passed, no indicator needed');
+                                    return null;
+                                })()}
                                 
                                 {isRecording && (
                                     <div className="flex items-center text-red-600">
@@ -878,7 +575,7 @@ Would you like me to help you break down this question further or explore relate
                                 {!isRecording ? (
                                     <button
                                         onClick={startRecording}
-                                        disabled={isTranscribing || !navigator.mediaDevices || !navigator.mediaDevices.getUserMedia}
+                                        disabled={!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia || !window.isSecureContext}
                                         className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
                                     >
                                         <FaMicrophone className="w-4 h-4" />
@@ -893,21 +590,30 @@ Would you like me to help you break down this question further or explore relate
                                         <span>Stop Recording</span>
                                     </button>
                                 )}
-
-                                {isTranscribing && (
-                                    <div className="flex items-center gap-2 text-blue-600">
-                                        <div className="w-4 h-4 border-2 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
-                                        <span className="text-sm">Transcribing...</span>
-                                    </div>
-                                )}
                             </div>
 
-                            {transcription && (
-                                <div className="mt-3 p-3 bg-white rounded-lg border border-blue-200">
-                                    <p className="text-sm text-gray-600 mb-1">Transcription:</p>
-                                    <p className="text-[#343434] font-medium">{transcription}</p>
+                            {/* Audio Recording Status */}
+                            {audioBlob && (
+                                <div className="mt-3 p-3 bg-green-50 rounded-lg border border-green-200">
+                                    <div className="flex items-center justify-between">
+                                        <div className="flex items-center gap-2">
+                                            <FaMicrophone className="text-green-600" />
+                                            <span className="text-sm font-medium text-green-800">Audio recorded successfully!</span>
+                                        </div>
+                                        <button
+                                            onClick={handleRemoveAudio}
+                                            className="text-red-500 hover:text-red-700 hover:scale-110 transition-all duration-300 text-sm font-medium"
+                                        >
+                                            Remove
+                                        </button>
+                                    </div>
+                                    <p className="text-xs text-green-600 mt-1">
+                                        Audio will be sent to the backend for processing
+                                    </p>
                                 </div>
                             )}
+
+
                         </div>
 
                         {/* Image Upload Section */}
@@ -965,7 +671,7 @@ Would you like me to help you break down this question further or explore relate
                 <div className="flex justify-center mb-8">
                     <button
                         onClick={handleSubmit}
-                        disabled={isSubmitting || (!question.trim() && !imageFile)}
+                        disabled={isSubmitting || (!question.trim() && !imageFile && !audioBlob)}
                         className="px-8 py-4 bg-gradient-to-r from-[#343434] to-gray-700 hover:from-gray-800 hover:to-gray-900 text-white font-medium rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center space-x-2"
                     >
                         {isSubmitting ? (
@@ -993,7 +699,7 @@ Would you like me to help you break down this question further or explore relate
                         </h2>
                         <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border border-green-200 overflow-hidden">
                             <div className="max-w-full overflow-hidden">
-                                <TextDisplay content={answer} />
+                                <TextDisplay content={answer} forceBlackText={true} />
                             </div>
                         </div>
                     </div>

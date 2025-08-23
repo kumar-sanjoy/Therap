@@ -40,3 +40,7 @@ dependencyManagement {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+bootJar {
+    archiveFileName = "api-gateway-app.jar"
+}

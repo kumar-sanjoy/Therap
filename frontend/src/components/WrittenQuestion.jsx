@@ -3,12 +3,15 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { FaUpload, FaCheckCircle, FaArrowLeft, FaPen } from 'react-icons/fa';
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { API_BASE_URL, EXAM_API_BASE_URL, API_ENDPOINTS, STORAGE_KEYS, mapClassForExamAPI, mapSubjectForExamAPI } from '../config';
-import flowLogo from '../assets/flow-dark.png';
+import { useDarkTheme } from './DarkThemeProvider';
+import flowLogoLight from '../assets/flow-main-nobg.png';
+import flowLogoDark from '../assets/flow-dark.png';
 import TextDisplay from "./TextDisplay";
 
 const WrittenQuestion = () => {
     const navigate = useNavigate();
     const location = useLocation();
+    const { isDarkMode } = useDarkTheme();
     const [question, setQuestion] = useState(location.state?.question || '');
     const [isLoadingQuestion, setIsLoadingQuestion] = useState(!location.state?.question);
 
@@ -20,13 +23,40 @@ const WrittenQuestion = () => {
     const [showFeedback, setShowFeedback] = useState(false);
     const [error, setError] = useState('');
 
+    // Check authentication on mount
+    useEffect(() => {
+        const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
+        const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
+        const role = localStorage.getItem(STORAGE_KEYS.ROLE);
+        
+        if (!token || !username) {
+            navigate('/login');
+            return;
+        }
+        
+        // Check if user has the correct role for this page (WrittenQuestion is student-only)
+        if (role !== 'STUDENT') {
+            if (role === 'TEACHER') {
+                navigate('/teacher');
+            } else {
+                navigate('/login');
+            }
+            return;
+        }
+    }, [navigate]);
+
     // Initialize question from location.state or fetch if not available
     useEffect(() => {
+        // Check if question is passed from SelectSubject first
         const questionFromState = location.state?.question;
         if (questionFromState) {
             setQuestion(questionFromState);
             setIsLoadingQuestion(false);
-        } else if (!question) {
+            return;
+        }
+
+        // If no question from state, check if we need to fetch
+        if (!question) {
             // Only fetch if question is not in state and not already set
             setIsLoadingQuestion(true);
             const className = location.state?.className || location.state?.class || 'Class 9';
@@ -181,7 +211,11 @@ const WrittenQuestion = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-200">
+        <div className={`min-h-screen ${
+            isDarkMode 
+                ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900' 
+                : 'bg-gradient-to-br from-gray-50 via-white to-gray-200'
+        }`}>
             {/* Enhanced Loading Overlay */}
             {isSubmitting && (
                 <div className="fixed inset-0 bg-gradient-to-br from-blue-50/95 via-white/95 to-green-50/95 backdrop-blur-lg flex flex-col items-center justify-center z-50">
@@ -266,10 +300,18 @@ const WrittenQuestion = () => {
             )}
 
             {/* Header */}
-            <header className="w-full mx-auto flex items-center justify-between p-4 md:p-6 border-b border-gray-100 shrink-0 bg-gradient-to-r from-white to-gray-50/50">
-                <img src={flowLogo} alt="FLOW Logo" className="h-10" />
+            <header className={`w-full mx-auto flex items-center justify-between p-4 md:p-6 border-b shrink-0 ${
+                isDarkMode 
+                    ? 'border-gray-700 bg-gradient-to-r from-gray-800 to-gray-900/50' 
+                    : 'border-gray-100 bg-gradient-to-r from-white to-gray-50/50'
+            }`}>
+                <img src={isDarkMode ? flowLogoDark : flowLogoLight} alt="FLOW Logo" className="h-10" />
                 <button 
-                    className="px-4 py-2 bg-white border border-gray-200 rounded-lg text-gray-600 font-medium hover:bg-[#343434] hover:text-white transition-all flex items-center gap-2"
+                    className={`px-4 py-2 border rounded-lg font-medium transition-all flex items-center gap-2 ${
+                        isDarkMode 
+                            ? 'bg-gray-700 border-gray-600 text-gray-200 hover:bg-gray-600 hover:text-white' 
+                            : 'bg-white border-gray-200 text-gray-600 hover:bg-[#343434] hover:text-white'
+                    }`}
                     onClick={() => navigate('/main')}
                 >
                     <IoMdArrowRoundBack />
@@ -281,11 +323,15 @@ const WrittenQuestion = () => {
             <div className="p-4 md:p-8 max-w-4xl mx-auto">
                 {/* Page Header */}
                 <div className="text-center mb-8">
-                    <h1 className="text-3xl md:text-4xl font-bold text-[#343434] mb-4 flex items-center justify-center gap-3">
-                        <FaPen className="text-[#343434]" />
+                    <h1 className={`text-3xl md:text-4xl font-bold mb-4 flex items-center justify-center gap-3 ${
+                        isDarkMode ? 'text-gray-200' : 'text-[#343434]'
+                    }`}>
+                        <FaPen className={isDarkMode ? 'text-gray-200' : 'text-[#343434]'} />
                         Written Question Practice
                     </h1>
-                    <p className="text-gray-600 text-lg">Upload a photo of your handwritten answer for evaluation</p>
+                    <p className={`text-lg ${
+                        isDarkMode ? 'text-gray-400' : 'text-gray-600'
+                    }`}>Upload a photo of your handwritten answer for evaluation</p>
                 </div>
 
                 {/* Error Message */}
@@ -301,34 +347,62 @@ const WrittenQuestion = () => {
                 )}
 
                 {/* Question Card */}
-                <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-gray-200 p-6 mb-8">
-                    <h2 className="text-xl font-bold text-[#343434] mb-4 flex items-center gap-2">
-                        <svg className="w-5 h-5 text-[#343434]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className={`backdrop-blur-sm rounded-2xl shadow-xl border p-6 mb-8 ${
+                    isDarkMode 
+                        ? 'bg-gray-800/80 border-gray-700' 
+                        : 'bg-white/80 border-gray-200'
+                }`}>
+                    <h2 className={`text-xl font-bold mb-4 flex items-center gap-2 ${
+                        isDarkMode ? 'text-gray-200' : 'text-[#343434]'
+                    }`}>
+                        <svg className={`w-5 h-5 ${
+                            isDarkMode ? 'text-gray-200' : 'text-[#343434]'
+                        }`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         Question
                     </h2>
-                    <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 border border-gray-200">
+                    <div className={`rounded-xl p-6 border ${
+                        isDarkMode 
+                            ? 'bg-gradient-to-br from-gray-700 to-gray-600 border-gray-600' 
+                            : 'bg-gradient-to-br from-gray-50 to-gray-100 border-gray-200'
+                    }`}>
                         {isLoadingQuestion ? (
                             <div className="flex items-center justify-center space-x-3">
-                                <div className="w-6 h-6 border-2 border-gray-300 border-t-green-500 rounded-full animate-spin"></div>
-                                <p className="text-gray-600">Loading question...</p>
+                                <div className={`w-6 h-6 border-2 rounded-full animate-spin ${
+                                    isDarkMode 
+                                        ? 'border-gray-600 border-t-green-400' 
+                                        : 'border-gray-300 border-t-green-500'
+                                }`}></div>
+                                <p className={isDarkMode ? 'text-gray-400' : 'text-gray-600'}>Loading question...</p>
                             </div>
                         ) : (
-                            <p className="text-gray-800 text-lg leading-relaxed">{question}</p>
+                            <p className={`text-lg leading-relaxed ${
+                                isDarkMode ? 'text-gray-200' : 'text-gray-800'
+                            }`}>{question}</p>
                         )}
                     </div>
                 </div>
 
                 {/* Upload Section */}
-                <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-gray-200 p-6 mb-8">
-                    <h2 className="text-xl font-bold text-[#343434] mb-6 flex items-center gap-2">
-                        <FaUpload className="text-[#343434]" />
+                <div className={`backdrop-blur-sm rounded-2xl shadow-xl border p-6 mb-8 ${
+                    isDarkMode 
+                        ? 'bg-gray-800/80 border-gray-700' 
+                        : 'bg-white/80 border-gray-200'
+                }`}>
+                    <h2 className={`text-xl font-bold mb-6 flex items-center gap-2 ${
+                        isDarkMode ? 'text-gray-200' : 'text-[#343434]'
+                    }`}>
+                        <FaUpload className={isDarkMode ? 'text-gray-200' : 'text-[#343434]'} />
                         Upload Your Answer
                     </h2>
                     
                     {/* File Upload Area */}
-                    <div className="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center hover:border-[#343434] transition-colors duration-300">
+                    <div className={`border-2 border-dashed rounded-xl p-8 text-center transition-colors duration-300 ${
+                        isDarkMode 
+                            ? 'border-gray-600 hover:border-gray-400' 
+                            : 'border-gray-300 hover:border-[#343434]'
+                    }`}>
                         <input
                             type="file"
                             accept="image/*"
@@ -339,14 +413,22 @@ const WrittenQuestion = () => {
                         />
                         <label htmlFor="image-upload" className={`${isLoadingQuestion ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'}`}>
                             <div className="flex flex-col items-center space-y-4">
-                                <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center">
-                                    <FaUpload className="w-8 h-8 text-gray-400" />
+                                <div className={`w-16 h-16 rounded-full flex items-center justify-center ${
+                                    isDarkMode ? 'bg-gray-700' : 'bg-gray-100'
+                                }`}>
+                                    <FaUpload className={`w-8 h-8 ${
+                                        isDarkMode ? 'text-gray-400' : 'text-gray-400'
+                                    }`} />
                                 </div>
                                 <div>
-                                    <p className="text-lg font-medium text-gray-700">
+                                    <p className={`text-lg font-medium ${
+                                        isDarkMode ? 'text-gray-300' : 'text-gray-700'
+                                    }`}>
                                         {isLoadingQuestion ? 'Loading question...' : image ? 'Image uploaded successfully!' : 'Click to upload image'}
                                     </p>
-                                    <p className="text-sm text-gray-500 mt-1">
+                                    <p className={`text-sm mt-1 ${
+                                        isDarkMode ? 'text-gray-500' : 'text-gray-500'
+                                    }`}>
                                         {isLoadingQuestion ? 'Please wait while we load your question' : image ? image.name : 'PNG, JPG, JPEG up to 5MB'}
                                     </p>
                                 </div>
@@ -357,9 +439,15 @@ const WrittenQuestion = () => {
                     {/* Image Preview */}
                     {previewURL && (
                         <div className="mt-6">
-                            <div className="relative bg-gray-50 rounded-xl p-4 border border-gray-200">
+                            <div className={`relative rounded-xl p-4 border ${
+                                isDarkMode 
+                                    ? 'bg-gray-700 border-gray-600' 
+                                    : 'bg-gray-50 border-gray-200'
+                            }`}>
                                 <div className="flex items-center justify-between mb-3">
-                                    <h3 className="text-lg font-semibold text-[#343434]">Preview</h3>
+                                    <h3 className={`text-lg font-semibold ${
+                                        isDarkMode ? 'text-gray-200' : 'text-[#343434]'
+                                    }`}>Preview</h3>
                                     <button
                                         onClick={removeImage}
                                         className="text-red-500 hover:text-red-700 hover:scale-105 text-sm font-medium"
@@ -384,7 +472,11 @@ const WrittenQuestion = () => {
                     <button 
                         onClick={handleSubmit} 
                         disabled={isSubmitting || !image || isLoadingQuestion} 
-                        className="px-8 py-4 bg-[#343434] hover:from-gray-800 hover:to-gray-900 text-white font-medium rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center space-x-2"
+                        className={`px-8 py-4 font-medium rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center space-x-2 ${
+                            isDarkMode 
+                                ? 'bg-white hover:bg-gray-100 text-gray-900' 
+                                : 'bg-[#343434] hover:from-gray-800 hover:to-gray-900 text-white'
+                        }`}
                     >
                         {isSubmitting ? (
                             <>
@@ -402,20 +494,36 @@ const WrittenQuestion = () => {
 
                 {/* Feedback Section */}
                 {showFeedback && (
-                    <div className="mt-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-gray-200 p-6">
-                        <h2 className="text-xl font-bold text-[#343434] mb-4 flex items-center gap-2">
-                            <svg className="w-5 h-5 text-[#343434]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className={`mt-8 backdrop-blur-sm rounded-2xl shadow-xl border p-6 ${
+                        isDarkMode 
+                            ? 'bg-gray-800/80 border-gray-700' 
+                            : 'bg-white/80 border-gray-200'
+                    }`}>
+                        <h2 className={`text-xl font-bold mb-4 flex items-center gap-2 ${
+                            isDarkMode ? 'text-gray-200' : 'text-[#343434]'
+                        }`}>
+                            <svg className={`w-5 h-5 ${
+                                isDarkMode ? 'text-gray-200' : 'text-[#343434]'
+                            }`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                             AI Feedback
                         </h2>
-                        <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border border-green-200">
+                        <div className={`rounded-xl p-6 border ${
+                            isDarkMode 
+                                ? 'bg-gradient-to-br from-green-900/20 to-emerald-900/20 border-green-700' 
+                                : 'bg-gradient-to-br from-green-50 to-emerald-50 border-green-200'
+                        }`}>
                             <TextDisplay content={feedback} />
                         </div>
                         <div className="flex justify-center mt-6">
                             <button 
                                 onClick={reset}
-                                className="px-6 py-3 bg-white border border-gray-200 hover:bg-gray-50 text-[#343434] font-medium rounded-lg transition-all hover:shadow-md flex items-center space-x-2"
+                                className={`px-6 py-3 border font-medium rounded-lg transition-all hover:shadow-md flex items-center space-x-2 ${
+                                    isDarkMode 
+                                        ? 'bg-white border-gray-300 hover:bg-gray-100 text-gray-900' 
+                                        : 'bg-white border-gray-200 hover:bg-gray-50 text-[#343434]'
+                                }`}
                             >
                                 <IoMdArrowRoundBack className="w-4 h-4" />
                                 <span>Back to Main</span>

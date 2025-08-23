@@ -16,6 +16,10 @@ const EmailConfirmation = () => {
 
   useEffect(() => {
     const confirmEmail = async () => {
+      setIsLoading(true);
+      setMessage(''); // Clear previous messages
+      setStatus('loading');
+
       try {
         const token = searchParams.get('token');
         
@@ -26,13 +30,13 @@ const EmailConfirmation = () => {
           return;
         }
 
-        console.log('🔍 [EMAIL_CONFIRMATION DEBUG] Confirming email with token:', token);
-        
-        // Make GET request to backend with the token
+        // Debug: Log the confirmation request
+        console.log('🔍 [EMAIL CONFIRMATION DEBUG] Confirming email with token:', token);
+        console.log('🔍 [EMAIL CONFIRMATION DEBUG] API endpoint:', `${API_BASE_URL}${API_ENDPOINTS.CONFIRM_EMAIL}?token=${token}`);
+
         const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.CONFIRM_EMAIL}?token=${token}`, {
           method: 'GET',
           headers: {
-            'Content-Type': 'application/json',
             'Accept': 'application/json',
             'Origin': window.location.origin,
           },
@@ -40,19 +44,23 @@ const EmailConfirmation = () => {
           credentials: 'include',
         });
 
-        console.log('🔍 [EMAIL_CONFIRMATION DEBUG] Response status:', response.status);
+        // Debug: Log the response
+        console.log('🔍 [EMAIL CONFIRMATION DEBUG] Response status:', response.status);
+        console.log('🔍 [EMAIL CONFIRMATION DEBUG] Response headers:', Object.fromEntries(response.headers.entries()));
 
         if (response.ok) {
           const data = await response.json();
+          console.log('🔍 [EMAIL CONFIRMATION DEBUG] Success response:', data);
           setStatus('success');
           setMessage(data.message || 'Email confirmed successfully! You can now sign in to your account.');
         } else {
           const errorData = await response.json().catch(() => ({}));
+          console.log('🔍 [EMAIL CONFIRMATION DEBUG] Error response:', errorData);
           setStatus('error');
           setMessage(errorData.message || 'Email confirmation failed. The link may be expired or invalid.');
         }
       } catch (error) {
-        console.error('🔍 [EMAIL_CONFIRMATION DEBUG] Error confirming email:', error);
+        console.error('🔍 [EMAIL CONFIRMATION DEBUG] Exception:', error);
         setStatus('error');
         setMessage('Unable to confirm email. Please check your connection and try again.');
       } finally {

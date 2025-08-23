@@ -1,9 +1,7 @@
-package com.sanjoy.exam_service.service;
+package com.sanjoy.auth_service.service;
 
-import com.sanjoy.exam_service.models.DailyPracticeLog;
-import com.sanjoy.exam_service.repo.DailyPracticeLogRepository;
-
-import org.springframework.transaction.annotation.Transactional;
+import com.sanjoy.auth_service.models.DailyPracticeLog;
+import com.sanjoy.auth_service.repo.DailyPracticeLogRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -22,7 +20,6 @@ public class PracticeStreakService {
         this.logRepository = logRepository;
     }
 
-    @Transactional
     public void logPractice(String username) {
         LocalDate today = LocalDate.now();
 

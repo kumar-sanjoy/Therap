@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { FaBook, FaQuestionCircle, FaPen, FaSpinner, FaGraduationCap, FaGlobe,FaFlask, FaChartLine, FaBriefcase, FaLeaf, FaHistory, FaStickyNote } from "react-icons/fa";
 import { GiAtom } from "react-icons/gi";
-import { API_BASE_URL, EXAM_API_BASE_URL, LEARNING_API_BASE_URL, API_ENDPOINTS, DEV_MODE, ROUTES, STORAGE_KEYS, mapClassForExamAPI, mapSubjectForExamAPI } from '../config';
+import { API_BASE_URL, EXAM_API_BASE_URL, LEARNING_API_BASE_URL, API_ENDPOINTS, ROUTES, STORAGE_KEYS, mapClassForExamAPI, mapSubjectForExamAPI } from '../config';
 import { useDarkTheme } from './DarkThemeProvider';
 import flowLogoLight from '../assets/flow-main-nobg.png';
 import flowLogoDark from '../assets/flow-dark.png';
@@ -16,6 +16,13 @@ const SelectSubject = ({ mode: propMode }) => {
   const queryMode = searchParams.get('mode');
   const mode = queryMode || location.state?.mode || propMode;
   
+  console.log('🔍 [SELECT_SUBJECT DEBUG] Component initialized with mode:', {
+    propMode,
+    queryMode,
+    locationStateMode: location.state?.mode,
+    finalMode: mode
+  });
+  
   const navigate = useNavigate();
   const { isDarkMode } = useDarkTheme();
   const [selectedClass, setSelectedClass] = useState('');
@@ -25,6 +32,38 @@ const SelectSubject = ({ mode: propMode }) => {
   const [error, setError] = useState('');
   const [currentRequestId, setCurrentRequestId] = useState(null);
   const [firstRequestId, setFirstRequestId] = useState(null);
+
+  // Helper function to clean and format token
+  const getFormattedToken = () => {
+    const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
+    if (!token) return null;
+    
+    // Remove any whitespace and "Bearer " prefix if present
+    let cleanToken = token.trim();
+    if (cleanToken.startsWith('Bearer ')) {
+      cleanToken = cleanToken.substring(7);
+    }
+    
+    return cleanToken;
+  };
+
+  // Check authentication on mount
+  useEffect(() => {
+    const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
+    const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
+    const role = localStorage.getItem(STORAGE_KEYS.ROLE);
+    
+    if (!token || !username) {
+      navigate('/login');
+      return;
+    }
+    
+    // Check if user has a valid role
+    if (!role || (role !== 'STUDENT' && role !== 'TEACHER')) {
+      navigate('/login');
+      return;
+    }
+  }, [navigate]);
 
   // Load recent selections from localStorage
   useEffect(() => {
@@ -41,7 +80,6 @@ const SelectSubject = ({ mode: propMode }) => {
   useEffect(() => {
     return () => {
       if (isLoading) {
-        console.log('🔍 Component unmounting - cleaning up request state');
         setIsLoading(false);
         setCurrentRequestId(null);
         setFirstRequestId(null);
@@ -135,284 +173,467 @@ const SelectSubject = ({ mode: propMode }) => {
 
   const themeColor = mode === 'learn' ? 'blue' : mode === 'mcq' ? 'purple' : mode === 'revise' ? 'orange' : mode === 'notes' ? 'yellow' : 'green';
 
-  const handleStart = async () => {
-    if (!selectedClass || !selectedSubject || !selectedChapter) {
-      setError('Please select all options');
-      return;
-    }
-
-    // Generate unique request ID
-    const requestId = Date.now() + Math.random();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     
-    // Prevent duplicate requests - only allow the first request
-    if (isLoading) {
-      console.log('🔍 Request blocked - already loading');
+    console.log('🔍 [SELECT_SUBJECT DEBUG] handleSubmit called with mode:', mode);
+    console.log('🔍 [SELECT_SUBJECT DEBUG] Selected values:', {
+      class: selectedClass,
+      subject: selectedSubject,
+      chapter: selectedChapter
+    });
+    
+    if (!selectedClass || !selectedSubject || !selectedChapter) {
+      setError('Please select all fields');
       return;
     }
 
-    // Save selections to localStorage for later use
-    localStorage.setItem('class', selectedClass);
-    localStorage.setItem('subject', selectedSubject);
-    localStorage.setItem('chapter', selectedChapter);
+    // Prevent multiple simultaneous requests
+    if (isLoading) {
+      console.log('🔍 [SELECT_SUBJECT DEBUG] Request blocked - already loading');
+      return;
+    }
 
-    setIsLoading(true);
+    const requestId = Date.now();
     setCurrentRequestId(requestId);
     
-    // Set first request ID if this is the first request
+    // Track first request to prevent race conditions
     if (!firstRequestId) {
       setFirstRequestId(requestId);
-      console.log('🔍 First request started with ID:', requestId);
-    } else {
-      console.log('🔍 Subsequent request started with ID:', requestId, 'but first request was:', firstRequestId);
-    }
-    
-    // Store first request ID in a ref to avoid state timing issues
-    if (!window.firstRequestId) {
       window.firstRequestId = requestId;
-      console.log('🔍 Global first request ID set:', requestId);
     }
-    
+
+    setIsLoading(true);
     setError('');
 
     try {
-      if (DEV_MODE) {
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        const mockData = {
-          learn: { content: "This is mock learning content...", title: "Mock Learning Title" },
-          mcq: {
-            questions: [
-              { question: "What is the capital of France?", options: { a: "London", b: "Berlin", c: "Paris", d: "Madrid" }, answer: "c", hint: "Think about the Eiffel Tower", explanation: "Paris is the capital city of France" },
-              { question: "Which planet is known as the Red Planet?", options: { a: "Venus", b: "Mars", c: "Jupiter", d: "Saturn" }, answer: "b", hint: "It's named after the Roman god of war", explanation: "Mars is called the Red Planet due to its reddish appearance" },
-              { question: "What is 2 + 2?", options: { a: "3", b: "4", c: "5", d: "6" }, answer: "b", hint: "Basic arithmetic", explanation: "2 + 2 = 4" }
-            ]
-          },
-          written: {
-            questions: [
-              { question: "Explain the process of photosynthesis", wordLimit: 200 },
-              { question: "Describe the water cycle", wordLimit: 150 }
-            ]
-          },
-          notes: {
-            note: [
-              "**Chapter 1: Motion**\n\n- Motion is the change in position of an object with respect to time.\n- Distance is the total path length covered by an object.\n- Displacement is the shortest distance between initial and final positions.\n- Speed is the rate of change of distance.\n- Velocity is the rate of change of displacement.",
-              "**গতি সম্পর্কে:**\n\n- গতি হল সময়ের সাপেক্ষে বস্তুর অবস্থানের পরিবর্তন।\n- দূরত্ব হল বস্তু দ্বারা অতিক্রান্ত মোট পথের দৈর্ঘ্য।\n- সরণ হল প্রাথমিক এবং চূড়ান্ত অবস্থানের মধ্যে সবচেয়ে ছোট দূরত্ব।\n- বেগ হল দূরত্বের পরিবর্তনের হার।\n- বেগ হল সরণের পরিবর্তনের হার।",
-              "**Key Formulas:**\n\n- Average Speed = Total Distance / Total Time\n- Average Velocity = Total Displacement / Total Time\n- Acceleration = Change in Velocity / Time"
-            ]
-          }
+      // For quiz mode, fetch questions first
+      if (mode === 'test' || mode === 'mcq') {
+        console.log('🔍 [SELECT_SUBJECT DEBUG] Processing quiz mode');
+        const token = getFormattedToken();
+        const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
+        
+        console.log('🔍 [SELECT_SUBJECT DEBUG] Authentication check:', {
+          rawToken: localStorage.getItem(STORAGE_KEYS.TOKEN) ? `${localStorage.getItem(STORAGE_KEYS.TOKEN).substring(0, 20)}...` : 'null',
+          cleanToken: token ? `${token.substring(0, 20)}...` : 'null',
+          tokenLength: token ? token.length : 0,
+          username: username,
+          hasToken: !!token,
+          hasUsername: !!username,
+          rawTokenStartsWithBearer: localStorage.getItem(STORAGE_KEYS.TOKEN) ? localStorage.getItem(STORAGE_KEYS.TOKEN).startsWith('Bearer ') : false
+        });
+        
+        if (!token || !username) {
+          console.error('🔍 [SELECT_SUBJECT DEBUG] Missing authentication:', { token: !!token, username: !!username });
+          navigate('/login');
+          return;
+        }
+
+        // Additional validation for token
+        if (token.length < 10) {
+          console.error('🔍 [SELECT_SUBJECT DEBUG] Token seems too short:', { tokenLength: token.length });
+          navigate('/login');
+          return;
+        }
+
+        const params = new URLSearchParams({
+          username,
+          className: mapClassForExamAPI(selectedClass),
+          subject: mapSubjectForExamAPI(selectedSubject),
+          chapter: selectedChapter,
+          count: '5' // Default count of 5 questions
+        });
+
+        console.log('🔍 [SELECT_SUBJECT DEBUG] Fetching questions for quiz with parameters:', {
+          username,
+          className: mapClassForExamAPI(selectedClass),
+          subject: mapSubjectForExamAPI(selectedSubject),
+          chapter: selectedChapter,
+          rawClassName: selectedClass,
+          rawSubject: selectedSubject
+        });
+        console.log('🔍 [SELECT_SUBJECT DEBUG] Questions endpoint:', `${EXAM_API_BASE_URL}${API_ENDPOINTS.MCQ_QUESTIONS}`);
+        console.log('🔍 [SELECT_SUBJECT DEBUG] Query parameters:', params.toString());
+        console.log('🔍 [SELECT_SUBJECT DEBUG] Authorization header:', `Bearer ${token.substring(0, 20)}...`);
+
+        const headers = {
+          'Authorization': `Bearer ${token}`
         };
 
-        switch (mode) {
-          case 'learn': navigate(ROUTES.LEARN, { state: { data: mockData.learn } }); break;
-          case 'mcq':
-          case 'test': navigate(ROUTES.QUIZ, { state: { data: mockData.mcq } }); break;
-          case 'written': navigate(ROUTES.WRITTEN, { state: { data: mockData.written } }); break;
-          case 'revise': navigate(ROUTES.PREV_MISTAKES, { state: { className: selectedClass, subject: selectedSubject, chapter: selectedChapter, count: 5 } }); break;
-          case 'notes': navigate(ROUTES.SHOW_NOTES, { 
+        console.log('🔍 [SELECT_SUBJECT DEBUG] Request headers:', headers);
+
+        const response = await fetch(`${EXAM_API_BASE_URL}${API_ENDPOINTS.MCQ_QUESTIONS}?${params.toString()}`, {
+          method: 'POST',
+          headers
+        });
+
+        console.log('🔍 [SELECT_SUBJECT DEBUG] Questions response status:', response.status);
+        console.log('🔍 [SELECT_SUBJECT DEBUG] Response headers:', Object.fromEntries(response.headers.entries()));
+
+        if (response.ok) {
+          const data = await response.json();
+          console.log('🔍 [SELECT_SUBJECT DEBUG] Questions response data:', data);
+          
+          // Navigate to quiz with fetched questions
+          navigate(ROUTES.QUIZ, { 
             state: { 
               className: selectedClass,
               subject: selectedSubject,
               chapter: selectedChapter,
-              note: mockData.notes.note || [],
-              skipInitialLoading: true
+              questions: data.mcqs || data.questions || data,
+              difficultyLevel: data.difficultyLevel
             } 
-          }); break;
-          default: setError('Invalid mode');
+          });
+        } else {
+          console.error('🔍 [SELECT_SUBJECT DEBUG] Failed to fetch questions, status:', response.status);
+          const errorText = await response.text();
+          console.error('🔍 [SELECT_SUBJECT DEBUG] Error response:', errorText);
+          setError('Failed to fetch quiz questions. Please try again.');
         }
-      } else {
+        return;
+      }
+
+      // For revise mode, fetch previous mistakes first
+      if (mode === 'revise') {
+        console.log('🔍 [SELECT_SUBJECT DEBUG] Processing revise mode');
+        const token = getFormattedToken();
         const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
-        const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
         
-        if (!username || !token) {
-          setError('User not logged in');
+        console.log('🔍 [SELECT_SUBJECT DEBUG] Authentication check for revise:', {
+          rawToken: localStorage.getItem(STORAGE_KEYS.TOKEN) ? `${localStorage.getItem(STORAGE_KEYS.TOKEN).substring(0, 20)}...` : 'null',
+          cleanToken: token ? `${token.substring(0, 20)}...` : 'null',
+          tokenLength: token ? token.length : 0,
+          username: username,
+          hasToken: !!token,
+          hasUsername: !!username
+        });
+        
+        if (!token || !username) {
+          console.error('🔍 [SELECT_SUBJECT DEBUG] Missing authentication for revise:', { token: !!token, username: !!username });
+          navigate('/login');
           return;
         }
 
-        let response;
-        
-        if (mode === 'learn') {
-          // Learning endpoint uses GET with query parameters
-          const params = new URLSearchParams({
-            className: mapClassForExamAPI(selectedClass),
-            subject: mapSubjectForExamAPI(selectedSubject),
-            chapter: selectedChapter
-          });
-          response = await fetch(`${LEARNING_API_BASE_URL}${API_ENDPOINTS.LEARN}?${params.toString()}`, {
-            method: 'GET',
-            headers: {
-              'Authorization': `Bearer ${token}`,
-              'Content-Type': 'application/json'
-            }
-          });
-        } else if (mode === 'mcq' || mode === 'test') {
-          // MCQ endpoint uses POST with query parameters
-          const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
-          const params = new URLSearchParams({
-            username,
-            className: mapClassForExamAPI(selectedClass),
-            subject: mapSubjectForExamAPI(selectedSubject),
-            chapter: selectedChapter,
-            count: '3'
-          });
-          response = await fetch(`${EXAM_API_BASE_URL}${API_ENDPOINTS.MCQ}?${params.toString()}`, {
-            method: 'POST',
-            headers: {
-              'Authorization': `Bearer ${token}`,
-              'Content-Type': 'application/json'
-            }
-          });
-        } else if (mode === 'written') {
-          // Written question endpoint uses GET with query parameters
-          const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
-          const params = new URLSearchParams({
-            username,
-            className: mapClassForExamAPI(selectedClass),
-            subject: mapSubjectForExamAPI(selectedSubject),
-            chapter: selectedChapter
-          });
-          response = await fetch(`${EXAM_API_BASE_URL}${API_ENDPOINTS.WRITTEN_QUESTION}?${params.toString()}`, {
-            method: 'GET',
-            headers: {
-              'Authorization': `Bearer ${token}`,
-              'Content-Type': 'application/json'
-            }
-          });
-        } else if (mode === 'notes') {
-          // Notes endpoint uses GET with query parameters
-          const params = new URLSearchParams({
-            className: mapClassForExamAPI(selectedClass),
-            subject: mapSubjectForExamAPI(selectedSubject),
-            chapter: selectedChapter
-          });
-          response = await fetch(`${LEARNING_API_BASE_URL}${API_ENDPOINTS.GENERATE_NOTE}?${params.toString()}`, {
-            method: 'GET',
-            headers: {
-              'Authorization': `Bearer ${token}`,
-              'Content-Type': 'application/json'
-            }
-          });
-        } else if (mode === 'revise') {
-          // Revise mode needs to fetch previous mistakes
-          const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
-          const params = new URLSearchParams({
-            username,
-            className: mapClassForExamAPI(selectedClass),
-            subject: mapSubjectForExamAPI(selectedSubject),
-            chapter: selectedChapter,
-            count: '5'
-          });
-          response = await fetch(`${EXAM_API_BASE_URL}${API_ENDPOINTS.PREVIOUS_MCQ}?${params.toString()}`, {
-            method: 'GET',
-            headers: {
-              'Authorization': `Bearer ${token}`,
-              'Content-Type': 'application/json'
-            }
-          });
-        }
-
-        // Only process response from the first request
-        const globalFirstRequestId = window.firstRequestId;
-        if (requestId !== globalFirstRequestId) {
-          console.log('🔍 Request ignored - not the first request. Global first request ID:', globalFirstRequestId, 'Current request ID:', requestId);
+        // Additional validation for token
+        if (token.length < 10) {
+          console.error('🔍 [SELECT_SUBJECT DEBUG] Token seems too short for revise:', { tokenLength: token.length });
+          navigate('/login');
           return;
         }
 
-        if (!response.ok) {
-          if (mode === 'revise' && response.status === 400) {
-            throw new Error('Not enough questions practised for this subject. Please practice more questions first.');
+        const params = new URLSearchParams({
+          username,
+          className: mapClassForExamAPI(selectedClass),
+          subject: mapSubjectForExamAPI(selectedSubject),
+          chapter: selectedChapter,
+          count: '5' // Default count of 5 questions
+        });
+
+        console.log('🔍 [SELECT_SUBJECT DEBUG] Fetching previous mistakes with parameters:', {
+          username,
+          className: mapClassForExamAPI(selectedClass),
+          subject: mapSubjectForExamAPI(selectedSubject),
+          chapter: selectedChapter,
+          rawClassName: selectedClass,
+          rawSubject: selectedSubject
+        });
+        console.log('🔍 [SELECT_SUBJECT DEBUG] Previous mistakes endpoint:', `${EXAM_API_BASE_URL}${API_ENDPOINTS.PREVIOUS_MCQ}`);
+        console.log('🔍 [SELECT_SUBJECT DEBUG] Query parameters:', params.toString());
+
+        const response = await fetch(`${EXAM_API_BASE_URL}${API_ENDPOINTS.PREVIOUS_MCQ}?${params.toString()}`, {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${token}`
           }
-          throw new Error('Failed to fetch data');
-        }
-        const data = await response.json();
-        
-        // Check again if this is still the first request
-        const globalFirstRequestId2 = window.firstRequestId;
-        if (requestId !== globalFirstRequestId2) {
-          console.log('🔍 Request ignored after data fetch - not the first request');
-          return;
-        }
+        });
 
-        switch (mode) {
-          case 'learn': 
+        console.log('🔍 [SELECT_SUBJECT DEBUG] Previous mistakes response status:', response.status);
+
+        if (response.ok) {
+          const data = await response.json();
+          console.log('🔍 [SELECT_SUBJECT DEBUG] Previous mistakes response data:', data);
+          
+          // Navigate to PrevMistake with fetched questions
+          navigate(ROUTES.PREV_MISTAKES, { 
+            state: { 
+              className: selectedClass,
+              subject: selectedSubject,
+              chapter: selectedChapter,
+              questions: data.mcqs || data.questions || data,
+              count: 5
+            } 
+          });
+        } else {
+          console.error('🔍 [SELECT_SUBJECT DEBUG] Failed to fetch previous mistakes, status:', response.status);
+          const errorText = await response.text();
+          console.error('🔍 [SELECT_SUBJECT DEBUG] Error response:', errorText);
+          
+          // Check if it's the "not enough questions practiced" error
+          if (errorText.includes('Not enough questions practiced')) {
+            setError('No previous mistakes found for this subject. Please practice some questions first and then try again.');
+          } else {
+            setError('Failed to fetch previous mistakes. Please try again.');
+          }
+        }
+        return;
+      }
+
+      console.log('🔍 [SELECT_SUBJECT DEBUG] Processing non-quiz mode:', mode);
+      // Navigate based on mode (for non-quiz modes)
+      switch (mode) {
+        case 'learn':
+          console.log('🔍 [SELECT_SUBJECT DEBUG] Processing learn mode');
+          const learnToken = getFormattedToken();
+          const learnUsername = localStorage.getItem(STORAGE_KEYS.USERNAME);
+          
+          if (!learnToken || !learnUsername) {
+            console.error('🔍 [SELECT_SUBJECT DEBUG] Missing authentication for learn:', { token: !!learnToken, username: !!learnUsername });
+            navigate('/login');
+            return;
+          }
+
+          // Additional validation for token
+          if (learnToken.length < 10) {
+            console.error('🔍 [SELECT_SUBJECT DEBUG] Token seems too short for learn:', { tokenLength: learnToken.length });
+            navigate('/login');
+            return;
+          }
+
+          const learnParams = new URLSearchParams({
+            className: mapClassForExamAPI(selectedClass),
+            subject: mapSubjectForExamAPI(selectedSubject),
+            chapter: selectedChapter
+          });
+
+          console.log('🔍 [SELECT_SUBJECT DEBUG] Fetching learning content with parameters:', {
+            className: mapClassForExamAPI(selectedClass),
+            subject: mapSubjectForExamAPI(selectedSubject),
+            chapter: selectedChapter,
+            rawClassName: selectedClass,
+            rawSubject: selectedSubject
+          });
+          console.log('🔍 [SELECT_SUBJECT DEBUG] Learn endpoint:', `${LEARNING_API_BASE_URL}${API_ENDPOINTS.LEARN}`);
+          console.log('🔍 [SELECT_SUBJECT DEBUG] Query parameters:', learnParams.toString());
+
+          const learnResponse = await fetch(`${LEARNING_API_BASE_URL}${API_ENDPOINTS.LEARN}?${learnParams.toString()}`, {
+            method: 'GET',
+            headers: {
+              'Authorization': `Bearer ${learnToken}`,
+              'Content-Type': 'application/json'
+            }
+          });
+
+          console.log('🔍 [SELECT_SUBJECT DEBUG] Learn response status:', learnResponse.status);
+
+          if (learnResponse.ok) {
+            const learnData = await learnResponse.json();
+            console.log('🔍 [SELECT_SUBJECT DEBUG] Learn response data:', learnData);
+            console.log('🔍 [SELECT_SUBJECT DEBUG] Learn response structure:', {
+              hasContent: !!learnData.content,
+              hasLessons: !!learnData.lessons,
+              hasChapterTitle: !!learnData.chapterTitle,
+              hasTitle: !!learnData.title,
+              contentType: typeof learnData.content,
+              lessonsType: typeof learnData.lessons,
+              isContentArray: Array.isArray(learnData.content),
+              isLessonsArray: Array.isArray(learnData.lessons)
+            });
+            
+            // Extract content from response
+            const extractedContent = learnData.content || learnData.lessons || learnData;
+            const extractedTitle = learnData.chapterTitle || learnData.title || `${selectedSubject} - Chapter ${selectedChapter}`;
+            
+            console.log('🔍 [SELECT_SUBJECT DEBUG] Extracted content:', {
+              content: extractedContent,
+              title: extractedTitle,
+              contentLength: Array.isArray(extractedContent) ? extractedContent.length : 'Not an array'
+            });
+            
+            // Navigate to Learn with fetched content
             navigate(ROUTES.LEARN, { 
               state: { 
                 className: selectedClass,
                 subject: selectedSubject,
-                chapter: selectedChapter
-              } 
-            }); 
-            break;
-          case 'mcq':
-          case 'test': 
-            navigate(ROUTES.QUIZ, { 
-              state: { 
-                className: selectedClass,
-                subject: selectedSubject,
                 chapter: selectedChapter,
-                count: 3
+                content: extractedContent,
+                chapterTitle: extractedTitle
               } 
-            }); 
-            break;
-          case 'written': 
+            });
+          } else {
+            console.error('🔍 [SELECT_SUBJECT DEBUG] Failed to fetch learning content, status:', learnResponse.status);
+            const errorText = await learnResponse.text();
+            console.error('🔍 [SELECT_SUBJECT DEBUG] Error response:', errorText);
+            setError('Failed to fetch learning content. Please try again.');
+          }
+          return;
+        case 'written':
+          console.log('🔍 [SELECT_SUBJECT DEBUG] Processing written question mode');
+          const writtenToken = getFormattedToken();
+          const writtenUsername = localStorage.getItem(STORAGE_KEYS.USERNAME);
+          
+          if (!writtenToken || !writtenUsername) {
+            console.error('🔍 [SELECT_SUBJECT DEBUG] Missing authentication for written question:', { token: !!writtenToken, username: !!writtenUsername });
+            navigate('/login');
+            return;
+          }
+
+          // Additional validation for token
+          if (writtenToken.length < 10) {
+            console.error('🔍 [SELECT_SUBJECT DEBUG] Token seems too short for written question:', { tokenLength: writtenToken.length });
+            navigate('/login');
+            return;
+          }
+
+          const writtenParams = new URLSearchParams({
+            username: writtenUsername,
+            className: mapClassForExamAPI(selectedClass),
+            subject: mapSubjectForExamAPI(selectedSubject),
+            chapter: selectedChapter
+          });
+
+          console.log('🔍 [SELECT_SUBJECT DEBUG] Fetching written question with parameters:', {
+            username: writtenUsername,
+            className: mapClassForExamAPI(selectedClass),
+            subject: mapSubjectForExamAPI(selectedSubject),
+            chapter: selectedChapter,
+            rawClassName: selectedClass,
+            rawSubject: selectedSubject
+          });
+          console.log('🔍 [SELECT_SUBJECT DEBUG] Written question endpoint:', `${EXAM_API_BASE_URL}${API_ENDPOINTS.WRITTEN_QUESTION}`);
+          console.log('🔍 [SELECT_SUBJECT DEBUG] Query parameters:', writtenParams.toString());
+
+          const writtenResponse = await fetch(`${EXAM_API_BASE_URL}${API_ENDPOINTS.WRITTEN_QUESTION}?${writtenParams.toString()}`, {
+            method: 'GET',
+            headers: {
+              'Authorization': `Bearer ${writtenToken}`,
+              'Content-Type': 'application/json'
+            }
+          });
+
+          console.log('🔍 [SELECT_SUBJECT DEBUG] Written question response status:', writtenResponse.status);
+
+          if (writtenResponse.ok) {
+            const writtenData = await writtenResponse.json();
+            console.log('🔍 [SELECT_SUBJECT DEBUG] Written question response data:', writtenData);
+            
+            // Extract question from the response
+            const extractedQuestion = writtenData.question || writtenData.questions?.[0]?.question || 'No question found.';
+            
+            // Navigate to WrittenQuestion with fetched question
             navigate(ROUTES.WRITTEN, { 
               state: { 
                 className: selectedClass,
                 subject: selectedSubject,
                 chapter: selectedChapter,
-                question: data.question || data.questions?.[0]?.question || ''
+                question: extractedQuestion
               } 
-            }); 
-            break;
-          case 'notes': 
+            });
+          } else {
+            console.error('🔍 [SELECT_SUBJECT DEBUG] Failed to fetch written question, status:', writtenResponse.status);
+            const errorText = await writtenResponse.text();
+            console.error('🔍 [SELECT_SUBJECT DEBUG] Error response:', errorText);
+            setError('Failed to fetch written question. Please try again.');
+          }
+          return;
+        case 'notes':
+          console.log('🔍 [SELECT_SUBJECT DEBUG] Processing notes mode');
+          const notesToken = getFormattedToken();
+          const notesUsername = localStorage.getItem(STORAGE_KEYS.USERNAME);
+          
+          if (!notesToken || !notesUsername) {
+            console.error('🔍 [SELECT_SUBJECT DEBUG] Missing authentication for notes:', { token: !!notesToken, username: !!notesUsername });
+            navigate('/login');
+            return;
+          }
+
+          // Additional validation for token
+          if (notesToken.length < 10) {
+            console.error('🔍 [SELECT_SUBJECT DEBUG] Token seems too short for notes:', { tokenLength: notesToken.length });
+            navigate('/login');
+            return;
+          }
+
+          const notesParams = new URLSearchParams({
+            className: mapClassForExamAPI(selectedClass),
+            subject: mapSubjectForExamAPI(selectedSubject),
+            chapter: selectedChapter
+          });
+
+          console.log('🔍 [SELECT_SUBJECT DEBUG] Fetching notes with parameters:', {
+            className: mapClassForExamAPI(selectedClass),
+            subject: mapSubjectForExamAPI(selectedSubject),
+            chapter: selectedChapter,
+            rawClassName: selectedClass,
+            rawSubject: selectedSubject
+          });
+          console.log('🔍 [SELECT_SUBJECT DEBUG] Notes endpoint:', `${LEARNING_API_BASE_URL}${API_ENDPOINTS.GENERATE_NOTE}`);
+          console.log('🔍 [SELECT_SUBJECT DEBUG] Query parameters:', notesParams.toString());
+
+          const notesResponse = await fetch(`${LEARNING_API_BASE_URL}${API_ENDPOINTS.GENERATE_NOTE}?${notesParams.toString()}`, {
+            method: 'GET',
+            headers: {
+              'Authorization': `Bearer ${notesToken}`,
+              'Content-Type': 'application/json'
+            }
+          });
+
+          console.log('🔍 [SELECT_SUBJECT DEBUG] Notes response status:', notesResponse.status);
+
+          if (notesResponse.ok) {
+            const notesData = await notesResponse.json();
+            console.log('🔍 [SELECT_SUBJECT DEBUG] Notes response data:', notesData);
+            
+            // Extract notes from the response
+            let extractedNotes = [];
+            if (notesData.note && Array.isArray(notesData.note)) {
+              extractedNotes = notesData.note;
+            } else if (notesData.note && typeof notesData.note === 'string') {
+              extractedNotes = [notesData.note];
+            } else if (notesData.note && typeof notesData.note === 'object' && notesData.note !== null) {
+              if (notesData.note.hasOwnProperty('note ')) {
+                extractedNotes = [notesData.note['note ']];
+              } else {
+                extractedNotes = Object.values(notesData.note);
+              }
+            } else if (notesData.notes && Array.isArray(notesData.notes)) {
+              extractedNotes = notesData.notes;
+            } else if (notesData.lesson && Array.isArray(notesData.lesson)) {
+              extractedNotes = notesData.lesson;
+            } else if (notesData.content && Array.isArray(notesData.content)) {
+              extractedNotes = notesData.content;
+            }
+            
+            // Navigate to ShowNotes with fetched notes
             navigate(ROUTES.SHOW_NOTES, { 
               state: { 
                 className: selectedClass,
                 subject: selectedSubject,
                 chapter: selectedChapter,
-                note: data.note || data.notes || data.content || [],
-                skipInitialLoading: true // Skip loading since data is already fetched
+                note: extractedNotes,
+                skipInitialLoading: true
               } 
-            }); 
-            break;
-          case 'revise': 
-            navigate(ROUTES.PREV_MISTAKES, { 
-              state: { 
-                className: selectedClass,
-                subject: selectedSubject,
-                chapter: selectedChapter,
-                count: 5,
-                questions: data.mcqs || data.questions || data.mistakes || []
-              } 
-            }); 
-            break;
-          default: setError('Invalid mode');
-        }
+            });
+          } else {
+            console.error('🔍 [SELECT_SUBJECT DEBUG] Failed to fetch notes, status:', notesResponse.status);
+            const errorText = await notesResponse.text();
+            console.error('🔍 [SELECT_SUBJECT DEBUG] Error response:', errorText);
+            setError('Failed to fetch notes. Please try again.');
+          }
+          return;
+        default:
+          setError('Invalid mode');
+          break;
       }
     } catch (error) {
-      console.error('Error:', error);
-      
-      // Provide more specific error messages based on error type
-      if (error.name === 'TypeError' && error.message.includes('Load failed')) {
-        if (mode === 'learn' || mode === 'notes') {
-          setError('Unable to connect to learning server (port 8092). Please ensure the server is running.');
-        } else {
-          setError('Unable to connect to server. Please check your connection and try again.');
-        }
-      } else if (error.message.includes('Failed to fetch')) {
-        setError('Network error. Please check your internet connection and try again.');
-      } else {
-        setError('Failed to start. Please try again.');
-      }
+      console.error('🔍 [SELECT_SUBJECT DEBUG] Error in handleSubmit:', error);
+      setError('Something went wrong. Please try again.');
     } finally {
-      // Only reset loading state if this is the first request
-      const globalFirstRequestId = window.firstRequestId;
-      if (requestId === globalFirstRequestId) {
+      // Only cleanup if this was the first request
+      if (requestId === firstRequestId) {
         setIsLoading(false);
         setCurrentRequestId(null);
-        setFirstRequestId(null); // Reset first request ID
-        window.firstRequestId = null; // Reset global first request ID
-        console.log('🔍 First request completed with ID:', requestId);
-      } else {
-        console.log('🔍 Request cleanup skipped - not the first request');
+        setFirstRequestId(null);
+        window.firstRequestId = null;
       }
     }
   };
@@ -641,7 +862,7 @@ const SelectSubject = ({ mode: propMode }) => {
             selectedChapter={selectedChapter}
             setSelectedChapter={setSelectedChapter}
             buttonLabel={mode === 'learn' ? 'Start Learning' : mode === 'mcq' ? 'Start Quiz' : mode === 'revise' ? 'Start Revision' : mode === 'notes' ? 'Show Notes' : 'Start Practice'}
-            onSubmit={handleStart}
+            onSubmit={handleSubmit}
             loading={isLoading}
             error={error}
             themeColor={themeColor}

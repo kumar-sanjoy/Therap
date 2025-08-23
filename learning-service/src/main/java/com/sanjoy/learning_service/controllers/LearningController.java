@@ -12,16 +12,13 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.client.MultipartBodyBuilder;
 import org.springframework.http.client.reactive.ReactorClientHttpConnector;
+// import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 import reactor.netty.tcp.TcpClient;
-
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 import reactor.netty.http.client.HttpClient;
 
 import java.io.File;
@@ -40,22 +37,21 @@ import java.util.concurrent.TimeUnit;
  */
 @RestController
 @RequestMapping("/learn")
-//@CrossOrigin(origins = "*")
 public class LearningController {
 
     private final WebClient webClient;
 
     public LearningController(WebClient.Builder webClientBuilder,
-                              @Value("${ai.backend.url}") String aiBackendUrl) {
+            @Value("${ai.backend.url}") String aiBackendUrl) {
         this.webClient = createWebClientWithTimeouts(aiBackendUrl);
     }
 
     private WebClient createWebClientWithTimeouts(String aiBackendUrl) {
         TcpClient tcpClient = TcpClient.create()
                 .option(ChannelOption.CONNECT_TIMEOUT_MILLIS, 10_000) // 10s connect timeout
-                .doOnConnected(conn ->
-                        conn.addHandlerLast(new ReadTimeoutHandler(1200, TimeUnit.SECONDS))  // 120s read timeout
-                                .addHandlerLast(new WriteTimeoutHandler(1200, TimeUnit.SECONDS)) // 120s write timeout
+                .doOnConnected(conn -> conn.addHandlerLast(new ReadTimeoutHandler(1200, TimeUnit.SECONDS)) // 120s read
+                                                                                                           // timeout
+                        .addHandlerLast(new WriteTimeoutHandler(1200, TimeUnit.SECONDS)) // 120s write timeout
                 );
 
         @SuppressWarnings("deprecation")
@@ -74,7 +70,7 @@ public class LearningController {
             @RequestParam String subject,
             @RequestParam String chapter) {
 
-        System.out.println("Learn request started at: " + System.currentTimeMillis());
+        // System.out.println("Learn request started at: " + System.currentTimeMillis());
 
         return webClient.get()
                 .uri(uriBuilder -> uriBuilder
@@ -84,51 +80,50 @@ public class LearningController {
                         .queryParam("chapter", chapter)
                         .build())
                 .retrieve()
-                .bodyToMono(new ParameterizedTypeReference<Map<String, Object>>() {})
+                .bodyToMono(new ParameterizedTypeReference<Map<String, Object>>() {
+                })
                 .map(responseMap -> {
-                    System.out.println("Learn request completed at: " + System.currentTimeMillis());
+                    // System.out.println("Learn request completed at: " + System.currentTimeMillis());
                     return ResponseEntity.ok(responseMap);
                 })
                 .onErrorResume(e -> {
-                    System.out.println("Learn request failed at: " + System.currentTimeMillis() +
-                            " with error: " + e.getMessage());
+                    // System.out.println("Learn request failed at: " + System.currentTimeMillis() + " with error: " + e.getMessage());
                     return Mono.just(
                             ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                                    .body(Map.of("error", e.getMessage()))
-                    );
+                                    .body(Map.of("error", e.getMessage())));
                 });
     }
 
-
-@PostMapping("/doubts")
+    @SuppressWarnings("null")
+    @PostMapping("/doubts")
     public Map<String, String> sendDoubt(
             @RequestParam(required = false) MultipartFile image,
             @RequestParam(required = false) MultipartFile audio,
             @RequestParam(required = false) String question) throws Exception {
 
-    System.out.println("doubts hit");
+        // System.out.println("doubts hit");
         MultipartBodyBuilder builder = new MultipartBodyBuilder();
 
         if (image != null && !image.isEmpty()) {
             builder.part("image",
-                            new ByteArrayResource(image.getBytes()) {
-                                @Override
-                                public String getFilename() {
-                                    return image.getOriginalFilename();
-                                }
-                            })
+                    new ByteArrayResource(image.getBytes()) {
+                        @Override
+                        public String getFilename() {
+                            return image.getOriginalFilename();
+                        }
+                    })
                     .contentType(MediaType.parseMediaType(image.getContentType()));
         }
 
         if (audio != null && !audio.isEmpty()) {
-            System.out.println("Audio received...");
+            // System.out.println("Audio received...");
             builder.part("audio",
-                            new ByteArrayResource(audio.getBytes()) {
-                                @Override
-                                public String getFilename() {
-                                    return audio.getOriginalFilename();
-                                }
-                            })
+                    new ByteArrayResource(audio.getBytes()) {
+                        @Override
+                        public String getFilename() {
+                            return audio.getOriginalFilename();
+                        }
+                    })
                     .contentType(MediaType.parseMediaType(audio.getContentType()));
         }
 
@@ -139,24 +134,24 @@ public class LearningController {
         Mono<Map<String, String>> responseMono = webClient.post()
                 .uri("/learn/doubts")
                 .contentType(MediaType.MULTIPART_FORM_DATA)
-                .bodyValue(builder.build())
+                .body(org.springframework.web.reactive.function.BodyInserters.fromMultipartData(builder.build()))
                 .retrieve()
-                .bodyToMono(new ParameterizedTypeReference<Map<String, String>>() {});
+                .bodyToMono(new ParameterizedTypeReference<Map<String, String>>() {
+                });
 
-    Map<String, String> result = responseMono
-            .doOnNext(map -> System.out.println(map))
-            .block();
+        Map<String, String> result = responseMono
+                // .doOnNext(map -> System.out.println(map))
+                .block();
 
-    return result;
-}
-
+        return result;
+    }
 
     @GetMapping("/notes")
     public Mono<ResponseEntity<Map<String, Object>>> newExam(
             @RequestParam String className,
             @RequestParam String subject,
             @RequestParam String chapter) {
-        System.out.println("note hit");
+        // System.out.println("note hit");
 
         String pythonEndpoint = "/learn/notes";
 
@@ -168,30 +163,29 @@ public class LearningController {
                         .queryParam("chapter", chapter)
                         .build())
                 .retrieve()
-                .bodyToMono(new ParameterizedTypeReference<Map<String, Object>>() {})
+                .bodyToMono(new ParameterizedTypeReference<Map<String, Object>>() {
+                })
                 .map(responseMap -> ResponseEntity.ok(responseMap))
                 .onErrorResume(e -> Mono.just(
                         ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                                .body(Map.of("error", e.getMessage()))
-                ));
+                                .body(Map.of("error", e.getMessage()))));
     }
 
     private static final String UPLOAD_DIR = System.getProperty("user.dir") + "/uploads/";
-
 
     @PostMapping("/upload")
     public ResponseEntity<Map<String, String>> uploadImage(
             @RequestParam(value = "image", required = false) MultipartFile image,
             @RequestParam(value = "question", required = false) String question) {
 
-        System.out.println("🔄 Received upload request.");
-        System.out.println("📝 Question: " + question);
-        System.out.println("🖼️ Image present: " + (image != null && !image.isEmpty()));
-        System.out.println("📋 Request received at: " + System.currentTimeMillis());
+        // System.out.println("🔄 Received upload request.");
+        // System.out.println("📝 Question: " + question);
+        // System.out.println("🖼️ Image present: " + (image != null && !image.isEmpty()));
+        // System.out.println("📋 Request received at: " + System.currentTimeMillis());
 
         // Check if both are empty
         if ((image == null || image.isEmpty()) && (question == null || question.trim().isEmpty())) {
-            System.out.println("❌ Both image and question are empty");
+            // System.out.println("❌ Both image and question are empty");
             return ResponseEntity.badRequest().body(Map.of("message", "No image or question provided."));
         }
 
@@ -201,49 +195,49 @@ public class LearningController {
             if (image != null && !image.isEmpty()) {
                 // Handle image upload
                 File dir = new File(UPLOAD_DIR);
-                if (!dir.exists()) dir.mkdirs();
+                if (!dir.exists())
+                    dir.mkdirs();
 
                 String filename = image.getOriginalFilename();
                 Path filePath = Paths.get(UPLOAD_DIR, filename);
                 image.transferTo(filePath.toFile());
 
-                System.out.println("✅ Saved image to: " + filePath.toAbsolutePath());
+                // System.out.println("✅ Saved image to: " + filePath.toAbsolutePath());
                 answer = "Received question: " + question + " and saved image: " + filename;
             } else {
                 // Handle text-only question
-                System.out.println("📝 Processing text-only question");
+                // System.out.println("📝 Processing text-only question");
                 answer = "Received question: " + question;
             }
 
             return ResponseEntity.ok(Map.of("answer", answer));
 
         } catch (IOException e) {
-            System.out.println("💥 Error saving file: " + e.getMessage());
+            // System.out.println("💥 Error saving file: " + e.getMessage());
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body(Map.of("message", "Upload failed: " + e.getMessage()));
         } catch (Exception e) {
-            System.out.println("💥 Unexpected error: " + e.getMessage());
+            // System.out.println("💥 Unexpected error: " + e.getMessage());
             e.printStackTrace();
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body(Map.of("message", "Unexpected error: " + e.getMessage()));
         }
     }
 
-
     @GetMapping("/view/{filename:.+}")
     public ResponseEntity<Resource> serveImage(@PathVariable String filename) {
-        System.out.println("👁️ Requested to view image: " + filename);
+        // System.out.println("👁️ Requested to view image: " + filename);
 
         try {
             Path filePath = Paths.get(UPLOAD_DIR).resolve(filename).normalize();
             Resource resource = new UrlResource(filePath.toUri());
 
             if (!resource.exists()) {
-                System.out.println("❌ Image not found: " + filePath);
+                // System.out.println("❌ Image not found: " + filePath);
                 return ResponseEntity.notFound().build();
             }
 
-            System.out.println("✅ Serving image from: " + filePath.toAbsolutePath());
+            // System.out.println("✅ Serving image from: " + filePath.toAbsolutePath());
 
             String contentType = Files.probeContentType(filePath);
             if (contentType == null) {
@@ -255,10 +249,10 @@ public class LearningController {
                     .body(resource);
 
         } catch (MalformedURLException e) {
-            System.out.println("💥 Invalid URL for image: " + filename);
+            // System.out.println("💥 Invalid URL for image: " + filename);
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         } catch (IOException e) {
-            System.out.println("💥 Error reading image file: " + e.getMessage());
+            // System.out.println("💥 Error reading image file: " + e.getMessage());
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
     }

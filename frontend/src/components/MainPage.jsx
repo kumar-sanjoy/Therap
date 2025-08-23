@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaBook, FaPen, FaChevronLeft, FaChevronRight, FaUser, FaSignOutAlt, FaQuestionCircle, FaStickyNote, FaHistory, FaFire, FaGraduationCap, FaTrophy, FaStar, FaChartLine } from 'react-icons/fa';
+import { 
+  FaBook, FaPen, FaChevronLeft, FaChevronRight, FaUser, FaSignOutAlt, 
+  FaQuestionCircle, FaStickyNote, FaHistory, FaFire, FaGraduationCap, 
+  FaTrophy, FaStar, FaChartLine, FaBullseye, FaCheckCircle, FaTimesCircle,
+  FaArrowUp, FaArrowDown, FaMinus, FaLightbulb, FaAward, FaRocket,
+  FaClock, FaChartBar, FaRegSmile, FaRegFrown, FaRegMeh
+} from 'react-icons/fa';
 import { LuNotebookPen } from "react-icons/lu";
 import { ImBooks } from "react-icons/im";
-import { API_BASE_URL, API_ENDPOINTS, DEV_MODE, STORAGE_KEYS } from '../config';
+import { API_BASE_URL, API_ENDPOINTS, STORAGE_KEYS, subject_map } from '../config';
 import ThemeToggle from './ThemeToggle';
 import { useDarkTheme } from './DarkThemeProvider';
 import flowLogoLight from '../assets/flow-main-nobg.png';
@@ -206,94 +212,149 @@ const MainPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Mock data for development
+  // Check authentication on mount
   useEffect(() => {
-    if (DEV_MODE) {
-      setTimeout(() => {
-        setStats({
-          totalQuestions: 30,
-          totalRight: 20,
-          totalWrong: 10,
-          lastTenPerformance: ['right', 'right', 'wrong', 'right', 'wrong', 'right', 'right', 'wrong', 'right', 'right'],
-          streak: 5,
-          subjects: {
-            math: { completed: 15, accuracy: 85 },
-            science: { completed: 12, accuracy: 78 },
-            english: { completed: 8, accuracy: 92 }
-          }
-        });
-        setIsLoading(false);
-      }, 1000);
-    } else {
-      const fetchStats = async () => {
-        try {
-          const userName = localStorage.getItem(STORAGE_KEYS.USERNAME);
-          const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
-          
-          console.log('🔍 Debug - userId:', userId);
-          console.log('🔍 Debug - token:', token);
-          
-          if (!userName || !token) {
-            console.log('🔍 Debug - Missing userId or token, redirecting to login');
-            navigate('/login');
-            return;
-          }
+    const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
+    const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
+    const role = localStorage.getItem(STORAGE_KEYS.ROLE);
+    
+    if (!token || !username) {
+      navigate('/login');
+      return;
+    }
+    
+    // Check if user has the correct role for this page
+    if (role !== 'STUDENT') {
+      if (role === 'TEACHER') {
+        navigate('/teacher');
+      } else {
+        navigate('/login');
+      }
+      return;
+    }
+  }, [navigate]);
 
-          const params = new URLSearchParams({
-            username: userId
-          });
-          
-          console.log('🔍 Debug - API URL:', `${API_BASE_URL}${API_ENDPOINTS.STUDENT_PROFILE}?${params.toString()}`);
-          console.log('🔍 Debug - Headers:', {
+  // Fetch user stats
+  useEffect(() => {
+    const fetchStats = async () => {
+      try {
+        const userId = localStorage.getItem(STORAGE_KEYS.USER_ID);
+        const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
+        const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
+        
+        if (!userId || !username || !token) {
+          navigate('/login');
+          return;
+        }
+
+        const params = new URLSearchParams({
+          username: username
+        });
+        
+        console.log('🔍 [MAIN_PAGE DEBUG] Fetching student profile with params:', {
+          username,
+          params: params.toString(),
+          endpoint: `${API_BASE_URL}${API_ENDPOINTS.STUDENT_PROFILE}`,
+          fullUrl: `${API_BASE_URL}${API_ENDPOINTS.STUDENT_PROFILE}?${params.toString()}`
+        });
+        
+        const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.STUDENT_PROFILE}?${params.toString()}`, {
+          method: 'GET',
+          headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json'
-          });
-          
-          const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.STUDENT_PROFILE}?${params.toString()}`, {
-            method: 'GET',
-            headers: {
-              'Authorization': `Bearer ${token}`,
-              'Content-Type': 'application/json'
-            },
-            credentials: 'include'
-          });
-          
-          console.log('🔍 Debug - Response status:', response.status);
-          console.log('🔍 Debug - Response headers:', Object.fromEntries(response.headers.entries()));
+          },
+          credentials: 'include'
+        });
+        
+        console.log('🔍 [MAIN_PAGE DEBUG] API response status:', response.status);
+        console.log('🔍 [MAIN_PAGE DEBUG] API response headers:', Object.fromEntries(response.headers.entries()));
 
-          if (response.ok) {
-            const data = await response.json();
-            console.log('🔍 Debug - Backend response data:', data);
+        if (response.ok) {
+          const data = await response.json();
+          
+          // Log the backend response
+          console.log('🔍 [MAIN_PAGE DEBUG] Student profile response:', {
+            rawResponse: data,
+            responseType: typeof data,
+            hasId: !!data.id,
+            hasAttemptCount: !!data.attemptCount,
+            hasCorrectCount: !!data.correctCount,
+            hasLast10Performance: !!data.last10Performance,
+            hasStreak: !!data.streak,
+            last10PerformanceType: Array.isArray(data.last10Performance) ? 'array' : typeof data.last10Performance,
+            last10PerformanceLength: Array.isArray(data.last10Performance) ? data.last10Performance.length : 'N/A'
+          });
+          
+          // Log detailed breakdown
+          console.log('🔍 [MAIN_PAGE DEBUG] Detailed response breakdown:', {
+            id: data.id,
+            attemptCount: data.attemptCount,
+            correctCount: data.correctCount,
+            last10Performance: data.last10Performance,
+            streak: data.streak,
+            calculatedAccuracy: data.attemptCount > 0 ? Math.round((data.correctCount / data.attemptCount) * 100) : 0
+          });
+          
+          // Backend returns: { id, attemptCount, correctCount, last10Performance, streak }
+          // Process subject progress from backend format
+          const processedSubjects = {};
+          if (data.subjectProgress && Array.isArray(data.subjectProgress)) {
+            console.log('🔍 [MAIN_PAGE DEBUG] Processing subject progress:', data.subjectProgress);
             
-            // Backend returns: { id, attemptCount, correctCount, last10Performance }
-            // Convert to frontend stats format
-            const accuracy = data.attemptCount > 0 ? Math.round((data.correctCount / data.attemptCount) * 100) : 0;
-            const streak = data.last10Performance ? data.last10Performance.filter(result => result).length : 0;
-            
-            setStats({
-              totalQuestions: data.attemptCount,
-              totalRight: data.correctCount,
-              totalWrong: data.attemptCount - data.correctCount,
-              lastTenPerformance: data.last10Performance.map(result => result ? 'right' : 'wrong'),
-              streak: streak,
-              subjects: {
-                math: { completed: 15, accuracy: 85 },
-                science: { completed: 12, accuracy: 78 },
-                english: { completed: 8, accuracy: 92 }
+            data.subjectProgress.forEach(([subjectCode, correctCount, attemptCount]) => {
+              // Map subject code to readable name using the mapping from config
+              let subjectName = 'Unknown';
+              for (const [name, code] of Object.entries(subject_map)) {
+                if (code === subjectCode) {
+                  subjectName = name;
+                  break;
+                }
               }
+              
+              const accuracy = attemptCount > 0 ? Math.round((correctCount / attemptCount) * 100) : 0;
+              processedSubjects[subjectName] = {
+                completed: attemptCount,
+                accuracy: accuracy,
+                correctCount: correctCount
+              };
+              
+              console.log('🔍 [MAIN_PAGE DEBUG] Mapped subject:', {
+                subjectCode,
+                subjectName,
+                correctCount,
+                attemptCount,
+                accuracy
+              });
             });
-            setIsLoading(false);
-          } else {
-            console.error('Failed to fetch stats');
-            setIsLoading(false);
           }
-        } catch (error) {
-          console.error('Error fetching stats:', error);
+          
+          const processedStats = {
+            totalQuestions: data.attemptCount,
+            totalRight: data.correctCount,
+            totalWrong: data.attemptCount - data.correctCount,
+            lastTenPerformance: data.last10Performance.map(result => result ? 'right' : 'wrong'),
+            streak: data.currentStreak || 0, // Use currentStreak from backend
+            subjects: processedSubjects
+          };
+          
+          console.log('🔍 [MAIN_PAGE DEBUG] Processed stats for frontend:', processedStats);
+          
+          setStats(processedStats);
+          setIsLoading(false);
+        } else {
+          console.error('🔍 [MAIN_PAGE DEBUG] Failed to fetch stats, status:', response.status);
+          const errorText = await response.text();
+          console.error('🔍 [MAIN_PAGE DEBUG] Error response:', errorText);
+          setIsLoading(false);
         }
-      };
+      } catch (error) {
+        console.error('Error fetching stats:', error);
+        setIsLoading(false);
+      }
+    };
 
-      fetchStats();
-    }
+    fetchStats();
   }, [navigate]);
 
   useEffect(() => {
@@ -301,7 +362,12 @@ const MainPage = () => {
   }, [isSidebarOpen]);
 
   const handleLogout = () => {
-    localStorage.removeItem('userId');
+    // Clear all authentication data
+    localStorage.removeItem(STORAGE_KEYS.USER_ID);
+    localStorage.removeItem(STORAGE_KEYS.USERNAME);
+    localStorage.removeItem(STORAGE_KEYS.TOKEN);
+    localStorage.removeItem(STORAGE_KEYS.ROLE);
+    localStorage.removeItem(STORAGE_KEYS.USER_DATA);
     navigate('/');
   };
 
@@ -426,9 +492,9 @@ const MainPage = () => {
               </div>
               {isSidebarOpen && <span className="ml-4 font-medium">Revise</span>}
             </button>
-            <button onClick={() => navigate('/ask')} className="w-full p-4 flex items-center hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-700 dark:hover:text-blue-300 rounded-xl transition-all duration-200 mb-2 group">
-              <div className="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg group-hover:bg-blue-200 dark:group-hover:bg-blue-800/40 transition-colors duration-200">
-                <FaQuestionCircle className="text-lg text-blue-600 dark:text-blue-400" />
+            <button onClick={() => navigate('/ask')} className="w-full p-4 flex items-center hover:bg-cyan-50 dark:hover:bg-cyan-900/20 hover:text-cyan-700 dark:hover:text-cyan-300 rounded-xl transition-all duration-200 mb-2 group">
+              <div className="p-2 bg-cyan-100 dark:bg-cyan-900/30 rounded-lg group-hover:bg-cyan-200 dark:group-hover:bg-cyan-800/40 transition-colors duration-200">
+                <FaQuestionCircle className="text-lg text-cyan-600 dark:text-cyan-400" />
               </div>
               {isSidebarOpen && <span className="ml-4 font-medium">Clear Doubt</span>}
             </button>
@@ -517,7 +583,13 @@ const MainPage = () => {
               <FaChartLine className="text-2xl text-emerald-500" />
             </div>
             <div className="space-y-6">
-              {Object.entries(stats.subjects).map(([subject, data]) => (
+              {(() => {
+                console.log('🔍 [MAIN_PAGE DEBUG] Rendering subjects:', {
+                  subjectsObject: stats.subjects,
+                  subjectsKeys: Object.keys(stats.subjects),
+                  subjectsEntries: Object.entries(stats.subjects)
+                });
+                return Object.entries(stats.subjects).map(([subject, data]) => (
                 <div key={subject} className={`flex items-center justify-between p-4 rounded-xl ${
                   isDarkMode ? 'bg-gray-700' : 'bg-gray-50'
                 }`}>
@@ -541,36 +613,237 @@ const MainPage = () => {
                     <span className="text-lg font-bold text-emerald-600">{data.accuracy}%</span>
                   </div>
                 </div>
-              ))}
+              ));
+              })()}
             </div>
           </div>
 
-          {/* Recent Activity */}
+          {/* Enhanced Recent Activity */}
           <div className={`rounded-2xl shadow-lg border p-6 ${
             isDarkMode 
               ? 'bg-gray-800 border-gray-700' 
               : 'bg-white border-gray-100'
           }`}>
             <div className="flex items-center justify-between mb-6">
-              <h2 className={`text-2xl font-bold ${
-                isDarkMode ? 'text-gray-100' : 'text-[#343434]'
-              }`}>Recent Activity</h2>
+              <div className="flex items-center gap-3">
+                <h2 className={`text-2xl font-bold ${
+                  isDarkMode ? 'text-gray-100' : 'text-[#343434]'
+                }`}>Recent Performance</h2>
+                {/* Performance trend indicator */}
+                <div className={`flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium transition-all duration-300 ${
+                  stats.lastTenPerformance.slice(-5).filter(r => r === 'right').length >= 3
+                    ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300 shadow-sm'
+                    : stats.lastTenPerformance.slice(-5).filter(r => r === 'right').length <= 1
+                    ? 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300 shadow-sm'
+                    : 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300 shadow-sm'
+                }`}>
+                  {stats.lastTenPerformance.slice(-5).filter(r => r === 'right').length >= 3 ? (
+                    <FaArrowUp className="text-green-600 dark:text-green-400" />
+                  ) : stats.lastTenPerformance.slice(-5).filter(r => r === 'right').length <= 1 ? (
+                    <FaArrowDown className="text-red-600 dark:text-red-400" />
+                  ) : (
+                    <FaMinus className="text-yellow-600 dark:text-yellow-400" />
+                  )}
+                  {stats.lastTenPerformance.slice(-5).filter(r => r === 'right').length >= 3 ? 'Improving' : 
+                   stats.lastTenPerformance.slice(-5).filter(r => r === 'right').length <= 1 ? 'Needs Focus' : 'Stable'}
+                </div>
+              </div>
               <FaHistory className="text-2xl text-indigo-500" />
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-              {stats.lastTenPerformance.map((result, index) => (
-                <div key={index} className={`flex flex-col items-center p-4 rounded-xl ${
-                  isDarkMode ? 'bg-gray-700' : 'bg-gray-50'
-                }`}>
-                  <div className={`w-4 h-4 rounded-full mb-2 ${result === 'right' ? 'bg-green-500' : 'bg-red-500'}`}></div>
-                  <span className={`text-sm ${
-                    isDarkMode ? 'text-gray-300' : 'text-gray-600'
-                  }`}>Q{index + 1}</span>
-                  <span className={`text-xs font-semibold ${result === 'right' ? 'text-green-600' : 'text-red-600'}`}>
-                    {result === 'right' ? '✓' : '✗'}
-                  </span>
+
+            {/* Performance Timeline */}
+            <div className="space-y-6">
+
+
+              {/* Visual Performance Chain */}
+              <div className={`p-6 rounded-xl transition-all duration-300 ${
+                isDarkMode ? 'bg-gray-700/30 hover:bg-gray-700/40' : 'bg-gray-50 hover:bg-gray-100'
+              }`}>
+                
+                {/* Desktop View - Horizontal Chain */}
+                <div className="hidden md:flex items-center justify-between relative">
+                  {stats.lastTenPerformance.map((result, index) => (
+                    <div key={index} className="flex flex-col items-center group relative">
+                      {/* Connection Line */}
+                      {index < stats.lastTenPerformance.length - 1 && (
+                        <div className={`absolute w-8 h-0.5 mt-6 ml-8 transition-all duration-300 ${
+                          isDarkMode ? 'bg-gray-600' : 'bg-gray-300'
+                        }`}></div>
+                      )}
+                      
+                      {/* Question Circle */}
+                      <div className={`relative w-12 h-12 rounded-full flex items-center justify-center text-white font-bold shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl ${
+                        result === 'right' 
+                          ? 'bg-gradient-to-br from-emerald-400 to-emerald-600 shadow-emerald-200 hover:shadow-emerald-300' 
+                          : 'bg-gradient-to-br from-red-400 to-red-600 shadow-red-200 hover:shadow-red-300'
+                      }`}>
+                        {result === 'right' ? (
+                          <FaCheckCircle className="text-lg" />
+                        ) : (
+                          <FaTimesCircle className="text-lg" />
+                        )}
+                      </div>
+                      
+                      {/* Question Number */}
+                      <span className={`mt-2 text-xs font-medium transition-colors duration-200 ${
+                        isDarkMode ? 'text-gray-400 group-hover:text-gray-300' : 'text-gray-500 group-hover:text-gray-700'
+                      }`}>
+                        Q{index + 1}
+                      </span>
+                      
+                      {/* Hover Tooltip */}
+                      <div className={`absolute top-16 opacity-0 group-hover:opacity-100 transition-all duration-200 bg-gray-900 text-white text-xs px-3 py-2 rounded-lg whitespace-nowrap z-10 shadow-lg transform -translate-x-1/2 left-1/2`}>
+                        <div className="flex items-center gap-2">
+                          {result === 'right' ? (
+                            <FaCheckCircle className="text-green-400" />
+                          ) : (
+                            <FaTimesCircle className="text-red-400" />
+                          )}
+                          <span>Question {index + 1}: {result === 'right' ? 'Correct' : 'Incorrect'}</span>
+                        </div>
+                        <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gray-900 rotate-45"></div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              ))}
+
+                {/* Mobile View - Grid Layout */}
+                <div className="grid grid-cols-5 gap-3 md:hidden">
+                  {stats.lastTenPerformance.map((result, index) => (
+                    <div key={index} className="flex flex-col items-center group">
+                      <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg transition-all duration-300 group-hover:scale-105 ${
+                        result === 'right' 
+                          ? 'bg-gradient-to-br from-emerald-400 to-emerald-600' 
+                          : 'bg-gradient-to-br from-red-400 to-red-600'
+                      }`}>
+                        {result === 'right' ? (
+                          <FaCheckCircle className="text-sm" />
+                        ) : (
+                          <FaTimesCircle className="text-sm" />
+                        )}
+                      </div>
+                      <span className={`mt-1 text-xs transition-colors duration-200 ${
+                        isDarkMode ? 'text-gray-400 group-hover:text-gray-300' : 'text-gray-500 group-hover:text-gray-700'
+                      }`}>
+                        Q{index + 1}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Performance Insights */}
+              {(() => {
+                const correctAnswers = stats.lastTenPerformance.filter(r => r === 'right').length;
+                const streak = stats.streak;
+                const recentTrend = stats.lastTenPerformance.slice(-5).filter(r => r === 'right').length;
+                
+                // Dynamic performance analysis
+                let performanceLevel, emoji, title, message, borderColor, bgColor, textColor;
+                
+                // High performance scenarios
+                if (correctAnswers >= 8 && streak >= 5) {
+                  performanceLevel = 'excellent';
+                  emoji = <FaTrophy className="text-2xl" />;
+                  title = 'Outstanding Performance!';
+                  message = `Amazing work! You've got ${correctAnswers}/10 correct and a ${streak}-day streak. You're on fire! 🔥`;
+                } else if (correctAnswers >= 7 && streak >= 3) {
+                  performanceLevel = 'great';
+                  emoji = <FaAward className="text-2xl" />;
+                  title = 'Great Performance!';
+                  message = `Excellent progress! ${correctAnswers}/10 correct with a ${streak}-day streak. Keep this momentum going!`;
+                } else if (correctAnswers >= 6 && recentTrend >= 3) {
+                  performanceLevel = 'improving';
+                  emoji = <FaArrowUp className="text-2xl" />;
+                  title = 'Improving Well!';
+                  message = `You're getting better! ${correctAnswers}/10 correct and improving in recent questions. Stay focused!`;
+                }
+                // Medium performance scenarios
+                else if (correctAnswers >= 5 && streak >= 2) {
+                  performanceLevel = 'stable';
+                  emoji = <FaBook className="text-2xl" />;
+                  title = 'Steady Progress';
+                  message = `Good consistency! ${correctAnswers}/10 correct with a ${streak}-day streak. Keep practicing regularly.`;
+                } else if (correctAnswers >= 4 && recentTrend >= 2) {
+                  performanceLevel = 'stable';
+                  emoji = <FaRegSmile className="text-2xl" />;
+                  title = 'Making Progress';
+                  message = `You're on the right track! ${correctAnswers}/10 correct. Focus on the areas you find challenging.`;
+                }
+                // Low performance scenarios
+                else if (correctAnswers <= 2 && streak <= 1) {
+                  performanceLevel = 'needs-focus';
+                  emoji = <FaBullseye className="text-2xl" />;
+                  title = 'Time to Focus';
+                  message = `Let's turn this around! Only ${correctAnswers}/10 correct. Review the basics and try again. You've got this!`;
+                } else if (correctAnswers <= 3 && recentTrend <= 1) {
+                  performanceLevel = 'needs-focus';
+                  emoji = <FaRegFrown className="text-2xl" />;
+                  title = 'Needs Improvement';
+                  message = `Only ${correctAnswers}/10 correct recently. Take a break, review the material, and come back stronger!`;
+                }
+                // Default scenarios
+                else if (correctAnswers >= 4) {
+                  performanceLevel = 'stable';
+                  emoji = <FaRegMeh className="text-2xl" />;
+                  title = 'Keep Learning';
+                  message = `${correctAnswers}/10 correct. You're making progress! Focus on consistency and regular practice.`;
+                } else {
+                  performanceLevel = 'needs-focus';
+                  emoji = <FaLightbulb className="text-2xl" />;
+                  title = 'Room for Growth';
+                  message = `${correctAnswers}/10 correct. Every expert was once a beginner. Keep practicing and don't give up!`;
+                }
+                
+                // Set colors based on performance level
+                switch (performanceLevel) {
+                  case 'excellent':
+                    borderColor = 'border-green-500';
+                    bgColor = 'bg-green-50 dark:bg-green-900/20';
+                    textColor = 'text-green-700 dark:text-green-300';
+                    break;
+                  case 'great':
+                    borderColor = 'border-green-500';
+                    bgColor = 'bg-green-50 dark:bg-green-900/20';
+                    textColor = 'text-green-700 dark:text-green-300';
+                    break;
+                  case 'improving':
+                    borderColor = 'border-blue-500';
+                    bgColor = 'bg-blue-50 dark:bg-blue-900/20';
+                    textColor = 'text-blue-700 dark:text-blue-300';
+                    break;
+                  case 'stable':
+                    borderColor = 'border-yellow-500';
+                    bgColor = 'bg-yellow-50 dark:bg-yellow-900/20';
+                    textColor = 'text-yellow-700 dark:text-yellow-300';
+                    break;
+                  case 'needs-focus':
+                    borderColor = 'border-red-500';
+                    bgColor = 'bg-red-50 dark:bg-red-900/20';
+                    textColor = 'text-red-700 dark:text-red-300';
+                    break;
+                  default:
+                    borderColor = 'border-gray-500';
+                    bgColor = 'bg-gray-50 dark:bg-gray-900/20';
+                    textColor = 'text-gray-700 dark:text-gray-300';
+                }
+                
+                return (
+                  <div className={`p-4 rounded-xl border-l-4 ${borderColor} ${bgColor}`}>
+                    <div className="flex items-start gap-3">
+                      <div className="text-2xl">{emoji}</div>
+                      <div>
+                        <h4 className={`font-semibold ${textColor}`}>
+                          {title}
+                        </h4>
+                        <p className={`text-sm mt-1 ${textColor.replace('700', '600').replace('300', '400')}`}>
+                          {message}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })()}
             </div>
           </div>
         </div>

@@ -3,12 +3,12 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm"; 
 
 
-const TextDisplay = ({ content, isUserMessage = false }) => {
-  const textColorClass = isUserMessage ? 'text-white' : 'text-gray-800 dark:text-gray-200';
-  const headingColorClass = isUserMessage ? 'text-white' : 'text-gray-900 dark:text-white';
+const TextDisplay = ({ content, isUserMessage = false, forceBlackText = false }) => {
+  const textColorClass = isUserMessage ? 'text-white' : forceBlackText ? 'text-black' : 'text-gray-800 dark:text-gray-200';
+  const headingColorClass = isUserMessage ? 'text-white' : forceBlackText ? 'text-black' : 'text-gray-900 dark:text-white';
   
   return (
-    <div className="prose prose-sm max-w-none overflow-hidden break-words whitespace-pre-wrap overflow-wrap-anywhere">
+    <div className={`prose prose-sm max-w-none overflow-hidden break-words whitespace-pre-wrap overflow-wrap-anywhere ${forceBlackText ? 'text-black' : 'text-gray-800 dark:text-gray-200'}`}>
       <ReactMarkdown 
         remarkPlugins={[remarkGfm]}
         components={{
@@ -52,13 +52,13 @@ const TextDisplay = ({ content, isUserMessage = false }) => {
           ),
           // Override code styling
           code: ({ children }) => (
-            <code className="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded text-sm font-mono break-all text-gray-800 dark:text-gray-200">
+            <code className={`bg-gray-100 px-2 py-1 rounded text-sm font-mono break-all ${forceBlackText ? 'text-black' : 'text-gray-800 dark:text-gray-200'}`}>
               {children}
             </code>
           ),
           // Override blockquote styling
           blockquote: ({ children }) => (
-            <blockquote className={`border-l-4 ${isUserMessage ? 'border-white' : 'border-gray-300 dark:border-gray-600'} pl-4 italic ${isUserMessage ? 'text-white' : 'text-gray-700 dark:text-gray-300'} mb-4 break-words`}>
+            <blockquote className={`border-l-4 ${isUserMessage ? 'border-white' : 'border-gray-300 dark:border-gray-600'} pl-4 italic ${isUserMessage ? 'text-white' : forceBlackText ? 'text-black' : 'text-gray-700 dark:text-gray-300'} mb-4 break-words`}>
               {children}
             </blockquote>
           ),
