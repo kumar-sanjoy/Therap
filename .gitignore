@@ -2,8 +2,9 @@
 python-service/env/
 
 # Gradle build folders
-**/.gradle/
+**/.gradle/  
 # **/build/
+
 **/bin/
 **/gradle/
 
