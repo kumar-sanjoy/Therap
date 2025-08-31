@@ -2,6 +2,8 @@ package com.sanjoy.profile_service.service;
 
 import com.sanjoy.profile_service.models.DailyPracticeLog;
 import com.sanjoy.profile_service.repo.DailyPracticeLogRepository;
+
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -20,6 +22,7 @@ public class PracticeStreakService {
         this.logRepository = logRepository;
     }
 
+    @Transactional
     public void logPractice(String username) {
         LocalDate today = LocalDate.now();
 

@@ -47,4 +47,3 @@ tasks.named('test') {
 bootJar {
     archiveFileName = "exam-service-app.jar"
 }
-

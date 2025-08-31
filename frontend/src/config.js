@@ -1,7 +1,7 @@
 // API Configuration
-export const API_BASE_URL = 'http://localhost:8080';
-export const EXAM_API_BASE_URL = 'http://localhost:8080';
-export const LEARNING_API_BASE_URL = 'http://localhost:8080';
+export const API_BASE_URL = 'https://8bbf7583f46d.ngrok-free.app';
+export const EXAM_API_BASE_URL = 'https://8bbf7583f46d.ngrok-free.app';
+export const LEARNING_API_BASE_URL = 'https://8bbf7583f46d.ngrok-free.app';
 
 // Class and Subject Mapping for Exam API
 export const class_map = { 
@@ -39,8 +39,8 @@ export const API_ENDPOINTS = {
     LOGIN: '/auth/login',
     SIGNUP: '/auth/register',
     CONFIRM_EMAIL: '/auth/confirm-email', // GET method - expects token as query parameter
-    FORGOT_PASSWORD: '/api/forgot-password',
-    GOOGLE_AUTH: '/api/google-auth',
+    FORGOT_PASSWORD: '/auth/forgot-password',
+    GOOGLE_AUTH: '/auth/google-login',
     
     // Exam endpoints (using port 8091)
     MCQ: '/exam/mcq',

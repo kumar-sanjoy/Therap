@@ -17,6 +17,12 @@ public interface PerformanceDiffLevelRepo extends JpaRepository<PerformanceDiffL
     List<Object[]> findPerformanceInfo(@Param("username") String username, @Param("subject") String subject);
 
 
+    @Query("SELECT p.subject, SUM(CASE WHEN p.isCorrect = true THEN 1L ELSE 0L END), COUNT(p) " +
+            "FROM PerformanceDiffLevel p " +
+            "WHERE p.username = :username " +
+            "GROUP BY p.subject")
+    List<Object[]> findCorrectVsTotalPerSubjectAndUser(@Param("username") String username);
+
     // will delete this:
     default void insertPerformance(String username, String subject, int performance, int difficulty, boolean isCorrect) {
         PerformanceDiffLevel p = new PerformanceDiffLevel();

@@ -4,12 +4,15 @@ version: '3.9'
 # docker-compose up --build
 
 x-common-variables: &common-variables
-  SPRING_DATASOURCE_URL: jdbc:postgresql://ep-frosty-queen-a8y975aj-pooler.eastus2.azure.neon.tech/flow?sslmode=require&channelBinding=require
-  SPRING_DATASOURCE_USERNAME: flow_owner
-  SPRING_DATASOURCE_PASSWORD: npg_aIV6lHZQEiw2
+  # SPRING_DATASOURCE_URL: jdbc:postgresql://ep-frosty-queen-a8y975aj-pooler.eastus2.azure.neon.tech/flow?sslmode=require&channelBinding=require
+  SPRING_DATASOURCE_URL: jdbc:postgresql://pg-railway-kumar-sanjoy-railway.f.aivencloud.com:14122/defaultdb?ssl=require&user=avnadmin&password=AVNS_A18WfgEs6a4kyVtQJFD
+  # SPRING_DATASOURCE_USERNAME: flow_owner
+  SPRING_DATASOURCE_USERNAME: avnadmin
+  # SPRING_DATASOURCE_PASSWORD: npg_aIV6lHZQEiw2
+  SPRING_DATASOURCE_PASSWORD: AVNS_A18WfgEs6a4kyVtQJFD
   JWT_SECRET: ZG9uJ3Qgc2hvb3QsIEknYW0gYSBwcm9ncmFtbWVyIQpwcm92ZSBpdC4uLgpoZWxsb3dvcmxkKCJwcmludGYiKTs
   JWT_EXPIRATION: 86400000
-  FRONTEND_URL: http://localhost:3000
+  FRONTEND_URL: http://192.168.0.111:3000
   AI_BACKEND_URL: http://python-server:5000
   SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.PostgreSQLDialect
   SPRING_JPA_PROPERTIES_HIBERNATE_FORMAT_SQL: 'true'

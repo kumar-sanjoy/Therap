@@ -68,15 +68,6 @@ public class ExamController {
         String pythonEndpoint = "/exam/mcq";
         // System.out.println("mcq exam hit");
         List<Object []> performanceRecord = pdlr.findPerformanceInfo(username, subject);
-        // for (Object[] row : performanceRecord) {
-        //     int performance = (Integer) row[0];
-        //     int difficultyLevel = (Integer) row[1];
-        //     boolean isCorrect = (Boolean) row[2];
-
-        //     System.out.println("Performance: " + performance + ", Difficulty Level: " + difficultyLevel + ", Is Correct: " + isCorrect);
-        // }
-
-        // System.out.println(count);
 
         Map<String, Object> requestBody = Map.of(
                 "className", className,
@@ -92,7 +83,6 @@ public class ExamController {
                 .retrieve()
                 .bodyToMono(new ParameterizedTypeReference<Map<String, Object>>() {})
                 .map(responseMap -> {
-                    // System.out.println("Received MCQs from Python backend. Number of MCQs: " + ((List<?>) responseMap.get("mcqs")).size());
                     return new ResponseEntity<>(responseMap, HttpStatus.OK);
                 });
 
