@@ -9,8 +9,7 @@ Usage:
 # To run:
 # .\env\Scripts\Activate.ps1
 # python app.py
-# If fresh install:
-
+# or simply type ./run.ps1 (this is a self made script)
 
 Requirements:
     pip install Flask flask-cors python-dotenv langchain langchain-google-genai 
@@ -32,7 +31,6 @@ import numpy as np
 import pandas as pd
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify, Response
-from flask_cors import CORS
 from PIL import Image
 from werkzeug.utils import secure_filename
 
@@ -78,7 +76,6 @@ def create_app():
     # For older Flask versions compatibility
     app.json.ensure_ascii = False
     
-    # CORS(app)
     
     # Ensure upload directory exists
     os.makedirs(Config.UPLOAD_FOLDER, exist_ok=True)
@@ -94,21 +91,24 @@ def pil_to_base64(image: Image.Image) -> str:
     image.save(buffer, format="JPEG")
     return base64.b64encode(buffer.getvalue()).decode("utf-8")
 
-
-def transcribe_with_gemini(filepath: str) -> str:
-    """Transcribe audio file using Gemini API"""
+def image_to_base64(image_file):
+    """Convert uploaded image file to base64 string"""
     try:
-        audio_file = genai.upload_file(filepath)
-        gen_model = genai.GenerativeModel("gemini-1.5-flash")
+        image = Image.open(image_file.stream)
+        # Convert to RGB if necessary (handles RGBA, P mode, etc.)
+        if image.mode != 'RGB':
+            image = image.convert('RGB')
         
-        response = gen_model.generate_content([
-            audio_file,
-            "Transcribe this audio into text (Bangla or English as spoken)."
-        ])
+        # Save to BytesIO buffer as JPEG
+        buffer = BytesIO()
+        image.save(buffer, format='JPEG', quality=85)
+        buffer.seek(0)
         
-        return response.text.strip()
+        # Encode to base64
+        base64_string = base64.b64encode(buffer.getvalue()).decode('utf-8')
+        return base64_string
     except Exception as e:
-        raise Exception(f"Audio transcription failed: {str(e)}")
+        raise Exception(f"Failed to process image: {str(e)}")
 
 
 def get_document_content(class_code: str, subject_code: str, chapter: int) -> str:
@@ -174,103 +174,79 @@ def health_check():
     """Health check endpoint"""
     return jsonify({"status": "healthy", "message": "Educational API is running"}), 200
 
-
 @app.route("/learn/doubts", methods=["POST"])
 def solve_doubts():
-    """Solve student doubts using text, image, or audio input"""
+    """Solve student doubts using text and/or image input"""
     # print("Doubt solving endpoint accessed")
     
     try:
-        text_content = ""
-        image_content = None
-        audio_transcription = ""
-
-        # Validate input
-        if not any([request.files.get("image"), request.form.get("question"), request.files.get("audio")]):
-            return jsonify({"error": "No valid input provided"}), 400
-
-        # Process text input
-        if "question" in request.form:
-            text_content = request.form.get("question", "").strip()
-
-        # Process image input
+        # Get text input
+        text_doubt = request.form.get("question", "").strip()
+        
+        # Get image input
+        image_base64 = None
         if "image" in request.files:
             image_file = request.files["image"]
-            try:
-                image_content = Image.open(image_file.stream)
-                # print("Image processed successfully")
-            except Exception as e:
-                return jsonify({"error": f"Image processing failed: {str(e)}"}), 500
-
-        # Process audio input
-        if "audio" in request.files:
-            audio_file = request.files["audio"]
-            filename = secure_filename(audio_file.filename)
-            filepath = os.path.join(Config.UPLOAD_FOLDER, filename)
-            
-            try:
-                audio_file.save(filepath)
-                audio_transcription = transcribe_with_gemini(filepath)
-            except Exception as e:
-                return jsonify({"error": f"Audio transcription failed: {str(e)}"}), 500
-            finally:
-                if os.path.exists(filepath):
-                    os.remove(filepath)
-
-        # Combine text inputs
-        combined_doubt = f"{text_content} {audio_transcription}".strip()
-
-        if not combined_doubt and not image_content:
-            return jsonify({"error": "No valid content to process"}), 400
-
-        # Build multimodal prompt
-        parser = JsonOutputParser(pydantic_object=DoubtResponse)
-        content_parts = []
+            if image_file and image_file.filename:
+                image_base64 = image_to_base64(image_file)
+                # print("Image processed and converted to base64")
         
+        # Validate that we have at least one input
+        if not text_doubt and not image_base64:
+            return jsonify({"error": "No valid input provided. Please provide either text question or image."}), 400
+        
+        # Build the prompt for markdown response
         text_prompt = (
-            f"You are an expert at solving doubts for Bangladeshi students. "
-            f"Generate a useful explanation in Bengali for the following doubt in JSON format. "
-            f"If the doubt is not related to study or learning, then simply say: 'I can't help you with that.' "
-            f"The response must contain a single key 'response' with the explanation as its value.\n\n"
-            f"Doubt: {combined_doubt}"
+            "You are an expert at solving doubts for Bangladeshi students. "
+            "Generate a useful explanation in Bengali for the following doubt. "
+            "If the doubt is not related to study or learning, then simply say: 'I can't help you with that.' "
+            "Format your response as proper markdown with appropriate headings, bullet points, and formatting. "
+            "Use Bengali language for the explanation but you can use English for technical terms when necessary. "
+            "Structure your response with clear sections and make it easy to read."
+            "**write everything strictly in bengali, you can use some english keywords if needed, but it shoud be mostly in bengali**"
         )
-        content_parts.append({"type": "text", "text": text_prompt})
-
-        if image_content:
-            base64_image = pil_to_base64(image_content)
+        
+        if text_doubt:
+            text_prompt += f"\n\nText Doubt: {text_doubt}"
+        
+        if image_base64:
+            text_prompt += "\n\nPlease also analyze the provided image for any additional context or questions."
+        
+        # Build content for the model
+        content_parts = [{"type": "text", "text": text_prompt}]
+        
+        if image_base64:
             content_parts.append({
                 "type": "image_url",
-                "image_url": {"url": f"data:image/jpeg;base64,{base64_image}"}
+                "image_url": {"url": f"data:image/jpeg;base64,{image_base64}"}
             })
-
-        # Generate response
+        
+        # Send to model
         messages = [HumanMessage(content=content_parts)]
         result = model.invoke(messages)
+        response_text = result.content.strip()
         
-        # Parse response
-        try:
-            parsed_result = parser.parse(result.content)
-            response_text = parsed_result.response
-        except Exception:
-            # print("JSON parsing failed, extracting text manually")
-            response_text = result.content
-            
-            if '```json' in response_text:
-                json_string = response_text.split('```json')[1].split('```')[0].strip()
-                try:
-                    json_data = json.loads(json_string)
-                    response_text = json_data.get('response', response_text)
-                except json.JSONDecodeError:
-                    pass
-
-        if not response_text.strip():
-            response_text = "Sorry, I could not understand the doubt. Please try again."
-
-        return jsonify({"answer": response_text}), 200
+        if response_text.startswith('```') and response_text.endswith('```'):
+            lines = response_text.split('\n')
+            if lines[0].startswith('```') and lines[-1] == '```':
+                response_text = '\n'.join(lines[1:-1])
+        
+        # Ensure we have a valid response
+        if not response_text or not response_text.strip():
+            response_text = "দুঃখিত, আমি এই প্রশ্ন টি বুঝতে পারিনি। অনুগ্রহ করে আবার চেষ্টা করুন।"
+        
+        return jsonify({
+            "response": response_text,
+            "status": "success",
+            "format": "markdown"
+        }), 200
         
     except Exception as e:
-        # print(f"Error in solve_doubts: ")
-        return jsonify({"error": f"Internal server error: {str(e)}"}), 500
+        print(f"Error in solve_doubts endpoint: {str(e)}")
+        return jsonify({
+            "error": f"Internal server error: {str(e)}",
+            "status": "error"
+        }), 500
 
 
 @app.route("/profile/teacher/generate-report", methods=["POST"])
@@ -397,6 +373,7 @@ def evaluate_written_answer():
                         "এবং এখন তোমাকে তার উত্তর মূল্যায়ন করতে হবে। তাকে ১০ এর মধ্যে নম্বর দাও, "
                         "মন্তব্য লেখো এবং ভবিষ্যতে ভালো করার জন্য একটি পরামর্শ দাও — "
                         "সবকিছু বাংলায় লেখো।\n\n"
+                        "if no answer provided by the student, say **no answer provided or the the image is not clear enough** in bangla"
                         f"প্রশ্ন:\n{question}\n\nউত্তর:"
                     )
                 },

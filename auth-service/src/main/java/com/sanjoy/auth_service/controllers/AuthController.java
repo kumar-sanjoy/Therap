@@ -13,6 +13,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -24,8 +26,9 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class AuthController {
+
+    private static final Logger logger = LoggerFactory.getLogger(AuthController.class);
 
     @Autowired
     PracticeStreakService practiceStreakService;
@@ -45,10 +48,7 @@ public class AuthController {
 
     @PostMapping("register")
     public ResponseEntity<?> registerUser(@RequestBody User user) {
-        // System.out.println("register hit");
-        // System.out.println(user.getUsername());
-        // System.out.println(user.getRole());
-        // return ResponseEntity.ok("Registration successful");
+        logger.debug("DEBUG: /register endpoint called");
 
         try {
             userDetailsService.register(user);
@@ -57,21 +57,15 @@ public class AuthController {
             registerResponse.setEmail(user.getEmail());
             return ResponseEntity.ok(registerResponse);
         } catch (IllegalStateException e) {
-            // Catch the specific IllegalStateException thrown by your service
-            // This will include messages like "Username already exists", "Email already exists"
-            // Return 409 Conflict for resource conflicts
             return ResponseEntity.status(HttpStatus.CONFLICT).body(e.getMessage());
         } catch (Exception e) {
-            // Catch any other unexpected exceptions
-            // Log the exception for internal debugging
-            // System.err.println("Error during user registration: " + e.getMessage());
-            // Return 500 Internal Server Error for unhandled exceptions
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An unexpected error occurred during registration.");
         }
     }
 
     @GetMapping("/register/confirmToken")
     public ResponseEntity<String> confirmToken(@RequestParam("token") String token) {
+        logger.debug("DEBUG: /confirm-token endpoint called");
         try {
             userDetailsService.confirmToken(token);
             return ResponseEntity.ok("Token confirmed successfully");
@@ -95,8 +89,7 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody User user) {
-        // System.out.println("login hit");
-        // System.out.println(user.getUsername());
+        logger.debug("DEBUG: /login endpoint called");
         try {
             Authentication authentication = authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword())
@@ -116,24 +109,16 @@ public class AuthController {
             response.put("role", user.getRole());
             int currentStreak = practiceStreakService.getCurrentStreak(user.getUsername());
             response.put("streak", currentStreak);
-            // System.out.println(response);
 
             return ResponseEntity.ok(response);
 
         } catch (AuthenticationException e) {
-            // Log the authentication exception details
-            // System.err.println("Authentication failed for user: " + user.getUsername());
-            // System.err.println("Authentication error: " + e.getMessage());
             e.printStackTrace();
 
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
                     .body("Invalid username or password.");
 
         } catch (Exception e) {
-            // Log the unexpected exception with full stack trace
-            // System.err.println("Unexpected error during login for user: " + user.getUsername());
-            // System.err.println("Error type: " + e.getClass().getSimpleName());
-            // System.err.println("Error message: " + e.getMessage());
             e.printStackTrace();
 
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)

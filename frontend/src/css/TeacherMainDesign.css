@@ -4,6 +4,65 @@
   box-sizing: border-box;
 }
 
+/* Force light mode for teacher dashboard - prevent dark mode interference */
+.teacher-dashboard {
+  background-color: #ffffff !important;
+  color: #333333 !important;
+}
+
+.teacher-dashboard * {
+  background-color: inherit !important;
+  color: inherit !important;
+}
+
+.teacher-dashboard input,
+.teacher-dashboard select,
+.teacher-dashboard textarea {
+  background-color: #ffffff !important;
+  color: #333333 !important;
+  border-color: #d1d5db !important;
+}
+
+.teacher-dashboard input:focus,
+.teacher-dashboard select:focus,
+.teacher-dashboard textarea:focus {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+.teacher-dashboard input::placeholder {
+  color: #6b7280 !important;
+}
+
+/* Ensure proper contrast for teacher dashboard elements */
+.teacher-dashboard .bg-white {
+  background-color: #ffffff !important;
+}
+
+.teacher-dashboard .text-gray-900 {
+  color: #111827 !important;
+}
+
+.teacher-dashboard .text-gray-700 {
+  color: #374151 !important;
+}
+
+.teacher-dashboard .text-gray-500 {
+  color: #6b7280 !important;
+}
+
+.teacher-dashboard .text-gray-600 {
+  color: #4b5563 !important;
+}
+
+.teacher-dashboard .border-gray-100 {
+  border-color: #f3f4f6 !important;
+}
+
+.teacher-dashboard .border-gray-200 {
+  border-color: #e5e7eb !important;
+}
+
 .tm-select-page {
   min-height: 100vh;
   display: flex;
@@ -113,33 +172,7 @@
   gap: 20px;
 }
 
-.tm-generate-report-btn {
-  padding: 12px 24px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-  min-width: 160px;
-}
 
-.tm-generate-report-btn:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
-}
-
-.tm-generate-report-btn:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-  transform: none;
-}
 
 .tm-teacher-title {
   font-family: 'Comic Neue', sans-serif;
@@ -348,32 +381,127 @@
   background-color: #4338ca;
 }
 
-
-.tm-generate-report{
-  width: 120px;
-  height: 40px;
-  border: 2px solid transparent;
-  background-image: 
-      linear-gradient(#333, #333), 
-      linear-gradient(135deg, #87CEEB, #FF69B4, #FFA500);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  color: white;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  padding: 10px 20px;
-  width: 175px;
-  height: 60px;
+/* Hide scrollbar for sorting controls */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
 }
 
-.tm-generate-report:hover {
-  background-image: 
-      linear-gradient(#333, #333), 
-      linear-gradient(135deg, #FFA500, #FF69B4, #87CEEB);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
 }
+
+/* Additional responsive improvements for sorting buttons */
+@media (max-width: 640px) {
+  .teacher-dashboard .grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .teacher-dashboard .min-w-fit {
+    min-width: auto !important;
+  }
+  
+  .teacher-dashboard .whitespace-nowrap {
+    white-space: nowrap !important;
+  }
+  
+  .teacher-dashboard .overflow-x-auto {
+    overflow-x: auto !important;
+  }
+  
+  .teacher-dashboard .flex-wrap {
+    flex-wrap: nowrap !important;
+  }
+  
+  .teacher-dashboard .gap-1 {
+    gap: 0.25rem !important;
+  }
+  
+  .teacher-dashboard .px-2 {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  
+  .teacher-dashboard .text-xs {
+    font-size: 0.75rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .teacher-dashboard .grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .teacher-dashboard .flex-col {
+    flex-direction: column !important;
+  }
+  
+  .teacher-dashboard .w-full {
+    width: 100% !important;
+  }
+  
+  .teacher-dashboard .min-w-0 {
+    min-width: 0 !important;
+  }
+  
+  .teacher-dashboard .truncate {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+  
+  /* Ensure performance tab doesn't get cut off */
+  .teacher-dashboard .flex-wrap > * {
+    flex-shrink: 0 !important;
+  }
+  
+  .teacher-dashboard .overflow-hidden {
+    overflow: hidden !important;
+  }
+  
+  .teacher-dashboard .overflow-x-auto {
+    overflow-x: auto !important;
+  }
+  
+  .teacher-dashboard .text-xs {
+    font-size: 0.7rem !important;
+  }
+  
+  .teacher-dashboard .px-2 {
+    padding-left: 0.375rem !important;
+    padding-right: 0.375rem !important;
+  }
+  
+  .teacher-dashboard .gap-1 {
+    gap: 0.125rem !important;
+  }
+  
+  .teacher-dashboard .py-2 {
+    padding-top: 0.375rem !important;
+    padding-bottom: 0.375rem !important;
+  }
+}
+
+/* Ensure proper spacing for very small screens */
+@media (max-width: 360px) {
+  .teacher-dashboard .p-4 {
+    padding: 0.75rem !important;
+  }
+  
+  .teacher-dashboard .text-xs {
+    font-size: 0.65rem !important;
+  }
+  
+  .teacher-dashboard .px-2 {
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important;
+  }
+  
+  .teacher-dashboard .gap-1 {
+    gap: 0.125rem !important;
+  }
+}
+
+
+
 

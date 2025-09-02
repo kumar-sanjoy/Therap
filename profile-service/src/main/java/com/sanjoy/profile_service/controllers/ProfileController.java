@@ -10,7 +10,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.reactive.function.client.WebClient;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.util.*;
 
 /**
@@ -21,7 +22,7 @@ import java.util.*;
 @RequestMapping("/profile")
 //@CrossOrigin(origins = "*")
 public class ProfileController {
-
+    private static final Logger logger = LoggerFactory.getLogger(ProfileController.class);
     private final WebClient webClient;
     private final PracticeStreakService streakService;
 
@@ -43,6 +44,7 @@ public class ProfileController {
 
     @GetMapping("teacher/generate-report")
     public String getTeacherReport(@RequestParam("username") String username) {
+        logger.debug("DEBUG: profile/generate-report endpoint called");
         Optional<Student> studentOpt = studentRepository.findByUsername(username);
         if (studentOpt.isEmpty()) {
             return "Student not found";
@@ -77,7 +79,7 @@ public class ProfileController {
 
     @GetMapping("/teacher")
     public ResponseEntity<Map<String, Object>> getTeacherProfile(@RequestParam("username") String username) {
-
+        logger.debug("DEBUG: profile/teacher endpoint called");
         // Fetch all students
         List<Student> students = studentRepository.findAll();
         students.removeIf(student -> student.getUsername().equals(username));
@@ -102,6 +104,7 @@ public class ProfileController {
 
     @GetMapping("/student")
     public ResponseEntity<Map<String, Object>> getStudentProfile(@RequestParam("username") String username) {
+        logger.debug("DEBUG: profile/student endpoint called");
 
         int currentStreak = 0;
         Student student;

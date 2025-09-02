@@ -21,6 +21,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.reactive.function.client.WebClientResponseException;
@@ -36,6 +38,8 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/exam")
 public class ExamController {
+
+    private static final Logger logger = LoggerFactory.getLogger(ExamController.class);
     private final WebClient webClient;
 
     @Autowired
@@ -67,6 +71,7 @@ public class ExamController {
             @RequestParam int count) {
         String pythonEndpoint = "/exam/mcq";
         // System.out.println("mcq exam hit");
+        logger.debug("mcq exam hit");
         List<Object []> performanceRecord = pdlr.findPerformanceInfo(username, subject);
 
         Map<String, Object> requestBody = Map.of(
@@ -96,6 +101,7 @@ public class ExamController {
             @RequestParam String chapter,
             @RequestParam Long count) {
         // System.out.println("Previous-mcq hit.");
+        logger.debug("previous-mcq exam hit");
 
         Map<String, Object> errorResponse = new HashMap<>();
         Optional<Sub> subOpt = subRepository.findByName(subject);
@@ -130,6 +136,7 @@ public class ExamController {
     @PostMapping("/submit-mcq")
     @Transactional
     public ResponseEntity<String> submitMcq(@RequestBody MCQSubmitRequest request) {
+        logger.debug("submit-mcq hit");
         String username = request.getUsername();
         String subject = request.getSubject();
         Map<String, Boolean> questions = request.getQuestions();
@@ -205,6 +212,7 @@ public class ExamController {
                                            @RequestParam String chapter) {
         String pythonEndpoint = "/exam/written";
         // System.out.println("written hit");
+        logger.debug("written exam hit");
 
         return webClient.get()
                 .uri(uriBuilder -> uriBuilder
@@ -225,6 +233,7 @@ public class ExamController {
     public Mono<ResponseEntity<String>> submitWrittenProxy(@RequestParam("image") MultipartFile imageFile,
                                                            @RequestParam("question") String questionText) {
         // System.out.println("submit written hit");
+        logger.debug("submit-written hit");
         if (imageFile.isEmpty()) {
             return Mono.just(new ResponseEntity<>("{\"message\": \"error: No image file provided.\"}",
                     HttpStatus.BAD_REQUEST));
