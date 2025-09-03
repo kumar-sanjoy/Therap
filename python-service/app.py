@@ -161,10 +161,10 @@ def train_q_table_from_history(history_data: list, num_states: int = 11, num_act
 
     return select_difficulty
 
-
+ 
 # === Initialize Flask App and Model ===
 app = create_app()
-model = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.2)
+model = ChatGoogleGenerativeAI(model="gemini-2.5-pro", temperature=0.2)
 
 
 # === API Endpoints ===
