@@ -51,20 +51,21 @@ public class LearningController {
     private WebClient createWebClientWithTimeouts(String aiBackendUrl) {
         TcpClient tcpClient = TcpClient.create()
                 .option(ChannelOption.CONNECT_TIMEOUT_MILLIS, 10_000) // 10s connect timeout
-                .doOnConnected(conn -> conn.addHandlerLast(new ReadTimeoutHandler(1200, TimeUnit.SECONDS)) // 120s read
+                .doOnConnected(conn -> conn.addHandlerLast(new ReadTimeoutHandler(1200, TimeUnit.SECONDS)) // 1200s read
                                                                                                            // timeout
-                        .addHandlerLast(new WriteTimeoutHandler(1200, TimeUnit.SECONDS)) // 120s write timeout
+                        .addHandlerLast(new WriteTimeoutHandler(1200, TimeUnit.SECONDS)) // 1200s write timeout
                 );
 
         @SuppressWarnings("deprecation")
         HttpClient httpClient = HttpClient.from(tcpClient)
-                .responseTimeout(Duration.ofSeconds(120)); // 120s max response wait
+                .responseTimeout(Duration.ofSeconds(1200)); // 1200s max response wait
 
         return WebClient.builder()
                 .clientConnector(new ReactorClientHttpConnector(httpClient))
                 .baseUrl(aiBackendUrl)
                 .build();
     }
+
 
     @GetMapping("/learn")
     public Mono<ResponseEntity<Map<String, Object>>> makeMeLearn(

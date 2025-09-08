@@ -24,6 +24,7 @@ import math
 import os
 import random
 from io import BytesIO
+import traceback
 
 # === Third-Party Library Imports ===
 import google.generativeai as genai
@@ -114,6 +115,7 @@ def image_to_base64(image_file):
 def get_document_content(class_code: str, subject_code: str, chapter: int) -> str:
     """Load and return document content"""
     filename = f"{Config.DOC_FOLDER}/{CLASS_MAP.get(class_code, 'unknown')}-{SUBJECT_MAP.get(subject_code, 'X')}-{chapter}.txt"
+    print(filename)
     
     try:
         with open(filename, "r", encoding="utf-8") as f:
@@ -174,14 +176,101 @@ def health_check():
     """Health check endpoint"""
     return jsonify({"status": "healthy", "message": "Educational API is running"}), 200
 
+
+@app.route("/exam/generate-challenge", methods=["GET"])
+def generate_challenge_test():
+    """Generate MCQ test with adaptive difficulty"""
+    print("➡️  [DEBUG] /exam/generate-challenge endpoint hit")
+
+    try:
+        cls = request.args.get("className")
+        sub = request.args.get("subject")
+        chapter = request.args.get("chapter")
+        ques_count = int(request.args.get("count", 3))  # make sure it's int
+        difficulty = random.randint(1, 10)
+
+        print(f"➡️  [DEBUG] Params received: class={cls}, subject={sub}, "
+              f"chapter={chapter}, count={ques_count}, difficulty={difficulty}")
+
+        # Load document content
+        try:
+            content = get_document_content(cls, sub, chapter)
+            print("✅ [DEBUG] Document content loaded successfully")
+        except FileNotFoundError as e:
+            print("❌ [DEBUG] FileNotFoundError:", e)
+            traceback.print_exc()
+            return jsonify({"error": str(e)}), 404
+        except Exception as e:
+            print("❌ [DEBUG] Error loading document:", e)
+            traceback.print_exc()
+            return jsonify({"error": str(e)}), 500
+
+        parser = JsonOutputParser()
+        prompt = PromptTemplate(
+            input_variables=["text", "difficulty", "ques_count"],
+            partial_variables={"format_instruction": parser.get_format_instructions()},
+            template=(
+                "You are an expert Bangladeshi high school teacher. "
+                "Based on the following chapter content, generate exactly {ques_count} questions "
+                "of difficulty level {difficulty} (1-10 scale, 10 is most difficult) "
+                "Bangladeshi board exam-style MCQ questions in Bengali. "
+                "The correct answer must be present among the options.\n\n"
+                
+                "Each question must follow this JSON structure:\n"
+                "{{\n"
+                '  "mcqs": [\n'
+                '    {{\n'
+                '      "question": "Your question in Bengali here",\n'
+                '      "options": {{\n'
+                '        "a": "Option A",\n'
+                '        "b": "Option B",\n'
+                '        "c": "Option C",\n'
+                '        "d": "Option D"\n'
+                '      }},\n'
+                '      "answer": "correct option letter (a/b/c/d)",\n'
+                '      "hint": "A helpful hint in Bengali",\n'
+                '      "explanation": "A brief explanation in Bengali"\n'
+                '    }}\n'
+                '  ]\n'
+                "}}\n\n"
+                
+                "Chapter content:\n{text}\n\n{format_instruction}"
+            )
+        )
+
+        
+        print("➡️  [DEBUG] Prompt template prepared, invoking model...")
+
+        chain = prompt | model | parser
+        questions_from_model = chain.invoke({
+            "text": content,
+            "difficulty": difficulty,
+            "ques_count": ques_count
+        })
+
+        # print("✅ [DEBUG] Model returned response:", questions_from_model)
+
+        return jsonify({
+            "mcqs": questions_from_model.get('mcqs', []),
+            "difficultyLevel": difficulty
+        }), 200
+        
+    except Exception as e:
+        print("❌ [DEBUG] Unexpected error in generate_challenge_test:", e)
+        traceback.print_exc()
+        return jsonify({"error": f"Error generating MCQ test: {str(e)}"}), 500
+
+
+
+
 @app.route("/learn/doubts", methods=["POST"])
 def solve_doubts():
     """Solve student doubts using text and/or image input"""
     # print("Doubt solving endpoint accessed")
-    
+    print(request.form.get("question"))
     try:
         # Get text input
-        text_doubt = request.form.get("question", "").strip()
+        text_doubt = request.form.get("question", "")
         
         # Get image input
         image_base64 = None
@@ -385,7 +474,7 @@ def evaluate_written_answer():
         ]
         
         result = model.invoke(multi_modal_prompt)
-        return jsonify({"result": result.content}), 200
+        return jsonify({"response": result.content}), 200
         
     except Exception as e:
         # print(f"Error in evaluate_written_answer: ")
@@ -489,6 +578,7 @@ def generate_lesson():
         # Load and process document content
         try:
             content = get_document_content(cls, sub, chapter)
+            print(content)
         except FileNotFoundError as e:
             return jsonify({"error": str(e)}), 404
         except Exception as e:
@@ -680,3 +770,4 @@ if __name__ == "__main__":
     print("- POST /exam/previous-mcq - Generate practice questions")
     
     app.run(host="0.0.0.0", port=5000, debug=True, use_reloader=True)
+    
