@@ -19,9 +19,10 @@ public interface MCQRepository extends JpaRepository<MCQ, Long> {
     @Query("SELECT m.statement FROM MCQ m WHERE m.statement IN :statements")
     Set<String> findExistingQuestions(@Param("statements") Set<String> statements);
 
+    @Query("SELECT m FROM MCQ m WHERE m.statement = :statement AND m.mistakenByStudent.username = :username")
+    Optional<MCQ> findByStatementAndUsername(@Param("statement") String statement, @Param("username") String username);
+
     @Query("SELECT m.statement from MCQ m WHERE m.mistakenByStudent.username = :username AND m.sub.id =:subjectId")
     List<String> findStatementByStudentUsernameAndSubject(@Param("username") String username, @Param("subjectId") Long subjectId);
 
-    @Query("SELECT m FROM MCQ m WHERE m.statement = :statement AND m.mistakenByStudent.username = :username")
-    Optional<MCQ> findByStatementAndUsername(@Param("statement") String statement, @Param("username") String username);
 }

@@ -7,6 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 /*
  * @author kumar
@@ -15,6 +16,9 @@ import java.util.Optional;
 
 public interface MCQRepository extends JpaRepository<MCQ, Long> {
     Optional<MCQ> findIdByStatement(String question);
+
+    @Query("SELECT m.statement FROM MCQ m WHERE m.statement IN :statements")
+    Set<String> findExistingQuestions(@Param("statements") Set<String> statements);
 
     @Query("SELECT m.statement from MCQ m WHERE m.mistakenByStudent.username = :username")
     List<String> findStatementByStudentUsername(@Param("username") String username);

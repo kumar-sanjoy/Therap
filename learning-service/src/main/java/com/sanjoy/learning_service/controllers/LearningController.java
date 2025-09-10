@@ -12,7 +12,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.client.MultipartBodyBuilder;
 import org.springframework.http.client.reactive.ReactorClientHttpConnector;
-// import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.multipart.MultipartFile;
@@ -30,6 +29,8 @@ import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author kumar
@@ -38,6 +39,7 @@ import java.util.concurrent.TimeUnit;
 @RestController
 @RequestMapping("/learn")
 public class LearningController {
+    private static final Logger logger = LoggerFactory.getLogger(LearningController.class);
 
     private final WebClient webClient;
 
@@ -49,14 +51,14 @@ public class LearningController {
     private WebClient createWebClientWithTimeouts(String aiBackendUrl) {
         TcpClient tcpClient = TcpClient.create()
                 .option(ChannelOption.CONNECT_TIMEOUT_MILLIS, 10_000) // 10s connect timeout
-                .doOnConnected(conn -> conn.addHandlerLast(new ReadTimeoutHandler(1200, TimeUnit.SECONDS)) // 120s read
+                .doOnConnected(conn -> conn.addHandlerLast(new ReadTimeoutHandler(1200, TimeUnit.SECONDS)) // 1200s read
                                                                                                            // timeout
-                        .addHandlerLast(new WriteTimeoutHandler(1200, TimeUnit.SECONDS)) // 120s write timeout
+                        .addHandlerLast(new WriteTimeoutHandler(1200, TimeUnit.SECONDS)) // 1200s write timeout
                 );
 
         @SuppressWarnings("deprecation")
         HttpClient httpClient = HttpClient.from(tcpClient)
-                .responseTimeout(Duration.ofSeconds(120)); // 120s max response wait
+                .responseTimeout(Duration.ofSeconds(1200)); // 1200s max response wait
 
         return WebClient.builder()
                 .clientConnector(new ReactorClientHttpConnector(httpClient))
@@ -64,11 +66,13 @@ public class LearningController {
                 .build();
     }
 
+
     @GetMapping("/learn")
     public Mono<ResponseEntity<Map<String, Object>>> makeMeLearn(
             @RequestParam String className,
             @RequestParam String subject,
             @RequestParam String chapter) {
+        logger.debug("DEBUG: learn/learn endpoint called");
 
         // System.out.println("Learn request started at: " + System.currentTimeMillis());
 
@@ -100,8 +104,7 @@ public class LearningController {
             @RequestParam(required = false) MultipartFile image,
             @RequestParam(required = false) MultipartFile audio,
             @RequestParam(required = false) String question) throws Exception {
-
-        // System.out.println("doubts hit");
+        logger.debug("DEBUG: learn/doubts endpoint called");
         MultipartBodyBuilder builder = new MultipartBodyBuilder();
 
         if (image != null && !image.isEmpty()) {
@@ -152,6 +155,7 @@ public class LearningController {
             @RequestParam String subject,
             @RequestParam String chapter) {
         // System.out.println("note hit");
+        logger.debug("DEBUG: learn/notes endpoint called");
 
         String pythonEndpoint = "/learn/notes";
 

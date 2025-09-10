@@ -1,8 +1,11 @@
 package com.sanjoy.profile_service.models;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,6 +15,7 @@ import java.util.List;
 
 @Data
 @Entity
+@NoArgsConstructor
 public class Student {
 
     @Id
@@ -28,6 +32,10 @@ public class Student {
     private int attemptCount;
     private int correctCount;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "teacher_id", nullable = true)
+    private Teacher teacher;
+
     public void recordAttempt(boolean isCorrect) {
         if (last10Performance.size() >= 10) {
             last10Performance.removeFirst();
@@ -36,5 +44,12 @@ public class Student {
 
         attemptCount++;
         if (isCorrect) correctCount++;
+    }
+
+    public Student(String username) {
+        this.username = username;
+        this.attemptCount = 0;
+        this.correctCount = 0;
+        this.last10Performance = new ArrayList<>();
     }
 }

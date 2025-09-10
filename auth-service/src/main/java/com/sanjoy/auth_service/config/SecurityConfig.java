@@ -37,7 +37,7 @@ public class SecurityConfig {
                 .cors(AbstractHttpConfigurer::disable)  // Disable Spring Security CORS to avoid conflicts
                 .authorizeHttpRequests(req -> req
                         .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
-                        .requestMatchers("/auth/register/**", "/auth/login").permitAll()
+                        .requestMatchers("/auth/register/**", "/auth/login", "auth/google-login").permitAll()
                         .anyRequest().authenticated())
                 .userDetailsService(userDetailsService);
         return http.build();

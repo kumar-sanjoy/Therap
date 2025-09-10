@@ -1,7 +1,8 @@
-// API Configuration
-export const API_BASE_URL = 'http://localhost:8080';
-export const EXAM_API_BASE_URL = 'http://localhost:8080';
-export const LEARNING_API_BASE_URL = 'http://localhost:8080';
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+export const EXAM_API_BASE_URL = import.meta.env.VITE_EXAM_API_BASE_URL;
+export const LEARNING_API_BASE_URL = import.meta.env.VITE_LEARNING_API_BASE_URL;
+
+
 
 // Class and Subject Mapping for Exam API
 export const class_map = { 
@@ -38,7 +39,7 @@ export const API_ENDPOINTS = {
     // Auth endpoints
     LOGIN: '/auth/login',
     SIGNUP: '/auth/register',
-    CONFIRM_EMAIL: '/auth/confirm-email', // GET method - expects token as query parameter
+    CONFIRM_EMAIL: '/auth/register/confirmToken', // GET method - expects token as query parameter
     FORGOT_PASSWORD: '/api/forgot-password',
     GOOGLE_AUTH: '/api/google-auth',
     
@@ -55,12 +56,15 @@ export const API_ENDPOINTS = {
     LEARN_CONTENT: '/learn/content',
     CLEAR_DOUBT: '/learn/doubts',
     GENERATE_NOTE: '/learn/notes',
+    ASK_QUESTION: '/learn/doubts',
     
     // Profile endpoints
     TEACHER_PROFILE: '/profile/teacher',
     STUDENT_PROFILE: '/profile/student',
     TEACHER_REPORT: '/profile/teacher/generate-report',
     STUDENT_DETAILS: '/profile/student/details',
+    GET_TEACHERS: '/profile/student/get-teachers',
+    UPSERT_TEACHER: '/profile/student/upsert-teacher',
     
     // Legacy endpoints (keeping for backward compatibility)
     QUIZ: '/api/quiz',
@@ -71,9 +75,81 @@ export const API_ENDPOINTS = {
     TEACHER_API: '/api/teacher'
 };
 
+
+
 // App Constants
 export const APP_NAME = 'FLOW';
 export const APP_VERSION = '1.0.0';
+
+// Utility function to safely construct API URLs
+export const buildApiUrl = (baseUrl, endpoint, params = {}) => {
+  // Validate inputs
+  if (!baseUrl || baseUrl === 'undefined') {
+    throw new Error(`Invalid base URL provided: ${baseUrl}`);
+  }
+  
+  if (!endpoint || endpoint === 'undefined') {
+    throw new Error(`Invalid endpoint provided: ${endpoint}. Available endpoints: ${Object.keys(API_ENDPOINTS).join(', ')}`);
+  }
+  
+  // Clean and validate baseUrl
+  const cleanBaseUrl = baseUrl.trim().replace(/\s+/g, '');
+  if (!cleanBaseUrl.startsWith('http://') && !cleanBaseUrl.startsWith('https://')) {
+    throw new Error(`Invalid base URL format: ${cleanBaseUrl}. URL must start with http:// or https://`);
+  }
+  
+  // Ensure baseUrl doesn't end with slash and endpoint starts with slash
+  const normalizedBaseUrl = cleanBaseUrl.endsWith('/') ? cleanBaseUrl.slice(0, -1) : cleanBaseUrl;
+  const cleanEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
+  
+  // Construct the base URL
+  const url = `${normalizedBaseUrl}${cleanEndpoint}`;
+  
+  // Add query parameters if provided
+  if (Object.keys(params).length > 0) {
+    const searchParams = new URLSearchParams();
+    Object.entries(params).forEach(([key, value]) => {
+      if (value !== undefined && value !== null && value !== 'undefined') {
+        // Ensure proper encoding of parameter values
+        const cleanValue = value.toString().trim();
+        if (cleanValue) {
+          searchParams.append(key, cleanValue);
+        }
+      }
+    });
+    return `${url}?${searchParams.toString()}`;
+  }
+  
+  return url;
+};
+
+// Utility function to safely construct API URLs with template literals
+export const safeApiUrl = (baseUrl, endpoint, params = {}) => {
+  // Validate inputs
+  if (!baseUrl || baseUrl === 'undefined') {
+    throw new Error(`Invalid base URL provided: ${baseUrl}`);
+  }
+  
+  if (!endpoint || endpoint === 'undefined') {
+    throw new Error(`Invalid endpoint provided: ${endpoint}. Available endpoints: ${Object.keys(API_ENDPOINTS).join(', ')}`);
+  }
+  
+  // Construct the base URL
+  const url = `${baseUrl}${endpoint}`;
+  
+  // Add query parameters if provided
+  if (Object.keys(params).length > 0) {
+    const searchParams = new URLSearchParams();
+    Object.entries(params).forEach(([key, value]) => {
+      if (value !== undefined && value !== null && value !== 'undefined') {
+        searchParams.append(key, value.toString());
+      }
+    });
+    return `${url}?${searchParams.toString()}`;
+  }
+  
+  return url;
+};
 
 // Local Storage Keys
 export const STORAGE_KEYS = {
@@ -102,4 +178,8 @@ export const ROUTES = {
     PREV_MISTAKES: '/prev',
     TEACHER: '/teacher',
     INTRO: '/'
-}; 
+};
+
+
+
+ 

@@ -9,8 +9,7 @@ Usage:
 # To run:
 # .\env\Scripts\Activate.ps1
 # python app.py
-# If fresh install:
-
+# or simply type ./run.ps1 (this is a self made script)
 
 Requirements:
     pip install Flask flask-cors python-dotenv langchain langchain-google-genai 
@@ -25,6 +24,7 @@ import math
 import os
 import random
 from io import BytesIO
+import traceback
 
 # === Third-Party Library Imports ===
 import google.generativeai as genai
@@ -32,7 +32,6 @@ import numpy as np
 import pandas as pd
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify, Response
-from flask_cors import CORS
 from PIL import Image
 from werkzeug.utils import secure_filename
 
@@ -78,7 +77,6 @@ def create_app():
     # For older Flask versions compatibility
     app.json.ensure_ascii = False
     
-    CORS(app)
     
     # Ensure upload directory exists
     os.makedirs(Config.UPLOAD_FOLDER, exist_ok=True)
@@ -94,26 +92,30 @@ def pil_to_base64(image: Image.Image) -> str:
     image.save(buffer, format="JPEG")
     return base64.b64encode(buffer.getvalue()).decode("utf-8")
 
-
-def transcribe_with_gemini(filepath: str) -> str:
-    """Transcribe audio file using Gemini API"""
+def image_to_base64(image_file):
+    """Convert uploaded image file to base64 string"""
     try:
-        audio_file = genai.upload_file(filepath)
-        gen_model = genai.GenerativeModel("gemini-1.5-flash")
+        image = Image.open(image_file.stream)
+        # Convert to RGB if necessary (handles RGBA, P mode, etc.)
+        if image.mode != 'RGB':
+            image = image.convert('RGB')
         
-        response = gen_model.generate_content([
-            audio_file,
-            "Transcribe this audio into text (Bangla or English as spoken)."
-        ])
+        # Save to BytesIO buffer as JPEG
+        buffer = BytesIO()
+        image.save(buffer, format='JPEG', quality=85)
+        buffer.seek(0)
         
-        return response.text.strip()
+        # Encode to base64
+        base64_string = base64.b64encode(buffer.getvalue()).decode('utf-8')
+        return base64_string
     except Exception as e:
-        raise Exception(f"Audio transcription failed: {str(e)}")
+        raise Exception(f"Failed to process image: {str(e)}")
 
 
 def get_document_content(class_code: str, subject_code: str, chapter: int) -> str:
     """Load and return document content"""
     filename = f"{Config.DOC_FOLDER}/{CLASS_MAP.get(class_code, 'unknown')}-{SUBJECT_MAP.get(subject_code, 'X')}-{chapter}.txt"
+    print(filename)
     
     try:
         with open(filename, "r", encoding="utf-8") as f:
@@ -161,10 +163,10 @@ def train_q_table_from_history(history_data: list, num_states: int = 11, num_act
 
     return select_difficulty
 
-
+ 
 # === Initialize Flask App and Model ===
 app = create_app()
-model = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.2)
+model = ChatGoogleGenerativeAI(model="gemini-2.5-pro", temperature=0.2)
 
 
 # === API Endpoints ===
@@ -175,102 +177,165 @@ def health_check():
     return jsonify({"status": "healthy", "message": "Educational API is running"}), 200
 
 
-@app.route("/learn/doubts", methods=["POST"])
-def solve_doubts():
-    """Solve student doubts using text, image, or audio input"""
-    # print("Doubt solving endpoint accessed")
-    
+@app.route("/exam/generate-challenge", methods=["GET"])
+def generate_challenge_test():
+    """Generate MCQ test with adaptive difficulty"""
+    print("➡️  [DEBUG] /exam/generate-challenge endpoint hit")
+
     try:
-        text_content = ""
-        image_content = None
-        audio_transcription = ""
+        cls = request.args.get("className")
+        sub = request.args.get("subject")
+        chapter = request.args.get("chapter")
+        ques_count = int(request.args.get("count", 3))  # make sure it's int
+        difficulty = random.randint(1, 10)
 
-        # Validate input
-        if not any([request.files.get("image"), request.form.get("question"), request.files.get("audio")]):
-            return jsonify({"error": "No valid input provided"}), 400
+        print(f"➡️  [DEBUG] Params received: class={cls}, subject={sub}, "
+              f"chapter={chapter}, count={ques_count}, difficulty={difficulty}")
 
-        # Process text input
-        if "question" in request.form:
-            text_content = request.form.get("question", "").strip()
-
-        # Process image input
-        if "image" in request.files:
-            image_file = request.files["image"]
-            try:
-                image_content = Image.open(image_file.stream)
-                # print("Image processed successfully")
-            except Exception as e:
-                return jsonify({"error": f"Image processing failed: {str(e)}"}), 500
-
-        # Process audio input
-        if "audio" in request.files:
-            audio_file = request.files["audio"]
-            filename = secure_filename(audio_file.filename)
-            filepath = os.path.join(Config.UPLOAD_FOLDER, filename)
-            
-            try:
-                audio_file.save(filepath)
-                audio_transcription = transcribe_with_gemini(filepath)
-            except Exception as e:
-                return jsonify({"error": f"Audio transcription failed: {str(e)}"}), 500
-            finally:
-                if os.path.exists(filepath):
-                    os.remove(filepath)
-
-        # Combine text inputs
-        combined_doubt = f"{text_content} {audio_transcription}".strip()
-
-        if not combined_doubt and not image_content:
-            return jsonify({"error": "No valid content to process"}), 400
-
-        # Build multimodal prompt
-        parser = JsonOutputParser(pydantic_object=DoubtResponse)
-        content_parts = []
-        
-        text_prompt = (
-            f"You are an expert at solving doubts for Bangladeshi students. "
-            f"Generate a useful explanation in Bengali for the following doubt in JSON format. "
-            f"If the doubt is not related to study or learning, then simply say: 'I can't help you with that.' "
-            f"The response must contain a single key 'response' with the explanation as its value.\n\n"
-            f"Doubt: {combined_doubt}"
-        )
-        content_parts.append({"type": "text", "text": text_prompt})
-
-        if image_content:
-            base64_image = pil_to_base64(image_content)
-            content_parts.append({
-                "type": "image_url",
-                "image_url": {"url": f"data:image/jpeg;base64,{base64_image}"}
-            })
-
-        # Generate response
-        messages = [HumanMessage(content=content_parts)]
-        result = model.invoke(messages)
-        
-        # Parse response
+        # Load document content
         try:
-            parsed_result = parser.parse(result.content)
-            response_text = parsed_result.response
-        except Exception:
-            # print("JSON parsing failed, extracting text manually")
-            response_text = result.content
-            
-            if '```json' in response_text:
-                json_string = response_text.split('```json')[1].split('```')[0].strip()
-                try:
-                    json_data = json.loads(json_string)
-                    response_text = json_data.get('response', response_text)
-                except json.JSONDecodeError:
-                    pass
+            content = get_document_content(cls, sub, chapter)
+            print("✅ [DEBUG] Document content loaded successfully")
+        except FileNotFoundError as e:
+            print("❌ [DEBUG] FileNotFoundError:", e)
+            traceback.print_exc()
+            return jsonify({"error": str(e)}), 404
+        except Exception as e:
+            print("❌ [DEBUG] Error loading document:", e)
+            traceback.print_exc()
+            return jsonify({"error": str(e)}), 500
 
-        if not response_text.strip():
-            response_text = "Sorry, I could not understand the doubt. Please try again."
+        parser = JsonOutputParser()
+        prompt = PromptTemplate(
+            input_variables=["text", "difficulty", "ques_count"],
+            partial_variables={"format_instruction": parser.get_format_instructions()},
+            template=(
+                "You are an expert Bangladeshi high school teacher. "
+                "Based on the following chapter content, generate exactly {ques_count} questions "
+                "of difficulty level {difficulty} (1-10 scale, 10 is most difficult) "
+                "Bangladeshi board exam-style MCQ questions in Bengali. "
+                "The correct answer must be present among the options.\n\n"
+                
+                "Each question must follow this JSON structure:\n"
+                "{{\n"
+                '  "mcqs": [\n'
+                '    {{\n'
+                '      "question": "Your question in Bengali here",\n'
+                '      "options": {{\n'
+                '        "a": "Option A",\n'
+                '        "b": "Option B",\n'
+                '        "c": "Option C",\n'
+                '        "d": "Option D"\n'
+                '      }},\n'
+                '      "answer": "correct option letter (a/b/c/d)",\n'
+                '      "hint": "A helpful hint in Bengali",\n'
+                '      "explanation": "A brief explanation in Bengali"\n'
+                '    }}\n'
+                '  ]\n'
+                "}}\n\n"
+                
+                "Chapter content:\n{text}\n\n{format_instruction}"
+            )
+        )
 
-        return jsonify({"answer": response_text}), 200
+        
+        print("➡️  [DEBUG] Prompt template prepared, invoking model...")
+
+        chain = prompt | model | parser
+        questions_from_model = chain.invoke({
+            "text": content,
+            "difficulty": difficulty,
+            "ques_count": ques_count
+        })
+
+        # print("✅ [DEBUG] Model returned response:", questions_from_model)
+
+        return jsonify({
+            "mcqs": questions_from_model.get('mcqs', []),
+            "difficultyLevel": difficulty
+        }), 200
         
     except Exception as e:
-        # print(f"Error in solve_doubts: ")
-        return jsonify({"error": f"Internal server error: {str(e)}"}), 500
+        print("❌ [DEBUG] Unexpected error in generate_challenge_test:", e)
+        traceback.print_exc()
+        return jsonify({"error": f"Error generating MCQ test: {str(e)}"}), 500
+
+
+
+
+@app.route("/learn/doubts", methods=["POST"])
+def solve_doubts():
+    """Solve student doubts using text and/or image input"""
+    # print("Doubt solving endpoint accessed")
+    print(request.form.get("question"))
+    try:
+        # Get text input
+        text_doubt = request.form.get("question", "")
+        
+        # Get image input
+        image_base64 = None
+        if "image" in request.files:
+            image_file = request.files["image"]
+            if image_file and image_file.filename:
+                image_base64 = image_to_base64(image_file)
+                # print("Image processed and converted to base64")
+        
+        # Validate that we have at least one input
+        if not text_doubt and not image_base64:
+            return jsonify({"error": "No valid input provided. Please provide either text question or image."}), 400
+        
+        # Build the prompt for markdown response
+        text_prompt = (
+            "You are an expert at solving doubts for Bangladeshi students. "
+            "Generate a useful explanation in Bengali for the following doubt. "
+            "If the doubt is not related to study or learning, then simply say: 'I can't help you with that.' "
+            "Format your response as proper markdown with appropriate headings, bullet points, and formatting. "
+            "Use Bengali language for the explanation but you can use English for technical terms when necessary. "
+            "Structure your response with clear sections and make it easy to read."
+            "**write everything strictly in bengali, you can use some english keywords if needed, but it shoud be mostly in bengali**"
+        )
+        
+        if text_doubt:
+            text_prompt += f"\n\nText Doubt: {text_doubt}"
+        
+        if image_base64:
+            text_prompt += "\n\nPlease also analyze the provided image for any additional context or questions."
+        
+        # Build content for the model
+        content_parts = [{"type": "text", "text": text_prompt}]
+        
+        if image_base64:
+            content_parts.append({
+                "type": "image_url",
+                "image_url": {"url": f"data:image/jpeg;base64,{image_base64}"}
+            })
+        
+        # Send to model
+        messages = [HumanMessage(content=content_parts)]
+        result = model.invoke(messages)
+        response_text = result.content.strip()
+        
+        if response_text.startswith('```') and response_text.endswith('```'):
+            lines = response_text.split('\n')
+            if lines[0].startswith('```') and lines[-1] == '```':
+                response_text = '\n'.join(lines[1:-1])
+        
+        # Ensure we have a valid response
+        if not response_text or not response_text.strip():
+            response_text = "দুঃখিত, আমি এই প্রশ্ন টি বুঝতে পারিনি। অনুগ্রহ করে আবার চেষ্টা করুন।"
+        
+        return jsonify({
+            "response": response_text,
+            "status": "success",
+            "format": "markdown"
+        }), 200
+        
+    except Exception as e:
+        print(f"Error in solve_doubts endpoint: {str(e)}")
+        return jsonify({
+            "error": f"Internal server error: {str(e)}",
+            "status": "error"
+        }), 500
 
 
 @app.route("/profile/teacher/generate-report", methods=["POST"])
@@ -296,21 +361,33 @@ def generate_weakness_report():
         ])
 
         prompt = PromptTemplate(
-            input_variables=["questions"],
+            input_variables=["questions", "total_questions", "correct_answers"],
             partial_variables={"format_instruction": parser.get_format_instructions()},
             template=(
-                "আপনি একজন দক্ষ শিক্ষক, যিনি খুব সুন্দরভাবে ছাত্রদের দুর্বলতা বিশ্লেষণ করতে পারেন। "
-                "একজন ছাত্র নিচের প্রশ্নগুলোর উত্তর দিতে পারেনি। "
-                "এই প্রশ্নগুলোর ভিত্তিতে ছাত্রের দুর্বলতাগুলি বিশ্লেষণ করে বাংলায় একটি প্রতিবেদন লিখুন।\n\n"
-                "প্রশ্নসমূহ:\n{questions}\n\n{format_instruction}\n"
+                "আপনি একজন দক্ষ শিক্ষক, যিনি খুব সুন্দরভাবে ছাত্রদের দুর্বলতা বিশ্লেষণ করতে পারেন।\n"
+                "একজন ছাত্র মোট {total_questions} টি প্রশ্নের উত্তর দিয়েছে, যার মধ্যে সঠিক উত্তর দিয়েছে {correct_answers} টি।\n"
+                "নিচের প্রশ্নগুলোর উত্তর দিতে পারেনি:\n\n{questions}\n\n"
+                "আপনার কাজ হলো:\n"
+                "1. ছাত্রের সামগ্রিক পারফরম্যান্স একটি আকর্ষণীয়ভাবে উপস্থাপন করা।\n"
+                "   - সঠিক উত্তর সংখ্যা, ভুল উত্তর সংখ্যা ও শতকরা হারে স্কোর দেখান।\n"
+                "   - প্রয়োজনে Markdown টেবিল ব্যবহার করুন যাতে রিপোর্ট পড়তে সুবিধা হয়।\n"
+                "   - চাইলে শতকরা হারের ভিত্তিতে একটি progress bar এর মত টেক্সট বা ASCII diagram ব্যবহার করতে পারেন।\n"
+                "2. ভুল উত্তরগুলোর ভিত্তিতে ছাত্রের দুর্বলতাগুলি চিহ্নিত করুন।\n"
+                "3. ছাত্রকে ভবিষ্যতে কীভাবে উন্নতি করতে হবে তার জন্য কার্যকর পরামর্শ দিন।\n\n"
+                "{format_instruction}\n"
                 "***উত্তরটি অবশ্যই উপরের JSON ফর্ম্যাটে দিন। অন্য কিছু লিখবেন না।***"
             )
         )
 
         chain = prompt | model | parser
-        weakness_report = chain.invoke({"questions": questions_text})
+        weakness_report = chain.invoke({
+            "questions": questions_text,
+            "total_questions": attempt_count,
+            "correct_answers": correct_count
+        })
 
         response_data = json.dumps(weakness_report, ensure_ascii=False)
+        # print(response_data)
         return Response(response=response_data, status=200, mimetype='application/json')
         
     except Exception as e:
@@ -385,6 +462,7 @@ def evaluate_written_answer():
                         "এবং এখন তোমাকে তার উত্তর মূল্যায়ন করতে হবে। তাকে ১০ এর মধ্যে নম্বর দাও, "
                         "মন্তব্য লেখো এবং ভবিষ্যতে ভালো করার জন্য একটি পরামর্শ দাও — "
                         "সবকিছু বাংলায় লেখো।\n\n"
+                        "if no answer provided by the student, say **no answer provided or the the image is not clear enough** in bangla"
                         f"প্রশ্ন:\n{question}\n\nউত্তর:"
                     )
                 },
@@ -396,7 +474,7 @@ def evaluate_written_answer():
         ]
         
         result = model.invoke(multi_modal_prompt)
-        return jsonify({"result": result.content}), 200
+        return jsonify({"response": result.content}), 200
         
     except Exception as e:
         # print(f"Error in evaluate_written_answer: ")
@@ -500,6 +578,7 @@ def generate_lesson():
         # Load and process document content
         try:
             content = get_document_content(cls, sub, chapter)
+            print(content)
         except FileNotFoundError as e:
             return jsonify({"error": str(e)}), 404
         except Exception as e:
@@ -691,3 +770,4 @@ if __name__ == "__main__":
     print("- POST /exam/previous-mcq - Generate practice questions")
     
     app.run(host="0.0.0.0", port=5000, debug=True, use_reloader=True)
+    

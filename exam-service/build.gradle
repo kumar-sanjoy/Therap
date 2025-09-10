@@ -38,6 +38,7 @@ dependencies {
 	testImplementation 'io.projectreactor:reactor-test'
 
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	implementation("com.google.genai:google-genai:1.15.0")
 }
 
 tasks.named('test') {
@@ -47,4 +48,3 @@ tasks.named('test') {
 bootJar {
     archiveFileName = "exam-service-app.jar"
 }
-

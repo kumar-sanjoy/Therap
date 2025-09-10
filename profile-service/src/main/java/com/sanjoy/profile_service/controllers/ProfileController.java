@@ -1,16 +1,20 @@
 package com.sanjoy.profile_service.controllers;
 
 import com.sanjoy.profile_service.models.Student;
+import com.sanjoy.profile_service.models.Teacher;
 import com.sanjoy.profile_service.repo.MCQRepository;
 import com.sanjoy.profile_service.repo.PerformanceDiffLevelRepo;
 import com.sanjoy.profile_service.repo.StudentRepository;
+import com.sanjoy.profile_service.repo.TeacherRepository;
 import com.sanjoy.profile_service.service.PracticeStreakService;
+import com.sanjoy.profile_service.service.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.reactive.function.client.WebClient;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.util.*;
 
 /**
@@ -19,12 +23,12 @@ import java.util.*;
  */
 @RestController
 @RequestMapping("/profile")
-//@CrossOrigin(origins = "*")
 public class ProfileController {
-
+    private static final Logger logger = LoggerFactory.getLogger(ProfileController.class);
     private final WebClient webClient;
-    private final PracticeStreakService streakService;
 
+    @Autowired
+    PracticeStreakService streakService;
 
     @Autowired
     StudentRepository studentRepository;
@@ -33,16 +37,18 @@ public class ProfileController {
     MCQRepository mcqRepository;
 
     @Autowired
+    TeacherService teacherService;
+
+    @Autowired
     PerformanceDiffLevelRepo performanceDiffLevelRepo;
 
-    public ProfileController(WebClient.Builder webClientBuilder,
-                          @Value("${ai.backend.url}") String aiBackendUrl, PracticeStreakService streakService) {
+    public ProfileController(WebClient.Builder webClientBuilder, @Value("${ai.backend.url}") String aiBackendUrl) {
         this.webClient = webClientBuilder.baseUrl(aiBackendUrl).build();
-        this.streakService = streakService;
     }
 
     @GetMapping("teacher/generate-report")
     public String getTeacherReport(@RequestParam("username") String username) {
+        logger.debug("DEBUG: profile/generate-report endpoint called");
         Optional<Student> studentOpt = studentRepository.findByUsername(username);
         if (studentOpt.isEmpty()) {
             return "Student not found";
@@ -77,10 +83,12 @@ public class ProfileController {
 
     @GetMapping("/teacher")
     public ResponseEntity<Map<String, Object>> getTeacherProfile(@RequestParam("username") String username) {
-
+        logger.debug("DEBUG: profile/teacher endpoint called");
         // Fetch all students
         List<Student> students = studentRepository.findAll();
         students.removeIf(student -> student.getUsername().equals(username));
+
+        Teacher teacher = teacherService.findOrCreate(username);
 
         // Prepare response
         Map<String, Object> response = new HashMap<>();
@@ -102,19 +110,19 @@ public class ProfileController {
 
     @GetMapping("/student")
     public ResponseEntity<Map<String, Object>> getStudentProfile(@RequestParam("username") String username) {
+        logger.debug("DEBUG: profile/student endpoint called");
 
         int currentStreak = 0;
-        Student student;
-        Optional<Student> studentOpt = studentRepository.findByUsername(username);
-        if (studentOpt.isEmpty()) {
-            student = new Student();
-            student.setAttemptCount(0);
-            student.setCorrectCount(0);
-            student.setLast10Performance(new ArrayList<>());
-        } else {
-            student = studentOpt.get();
+        Student student = studentRepository.findByUsername(username)
+            .orElseGet(() -> {
+                return new Student(username);
+            });
+
+        if (student.getId() != null) {
             currentStreak = streakService.getCurrentStreak(username);
         }
+
+        Teacher teacher = teacherService.findByStudentUsername(username);
 
         List<Object[]> subjectData = performanceDiffLevelRepo.findCorrectVsTotalPerSubjectAndUser(username);
         Map<String, Object> stdResponse = new HashMap<>();
@@ -124,7 +132,31 @@ public class ProfileController {
         stdResponse.put("last10Performance", student.getLast10Performance());
         stdResponse.put("currentStreak", currentStreak);
         stdResponse.put("subjectProgress", subjectData);
+        stdResponse.put("teacher", teacher.getUsername());
 
         return ResponseEntity.ok(stdResponse);
     }
+
+    @GetMapping("/student/upsert-teacher")
+    public ResponseEntity<Map<String, String>> upsertTeacher(@RequestParam("username") String studentUsername,
+                                                             @RequestParam("teacher") String teacherUsername) {
+        Map<String, String> res = new HashMap<>();
+        String message = teacherService.upsertTeacher(studentUsername, teacherUsername);
+        res.put("message", message);
+        return ResponseEntity.ok(res);
+    }
+
+    @GetMapping("/student/get-teachers")
+    public ResponseEntity<Object> getTeachers() {
+        List<String> teacherUsernames = teacherService.findAll()
+                .stream()
+                .map(Teacher::getUsername)
+                .toList(); // Java 16+, or use collect(Collectors.toList()) for older versions
+
+        Map<String, List<String>> res = new HashMap<>();
+        res.put("teachers", teacherUsernames);
+
+        return ResponseEntity.ok(res);
+    }
+
 }
