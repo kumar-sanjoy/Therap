@@ -63,16 +63,16 @@ const DashboardStats = ({ stats, onCategoryClick }) => {
           <div 
             key={card.key}
             onClick={card.onClick}
-            className={`bg-white rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 border border-gray-100 hover:shadow-xl transition-all duration-300 ${
+            className={`bg-white dark:bg-gray-800 rounded-xl sm:rounded-2xl shadow-lg dark:shadow-gray-900/20 p-4 sm:p-6 border border-gray-100 dark:border-gray-700 hover:shadow-xl dark:hover:shadow-gray-900/30 transition-all duration-300 ${
               card.onClick ? 'cursor-pointer transform hover:-translate-y-1' : ''
             } ${card.hoverColor}`}
           >
             <div className="flex items-center justify-between mb-3 sm:mb-4">
-              <h3 className="text-xs sm:text-sm font-medium text-gray-600">{card.title}</h3>
+              <h3 className="text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-400">{card.title}</h3>
               <Icon className={`text-lg sm:text-2xl ${card.color}`} />
             </div>
-            <p className="text-xl sm:text-3xl font-bold text-gray-900">{card.value}</p>
-            <p className="text-xs sm:text-sm text-gray-500 mt-1">{card.subtitle}</p>
+            <p className="text-xl sm:text-3xl font-bold text-gray-900 dark:text-white">{card.value}</p>
+            <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-1">{card.subtitle}</p>
           </div>
         );
       })}

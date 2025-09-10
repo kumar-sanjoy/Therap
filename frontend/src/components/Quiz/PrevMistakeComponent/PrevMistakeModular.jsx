@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { FaCheck, FaTimes } from 'react-icons/fa';
 import { EXAM_API_BASE_URL, API_ENDPOINTS, STORAGE_KEYS, mapClassForExamAPI, mapSubjectForExamAPI } from '../../../config';
 import { useDarkTheme } from '../../Common/DarkThemeProvider';
-import TeacherAssistant from '../../Common/TeacherAssistant';
+
 import '../../../css/PrevQuizDesign.css';
 
 // Import sub-components
@@ -70,19 +70,20 @@ const PrevMistakeModular = () => {
 
     // Fetch questions on mount
     useEffect(() => {
-        console.log('🔍 [PREV_MISTAKE DEBUG] Component mounted with location state:', location.state);
+
         
         // Check if questions are passed from SelectSubject first
         if (location.state?.questions && location.state.questions.length > 0) {
-            console.log('🔍 [PREV_MISTAKE DEBUG] Questions received from SelectSubject:', location.state.questions);
+
             setQuestions(location.state.questions);
             return;
         }
 
         // Fallback: fetch questions if not passed from SelectSubject
-        console.log('🔍 [PREV_MISTAKE DEBUG] No questions from SelectSubject, fetching from API');
+
+        let isMounted = true; // Track if component is still mounted
+        
         const fetchMistakes = async () => {
-            let isMounted = true; // Track if component is still mounted
             setIsLoading(true);
             try {
                 const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
@@ -106,7 +107,7 @@ const PrevMistakeModular = () => {
                     count: count.toString()
                 });
 
-                console.log('🔍 [PREV_MISTAKE DEBUG] Fetching from API with params:', params.toString());
+
                 const response = await fetch(`${EXAM_API_BASE_URL}${API_ENDPOINTS.PREVIOUS_MCQ}?${params.toString()}`, {
                     method: 'GET',
                     headers: {
@@ -119,7 +120,12 @@ const PrevMistakeModular = () => {
                     const data = await response.json();
                     console.log('🔍 [PREV_MISTAKE DEBUG] API response data:', data);
                     if (isMounted) {
-                        setQuestions(data.mcqs || data.questions || []);
+                        const extractedQuestions = data.mcqs || data.questions || data;
+                        if (Array.isArray(extractedQuestions) && extractedQuestions.length > 0) {
+                            setQuestions(extractedQuestions);
+                        } else {
+                            setError('No previous mistakes found for this subject. Please practice some questions first and then try again.');
+                        }
                     }
                 } else {
                     console.error('🔍 [PREV_MISTAKE DEBUG] API request failed:', response.status);
@@ -318,7 +324,36 @@ const PrevMistakeModular = () => {
         return <ErrorState error={error} navigate={navigate} />;
     }
 
-    if (!question) return null;
+    if (!question || questions.length === 0) {
+        return (
+            <div className={`min-h-screen flex flex-col ${
+                isDarkMode 
+                    ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900' 
+                    : 'bg-gradient-to-br from-gray-50 via-white to-gray-200'
+            }`}>
+                <Header navigate={navigate} />
+                <div className="flex-1 flex items-center justify-center">
+                    <div className="text-center">
+                        <div className="w-16 h-16 bg-yellow-100 dark:bg-yellow-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span className="text-2xl">📚</span>
+                        </div>
+                        <h2 className={`text-xl font-semibold mb-2 ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}>
+                            No Questions Available
+                        </h2>
+                        <p className={`text-gray-600 dark:text-gray-400 mb-4`}>
+                            No previous mistakes found for this subject. Please practice some questions first and then try again.
+                        </p>
+                        <button
+                            onClick={() => navigate('/main')}
+                            className={`px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors`}
+                        >
+                            Go Back to Main
+                        </button>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 
     return (
         <div className={`min-h-screen flex flex-col ${
@@ -361,16 +396,12 @@ const PrevMistakeModular = () => {
                         showExplanation={showExplanation}
                         showAdvice={showAdvice}
                         quizInfo={quizInfo}
+                        isIncorrectAnswer={isIncorrectAnswer}
                     />
                 </>
             )}
             
-            {/* Teacher Assistant */}
-            <TeacherAssistant 
-                context="quiz"
-                currentQuestion="Revision"
-                showFloatingAvatar={false}
-            />
+
         </div>
     );
 };

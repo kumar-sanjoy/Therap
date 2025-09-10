@@ -3,6 +3,7 @@ import { FaFire } from 'react-icons/fa';
 import { STORAGE_KEYS } from '../../config';
 
 const Header = ({ stats }) => {
+
   return (
     <div className="flex flex-col md:flex-row justify-between items-center md:items-center mb-8 gap-4">
       <div className="bg-gradient-to-r from-emerald-500 to-emerald-600 p-4 rounded-2xl shadow-lg text-white">

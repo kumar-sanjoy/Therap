@@ -67,32 +67,22 @@ const SelectSubject = ({ mode: propMode }) => {
     return cleanToken;
   };
 
-  // Helper function to test API connectivity
+  // Helper function to test API connectivity - simplified for React 19 compatibility
   const testApiConnectivity = async (baseUrl) => {
-    const testEndpoints = [
-      '/health',
-      '/',
-      '/api/health',
-      '/learn/health'
-    ];
-    
-    for (const endpoint of testEndpoints) {
-      try {
-        const response = await fetch(`${baseUrl}${endpoint}`, {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        });
-        console.log(`🔍 [API TEST] ${endpoint} - Status: ${response.status}`);
-        if (response.ok) {
-          return true;
+    try {
+      // Only test the root endpoint to avoid 404 errors
+      const response = await fetch(`${baseUrl}/`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
         }
-      } catch (error) {
-        console.log(`🔍 [API TEST] ${endpoint} - Error: ${error.message}`);
-      }
+      });
+      console.log(`🔍 [API TEST] Root endpoint - Status: ${response.status}`);
+      return response.ok;
+    } catch (error) {
+      console.log(`🔍 [API TEST] Root endpoint - Error: ${error.message}`);
+      return false;
     }
-    return false;
   };
 
   // Check authentication on mount

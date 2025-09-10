@@ -15,6 +15,8 @@ import Controls from '../Common/Controls';
 import EmptyState from '../Common/EmptyState';
 import DashboardStats from '../Common/DashboardStats';
 import StudentsGrid from '../FilteredStudentsComponent/StudentsGrid';
+import StudentsTable from '../Common/StudentsTable';
+import ViewToggle from '../Common/ViewToggle';
 
 const TeacherMain = () => {
   const navigate = useNavigate();
@@ -27,9 +29,11 @@ const TeacherMain = () => {
   const [dashboardData, setDashboardData] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [filterPerformance, setFilterPerformance] = useState('all');
+  const [viewMode, setViewMode] = useState('grid'); // 'grid' or 'table'
 
   // Check authentication on mount
   useEffect(() => {
+    
     const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
     const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
     const role = localStorage.getItem(STORAGE_KEYS.ROLE);
@@ -67,11 +71,6 @@ const TeacherMain = () => {
         const params = new URLSearchParams({ username: username });
         const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
         
-        console.log('🔍 [TEACHER DEBUG] Fetching teacher profile:', {
-          username: username,
-          endpoint: `${API_BASE_URL}${API_ENDPOINTS.TEACHER_PROFILE}?${params.toString()}`
-        });
-        
         const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.TEACHER_PROFILE}?${params.toString()}`, {
           method: 'GET',
           headers: {
@@ -86,8 +85,6 @@ const TeacherMain = () => {
         }
 
         const data = await response.json();
-        
-        console.log('🔍 [TEACHER DEBUG] Teacher profile response:', data);
         
         if (data && data.students && Array.isArray(data.students)) {
           // Transform the API response to match our component's expected format
@@ -223,7 +220,9 @@ const TeacherMain = () => {
   }
 
   return (
-    <div className="teacher-dashboard min-h-screen bg-gradient-to-br from-slate-50 via-white to-indigo-50">
+    <div className="teacher-dashboard min-h-screen bg-gradient-to-br from-slate-50 via-white to-indigo-50 dark:from-slate-900 dark:via-gray-900 dark:to-indigo-900 transition-colors duration-300">
+
+      
       {/* Header */}
       <Header navigate={navigate} />
 
@@ -238,17 +237,25 @@ const TeacherMain = () => {
         <ErrorDisplay error={error} />
 
         {/* Controls */}
-        <Controls
-          searchQuery={searchQuery}
-          setSearchQuery={setSearchQuery}
-          sortBy={sortBy}
-          sortOrder={sortOrder}
-          onSort={handleSort}
-          filterPerformance={filterPerformance}
-          setFilterPerformance={setFilterPerformance}
-        />
+        <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between mb-6">
+          <Controls
+            searchQuery={searchQuery}
+            setSearchQuery={setSearchQuery}
+            sortBy={sortBy}
+            sortOrder={sortOrder}
+            onSort={handleSort}
+            filterPerformance={filterPerformance}
+            setFilterPerformance={setFilterPerformance}
+          />
+          
+          {/* View Toggle */}
+          <ViewToggle 
+            currentView={viewMode} 
+            onViewChange={setViewMode} 
+          />
+        </div>
 
-        {/* Students Grid */}
+        {/* Students Display */}
         {filteredAndSortedStudents.length === 0 ? (
           <EmptyState
             icon={FaInfoCircle}
@@ -260,10 +267,22 @@ const TeacherMain = () => {
             onRefreshClick={() => window.location.reload()}
           />
         ) : (
-          <StudentsGrid 
-            students={filteredAndSortedStudents}
-            onStudentClick={setSelectedStudentId}
-          />
+          <>
+            {viewMode === 'grid' ? (
+              <StudentsGrid 
+                students={filteredAndSortedStudents}
+                onStudentClick={setSelectedStudentId}
+              />
+            ) : (
+              <StudentsTable 
+                students={filteredAndSortedStudents}
+                onStudentClick={setSelectedStudentId}
+                sortBy={sortBy}
+                sortOrder={sortOrder}
+                onSort={handleSort}
+              />
+            )}
+          </>
         )}
       </div>
 

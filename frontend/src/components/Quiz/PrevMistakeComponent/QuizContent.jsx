@@ -21,7 +21,8 @@ const QuizContent = ({
     showHint,
     showExplanation,
     showAdvice,
-    isCorrect
+    isCorrect,
+    isIncorrectAnswer
 }) => {
     const { isDarkMode } = useDarkTheme();
 
@@ -45,7 +46,7 @@ const QuizContent = ({
                         onShowHint={onShowHint}
                         onShowExplanation={onShowExplanation}
                         onShowAdvice={onShowAdvice}
-                        isIncorrectAnswer={false}
+                        isIncorrectAnswer={isIncorrectAnswer}
                     />
 
                     <QuestionDisplay
@@ -57,7 +58,7 @@ const QuizContent = ({
                         showExplanation={showExplanation}
                         showAdvice={showAdvice}
                         isQuestionAnswered={lock}
-                        isCorrect={isCorrect}
+                        isCorrect={false}
                         onShowHint={onShowHint}
                         onShowExplanation={onShowExplanation}
                         onShowAdvice={onShowAdvice}

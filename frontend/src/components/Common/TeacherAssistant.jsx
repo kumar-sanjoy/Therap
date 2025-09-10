@@ -30,7 +30,7 @@ const TeacherAssistant = ({
   showAdvice = false,
   isIncorrectAnswer = false,
   // New prop to control floating avatar visibility
-  showFloatingAvatar = true
+  showFloatingAvatar = false
 }) => {
   const { isDarkMode } = useDarkTheme();
   const [isOpen, setIsOpen] = useState(false);

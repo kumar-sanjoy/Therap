@@ -31,16 +31,21 @@ const SubjectProgress = ({ stats, isDarkMode }) => {
                 }`}>{subject}</h3>
                 <p className={`text-sm ${
                   isDarkMode ? 'text-gray-400' : 'text-gray-500'
-                }`}>{data.completed} questions completed</p>
+                }`}>{data.completed} questions attempted</p>
               </div>
               <div className="flex items-center gap-4">
-                <div className={`w-32 rounded-full h-3 ${
-                  isDarkMode ? 'bg-gray-600' : 'bg-gray-200'
-                }`}>
-                  <div
-                    className="bg-gradient-to-r from-emerald-500 to-emerald-600 h-3 rounded-full transition-all duration-500"
-                    style={{ width: `${data.accuracy}%` }}
-                  ></div>
+                <div className="text-center">
+                  <p className={`text-xs font-medium mb-1 ${
+                    isDarkMode ? 'text-gray-400' : 'text-gray-500'
+                  }`}>Accuracy</p>
+                  <div className={`w-32 rounded-full h-3 overflow-hidden ${
+                    isDarkMode ? 'bg-gray-600' : 'bg-gray-200'
+                  }`}>
+                    <div
+                      className="bg-gradient-to-r from-emerald-500 to-emerald-600 h-3 rounded-full transition-all duration-500"
+                      style={{ width: `${data.accuracy}%` }}
+                    ></div>
+                  </div>
                 </div>
                 <span className="text-lg font-bold text-emerald-600">{data.accuracy}%</span>
               </div>

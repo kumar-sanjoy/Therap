@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDarkTheme } from '../../Common/DarkThemeProvider.jsx';
+import { useDarkTheme } from '../../Common/DarkThemeProvider';
 import TeacherLoadingScreen from '../../Common/TeacherLoadingScreen';
 
 const LoadingState = ({ isSubmitting }) => {

@@ -6,9 +6,8 @@ import TeacherLoadingScreen from '../../Common/TeacherLoadingScreen';
 const LoadingState = ({ isLoading, isSubmitting }) => {
     const { isDarkMode } = useDarkTheme();
 
-    if (!isLoading && !isSubmitting) return null;
-
-    const isQuizLoading = isLoading && !isSubmitting;
+    // Only show loading for initial quiz loading, not for submission
+    if (!isLoading) return null;
 
     return (
         <div className={`min-h-screen flex flex-col ${
@@ -20,10 +19,7 @@ const LoadingState = ({ isLoading, isSubmitting }) => {
                 isDarkMode ? 'bg-gray-900/95' : 'bg-white/95'
             }`}>
                 <TeacherLoadingScreen 
-                    message={isQuizLoading ? 
-                        "Teacher is preparing your quiz questions..." : 
-                        "Teacher is reviewing your answers..."
-                    }
+                    message="Teacher is preparing your quiz questions..."
                     size="large"
                 />
             </div>

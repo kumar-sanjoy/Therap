@@ -95,14 +95,14 @@ const QuizModular = () => {
             const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
             
             if (!token || !username) {
-                console.error('🔍 [QUIZ DEBUG] Missing authentication:', { token: !!token, username: !!username });
+
                 navigate('/login');
                 return;
             }
 
             // Additional validation for token
             if (token.length < 10) {
-                console.error('🔍 [QUIZ DEBUG] Token seems too short:', { tokenLength: token.length });
+
                 navigate('/login');
                 return;
             }
@@ -125,39 +125,10 @@ const QuizModular = () => {
                 });
                 
                 // Debug: Log the parameters and endpoint for fetching questions
-                console.log('🔍 [QUIZ DEBUG] Authentication check:', {
-                    rawToken: localStorage.getItem(STORAGE_KEYS.TOKEN) ? `${localStorage.getItem(STORAGE_KEYS.TOKEN).substring(0, 20)}...` : 'null',
-                    cleanToken: token ? `${token.substring(0, 20)}...` : 'null',
-                    tokenLength: token ? token.length : 0,
-                    username: username,
-                    hasToken: !!token,
-                    hasUsername: !!username,
-                    rawTokenStartsWithBearer: localStorage.getItem(STORAGE_KEYS.TOKEN) ? localStorage.getItem(STORAGE_KEYS.TOKEN).startsWith('Bearer ') : false
-                });
-                console.log('🔍 [QUIZ DEBUG] Fetching questions with parameters:', {
-                    username,
-                    className: mapClassForExamAPI(className),
-                    subject: mapSubjectForExamAPI(subject),
-                    chapter,
-                    rawClassName: className,
-                    rawSubject: subject
-                });
-                console.log('🔍 [QUIZ DEBUG] Questions endpoint:', `${EXAM_API_BASE_URL}${API_ENDPOINTS.MCQ_QUESTIONS}`);
-                console.log('🔍 [QUIZ DEBUG] Full URL:', `${EXAM_API_BASE_URL}${API_ENDPOINTS.MCQ_QUESTIONS}?${params.toString()}`);
-                console.log('🔍 [QUIZ DEBUG] Query parameters:', params.toString());
-                console.log('🔍 [QUIZ DEBUG] Authorization header:', `Bearer ${token.substring(0, 20)}...`);
-                console.log('🔍 [QUIZ DEBUG] Full token length:', token.length);
-                console.log('🔍 [QUIZ DEBUG] Token format check:', {
-                    hasBearer: token.includes('Bearer'),
-                    startsWithBearer: token.startsWith('Bearer'),
-                    tokenType: typeof token,
-                    tokenValue: token ? `${token.substring(0, 50)}...` : 'null'
-                });
-                console.log('🔍 [QUIZ DEBUG] API Configuration:', {
-                    EXAM_API_BASE_URL,
-                    MCQ_QUESTIONS_ENDPOINT: API_ENDPOINTS.MCQ_QUESTIONS,
-                    hasBaseUrl: !!EXAM_API_BASE_URL
-                });
+
+
+
+
                 
                 try {
                     const response = await fetch(`${EXAM_API_BASE_URL}${API_ENDPOINTS.MCQ_QUESTIONS}?${params.toString()}`, {
@@ -420,87 +391,86 @@ const QuizModular = () => {
     const handleSubmitQuiz = async () => {
         if (!lock) return;
         
-        setIsSubmitting(true);
+        // Show score immediately without waiting for submission
+        setShowScore(true);
         
-        try {
-            const userId = localStorage.getItem(STORAGE_KEYS.USER_ID);
-            if (!userId) {
-                navigate('/login');
-                return;
-            }
-
-            // Build the questions object: { [questionText]: true/false }
-            const questionsStatus = {};
-            questions.forEach((q, i) => {
-                // If answerArray[i] === 1, correct; else, incorrect
-                questionsStatus[q.question] = answerArray[i] === 1;
-            });
-            const subject = location.state?.subject || '';
-            const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
-
-            // Prepare the payload in the correct format
-            const payload = {
-                username: username,
-                subject: mapSubjectForExamAPI(subject),
-                questions: questionsStatus,
-                difficultyLevel: Number(difficultyLevel) || 1
-            };
-
-            // Debug: Log the parameters and endpoint for submitting quiz
-            console.log('🔍 [QUIZ DEBUG] Submitting quiz with parameters:', {
-                username,
-                subject: mapSubjectForExamAPI(subject),
-                questionsCount: Object.keys(questionsStatus).length,
-                difficultyLevel: Number(difficultyLevel) || 1,
-                rawSubject: subject
-            });
-            console.log('🔍 [QUIZ DEBUG] Questions status object:', questionsStatus);
-            console.log('🔍 [QUIZ DEBUG] Submit endpoint:', `${EXAM_API_BASE_URL}${API_ENDPOINTS.SUBMIT_MCQ}`);
-            console.log('🔍 [QUIZ DEBUG] Submit payload:', payload);
-
-            const token = getFormattedToken();
-            const res = await fetch(`${EXAM_API_BASE_URL}${API_ENDPOINTS.SUBMIT_MCQ}`, {
-                method: 'POST',
-                headers: {
-                    'Authorization': `Bearer ${token}`,
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(payload),
-            });
-
-            console.log('🔍 [QUIZ DEBUG] Submit response status:', res.status);
-
-            if (res.ok) {
-                console.log('🔍 [QUIZ DEBUG] Quiz submitted successfully');
-                setShowScore(true);
-                setIsSubmitting(false);
-            } else {
-                console.error('🔍 [QUIZ DEBUG] Failed to submit MCQ results, status:', res.status);
-                const errorData = await res.text();
-                console.error('🔍 [QUIZ DEBUG] Error response:', errorData);
-                
-                // Show user-friendly error message
-                if (res.status === 500) {
-                    alert('Quiz completed! There was a temporary issue saving your results, but your quiz has been completed successfully.');
-                } else {
-                    alert('Failed to submit quiz results. Please try again.');
+        // Process backend submission in the background
+        const submitInBackground = async () => {
+            try {
+                const userId = localStorage.getItem(STORAGE_KEYS.USER_ID);
+                if (!userId) {
+                    console.log('🔍 [QUIZ DEBUG] No user ID found, skipping submission');
+                    return;
                 }
-                
-                // Still show the score even if submission failed
-                setShowScore(true);
-                setIsSubmitting(false);
+
+                // Build the questions object: { [questionText]: true/false }
+                const questionsStatus = {};
+                questions.forEach((q, i) => {
+                    // If answerArray[i] === 1, correct; else, incorrect
+                    questionsStatus[q.question] = answerArray[i] === 1;
+                });
+                const subject = location.state?.subject || '';
+                const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
+
+                // Prepare the payload in the correct format
+                const payload = {
+                    username: username,
+                    subject: mapSubjectForExamAPI(subject),
+                    questions: questionsStatus,
+                    difficultyLevel: Number(difficultyLevel) || 1
+                };
+
+                // Debug: Log the parameters and endpoint for submitting quiz
+                console.log('🔍 [QUIZ DEBUG] Submitting quiz in background with parameters:', {
+                    username,
+                    subject: mapSubjectForExamAPI(subject),
+                    questionsCount: Object.keys(questionsStatus).length,
+                    difficultyLevel: Number(difficultyLevel) || 1,
+                    rawSubject: subject
+                });
+                console.log('🔍 [QUIZ DEBUG] Questions status object:', questionsStatus);
+                console.log('🔍 [QUIZ DEBUG] Submit endpoint:', `${EXAM_API_BASE_URL}${API_ENDPOINTS.SUBMIT_MCQ}`);
+                console.log('🔍 [QUIZ DEBUG] Submit payload:', payload);
+
+                const token = getFormattedToken();
+                const res = await fetch(`${EXAM_API_BASE_URL}${API_ENDPOINTS.SUBMIT_MCQ}`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(payload),
+                });
+
+                console.log('🔍 [QUIZ DEBUG] Background submit response status:', res.status);
+
+                if (res.ok) {
+                    console.log('🔍 [QUIZ DEBUG] Quiz submitted successfully in background');
+                } else {
+                    console.error('🔍 [QUIZ DEBUG] Failed to submit MCQ results in background, status:', res.status);
+                    const errorData = await res.text();
+                    console.error('🔍 [QUIZ DEBUG] Background error response:', errorData);
+                    
+                    // Log error but don't show alert to user since they're already viewing score
+                    if (res.status === 500) {
+                        console.log('🔍 [QUIZ DEBUG] Temporary server issue, but quiz was completed');
+                    } else {
+                        console.log('🔍 [QUIZ DEBUG] Submission failed, but user experience is not affected');
+                    }
+                }
+            } catch (error) {
+                console.error('🔍 [QUIZ DEBUG] Error submitting MCQ in background:', error);
+                // Don't show alert to user since they're already viewing score
             }
-        } catch (error) {
-            console.error('🔍 [QUIZ DEBUG] Error submitting MCQ:', error);
-            alert('Failed to submit quiz results. Please try again.');
-        } finally {
-            setIsSubmitting(false);
-        }
+        };
+
+        // Start background submission without blocking UI
+        submitInBackground();
     };
 
-    // Render conditions
-    if (isLoading || isSubmitting) {
-        return <LoadingState isLoading={isLoading} isSubmitting={isSubmitting} />;
+    // Render conditions - only show loading for initial quiz loading, not for submission
+    if (isLoading) {
+        return <LoadingState isLoading={isLoading} isSubmitting={false} />;
     }
 
     if (error) {

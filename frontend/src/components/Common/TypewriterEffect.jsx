@@ -9,7 +9,8 @@ const TypewriterEffect = ({
   className = '',
   showCursor = true,
   useTextDisplay = false,
-  isUserMessage = false
+  isUserMessage = false,
+  fontSize = 16
 }) => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -50,11 +51,11 @@ const TypewriterEffect = ({
     };
   }, [text, speed, delay, onComplete]);
 
-  // If using TextDisplay, show full text with cursor animation
+  // If using TextDisplay, apply typewriter effect to the text first, then render with markdown
   if (useTextDisplay) {
     return (
       <div className={className}>
-        <TextDisplay content={text} isUserMessage={isUserMessage} />
+        <TextDisplay content={displayText} isUserMessage={isUserMessage} fontSize={fontSize} />
         {showCursor && isTyping && (
           <span className="inline-block w-0.5 h-4 bg-current animate-pulse ml-1"></span>
         )}

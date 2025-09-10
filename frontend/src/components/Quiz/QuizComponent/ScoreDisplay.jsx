@@ -140,6 +140,18 @@ const ScoreDisplay = ({ score, totalQuestions, onReset }) => {
                 </div>
             </div>
             
+            {/* Background Submission Notice */}
+            <div className={`text-xs text-center px-4 py-2 rounded-lg ${
+                isDarkMode 
+                    ? 'bg-gray-700/50 text-gray-300 border border-gray-600' 
+                    : 'bg-gray-100 text-gray-600 border border-gray-200'
+            }`}>
+                <div className="flex items-center justify-center gap-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                    <span>Your results are being saved automatically</span>
+                </div>
+            </div>
+            
             {/* Action Button */}
             <button 
                 className={`px-6 py-3 font-medium rounded-lg transition-all hover:shadow-md ${

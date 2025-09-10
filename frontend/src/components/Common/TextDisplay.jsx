@@ -4,7 +4,7 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import rehypeSanitize from "rehype-sanitize";
 
-const TextDisplay = ({ content, isUserMessage = false, forceBlackText = false }) => {
+const TextDisplay = ({ content, isUserMessage = false, forceBlackText = false, fontSize = 16 }) => {
   const textColorClass = isUserMessage ? 'text-white' : forceBlackText ? 'text-black' : 'text-gray-800 dark:text-gray-200';
   const headingColorClass = isUserMessage ? 'text-white' : forceBlackText ? 'text-black' : 'text-gray-900 dark:text-white';
   
@@ -30,8 +30,14 @@ const TextDisplay = ({ content, isUserMessage = false, forceBlackText = false })
   const markdownComponents = {
     // Paragraph with compact Bengali text support
     p: ({ children }) => (
-      <p className={`mb-2 ${textColorClass} leading-relaxed break-words whitespace-pre-wrap text-base w-full max-w-full bengali-text`} 
-         style={{ minWidth: 0, maxWidth: '100%', wordBreak: 'break-word', overflowWrap: 'anywhere' }}>
+      <p className={`mb-2 ${textColorClass} leading-relaxed break-words whitespace-pre-wrap w-full max-w-full bengali-text`} 
+         style={{ 
+           minWidth: 0, 
+           maxWidth: '100%', 
+           wordBreak: 'break-word', 
+           overflowWrap: 'anywhere',
+           fontSize: `${fontSize}px`
+         }}>
         {children}
       </p>
     ),
@@ -80,7 +86,8 @@ const TextDisplay = ({ content, isUserMessage = false, forceBlackText = false })
       </ol>
     ),
     li: ({ children }) => (
-      <li className={`${textColorClass} leading-relaxed break-words bengali-text`}>
+      <li className={`${textColorClass} leading-relaxed break-words bengali-text`}
+          style={{ fontSize: `${fontSize}px` }}>
         {children}
       </li>
     ),

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { API_BASE_URL, LEARNING_API_BASE_URL, API_ENDPOINTS, STORAGE_KEYS } from '../../../config';
-import { useDarkTheme } from '../../Common/DarkThemeProvider.jsx';
-import TeacherAssistant from '../../Common/TeacherAssistant';
+import { useDarkTheme } from '../../Common/DarkThemeProvider';
+
 import TypingIndicator from '../../Common/TypingIndicator';
 
 // Import sub-components
@@ -13,8 +13,6 @@ import LoadingState from './LoadingState';
 import AnswerDisplay from './AnswerDisplay';
 
 const AskQuestionNew = () => {
-    console.log('🔍 [ASK_QUESTION DEBUG] AskQuestion component is loading...');
-    console.error('🔍 [ASK_QUESTION DEBUG] ERROR TEST - AskQuestion component is loading...');
     
     const navigate = useNavigate();
     const { isDarkMode } = useDarkTheme();
@@ -36,6 +34,7 @@ const AskQuestionNew = () => {
 
     // Check authentication on mount
     useEffect(() => {
+        
         const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
         const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
         const role = localStorage.getItem(STORAGE_KEYS.ROLE);
@@ -57,16 +56,33 @@ const AskQuestionNew = () => {
     }, [navigate]);
 
     const handleSubmit = async () => {
-        if (!question.trim() && !imageFile && !audioBlob) {
+        // Check if we have at least one input: question text, image, or audio
+        const hasQuestion = question.trim();
+        const hasImage = imageFile;
+        const hasAudio = audioBlob;
+        
+        if (!hasQuestion && !hasImage && !hasAudio) {
             setErrorMessage('Please enter a question, upload an image, or record audio.');
             return;
         }
+        
+        // If we have audio but no transcribed question, we need to transcribe first
+        if (hasAudio && !hasQuestion) {
+            setErrorMessage('Please transcribe your audio recording before submitting.');
+            return;
+        }
+        
+        // If we have a question (either typed or transcribed), we can proceed
+        // Audio blob will not be sent to backend when we have transcribed text
 
         setIsSubmitting(true);
         setError(null);
         setShowAnswer(false);
 
         try {
+            let data;
+            
+            // Real API call
             const formData = new FormData();
             
             // Add question text
@@ -79,50 +95,36 @@ const AskQuestionNew = () => {
                 formData.append('image', imageFile);
             }
             
-            // Add audio file
-            if (audioBlob) {
+            // Add audio file only if no transcribed text is available
+            if (audioBlob && !question.trim()) {
                 formData.append('audio', audioBlob, 'recording.wav');
             }
 
             const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
             const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
 
-            console.log('🔍 [ASK_QUESTION DEBUG] About to make fetch request to:', `${LEARNING_API_BASE_URL}${API_ENDPOINTS.ASK_QUESTION}`);
-            
-            let response;
-            try {
-                response = await fetch(`${LEARNING_API_BASE_URL}${API_ENDPOINTS.ASK_QUESTION}`, {
-                    method: 'POST',
-                    headers: {
-                        'Authorization': `Bearer ${token}`,
-                    },
-                    body: formData
-                });
-                console.log('🔍 [ASK_QUESTION DEBUG] Fetch request completed successfully');
-            } catch (fetchError) {
-                console.error('🔍 [ASK_QUESTION DEBUG] Fetch request failed:', fetchError);
-                console.error('🔍 [ASK_QUESTION DEBUG] Fetch error details:', {
-                    name: fetchError.name,
-                    message: fetchError.message,
-                    stack: fetchError.stack
-                });
-                throw fetchError;
-            }
+            const response = await fetch(`${LEARNING_API_BASE_URL}${API_ENDPOINTS.ASK_QUESTION}`, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                },
+                body: formData
+            });
 
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
 
-            const data = await response.json();
+            data = await response.json();
             
-            if (data.success) {
+            if (data.status === 'success') {
                 // Show typing indicator first
                 setShowTypingIndicator(true);
                 
                 // Hide typing indicator and show answer after a delay
                 setTimeout(() => {
                     setShowTypingIndicator(false);
-                    setAnswer(data.answer || data.response || 'No answer received');
+                    setAnswer(data.response || data.answer || 'No answer received');
                     setShowAnswer(true);
                     setErrorMessage('');
                 }, 2000); // 2 second delay to show typing
@@ -143,8 +145,14 @@ const AskQuestionNew = () => {
         setShowImageModal(true);
     };
 
+    const handleTextSelect = (selectedText) => {
+        setQuestion(`Can you explain this: "${selectedText}"`);
+    };
+
     return (
         <div className={`min-h-screen ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-gray-50 text-gray-900'}`}>
+
+            
             {/* Header */}
             <Header navigate={navigate} />
 
@@ -165,6 +173,10 @@ const AskQuestionNew = () => {
                     audioBlob={audioBlob}
                     setAudioBlob={setAudioBlob}
                     onImagePreviewClick={handleImagePreviewClick}
+                    onTranscriptionComplete={(transcript) => {
+                        setQuestion(transcript);
+                        setErrorMessage('');
+                    }}
                 />
 
                 {/* Loading State */}
@@ -175,6 +187,7 @@ const AskQuestionNew = () => {
                     showAnswer={showAnswer}
                     question={question}
                     answer={answer}
+                    onTextSelect={handleTextSelect}
                 />
                 
                 {/* Typing Indicator */}

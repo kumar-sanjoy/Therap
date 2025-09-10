@@ -37,41 +37,41 @@ const StudentDetailsModal = ({ studentId, onClose, onFetchStudentDetails }) => {
     
     try {
       // Get teacher username from localStorage
-      const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
-      if (!username) {
-        throw new Error('Teacher not logged in');
-      }
-
-      const params = new URLSearchParams({
-        username: username,
-        studentId: studentIdStr
-      });
-      
-      const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
-      
-      const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.TEACHER_REPORT}?${params.toString()}`, {
-        method: 'GET',
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'Content-Type': 'application/json'
+        const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
+        if (!username) {
+          throw new Error('Teacher not logged in');
         }
-      });
 
-      const data = await response.json();
+        const params = new URLSearchParams({
+          username: username,
+          studentId: studentIdStr
+        });
+        
+        const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
+        
+        const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.TEACHER_REPORT}?${params.toString()}`, {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+          }
+        });
 
-      if (response.ok) {
-        if (data && data.report) {
-          setDetails({ 
-            studentId: studentIdStr,
-            report: data.report,
-            studentName: studentIdStr // Using studentId as name for now
-          });
+        const data = await response.json();
+
+        if (response.ok) {
+          if (data && data.report) {
+            setDetails({ 
+              studentId: studentIdStr,
+              report: data.report,
+              studentName: studentIdStr // Using studentId as name for now
+            });
+          } else {
+            throw new Error('No analysis report available for this student');
+          }
         } else {
-          throw new Error('No analysis report available for this student');
+          throw new Error(data.message || `Server responded with status ${response.status}`);
         }
-      } else {
-        throw new Error(data.message || `Server responded with status ${response.status}`);
-      }
     } catch (err) {
       let errorMessage = err.message || 'Something went wrong';
       if (err.message.includes('Load failed')) {
@@ -109,7 +109,7 @@ const StudentDetailsModal = ({ studentId, onClose, onFetchStudentDetails }) => {
 
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 z-50" onClick={handleBackdropClick}>
-      <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden" ref={modalRef}>
+      <div className="bg-white/95 dark:bg-gray-800/95 backdrop-blur-md rounded-3xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden transition-colors duration-300" ref={modalRef}>
         {/* Header */}
         <ModalHeader onClose={onClose} />
 

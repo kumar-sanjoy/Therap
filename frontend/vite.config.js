@@ -1,15 +1,33 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// Note: '@tailwindcss/vite' is not a standard plugin; use 'postcss' integration instead
 export default defineConfig({
-  plugins: [react()],
-  define: {
-    // Enable tree shaking for Material-UI
-    'process.env.NODE_ENV': '"production"'
-  },
+  plugins: [
+    react({
+      // React 18 configuration
+      jsxRuntime: 'automatic',
+    })
+  ],
   server: {
-    port: 3000
+    port: 3000,
+    // Add health check endpoint to prevent 404 errors
+    proxy: {
+      '/health': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/health/, '')
+      }
+    }
+  },
+  resolve: {
+    alias: {
+      // Ensure proper resolution of @react-pdf/renderer
+      '@react-pdf/renderer': '@react-pdf/renderer'
+    }
+  },
+  define: {
+    // Fix for @react-pdf/renderer compatibility
+    global: 'globalThis',
   },
   build: {
     chunkSizeWarningLimit: 1500,
@@ -127,30 +145,18 @@ export default defineConfig({
           if (id.includes('src/components/Common/')) {
             return 'common-features';
           }
-        },
-        assetFileNames: (assetInfo) => {
-          const info = assetInfo.name.split('.');
-          const ext = info[info.length - 1];
-          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(ext)) {
-            return `assets/images/[name]-[hash][extname]`;
-          }
-          return `assets/[name]-[hash][extname]`;
         }
       }
     },
     // Enable source maps for debugging
     sourcemap: false,
-    // Optimize dependencies
-    commonjsOptions: {
-      include: [/node_modules/]
-    },
     // Asset optimization
     assetsInlineLimit: 4096 // Inline assets smaller than 4KB
   },
-  // Optimize dependencies
+  // Optimize dependencies for React 18
   optimizeDeps: {
     include: ['react', 'react-dom', 'react-router-dom'],
-    exclude: ['@react-pdf/renderer', 'jspdf', 'pdfmake']
+    exclude: ['jspdf', 'pdfmake']
   },
   // Additional optimizations
   esbuild: {

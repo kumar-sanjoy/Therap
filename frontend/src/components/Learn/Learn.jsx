@@ -1,20 +1,17 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { API_BASE_URL, LEARNING_API_BASE_URL, API_ENDPOINTS, STORAGE_KEYS, mapClassForExamAPI, mapSubjectForExamAPI } from '../../config';
+import { API_BASE_URL, API_ENDPOINTS, STORAGE_KEYS, mapClassForExamAPI, mapSubjectForExamAPI } from '../../config';
 import { useDarkTheme } from '../Common/DarkThemeProvider';
-import { formatTime, calculateProgressPercentage, checkAuthAndRole } from './utils';
+import { formatTime, calculateProgressPercentage, checkAuthAndRole, parseAIResponse } from './utils';
+import { ArrowLeft, X } from 'lucide-react';
+import flowLogoLight from '../../assets/flow-main-nobg.png';
+import flowLogoDark from '../../assets/flow-dark.png';
 
 // Import components
-import Header from './Header';
-import Sidebar from './Sidebar';
 import MainContent from './MainContent';
-import QuestionInput from './QuestionInput';
 import CompletionModal from './CompletionModal';
 
 const Learn = () => {
-  console.log('🔍 [LEARN DEBUG] Learn component is loading...');
-  console.error('🔍 [LEARN DEBUG] ERROR TEST - Learn component is loading...');
-  
   const { state } = useLocation();
   const navigate = useNavigate();
   const { isDarkMode } = useDarkTheme();
@@ -34,13 +31,12 @@ const Learn = () => {
     { type: 'content', text: 'Loading lesson content...', timestamp: new Date(), sectionIndex: 0 }
   ]);
   const [isLoading, setIsLoading] = useState(false);
-  const [showSidebar, setShowSidebar] = useState(false);
   const [completedChunks, setCompletedChunks] = useState(new Set([0]));
   const [readingTime, setReadingTime] = useState(0);
   const [error, setError] = useState('');
   const [isCompleted, setIsCompleted] = useState(false);
   const [showCompletionModal, setShowCompletionModal] = useState(false);
-  const [fontSize, setFontSize] = useState(16); // Default font size
+  const [fontSize, setFontSize] = useState(16);
   const [isLoadingLesson, setIsLoadingLesson] = useState(true);
   const [lessonError, setLessonError] = useState('');
   const [showTypingIndicator, setShowTypingIndicator] = useState(false);
@@ -59,153 +55,89 @@ const Learn = () => {
     const fetchLessonData = async () => {
       try {
         console.log('🔍 [LEARN DEBUG] State received:', state);
-        console.log('🔍 [LEARN DEBUG] State content check:', {
-          hasState: !!state,
-          hasContent: !!state?.content,
-          contentLength: state?.content?.length,
-          contentType: typeof state?.content,
-          isArray: Array.isArray(state?.content)
-        });
+        console.log('🔍 [LEARN DEBUG] State keys:', state ? Object.keys(state) : 'No state');
         
         // Use lesson data from state if available
         if (state?.content || state?.lesson) {
-          // Handle different content structures
           let contentArray = [];
           
           if (Array.isArray(state.content)) {
-            // Direct array
             contentArray = state.content;
+            console.log('🔍 [LEARN DEBUG] Using state.content array, length:', contentArray.length);
           } else if (Array.isArray(state.lesson)) {
-            // Direct lesson array
             contentArray = state.lesson;
+            console.log('🔍 [LEARN DEBUG] Using state.lesson array, length:', contentArray.length);
           } else if (state.content?.lesson && Array.isArray(state.content.lesson)) {
-            // Nested lesson array
             contentArray = state.content.lesson;
+            console.log('🔍 [LEARN DEBUG] Using state.content.lesson array, length:', contentArray.length);
           } else if (state.content?.content && Array.isArray(state.content.content)) {
-            // Nested content array
             contentArray = state.content.content;
+            console.log('🔍 [LEARN DEBUG] Using state.content.content array, length:', contentArray.length);
           }
           
-          console.log('🔍 [LEARN DEBUG] Content extraction:', {
-            originalContent: state.content,
-            extractedContent: contentArray,
-            contentLength: contentArray.length
-          });
+          console.log('🔍 [LEARN DEBUG] Final content array:', contentArray);
           
           if (contentArray.length > 0) {
-            if (isMounted) {
-              setLessonData(prev => ({
-                ...prev,
-                content: contentArray,
-                class: state.className || prev.class,
-                subject: state.subject || prev.subject,
-                chapter: state.chapter || prev.chapter,
-                chapterTitle: state.chapterTitle || prev.chapterTitle
-              }));
-              setIsLoadingLesson(false);
-            }
-            return;
-          }
-        }
-
-        // Fetch from API if not available in state
-        const className = state?.className || 'Class 9';
-        const subject = state?.subject || 'Science';
-        const chapter = state?.chapter || '1';
-        const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
-        const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
-
-        const params = new URLSearchParams({
-          className: mapClassForExamAPI(className),
-          subject: mapSubjectForExamAPI(subject),
-          chapter
-        });
-
-        console.log('🔍 [LEARN DEBUG] Fetching lesson content with params:', {
-          className: mapClassForExamAPI(className),
-          subject: mapSubjectForExamAPI(subject),
-          chapter,
-          endpoint: `${LEARNING_API_BASE_URL}${API_ENDPOINTS.LEARN}`,
-          fullUrl: `${LEARNING_API_BASE_URL}${API_ENDPOINTS.LEARN}?${params.toString()}`
-        });
-        
-        // Clean token format (remove "Bearer " prefix if present)
-        let cleanToken = token;
-        if (token && token.startsWith('Bearer ')) {
-          cleanToken = token.substring(7);
-        }
-        
-        console.log('🔍 [LEARN DEBUG] Token check:', {
-          hasToken: !!token,
-          tokenLength: token ? token.length : 0,
-          cleanTokenLength: cleanToken ? cleanToken.length : 0,
-          tokenStartsWithBearer: token ? token.startsWith('Bearer ') : false
-        });
-        
-        console.log('🔍 [LEARN DEBUG] About to make fetch request to:', `${LEARNING_API_BASE_URL}${API_ENDPOINTS.LEARN}?${params.toString()}`);
-        
-        let response;
-        try {
-          response = await fetch(`${LEARNING_API_BASE_URL}${API_ENDPOINTS.LEARN}?${params.toString()}`, {
-            method: 'GET',
-            headers: {
-              'Authorization': `Bearer ${cleanToken}`,
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
-            },
-            mode: 'cors'
-          });
-          console.log('🔍 [LEARN DEBUG] Fetch request completed successfully');
-        } catch (fetchError) {
-          console.error('🔍 [LEARN DEBUG] Fetch request failed:', fetchError);
-          console.error('🔍 [LEARN DEBUG] Fetch error details:', {
-            name: fetchError.name,
-            message: fetchError.message,
-            stack: fetchError.stack
-          });
-          throw fetchError;
-        }
-        
-        console.log('🔍 [LEARN DEBUG] API response status:', response.status);
-        console.log('🔍 [LEARN DEBUG] API response headers:', Object.fromEntries(response.headers.entries()));
-
-        if (response.ok) {
-          const data = await response.json();
-          console.log('🔍 [LEARN DEBUG] API response data:', data);
-          
-          if (isMounted) {
-            // Handle both 'content' and 'lesson' field names from backend
-            const lessonContent = data.content || data.lesson || [];
-            
             setLessonData(prev => ({
               ...prev,
-              content: lessonContent,
-              chapterTitle: data.chapterTitle || prev.chapterTitle
+              content: contentArray,
+              chapterTitle: state?.chapterTitle || `Chapter ${state?.chapter || '1'}`
             }));
             setIsLoadingLesson(false);
+            console.log('🔍 [LEARN DEBUG] Lesson data set successfully');
+          } else {
+            throw new Error('No lesson content found');
           }
         } else {
-          console.error('🔍 [LEARN DEBUG] Failed to fetch lesson content, status:', response.status);
-          const errorText = await response.text();
-          console.error('🔍 [LEARN DEBUG] Error response:', errorText);
+          console.log('🔍 [LEARN DEBUG] No content or lesson in state, trying to fetch from API');
           
-          if (isMounted) {
-            if (response.status === 404) {
-              setLessonError('Learning content endpoint not found. Please check if the backend service is running.');
-            } else if (response.status === 401) {
-              setLessonError('Authentication failed. Please log in again.');
-            } else {
-              setLessonError(`Failed to load lesson content (Status: ${response.status})`);
-            }
-            setIsLoadingLesson(false);
+          // Try to fetch lesson content from API as fallback
+          const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
+          const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
+          
+          if (!token || !username) {
+            throw new Error('Authentication required');
           }
+          
+          const params = new URLSearchParams({
+            className: mapClassForExamAPI(lessonData.class),
+            subject: mapSubjectForExamAPI(lessonData.subject),
+            chapter: lessonData.chapter
+          });
+          
+          console.log('🔍 [LEARN DEBUG] Fetching from API with params:', params.toString());
+          
+          const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.LEARN}?${params.toString()}`, {
+            method: 'GET',
+            headers: {
+              'Authorization': `Bearer ${token}`,
+              'Content-Type': 'application/json'
+            }
+          });
+          
+          if (response.ok) {
+            const data = await response.json();
+            console.log('🔍 [LEARN DEBUG] API response:', data);
+            
+            const extractedContent = data.content || data.lessons || data;
+            if (Array.isArray(extractedContent) && extractedContent.length > 0) {
+              setLessonData(prev => ({
+                ...prev,
+                content: extractedContent,
+                chapterTitle: data.chapterTitle || data.title || `Chapter ${lessonData.chapter}`
+              }));
+              setIsLoadingLesson(false);
+              console.log('🔍 [LEARN DEBUG] Lesson data fetched from API successfully');
+              return;
+            }
+          }
+          
+          throw new Error('No lesson data provided and API fetch failed');
         }
-      } catch (error) {
-        console.error('Error fetching lesson data:', error);
-        if (isMounted) {
-          setLessonError('Unable to connect to server');
-          setIsLoadingLesson(false);
-        }
+      } catch (err) {
+        console.error('🔍 [LEARN DEBUG] Error loading lesson:', err);
+        setLessonError(err.message || 'Failed to load lesson content');
+        setIsLoadingLesson(false);
       }
     };
 
@@ -218,17 +150,14 @@ const Learn = () => {
   // Initialize messages when lesson data is loaded
   useEffect(() => {
     if (lessonData.content.length > 0 && messages.length === 1) {
-      // Only initialize if we have content and haven't already initialized
       setMessages([{ type: 'content', text: lessonData.content[0], timestamp: new Date(), sectionIndex: 0 }]);
     }
   }, [lessonData.content, messages.length]);
 
   // Function to add lesson content to messages without replacing conversation
   const addLessonContent = useCallback((contentIndex) => {
-    // Show typing indicator first
     setShowTypingIndicator(true);
     
-    // Hide typing indicator and add content after a delay
     setTimeout(() => {
       setShowTypingIndicator(false);
       const contentMessage = { 
@@ -238,7 +167,7 @@ const Learn = () => {
         sectionIndex: contentIndex 
       };
       setMessages(prev => [...prev, contentMessage]);
-    }, 1500); // 1.5 second delay to show typing
+    }, 1500);
   }, [lessonData.content]);
 
   // Manual completion function
@@ -246,8 +175,6 @@ const Learn = () => {
     if (currentChunkIndex === lessonData.content.length - 1) {
       setIsCompleted(true);
       setShowCompletionModal(true);
-      // Keep the current reading time
-      setReadingTime(prev => prev);
     }
   };
 
@@ -274,7 +201,6 @@ const Learn = () => {
     if (currentChunkIndex + 1 < lessonData.content.length) {
       const nextIndex = currentChunkIndex + 1;
       setCurrentChunkIndex(nextIndex);
-      // Add new section content to existing conversation
       addLessonContent(nextIndex);
     }
   }, [currentChunkIndex, lessonData.content.length, addLessonContent]);
@@ -283,8 +209,6 @@ const Learn = () => {
     if (currentChunkIndex > 0) {
       const prevIndex = currentChunkIndex - 1;
       setCurrentChunkIndex(prevIndex);
-      // Don't mark as completed when going backwards
-      // Add previous section content to existing conversation
       addLessonContent(prevIndex);
     }
   };
@@ -310,15 +234,15 @@ const Learn = () => {
         body: formData,
       });
 
-      if (response.ok) {
-        const data = await response.json();
-        
-        console.log('🔍 [LEARN DEBUG] Raw API response:', data);
-        
-        // Use the utility function to parse the response
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Failed to get answer');
+      }
+
+      const data = await response.json();
+      
+      if (data.success) {
         const answerText = parseAIResponse(data);
-        
-        console.log('🔍 [LEARN DEBUG] Parsed answer text:', answerText);
         
         const botResponse = {
           type: 'bot',
@@ -328,83 +252,117 @@ const Learn = () => {
         setMessages(prev => [...prev, botResponse]);
         setQuestion('');
       } else {
-        const errorData = await response.json();
-        setError(errorData.message || 'Failed to get answer');
+        throw new Error(data.message || 'Failed to get answer');
       }
     } catch (err) {
       console.error('Error asking question:', err);
-      setError('Something went wrong');
+      setError(err.message || 'Something went wrong');
     } finally {
       setIsLoading(false);
     }
   };
 
   const handleJumpToChunk = (index) => {
-    // Allow jumping to any section (no restrictions)
     setCurrentChunkIndex(index);
-    // Add selected section content to existing conversation
     addLessonContent(index);
-    setShowSidebar(false);
   };
 
   const progressPercentage = calculateProgressPercentage(currentChunkIndex, lessonData.content);
 
-  return (
-    <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'dark bg-gray-900' : 'bg-gradient-to-br from-slate-50 via-white to-indigo-50'}`}>
-      {/* Header */}
-      <Header 
-        lessonData={lessonData}
-        showSidebar={showSidebar}
-        setShowSidebar={setShowSidebar}
-      />
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="flex flex-col lg:flex-row gap-6">
-          {/* Sidebar */}
-          <div className={`lg:w-80 ${showSidebar ? 'block' : 'hidden lg:block'}`}>
-            <Sidebar 
-              lessonData={lessonData}
-              currentChunkIndex={currentChunkIndex}
-              progressPercentage={progressPercentage}
-              isCompleted={isCompleted}
-              readingTime={readingTime}
-              formatTime={formatTime}
-              handleJumpToChunk={handleJumpToChunk}
-            />
+  // Show loading state
+  if (isLoadingLesson) {
+    return (
+      <div className={`min-h-screen ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-gradient-to-br from-slate-50 via-white to-indigo-50'}`}>
+        <div className="flex items-center justify-center min-h-screen">
+          <div className="text-center">
+            <div className="w-16 h-16 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+            <h2 className="text-xl font-semibold mb-2">Loading Lesson Content</h2>
+            <p className="text-gray-600 dark:text-gray-400">Please wait while we prepare your learning experience...</p>
           </div>
-
-          {/* Main Content */}
-          <MainContent 
-            lessonData={lessonData}
-            currentChunkIndex={currentChunkIndex}
-            messages={messages}
-            isLoading={isLoading}
-            isLoadingLesson={isLoadingLesson}
-            lessonError={lessonError}
-            error={error}
-            showTypingIndicator={showTypingIndicator}
-            fontSize={fontSize}
-            setFontSize={setFontSize}
-            handlePrevious={handlePrevious}
-            handleNext={handleNext}
-            handleCompleteChapter={handleCompleteChapter}
-            isCompleted={isCompleted}
-            messagesEndRef={messagesEndRef}
-          />
         </div>
       </div>
+    );
+  }
 
-      {/* Question Input */}
-      {!isLoadingLesson && lessonData.content.length > 0 && (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-6">
-          <QuestionInput 
-            question={question}
-            setQuestion={setQuestion}
-            isLoading={isLoading}
-            handleAskQuestion={handleAskQuestion}
+  // Show error state
+  if (lessonError) {
+    return (
+      <div className={`min-h-screen ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-gradient-to-br from-slate-50 via-white to-indigo-50'}`}>
+        <div className="flex items-center justify-center min-h-screen">
+          <div className="text-center max-w-md mx-auto px-4">
+            <div className="w-16 h-16 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <X className="w-8 h-8 text-red-600 dark:text-red-400" />
+            </div>
+            <h2 className="text-xl font-semibold mb-2 text-red-700 dark:text-red-300">Error Loading Content</h2>
+            <p className="text-gray-600 dark:text-gray-400 mb-4">{lessonError}</p>
+            <button
+              onClick={() => window.location.reload()}
+              className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+            >
+              Try Again
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className={`min-h-screen ${isDarkMode ? 'bg-gray-900' : 'bg-gradient-to-br from-slate-50 via-white to-indigo-50'}`}>
+      {/* Header */}
+      <header className={`w-full mx-auto flex items-center justify-between p-4 md:p-6 border-b shrink-0 ${
+        isDarkMode 
+          ? 'border-gray-700 bg-gradient-to-r from-gray-800 to-gray-900/50' 
+          : 'border-gray-100 bg-gradient-to-r from-white to-gray-50/50'
+      }`}>
+        <div className="flex items-center space-x-6">
+          <img 
+            src={isDarkMode ? flowLogoDark : flowLogoLight} 
+            alt="FLOW Logo" 
+            className="h-10 rounded-xl" 
           />
         </div>
-      )}
+        
+        <div className="flex items-center space-x-4">
+          <button 
+            onClick={() => navigate('/main')}
+            className={`px-4 py-2 border rounded-lg font-medium transition-all flex items-center gap-2 ${
+              isDarkMode 
+                ? 'bg-gray-700 border-gray-600 text-gray-200 hover:bg-gray-600 hover:text-white' 
+                : 'bg-white border-gray-200 text-gray-600 hover:bg-[#343434] hover:text-white'
+            }`}
+            aria-label="Go back to main page"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back
+          </button>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <MainContent
+        lessonData={lessonData}
+        currentChunkIndex={currentChunkIndex}
+        messages={messages}
+        isLoading={isLoading}
+        isLoadingLesson={isLoadingLesson}
+        lessonError={lessonError}
+        error={error}
+        showTypingIndicator={showTypingIndicator}
+        fontSize={fontSize}
+        setFontSize={setFontSize}
+        handlePrevious={handlePrevious}
+        handleNext={handleNext}
+        handleCompleteChapter={handleCompleteChapter}
+        isCompleted={isCompleted}
+        messagesEndRef={messagesEndRef}
+        question={question}
+        setQuestion={setQuestion}
+        handleAskQuestion={handleAskQuestion}
+        progressPercentage={progressPercentage}
+        readingTime={readingTime}
+        handleJumpToChunk={handleJumpToChunk}
+      />
 
       {/* Completion Modal */}
       <CompletionModal 

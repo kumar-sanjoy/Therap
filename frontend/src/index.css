@@ -96,6 +96,18 @@ html, body {
   line-height: 1.3;
 }
 
+/* Custom animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px) translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) translateX(-50%);
+    }
+}
+
 /* Markdown content styling */
 .markdown-content {
   font-family: 'Noto Sans Bengali', 'Inter', sans-serif;

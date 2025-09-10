@@ -8,5 +8,5 @@ export { default as MainContent } from './MainContent';
 export { default as QuestionInput } from './QuestionInput';
 export { default as CompletionModal } from './CompletionModal';
 
-// Utilities
-export * from './utils';
+// Utilities - explicit exports for React 19 compatibility
+export { formatTime, calculateProgressPercentage, checkAuthAndRole, parseAIResponse } from './utils';

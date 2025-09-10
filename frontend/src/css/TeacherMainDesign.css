@@ -4,63 +4,162 @@
   box-sizing: border-box;
 }
 
-/* Force light mode for teacher dashboard - prevent dark mode interference */
+/* Teacher dashboard with dark mode support and enhanced styling */
 .teacher-dashboard {
-  background-color: #ffffff !important;
-  color: #333333 !important;
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 50%, #eef2ff 100%);
+  color: #333333;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
-.teacher-dashboard * {
-  background-color: inherit !important;
-  color: inherit !important;
+.teacher-dashboard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.1) 0%, transparent 35%),
+              radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.1) 0%, transparent 35%);
+  pointer-events: none;
 }
 
+.dark .teacher-dashboard {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  color: #f8fafc;
+}
+
+.dark .teacher-dashboard::before {
+  background: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.2) 0%, transparent 35%),
+              radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.2) 0%, transparent 35%);
+}
+
+/* Allow colors to show through - only override specific problematic elements */
+.teacher-dashboard .bg-white {
+  background-color: #ffffff;
+}
+
+.dark .teacher-dashboard .bg-white {
+  background-color: #1e293b;
+}
+
+/* Preserve colored elements - don't override their colors */
+.teacher-dashboard .text-blue-500 { color: #3b82f6 !important; }
+.teacher-dashboard .text-green-500 { color: #10b981 !important; }
+.teacher-dashboard .text-yellow-500 { color: #f59e0b !important; }
+.teacher-dashboard .text-red-500 { color: #ef4444 !important; }
+.teacher-dashboard .text-cyan-500 { color: #06b6d4 !important; }
+.teacher-dashboard .text-indigo-500 { color: #6366f1 !important; }
+
+.teacher-dashboard .bg-blue-100 { background-color: #dbeafe !important; }
+.teacher-dashboard .bg-green-100 { background-color: #dcfce7 !important; }
+.teacher-dashboard .bg-yellow-100 { background-color: #fef3c7 !important; }
+.teacher-dashboard .bg-red-100 { background-color: #fee2e2 !important; }
+.teacher-dashboard .bg-cyan-100 { background-color: #cffafe !important; }
+.teacher-dashboard .bg-indigo-100 { background-color: #e0e7ff !important; }
+
+.teacher-dashboard .border-blue-100 { border-color: #dbeafe !important; }
+.teacher-dashboard .border-green-100 { border-color: #dcfce7 !important; }
+.teacher-dashboard .border-yellow-100 { border-color: #fef3c7 !important; }
+.teacher-dashboard .border-red-100 { border-color: #fee2e2 !important; }
+.teacher-dashboard .border-cyan-100 { border-color: #cffafe !important; }
+.teacher-dashboard .border-indigo-100 { border-color: #e0e7ff !important; }
+
+/* Preserve hover colors */
+.teacher-dashboard .hover\:border-blue-300:hover { border-color: #93c5fd !important; }
+.teacher-dashboard .hover\:border-green-300:hover { border-color: #86efac !important; }
+.teacher-dashboard .hover\:border-yellow-300:hover { border-color: #fcd34d !important; }
+.teacher-dashboard .hover\:border-red-300:hover { border-color: #fca5a5 !important; }
+
+/* Preserve dev mode indicator */
+.teacher-dashboard .bg-yellow-500 { background-color: #eab308 !important; }
+.teacher-dashboard .text-black { color: #000000 !important; }
+
+/* Preserve performance indicator colors */
+.teacher-dashboard .stroke-blue-500 { stroke: #3b82f6 !important; }
+.teacher-dashboard .stroke-green-500 { stroke: #10b981 !important; }
+.teacher-dashboard .stroke-red-500 { stroke: #ef4444 !important; }
+
+/* Form elements with dark mode support */
 .teacher-dashboard input,
 .teacher-dashboard select,
 .teacher-dashboard textarea {
-  background-color: #ffffff !important;
-  color: #333333 !important;
-  border-color: #d1d5db !important;
+  background-color: #ffffff;
+  color: #333333;
+  border-color: #d1d5db;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.dark .teacher-dashboard input,
+.dark .teacher-dashboard select,
+.dark .teacher-dashboard textarea {
+  background-color: #334155;
+  color: #f8fafc;
+  border-color: #475569;
 }
 
 .teacher-dashboard input:focus,
 .teacher-dashboard select:focus,
 .teacher-dashboard textarea:focus {
-  border-color: #3b82f6 !important;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
 .teacher-dashboard input::placeholder {
-  color: #6b7280 !important;
+  color: #6b7280;
 }
 
-/* Ensure proper contrast for teacher dashboard elements */
-.teacher-dashboard .bg-white {
-  background-color: #ffffff !important;
+.dark .teacher-dashboard input::placeholder {
+  color: #94a3b8;
 }
 
+/* Ensure proper contrast for teacher dashboard elements with dark mode */
 .teacher-dashboard .text-gray-900 {
-  color: #111827 !important;
+  color: #111827;
+}
+
+.dark .teacher-dashboard .text-gray-900 {
+  color: #f8fafc;
 }
 
 .teacher-dashboard .text-gray-700 {
-  color: #374151 !important;
+  color: #374151;
+}
+
+.dark .teacher-dashboard .text-gray-700 {
+  color: #e2e8f0;
 }
 
 .teacher-dashboard .text-gray-500 {
-  color: #6b7280 !important;
+  color: #6b7280;
+}
+
+.dark .teacher-dashboard .text-gray-500 {
+  color: #94a3b8;
 }
 
 .teacher-dashboard .text-gray-600 {
-  color: #4b5563 !important;
+  color: #4b5563;
+}
+
+.dark .teacher-dashboard .text-gray-600 {
+  color: #cbd5e1;
 }
 
 .teacher-dashboard .border-gray-100 {
-  border-color: #f3f4f6 !important;
+  border-color: #f3f4f6;
+}
+
+.dark .teacher-dashboard .border-gray-100 {
+  border-color: #334155;
 }
 
 .teacher-dashboard .border-gray-200 {
-  border-color: #e5e7eb !important;
+  border-color: #e5e7eb;
+}
+
+.dark .teacher-dashboard .border-gray-200 {
+  border-color: #475569;
 }
 
 .tm-select-page {
@@ -389,6 +488,102 @@
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;  /* Safari and Chrome */
+}
+
+/* Enhanced animations for better UX */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+/* Loading screen animations */
+@keyframes loading-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes loading-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes progress-dots {
+  0%, 20% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  80%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+}
+
+.animate-loading-pulse {
+  animation: loading-pulse 2s ease-in-out infinite;
+}
+
+.animate-loading-bounce {
+  animation: loading-bounce 2s ease-in-out infinite;
+}
+
+.animate-progress-dots {
+  animation: progress-dots 1.5s ease-in-out infinite;
+}
+
+/* Enhanced card hover effects */
+.teacher-dashboard .hover\:shadow-xl:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.dark .teacher-dashboard .hover\:shadow-xl:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth transitions for all interactive elements */
+.teacher-dashboard * {
+  transition: all 0.2s ease;
+}
+
+/* Enhanced focus states */
+.teacher-dashboard button:focus,
+.teacher-dashboard input:focus,
+.teacher-dashboard select:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.dark .teacher-dashboard button:focus,
+.dark .teacher-dashboard input:focus,
+.dark .teacher-dashboard select:focus {
+  outline-color: #60a5fa;
 }
 
 /* Additional responsive improvements for sorting buttons */

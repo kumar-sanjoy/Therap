@@ -9,6 +9,7 @@ import StatsGrid from './StatsGrid';
 import SubjectProgress from './SubjectProgress';
 import RecentActivity from './RecentActivity';
 import WelcomeGreeting from './WelcomeGreeting';
+import AITeacherIntroduction from '../Common/AITeacherIntroduction';
 
 const MainPage = () => {
   const { isDarkMode } = useDarkTheme();
@@ -29,8 +30,10 @@ const MainPage = () => {
       english: { completed: 8, accuracy: 92 }
     }
   });
+  const [mentor, setMentor] = useState('');
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [showAITeacherIntro, setShowAITeacherIntro] = useState(false);
 
   // Check authentication on mount
   useEffect(() => {
@@ -112,6 +115,7 @@ const MainPage = () => {
             correctCount: data.correctCount,
             last10Performance: data.last10Performance,
             streak: data.streak,
+            teacher: data.teacher,
             calculatedAccuracy: data.attemptCount > 0 ? Math.round((data.correctCount / data.attemptCount) * 100) : 0
           });
           
@@ -160,7 +164,27 @@ const MainPage = () => {
           console.log('🔍 [MAIN_PAGE DEBUG] Processed stats for frontend:', processedStats);
           
           setStats(processedStats);
+          
+          // Extract mentor name from the response
+          if (data.teacher) {
+            setMentor(data.teacher);
+            console.log('🔍 [MAIN_PAGE DEBUG] Mentor set:', data.teacher);
+          }
+          
           setIsLoading(false);
+          
+          // Check if this is a first-time user (no questions attempted)
+          const isFirstTimeUser = data.attemptCount === 0;
+          const hasSeenIntro = localStorage.getItem('hasSeenAITeacherIntro');
+          
+          if (isFirstTimeUser && !hasSeenIntro) {
+            // Show introduction modal after a short delay
+            setTimeout(() => {
+              setShowAITeacherIntro(true);
+            }, 1000);
+          }
+          
+
         } else {
           console.error('🔍 [MAIN_PAGE DEBUG] Failed to fetch stats, status:', response.status);
           const errorText = await response.text();
@@ -198,6 +222,11 @@ const MainPage = () => {
     navigate('/select', { state: { mode } });
   };
 
+  const handleCloseAITeacherIntro = () => {
+    setShowAITeacherIntro(false);
+    localStorage.setItem('hasSeenAITeacherIntro', 'true');
+  };
+
   const isMobile = window.innerWidth < 640;
   const sidebarOpen = isMobile ? isSidebarOpen : isSidebarOpen;
   const sidebarWidth = sidebarOpen ? 'w-64' : 'w-20';
@@ -223,6 +252,8 @@ const MainPage = () => {
         handleNavigation={handleNavigation}
         handleLogout={handleLogout}
         navigate={navigate}
+        mentor={mentor}
+        onMentorChange={setMentor}
       />
 
       {/* Overlay for mobile */}
@@ -260,6 +291,14 @@ const MainPage = () => {
           <RecentActivity stats={stats} isDarkMode={isDarkMode} />
         </div>
       </div>
+
+      {/* AI Teacher Introduction Modal */}
+      <AITeacherIntroduction 
+        isOpen={showAITeacherIntro} 
+        onClose={handleCloseAITeacherIntro} 
+      />
+
+
  
     </div>
   );

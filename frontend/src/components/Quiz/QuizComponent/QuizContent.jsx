@@ -67,10 +67,10 @@ const QuizContent = ({
                                 : 'bg-[#343434] hover:bg-gray-800 text-white'
                         }`} 
                         onClick={currentIndex === totalQuestions - 1 ? onSubmitQuiz : onNext} 
-                        disabled={!lock || isSubmitting}
+                        disabled={!lock}
                     >
                         {currentIndex === totalQuestions - 1 
-                            ? (isSubmitting ? 'Submitting...' : 'Submit Quiz') 
+                            ? 'Submit Quiz' 
                             : 'Next'
                         }
                     </button>

@@ -44,6 +44,7 @@ export default {
         'dark-primary': '#334155',
         'dark-secondary': '#475569',
       }
+ 
     },
   },
   plugins: [

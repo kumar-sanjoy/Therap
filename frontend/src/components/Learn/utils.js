@@ -1,3 +1,5 @@
+import { STORAGE_KEYS } from '../../config';
+
 // Helper function to format time in MM:SS format
 export const formatTime = (seconds) => {
   const mins = Math.floor(seconds / 60);
@@ -12,9 +14,9 @@ export const calculateProgressPercentage = (currentIndex, totalContent) => {
 
 // Helper function to check if user is authenticated and has correct role
 export const checkAuthAndRole = (navigate) => {
-  const token = localStorage.getItem('token');
-  const username = localStorage.getItem('username');
-  const role = localStorage.getItem('role');
+  const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
+  const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
+  const role = localStorage.getItem(STORAGE_KEYS.ROLE);
   
   if (!token || !username) {
     navigate('/login');
@@ -32,4 +34,21 @@ export const checkAuthAndRole = (navigate) => {
   }
   
   return true;
+};
+
+// Helper function to parse AI response from different API formats
+export const parseAIResponse = (data) => {
+  // Handle different response formats
+  if (data.answer) {
+    return data.answer;
+  } else if (data.response) {
+    return data.response;
+  } else if (data.message) {
+    return data.message;
+  } else if (typeof data === 'string') {
+    return data;
+  } else {
+    console.warn('🔍 [LEARN DEBUG] Unknown response format:', data);
+    return 'No response received';
+  }
 };

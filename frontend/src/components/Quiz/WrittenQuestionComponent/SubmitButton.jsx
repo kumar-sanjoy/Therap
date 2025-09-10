@@ -12,8 +12,8 @@ const SubmitButton = ({ onSubmit, isSubmitting, image, isLoadingQuestion }) => {
                 disabled={isSubmitting || !image || isLoadingQuestion} 
                 className={`px-8 py-4 font-medium rounded-xl transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center space-x-2 ${
                     isDarkMode 
-                        ? 'bg-white hover:bg-gray-100 text-gray-900' 
-                        : 'bg-[#343434] hover:from-gray-800 hover:to-gray-900 text-white'
+                        ? 'bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white' 
+                        : 'bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white'
                 }`}
             >
                 {isSubmitting ? (

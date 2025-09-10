@@ -11,7 +11,7 @@ const ActionButtons = ({ onClose, onRefresh, studentId }) => {
       </button>
       <button
         onClick={() => onRefresh(studentId, true)}
-        className="px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-2xl transition-all duration-300 font-medium"
+        className="px-6 py-3 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-2xl transition-all duration-300 font-medium"
       >
         Refresh Analysis
       </button>
