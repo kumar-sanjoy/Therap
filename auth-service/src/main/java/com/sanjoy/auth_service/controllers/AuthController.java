@@ -3,6 +3,7 @@ package com.sanjoy.auth_service.controllers;
 import com.sanjoy.auth_service.service.CustomUserDetailsService;
 import com.sanjoy.auth_service.security.JwtUtil;
 import com.sanjoy.auth_service.models.User;
+import com.sanjoy.auth_service.service.PasswordResetService;
 import com.sanjoy.auth_service.service.PracticeStreakService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -36,14 +37,31 @@ public class AuthController {
     private final CustomUserDetailsService userDetailsService;
     private final AuthenticationManager authenticationManager; // Added for login
     private final JwtUtil jwtUtil;
+    private final PasswordResetService passwordResetService;
 
 
     public AuthController(CustomUserDetailsService userDetailsService,
                           AuthenticationManager authenticationManager,
+                          PasswordResetService passwordResetService,
                           JwtUtil jwtUtil) {
         this.userDetailsService = userDetailsService;
         this.authenticationManager = authenticationManager;
+        this.passwordResetService = passwordResetService;
         this.jwtUtil = jwtUtil;
+    }
+
+
+    @PostMapping("/forgot-password")
+    public ResponseEntity<String> forgotPassword(@RequestParam String email) {
+        String token = passwordResetService.createPasswordResetToken(email);
+        return ResponseEntity.ok("Password reset link sent to your email. Please check your email");
+    }
+
+    @PostMapping("/reset-password")
+    public ResponseEntity<String> resetPassword(@RequestParam String token,
+                                                @RequestParam String newPassword) {
+        passwordResetService.resetPassword(token, newPassword);
+        return ResponseEntity.ok("Password has been reset successfully.");
     }
 
     @PostMapping("register")
@@ -84,7 +102,6 @@ public class AuthController {
                     .body("Something went wrong");
         }
     }
-
 
 
     @PostMapping("/login")

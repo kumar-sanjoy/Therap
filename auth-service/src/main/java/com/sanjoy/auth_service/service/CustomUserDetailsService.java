@@ -72,7 +72,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 
         tokenService.save(confirmationToken);
 //        System.out.println(confirmationToken.getToken());
-        emailService.send(user.getEmail(), confirmationToken.getToken());
+        emailService.sendConfirmationEmail(user.getEmail(), confirmationToken.getToken());
     }
 
     public void confirmToken(String token) {
