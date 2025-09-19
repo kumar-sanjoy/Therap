@@ -1,5 +1,6 @@
 package com.sanjoy.auth_service.service;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -15,13 +16,16 @@ import jakarta.mail.internet.MimeMessage;
  */
 
 @Service
+@Slf4j
 public class EmailService {
-
-    @Value("${server.port}")
-    private int serverPort;
 
     @Value("${spring.mail.username}")
     String senderEmail;
+
+    @Value("${frontend.url}")
+    private String frontendUrl;
+
+  
 
     private final JavaMailSender mailSender;
 
@@ -29,11 +33,31 @@ public class EmailService {
         this.mailSender = mailSender;
     }
 
-    @Value("${frontend.url}")
-    private String frontendUrl;
+    @Async
+    public void sendPasswordResetEmail(String to, String token) {
+        try {
+            MimeMessage message = mailSender.createMimeMessage();
+            MimeMessageHelper helper = new MimeMessageHelper(message, true, "UTF-8");
+
+            helper.setTo(to);
+            helper.setFrom(senderEmail);
+            helper.setSubject("Reset your password");
+
+            String resetUrl = frontendUrl + "/reset-password?token=" + token;
+            String htmlContent = createEmailTemplateForPasswordReset(resetUrl);
+
+            helper.setText(htmlContent, true); // true indicates HTML content
+
+            mailSender.send(message);
+        } catch (MessagingException e) {
+            log.error("Failed to send email to {}: {}", to, e.getMessage(), e);
+        } catch (Exception e) {
+            log.error("Unexpected error sending email to {}: {}", to, e.getMessage(), e);
+        }
+    }
 
     @Async
-    public void send(String to, String token) {
+    public void sendConfirmationEmail(String to, String token) {
         try {
             MimeMessage message = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(message, true, "UTF-8");
@@ -43,21 +67,20 @@ public class EmailService {
             helper.setSubject("Confirm your email");
 
             String confirmationUrl = frontendUrl + "/auth/register/confirmToken?token=" + token;
-            String htmlContent = createHtmlEmailTemplate(confirmationUrl);
+            String htmlContent = createEmailTemplateForRegistration(confirmationUrl);
 
             helper.setText(htmlContent, true); // true indicates HTML content
 
             mailSender.send(message);
-            System.out.println("Confirmation email sent to: " + to);
-
+            log.info("Confirmation email sent to {}", to);
         } catch (MessagingException e) {
-            System.err.println("Failed to send email to " + to + ": " + e.getMessage());
+            log.error("Failed to send email to {}: {}", to, e.getMessage(), e);
         } catch (Exception e) {
-            System.err.println("Unexpected error sending email to " + to + ": " + e.getMessage());
+            log.error("Unexpected error sending email to {}: {}", to, e.getMessage(), e);
         }
     }
 
-    private String createHtmlEmailTemplate(String confirmationUrl) {
+    private String createEmailTemplateForRegistration(String confirmationUrl) {
         return """
             <!DOCTYPE html>
             <html lang="en">
@@ -133,4 +156,82 @@ public class EmailService {
             </html>
             """.formatted(confirmationUrl, confirmationUrl);
     }
+
+    private String createEmailTemplateForPasswordReset(String resetUrl) {
+        return """
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Password Reset</title>
+        </head>
+        <body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f7fa;">
+            <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                
+                <!-- Header -->
+                <div style="background: linear-gradient(135deg, #ff758c 0%%, #ff7eb3 100%%); padding: 40px 20px; text-align: center;">
+                    <h1 style="color: #ffffff; margin: 0; font-size: 28px; font-weight: 300; letter-spacing: 1px;">
+                        Reset Your Password
+                    </h1>
+                    <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0 0; font-size: 16px;">
+                        We received a request to reset your password
+                    </p>
+                </div>
+                
+                <!-- Content -->
+                <div style="padding: 40px 30px;">
+                    <h2 style="color: #333333; font-size: 24px; margin-bottom: 20px; text-align: center;">
+                        Forgot your password?
+                    </h2>
+                    
+                    <p style="color: #666666; font-size: 16px; line-height: 1.6; margin-bottom: 30px; text-align: center;">
+                        Don’t worry, it happens. Click the button below to reset your password securely.
+                    </p>
+                    
+                    <!-- Reset Button -->
+                    <div style="text-align: center; margin: 40px 0;">
+                        <a href="%s" 
+                           style="display: inline-block; 
+                                  background: linear-gradient(135deg, #ff758c 0%%, #ff7eb3 100%%);
+                                  color: #ffffff; 
+                                  text-decoration: none; 
+                                  padding: 16px 40px; 
+                                  border-radius: 50px; 
+                                  font-size: 18px; 
+                                  font-weight: 600; 
+                                  text-transform: uppercase; 
+                                  letter-spacing: 1px;
+                                  box-shadow: 0 6px 20px rgba(255, 118, 136, 0.4);
+                                  transition: all 0.3s ease;">
+                            Reset Password
+                        </a>
+                    </div>
+                    
+                    <p style="color: #999999; font-size: 14px; line-height: 1.5; text-align: center; margin-top: 30px;">
+                        This link will expire in 15 minutes for your security.
+                    </p>
+                    
+                    <hr style="border: none; border-top: 1px solid #eeeeee; margin: 30px 0;">
+                    
+                    <p style="color: #999999; font-size: 13px; line-height: 1.5; text-align: center;">
+                        If you didn’t request a password reset, you can safely ignore this email.<br>
+                        If you're having trouble clicking the button, copy and paste this link into your browser:<br>
+                        <span style="color: #ff758c; word-break: break-all;">%s</span>
+                    </p>
+                </div>
+                
+                <!-- Footer -->
+                <div style="background-color: #f8f9fa; padding: 20px; text-align: center; border-top: 1px solid #eeeeee;">
+                    <p style="color: #999999; font-size: 12px; margin: 0;">
+                        © 2025 Your Company Name. All rights reserved.
+                    </p>
+                </div>
+                
+            </div>
+        </body>
+        </html>
+        """.formatted(resetUrl, resetUrl);
+    }
+
 }

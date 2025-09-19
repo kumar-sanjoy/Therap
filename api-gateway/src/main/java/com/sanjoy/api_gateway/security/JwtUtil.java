@@ -8,6 +8,8 @@ import io.jsonwebtoken.UnsupportedJwtException;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import io.jsonwebtoken.security.SignatureException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -22,8 +24,9 @@ import java.util.Date;
 @Component
 public class JwtUtil {
 
+    private static final Logger log = LoggerFactory.getLogger(JwtUtil.class);
     @Value("${jwt.secret}")
-    private String SECRET_KEY;
+    private String secretKey;
 
     public boolean validateToken(String token) {
         try {
@@ -33,17 +36,17 @@ public class JwtUtil {
                     .parseSignedClaims(token);
             return true;
         } catch (ExpiredJwtException e) {
-            System.err.println("JWT token is expired: " + e.getMessage());
+            log.error("JWT token is expired: {}", e.getMessage());
         } catch (UnsupportedJwtException e) {
-            System.err.println("JWT token is unsupported: " + e.getMessage());
+            log.error("JWT token is unsupported: {}", e.getMessage());
         } catch (MalformedJwtException e) {
-            System.err.println("JWT token is malformed: " + e.getMessage());
+            log.error("JWT token is malformed: {}", e.getMessage());
         } catch (SignatureException e) {
-            System.err.println("JWT signature validation failed: " + e.getMessage());
+            log.error("JWT signature validation failed: {}", e.getMessage());
         } catch (IllegalArgumentException e) {
-            System.err.println("JWT token is null or empty: " + e.getMessage());
+            log.error("JWT token is null or empty: {}", e.getMessage());
         } catch (Exception e) {
-            System.err.println("JWT token validation failed: " + e.getMessage());
+            log.error("JWT token validation failed: {}", e.getMessage());
         }
         return false;
     }
@@ -57,7 +60,7 @@ public class JwtUtil {
                     .getPayload();
             return claims.getSubject();
         } catch (Exception e) {
-            System.err.println("Error extracting username from token: " + e.getMessage());
+            log.error("Error extracting username from token: ", e);
             return null;
         }
     }
@@ -76,7 +79,7 @@ public class JwtUtil {
     }
 
     private SecretKey getSigningKey() {
-        byte[] keyBytes = Decoders.BASE64.decode(SECRET_KEY);
+        byte[] keyBytes = Decoders.BASE64.decode(secretKey);
         return Keys.hmacShaKeyFor(keyBytes);
     }
 }

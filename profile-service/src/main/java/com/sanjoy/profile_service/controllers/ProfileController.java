@@ -5,10 +5,8 @@ import com.sanjoy.profile_service.models.Teacher;
 import com.sanjoy.profile_service.repo.MCQRepository;
 import com.sanjoy.profile_service.repo.PerformanceDiffLevelRepo;
 import com.sanjoy.profile_service.repo.StudentRepository;
-import com.sanjoy.profile_service.repo.TeacherRepository;
 import com.sanjoy.profile_service.service.PracticeStreakService;
 import com.sanjoy.profile_service.service.TeacherService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -24,26 +22,35 @@ import java.util.*;
 @RestController
 @RequestMapping("/profile")
 public class ProfileController {
+
+    public static final String STUDENT_ID = "studentId";
+    public static final String ATTEMPT_COUNT = "attemptCount";
+    public static final String CORRECT_COUNT = "correctCount";
+    public static final String LAST10_PERFORMANCE = "last10Performance";
+    public static final String MISTAKEN_QUESTIONS = "mistakenQuestions";
+
     private static final Logger logger = LoggerFactory.getLogger(ProfileController.class);
     private final WebClient webClient;
 
-    @Autowired
-    PracticeStreakService streakService;
+    private final PracticeStreakService streakService;
+    private final StudentRepository studentRepository;
+    private final MCQRepository mcqRepository;
+    private final TeacherService teacherService;
+    private final PerformanceDiffLevelRepo performanceDiffLevelRepo;
 
-    @Autowired
-    StudentRepository studentRepository;
-
-    @Autowired
-    MCQRepository mcqRepository;
-
-    @Autowired
-    TeacherService teacherService;
-
-    @Autowired
-    PerformanceDiffLevelRepo performanceDiffLevelRepo;
-
-    public ProfileController(WebClient.Builder webClientBuilder, @Value("${ai.backend.url}") String aiBackendUrl) {
+    public ProfileController(WebClient.Builder webClientBuilder,
+                             @Value("${ai.backend.url}") String aiBackendUrl,
+                             PracticeStreakService streakService,
+                             StudentRepository studentRepository,
+                             MCQRepository mcqRepository,
+                             TeacherService teacherService,
+                             PerformanceDiffLevelRepo performanceDiffLevelRepo) {
         this.webClient = webClientBuilder.baseUrl(aiBackendUrl).build();
+        this.streakService = streakService;
+        this.studentRepository = studentRepository;
+        this.mcqRepository = mcqRepository;
+        this.teacherService = teacherService;
+        this.performanceDiffLevelRepo = performanceDiffLevelRepo;
     }
 
     @GetMapping("teacher/generate-report")
@@ -58,25 +65,21 @@ public class ProfileController {
         List<String> mistakenMCQs = mcqRepository.findStatementByStudentUsername(username);
 
         Map<String, Object> requestBody = new HashMap<>();
-        requestBody.put("studentId", student.getId());
-        requestBody.put("attemptCount", student.getAttemptCount());
-        requestBody.put("correctCount", student.getCorrectCount());
-        requestBody.put("last10Performance", student.getLast10Performance());
-        requestBody.put("mistakenQuestions", mistakenMCQs);
+        requestBody.put(STUDENT_ID, student.getId());
+        requestBody.put(ATTEMPT_COUNT, student.getAttemptCount());
+        requestBody.put(CORRECT_COUNT, student.getCorrectCount());
+        requestBody.put(LAST10_PERFORMANCE, student.getLast10Performance());
+        requestBody.put(MISTAKEN_QUESTIONS, mistakenMCQs);
 
         String pythonEndpoint = "/profile/teacher/generate-report";
         try {
-            String response = webClient.post()
+            return webClient.post()
                     .uri(pythonEndpoint)
                     .bodyValue(requestBody)
                     .retrieve()
                     .bodyToMono(String.class)
                     .block();
-
-            // System.out.println("Received weakness report from Python AI backend: " + response);
-            return response;
         } catch (Exception e) {
-            // System.err.println("Error calling Python AI backend: " + e.getMessage());
             return "Failed to generate weakness report from AI: " + e.getMessage();
         }
     }
@@ -88,7 +91,7 @@ public class ProfileController {
         List<Student> students = studentRepository.findAll();
         students.removeIf(student -> student.getUsername().equals(username));
 
-        Teacher teacher = teacherService.findOrCreate(username);
+        teacherService.findOrCreate(username);
 
         // Prepare response
         Map<String, Object> response = new HashMap<>();
@@ -97,9 +100,9 @@ public class ProfileController {
         for (Student student : students) {
             Map<String, Object> studentData = new HashMap<>();
             studentData.put("name", student.getUsername());
-            studentData.put("attemptCount", student.getAttemptCount());
-            studentData.put("correctCount", student.getCorrectCount());
-            studentData.put("last10Performance", student.getLast10Performance());
+            studentData.put(ATTEMPT_COUNT, student.getAttemptCount());
+            studentData.put(CORRECT_COUNT, student.getCorrectCount());
+            studentData.put(LAST10_PERFORMANCE, student.getLast10Performance());
             studentList.add(studentData);
         }
 
@@ -114,9 +117,7 @@ public class ProfileController {
 
         int currentStreak = 0;
         Student student = studentRepository.findByUsername(username)
-            .orElseGet(() -> {
-                return new Student(username);
-            });
+            .orElseGet(() -> new Student(username));
 
         if (student.getId() != null) {
             currentStreak = streakService.getCurrentStreak(username);

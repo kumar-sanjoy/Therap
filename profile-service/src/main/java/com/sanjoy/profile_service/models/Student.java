@@ -1,7 +1,6 @@
 package com.sanjoy.profile_service.models;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

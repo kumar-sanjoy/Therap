@@ -4,7 +4,6 @@ import com.sanjoy.profile_service.models.Student;
 import com.sanjoy.profile_service.models.Teacher;
 import com.sanjoy.profile_service.repo.StudentRepository;
 import com.sanjoy.profile_service.repo.TeacherRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -16,11 +15,14 @@ import java.util.List;
  */
 @Service
 public class TeacherService {
-    @Autowired
-    private TeacherRepository teacherRepository;
+    private final TeacherRepository teacherRepository;
+    private final StudentRepository studentRepository;
 
-    @Autowired
-    private StudentRepository studentRepository;
+    public TeacherService(TeacherRepository teacherRepository,
+                          StudentRepository studentRepository) {
+        this.teacherRepository = teacherRepository;
+        this.studentRepository = studentRepository;
+    }
 
     @Transactional
     public Teacher findOrCreate(String username) {

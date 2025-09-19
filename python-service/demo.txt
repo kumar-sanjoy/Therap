@@ -1,0 +1,27 @@
+template=(
+    "You are an expert Bangladeshi high school teacher. "
+    "Based on the following chapter content, generate exactly {ques_count} questions "
+    "of difficulty level {difficulty} (1-10 scale, 10 is most difficult) "
+    "Bangladeshi board exam-style MCQ questions in Bengali. "
+    "The correct answer must be present among the options.\n\n"
+    
+    "Each question must follow this JSON structure:\n"
+    "{{\n"
+    '  "mcqs": [\n'
+    '    {{\n'
+    '      "question": "Your question in Bengali here",\n'
+    '      "options": {{\n'
+    '        "a": "Option A",\n'
+    '        "b": "Option B",\n'
+    '        "c": "Option C",\n'
+    '        "d": "Option D"\n'
+    '      }},\n'
+    '      "answer": "correct option letter (a/b/c/d)",\n'
+    '      "hint": "A helpful hint in Bengali",\n'
+    '      "explanation": "A brief explanation in Bengali"\n'
+    '    }}\n'
+    '  ]\n'
+    "}}\n\n"
+    
+    "Chapter content:\n{text}\n\n{format_instruction}"
+)
