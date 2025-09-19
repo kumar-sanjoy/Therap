@@ -1,0 +1,90 @@
+version: '3.9'
+
+# to build run: 
+# docker-compose up --build
+
+x-common-variables: &common-variables
+  SPRING_DATASOURCE_URL: {}
+  SPRING_DATASOURCE_USERNAME: {}
+  SPRING_DATASOURCE_PASSWORD: {}
+  JWT_SECRET: {}
+  JWT_EXPIRATION: {}
+  FRONTEND_URL: {}
+  AI_BACKEND_URL: http://python-server:5000
+  SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.PostgreSQLDialect
+  SPRING_JPA_PROPERTIES_HIBERNATE_FORMAT_SQL: 'true'
+  SPRING_JPA_HIBERNATE_DDL_AUTO: update
+  SPRING_SERVLET_MULTIPART_MAX_FILE_SIZE: 10MB
+  SPRING_SERVLET_MULTIPART_MAX_REQUEST_SIZE: 10MB
+  SERVER_SERVLET_CONTEXT_PATH: /
+  AUTH_SERVICE_URL: http://auth-service:8090
+  EXAM_SERVICE_URL: http://exam-service:8091
+  LEARNING_SERVICE_URL: http://learning-service:8092
+  PROFILE_SERVICE_URL: http://profile-service:8093
+  GOOGLE_API_KEY: {}
+  SPRING_DATASOURCE_HIKARI_MAXIMUM_POOL_SIZE: {}
+  SPRING_DATASOURCE_HIKARI_MINIMUM_IDLE: {}
+  SPRING_DATASOURCE_HIKARI_IDLE_TIMEOUT: {}
+  SERVER_TOMCAT_THREADS_MAX: {}
+
+services:
+  api-gateway:
+    build:
+      context: ./api-gateway
+    ports:
+      - "8080:8080"
+    environment:
+      <<: *common-variables
+      SPRING_APPLICATION_NAME: api-gateway
+      SERVER_PORT: 8080
+
+  auth-service:
+    build:
+      context: ./auth-service
+    ports:
+      - "8090:8090"
+    environment:
+      <<: *common-variables
+      SPRING_APPLICATION_NAME: auth-service
+      SERVER_PORT: 8090
+
+  exam-service:
+    build:
+      context: ./exam-service
+    ports:
+      - "8091:8091"
+    environment:
+      <<: *common-variables
+      SPRING_APPLICATION_NAME: exam-service
+      SERVER_PORT: 8091
+    depends_on:
+    - python-server
+
+  learning-service:
+    build:
+      context: ./learning-service
+    ports:
+      - "8092:8092"
+    environment:
+      <<: *common-variables
+      SPRING_APPLICATION_NAME: learning-service
+      SERVER_PORT: 8092
+
+  profile-service:
+    build:
+      context: ./profile-service
+    ports:
+      - "8093:8093"
+    environment:
+      <<: *common-variables
+      SPRING_APPLICATION_NAME: profile-service
+      SERVER_PORT: 8093
+
+  python-server:
+    build:
+      context: ./python-service
+    ports:
+      - "5000:5000"
+    environment:
+      <<: *common-variables
+
