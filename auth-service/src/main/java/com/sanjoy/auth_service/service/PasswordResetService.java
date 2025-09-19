@@ -42,7 +42,7 @@ public class PasswordResetService {
         PasswordResetToken passwordResetToken = new PasswordResetToken();
         passwordResetToken.setToken(UUID.randomUUID().toString());
         passwordResetToken.setUser(user);
-        passwordResetToken.setExpiryDate(LocalDateTime.now().plusHours(24)); // 24 hours validity
+        passwordResetToken.setExpiryDate(LocalDateTime.now().plusMinutes(15));
         passwordResetTokenRepo.save(passwordResetToken);
         emailService.sendPasswordResetEmail(email, passwordResetToken.getToken());
 

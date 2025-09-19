@@ -1,6 +1,5 @@
 package com.sanjoy.api_gateway.security;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
@@ -15,6 +14,10 @@ import reactor.core.publisher.Mono;
 import java.util.Arrays;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
 /**
  * Global JWT Authentication Filter for API Gateway
  * @author kumar
@@ -22,9 +25,13 @@ import java.util.List;
  */
 @Component
 public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
+    private static final Logger logger = LoggerFactory.getLogger(JwtAuthenticationFilter.class);
 
-    @Autowired
-    private JwtUtil jwtUtil;
+
+    private final JwtUtil jwtUtil;
+    public JwtAuthenticationFilter(JwtUtil jwtUtil) {
+        this.jwtUtil = jwtUtil;
+    }
 
     // Define paths that should be excluded from JWT validation
     private static final List<String> EXCLUDED_PATHS = Arrays.asList(
@@ -41,11 +48,11 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
         ServerHttpRequest request = exchange.getRequest();
         String path = request.getURI().getPath();
 
-        System.out.println("Processing request for path: " + path);
+        logger.debug("Processing request for path: {}", path);
 
         // Skip JWT validation for excluded paths
         if (isExcludedPath(path)) {
-            System.out.println("Skipping JWT validation for excluded path: " + path);
+            logger.debug("Skipping JWT validation for excluded path: {}", path);
             return chain.filter(exchange);
         }
 
@@ -53,7 +60,7 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
         String authHeader = request.getHeaders().getFirst(HttpHeaders.AUTHORIZATION);
 
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
-            System.err.println("Missing or invalid Authorization header for path: " + path);
+            logger.error("Missing or invalid Authorization header for path: {}", path);
             return onError(exchange, "Missing or invalid Authorization header", HttpStatus.UNAUTHORIZED);
         }
 
@@ -61,7 +68,7 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
 
         // Validate JWT token
         if (!jwtUtil.validateToken(token)) {
-            System.err.println("Invalid JWT token for path: " + path);
+            logger.error("Invalid JWT token for path: {}", path);
             return onError(exchange, "Invalid or expired JWT token", HttpStatus.UNAUTHORIZED);
         }
 
@@ -72,7 +79,7 @@ public class JwtAuthenticationFilter implements GlobalFilter, Ordered {
                     .header("X-User-Id", username)
                     .build();
             exchange = exchange.mutate().request(modifiedRequest).build();
-            System.out.println("JWT validated successfully for user: " + username);
+            logger.debug("JWT validated successfully for user: {}", username);
         }
 
         return chain.filter(exchange);

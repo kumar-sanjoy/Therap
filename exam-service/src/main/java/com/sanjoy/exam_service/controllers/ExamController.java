@@ -3,7 +3,6 @@ package com.sanjoy.exam_service.controllers;
 import com.sanjoy.exam_service.models.*;
 import com.sanjoy.exam_service.repo.*;
 import com.sanjoy.exam_service.service.PracticeStreakService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.core.io.ByteArrayResource;
@@ -41,6 +40,13 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/exam")
 public class ExamController {
+    private static final String USERNAME = "username";
+    private static final String CLASS = "className";
+    private static final String SUBJECT = "subject";
+    private static final String CHAPTER = "chapter";
+    private static final String COUNT = "count";
+    private static final String PERFORMANCE = "performance";
+    private static final String ERROR = "error";
     private static final Logger logger = LoggerFactory.getLogger(ExamController.class);
     private final WebClient webClient;
     private final MCQRepository mcqRepository;
@@ -85,14 +91,15 @@ public class ExamController {
     @PostMapping("/submit-challenge")
     @Transactional
     public ResponseEntity<?> submitChallengeMinimal(@RequestBody Map<String, Object> payload) {
+        logger.debug("submit-challenge hit");
         try {
             String challengeId = (String) payload.get("challengeId");
-            String username = (String) payload.get("username");
+            String username = (String) payload.get(USERNAME);
             Integer score = (Integer) payload.get("score");
             Integer total = (Integer) payload.get("total");
 
             if (challengeId == null || username == null || score == null || total == null) {
-                return ResponseEntity.badRequest().body(Map.of("error", "Missing required fields"));
+                return ResponseEntity.badRequest().body(Map.of(ERROR, "Missing required fields"));
             }
 
             // Fetch student
@@ -128,10 +135,17 @@ public class ExamController {
                 challengeAttemptRepository.save(attempt);
             }
 
+            Map<String, Integer> leaderboard = challengeExam.getAttempts().stream()
+                    .sorted((a, b) -> Integer.compare(b.getScore(), a.getScore())) // highest first
+                    .limit(10)
+                    .collect(LinkedHashMap::new, // preserve order
+                            (map, newAttempt) -> map.put(newAttempt.getStudent().getUsername(), newAttempt.getScore()),
+                            Map::putAll);
+
             Map<String, Object> result = new HashMap<>();
-            result.put("attemptId", attempt.getId());
             result.put("score", attempt.getScore());
             result.put("total", attempt.getTotalMarks());
+            result.put("leaderboard", leaderboard);
 
             return ResponseEntity.ok(result);
 
@@ -139,7 +153,7 @@ public class ExamController {
         } catch (Exception e) {
             e.printStackTrace();
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                    .body(Map.of("error", e.getMessage()));
+                    .body(Map.of(ERROR, e.getMessage()));
         }
     }
 
@@ -157,6 +171,7 @@ public class ExamController {
             dto.setHint(mcq.getHint());
             dto.setExplanation(mcq.getExplanation());
             dto.setOptions(mcq.getOptions());
+            dto.setAnswer(mcq.getAnswer());
             mcqDTOs.add(dto);
         }
 
@@ -177,10 +192,10 @@ public class ExamController {
         return webClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .path(pythonEndpoint)
-                        .queryParam("className", className)
-                        .queryParam("subject", subject)
-                        .queryParam("chapter", chapter)
-                        .queryParam("count", count)
+                        .queryParam(CLASS, className)
+                        .queryParam(SUBJECT, subject)
+                        .queryParam(CHAPTER, chapter)
+                        .queryParam(COUNT, count)
                         .build())
                 .retrieve()
                 .bodyToMono(new ParameterizedTypeReference<Map<String, Object>>() {})
@@ -224,11 +239,11 @@ public class ExamController {
         List<Object []> performanceRecord = pdlr.findPerformanceInfo(username, subject);
 
         Map<String, Object> requestBody = Map.of(
-                "className", className,
-                "subject", subject,
-                "chapter", chapter,
-                "count", count,
-                "performance", performanceRecord
+                CLASS, className,
+                SUBJECT, subject,
+                CHAPTER, chapter,
+                COUNT, count,
+                PERFORMANCE, performanceRecord
         );
 
         return webClient.post()
@@ -256,20 +271,20 @@ public class ExamController {
             Sub sub = new Sub();
             sub.setName(subject);
             subRepository.save(sub);
-            errorResponse.put("error", "Not enough questions practiced for the subject: " + subject);
+            errorResponse.put(ERROR, "Not enough questions practiced for the subject: " + subject);
             return Mono.just(ResponseEntity.badRequest().body(errorResponse));
         }
         Sub sub = subOpt.get();
         List<String> previousQuestions = mcqRepository.findStatementByStudentUsernameAndSubject(username, sub.getId());
 
         if(previousQuestions.isEmpty()) {
-            errorResponse.put("error", "Not enough questions practiced for the subject: " + subject);
+            errorResponse.put(ERROR, "Not enough questions practiced for the subject: " + subject);
             return Mono.just(ResponseEntity.badRequest().body(errorResponse));
         }
 
         Map<String, Object> requestBody = new HashMap<>();
         requestBody.put("previousQuestions", previousQuestions);
-        requestBody.put("count", count);
+        requestBody.put(COUNT, count);
 
         return webClient.post()
                 .uri("/exam/previous-mcq")
@@ -376,15 +391,14 @@ public class ExamController {
                                            @RequestParam String subject,
                                            @RequestParam String chapter) {
         String pythonEndpoint = "/exam/written";
-        // System.out.println("written hit");
         logger.debug("written exam hit");
 
         return webClient.get()
                 .uri(uriBuilder -> uriBuilder
                         .path(pythonEndpoint)
-                        .queryParam("className", className)
-                        .queryParam("subject", subject)
-                        .queryParam("chapter", chapter)
+                        .queryParam(CLASS, className)
+                        .queryParam(SUBJECT, subject)
+                        .queryParam(CHAPTER, chapter)
                         .build())
                 .accept(MediaType.APPLICATION_JSON)
                 .retrieve()
@@ -426,22 +440,16 @@ public class ExamController {
                     .bodyValue(body)
                     .retrieve()
                     .toEntity(String.class)
-                    .doOnNext(response -> {
-                        // System.out.println("Response from Python OCR server: " + response);
-                        // System.out.println("Body: " + response.getBody());
-                    })
+                    .doOnNext(response -> {})
                     .onErrorResume(WebClientResponseException.class, e -> {
-                        // System.err.println("Error from Python OCR server (" + e.getStatusCode() + "): " + e.getResponseBodyAsString());
                         return Mono.just(new ResponseEntity<>(e.getResponseBodyAsString(), e.getStatusCode()));
                     })
                     .onErrorResume(Exception.class, e -> {
-                        // System.err.println("An unexpected error occurred while communicating with Python OCR server: " + e.getMessage());
                         return Mono.just(new ResponseEntity<>("{\"message\": \"error: Failed to communicate with Python OCR server.\"}", HttpStatus.INTERNAL_SERVER_ERROR));
                     });
 
 
         } catch (IOException e) {
-            // System.err.println("Error reading incoming image file: " + e.getMessage());
             return Mono.just(new ResponseEntity<>("{\"message\": \"error: Failed to process incoming image file.\"}", HttpStatus.INTERNAL_SERVER_ERROR));
         }
     }

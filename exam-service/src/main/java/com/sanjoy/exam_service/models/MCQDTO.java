@@ -10,9 +10,9 @@ import java.util.Map;
  */
 @Data
 public class MCQDTO {
-    private Long id;
     private String question;
     private String hint;
     private String explanation;
     private Map<String, String> options;
+    private String answer;
 }

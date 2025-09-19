@@ -1,5 +1,6 @@
 package com.sanjoy.auth_service.service;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -15,23 +16,22 @@ import jakarta.mail.internet.MimeMessage;
  */
 
 @Service
+@Slf4j
 public class EmailService {
-
-    @Value("${server.port}")
-    private int serverPort;
 
     @Value("${spring.mail.username}")
     String senderEmail;
+
+    @Value("${frontend.url}")
+    private String frontendUrl;
+
+  
 
     private final JavaMailSender mailSender;
 
     public EmailService(JavaMailSender mailSender) {
         this.mailSender = mailSender;
     }
-
-    @Value("${frontend.url}")
-    private String frontendUrl;
-
 
     @Async
     public void sendPasswordResetEmail(String to, String token) {
@@ -50,9 +50,9 @@ public class EmailService {
 
             mailSender.send(message);
         } catch (MessagingException e) {
-            System.err.println("Failed to send email to " + to + ": " + e.getMessage());
+            log.error("Failed to send email to {}: {}", to, e.getMessage(), e);
         } catch (Exception e) {
-            System.err.println("Unexpected error sending email to " + to + ": " + e.getMessage());
+            log.error("Unexpected error sending email to {}: {}", to, e.getMessage(), e);
         }
     }
 
@@ -72,12 +72,11 @@ public class EmailService {
             helper.setText(htmlContent, true); // true indicates HTML content
 
             mailSender.send(message);
-            System.out.println("Confirmation email sent to: " + to);
-
+            log.info("Confirmation email sent to {}", to);
         } catch (MessagingException e) {
-            System.err.println("Failed to send email to " + to + ": " + e.getMessage());
+            log.error("Failed to send email to {}: {}", to, e.getMessage(), e);
         } catch (Exception e) {
-            System.err.println("Unexpected error sending email to " + to + ": " + e.getMessage());
+            log.error("Unexpected error sending email to {}: {}", to, e.getMessage(), e);
         }
     }
 

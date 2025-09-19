@@ -5,7 +5,6 @@ import com.sanjoy.auth_service.security.JwtUtil;
 import com.sanjoy.auth_service.models.User;
 import com.sanjoy.auth_service.service.PasswordResetService;
 import com.sanjoy.auth_service.service.PracticeStreakService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -31,29 +30,29 @@ public class AuthController {
 
     private static final Logger logger = LoggerFactory.getLogger(AuthController.class);
 
-    @Autowired
-    PracticeStreakService practiceStreakService;
-
     private final CustomUserDetailsService userDetailsService;
     private final AuthenticationManager authenticationManager; // Added for login
     private final JwtUtil jwtUtil;
     private final PasswordResetService passwordResetService;
+    private final PracticeStreakService practiceStreakService;
 
 
     public AuthController(CustomUserDetailsService userDetailsService,
                           AuthenticationManager authenticationManager,
                           PasswordResetService passwordResetService,
+                          PracticeStreakService practiceStreakService,
                           JwtUtil jwtUtil) {
         this.userDetailsService = userDetailsService;
         this.authenticationManager = authenticationManager;
         this.passwordResetService = passwordResetService;
+        this.practiceStreakService = practiceStreakService;
         this.jwtUtil = jwtUtil;
     }
 
 
     @PostMapping("/forgot-password")
     public ResponseEntity<String> forgotPassword(@RequestParam String email) {
-        String token = passwordResetService.createPasswordResetToken(email);
+        passwordResetService.createPasswordResetToken(email);
         return ResponseEntity.ok("Password reset link sent to your email. Please check your email");
     }
 

@@ -20,10 +20,10 @@ import java.util.Map;
 public class JwtUtil {
 
     @Value("${jwt.secret}")
-    private String SECRET_KEY;
+    private String secretKey;
 
     @Value("${jwt.expiration}")
-    private long EXPIRATION_TIME;
+    private long expirationTime;
 
     public String generateToken(UserDetails userDetails) {
         Map<String, Object> claims = new HashMap<>();
@@ -34,7 +34,7 @@ public class JwtUtil {
         var builder = Jwts.builder() // 'var' for cleaner syntax
                 .subject(subject) // Non-deprecated in 0.12.x
                 .issuedAt(new Date(System.currentTimeMillis())) // Non-deprecated in 0.12.x
-                .expiration(new Date(System.currentTimeMillis() + EXPIRATION_TIME)); // Non-deprecated in 0.12.x
+                .expiration(new Date(System.currentTimeMillis() + expirationTime)); // Non-deprecated in 0.12.x
 
         claims.forEach(builder::claim);
 
@@ -44,7 +44,7 @@ public class JwtUtil {
     }
 
     private Key getSigningKey() {
-        byte[] keyBytes = Decoders.BASE64.decode(SECRET_KEY);
+        byte[] keyBytes = Decoders.BASE64.decode(secretKey);
         return Keys.hmacShaKeyFor(keyBytes);
     }
 }

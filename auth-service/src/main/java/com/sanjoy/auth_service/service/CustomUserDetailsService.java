@@ -44,8 +44,6 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     public void register(User user) {
 
-//        System.out.println(user.getUsername());
-//        System.out.println(user.getPassword());
         // 1. Check if username already exists
         if (userRepo.findByUsername(user.getUsername()).isPresent()) {
             throw new IllegalStateException("Username already exists");
@@ -71,16 +69,10 @@ public class CustomUserDetailsService implements UserDetailsService {
         );
 
         tokenService.save(confirmationToken);
-//        System.out.println(confirmationToken.getToken());
         emailService.sendConfirmationEmail(user.getEmail(), confirmationToken.getToken());
     }
 
     public void confirmToken(String token) {
-//        1. check token exists;
-//        2 check validity;
-//        3. check already confirmed;
-//        all ok, update confirmed_at, enable user
-
         Token confirmedToken = tokenService.findByToken(token)
                 .orElseThrow(() -> new IllegalStateException("Invalid Token"));
 
