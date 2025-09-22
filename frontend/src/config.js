@@ -40,18 +40,22 @@ export const API_ENDPOINTS = {
     LOGIN: '/auth/login',
     SIGNUP: '/auth/register',
     CONFIRM_EMAIL: '/auth/register/confirmToken', // GET method - expects token as query parameter
-    FORGOT_PASSWORD: '/api/forgot-password',
+    FORGOT_PASSWORD: '/auth/forgot-password',
+    RESET_PASSWORD: '/auth/reset-password',
     GOOGLE_AUTH: '/api/google-auth',
     
-    // Exam endpoints (using port 8091)
+    // Exam endpoints (using port 8080)
     MCQ: '/exam/mcq',
     MCQ_QUESTIONS: '/exam/mcq',
     SUBMIT_MCQ: '/exam/submit-mcq',
     PREVIOUS_MCQ: '/exam/previous-mcq',
     WRITTEN_QUESTION: '/exam/written',
     SUBMIT_WRITTEN: '/exam/submit-written',
+    GENERATE_CHALLENGE: '/exam/generate-challenge',
+    ATTEND_CHALLENGE: '/exam/attend-challenge',
+    SUBMIT_CHALLENGE: '/exam/submit-challenge',
     
-    // Learning endpoints (using port 8092)
+    // Learning endpoints (using port 8080)
     LEARN: '/learn/learn',
     LEARN_CONTENT: '/learn/content',
     CLEAR_DOUBT: '/learn/doubts',
@@ -66,7 +70,7 @@ export const API_ENDPOINTS = {
     GET_TEACHERS: '/profile/student/get-teachers',
     UPSERT_TEACHER: '/profile/student/upsert-teacher',
     
-    // Legacy endpoints (keeping for backward compatibility)
+    // Legacy endpoints 
     QUIZ: '/api/quiz',
     STATS: '/api/stats',
     NEW_MISTAKES: '/api/newMistakes',
@@ -98,7 +102,7 @@ export const buildApiUrl = (baseUrl, endpoint, params = {}) => {
     throw new Error(`Invalid base URL format: ${cleanBaseUrl}. URL must start with http:// or https://`);
   }
   
-  // Ensure baseUrl doesn't end with slash and endpoint starts with slash
+  
   const normalizedBaseUrl = cleanBaseUrl.endsWith('/') ? cleanBaseUrl.slice(0, -1) : cleanBaseUrl;
   const cleanEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
   
@@ -110,7 +114,7 @@ export const buildApiUrl = (baseUrl, endpoint, params = {}) => {
     const searchParams = new URLSearchParams();
     Object.entries(params).forEach(([key, value]) => {
       if (value !== undefined && value !== null && value !== 'undefined') {
-        // Ensure proper encoding of parameter values
+
         const cleanValue = value.toString().trim();
         if (cleanValue) {
           searchParams.append(key, cleanValue);

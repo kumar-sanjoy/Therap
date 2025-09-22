@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import RoleToggle from './RoleToggle';
 import LoginContainer from './LoginContainer';
 import ForgotPasswordModal from './ForgotPasswordModal';
+import ResetPasswordModal from './ResetPasswordModal';
 
 const Login = () => {
   const [isRightPanelActive, setIsRightPanelActive] = useState(false);
@@ -12,7 +13,20 @@ const Login = () => {
   const [forgotPasswordEmail, setForgotPasswordEmail] = useState('');
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [showResetPassword, setShowResetPassword] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+
+  // Parse token from URL if on /reset-password
+  React.useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const token = params.get('token');
+    if (location.pathname === '/reset-password' && token) {
+      setShowResetPassword(true);
+    } else {
+      setShowResetPassword(false);
+    }
+  }, [location]);
 
   return (
     <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID || ''}>
@@ -61,6 +75,12 @@ const Login = () => {
           setError={setError}
           isLoading={isLoading}
           setIsLoading={setIsLoading}
+        />
+
+        <ResetPasswordModal
+          showResetPassword={showResetPassword}
+          setShowResetPassword={setShowResetPassword}
+          tokenFromUrl={new URLSearchParams(location.search).get('token') || ''}
         />
       </div>
     </GoogleOAuthProvider>

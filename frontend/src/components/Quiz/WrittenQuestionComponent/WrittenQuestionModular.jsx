@@ -133,18 +133,15 @@ const WrittenQuestionModular = () => {
                 // Convert Bengali numerals to Arabic numerals
                 const arabicScore = convertBengaliToArabic(scoreMatch[1]);
                 const extractedScore = parseInt(arabicScore);
-                console.log('🔍 Extracted Bengali score:', scoreMatch[1], 'converted to:', arabicScore);
-                return extractedScore;
+                                  return extractedScore;
             }
         }
         
         if (scoreMatch) {
             const extractedScore = parseInt(scoreMatch[1]);
-            console.log('🔍 Extracted score:', extractedScore);
-            return extractedScore;
+                          return extractedScore;
         } else {
-            console.log('🔍 No score found in response text');
-            return null;
+                          return null;
         }
     };
 
@@ -245,20 +242,9 @@ const WrittenQuestionModular = () => {
                 data = await res.json();
                 
                 // Debug: Log the response data to understand the format
-                console.log('🔍 Server response data:', data);
-                console.log('🔍 Response status:', res.status);
-                console.log('🔍 Data keys:', Object.keys(data));
-                console.log('🔍 Response content:', data.response);
-                console.log('🔍 Score found:', data.score);
-                console.log('🔍 Response type:', typeof data.response);
-                console.log('🔍 Response length:', data.response ? data.response.length : 'N/A');
-                console.log('🔍 First 200 chars of response:', data.response ? data.response.substring(0, 200) : 'N/A');
-                console.log('🔍 Contains নম্বর:', data.response ? data.response.includes('নম্বর') : 'N/A');
-                console.log('🔍 Contains Score:', data.response ? data.response.includes('Score') : 'N/A');
-            } catch (parseError) {
+                                                                                                                                                                                                } catch (parseError) {
                 console.error('Failed to parse response as JSON:', parseError);
-                console.log('Raw response text:', await res.text());
-                throw new Error('Server returned invalid response format');
+                                  throw new Error('Server returned invalid response format');
             }
             
             // Check for various success indicators in the response

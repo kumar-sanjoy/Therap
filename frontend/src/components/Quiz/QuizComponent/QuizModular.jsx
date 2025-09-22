@@ -40,6 +40,7 @@ const QuizModular = () => {
     const [lock, setLock] = useState(false);
     const [score, setScore] = useState(0);
     const [showScore, setShowScore] = useState(false);
+    const [leaderboard, setLeaderboard] = useState(null);
     const [showHint, setShowHint] = useState(false);
     const [showExplanation, setShowExplanation] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
@@ -83,6 +84,28 @@ const QuizModular = () => {
             return;
         }
     }, [navigate]);
+
+    // Normalize question data to ensure consistent format
+    const normalizeQuestion = (question) => {
+        if (!question) return question;
+        
+        // Normalize options object - convert lowercase keys to uppercase
+        if (question.options && typeof question.options === 'object') {
+            const normalizedOptions = {};
+            Object.entries(question.options).forEach(([key, value]) => {
+                const upperKey = key.toUpperCase();
+                normalizedOptions[upperKey] = value;
+            });
+            question.options = normalizedOptions;
+        }
+        
+        // If answer is lowercase, convert to uppercase
+        if (question.answer && typeof question.answer === 'string') {
+            question.answer = question.answer.toUpperCase();
+        }
+        
+        return question;
+    };
 
     // Fetch questions function
     const fetchQuestions = async () => {
@@ -139,12 +162,10 @@ const QuizModular = () => {
                         }
                     });
                     
-                    console.log('🔍 [QUIZ DEBUG] Questions response status:', response.status);
-                    
+                                          
                     if (response.ok) {
                         const data = await response.json();
-                        console.log('🔍 [QUIZ DEBUG] Questions response data:', data);
-                        initialQuestions = data.mcqs || data.questions || data;
+                                                  initialQuestions = data.mcqs || data.questions || data;
                         if (data.difficultyLevel) {
                             setDifficultyLevel(data.difficultyLevel);
                         }
@@ -159,9 +180,7 @@ const QuizModular = () => {
                     setError('Unable to load quiz questions. Please try again.');
                 }
             } else {
-                console.log('🔍 [QUIZ DEBUG] Using questions from state, count:', initialQuestions.length);
-                console.log('🔍 [QUIZ DEBUG] Questions from state:', initialQuestions);
-                console.log('🔍 [QUIZ DEBUG] State parameters:', {
+                                                    console.log('🔍 [QUIZ DEBUG] State parameters:', {
                     className: location.state?.className,
                     subject: location.state?.subject,
                     chapter: location.state?.chapter
@@ -169,8 +188,10 @@ const QuizModular = () => {
             }
             
             if (initialQuestions && initialQuestions.length > 0) {
-                setQuestions(initialQuestions);
-                setQuestion(initialQuestions[0]);
+                // Normalize questions to ensure consistent format
+                const normalizedQuestions = initialQuestions.map(normalizeQuestion);
+                setQuestions(normalizedQuestions);
+                setQuestion(normalizedQuestions[0]);
                 if (stateDifficultyLevel) {
                     setDifficultyLevel(stateDifficultyLevel);
                 }
@@ -272,8 +293,7 @@ const QuizModular = () => {
         });
         
         if (question.answer === ans) {
-            console.log('🔍 [QUIZ DEBUG] Correct answer! Adding green classes');
-            // Remove base background classes and add green styling
+                          // Remove base background classes and add green styling
             listItem.classList.remove("bg-gray-50", "bg-gray-700", "hover:bg-gray-100", "hover:bg-gray-600");
             listItem.classList.add("bg-green-100", "border-green-500", "text-green-800", "border-l-4");
             
@@ -293,8 +313,7 @@ const QuizModular = () => {
             setAnswerArray(prev => [...prev, 1]);
             setIsCorrect(true);
         } else {
-            console.log('🔍 [QUIZ DEBUG] Wrong answer! Adding red classes to selected option');
-            // Remove base background classes and add red styling
+                          // Remove base background classes and add red styling
             listItem.classList.remove("bg-gray-50", "bg-gray-700", "hover:bg-gray-100", "hover:bg-gray-600");
             listItem.classList.add("bg-red-100", "border-red-500", "text-red-800", "border-l-4");
             
@@ -339,8 +358,7 @@ const QuizModular = () => {
         // For the last question, show a "Submit Quiz" button instead of "Next"
         if (index === questions.length - 1) {
             // Don't submit automatically - just show the answer and enable submit button
-            console.log('🔍 [QUIZ DEBUG] Last question answered - ready to submit');
-        }
+                      }
         // Don't automatically move to next question - wait for user to click Next button
     };
 
@@ -397,10 +415,56 @@ const QuizModular = () => {
         // Process backend submission in the background
         const submitInBackground = async () => {
             try {
+                const token = getFormattedToken();
+                const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
+                const challengeId = location.state?.challengeId;
+                const isChallenge = location.state?.isChallenge === true;
+
+                if (isChallenge && challengeId) {
+                    // Submit challenge results ONLY for challenge attempts
+                    try {
+                        const challengePayload = {
+                            challengeId,
+                            username,
+                            score: Number(score),
+                            total: Number(questions.length)
+                        };
+                                                  const challengeRes = await fetch(`${EXAM_API_BASE_URL}${API_ENDPOINTS.SUBMIT_CHALLENGE}`, {
+                            method: 'POST',
+                            headers: {
+                                'Authorization': `Bearer ${token}`,
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(challengePayload)
+                        });
+                                                  if (challengeRes.ok) {
+                            // Expecting { score, total, leaderboard: { name: score, ... } }
+                            try {
+                                const body = await challengeRes.json();
+                                if (body && body.leaderboard) {
+                                    setLeaderboard(body.leaderboard);
+                                }
+                                // Optionally sync score/total from server response
+                                if (typeof body?.score === 'number') {
+                                    // no-op if differs; UI already shows local score
+                                }
+                            } catch (e) {
+                                console.warn('🔍 [QUIZ DEBUG] Could not parse challenge submit JSON:', e);
+                            }
+                        } else {
+                            const t = await challengeRes.text();
+                            console.error('🔍 [QUIZ DEBUG] Challenge submit failed:', t);
+                        }
+                    } catch (err) {
+                        console.error('🔍 [QUIZ DEBUG] Error submitting challenge results:', err);
+                    }
+                    return; // Do not submit MCQ when it's a challenge
+                }
+
+                // Regular MCQ submission for non-challenge attempts
                 const userId = localStorage.getItem(STORAGE_KEYS.USER_ID);
                 if (!userId) {
-                    console.log('🔍 [QUIZ DEBUG] No user ID found, skipping submission');
-                    return;
+                                          return;
                 }
 
                 // Build the questions object: { [questionText]: true/false }
@@ -410,7 +474,6 @@ const QuizModular = () => {
                     questionsStatus[q.question] = answerArray[i] === 1;
                 });
                 const subject = location.state?.subject || '';
-                const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
 
                 // Prepare the payload in the correct format
                 const payload = {
@@ -428,11 +491,7 @@ const QuizModular = () => {
                     difficultyLevel: Number(difficultyLevel) || 1,
                     rawSubject: subject
                 });
-                console.log('🔍 [QUIZ DEBUG] Questions status object:', questionsStatus);
-                console.log('🔍 [QUIZ DEBUG] Submit endpoint:', `${EXAM_API_BASE_URL}${API_ENDPOINTS.SUBMIT_MCQ}`);
-                console.log('🔍 [QUIZ DEBUG] Submit payload:', payload);
-
-                const token = getFormattedToken();
+               
                 const res = await fetch(`${EXAM_API_BASE_URL}${API_ENDPOINTS.SUBMIT_MCQ}`, {
                     method: 'POST',
                     headers: {
@@ -442,21 +501,17 @@ const QuizModular = () => {
                     body: JSON.stringify(payload),
                 });
 
-                console.log('🔍 [QUIZ DEBUG] Background submit response status:', res.status);
-
+                  
                 if (res.ok) {
-                    console.log('🔍 [QUIZ DEBUG] Quiz submitted successfully in background');
-                } else {
+                                      } else {
                     console.error('🔍 [QUIZ DEBUG] Failed to submit MCQ results in background, status:', res.status);
                     const errorData = await res.text();
                     console.error('🔍 [QUIZ DEBUG] Background error response:', errorData);
                     
                     // Log error but don't show alert to user since they're already viewing score
                     if (res.status === 500) {
-                        console.log('🔍 [QUIZ DEBUG] Temporary server issue, but quiz was completed');
-                    } else {
-                        console.log('🔍 [QUIZ DEBUG] Submission failed, but user experience is not affected');
-                    }
+                                              } else {
+                                              }
                 }
             } catch (error) {
                 console.error('🔍 [QUIZ DEBUG] Error submitting MCQ in background:', error);
@@ -503,7 +558,8 @@ const QuizModular = () => {
                         <ScoreDisplay 
                             score={score} 
                             totalQuestions={questions.length} 
-                            onReset={reset} 
+                            onReset={reset}
+                            leaderboard={leaderboard}
                         />
                     </div>
                 </main>

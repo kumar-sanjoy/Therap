@@ -18,14 +18,12 @@ const ForgotPasswordModal = ({
     setIsLoading(true);
 
     try {
-      const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.FORGOT_PASSWORD}`, {
+      const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.FORGOT_PASSWORD}?email=${encodeURIComponent(forgotPasswordEmail)}`, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
           'Accept': 'application/json',
         },
         mode: 'cors',
-        body: JSON.stringify({ email: forgotPasswordEmail, role: userRole }),
       });
 
       const data = await response.json();

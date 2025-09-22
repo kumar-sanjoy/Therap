@@ -11,38 +11,16 @@ import { useSearchParams } from 'react-router-dom';
 import SelectionForm from './SelectionForm';
 
 const SelectSubject = ({ mode: propMode }) => {
-  console.log('🔍 [SELECT_SUBJECT DEBUG] ===== COMPONENT LOADING =====');
-  console.log('🔍 [SELECT_SUBJECT DEBUG] Component is loading...');
-  console.log('🔍 [SELECT_SUBJECT DEBUG] Component loaded at:', new Date().toISOString());
-  console.log('🔍 [SELECT_SUBJECT DEBUG] Console logging test - if you see this, console is working');
-  console.error('🔍 [SELECT_SUBJECT DEBUG] ERROR TEST - Console error logging test');
-  
-  // Add a more visible alert to confirm component is loading
-  console.log('🔍 [SELECT_SUBJECT DEBUG] ==========================================');
-  console.log('🔍 [SELECT_SUBJECT DEBUG] SELECT SUBJECT COMPONENT IS LOADING');
-  console.log('🔍 [SELECT_SUBJECT DEBUG] ==========================================');
-  
+
   const location = useLocation();
   const [searchParams] = useSearchParams();
   const queryMode = searchParams.get('mode');
   const mode = queryMode || location.state?.mode || propMode;
   
-  console.log('🔍 [SELECT_SUBJECT DEBUG] Component initialized with mode:', {
-    propMode,
-    queryMode,
-    locationStateMode: location.state?.mode,
-    finalMode: mode
-  });
   
   const navigate = useNavigate();
   
   // Test navigation function
-  console.log('🔍 [SELECT_SUBJECT DEBUG] Navigate function type:', typeof navigate);
-  console.log('🔍 [SELECT_SUBJECT DEBUG] Navigate function available:', !!navigate);
-  
-  console.log('🔍 [SELECT_SUBJECT DEBUG] SelectSubject component mounted');
-  console.log('🔍 [SELECT_SUBJECT DEBUG] Current location:', location.pathname);
-  console.log('🔍 [SELECT_SUBJECT DEBUG] Search params:', Object.fromEntries(searchParams.entries()));
   const { isDarkMode } = useDarkTheme();
   const [selectedClass, setSelectedClass] = useState('');
   const [selectedSubject, setSelectedSubject] = useState('');
@@ -52,6 +30,14 @@ const SelectSubject = ({ mode: propMode }) => {
   const [currentRequestId, setCurrentRequestId] = useState(null);
   const [firstRequestId, setFirstRequestId] = useState(null);
   const [hasNavigated, setHasNavigated] = useState(false);
+  const [challengeId, setChallengeId] = useState('');
+  const [isChallengeLoading, setIsChallengeLoading] = useState(false);
+  const [challengeMessage, setChallengeMessage] = useState('');
+  const [challengeData, setChallengeData] = useState(null);
+  const [attendChallengeId, setAttendChallengeId] = useState('');
+  const [isAttendLoading, setIsAttendLoading] = useState(false);
+  const [showAttendModal, setShowAttendModal] = useState(false);
+  const [copiedChallenge, setCopiedChallenge] = useState(false);
 
   // Helper function to clean and format token
   const getFormattedToken = () => {
@@ -77,50 +63,35 @@ const SelectSubject = ({ mode: propMode }) => {
           'Content-Type': 'application/json'
         }
       });
-      console.log(`🔍 [API TEST] Root endpoint - Status: ${response.status}`);
-      return response.ok;
+              return response.ok;
     } catch (error) {
-      console.log(`🔍 [API TEST] Root endpoint - Error: ${error.message}`);
-      return false;
+              return false;
     }
   };
 
   // Check authentication on mount
   useEffect(() => {
-      console.log('🔍 [SELECT_SUBJECT DEBUG] Component mounted, checking authentication...');
-  console.log('🔍 [SELECT_SUBJECT DEBUG] Current location:', location.pathname);
-  console.log('🔍 [SELECT_SUBJECT DEBUG] Current search params:', Object.fromEntries(searchParams.entries()));
-  const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
+                  const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
   const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
   const role = localStorage.getItem(STORAGE_KEYS.ROLE);
     
-    console.log('🔍 [SELECT_SUBJECT DEBUG] Authentication check:', {
-      hasToken: !!token,
-      hasUsername: !!username,
-      role: role
-    });
     
     if (!token || !username) {
-      console.log('🔍 [SELECT_SUBJECT DEBUG] No token or username, navigating to login');
-      navigate('/login');
+              navigate('/login');
       return;
     }
     
     // Check if user has a valid role
     if (!role || (role !== 'STUDENT' && role !== 'TEACHER')) {
-      console.log('🔍 [SELECT_SUBJECT DEBUG] Invalid role, navigating to login');
-      navigate('/login');
+              navigate('/login');
       return;
     }
     
-    console.log('🔍 [SELECT_SUBJECT DEBUG] Authentication successful');
-  }, [navigate]);
+        }, [navigate]);
 
   // Track location changes
   useEffect(() => {
-    console.log('🔍 [SELECT_SUBJECT DEBUG] Location changed to:', location.pathname);
-    console.log('🔍 [SELECT_SUBJECT DEBUG] Location state:', location.state);
-  }, [location]);
+              }, [location]);
 
   // Load recent selections from localStorage
   useEffect(() => {
@@ -136,10 +107,8 @@ const SelectSubject = ({ mode: propMode }) => {
   // Cleanup on component unmount
   useEffect(() => {
     return () => {
-      console.log('🔍 [SELECT_SUBJECT DEBUG] Component unmounting, cleanup in progress');
-      if (isLoading) {
-        console.log('🔍 [SELECT_SUBJECT DEBUG] Clearing loading state on unmount');
-        setIsLoading(false);
+              if (isLoading) {
+                  setIsLoading(false);
         setCurrentRequestId(null);
         setFirstRequestId(null);
         window.firstRequestId = null; // Reset global first request ID
@@ -232,23 +201,140 @@ const SelectSubject = ({ mode: propMode }) => {
 
   const themeColor = mode === 'learn' ? 'blue' : mode === 'mcq' ? 'purple' : mode === 'revise' ? 'orange' : mode === 'notes' ? 'yellow' : 'green';
 
+  const handleGenerateChallenge = async () => {
+    try {
+      setChallengeMessage('');
+      setChallengeId('');
+      setChallengeData(null);
+      if (!selectedClass || !selectedSubject || !selectedChapter) {
+        setError('Please select all fields');
+        return;
+      }
+      const token = getFormattedToken();
+      const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
+      if (!token || !username) {
+        navigate('/login');
+        return;
+      }
+      if (token.length < 10) {
+        navigate('/login');
+        return;
+      }
+      setIsChallengeLoading(true);
+      const params = new URLSearchParams({
+        username,
+        className: mapClassForExamAPI(selectedClass),
+        subject: mapSubjectForExamAPI(selectedSubject),
+        chapter: selectedChapter,
+        count: '2'
+      });
+      const url = `${EXAM_API_BASE_URL}${API_ENDPOINTS.GENERATE_CHALLENGE}?${params.toString()}`;
+      const resp = await fetch(url, {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
+      if (!resp.ok) {
+        const text = await resp.text();
+        throw new Error(text || `Failed with status ${resp.status}`);
+      }
+      const data = await resp.json();
+      if (data?.challengeId) {
+        setChallengeId(data.challengeId);
+        setChallengeData(data);
+        setChallengeMessage('Challenge created! Share the ID with your friend.');
+      } else {
+        throw new Error('Challenge ID not returned by server');
+      }
+    } catch (err) {
+      setError('Could not create challenge. Please try again.');
+      console.error('[CHALLENGE] generate error:', err);
+    } finally {
+      setIsChallengeLoading(false);
+    }
+  };
+
+  const handleCopyChallengeId = async () => {
+    if (!challengeId) return;
+    try {
+      // Try modern clipboard API first
+      if (navigator.clipboard && window.isSecureContext !== false) {
+        await navigator.clipboard.writeText(challengeId);
+      } else {
+        // Fallback: prompt user to copy manually if Clipboard API isn't available
+        window.prompt('Copy this challenge ID:', challengeId);
+      }
+      setChallengeMessage('Copied challenge ID to clipboard');
+      setCopiedChallenge(true);
+      setTimeout(() => {
+        setChallengeMessage('');
+        setCopiedChallenge(false);
+      }, 1500);
+    } catch (err) {
+      console.error('[CHALLENGE] Clipboard copy failed:', err);
+    }
+  };
+
+  const handleAttendChallenge = async () => {
+    try {
+      if (!attendChallengeId || attendChallengeId.trim().length === 0) {
+        setError('Please enter a valid challenge ID');
+        return;
+      }
+      const token = getFormattedToken();
+      const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
+      if (!token || !username) {
+        navigate('/login');
+        return;
+      }
+      if (token.length < 10) {
+        navigate('/login');
+        return;
+      }
+      setIsAttendLoading(true);
+      const params = new URLSearchParams({ challengeId: attendChallengeId.trim() });
+      const url = `${EXAM_API_BASE_URL}${API_ENDPOINTS.ATTEND_CHALLENGE}?${params.toString()}`;
+      const resp = await fetch(url, {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
+      if (!resp.ok) {
+        const text = await resp.text();
+        throw new Error(text || `Failed with status ${resp.status}`);
+      }
+      const data = await resp.json();
+      const questions = data.mcqs || data.questions || data;
+      if (!questions || (Array.isArray(questions) && questions.length === 0)) {
+        throw new Error('No questions returned for this challenge');
+      }
+      // Navigate to quiz with challenge questions
+      navigate(ROUTES.QUIZ, {
+        state: {
+          className: selectedClass || undefined,
+          subject: selectedSubject || undefined,
+          chapter: selectedChapter || undefined,
+          questions,
+          challengeId: attendChallengeId.trim(),
+          isChallenge: true,
+          isAttendee: true,
+          count: Array.isArray(questions) ? questions.length : undefined
+        }
+      });
+    } catch (err) {
+      console.error('[CHALLENGE] attend error:', err);
+      setError('Could not attend challenge. Please verify the ID and try again.');
+    } finally {
+      setIsAttendLoading(false);
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    console.log('🔍 [SELECT_SUBJECT DEBUG] ===== handleSubmit START =====');
-    console.log('🔍 [SELECT_SUBJECT DEBUG] handleSubmit called with mode:', mode);
-    console.log('🔍 [SELECT_SUBJECT DEBUG] Event prevented successfully');
-    console.log('🔍 [SELECT_SUBJECT DEBUG] Current timestamp:', new Date().toISOString());
-    console.log('🔍 [SELECT_SUBJECT DEBUG] Current URL before submit:', window.location.href);
-    console.log('🔍 [SELECT_SUBJECT DEBUG] Current pathname before submit:', window.location.pathname);
-    console.log('🔍 [SELECT_SUBJECT DEBUG] Selected values:', {
-      class: selectedClass,
-      subject: selectedSubject,
-      chapter: selectedChapter
-    });
-    console.log('🔍 [SELECT_SUBJECT DEBUG] Event target:', e.target);
-    console.log('🔍 [SELECT_SUBJECT DEBUG] Current loading state:', isLoading);
-    
+                
     if (!selectedClass || !selectedSubject || !selectedChapter) {
       setError('Please select all fields');
       return;
@@ -256,8 +342,7 @@ const SelectSubject = ({ mode: propMode }) => {
 
     // Prevent multiple simultaneous requests
     if (isLoading) {
-      console.log('🔍 [SELECT_SUBJECT DEBUG] Request blocked - already loading');
-      return;
+              return;
     }
 
     const requestId = Date.now();
@@ -274,21 +359,11 @@ const SelectSubject = ({ mode: propMode }) => {
     setHasNavigated(false);
 
     try {
-      // For quiz mode, fetch questions first
+      // For quiz mode, use challenge questions if generated; otherwise fetch
       if (mode === 'test' || mode === 'mcq') {
-        console.log('🔍 [SELECT_SUBJECT DEBUG] Processing quiz mode');
-        const token = getFormattedToken();
+                  const token = getFormattedToken();
         const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
         
-        console.log('🔍 [SELECT_SUBJECT DEBUG] Authentication check:', {
-          rawToken: localStorage.getItem(STORAGE_KEYS.TOKEN) ? `${localStorage.getItem(STORAGE_KEYS.TOKEN).substring(0, 20)}...` : 'null',
-          cleanToken: token ? `${token.substring(0, 20)}...` : 'null',
-          tokenLength: token ? token.length : 0,
-          username: username,
-          hasToken: !!token,
-          hasUsername: !!username,
-          rawTokenStartsWithBearer: localStorage.getItem(STORAGE_KEYS.TOKEN) ? localStorage.getItem(STORAGE_KEYS.TOKEN).startsWith('Bearer ') : false
-        });
         
         if (!token || !username) {
           console.error('🔍 [SELECT_SUBJECT DEBUG] Missing authentication:', { token: !!token, username: !!username });
@@ -311,6 +386,35 @@ const SelectSubject = ({ mode: propMode }) => {
           count: '5' // Default count of 5 questions
         });
 
+        // If we already have a generated challenge, navigate using that data
+        if (challengeData?.mcqs?.length) {
+          console.log('🔍 [SELECT_SUBJECT DEBUG] Using generated challenge for quiz:', {
+            challengeId,
+            mcqCount: challengeData.mcqs.length
+          });
+          setHasNavigated(true);
+          setIsLoading(false);
+          setCurrentRequestId(null);
+          setFirstRequestId(null);
+          window.firstRequestId = null;
+          try {
+            navigate(ROUTES.QUIZ, {
+              state: {
+                className: selectedClass,
+                subject: selectedSubject,
+                chapter: selectedChapter,
+                questions: challengeData.mcqs,
+                challengeId: challengeId,
+                isChallenge: true,
+                count: challengeData.mcqs.length
+              }
+            });
+                        } catch (navError) {
+            console.error('🔍 [SELECT_SUBJECT DEBUG] Navigation to quiz using challenge failed:', navError);
+          }
+          return;
+        }
+
         console.log('🔍 [SELECT_SUBJECT DEBUG] Fetching questions for quiz with parameters:', {
           username,
           className: mapClassForExamAPI(selectedClass),
@@ -319,28 +423,21 @@ const SelectSubject = ({ mode: propMode }) => {
           rawClassName: selectedClass,
           rawSubject: selectedSubject
         });
-        console.log('🔍 [SELECT_SUBJECT DEBUG] Questions endpoint:', `${EXAM_API_BASE_URL}${API_ENDPOINTS.MCQ_QUESTIONS}`);
-        console.log('🔍 [SELECT_SUBJECT DEBUG] Query parameters:', params.toString());
-        console.log('🔍 [SELECT_SUBJECT DEBUG] Authorization header:', `Bearer ${token.substring(0, 20)}...`);
-
+                              
         const headers = {
           'Authorization': `Bearer ${token}`
         };
 
-        console.log('🔍 [SELECT_SUBJECT DEBUG] Request headers:', headers);
-
+          
         const response = await fetch(`${EXAM_API_BASE_URL}${API_ENDPOINTS.MCQ_QUESTIONS}?${params.toString()}`, {
           method: 'POST',
           headers
         });
 
-        console.log('🔍 [SELECT_SUBJECT DEBUG] Questions response status:', response.status);
-        console.log('🔍 [SELECT_SUBJECT DEBUG] Response headers:', Object.fromEntries(response.headers.entries()));
-
+                    
         if (response.ok) {
           const data = await response.json();
-          console.log('🔍 [SELECT_SUBJECT DEBUG] Questions response data:', data);
-          console.log('🔍 [SELECT_SUBJECT DEBUG] Questions response structure:', {
+                      console.log('🔍 [SELECT_SUBJECT DEBUG] Questions response structure:', {
             hasMcqs: !!data.mcqs,
             hasQuestions: !!data.questions,
             mcqsLength: data.mcqs?.length,
@@ -378,8 +475,7 @@ const SelectSubject = ({ mode: propMode }) => {
                 difficultyLevel: data.difficultyLevel
               } 
             });
-            console.log('🔍 [SELECT_SUBJECT DEBUG] Navigation to quiz successful');
-          } catch (navError) {
+                        } catch (navError) {
             console.error('🔍 [SELECT_SUBJECT DEBUG] Navigation to quiz failed:', navError);
           }
         } else {
@@ -395,11 +491,7 @@ const SelectSubject = ({ mode: propMode }) => {
 
       // For revise mode, fetch previous mistakes first
       if (mode === 'revise') {
-        console.log('🔍 [SELECT_SUBJECT DEBUG] ===== REVISE MODE START =====');
-        console.log('🔍 [SELECT_SUBJECT DEBUG] Processing revise mode');
-        console.log('🔍 [SELECT_SUBJECT DEBUG] Mode value:', mode);
-        console.log('🔍 [SELECT_SUBJECT DEBUG] Mode type:', typeof mode);
-        const token = getFormattedToken();
+                                                const token = getFormattedToken();
         const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
         
         console.log('🔍 [SELECT_SUBJECT DEBUG] Authentication check for revise:', {
@@ -440,14 +532,9 @@ const SelectSubject = ({ mode: propMode }) => {
           rawClassName: selectedClass,
           rawSubject: selectedSubject
         });
-        console.log('🔍 [SELECT_SUBJECT DEBUG] Previous mistakes endpoint:', `${EXAM_API_BASE_URL}${API_ENDPOINTS.PREVIOUS_MCQ}`);
-        console.log('🔍 [SELECT_SUBJECT DEBUG] Query parameters:', params.toString());
-        
+                            
         const fullUrl = `${EXAM_API_BASE_URL}${API_ENDPOINTS.PREVIOUS_MCQ}?${params.toString()}`;
-        console.log('🔍 [SELECT_SUBJECT DEBUG] FULL URL for previous mistakes request:', fullUrl);
-        console.log('🔍 [SELECT_SUBJECT DEBUG] About to make fetch request to:', fullUrl);
-        console.log('🔍 [SELECT_SUBJECT DEBUG] Request method: GET');
-        console.log('🔍 [SELECT_SUBJECT DEBUG] Request headers:', {
+                                      console.log('🔍 [SELECT_SUBJECT DEBUG] Request headers:', {
           'Authorization': `Bearer ${token.substring(0, 20)}...`,
           'Content-Type': 'application/json'
         });
@@ -459,12 +546,10 @@ const SelectSubject = ({ mode: propMode }) => {
           }
         });
 
-        console.log('🔍 [SELECT_SUBJECT DEBUG] Previous mistakes response status:', response.status);
-
+          
         if (response.ok) {
           const data = await response.json();
-          console.log('🔍 [SELECT_SUBJECT DEBUG] Previous mistakes response data:', data);
-          console.log('🔍 [SELECT_SUBJECT DEBUG] Previous mistakes response structure:', {
+                      console.log('🔍 [SELECT_SUBJECT DEBUG] Previous mistakes response structure:', {
             hasMcqs: !!data.mcqs,
             hasQuestions: !!data.questions,
             mcqsLength: data.mcqs?.length,
@@ -473,18 +558,7 @@ const SelectSubject = ({ mode: propMode }) => {
             dataType: typeof data
           });
           
-          // Navigate to PrevMistake with fetched questions
-          console.log('🔍 [SELECT_SUBJECT DEBUG] Navigating to prev mistakes with state:', {
-            route: ROUTES.PREV_MISTAKES,
-            state: { 
-              className: selectedClass,
-              subject: selectedSubject,
-              chapter: selectedChapter,
-              questions: data.mcqs || data.questions || data,
-              count: 5
-            }
-          });
-          
+        
           // Set navigation flag and clear loading state before navigation
           setHasNavigated(true);
           setIsLoading(false);
@@ -502,8 +576,7 @@ const SelectSubject = ({ mode: propMode }) => {
                 count: 5
               } 
             });
-            console.log('🔍 [SELECT_SUBJECT DEBUG] Navigation to prev mistakes successful');
-          } catch (navError) {
+                        } catch (navError) {
             console.error('🔍 [SELECT_SUBJECT DEBUG] Navigation to prev mistakes failed:', navError);
           }
         } else {
@@ -524,12 +597,10 @@ const SelectSubject = ({ mode: propMode }) => {
         return;
       }
 
-      console.log('🔍 [SELECT_SUBJECT DEBUG] Processing non-quiz mode:', mode);
-      // Navigate based on mode (for non-quiz modes)
+              // Navigate based on mode (for non-quiz modes)
       switch (mode) {
         case 'learn':
-          console.log('🔍 [SELECT_SUBJECT DEBUG] Processing learn mode');
-          const learnToken = getFormattedToken();
+                      const learnToken = getFormattedToken();
           const learnUsername = localStorage.getItem(STORAGE_KEYS.USERNAME);
           
           if (!learnToken || !learnUsername) {
@@ -558,9 +629,7 @@ const SelectSubject = ({ mode: propMode }) => {
             rawClassName: selectedClass,
             rawSubject: selectedSubject
           });
-          console.log('🔍 [SELECT_SUBJECT DEBUG] Learn endpoint:', `${LEARNING_API_BASE_URL}${API_ENDPOINTS.LEARN}`);
-          console.log('🔍 [SELECT_SUBJECT DEBUG] Query parameters:', learnParams.toString());
-
+                        
           const learnResponse = await fetch(`${LEARNING_API_BASE_URL}${API_ENDPOINTS.LEARN}?${learnParams.toString()}`, {
             method: 'GET',
             headers: {
@@ -569,12 +638,10 @@ const SelectSubject = ({ mode: propMode }) => {
             }
           });
 
-          console.log('🔍 [SELECT_SUBJECT DEBUG] Learn response status:', learnResponse.status);
-
+            
           if (learnResponse.ok) {
             const learnData = await learnResponse.json();
-            console.log('🔍 [SELECT_SUBJECT DEBUG] Learn response data:', learnData);
-            console.log('🔍 [SELECT_SUBJECT DEBUG] Learn response structure:', {
+                          console.log('🔍 [SELECT_SUBJECT DEBUG] Learn response structure:', {
               hasContent: !!learnData.content,
               hasLessons: !!learnData.lessons,
               hasChapterTitle: !!learnData.chapterTitle,
@@ -625,8 +692,7 @@ const SelectSubject = ({ mode: propMode }) => {
                   chapterTitle: extractedTitle
                 } 
               });
-              console.log('🔍 [SELECT_SUBJECT DEBUG] Navigation to learn successful');
-            } catch (navError) {
+                            } catch (navError) {
               console.error('🔍 [SELECT_SUBJECT DEBUG] Navigation to learn failed:', navError);
             }
           } else {
@@ -640,8 +706,7 @@ const SelectSubject = ({ mode: propMode }) => {
           }
           return;
         case 'written':
-          console.log('🔍 [SELECT_SUBJECT DEBUG] Processing written question mode');
-          const writtenToken = getFormattedToken();
+                      const writtenToken = getFormattedToken();
           const writtenUsername = localStorage.getItem(STORAGE_KEYS.USERNAME);
           
           if (!writtenToken || !writtenUsername) {
@@ -672,9 +737,7 @@ const SelectSubject = ({ mode: propMode }) => {
             rawClassName: selectedClass,
             rawSubject: selectedSubject
           });
-          console.log('🔍 [SELECT_SUBJECT DEBUG] Written question endpoint:', `${EXAM_API_BASE_URL}${API_ENDPOINTS.WRITTEN_QUESTION}`);
-          console.log('🔍 [SELECT_SUBJECT DEBUG] Query parameters:', writtenParams.toString());
-
+                        
           const writtenResponse = await fetch(`${EXAM_API_BASE_URL}${API_ENDPOINTS.WRITTEN_QUESTION}?${writtenParams.toString()}`, {
             method: 'GET',
             headers: {
@@ -683,12 +746,10 @@ const SelectSubject = ({ mode: propMode }) => {
             }
           });
 
-          console.log('🔍 [SELECT_SUBJECT DEBUG] Written question response status:', writtenResponse.status);
-
+            
           if (writtenResponse.ok) {
             const writtenData = await writtenResponse.json();
-            console.log('🔍 [SELECT_SUBJECT DEBUG] Written question response data:', writtenData);
-            console.log('🔍 [SELECT_SUBJECT DEBUG] Written question response structure:', {
+                          console.log('🔍 [SELECT_SUBJECT DEBUG] Written question response structure:', {
               hasQuestion: !!writtenData.question,
               hasQuestions: !!writtenData.questions,
               questionLength: writtenData.question?.length,
@@ -737,8 +798,7 @@ const SelectSubject = ({ mode: propMode }) => {
           }
           return;
         case 'notes':
-          console.log('🔍 [SELECT_SUBJECT DEBUG] ===== Processing notes mode =====');
-          const notesToken = getFormattedToken();
+                      const notesToken = getFormattedToken();
           const notesUsername = localStorage.getItem(STORAGE_KEYS.USERNAME);
           
           console.log('🔍 [SELECT_SUBJECT DEBUG] Notes mode - Authentication check:', {
@@ -777,8 +837,7 @@ const SelectSubject = ({ mode: propMode }) => {
             return;
           }
           
-          console.log('🔍 [SELECT_SUBJECT DEBUG] LEARNING_API_BASE_URL:', LEARNING_API_BASE_URL);
-          console.log('🔍 [SELECT_SUBJECT DEBUG] Environment variables:', {
+                      console.log('🔍 [SELECT_SUBJECT DEBUG] Environment variables:', {
             VITE_LEARNING_API_BASE_URL: import.meta.env.VITE_LEARNING_API_BASE_URL,
             VITE_API_BASE_URL: import.meta.env.VITE_API_BASE_URL,
             VITE_EXAM_API_BASE_URL: import.meta.env.VITE_EXAM_API_BASE_URL,
@@ -787,9 +846,7 @@ const SelectSubject = ({ mode: propMode }) => {
           });
           
           // Debug API_ENDPOINTS
-          console.log('🔍 [SELECT_SUBJECT DEBUG] API_ENDPOINTS:', API_ENDPOINTS);
-          console.log('🔍 [SELECT_SUBJECT DEBUG] API_ENDPOINTS.GENERATE_NOTE:', API_ENDPOINTS.GENERATE_NOTE);
-          
+                                  
           // Ensure proper parameter encoding
           const mappedClassName = mapClassForExamAPI(selectedClass);
           const mappedSubject = mapSubjectForExamAPI(selectedSubject);
@@ -844,12 +901,6 @@ const SelectSubject = ({ mode: propMode }) => {
             ? API_ENDPOINTS.GENERATE_NOTE 
             : `/${API_ENDPOINTS.GENERATE_NOTE}`;
           
-          console.log('🔍 [SELECT_SUBJECT DEBUG] URL components:', {
-            baseUrl,
-            endpoint,
-            baseUrlType: typeof baseUrl,
-            endpointType: typeof endpoint
-          });
           
           // Create URLSearchParams for proper encoding
           const searchParams = new URLSearchParams();
@@ -859,21 +910,15 @@ const SelectSubject = ({ mode: propMode }) => {
           
           const fullUrl = `${baseUrl}${endpoint}?${searchParams.toString()}`;
           
-          console.log('🔍 [SELECT_SUBJECT DEBUG] Manually constructed URL:', fullUrl);
-          console.log('🔍 [SELECT_SUBJECT DEBUG] Search params string:', searchParams.toString());
-          
-          console.log('🔍 [SELECT_SUBJECT DEBUG] Constructed URL manually:', fullUrl);
-
+                                  
+            
           // Test API connectivity first
-          console.log('🔍 [SELECT_SUBJECT DEBUG] Testing API connectivity...');
-          const isConnected = await testApiConnectivity(LEARNING_API_BASE_URL);
-          console.log('🔍 [SELECT_SUBJECT DEBUG] API connectivity test result:', isConnected);
-
+                      const isConnected = await testApiConnectivity(LEARNING_API_BASE_URL);
+            
           try {
             // Use only the primary endpoint
             const endpoint = API_ENDPOINTS.GENERATE_NOTE;
-            console.log('🔍 [SELECT_SUBJECT DEBUG] Using primary endpoint:', endpoint);
-            
+                          
             // Manual URL construction
             const currentEndpoint = endpoint.startsWith('/') 
               ? endpoint 
@@ -886,8 +931,7 @@ const SelectSubject = ({ mode: propMode }) => {
             
             const currentUrl = `${baseUrl}${currentEndpoint}?${currentSearchParams.toString()}`;
             
-            console.log('🔍 [SELECT_SUBJECT DEBUG] Constructed URL:', currentUrl);
-            
+                          
             // Make the API request
             const response = await fetch(currentUrl, {
               method: 'GET',
@@ -899,12 +943,10 @@ const SelectSubject = ({ mode: propMode }) => {
               mode: 'cors'
             });
             
-            console.log('🔍 [SELECT_SUBJECT DEBUG] Response status:', response.status);
-            
+                          
             if (response.ok) {
               const notesData = await response.json();
-              console.log('🔍 [SELECT_SUBJECT DEBUG] Notes response data:', notesData);
-              console.log('🔍 [SELECT_SUBJECT DEBUG] Notes response structure:', {
+                              console.log('🔍 [SELECT_SUBJECT DEBUG] Notes response structure:', {
                 hasNote: !!notesData.note,
                 hasNotes: !!notesData.notes,
                 hasLesson: !!notesData.lesson,
@@ -945,8 +987,7 @@ const SelectSubject = ({ mode: propMode }) => {
                 return;
               }
               
-              console.log('🔍 [SELECT_SUBJECT DEBUG] Navigating to ShowNotes with extracted notes:', extractedNotes);
-              
+                              
               // Navigate to ShowNotes with fetched notes
               console.log('🔍 [SELECT_SUBJECT DEBUG] Navigating to show notes with state:', {
                 route: ROUTES.SHOW_NOTES,
@@ -976,8 +1017,7 @@ const SelectSubject = ({ mode: propMode }) => {
                     skipInitialLoading: true
                   } 
                 });
-                console.log('🔍 [SELECT_SUBJECT DEBUG] Navigation to show notes successful');
-              } catch (navError) {
+                                } catch (navError) {
                 console.error('🔍 [SELECT_SUBJECT DEBUG] Navigation to show notes failed:', navError);
               }
                       } else {
@@ -1034,21 +1074,18 @@ const SelectSubject = ({ mode: propMode }) => {
     } finally {
       // Only cleanup if this was the first request and we haven't navigated away
       if (requestId === firstRequestId && !hasNavigated) {
-        console.log('🔍 [SELECT_SUBJECT DEBUG] Finally block cleanup - no navigation occurred');
-        setIsLoading(false);
+                  setIsLoading(false);
         setCurrentRequestId(null);
         setFirstRequestId(null);
         window.firstRequestId = null;
       } else {
-        console.log('🔍 [SELECT_SUBJECT DEBUG] Finally block skipped - navigation occurred or different request');
-      }
+                }
       // Reset navigation flag for next request
       setHasNavigated(false);
     }
   };
 
-  console.log('🔍 [SELECT_SUBJECT DEBUG] Component is about to render');
-  
+      
   return (
     <div className={`h-screen flex flex-col ${
       isDarkMode 
@@ -1156,7 +1193,6 @@ const SelectSubject = ({ mode: propMode }) => {
             </div>
           </div>
           
-          {/* Add these keyframes to your global CSS */}
           <style>{`
             @keyframes bounce {
               0%, 100% { transform: translateY(0); }
@@ -1312,6 +1348,59 @@ const SelectSubject = ({ mode: propMode }) => {
         </div>
       )}
 
+      {showAttendModal && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
+          <div className="absolute inset-0 bg-black/50" onClick={() => setShowAttendModal(false)}></div>
+          <div className={`relative w-full max-w-md rounded-2xl p-6 shadow-2xl ${
+            isDarkMode ? 'bg-gray-800 border border-gray-700' : 'bg-white border border-gray-200'
+          }`}>
+            <div className="flex items-center justify-between mb-4">
+              <h3 className={`text-lg font-semibold ${isDarkMode ? 'text-gray-100' : 'text-gray-800'}`}>Enter Challenge ID</h3>
+              <button
+                onClick={() => setShowAttendModal(false)}
+                className={`${isDarkMode ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-gray-900'}`}
+              >
+                ✕
+              </button>
+            </div>
+            <input
+              type="text"
+              placeholder="Paste challenge ID"
+              value={attendChallengeId}
+              onChange={(e) => setAttendChallengeId(e.target.value)}
+              className={`w-full px-4 py-3 rounded-lg border focus:outline-none focus:ring-2 ${
+                isDarkMode
+                  ? 'bg-gray-800 border-gray-700 text-gray-200 focus:ring-purple-600'
+                  : 'bg-white border-gray-300 text-gray-800 focus:ring-purple-500'
+              }`}
+            />
+            <div className="mt-4 flex gap-3">
+              <button
+                onClick={handleAttendChallenge}
+                disabled={isAttendLoading || !attendChallengeId}
+                className={`flex-1 px-4 py-3 rounded-lg font-medium ${
+                  isDarkMode
+                    ? 'bg-purple-600 text-white hover:bg-purple-700 disabled:opacity-50'
+                    : 'bg-purple-600 text-white hover:bg-purple-700 disabled:opacity-50'
+                }`}
+              >
+                {isAttendLoading ? 'Joining...' : 'Join Challenge'}
+              </button>
+              <button
+                onClick={() => setShowAttendModal(false)}
+                className={`px-4 py-3 rounded-lg font-medium border ${
+                  isDarkMode
+                    ? 'border-gray-600 text-gray-200 hover:bg-gray-700'
+                    : 'border-gray-300 text-gray-700 hover:bg-gray-100'
+                }`}
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className={`flex-1 overflow-y-auto flex items-center justify-center ${
         isDarkMode 
           ? 'bg-gradient-to-br from-gray-900/50 via-gray-800 to-gray-900/50' 
@@ -1336,6 +1425,57 @@ const SelectSubject = ({ mode: propMode }) => {
             isDarkMode={isDarkMode}
           />
 
+          {mode === 'mcq' && (
+            <div className="max-w-lg mx-auto mt-4">
+              <div className={`text-center text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>or</div>
+              <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <button
+                  onClick={handleGenerateChallenge}
+                  disabled={!selectedClass || !selectedSubject || !selectedChapter || isChallengeLoading}
+                  className={`w-full px-4 py-3 rounded-lg font-medium border transition-all ${
+                    isDarkMode
+                      ? 'bg-gray-800 border-gray-700 text-gray-200 hover:bg-gray-700 disabled:opacity-50'
+                      : 'bg-white border-gray-200 text-gray-700 hover:bg-gray-100 disabled:opacity-50'
+                  }`}
+                >
+                  {isChallengeLoading ? 'Creating challenge...' : 'Challenge a friend'}
+                </button>
+                <button
+                  onClick={() => setShowAttendModal(true)}
+                  className={`w-full px-4 py-3 rounded-lg font-medium border transition-all ${
+                    isDarkMode
+                      ? 'bg-gray-800 border-gray-700 text-gray-200 hover:bg-gray-700'
+                      : 'bg-white border-gray-200 text-gray-700 hover:bg-gray-100'
+                  }`}
+                >
+                  Attend a challenge
+                </button>
+              </div>
+              
+              {challengeId && (
+                <div className={`mt-4 p-4 rounded-lg border flex items-center justify-between ${
+                  isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-gray-50 border-gray-200'
+                }`}>
+                  <div>
+                    <div className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>Challenge ID</div>
+                    <div className="font-mono text-base mt-1">{challengeId}</div>
+                    {challengeMessage && (
+                      <div className={`text-xs mt-1 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>{challengeMessage}</div>
+                    )}
+                  </div>
+                  <button
+                    type="button"
+                    onClick={handleCopyChallengeId}
+                    className={`px-3 py-2 rounded-md text-sm font-medium ${
+                      isDarkMode ? 'bg-gray-700 text-gray-200 hover:bg-gray-600' : 'bg-white text-gray-700 border border-gray-200 hover:bg-gray-100'
+                    }`}
+                  >
+                    {copiedChallenge ? 'Copied' : 'Copy'}
+                  </button>
+                </div>
+              )}
+            </div>
+          )}
 
         </div>
       </div>

@@ -11,9 +11,7 @@ import { useDarkTheme } from '../Common/DarkThemeProvider';
 // Simple function to test backend connectivity (only in development)
 const testBackendConnectivity = async () => {
   if (process.env.NODE_ENV === 'development') {
-    console.log('🧪 [BACKEND TEST] Testing backend connectivity...');
-    console.log('🧪 [BACKEND TEST] API_BASE_URL:', API_BASE_URL);
-  }
+              }
 };
 
 const EmailConfirmation = () => {
@@ -47,9 +45,7 @@ const EmailConfirmation = () => {
         // Use the correct backend endpoint
         const confirmUrl = `${API_BASE_URL}${API_ENDPOINTS.CONFIRM_EMAIL}?token=${token}`;
         
-        console.log('🔍 [EMAIL CONFIRMATION DEBUG] Confirming email with token:', token);
-        console.log('🔍 [EMAIL CONFIRMATION DEBUG] API endpoint:', confirmUrl);
-
+                    
         // Try different fetch configurations to handle CORS issues
         let response = null;
         let fetchError = null;
@@ -66,14 +62,12 @@ const EmailConfirmation = () => {
           });
         } catch (error) {
           fetchError = error;
-          console.log('🔍 [EMAIL CONFIRMATION DEBUG] First fetch attempt failed:', error.message);
-        }
+                    }
         
         // Second try: Without Content-Type header (some servers reject it for GET requests)
         if (!response || response.status === 403) {
           try {
-            console.log('🔍 [EMAIL CONFIRMATION DEBUG] Trying without Content-Type header...');
-            response = await fetch(confirmUrl, {
+                          response = await fetch(confirmUrl, {
               method: 'GET',
               headers: {
                 'Accept': 'application/json',
@@ -82,35 +76,30 @@ const EmailConfirmation = () => {
             });
           } catch (error) {
             fetchError = error;
-            console.log('🔍 [EMAIL CONFIRMATION DEBUG] Second fetch attempt failed:', error.message);
-          }
+                        }
         }
         
         // Third try: Without any custom headers
         if (!response || response.status === 403) {
           try {
-            console.log('🔍 [EMAIL CONFIRMATION DEBUG] Trying without any custom headers...');
-            response = await fetch(confirmUrl, {
+                          response = await fetch(confirmUrl, {
               method: 'GET',
               mode: 'cors',
             });
           } catch (error) {
             fetchError = error;
-            console.log('🔍 [EMAIL CONFIRMATION DEBUG] Third fetch attempt failed:', error.message);
-          }
+                        }
         }
         
         // Fourth try: Without CORS mode (for servers without CORS configuration)
         if (!response || response.status === 403) {
           try {
-            console.log('🔍 [EMAIL CONFIRMATION DEBUG] Trying without CORS mode...');
-            response = await fetch(confirmUrl, {
+                          response = await fetch(confirmUrl, {
               method: 'GET',
             });
           } catch (error) {
             fetchError = error;
-            console.log('🔍 [EMAIL CONFIRMATION DEBUG] Fourth fetch attempt failed:', error.message);
-          }
+                        }
         }
         
         // If all fetch attempts failed, throw the error
@@ -118,43 +107,29 @@ const EmailConfirmation = () => {
           throw fetchError;
         }
 
-        console.log('🔍 [EMAIL CONFIRMATION DEBUG] Response status:', response.status);
-        console.log('🔍 [EMAIL CONFIRMATION DEBUG] Response URL:', response.url);
-        console.log('🔍 [EMAIL CONFIRMATION DEBUG] Response headers:', Object.fromEntries(response.headers.entries()));
-        console.log('🔍 [EMAIL CONFIRMATION DEBUG] Response content type:', response.headers.get('content-type'));
-        
+                                                
         // Additional debugging for 403 errors
         if (response.status === 403) {
-          console.log('🔍 [EMAIL CONFIRMATION DEBUG] 403 Forbidden - Possible CORS issue');
-          console.log('🔍 [EMAIL CONFIRMATION DEBUG] Origin:', window.location.origin);
-          console.log('🔍 [EMAIL CONFIRMATION DEBUG] Target URL:', confirmUrl);
-          
+                                              
           // Try to get response text for debugging
           try {
             const responseText = await response.text();
-            console.log('🔍 [EMAIL CONFIRMATION DEBUG] 403 Response text:', responseText);
-          } catch (textError) {
-            console.log('🔍 [EMAIL CONFIRMATION DEBUG] Could not read 403 response text');
-          }
+                        } catch (textError) {
+                        }
         }
 
         if (response.ok) {
           try {
             const data = await response.json();
-            console.log('🔍 [EMAIL CONFIRMATION DEBUG] Success response:', data);
-            setStatus('success');
+                          setStatus('success');
             setMessage(data.message || 'Your email has been successfully confirmed! Welcome to FLOW!');
           } catch (jsonError) {
-            console.log('🔍 [EMAIL CONFIRMATION DEBUG] Could not parse success response as JSON, treating as success');
-            console.log('🔍 [EMAIL CONFIRMATION DEBUG] Response content type:', response.headers.get('content-type'));
-            
+                                        
             // Try to get response text for debugging
             try {
               const responseText = await response.text();
-              console.log('🔍 [EMAIL CONFIRMATION DEBUG] Response text:', responseText);
-            } catch (textError) {
-              console.log('🔍 [EMAIL CONFIRMATION DEBUG] Could not read response text');
-            }
+                            } catch (textError) {
+                            }
             
             setStatus('success');
             setMessage('Your email has been successfully confirmed! Welcome to FLOW!');
@@ -175,19 +150,14 @@ const EmailConfirmation = () => {
           
           try {
             const errorData = await response.json();
-            console.log('🔍 [EMAIL CONFIRMATION DEBUG] Error response:', errorData);
-            errorMessage = errorData.message || errorData.error || errorMessage;
+                          errorMessage = errorData.message || errorData.error || errorMessage;
           } catch (jsonError) {
-            console.log('🔍 [EMAIL CONFIRMATION DEBUG] Could not parse error response as JSON');
-            console.log('🔍 [EMAIL CONFIRMATION DEBUG] Response content type:', response.headers.get('content-type'));
-            
+                                        
             // Try to get response text for debugging
             try {
               const responseText = await response.text();
-              console.log('🔍 [EMAIL CONFIRMATION DEBUG] Error response text:', responseText);
-            } catch (textError) {
-              console.log('🔍 [EMAIL CONFIRMATION DEBUG] Could not read error response text');
-            }
+                            } catch (textError) {
+                            }
           }
           
           // Provide user-friendly error messages
@@ -205,9 +175,7 @@ const EmailConfirmation = () => {
             errorMessage = 'Unable to connect to our servers. Please check your internet connection and try again.';
           }
           
-          console.log('🔍 [EMAIL CONFIRMATION DEBUG] Confirmation failed with status:', response.status);
-          console.log('🔍 [EMAIL CONFIRMATION DEBUG] Final error message:', errorMessage);
-          setStatus('error');
+                                  setStatus('error');
           setMessage(errorMessage);
         }
       } catch (error) {

@@ -47,12 +47,10 @@ const MentorModal = ({ isOpen, onClose, currentMentor, onMentorChange }) => {
         }
       });
 
-      console.log('🔍 [MENTOR_MODAL DEBUG] Get teachers response status:', response.status);
-
+        
       if (response.ok) {
         const data = await response.json();
-        console.log('🔍 [MENTOR_MODAL DEBUG] Teachers data:', data);
-        setTeachers(data.teachers || []);
+                  setTeachers(data.teachers || []);
       } else {
         const errorData = await response.text();
         console.error('🔍 [MENTOR_MODAL DEBUG] Get teachers error response:', errorData);
@@ -88,8 +86,7 @@ const MentorModal = ({ isOpen, onClose, currentMentor, onMentorChange }) => {
       }
       
       // Use GET method since both endpoints are GET methods
-      console.log('🔍 [MENTOR_MODAL DEBUG] Using GET method for mentor assignment');
-      const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.UPSERT_TEACHER}?username=${studentUsername}&teacher=${teacherUsername}`, {
+              const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.UPSERT_TEACHER}?username=${studentUsername}&teacher=${teacherUsername}`, {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -97,8 +94,7 @@ const MentorModal = ({ isOpen, onClose, currentMentor, onMentorChange }) => {
         }
       });
 
-      console.log('🔍 [MENTOR_MODAL DEBUG] Final response status:', response.status);
-      
+              
       if (response.ok) {
         setSuccess('Mentor assigned successfully!');
         setTimeout(() => {
@@ -346,7 +342,7 @@ const MentorModal = ({ isOpen, onClose, currentMentor, onMentorChange }) => {
       </div>
       
       {/* Custom CSS for animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes fadeIn {
           from { opacity: 0; }
           to { opacity: 1; }

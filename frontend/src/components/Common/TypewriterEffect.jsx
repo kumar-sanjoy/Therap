@@ -3,7 +3,7 @@ import TextDisplay from './TextDisplay';
 
 const TypewriterEffect = ({ 
   text, 
-  speed = 30, 
+  speed = 50, 
   delay = 500,
   onComplete = null,
   className = '',

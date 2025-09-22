@@ -10,6 +10,7 @@ import SubjectProgress from './SubjectProgress';
 import RecentActivity from './RecentActivity';
 import WelcomeGreeting from './WelcomeGreeting';
 import AITeacherIntroduction from '../Common/AITeacherIntroduction';
+import TeacherAssistant from '../Common/TeacherAssistant';
 
 const MainPage = () => {
   const { isDarkMode } = useDarkTheme();
@@ -24,16 +25,13 @@ const MainPage = () => {
     totalWrong: 0,
     lastTenPerformance: [],
     streak: 0,
-    subjects: {
-      math: { completed: 15, accuracy: 85 },
-      science: { completed: 12, accuracy: 78 },
-      english: { completed: 8, accuracy: 92 }
-    }
+    subjects: {}
   });
   const [mentor, setMentor] = useState('');
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const [showAITeacherIntro, setShowAITeacherIntro] = useState(false);
+  const [isNewUser, setIsNewUser] = useState(false);
 
   // Check authentication on mount
   useEffect(() => {
@@ -89,9 +87,7 @@ const MainPage = () => {
           }
         });
         
-        console.log('🔍 [MAIN_PAGE DEBUG] API response status:', response.status);
-        console.log('🔍 [MAIN_PAGE DEBUG] API response headers:', Object.fromEntries(response.headers.entries()));
-
+                    
         if (response.ok) {
           const data = await response.json();
           
@@ -123,8 +119,7 @@ const MainPage = () => {
           // Process subject progress from backend format
           const processedSubjects = {};
           if (data.subjectProgress && Array.isArray(data.subjectProgress)) {
-            console.log('🔍 [MAIN_PAGE DEBUG] Processing subject progress:', data.subjectProgress);
-            
+                          
             data.subjectProgress.forEach(([subjectCode, correctCount, attemptCount]) => {
               // Map subject code to readable name using the mapping from config
               let subjectName = 'Unknown';
@@ -161,20 +156,19 @@ const MainPage = () => {
             subjects: processedSubjects
           };
           
-          console.log('🔍 [MAIN_PAGE DEBUG] Processed stats for frontend:', processedStats);
-          
+                      
           setStats(processedStats);
           
           // Extract mentor name from the response
           if (data.teacher) {
             setMentor(data.teacher);
-            console.log('🔍 [MAIN_PAGE DEBUG] Mentor set:', data.teacher);
-          }
+                        }
           
           setIsLoading(false);
           
           // Check if this is a first-time user (no questions attempted)
           const isFirstTimeUser = data.attemptCount === 0;
+          setIsNewUser(isFirstTimeUser);
           const hasSeenIntro = localStorage.getItem('hasSeenAITeacherIntro');
           
           if (isFirstTimeUser && !hasSeenIntro) {
@@ -297,6 +291,15 @@ const MainPage = () => {
         isOpen={showAITeacherIntro} 
         onClose={handleCloseAITeacherIntro} 
       />
+
+      {/* Teacher Assistant for new users */}
+      {isNewUser && (
+        <TeacherAssistant 
+          context="main"
+          showFloatingAvatar={true}
+          currentMessage="Welcome to your learning journey! I'm here to help you succeed! 🌟"
+        />
+      )}
 
 
  

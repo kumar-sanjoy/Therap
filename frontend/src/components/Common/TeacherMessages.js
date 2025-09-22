@@ -8,7 +8,7 @@ export const teacherMessages = {
     "Fantastic! You're learning so well! 🚀",
     "Amazing! You've got this! ⭐",
     "Superb! You're making great progress! 🎯",
-    "Wonderful! Your hard work is paying off! 🌈",
+    "Wonderful! Your hard work is paying off! ",
     "Incredible! You're absolutely crushing it! 🏆",
     "Bravo! That's the spirit! 🎊"
   ],
@@ -44,7 +44,7 @@ export const teacherMessages = {
     "Brilliant! Keep up the great work! ⭐",
     "Outstanding! You're learning so well! 🚀",
     "Amazing! Your hard work is paying off! 🏆",
-    "Superb! You're making incredible progress! 🌈",
+    "Superb! You're making incredible progress!",
     "Incredible! You're absolutely crushing it! 💎",
     "Bravo! Your learning journey is inspiring! 🎊"
   ],
@@ -56,7 +56,7 @@ export const teacherMessages = {
     "Brilliant! You've successfully completed this! ⭐",
     "Wonderful! You've achieved another goal! 🎯",
     "Superb! You've finished this section with flying colors! 🚀",
-    "Incredible! You've completed this successfully! 🌈",
+    "Incredible! You've completed this successfully!",
     "Bravo! You've mastered this material! 💎",
     "Excellent! You've reached the finish line! 🎊"
   ],
@@ -70,7 +70,7 @@ export const teacherMessages = {
     "Outstanding! You're making the most of your learning tools! 💪",
     "Superb! That's the kind of strategic thinking I love! 🎊",
     "Incredible! You're mastering the art of learning! 🏆",
-    "Bravo! You're using hints like a pro! 🌈"
+    "Bravo! You're using hints like a pro!"
   ],
   explanationUsed: [
     "Perfect! You're seeking deeper understanding! 🧠",
@@ -82,7 +82,7 @@ export const teacherMessages = {
     "Superb! You're developing critical thinking skills! 🚀",
     "Incredible! You're becoming a deep learner! 🎊",
     "Fantastic! You're building a strong knowledge base! 🏆",
-    "Bravo! You're learning the right way! 🌈"
+    "Bravo! You're learning the right way!"
   ],
   adviceUsed: [
     "Perfect! You're seeking personalized guidance! 🎯",
@@ -93,7 +93,7 @@ export const teacherMessages = {
     "Outstanding! That's how you turn mistakes into growth! 🎊",
     "Superb! You're developing better study strategies! 🧠",
     "Incredible! You're becoming a more effective learner! 🏆",
-    "Fantastic! You're building better learning habits! 🌈",
+    "Fantastic! You're building better learning habits!",
     "Bravo! You're taking control of your learning journey! ⭐"
   ],
   askingForHint: [
@@ -106,7 +106,7 @@ export const teacherMessages = {
     "Are you finding this challenging? I can offer a hint! 🚀",
     "Need a little push in the right direction? 💡",
     "Would you like me to give you a helpful hint? 🎊",
-    "I'm here to help! Would you like a hint? 🌈"
+    "I'm here to help! Would you like a hint?"
   ],
   askingForExplanation: [
     "Would you like me to explain the answer? 🧠",
@@ -116,7 +116,7 @@ export const teacherMessages = {
     "Would you like me to walk you through the explanation? 💪",
     "Should I explain the logic behind this answer? 🚀",
     "Would you like me to break down why this is right? 🎊",
-    "Let me know if you want the full explanation! 🌈",
+    "Let me know if you want the full explanation!",
     "Would you like me to explain the concept? 💎",
     "Should I show you the detailed explanation? 🏆"
   ],
@@ -128,7 +128,7 @@ export const teacherMessages = {
     "Would you like me to share some strategies for this type of question? 💪",
     "Should I give you some advice to help you learn from this mistake? 🚀",
     "Would you like some tips to improve your understanding? 🎊",
-    "Let me know if you want advice on how to approach similar questions! 🌈",
+    "Let me know if you want advice on how to approach similar questions!",
     "Would you like some guidance to strengthen your knowledge? 💎",
     "Should I share some advice to help you master this concept? 🏆"
   ],

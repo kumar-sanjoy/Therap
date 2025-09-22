@@ -17,10 +17,10 @@ const Hero = ({ navigate }) => {
           {/* Left Content */}
           <div className="lg:w-1/2 text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 rounded-full text-sm font-medium mb-6">
+            {/* <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 rounded-full text-sm font-medium mb-6">
               <FaStar className="mr-2 text-yellow-500" />
               Trusted by 10,000+ educators worldwide
-            </div>
+            </div> */}
             
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
               <span className="text-[#343434]">Transform Learning</span>
@@ -37,7 +37,7 @@ const Hero = ({ navigate }) => {
             </p>
             
             {/* Social Proof */}
-            <div className="flex items-center justify-center lg:justify-start mb-8 space-x-6">
+            {/* <div className="flex items-center justify-center lg:justify-start mb-8 space-x-6">
               <div className="flex items-center space-x-2">
                 <div className="flex -space-x-2">
                   {[1, 2, 3, 4].map((i) => (
@@ -54,7 +54,7 @@ const Hero = ({ navigate }) => {
                 <FaStar className="text-yellow-400" />
                 <span className="text-sm text-gray-600 ml-1">4.9/5</span>
               </div>
-            </div>
+            </div> */}
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -75,11 +75,11 @@ const Hero = ({ navigate }) => {
             </div>
             
             {/* Trust indicators */}
-            <div className="mt-8 flex items-center justify-center lg:justify-start space-x-6 text-sm text-gray-500">
+            {/* <div className="mt-8 flex items-center justify-center lg:justify-start space-x-6 text-sm text-gray-500">
               <span>✓ No credit card required</span>
               <span>✓ 14-day free trial</span>
               <span>✓ Cancel anytime</span>
-            </div>
+            </div> */}
           </div>
           
           {/* Right Content - Dashboard Preview */}
@@ -107,15 +107,15 @@ const Hero = ({ navigate }) => {
                   <div className="space-y-3">
                     <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
                       <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-                      <span className="text-sm text-gray-700">Sarah M. - Completed Chapter 3</span>
+                      <span className="text-sm text-gray-700">Rahim M. - Completed Chapter 3</span>
                     </div>
                     <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
                       <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
-                      <span className="text-sm text-gray-700">Mike R. - Needs help with Algebra</span>
+                      <span className="text-sm text-gray-700">Karim R. - Needs help with Algebra</span>
                     </div>
                     <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
                       <div className="w-3 h-3 bg-blue-400 rounded-full"></div>
-                      <span className="text-sm text-gray-700">Emma L. - Quiz score: 92%</span>
+                      <span className="text-sm text-gray-700">Abdul L. - Quiz score: 92%</span>
                     </div>
                   </div>
                 </div>

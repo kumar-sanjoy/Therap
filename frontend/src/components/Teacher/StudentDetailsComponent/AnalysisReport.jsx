@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaChartLine } from 'react-icons/fa';
+import TextDisplay from '../../Common/TextDisplay';
 
 const AnalysisReport = ({ report }) => {
   return (
@@ -12,9 +13,12 @@ const AnalysisReport = ({ report }) => {
       </div>
       <div className="p-6">
         <div className="prose prose-lg max-w-none dark:prose-invert">
-          <div className="whitespace-pre-wrap text-gray-700 dark:text-gray-300 leading-relaxed font-medium">
-            {report}
-          </div>
+          <TextDisplay 
+            content={report} 
+            isUserMessage={false} 
+            forceBlackText={false}
+            fontSize={16}
+          />
         </div>
       </div>
     </div>

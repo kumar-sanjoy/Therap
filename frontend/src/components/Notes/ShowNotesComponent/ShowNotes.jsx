@@ -93,14 +93,10 @@ const ShowNotes = () => {
     let isMounted = true; // Prevent setting state if component unmounts
     
     const fetchNotes = async () => {
-      console.log('🔍 [SHOW_NOTES DEBUG] Starting fetchNotes');
-      console.log('🔍 [SHOW_NOTES DEBUG] State received:', state);
-      console.log('🔍 [SHOW_NOTES DEBUG] skipInitialLoading:', skipInitialLoading);
-      
+                              
       // If we have notes in state, use them (this means data was already fetched in SelectSubject)
       if (state?.note && state.note.length > 0) {
-        console.log('🔍 [SHOW_NOTES DEBUG] Using notes from state:', state.note);
-        if (isMounted) {
+                  if (isMounted) {
           setNotes(state.note);
           setIsLoading(false);
         }
@@ -154,8 +150,7 @@ const ShowNotes = () => {
           return;
         }
         
-        console.log('🔍 [SHOW_NOTES DEBUG] LEARNING_API_BASE_URL:', LEARNING_API_BASE_URL);
-        
+                  
         const mappedClassName = mapClassForExamAPI(className);
         const mappedSubject = mapSubjectForExamAPI(subject);
         
@@ -168,10 +163,7 @@ const ShowNotes = () => {
         });
         
         // Build URL with proper encoding using the utility function
-        console.log('🔍 [SHOW_NOTES DEBUG] === URL CONSTRUCTION START ===');
-        console.log('🔍 [SHOW_NOTES DEBUG] Base URL:', LEARNING_API_BASE_URL);
-        console.log('🔍 [SHOW_NOTES DEBUG] Endpoint:', API_ENDPOINTS.GENERATE_NOTE);
-        console.log('🔍 [SHOW_NOTES DEBUG] Parameters:', {
+                                      console.log('🔍 [SHOW_NOTES DEBUG] Parameters:', {
           className: mappedClassName,
           subject: mappedSubject,
           chapter: chapter.toString()
@@ -193,23 +185,11 @@ const ShowNotes = () => {
         
         const apiUrl = `${baseUrl}${endpoint}?${searchParams.toString()}`;
         
-        console.log('🔍 [SHOW_NOTES DEBUG] Manually constructed URL:', apiUrl);
-        
-        console.log('🔍 [SHOW_NOTES DEBUG] === CONSTRUCTED URL ===');
-        console.log('🔍 [SHOW_NOTES DEBUG] Full API URL:', apiUrl);
-        console.log('🔍 [SHOW_NOTES DEBUG] URL type:', typeof apiUrl);
-        console.log('🔍 [SHOW_NOTES DEBUG] URL length:', apiUrl.length);
-        console.log('🔍 [SHOW_NOTES DEBUG] URL starts with http:', apiUrl.startsWith('http'));
-        console.log('🔍 [SHOW_NOTES DEBUG] === URL CONSTRUCTION END ===');
-        
+                  
+                                                                    
         const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
-        console.log('🔍 [SHOW_NOTES DEBUG] Token available:', !!token);
-        console.log('🔍 [SHOW_NOTES DEBUG] Token length:', token?.length);
-        
-        console.log('🔍 [SHOW_NOTES DEBUG] === API CALL START ===');
-        console.log('🔍 [SHOW_NOTES DEBUG] Making fetch request to:', apiUrl);
-        console.log('🔍 [SHOW_NOTES DEBUG] Request method: GET');
-        console.log('🔍 [SHOW_NOTES DEBUG] Request headers:', {
+                            
+                                      console.log('🔍 [SHOW_NOTES DEBUG] Request headers:', {
           'Authorization': `Bearer ${token ? token.substring(0, 20) + '...' : 'NO_TOKEN'}`,
           'Content-Type': 'application/json'
         });
@@ -224,69 +204,48 @@ const ShowNotes = () => {
           mode: 'cors'
         });
 
-        console.log('🔍 [SHOW_NOTES DEBUG] === API RESPONSE RECEIVED ===');
-        console.log('🔍 [SHOW_NOTES DEBUG] Response status:', response.status);
-        console.log('🔍 [SHOW_NOTES DEBUG] Response status text:', response.statusText);
-        console.log('🔍 [SHOW_NOTES DEBUG] Response ok:', response.ok);
-        console.log('🔍 [SHOW_NOTES DEBUG] Response headers:', Object.fromEntries(response.headers.entries()));
-        console.log('🔍 [SHOW_NOTES DEBUG] Response URL:', response.url);
-        
+                                                                    
         if (response.ok) {
           // Clone the response for logging
           const responseClone = response.clone();
           const responseText = await responseClone.text();
-          console.log('🔍 [SHOW_NOTES DEBUG] Response body:', responseText);
-          
+                      
           // Try to parse as JSON if possible
           try {
             const responseJson = JSON.parse(responseText);
-            console.log('🔍 [SHOW_NOTES DEBUG] Response JSON:', responseJson);
-          } catch (jsonError) {
-            console.log('🔍 [SHOW_NOTES DEBUG] Response is not JSON');
-          }
+                        } catch (jsonError) {
+                        }
           
-          console.log('🔍 [SHOW_NOTES DEBUG] === PARSING RESPONSE DATA ===');
-          const data = await response.json();
-          console.log('🔍 [SHOW_NOTES DEBUG] Response data type:', typeof data);
-          console.log('🔍 [SHOW_NOTES DEBUG] Response data:', data);
-          console.log('🔍 [SHOW_NOTES DEBUG] Response data keys:', Object.keys(data));
-          console.log('🔍 [SHOW_NOTES DEBUG] Has note property:', data.hasOwnProperty('note'));
-          console.log('🔍 [SHOW_NOTES DEBUG] Note property type:', typeof data.note);
-          console.log('🔍 [SHOW_NOTES DEBUG] Note property value:', data.note);
-          
+                      const data = await response.json();
+                                                                                  
           if (!isMounted) return; // Don't set state if component unmounted
           
           // Check for note array in the response (API sends under 'note' field)
           if (data.note && Array.isArray(data.note)) {
-            console.log('🔍 [SHOW_NOTES DEBUG] Found note array:', data.note);
-            if (isMounted) {
+                          if (isMounted) {
               setNotes(data.note);
               setIsLoading(false);
             }
           } else if (data.note && typeof data.note === 'string') {
-            console.log('🔍 [SHOW_NOTES DEBUG] Found note string:', data.note);
-            // Handle case where note might be a single string
+                          // Handle case where note might be a single string
             if (isMounted) {
               setNotes([data.note]);
               setIsLoading(false);
             }
           } else if (data.note && typeof data.note === 'object' && data.note !== null) {
-            console.log('🔍 [SHOW_NOTES DEBUG] Found note object:', data.note);
-            // Handle case where note might be an object that needs to be converted
+                          // Handle case where note might be an object that needs to be converted
             try {
               // Handle the specific format {"note ": " ............ " }
               if (data.note.hasOwnProperty('note ')) {
                 const noteValue = data.note['note '];
-                console.log('🔍 [SHOW_NOTES DEBUG] Found note property:', noteValue);
-                if (isMounted) {
+                                  if (isMounted) {
                   setNotes([noteValue]);
                   setIsLoading(false);
                 }
               } else {
                 // Fallback to Object.values for other object formats
                 const noteArray = Object.values(data.note);
-                console.log('🔍 [SHOW_NOTES DEBUG] Converted object to array:', noteArray);
-                if (isMounted) {
+                                  if (isMounted) {
                   setNotes(noteArray);
                   setIsLoading(false);
                 }
@@ -299,20 +258,17 @@ const ShowNotes = () => {
               }
             }
           } else if (data.notes && Array.isArray(data.notes)) {
-            console.log('🔍 [SHOW_NOTES DEBUG] Found notes array:', data.notes);
-            if (isMounted) {
+                          if (isMounted) {
               setNotes(data.notes);
               setIsLoading(false);
             }
           } else if (data.lesson && Array.isArray(data.lesson)) {
-            console.log('🔍 [SHOW_NOTES DEBUG] Found lesson array:', data.lesson);
-            if (isMounted) {
+                          if (isMounted) {
               setNotes(data.lesson);
               setIsLoading(false);
             }
           } else if (data.content && Array.isArray(data.content)) {
-            console.log('🔍 [SHOW_NOTES DEBUG] Found content array:', data.content);
-            if (isMounted) {
+                          if (isMounted) {
               setNotes(data.content);
               setIsLoading(false);
             }

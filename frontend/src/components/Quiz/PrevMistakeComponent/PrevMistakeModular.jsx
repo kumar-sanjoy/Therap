@@ -115,11 +115,9 @@ const PrevMistakeModular = () => {
                     }
                 });
 
-                console.log('🔍 [PREV_MISTAKE DEBUG] API response status:', response.status);
-                if (response.ok) {
+                                  if (response.ok) {
                     const data = await response.json();
-                    console.log('🔍 [PREV_MISTAKE DEBUG] API response data:', data);
-                    if (isMounted) {
+                                          if (isMounted) {
                         const extractedQuestions = data.mcqs || data.questions || data;
                         if (Array.isArray(extractedQuestions) && extractedQuestions.length > 0) {
                             setQuestions(extractedQuestions);

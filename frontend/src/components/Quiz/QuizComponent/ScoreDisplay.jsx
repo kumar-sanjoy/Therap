@@ -4,7 +4,7 @@ import { useDarkTheme } from '../../Common/DarkThemeProvider';
 import TypewriterEffect from '../../Common/TypewriterEffect';
 import teacherImage from '../../../assets/teacher.jpg';
 
-const ScoreDisplay = ({ score, totalQuestions, onReset }) => {
+const ScoreDisplay = ({ score, totalQuestions, onReset, leaderboard }) => {
     const { isDarkMode } = useDarkTheme();
     const [showTypewriter, setShowTypewriter] = useState(false);
     const [currentMessage, setCurrentMessage] = useState('');
@@ -140,6 +140,30 @@ const ScoreDisplay = ({ score, totalQuestions, onReset }) => {
                 </div>
             </div>
             
+            {/* Leaderboard (for challenge attempts) */}
+            {leaderboard && (
+                <div className="w-full max-w-md">
+                    <h3 className={`text-xl font-semibold mb-3 ${isDarkMode ? 'text-gray-200' : 'text-[#343434]'}`}>
+                        Leaderboard
+                    </h3>
+                    <div className={`${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-gray-50 border-gray-200'} border rounded-xl p-4`}>
+                        <ul className="space-y-2">
+                            {Object.entries(leaderboard)
+                                .sort((a, b) => b[1] - a[1])
+                                .map(([name, sc], idx) => (
+                                    <li key={name} className="flex items-center justify-between">
+                                        <div className="flex items-center gap-3">
+                                            <span className={`${idx === 0 ? 'text-yellow-500' : idx === 1 ? 'text-gray-400' : idx === 2 ? 'text-orange-500' : (isDarkMode ? 'text-gray-300' : 'text-gray-500')} font-semibold`}>{idx + 1}.</span>
+                                            <span className={`${isDarkMode ? 'text-gray-200' : 'text-[#343434]'} font-medium`}>{name}</span>
+                                        </div>
+                                        <span className={`${isDarkMode ? 'text-gray-200' : 'text-[#343434]'} font-semibold`}>{sc}</span>
+                                    </li>
+                                ))}
+                        </ul>
+                    </div>
+                </div>
+            )}
+
             {/* Background Submission Notice */}
             <div className={`text-xs text-center px-4 py-2 rounded-lg ${
                 isDarkMode 

@@ -1,19 +1,13 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// Test console logging at app level
-console.log('🚨 TEST: App component is loading!');
-console.warn('⚠️ TEST: App warning message');
-console.error('❌ TEST: App error message');
 
 // Lazy load all route components with proper error handling for React 19
 const Login = lazy(() => import('./components/Login/Login'));
 const MainPage = lazy(() => import('./components/MainPage/MainPage'));
 const SelectSubject = lazy(() => {
-  console.log('🔍 [APP DEBUG] Loading SelectSubject component...');
   return import('./components/Forms/SelectSubject').then(module => {
-    console.log('🔍 [APP DEBUG] SelectSubject component loaded successfully');
-    return { default: module.default || module };
+          return { default: module.default || module };
   }).catch(error => {
     console.error('🔍 [APP DEBUG] Error loading SelectSubject component:', error);
     throw error;
@@ -76,9 +70,7 @@ const LoadingSpinner = () => (
 );
 
 function App() {
-  console.log('🔍 [APP DEBUG] App component rendering');
-  console.log('🔍 [APP DEBUG] Current window location:', window.location.pathname);
-  
+          
   return (
     <ErrorBoundary>
       <Router>

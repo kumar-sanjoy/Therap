@@ -1,7 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import rehypeRaw from "rehype-raw";
 import rehypeSanitize from "rehype-sanitize";
 
 const TextDisplay = ({ content, isUserMessage = false, forceBlackText = false, fontSize = 16 }) => {
@@ -200,7 +199,6 @@ const TextDisplay = ({ content, isUserMessage = false, forceBlackText = false, f
         <ReactMarkdown 
           remarkPlugins={[remarkGfm]}
           rehypePlugins={[
-            rehypeRaw,
             [rehypeSanitize, sanitizeSchema]
           ]}
           components={markdownComponents}

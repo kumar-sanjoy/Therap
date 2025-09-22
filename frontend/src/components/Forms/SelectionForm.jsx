@@ -186,9 +186,9 @@ const SelectionForm = ({
             </span>
           </button>
           {openDropdown === 'class' && (
-            <div className={`absolute z-10 right-0 top-full mt-2 border rounded-xl shadow-2xl max-h-60 overflow-y-auto min-w-[280px] ${
+            <div className={`absolute z-[100] right-0 top-full mt-2 mb-12 border rounded-xl shadow-2xl max-h-60 overflow-y-auto min-w-[280px] ${
               isDarkMode 
-                ? 'bg-gray-700 border-gray-600' 
+                ? 'bg-gray-800 border-gray-600' 
                 : 'bg-white border-gray-200'
             }`}>
               {Object.keys(classConfig).map((cls) => (
@@ -264,9 +264,9 @@ const SelectionForm = ({
             </span>
           </button>
           {openDropdown === 'subject' && selectedClass && (
-            <div className={`absolute z-10 right-0 top-full mt-2 border rounded-xl shadow-2xl max-h-60 overflow-y-auto min-w-[280px] ${
+            <div className={`absolute z-[100] right-0 top-full mt-2 mb-12 border rounded-xl shadow-2xl max-h-60 overflow-y-auto min-w-[280px] ${
               isDarkMode 
-                ? 'bg-gray-700 border-gray-600' 
+                ? 'bg-gray-800 border-gray-600' 
                 : 'bg-white border-gray-200'
             }`}>
               {availableSubjects.map((sub) => (
@@ -340,11 +340,11 @@ const SelectionForm = ({
             </span>
           </button>
           {openDropdown === 'chapter' && selectedSubject && (
-            <div className={`absolute z-10 right-0 top-full mt-2 border rounded-xl shadow-2xl max-h-60 overflow-y-auto min-w-[280px] ${
+            <div className={`absolute z-[100] right-0 top-full mt-2 mb-12 border rounded-xl shadow-2xl max-h-60 overflow-y-auto min-w-[280px] ${
               isDarkMode 
-                ? 'bg-gray-700 border-gray-600' 
+                ? 'bg-gray-800 border-gray-600' 
                 : 'bg-white border-gray-200'
-            }`}>
+            }`}> 
               {Array.from({ length: availableChapters }, (_, i) => i + 1).map((chapter) => (
                 <button
                   key={chapter}

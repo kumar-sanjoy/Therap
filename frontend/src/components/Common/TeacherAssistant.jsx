@@ -30,7 +30,11 @@ const TeacherAssistant = ({
   showAdvice = false,
   isIncorrectAnswer = false,
   // New prop to control floating avatar visibility
-  showFloatingAvatar = false
+  showFloatingAvatar = false,
+  // New prop for new users
+  isNewUser = false,
+  // Custom message override
+  customMessage = null
 }) => {
   const { isDarkMode } = useDarkTheme();
   const [isOpen, setIsOpen] = useState(false);
@@ -44,16 +48,28 @@ const TeacherAssistant = ({
   // Randomized messages for different scenarios - moved before getRandomMessage function
   const messages = {
     main: [
-      "Welcome back! Ready to continue your learning journey? 🚀",
-      "Great to see you! What would you like to work on today? 💡",
-      "Hello! I'm here to help you succeed! 🌟",
-      "Welcome! Let's make today a productive learning day! 📚",
-      "Hi there! Ready to tackle some challenges? 💪",
-      "Welcome back! Your learning adventure awaits! 🗺️",
-      "Hello! I'm excited to help you grow! 🌱",
-      "Welcome! Let's unlock your full potential today! 🔓",
+      "Welcome to your learning journey! I'm excited to help you grow! 🌱",
+      "Hello! Ready to start your educational adventure? 🚀",
+      "Welcome! Let's unlock your potential together! 🔓",
+      "Hi there! I'm here to guide you every step of the way! 💪",
+      "Welcome aboard! Your success is my priority! 🌟",
+      "Hello! Ready to make learning fun and effective? 🎯",
+      "Welcome! Together we can achieve amazing things! 🤝",
       "Hi! I believe in your ability to succeed! ⭐",
-      "Welcome back! Together we can achieve great things! 🤝"
+      "Welcome! Let's make today the start of something great! ✨",
+      "Hello! Your learning adventure begins now! �️"
+    ],
+    newUser: [
+      "🎉 Welcome to your learning journey! I'm your AI teacher, and I'm so excited to help you succeed!",
+      "🌟 Hello there! I'm here to be your personal learning companion. Let's achieve great things together!",
+      "🚀 Welcome aboard! I'll be with you every step of the way as you explore and learn new concepts.",
+      "💡 Hi! I'm your AI teacher, ready to make learning engaging, fun, and effective for you!",
+      "🌱 Welcome! Every expert was once a beginner. I'm here to help you grow and flourish!",
+      "⭐ Hello! I'm thrilled to be part of your educational journey. Let's unlock your full potential!",
+      "🎯 Welcome! I'm here to provide personalized guidance and support whenever you need it.",
+      "🤝 Hi there! Think of me as your learning partner, always ready to help and encourage you!",
+      "✨ Welcome to an amazing learning experience! I'm here to make every lesson count.",
+      "🏆 Hello! Together, we'll turn challenges into achievements. Let's get started!"
     ],
     correct: [
       "Excellent work! 🎉",
@@ -246,6 +262,11 @@ const TeacherAssistant = ({
   };
 
   const [currentMessage, setCurrentMessage] = useState(() => {
+    // Use custom message if provided
+    if (customMessage) {
+      return customMessage;
+    }
+    
     // Initialize with appropriate message based on context
     if (context === 'quiz') {
       const learningTips = [
@@ -257,6 +278,9 @@ const TeacherAssistant = ({
       ];
       return learningTips[Math.floor(Math.random() * learningTips.length)];
     } else if (context === 'main') {
+      if (isNewUser) {
+        return getRandomMessage('newUser');
+      }
       return getRandomMessage('main');
     }
     return 'AI Teacher';
@@ -265,6 +289,7 @@ const TeacherAssistant = ({
   // Interactive teacher state
   const [showTeacherQuestion, setShowTeacherQuestion] = useState(false);
   const [teacherQuestion, setTeacherQuestion] = useState('');
+  const [teacherQuestionType, setTeacherQuestionType] = useState(null);
   const [showTeacherResponse, setShowTeacherResponse] = useState(false);
   const [teacherResponse, setTeacherResponse] = useState('');
   const [questionTimer, setQuestionTimer] = useState(null);
@@ -438,11 +463,15 @@ const TeacherAssistant = ({
 
       // Set timer to ask for hint after 17 seconds
       const timer = setTimeout(() => {
-        setShowTeacherQuestion(true);
-        setTeacherQuestion(getRandomMessage('askingForHint'));
-        setAvatarStatus('thinking');
-        setAvatarMood('encouraging');
-        setCurrentMessage(getRandomMessage('askingForHint'));
+        // Only show hint modal if question is still unanswered
+        if (!isQuestionAnswered) {
+          setShowTeacherQuestion(true);
+          setTeacherQuestion(getRandomMessage('askingForHint'));
+          setTeacherQuestionType('hint');
+          setAvatarStatus('thinking');
+          setAvatarMood('encouraging');
+          setCurrentMessage(getRandomMessage('askingForHint'));
+        }
       }, 17000); // 17 seconds
 
       setQuestionTimer(timer);
@@ -450,6 +479,11 @@ const TeacherAssistant = ({
       return () => {
         if (timer) clearTimeout(timer);
       };
+    } else if (isQuestionAnswered && questionTimer) {
+      // If question is answered, clear hint timer immediately
+      clearTimeout(questionTimer);
+      setQuestionTimer(null);
+      setShowTeacherQuestion(false);
     }
   }, [context, questionData, hasAskedForHint, isQuestionAnswered]);
 
@@ -465,6 +499,7 @@ const TeacherAssistant = ({
       const timer = setTimeout(() => {
         setShowTeacherQuestion(true);
         setTeacherQuestion(getRandomMessage('askingForExplanation'));
+        setTeacherQuestionType('explanation');
         setAvatarStatus('speaking');
         setAvatarMood('friendly');
         setCurrentMessage(getRandomMessage('askingForExplanation'));
@@ -484,6 +519,7 @@ const TeacherAssistant = ({
       setHasAskedForHint(false);
       setHasAskedForExplanation(false);
       setShowTeacherQuestion(false);
+      setTeacherQuestionType(null);
       setShowTeacherResponse(false);
       if (questionTimer) {
         clearTimeout(questionTimer);
@@ -491,6 +527,13 @@ const TeacherAssistant = ({
       }
     }
   }, [questionData]);
+
+  // If the student has answered, ensure we don't show the hint question modal
+  useEffect(() => {
+    if (isQuestionAnswered && showTeacherQuestion && teacherQuestionType === 'hint') {
+      setShowTeacherQuestion(false);
+    }
+  }, [isQuestionAnswered, showTeacherQuestion, teacherQuestionType]);
 
   // Handle teacher question responses
   const handleTeacherQuestionResponse = (response) => {

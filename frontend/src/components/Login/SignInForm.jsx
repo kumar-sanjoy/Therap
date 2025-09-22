@@ -90,8 +90,7 @@ const SignInForm = ({
           }
         } catch (jsonError) {
           // If we can't parse JSON, use the default error message
-          console.log('Could not parse error response as JSON');
-        }
+                    }
         
         showCustomAlert(errorMessage, 'error');
         return;

@@ -54,29 +54,22 @@ const Learn = () => {
     
     const fetchLessonData = async () => {
       try {
-        console.log('🔍 [LEARN DEBUG] State received:', state);
-        console.log('🔍 [LEARN DEBUG] State keys:', state ? Object.keys(state) : 'No state');
-        
+                            
         // Use lesson data from state if available
         if (state?.content || state?.lesson) {
           let contentArray = [];
           
           if (Array.isArray(state.content)) {
             contentArray = state.content;
-            console.log('🔍 [LEARN DEBUG] Using state.content array, length:', contentArray.length);
-          } else if (Array.isArray(state.lesson)) {
+                        } else if (Array.isArray(state.lesson)) {
             contentArray = state.lesson;
-            console.log('🔍 [LEARN DEBUG] Using state.lesson array, length:', contentArray.length);
-          } else if (state.content?.lesson && Array.isArray(state.content.lesson)) {
+                        } else if (state.content?.lesson && Array.isArray(state.content.lesson)) {
             contentArray = state.content.lesson;
-            console.log('🔍 [LEARN DEBUG] Using state.content.lesson array, length:', contentArray.length);
-          } else if (state.content?.content && Array.isArray(state.content.content)) {
+                        } else if (state.content?.content && Array.isArray(state.content.content)) {
             contentArray = state.content.content;
-            console.log('🔍 [LEARN DEBUG] Using state.content.content array, length:', contentArray.length);
-          }
+                        }
           
-          console.log('🔍 [LEARN DEBUG] Final content array:', contentArray);
-          
+                      
           if (contentArray.length > 0) {
             setLessonData(prev => ({
               ...prev,
@@ -84,13 +77,11 @@ const Learn = () => {
               chapterTitle: state?.chapterTitle || `Chapter ${state?.chapter || '1'}`
             }));
             setIsLoadingLesson(false);
-            console.log('🔍 [LEARN DEBUG] Lesson data set successfully');
-          } else {
+                        } else {
             throw new Error('No lesson content found');
           }
         } else {
-          console.log('🔍 [LEARN DEBUG] No content or lesson in state, trying to fetch from API');
-          
+                      
           // Try to fetch lesson content from API as fallback
           const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
           const username = localStorage.getItem(STORAGE_KEYS.USERNAME);
@@ -105,8 +96,7 @@ const Learn = () => {
             chapter: lessonData.chapter
           });
           
-          console.log('🔍 [LEARN DEBUG] Fetching from API with params:', params.toString());
-          
+                      
           const response = await fetch(`${API_BASE_URL}${API_ENDPOINTS.LEARN}?${params.toString()}`, {
             method: 'GET',
             headers: {
@@ -117,8 +107,7 @@ const Learn = () => {
           
           if (response.ok) {
             const data = await response.json();
-            console.log('🔍 [LEARN DEBUG] API response:', data);
-            
+                          
             const extractedContent = data.content || data.lessons || data;
             if (Array.isArray(extractedContent) && extractedContent.length > 0) {
               setLessonData(prev => ({
@@ -127,8 +116,7 @@ const Learn = () => {
                 chapterTitle: data.chapterTitle || data.title || `Chapter ${lessonData.chapter}`
               }));
               setIsLoadingLesson(false);
-              console.log('🔍 [LEARN DEBUG] Lesson data fetched from API successfully');
-              return;
+                              return;
             }
           }
           

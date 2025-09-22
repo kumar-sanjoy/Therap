@@ -157,8 +157,7 @@ const QuestionInput = ({
     // Load audio element when audioUrl changes
     useEffect(() => {
         if (audioUrl && audioRef.current) {
-            console.log('Loading audio element with URL:', audioUrl);
-            audioRef.current.load();
+                          audioRef.current.load();
         }
     }, [audioUrl]);
 
@@ -223,8 +222,7 @@ const QuestionInput = ({
     // Enhanced voice recording
     const startRecording = async () => {
         try {
-            console.log('🎤 Starting audio recording...');
-            
+                          
             if (imageFile) {
                 setErrorMessage('You can only upload either an image OR audio, not both. Please remove the image first.');
                 return;
@@ -241,10 +239,8 @@ const QuestionInput = ({
                 return;
             }
 
-            console.log('✅ Browser supports audio recording');
-
-            console.log('🎵 Requesting microphone access...');
-            const stream = await navigator.mediaDevices.getUserMedia({ 
+              
+                          const stream = await navigator.mediaDevices.getUserMedia({ 
                 audio: {
                     echoCancellation: true,
                     noiseSuppression: true,
@@ -252,8 +248,7 @@ const QuestionInput = ({
                 } 
             });
             
-            console.log('✅ Microphone access granted:', stream);
-            audioStreamRef.current = stream;
+                          audioStreamRef.current = stream;
 
             // Check for supported MIME types with better fallback
             let mimeType = null;
@@ -269,11 +264,9 @@ const QuestionInput = ({
             ];
             
             // Debug: Log all supported MIME types
-            console.log('🔍 Checking MIME type support:');
-            mimeTypes.forEach(type => {
+                          mimeTypes.forEach(type => {
                 const supported = MediaRecorder.isTypeSupported(type);
-                console.log(`  ${type}: ${supported ? '✅' : '❌'}`);
-            });
+                              });
             
             for (const type of mimeTypes) {
                 if (MediaRecorder.isTypeSupported(type)) {
@@ -287,18 +280,15 @@ const QuestionInput = ({
                 console.warn('⚠️ No specific MIME type supported, using browser default');
                 mimeType = undefined;
             } else {
-                console.log('✅ Using MIME type for recording:', mimeType);
-            }
+                              }
 
-            console.log('🎙️ Creating MediaRecorder with MIME type:', mimeType);
-            const recorder = new MediaRecorder(stream, { 
+                          const recorder = new MediaRecorder(stream, { 
                 ...(mimeType && { mimeType }),
                 audioBitsPerSecond: 128000
             });
             const chunks = [];
             
-            console.log('✅ MediaRecorder created successfully');
-
+              
             recorder.ondataavailable = (e) => {
                 if (e.data.size > 0) {
                     chunks.push(e.data);
@@ -336,14 +326,12 @@ const QuestionInput = ({
                 }
             };
 
-            console.log('▶️ Starting recording...');
-            recorder.start(100); // Collect data every 100ms
+                          recorder.start(100); // Collect data every 100ms
             setMediaRecorder(recorder);
             setIsRecording(true);
             setRecordingTime(0);
             
-            console.log('✅ Recording started successfully');
-
+              
             // Start timer
             recordingTimerRef.current = setInterval(() => {
                 setRecordingTime(prev => prev + 1);
@@ -360,19 +348,15 @@ const QuestionInput = ({
     };
 
     const stopRecording = () => {
-        console.log('⏹️ Stopping recording...');
-        if (mediaRecorder && isRecording) {
-            console.log('✅ Stopping MediaRecorder...');
-            mediaRecorder.stop();
+                  if (mediaRecorder && isRecording) {
+                          mediaRecorder.stop();
             setIsRecording(false);
             if (recordingTimerRef.current) {
                 clearInterval(recordingTimerRef.current);
                 recordingTimerRef.current = null;
             }
-            console.log('✅ Recording stopped successfully');
-        } else {
-            console.log('❌ Cannot stop recording - no active recorder or not recording');
-        }
+                      } else {
+                      }
     };
 
     // Enhanced audio playback
@@ -403,8 +387,7 @@ const QuestionInput = ({
             if (playPromise !== undefined) {
                 await playPromise;
                 setIsPlaying(true);
-                console.log('✅ Audio playback started successfully');
-            }
+                              }
         } catch (error) {
             console.error('❌ Error playing audio:', error);
             setAudioError(`Playback failed: ${error.message}`);
@@ -571,8 +554,7 @@ const QuestionInput = ({
             recognition.maxAlternatives = 1;
 
             recognition.onstart = () => {
-                console.log('Speech recognition started');
-                // Show a small info message
+                                  // Show a small info message
                 const infoMessage = document.createElement('div');
                 infoMessage.className = 'fixed top-4 right-4 bg-blue-500 text-white px-4 py-2 rounded-lg shadow-lg z-50';
                 infoMessage.textContent = '🎤 Listening... Please speak clearly';
@@ -631,8 +613,7 @@ const QuestionInput = ({
             };
 
             recognition.onend = () => {
-                console.log('Speech recognition ended');
-                if (!transcriptionText) {
+                                  if (!transcriptionText) {
                     setIsTranscribing(false);
                     reject(new Error('No transcription result'));
                 }
@@ -934,12 +915,10 @@ const QuestionInput = ({
                             onEnded={handleAudioEnded}
                             onError={handleAudioError}
                             onLoadStart={() => {
-                                console.log('🎵 Audio loading started');
-                                setIsAudioLoading(true);
+                                                                  setIsAudioLoading(true);
                             }}
                             onCanPlay={() => {
-                                console.log('✅ Audio can play - ready for playback');
-                                setIsAudioLoading(false);
+                                                                  setIsAudioLoading(false);
                                 
                                 // Ensure audio is not muted and volume is set
                                 if (audioRef.current) {
